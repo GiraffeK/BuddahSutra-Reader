@@ -274,3 +274,53 @@
 - 確認 `.env` 已列於 `.gitignore`，且工作目錄內無任何除錯圖片、影片或敏感憑證。
 - 建立專案說明文件 `README.md`。
 - 初始化 Git repository（`main` 分支）、設定 `origin` 指向 `https://github.com/GiraffeK/BuddahSutra-Reader.git`、於 `git add` 後再次驗證 `.env` 未被暫存，完成初次 commit 並推送至 `origin/main`。
+
+---
+
+## [2026-11-23 22:19] Session 16：本機拉取專案並修復 `ModuleNotFoundError: No module named 'uvicorn'`
+
+### 1. 接收到的 User Prompt
+- 先拉取 GitHub 儲存庫 `https://github.com/GiraffeK/BuddahSutra-Reader` 至空工作目錄。
+- 隨後使用者執行 `python .\run_app.py` 出現 `ModuleNotFoundError: No module named 'uvicorn'`。
+
+### 2. 問題分析
+- 透過 `test_safe_command.py` 檢測環境，發現目前終端機 PATH 中的預設 `python` 指向 MSYS2 UCRT64 的 `C:\msys64\ucrt64\bin\python.exe`（Python 3.14.5），該環境未安裝 `pip` 與專案相依套件。
+- 系統另有安裝標準 CPython 3.12.10（`C:\Users\AdminSean\AppData\Local\Programs\Python\Python312\python.exe`）與 `uv`。
+
+### 3. 解法與執行步驟
+- 使用 `uv venv .venv --python "C:\Users\AdminSean\AppData\Local\Programs\Python\Python312\python.exe"` 於專案根目錄建立獨立虛擬環境 `.venv`（已列於 `.gitignore`）。
+- 使用 `uv pip install --python .venv\Scripts\python.exe fastapi uvicorn httpx pydantic python-dotenv google-genai` 安裝全部相依套件。
+- 透過 `.venv\Scripts\python.exe test_safe_command.py` 驗證所有相依套件與 `backend.main` 皆可正常載入。
+- 為讓使用者直接執行 `python .\run_app.py` 即可順利啟動（即使未手動啟用 `.venv`），於 `run_app.py` 加入 `ModuleNotFoundError` 自動偵測並無縫切換至專案 `.venv` 解譯器執行的機制，並以系統預設 `python test_safe_command.py` 端到端驗證 `/api/health` 回應 200 PASS。
+
+---
+
+## [2026-11-23 22:58] Session 17：參考「般若文海」重構古大德註疏排版為書卷式連貫閱讀介面
+
+### 1. 接收到的 User Prompt 與附圖回饋
+- 使用者提供般若文海《楞嚴經通議卷二》與本系統畫面截圖對比，指出目前將古大德註疏拆成「註疏第 8 段」「註疏第 9 段」等破碎卡片顯示反而不易閱讀，要求參考般若文海的註解呈現方式。
+
+### 2. 問題分析與設計方案
+- 檢視 `translation_kb/commentary_fulltext/` 下多部古大德資料（憨山《通議》、交光《正脈疏》、戒環《要解》、澄觀《華嚴疏》），確認 CBETA 註疏皆具「卷題／譯述者 → 科判標題（如 `[△@○]三示外道斷見顛倒。`） → 引經原文 → 連續大德註疏」之結構，且常將 `議曰：此出斷見之疑也。` 等短起手句與正文拆為不同 `<p>`。
+- 於前端 `frontend/app.js` 實作語意分類與書卷式區塊合併（`classifyCommentaryPara`、`buildCommentaryBlocks`）：
+  1. **卷題與譯述者**：卷題置中、譯述者合併靠右排版。
+  2. **科判標題**：自動清除 `[△@○]` 等 CBETA 記號，以般若文海風格之清雅靛藍底線小標題呈現。
+  3. **引經原文**：比對當前經卷正規化原文（含異體字正規化如 虗/虛、灰/灰、勅/敕、徧/遍），自動辨識並以青墨綠色＋首行縮排 2em＋淡雅底色與左側細線呈現。
+  4. **古大德註疏連貫呈現**：完全移除「註疏第 N 段」卡片與多餘外框，將連續註疏自然流動排版；將 `議曰：...` 等短起手句與短尾句自動併入自然段，並改為每個完整註疏群組右上角提供單一低調 `✨ AI 白話導讀` 按鈕（hover 或對齊時清晰顯示），一次導讀整段完整註疏。
+  5. **聯動高亮優化**：當右側經句順向對齊命中「引經原文」區塊時，自動一併柔和標示緊接在後的古大德註疏群組，並捲動使引經與註疏首段同時在視窗內可見。
+
+### 3. 修改檔案與驗證
+- 更新 `frontend/app.js`、`frontend/styles.css`、`frontend/index.html`（更新靜態版本號 `?v=20261123c`）。
+- 透過 `test_safe_command.py` 驗證 JS 語法與《楞嚴經通議卷二》分類合併結果。
+- **補充修復**：依使用者《楞嚴經通議卷三》截圖回饋，全量掃描快取註疏發現 CBETA 尚有 `[□@○]`、`[?︽]`、`[△@△]`、`[□@(?╳)]`、`[○@◇]`、`[□@◇]`、`[?╳]` 等組字式科判記號；擴充 `KEPAN_PREFIX_RE` 通用匹配並緊湊連續科判間距（`.comm-kepan + .comm-kepan`），同時更新靜態版本號至 `?v=20261123d`。
+
+---
+
+## [2026-11-23 23:08] Session 18：安全稽核並推送至 GitHub (`origin/main`)
+
+### 1. 接收到的 User Prompt
+- 使用者要求：`git push`。
+
+### 2. 安全稽核與執行步驟
+- 執行 `git status --short` 確認 `.env`、`.venv/` 與除錯圖片均未列入追蹤。
+- 提交本次 `run_app.py` 自動虛擬環境切換、般若文海風格書卷式註疏排版重構、CBETA 全量科判記號清理與累積之 `translation_kb/` 知識庫，並推送至 `origin/main`。

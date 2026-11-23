@@ -7,6 +7,7 @@ const state = {
   bundle: null, // { sutra, masters, commentaries, translations, fascicle_count, local_fascicles }
   selectedMasterId: null,
   commFull: null, // { master, juan, total_juans, paragraphs, local_juans, fetched_from_cbeta }
+  commBlocks: [],
   commCursorIdx: 0,
   commAlignedIdx: null,
   commMatchedPhrase: null,
@@ -489,44 +490,301 @@ function renderCommJuanControls() {
   els.nextCommJuanBtn.disabled = cur >= total;
 }
 
+function normalizeForMatch(str) {
+  return String(str || "")
+    .replace(/\[\*\]|\[＊\]|\[[△▽▲▼○●◎□■◇◆╳︽︾?@()/+\-*]+\]/g, "")
+    .replace(/[虗灰勅徧却甞胷脉緜]/g, (ch) => ({
+      虗: "虛",
+      "灰": "灰",
+      勅: "敕",
+      徧: "遍",
+      却: "卻",
+      甞: "嘗",
+      胷: "胸",
+      脉: "脈",
+      緜: "綿",
+    }[ch] || ch))
+    .replace(/[，。；？！：「」『』、（）\s△▽▲▼○●◎□■◇◆·•]/g, "");
+}
+
+function getCurrentSutraNormalizedText() {
+  if (!state.bundle?.sutra?.paragraphs) return "";
+  const parts = [];
+  for (const p of state.bundle.sutra.paragraphs) {
+    if (p.type === "prose") {
+      for (const s of p.sentences || []) {
+        parts.push(s.text || "");
+      }
+    }
+  }
+  return normalizeForMatch(parts.join(""));
+}
+
+const KEPAN_PREFIX_RE = /^(?:\[[△▽▲▼○●◎□■◇◆╳︽︾?@()/+\-*]+\]|[△▽▲▼○●◎□■◇◆])+/;
+const COMM_OPENER_RE = /^(?:議曰|疏曰|釋曰|解曰|註曰|注曰|通曰|鈔曰|正脈曰|合解曰|演義曰|案曰|按曰)[：:]/;
+const BYLINE_HINT_RE = /(?:譯語|筆受|沙門|比丘|菩薩戒弟子|法師|大師|居士|釋德清|澄觀|真鑑|戒環|智旭|子璿|通潤|傳燈|淨源|智儼|法藏|宗密|李通玄).*[譯述撰解疏註受語書]$|[譯述撰解疏受語]$/;
+
+function classifyCommentaryPara(p, idx, sutraNorm) {
+  const raw = (p.text || "").trim();
+  if (p.type === "heading") {
+    if (idx > 0 && raw.length <= 36 && !/[卷序品]/.test(raw) && BYLINE_HINT_RE.test(raw)) {
+      return { role: "byline", displayText: raw };
+    }
+    return { role: "title", displayText: raw };
+  }
+
+  if (KEPAN_PREFIX_RE.test(raw)) {
+    const cleaned = raw.replace(KEPAN_PREFIX_RE, "").trim();
+    return { role: "kepan", displayText: cleaned || raw };
+  }
+
+  // 判斷是否為「引經原文」：不以大德註解起手詞開頭，且與本卷經文高度重疊
+  if (sutraNorm && !COMM_OPENER_RE.test(raw)) {
+    const norm = normalizeForMatch(raw);
+    if (norm.length >= 6 && sutraNorm.includes(norm)) {
+      return { role: "sutra", displayText: raw };
+    }
+    if (norm.length >= 12) {
+      let total = 0;
+      let hits = 0;
+      const step = norm.length > 80 ? 5 : 3;
+      for (let i = 0; i <= norm.length - 5; i += step) {
+        total++;
+        if (sutraNorm.includes(norm.slice(i, i + 5))) hits++;
+      }
+      if (total > 0 && hits / total >= 0.5) {
+        return { role: "sutra", displayText: raw };
+      }
+    }
+  }
+
+  return { role: "commentary", displayText: raw };
+}
+
+function buildCommentaryBlocks(paragraphs) {
+  const sutraNorm = getCurrentSutraNormalizedText();
+  const items = paragraphs.map((p, idx) => ({
+    ...p,
+    rawIdx: idx,
+    ...classifyCommentaryPara(p, idx, sutraNorm),
+  }));
+
+  const blocks = [];
+  let i = 0;
+  while (i < items.length) {
+    const cur = items[i];
+
+    if (cur.role === "title") {
+      blocks.push({ kind: "title", items: [cur], rawIndices: [cur.rawIdx] });
+      i++;
+      continue;
+    }
+
+    if (cur.role === "byline") {
+      const group = [];
+      while (i < items.length && items[i].role === "byline") {
+        group.push(items[i]);
+        i++;
+      }
+      blocks.push({
+        kind: "byline",
+        items: group,
+        rawIndices: group.map((x) => x.rawIdx),
+      });
+      continue;
+    }
+
+    if (cur.role === "kepan") {
+      blocks.push({ kind: "kepan", items: [cur], rawIndices: [cur.rawIdx] });
+      i++;
+      continue;
+    }
+
+    if (cur.role === "sutra") {
+      const group = [];
+      while (i < items.length && items[i].role === "sutra") {
+        group.push(items[i]);
+        i++;
+      }
+      blocks.push({
+        kind: "sutra",
+        items: group,
+        rawIndices: group.map((x) => x.rawIdx),
+      });
+      continue;
+    }
+
+    // 連續古大德註疏段落：合併為同一連貫註疏區塊（仿般若文海書卷排版）
+    const commItems = [];
+    while (i < items.length && items[i].role === "commentary") {
+      commItems.push(items[i]);
+      i++;
+    }
+
+    // 將 CBETA 常見的短起手句（如「議曰：此出斷見之疑也。」）或極短尾句自然併入相鄰段落
+    const mergedParas = [];
+    for (let k = 0; k < commItems.length; k++) {
+      const item = commItems[k];
+      const next = commItems[k + 1];
+
+      // 短起手句（例如「議曰：此出斷見之疑也。」<= 32 字）與緊接下一段合為同一自然段
+      if (
+        COMM_OPENER_RE.test(item.displayText) &&
+        item.displayText.length <= 32 &&
+        next &&
+        !COMM_OPENER_RE.test(next.displayText)
+      ) {
+        mergedParas.push({
+          text: item.displayText + next.displayText,
+          rawIndices: [item.rawIdx, next.rawIdx],
+        });
+        k++;
+        continue;
+      }
+
+      // 極短尾句（<= 28 字且不以起手詞開頭）自然併入前一段末尾
+      if (
+        mergedParas.length > 0 &&
+        item.displayText.length <= 28 &&
+        !COMM_OPENER_RE.test(item.displayText) &&
+        mergedParas[mergedParas.length - 1].text.length >= 45
+      ) {
+        const prev = mergedParas[mergedParas.length - 1];
+        prev.text += item.displayText;
+        prev.rawIndices.push(item.rawIdx);
+        continue;
+      }
+
+      mergedParas.push({
+        text: item.displayText,
+        rawIndices: [item.rawIdx],
+      });
+    }
+
+    const first = commItems[0];
+    const groupId =
+      commItems.length > 1
+        ? `${first.para_id}_g${commItems.length}`
+        : first.para_id;
+
+    blocks.push({
+      kind: "commentary",
+      groupId,
+      combinedText: mergedParas.map((mp) => mp.text).join("\n"),
+      mergedParas,
+      items: commItems,
+      rawIndices: commItems.map((x) => x.rawIdx),
+    });
+  }
+
+  return blocks;
+}
+
 function renderCommFullBody() {
   if (!state.commFull || !state.commFull.paragraphs.length) {
     els.commFullBody.innerHTML = `<div class="empty-state" style="padding:20px;">此卷暫無註疏段落，請嘗試切換上方註疏卷次。</div>`;
     return;
   }
 
-  const frag = document.createDocumentFragment();
-  state.commFull.paragraphs.forEach((p, idx) => {
-    const div = document.createElement("div");
-    div.className = "comm-para" + (p.type === "heading" ? " comm-heading" : "");
-    div.dataset.commIdx = String(idx);
-    div.dataset.paraId = p.para_id;
+  const blocks = buildCommentaryBlocks(state.commFull.paragraphs);
+  state.commBlocks = blocks;
 
-    const guide = state.commentaryGuides[p.para_id];
-    div.innerHTML = `
-      <div class="comm-para-meta">
-        <span>註疏第 ${p.index} 段</span>
-        <button class="mini-btn comm-guide-btn" data-comm-para-id="${escapeHtml(p.para_id)}" data-comm-idx="${idx}">✨ AI 白話導讀</button>
+  const frag = document.createDocumentFragment();
+  const sheet = document.createElement("div");
+  sheet.className = "comm-book-sheet";
+
+  blocks.forEach((blk, blkIdx) => {
+    if (blk.kind === "title") {
+      const el = document.createElement("h3");
+      el.className = "comm-book-title";
+      el.dataset.blkIdx = String(blkIdx);
+      el.dataset.rawIndices = blk.rawIndices.join(",");
+      el.textContent = blk.items[0].displayText;
+      sheet.appendChild(el);
+      return;
+    }
+
+    if (blk.kind === "byline") {
+      const el = document.createElement("div");
+      el.className = "comm-book-bylines";
+      el.dataset.blkIdx = String(blkIdx);
+      el.dataset.rawIndices = blk.rawIndices.join(",");
+      el.innerHTML = blk.items
+        .map((it) => `<div class="comm-byline-line">${escapeHtml(it.displayText)}</div>`)
+        .join("");
+      sheet.appendChild(el);
+      return;
+    }
+
+    if (blk.kind === "kepan") {
+      const el = document.createElement("div");
+      el.className = "comm-kepan";
+      el.dataset.blkIdx = String(blkIdx);
+      el.dataset.rawIndices = blk.rawIndices.join(",");
+      const headingText = blk.items[0].displayText.replace(/[。.]$/, "：");
+      el.innerHTML = `<span class="comm-kepan-text">${escapeHtml(headingText)}</span>`;
+      sheet.appendChild(el);
+      return;
+    }
+
+    if (blk.kind === "sutra") {
+      const box = document.createElement("div");
+      box.className = "comm-sutra-block";
+      box.dataset.blkIdx = String(blkIdx);
+      box.dataset.rawIndices = blk.rawIndices.join(",");
+      box.innerHTML = blk.items
+        .map(
+          (it) =>
+            `<p class="comm-sutra-p" data-raw-indices="${it.rawIdx}">${escapeHtml(it.displayText)}</p>`
+        )
+        .join("");
+      sheet.appendChild(box);
+      return;
+    }
+
+    // 古大德註疏連貫群組
+    const groupEl = document.createElement("div");
+    groupEl.className = "comm-prose-group";
+    groupEl.dataset.blkIdx = String(blkIdx);
+    groupEl.dataset.rawIndices = blk.rawIndices.join(",");
+
+    const guide = state.commentaryGuides[blk.groupId];
+    const parasHtml = blk.mergedParas
+      .map(
+        (mp) =>
+          `<p class="comm-prose-p" data-raw-indices="${mp.rawIndices.join(",")}">${escapeHtml(mp.text)}</p>`
+      )
+      .join("");
+
+    groupEl.innerHTML = `
+      <div class="comm-group-toolbar">
+        <button class="mini-btn comm-guide-btn" data-blk-idx="${blkIdx}" title="將此整段古大德註疏轉為現代白話導讀">✨ AI 白話導讀</button>
       </div>
-      <div class="comm-para-text">${escapeHtml(p.text)}</div>
+      <div class="comm-prose-flow">${parasHtml}</div>
       ${
         guide
           ? `<div class="plain-guide-box"><strong>白話導讀（${guide.from_kb ? "知識庫" : guide.provider}）：</strong>${escapeHtml(guide.plain_guide)}</div>`
           : ""
       }
     `;
-    frag.appendChild(div);
+    sheet.appendChild(groupEl);
   });
 
+  frag.appendChild(sheet);
   els.commFullBody.innerHTML = "";
   els.commFullBody.appendChild(frag);
 
   els.commFullBody.querySelectorAll(".comm-guide-btn").forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.stopPropagation();
-      const idx = parseInt(btn.dataset.commIdx, 10);
-      const para = state.commFull?.paragraphs?.[idx];
-      if (para) triggerTranslateCommentaryPara(para, btn);
+      const bIdx = parseInt(btn.dataset.blkIdx, 10);
+      const blk = state.commBlocks?.[bIdx];
+      if (blk) {
+        triggerTranslateCommentaryPara(
+          { para_id: blk.groupId, text: blk.combinedText },
+          btn
+        );
+      }
     });
   });
 }
@@ -646,35 +904,64 @@ function alignCommentaryToSentence(sentenceId) {
 }
 
 function highlightAndScrollCommentary(targetIdx, matchedPhrase) {
-  const prevAligned = els.commFullBody.querySelector(".comm-para.aligned");
-  if (prevAligned) {
-    prevAligned.classList.remove("aligned");
-    const prevIdx = parseInt(prevAligned.dataset.commIdx, 10);
-    const origText = state.commFull?.paragraphs?.[prevIdx]?.text || "";
-    const textEl = prevAligned.querySelector(".comm-para-text");
-    if (textEl) textEl.textContent = origText;
+  // 清除先前高亮與 <mark>
+  els.commFullBody.querySelectorAll(".aligned, .aligned-context").forEach((el) => {
+    el.classList.remove("aligned", "aligned-context");
+  });
+  els.commFullBody.querySelectorAll("mark.comm-hit").forEach((mk) => {
+    mk.replaceWith(document.createTextNode(mk.textContent || ""));
+  });
+
+  // 找到包含 targetIdx 的段落與所屬區塊
+  const targetStr = String(targetIdx);
+  let targetPara = null;
+  let targetBlock = null;
+
+  for (const el of els.commFullBody.querySelectorAll("[data-blk-idx]")) {
+    const indices = (el.dataset.rawIndices || "").split(",");
+    if (indices.includes(targetStr)) {
+      targetBlock = el;
+      break;
+    }
   }
+  if (!targetBlock) return;
 
-  const targetEl = els.commFullBody.querySelector(`[data-comm-idx="${targetIdx}"]`);
-  if (!targetEl) return;
-  targetEl.classList.add("aligned");
-
-  const origText = state.commFull?.paragraphs?.[targetIdx]?.text || "";
-  const textEl = targetEl.querySelector(".comm-para-text");
-  if (textEl) {
-    if (matchedPhrase && origText.includes(matchedPhrase)) {
-      const escapedFull = escapeHtml(origText);
-      const escapedPh = escapeHtml(matchedPhrase);
-      textEl.innerHTML = escapedFull.replace(
-        escapedPh,
-        `<mark class="comm-hit">${escapedPh}</mark>`
-      );
-    } else {
-      textEl.textContent = origText;
+  for (const p of targetBlock.querySelectorAll("[data-raw-indices]")) {
+    const indices = (p.dataset.rawIndices || "").split(",");
+    if (indices.includes(targetStr)) {
+      targetPara = p;
+      break;
     }
   }
 
-  targetEl.scrollIntoView({ behavior: "smooth", block: "center" });
+  targetBlock.classList.add("aligned");
+  if (targetPara) targetPara.classList.add("aligned");
+
+  // 若對齊命中「引經原文」區塊，順帶柔和標示緊接在後的「古大德註疏群組」方便一併閱讀
+  if (targetBlock.classList.contains("comm-sutra-block")) {
+    const nextEl = targetBlock.nextElementSibling;
+    if (nextEl && nextEl.classList.contains("comm-prose-group")) {
+      nextEl.classList.add("aligned-context");
+    }
+  }
+
+  const textHost = targetPara || targetBlock.querySelector(".comm-kepan-text") || targetBlock;
+  if (matchedPhrase && textHost) {
+    const rawText = textHost.textContent || "";
+    if (rawText.includes(matchedPhrase)) {
+      const escapedFull = escapeHtml(rawText);
+      const escapedPh = escapeHtml(matchedPhrase);
+      textHost.innerHTML = escapedFull.replace(
+        escapedPh,
+        `<mark class="comm-hit">${escapedPh}</mark>`
+      );
+    }
+  }
+
+  const scrollTarget = targetBlock.classList.contains("comm-sutra-block")
+    ? targetBlock
+    : targetPara || targetBlock;
+  scrollTarget.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 // ---------- 渲染漢文原文 ----------
