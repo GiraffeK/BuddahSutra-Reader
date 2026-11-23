@@ -1,0 +1,55 @@
+{
+  "master_id": "chengguan_shuchao",
+  "sutra_id": "T10n0279",
+  "fascicle": 1,
+  "entries": [
+    {
+      "commentary_id": "chengguan_T10n0279_001_c001",
+      "target_sentence_ids": ["T10n0279_001_p0004_s001"],
+      "alignment_type": "exact",
+      "section_heading": "序分・信聞成就",
+      "original_commentary": "疏曰：「如是」者，信成就也；「我聞」者，聞成就也。所說之法，如佛所說，無有異義，故名「如是」。阿難等親從佛聞，離於傳聞之失，故稱「我聞」。又理智相應曰如，萬行無非曰是。",
+      "cross_edition_note": null
+    },
+    {
+      "commentary_id": "chengguan_T10n0279_001_c002",
+      "target_sentence_ids": ["T10n0279_001_p0005_s001"],
+      "alignment_type": "exact",
+      "section_heading": "序分・時、主、處三成就",
+      "original_commentary": "疏曰：言「一時」者，師資合會，說聽究竟，總名一時。言「摩竭提國」者，此云不害，表大悲無害之德。「阿蘭若」者，此云無諍、亦云寂靜；稱「法」者，非獨處所寂靜，乃約所證法性離諸戲論喧雜，即寂靜之法為菩提場。「始成正覺」者，顯海印定中初成之相，一念頓圓，非同權教漸成。",
+      "cross_edition_note": null
+    },
+    {
+      "commentary_id": "chengguan_T10n0279_001_c003",
+      "target_sentence_ids": ["T10n0279_001_p0005_s002", "T10n0279_001_p0005_s003", "T10n0279_001_p0005_s004"],
+      "alignment_type": "exact",
+      "section_heading": "道場莊嚴・金剛地嚴",
+      "original_commentary": "疏曰：此明地上莊嚴。言「其地堅固，金剛所成」者，以大悲無壞智為地體，故堅固不可破壞。「上妙寶輪」表摧輾煩惱，「眾寶華」表萬行開敷，「清淨摩尼」表無垢大智，依正無礙，皆從如來無漏善根所現。",
+      "cross_edition_note": null
+    },
+    {
+      "commentary_id": "chengguan_T10n0279_001_c004",
+      "target_sentence_ids": ["T10n0279_001_p0005_s005", "T10n0279_001_p0005_s006", "T10n0279_001_p0005_s007", "T10n0279_001_p0005_s008"],
+      "alignment_type": "exact",
+      "section_heading": "道場莊嚴・菩提樹嚴",
+      "original_commentary": "疏曰：菩提樹高顯殊特，表佛果德高出九界。金剛為身表法身堅固，瑠璃為幹表內外明徹，枝條花果表萬行果德；樹恆出妙音說法者，顯華嚴法界情與無情同圓種智，依報亦能演說妙法。",
+      "cross_edition_note": null
+    },
+    {
+      "commentary_id": "chengguan_T10n0279_001_c005",
+      "target_sentence_ids": ["T10n0279_001_p0006_s001", "T10n0279_001_p0006_s002", "T10n0279_001_p0006_s003", "T10n0279_001_p0006_s004", "T10n0279_001_p0006_s005"],
+      "alignment_type": "exact",
+      "section_heading": "道場莊嚴・宮殿樓閣嚴",
+      "original_commentary": "疏曰：宮殿充遍十方，表法身無礙，不離當處而遍一切處。「一念之間，悉包法界」者，正顯十玄門中「十世隔法異成門」與「一多相容不同門」，念劫圓融，塵剎互攝。",
+      "cross_edition_note": null
+    },
+    {
+      "commentary_id": "chengguan_T10n0279_001_c006",
+      "target_sentence_ids": ["T10n0279_001_p0008_s001", "T10n0279_001_p0008_s002", "T10n0279_001_p0008_s003", "T10n0279_001_p0008_s004", "T10n0279_001_p0008_s005"],
+      "alignment_type": "exact",
+      "section_heading": "主成就・毘盧遮那三業德用",
+      "original_commentary": "疏曰：「於一切法，成最正覺」顯佛意業無礙智；「智入三世，悉皆平等」明過去現在未來同一法性；「譬如虛空」雙喻法身無分別而普周一切國土，如日輪出，破眾生無明長夜。",
+      "cross_edition_note": null
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "master_id": "ouyi_wenju",
+  "sutra_id": "T19n0945",
+  "fascicle": 1,
+  "entries": [
+    {
+      "commentary_id": "ouyi_T19n0945_001_c001",
+      "target_sentence_ids": ["T19n0945_001_p0006_s001", "T19n0945_001_p0007_s001"],
+      "alignment_type": "exact",
+      "section_heading": "文句・三止觀最初方便與性淨明體",
+      "original_commentary": "文句曰：奢摩他即止（空觀），三摩即觀（假觀），禪那即止觀不二（中觀），乃一心三觀之全體。稱「常住真心」表不變之體，「性淨明體」表離垢本明之德，眾生雖在迷位，此體未嘗增減。",
+      "cross_edition_note": null
+    }
+  ]
+}

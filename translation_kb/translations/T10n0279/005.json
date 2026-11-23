@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "sutra_id": "T10n0279",
+  "fascicle": 5,
+  "updated_at": "2026-11-23T12:01:22+08:00",
+  "entries": {
+    "T10n0279_005_p0004_s003": {
+      "sentence_id": "T10n0279_005_p0004_s003",
+      "source_text": "有解脫門，名：普詣一切如來所修具足功德境界。",
+      "source_hash": "sha256:122de2f54dbb",
+      "active_version_id": "v_20261123_120122_gemini",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261123_120122_gemini",
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "prompt_version": "v1.0",
+          "referenced_masters": [],
+          "created_at": "2026-11-23T12:01:22+08:00",
+          "content": {
+            "literal_translation": "有一種解脫門，名為：普遍前往一切如來所修習且圓滿具足的功德境界。",
+            "colloquial_translation": "還有一種解脫法門，叫做「能廣大遍入並親證所有如來所修持、究竟圓滿的一切功德境界」。",
+            "dharma_analysis": "本句解脫門彰顯了普賢菩薩無礙行願的極致成就。「普詣」代表不分時空、無所不至的廣大行願，能普遍親近與契入諸佛法界；「如來所修具足功德境界」則指諸佛於果位上圓滿成就的一切無漏功德與實相智慧。此法門表明修菩薩行者能以普賢行願為因，直接契入諸佛因果圓融、功德具足的不可思議解脫境界。",
+            "terms": [
+              {
+                "term": "解脫門",
+                "explanation": "指通往擺脫煩惱束縛、證得法性與無礙智慧的觀修法門或自在境界。"
+              },
+              {
+                "term": "普詣",
+                "explanation": "普遍前往、無所不至。意指菩薩以廣大願力周遍契入一切法界與諸佛道場。"
+              },
+              {
+                "term": "具足功德境界",
+                "explanation": "指諸佛在果位上圓滿修集、無所缺減的一切萬德與不可思議清淨境界。"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

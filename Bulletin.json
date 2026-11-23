@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "project": "BuddhaSutra-註疏",
+  "description": "AI Agent 外部支援需求與閉環追蹤公告欄。當需要其他 Agent / Skills / Tools / API / MCP 或使用者提供外部資源時，依時間順序疊加記錄，完成後回填 status 與 resolution。",
+  "entries": [
+    {
+      "id": "BLT-20261123-001",
+      "timestamp": "2026-11-23T10:52:00+08:00",
+      "category": "API / Data Source",
+      "requested_support": "CBETA 大正藏目錄結構、華嚴經（T09n0278/T10n0279）、楞嚴經（T19n0945）原文與古大德註疏（T35n1735 等）資料取得方式",
+      "reason": "專案初期需要結構化經文與古大德註疏資料，需確認透過 CBETA Online API、CBETA GitHub (xml-p5a) 或本地離線檔案匯入。",
+      "status": "resolved",
+      "resolution": "已成功串接 CBETA Online Data API (https://cbdata.dila.edu.tw/stable/juans) 並實作 backend/cbeta_fetcher.py 自動抓取、斷句與本地原子入庫（已實測 T10n0279 卷二 41 段 276 句入庫成功）。",
+      "resolved_at": "2026-11-23T11:58:00+08:00"
+    },
+    {
+      "id": "BLT-20261123-002",
+      "timestamp": "2026-11-23T10:52:00+08:00",
+      "category": "API / LLM",
+      "requested_support": "AI 即時翻譯所使用之 LLM 服務（如 Gemini API、OpenAI API 或本機 Ollama 模型）與金鑰配置方式",
+      "reason": "游標指句即時翻譯功能需串接 LLM API，需確認模型選型與 .env 設定方式（嚴格遵守不洩漏憑證原則）。",
+      "status": "resolved",
+      "resolution": "使用者已完成 .env 配置並實機驗證 Gemini API (gemini-2.5-flash) 翻譯與寫入 translation_kb/ 成功；Ollama 雙引擎介面亦已就緒。",
+      "resolved_at": "2026-11-23T11:41:00+08:00"
+    }
+  ]
+}

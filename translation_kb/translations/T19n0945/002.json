@@ -1,0 +1,344 @@
+{
+  "schema_version": "1.0",
+  "sutra_id": "T19n0945",
+  "fascicle": 2,
+  "updated_at": "2026-11-23T17:53:48+08:00",
+  "entries": {
+    "T19n0945_002_p0003_s002": {
+      "sentence_id": "T19n0945_002_p0003_s002",
+      "source_text": "念無始來失却本心，妄認緣塵分別影事，今日開悟，如失乳兒忽遇慈母。",
+      "source_hash": "sha256:c0925a6b502b",
+      "active_version_id": "v_20261123_122015_gemini",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261123_122015_gemini",
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "hanshan_tongyi",
+            "jiaoguang_zhengmai",
+            "zixuan_yishu"
+          ],
+          "created_at": "2026-11-23T12:20:15+08:00",
+          "content": {
+            "literal_translation": "回想自無始劫以來遺失了本具的真心，錯誤地將攀緣六塵所產生的分別影相認作自我；今日終於開顯領悟，就像失去母乳的嬰兒，突然遇見了慈祥的母親。",
+            "colloquial_translation": "回想從無始以來，我們一直遺忘了自己本有的真心，誤把攀緣外在環境所產生的虛妄影像當作真實的心。今天終於大徹大悟，這種歡喜與慶幸，就像瀕臨餓死的失乳嬰兒突然重逢慈母一樣，慧命重新獲得了滋養與延續。",
+            "dharma_analysis": "依長水子璿與交光真鑑大師等祖師註疏，此句乃阿難與大眾「悔前迷執」與「以喻狀喜」。大眾過去將攀緣六塵所產生的微細影事（第六意識分別心）誤認為真心，致使流浪生死；今蒙佛陀於根中指明湛然不動之見性，方悟昔日背真逐妄。以「失乳兒忽遇慈母」為喻，形容慧命本已懸危，今獲法乳滋養而得以復續的無上歡喜。",
+            "terms": [
+              {
+                "term": "無始來",
+                "explanation": "指眾生因無明妄動而輪迴綿延，追溯不到最初起頭的時間點。"
+              },
+              {
+                "term": "本心",
+                "explanation": "即眾生本具的自性清淨心、本覺真心，離言絕相、湛然不動，非指能分別塵境的意識心。"
+              },
+              {
+                "term": "緣塵分別影事",
+                "explanation": "指第六意識攀緣外在六塵（色聲香味觸法）境界時，在心中落下的虛妄影相以及對其產生的分別推度。"
+              },
+              {
+                "term": "失乳兒忽遇慈母",
+                "explanation": "古德用以比喻背真逐妄的眾生慧命瀕臨枯竭（失乳將死），今蒙佛開示見性、得見本心（遇母），法乳滋養而慧命重生的極致喜悅。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T19n0945_002_p0019_s002": {
+      "sentence_id": "T19n0945_002_p0019_s002",
+      "source_text": "則汝今時觀此恒河，與昔童時觀河之見，有童耄不？」",
+      "source_hash": "sha256:2cea97f3df79",
+      "active_version_id": "v_20261123_122041_gemini",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261123_122041_gemini",
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "hanshan_tongyi",
+            "jiaoguang_zhengmai",
+            "zixuan_yishu"
+          ],
+          "created_at": "2026-11-23T12:20:41+08:00",
+          "content": {
+            "literal_translation": "那麼你現在觀察這條恆河，與過去童年時期觀看這條恆河的能見之性，有童年與年老衰老的區別嗎？",
+            "colloquial_translation": "那麼，你現在看這條恆河的「見性」，跟你小時候看恆河時的「見性」相比，這份能看的見性本身有變老或變幼稚的分別嗎？",
+            "dharma_analysis": "佛陀藉由波斯匿王色身（肉體）的衰老皺變，對比出能見之性（見精、見性）並不隨歲月流逝而有遷變。色身屬於有為生滅法，故有童年與年老衰退的差異；然能見之見體本無生滅，不曾跟隨身形老化。古大德指出，此處是「因所顯能」，藉由對比能見之性無童耄之異，直指常住不變的真性，引導眾生悟入無生滅的自性本體。",
+            "terms": [
+              {
+                "term": "觀河之見",
+                "explanation": "指能觀察恆河的水與景致之能見見性（見精），非單指肉眼功能，而是指本具、不隨歲月衰老的覺照能見之體。"
+              },
+              {
+                "term": "童耄",
+                "explanation": "童年與年老衰退。在此指色身隨時間遷變而產生的幼少與衰老等生滅變異之相。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T19n0945_002_p0009_s002": {
+      "sentence_id": "T19n0945_002_p0009_s002",
+      "source_text": "汝今生齡已從衰老，顏貌何如童子之時？」",
+      "source_hash": "sha256:1178d8a6fb67",
+      "active_version_id": "v_20261123_122255_gemini",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261123_122255_gemini",
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "hanshan_tongyi",
+            "jiaoguang_zhengmai",
+            "zixuan_yishu"
+          ],
+          "created_at": "2026-11-23T12:22:55+08:00",
+          "content": {
+            "literal_translation": "大王，你現在的年歲壽齡已經趨於衰老，你的容貌與你幼童時期相比，又是如何呢？",
+            "colloquial_translation": "佛陀說：「大王！你現在的年紀已經步入衰老了，看看你現在的面容外貌，比起你當年還是個小孩子的時候，到底怎麼樣呢？」",
+            "dharma_analysis": "佛陀首先印可（「如是」）波斯匿王對「身知必滅、念念遷謝」的體悟，隨即故意舉出「衰老」與「童子」兩種差異懸殊的時期進行提問。長水與交光大師指出，佛陀此問旨在激引匿王進一步詳細描述肉身無常變易的相貌；憨山大師亦強調，佛陀藉由對比肉身自童至耄的生滅變化，漸次引導匿王去發現那「不遷不變」的本具見性，正是引導眾生悟入如來藏妙真如性的教化樞機。",
+            "terms": [
+              {
+                "term": "生齡",
+                "explanation": "指人出生以後的年數、壽齡。長水子璿大師《註經》云：「齡，年也。」"
+              },
+              {
+                "term": "童子",
+                "explanation": "指幼童時期。長水大師註：「十五曰童，未巾冠也。」意指十五歲以下、尚未行成年禮（束髮加冠）的孩童。"
+              },
+              {
+                "term": "顏貌",
+                "explanation": "指人的面容與氣色外貌，在此代表肉身隨歲月遷謝而顯現於外表上的無常相貌。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T19n0945_002_p0008_s002": {
+      "sentence_id": "T19n0945_002_p0008_s002",
+      "source_text": "我此無常變壞之身雖未曾滅，我觀現前念念遷謝，新新不住；",
+      "source_hash": "sha256:266f0e2a30e3",
+      "active_version_id": "v_20261123_122342_gemini",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261123_122342_gemini",
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "hanshan_tongyi",
+            "jiaoguang_zhengmai",
+            "zixuan_yishu"
+          ],
+          "created_at": "2026-11-23T12:23:42+08:00",
+          "content": {
+            "literal_translation": "「世尊！我這無常且會變質損壞的肉身雖然尚未經歷死亡滅盡，但我觀察眼前當下，微細的念頭與體相都在念念之中遷流消逝，每一個新生的剎那都無法停留保持；",
+            "colloquial_translation": "「世尊，我這個必然會衰老變壞的身體雖然現在還沒真正死亡，但我觀察自己當下的身心變化，發現微細的細胞與念頭都在不斷地交替消逝，每一個新產生的狀態都無法停留半刻；",
+            "dharma_analysis": "波斯匿王藉由觀察身心微細的『念念遷謝、新新不住』，體悟有為法具備剎那盡滅的無常本質，無需等到肉身徹底壞滅方知死亡。長水大師等祖師指出，佛陀引導匿王述說身心微細的生滅遷變，旨在建立『生滅中有不生滅』的對照，為後續顯發不隨無常遷變的真如見性做鋪墊。",
+            "terms": [
+              {
+                "term": "無常變壞",
+                "explanation": "指一切有為法（身心與世間萬物）皆非永恆常住，隨時間與因緣推移而隨時發生變異與壞滅。"
+              },
+              {
+                "term": "念念遷謝",
+                "explanation": "「念念」指極短的時間剎那；「遷謝」指遷流與謝落消逝。形容身心意識在極微細的時間內不斷新陳交替、前念滅而後念生。"
+              },
+              {
+                "term": "新新不住",
+                "explanation": "每一個新產生的剎那狀態或生滅現象，都無法暫時停留保持（無『住』相），體現諸行無常、剎那生滅的本質。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T19n0945_002_p0048_s001": {
+      "sentence_id": "T19n0945_002_p0048_s001",
+      "source_text": "「如是，世尊！",
+      "source_hash": "sha256:5298de31dc8e",
+      "active_version_id": "v_20261123_133836_gemini",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261123_133836_gemini",
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "jiehuan_yaojie"
+          ],
+          "created_at": "2026-11-23T13:38:36+08:00",
+          "content": {
+            "literal_translation": "正是如此，世尊！",
+            "colloquial_translation": "「正是這樣啊，世尊！」（文殊菩薩回答世尊：事情確實如您所說的那樣。）",
+            "dharma_analysis": "此處文殊菩薩回答「如是」，係印可世尊所提出「無復更有文殊」之問。世尊藉由「文殊唯有一人，無復二尊」為喻，深顯妙明真心本體唯一絕待、無有對立。若於真體之上復立一「是文殊」的相狀，即落入對待妄見；文殊菩薩以「如是」隨順印許，直指自性本真、不離當體，絕非經由對立比較而得。",
+            "terms": [
+              {
+                "term": "如是",
+                "explanation": "意為「確實如此」，為佛弟子對佛陀所宣說之實相法理表示極度認同、印可與順從之用語。"
+              },
+              {
+                "term": "世尊",
+                "explanation": "梵語 Bhagavān（薄伽梵）之意譯，佛陀十號之一，指具足無量功德、為世間與出世間一切眾生所共同尊崇者。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T19n0945_002_p0049_s007": {
+      "sentence_id": "T19n0945_002_p0049_s007",
+      "source_text": "由是精真妙覺明性，故能令汝出指非指！」",
+      "source_hash": "sha256:00a6343ea85a",
+      "active_version_id": "v_20261123_134012_gemini",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261123_134012_gemini",
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "shanyue_xuanlan"
+          ],
+          "created_at": "2026-11-23T13:40:12+08:00",
+          "content": {
+            "literal_translation": "正是因為這是精純真實、微妙覺照的光明本性，所以才能使你超越『可被指示』與『不可被指示』的分別對待！",
+            "colloquial_translation": "正因為這才是你精純真實、微妙覺照的清淨真心，所以它能讓你徹底超越『那是見性、那不是見性』或『能指陳、不能指陳』的二元對立妄想！",
+            "dharma_analysis": "佛陀承接「一月真月」與「文殊無二」之喻，印證真心離言絕慮、本無對待。古德註疏指出，阿難將無相之「見精」誤視為有方所形體之物，故陷入可指（可指陳特定事物為見）與非指（無法指陳為見）的分別。事實上，妙覺明性湛然常住、萬法一如，唯有徹證此精純真實的真心本體，方能徹底脫離一切非此即彼的對待妄想，回歸絕待之真如。",
+            "terms": [
+              {
+                "term": "精真妙覺明性",
+                "explanation": "指離卻一切妄想雜染、純一真實、具足本有光明與圓滿覺照的常住真心（即如來藏妙真如性）。"
+              },
+              {
+                "term": "出",
+                "explanation": "超越、脫離、不在其中受其拘束。"
+              },
+              {
+                "term": "指非指",
+                "explanation": "「指」代表可被明確指示、辨別的對象（如指物為見）；「非指」代表無法被指示、否定對象的狀態。兩者合指二元對立的分別心態。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T19n0945_002_p0006_s002": {
+      "sentence_id": "T19n0945_002_p0006_s002",
+      "source_text": "我今此身終從變滅。」",
+      "source_hash": "sha256:fdd769d35631",
+      "active_version_id": "v_20261123_175313_gemini",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261123_175313_gemini",
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "prompt_version": "v1.0",
+          "referenced_masters": [],
+          "created_at": "2026-11-23T17:53:13+08:00",
+          "content": {
+            "literal_translation": "我如今的這個身體，最終必定會隨之衰變而走向滅絕。",
+            "colloquial_translation": "我現在這個身體，最終一定會走向衰變與死亡。",
+            "dharma_analysis": "波斯匿王根據肉體從小到大、從壯至老不斷遷變的現象，推論出有生必有滅的客觀規律，認知到四大假合之色身實乃無常敗壞之法。此語反映出凡夫將變壞之肉體視為自我，因而對死亡產生斷滅恐懼，正好為後文佛陀指點『見性常住、不曾滅壞』的妙明真心作了重要的鋪墊。",
+            "terms": [
+              {
+                "term": "此身",
+                "explanation": "指由地、水、火、風四大假合所組成的血肉軀體（即色身）。"
+              },
+              {
+                "term": "變滅",
+                "explanation": "遷流變化與壞滅死亡。指一切有為法隨時間推移所呈現的無常敗壞之相。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T19n0945_002_p0005_s001": {
+      "sentence_id": "T19n0945_002_p0005_s001",
+      "source_text": "佛告大王：「汝身現存，今復問汝：汝此肉身為同金剛常住不朽？",
+      "source_hash": "sha256:4e6fce51db9c",
+      "active_version_id": "v_20261123_175345_gemini",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261123_175345_gemini",
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "prompt_version": "v1.0",
+          "referenced_masters": [],
+          "created_at": "2026-11-23T17:53:45+08:00",
+          "content": {
+            "literal_translation": "佛陀告訴大王：「你現在身體尚存，今天我再問你：你這個肉身，是如同金剛一般常住而不朽壞？",
+            "colloquial_translation": "佛陀對波斯匿王說：「你現在還活著，我今天再問你：你這個血肉之軀，是像金剛寶石那樣永遠存在、不會朽壞呢？",
+            "dharma_analysis": "世尊在此藉由問答誘導波斯匿王觀察身心無常。佛陀先舉出『金剛常住不朽』為設問，旨在讓大王直下覺知肉身乃四大假合、必將變壞之生滅法；進而以此無常色身為反襯與對照，導引出後續不隨歲月衰變、不生不滅的真實心性（見性）。",
+            "terms": [
+              {
+                "term": "金剛",
+                "explanation": "梵語 vajra，喻最為堅硬、銳利、不可摧毀之物，佛典中常以此比喻實相真心或佛性之堅固不壞。"
+              },
+              {
+                "term": "常住不朽",
+                "explanation": "常住指體性超越時間而永不變遷，不朽指永不壞滅。此處世尊設問肉身是否常住，用以反襯世間色相之無常生滅。"
+              },
+              {
+                "term": "肉身",
+                "explanation": "指由父母所生、地水火風四大假合構成的血肉軀體，屬於生滅變壞的有漏色法。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T19n0945_002_p0003_s003": {
+      "sentence_id": "T19n0945_002_p0003_s003",
+      "source_text": "合掌禮佛，願聞如來顯出身心真妄虛實，現前生滅與不生滅二發明性。",
+      "source_hash": "sha256:2c4e7b9e0324",
+      "active_version_id": "v_20261123_175348_gemini",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261123_175348_gemini",
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "prompt_version": "v1.0",
+          "referenced_masters": [],
+          "created_at": "2026-11-23T17:53:48+08:00",
+          "content": {
+            "literal_translation": "（阿難）合攏雙掌禮拜佛陀，希望能聽聞如來顯發並示現身心當中的真實與虛妄、實在與虛假，以及現前所存在的生滅與不生滅這兩種被顯發闡明的本性。",
+            "colloquial_translation": "阿難恭敬地合掌向佛陀頂禮，祈願能聽聞如來為我們明確指出身心之中何者為真、何者為妄、何者為實、何者為虛，並清楚闡明眼前這隨緣變異的生滅現象與永不生滅的真心本性。",
+            "dharma_analysis": "阿難雖初悟本心，但仍未能在現前身心中精確區分真妄。故此處祈請佛陀顯發指陳：身心中何者是隨緣變異的「生滅」妄想（虛妄），何者是常住不變的「不生滅」真心（真實）。「發明」意為顯發闡明，阿難祈請如來剖析此二性，旨在破除將生滅影事誤認為不生滅自性的迷執，為後續會通四大、五陰即是真如妙心奠定基礎。",
+            "terms": [
+              {
+                "term": "真妄虛實",
+                "explanation": "佛學中指本體與現象的相對關係。真與實指常住不變、非虛妄的真如自性；妄與虛指隨緣生滅、無實體可得的妄想塵勞。"
+              },
+              {
+                "term": "生滅與不生滅",
+                "explanation": "生滅指有為法之遷流無常、有生有滅（如妄心與肉身）；不生滅指無為法之湛然常住、本無生滅（如真心自性）。"
+              },
+              {
+                "term": "發明性",
+                "explanation": "「發明」在古漢譯佛經中意為「顯發闡明」，非現代發明之意；「發明性」即指經由佛陀開示顯發出來的本質或法性。"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

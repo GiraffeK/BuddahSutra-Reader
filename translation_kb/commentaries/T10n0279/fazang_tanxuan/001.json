@@ -1,0 +1,15 @@
+{
+  "master_id": "fazang_tanxuan",
+  "sutra_id": "T10n0279",
+  "fascicle": 1,
+  "entries": [
+    {
+      "commentary_id": "fazang_T10n0279_001_c001",
+      "target_sentence_ids": ["T10n0279_001_p0005_s001", "T10n0279_001_p0005_s002", "T10n0279_001_p0008_s002"],
+      "alignment_type": "cross_edition",
+      "section_heading": "探玄記・海印三昧與法界緣起",
+      "original_commentary": "探玄記曰：如來初成正覺，入海印三昧，如大海澄淨，萬象頓現。金剛地與菩提樹等皆是如來稱性功德所現，非同三乘共教之土，乃「事事無礙法界」之究竟顯現。",
+      "cross_edition_note": "法藏大師《探玄記》原註六十華嚴（T09n0278），此處跨譯本對照八十華嚴〈世主妙嚴品〉道場莊嚴段落；義理完全相通。"
+    }
+  ]
+}

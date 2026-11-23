@@ -1,0 +1,15 @@
+{
+  "master_id": "xufa_zuanyao",
+  "sutra_id": "T10n0279",
+  "fascicle": 1,
+  "entries": [
+    {
+      "commentary_id": "xufa_T10n0279_001_c001",
+      "target_sentence_ids": ["T10n0279_001_p0005_s001", "T10n0279_001_p0006_s005"],
+      "alignment_type": "exact",
+      "section_heading": "纂要・會通澄觀《疏鈔》與李通玄《合論》",
+      "original_commentary": "纂要曰：清涼《疏鈔》詳於科判消文，顯法界事事無礙之嚴密；棗柏《合論》直指初心頓證，顯當念成佛之機用。今會合兩家：「阿蘭若法」在教則為清淨法性處，在觀則為行人當下一念無諍真心，教觀雙美，方盡華嚴之妙。",
+      "cross_edition_note": null
+    }
+  ]
+}

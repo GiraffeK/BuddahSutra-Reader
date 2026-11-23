@@ -1,0 +1,15 @@
+{
+  "master_id": "zongmi_xingyuan",
+  "sutra_id": "T10n0279",
+  "fascicle": 1,
+  "entries": [
+    {
+      "commentary_id": "zongmi_T10n0279_001_c001",
+      "target_sentence_ids": ["T10n0279_001_p0008_s001", "T10n0279_001_p0008_s003"],
+      "alignment_type": "cross_edition",
+      "section_heading": "行願品疏鈔・總論華嚴一真法界心",
+      "original_commentary": "疏鈔總論曰：華嚴全經所顯，即眾生本覺靈知之一心。佛成正覺如虛空無分別而遍照十方，正與禪宗直指人心、見性成佛之旨冥合不二。",
+      "cross_edition_note": "宗密大師《華嚴經行願品疏鈔》主要針對四十華嚴（T10n0293〈入不思議解脫境界普賢行願品〉），此處節錄其總論華嚴法界心要以供跨譯本對照。"
+    }
+  ]
+}

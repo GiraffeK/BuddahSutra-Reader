@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+translation_kb/.index/
+*.tmp
+.DS_Store

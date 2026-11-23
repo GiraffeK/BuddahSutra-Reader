@@ -1,0 +1,31 @@
+{
+  "master_id": "litongxuan_lun",
+  "sutra_id": "T10n0279",
+  "fascicle": 1,
+  "entries": [
+    {
+      "commentary_id": "litongxuan_T10n0279_001_c001",
+      "target_sentence_ids": ["T10n0279_001_p0005_s001"],
+      "alignment_type": "exact",
+      "section_heading": "論・直指不動智佛與阿蘭若法",
+      "original_commentary": "論曰：「阿蘭若法」者，即眾生本有寂靜無為法界，非遠離人間別求山林也。言「始成正覺」者，初發心時便成正覺，一切眾生一念回光返照，頓悟自心本來是佛，即是「始成正覺」，莫作古佛往事會之。",
+      "cross_edition_note": null
+    },
+    {
+      "commentary_id": "litongxuan_T10n0279_001_c002",
+      "target_sentence_ids": ["T10n0279_001_p0005_s002", "T10n0279_001_p0005_s005", "T10n0279_001_p0005_s008"],
+      "alignment_type": "exact",
+      "section_heading": "論・依報即自心智境",
+      "original_commentary": "論曰：金剛地、菩提樹、摩尼寶，皆表根本智與差別智之妙用。眾生若執著外境有樹有寶，即成凡情；若知樹即菩提大智、地即不動真心，則一切境界無非說法妙音。",
+      "cross_edition_note": null
+    },
+    {
+      "commentary_id": "litongxuan_T10n0279_001_c003",
+      "target_sentence_ids": ["T10n0279_001_p0006_s005", "T10n0279_001_p0008_s002", "T10n0279_001_p0008_s003"],
+      "alignment_type": "exact",
+      "section_heading": "論・一念法界與虛空平等智",
+      "original_commentary": "論曰：「一念之間，悉包法界」，蓋心性無量，三世古今不離當念。故下文以虛空為喻：虛空含受萬像而無分別，修行人若能於日用中無取無捨，即與佛智入三世平等無異。",
+      "cross_edition_note": null
+    }
+  ]
+}

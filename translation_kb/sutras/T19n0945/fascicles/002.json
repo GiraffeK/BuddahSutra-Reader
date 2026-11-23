@@ -1,0 +1,3413 @@
+{
+  "schema_version": "1.0",
+  "source": "CBETA Online Data API (cbdata.dila.edu.tw)",
+  "sutra_id": "T19n0945",
+  "sutra_title": "大佛頂如來密因修證了義諸菩薩萬行首楞嚴經",
+  "edition": "十卷楞嚴（唐・般剌蜜帝譯）",
+  "translator": "唐 般剌蜜帝譯",
+  "fascicle": 2,
+  "fascicle_count": 10,
+  "fascicle_title": "卷第2",
+  "paragraphs": [
+    {
+      "paragraph_id": "T19n0945_002_p0001",
+      "index": 1,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0001_s001",
+          "index": 1,
+          "text": "大佛頂如來密因修證了義諸菩薩萬行首楞嚴經卷第二",
+          "source_hash": "sha256:68032b5d5685"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0002",
+      "index": 2,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0002_s001",
+          "index": 1,
+          "text": "唐天竺沙門般剌蜜帝譯",
+          "source_hash": "sha256:7802b8e8060f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0003",
+      "index": 3,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0003_s001",
+          "index": 1,
+          "text": "爾時，阿難及諸大眾聞佛示誨，身心泰然。",
+          "source_hash": "sha256:ec705a6012f6"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0003_s002",
+          "index": 2,
+          "text": "念無始來失却本心，妄認緣塵分別影事，今日開悟，如失乳兒忽遇慈母。",
+          "source_hash": "sha256:c0925a6b502b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0003_s003",
+          "index": 3,
+          "text": "合掌禮佛，願聞如來顯出身心真妄虛實，現前生滅與不生滅二發明性。",
+          "source_hash": "sha256:2c4e7b9e0324"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0004",
+      "index": 4,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0004_s001",
+          "index": 1,
+          "text": "波斯匿王起立白佛：「我昔未承諸佛誨勅，見迦旃延、毘羅胝子，咸言：『此身死後斷滅，名為涅槃。』我雖值佛，今猶狐疑。",
+          "source_hash": "sha256:35b3ad8601f9"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0004_s002",
+          "index": 2,
+          "text": "云何發揮，證知此心不生滅地？",
+          "source_hash": "sha256:1b48286d892c"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0004_s003",
+          "index": 3,
+          "text": "今此大眾諸有漏者，咸皆願聞。」",
+          "source_hash": "sha256:fef0dcecd165"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0005",
+      "index": 5,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0005_s001",
+          "index": 1,
+          "text": "佛告大王：「汝身現存，今復問汝：汝此肉身為同金剛常住不朽？",
+          "source_hash": "sha256:4e6fce51db9c"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0005_s002",
+          "index": 2,
+          "text": "為復變壞？」",
+          "source_hash": "sha256:475eb1ae537f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0006",
+      "index": 6,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0006_s001",
+          "index": 1,
+          "text": "「世尊！",
+          "source_hash": "sha256:79860f4c7fc2"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0006_s002",
+          "index": 2,
+          "text": "我今此身終從變滅。」",
+          "source_hash": "sha256:fdd769d35631"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0007",
+      "index": 7,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0007_s001",
+          "index": 1,
+          "text": "佛言：「大王！",
+          "source_hash": "sha256:ef8d032271c0"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0007_s002",
+          "index": 2,
+          "text": "汝未曾滅，云何知滅？」",
+          "source_hash": "sha256:dcf001720cba"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0008",
+      "index": 8,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0008_s001",
+          "index": 1,
+          "text": "「世尊！",
+          "source_hash": "sha256:79860f4c7fc2"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0008_s002",
+          "index": 2,
+          "text": "我此無常變壞之身雖未曾滅，我觀現前念念遷謝，新新不住；",
+          "source_hash": "sha256:266f0e2a30e3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0008_s003",
+          "index": 3,
+          "text": "如火成灰，漸漸銷殞，殞亡不息，決知此身當從滅盡。」",
+          "source_hash": "sha256:fb89ce2a48a3"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0009",
+      "index": 9,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0009_s001",
+          "index": 1,
+          "text": "佛言：「如是，大王！",
+          "source_hash": "sha256:974575aa5471"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0009_s002",
+          "index": 2,
+          "text": "汝今生齡已從衰老，顏貌何如童子之時？」",
+          "source_hash": "sha256:1178d8a6fb67"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0010",
+      "index": 10,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0010_s001",
+          "index": 1,
+          "text": "「世尊！",
+          "source_hash": "sha256:79860f4c7fc2"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0010_s002",
+          "index": 2,
+          "text": "我昔孩孺，膚腠潤澤，年至長成血氣充滿，而今頹齡迫於衰耄，形色枯悴，精神昏昧，髮白面皺，逮將不久，如何見比充盛之時！」",
+          "source_hash": "sha256:3c05ee3e0e9f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0011",
+      "index": 11,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0011_s001",
+          "index": 1,
+          "text": "佛言：「大王！",
+          "source_hash": "sha256:ef8d032271c0"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0011_s002",
+          "index": 2,
+          "text": "汝之形容應不頓朽？」",
+          "source_hash": "sha256:10c6cd42f0ec"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0012",
+      "index": 12,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0012_s001",
+          "index": 1,
+          "text": "王言：「世尊！",
+          "source_hash": "sha256:fa57efc7532d"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0012_s002",
+          "index": 2,
+          "text": "變化密移，我誠不覺，寒暑遷流，漸至於此。",
+          "source_hash": "sha256:299aac12baf4"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0012_s003",
+          "index": 3,
+          "text": "何以故？",
+          "source_hash": "sha256:78567a572ad3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0012_s004",
+          "index": 4,
+          "text": "我年二十雖號年少，顏貌已老初十年時；",
+          "source_hash": "sha256:17d789b9763f"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0012_s005",
+          "index": 5,
+          "text": "三十之年又衰二十；",
+          "source_hash": "sha256:2da3a3c2a897"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0012_s006",
+          "index": 6,
+          "text": "于今六十又過于二，觀五十時宛然強壯。",
+          "source_hash": "sha256:25405038f2bb"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0012_s007",
+          "index": 7,
+          "text": "世尊！",
+          "source_hash": "sha256:fd4b778ef6bf"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0012_s008",
+          "index": 8,
+          "text": "我見密移，雖此殂落其間流易且限十年。",
+          "source_hash": "sha256:e92e63b53106"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0012_s009",
+          "index": 9,
+          "text": "若復令我微細思惟：『其變寧唯一紀二紀，實為年變；",
+          "source_hash": "sha256:3cadbba1fdf4"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0012_s010",
+          "index": 10,
+          "text": "豈唯年變，亦兼月化；",
+          "source_hash": "sha256:b52b296b850f"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0012_s011",
+          "index": 11,
+          "text": "何直月化，兼又日遷。』沈思諦觀，剎那剎那、念念之間不得停住，故知我身終從變滅。」",
+          "source_hash": "sha256:0d0832dbbce8"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0013",
+      "index": 13,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0013_s001",
+          "index": 1,
+          "text": "佛言：「大王！",
+          "source_hash": "sha256:ef8d032271c0"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0013_s002",
+          "index": 2,
+          "text": "汝見變化遷改不停，悟知汝滅；",
+          "source_hash": "sha256:5c3086120fb4"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0013_s003",
+          "index": 3,
+          "text": "亦於滅時，知汝身中有不滅耶？」",
+          "source_hash": "sha256:a6b3f188f51c"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0014",
+      "index": 14,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0014_s001",
+          "index": 1,
+          "text": "波斯匿王合掌白佛：「我實不知！」",
+          "source_hash": "sha256:6a2c94b614dd"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0015",
+      "index": 15,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0015_s001",
+          "index": 1,
+          "text": "佛言：「我今示汝不生滅性。",
+          "source_hash": "sha256:1985e0e54a0b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0015_s002",
+          "index": 2,
+          "text": "大王！",
+          "source_hash": "sha256:fffdc93ba636"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0015_s003",
+          "index": 3,
+          "text": "汝年幾時見恒河水？」",
+          "source_hash": "sha256:465167c5286a"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0016",
+      "index": 16,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0016_s001",
+          "index": 1,
+          "text": "王言：「我生三歲，慈母携我謁耆婆天，經過此流，爾時即知是恒河水。」",
+          "source_hash": "sha256:94cfff6e4937"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0017",
+      "index": 17,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0017_s001",
+          "index": 1,
+          "text": "佛言：「大王！",
+          "source_hash": "sha256:ef8d032271c0"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0017_s002",
+          "index": 2,
+          "text": "如汝所說，二十之時衰於十歲，乃至六十，日月歲時念念遷變；",
+          "source_hash": "sha256:cbd17b9b9a6b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0017_s003",
+          "index": 3,
+          "text": "則汝三歲見此河時，至年十三其水云何？」",
+          "source_hash": "sha256:a086acf9e020"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0018",
+      "index": 18,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0018_s001",
+          "index": 1,
+          "text": "王言：「如三歲時宛然無異；",
+          "source_hash": "sha256:3684c023b248"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0018_s002",
+          "index": 2,
+          "text": "乃至于今年六十二，亦無有異。」",
+          "source_hash": "sha256:fb825e8dcf11"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0019",
+      "index": 19,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0019_s001",
+          "index": 1,
+          "text": "佛言：「汝今自傷髮白面皺，其面必定皺於童年；",
+          "source_hash": "sha256:c15537dbbaf9"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0019_s002",
+          "index": 2,
+          "text": "則汝今時觀此恒河，與昔童時觀河之見，有童耄不？」",
+          "source_hash": "sha256:2cea97f3df79"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0020",
+      "index": 20,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0020_s001",
+          "index": 1,
+          "text": "王言：「不也，世尊！」",
+          "source_hash": "sha256:e5521bb3edfc"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0021",
+      "index": 21,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0021_s001",
+          "index": 1,
+          "text": "佛言：「大王！",
+          "source_hash": "sha256:ef8d032271c0"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0021_s002",
+          "index": 2,
+          "text": "汝面雖皺，而此見精性未曾皺！",
+          "source_hash": "sha256:609c3c6eaeff"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0021_s003",
+          "index": 3,
+          "text": "皺者為變，不皺非變；",
+          "source_hash": "sha256:5a850af326a6"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0021_s004",
+          "index": 4,
+          "text": "變者受滅，彼不變者元無生滅，云何於中受汝生死？",
+          "source_hash": "sha256:cc382a6d324c"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0021_s005",
+          "index": 5,
+          "text": "而猶引彼末伽梨等，都言此身死後全滅！」",
+          "source_hash": "sha256:a318847b21c5"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0022",
+      "index": 22,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0022_s001",
+          "index": 1,
+          "text": "王聞是言，信知身後捨生趣生，與諸大眾踊躍歡喜，得未曾有。",
+          "source_hash": "sha256:3c7db1edf560"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0023",
+      "index": 23,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0023_s001",
+          "index": 1,
+          "text": "阿難即從座起，禮佛合掌，長跪白佛：「世尊！",
+          "source_hash": "sha256:f66cb492f347"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0023_s002",
+          "index": 2,
+          "text": "若此見聞必不生滅，云何世尊名我等輩遺失真性，顛倒行事？",
+          "source_hash": "sha256:632acd8aed1b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0023_s003",
+          "index": 3,
+          "text": "願興慈悲洗我塵垢！」",
+          "source_hash": "sha256:a2e86e9a5e5b"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0024",
+      "index": 24,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0024_s001",
+          "index": 1,
+          "text": "即時如來垂金色臂，輪手下指，示阿難言：「汝今見我母陀羅手為正為倒？」",
+          "source_hash": "sha256:c252c67a4b64"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0025",
+      "index": 25,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0025_s001",
+          "index": 1,
+          "text": "阿難言：「世間眾生以此為倒，而我不知誰正誰倒。」",
+          "source_hash": "sha256:fce9f5269a4d"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0026",
+      "index": 26,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0026_s001",
+          "index": 1,
+          "text": "佛告阿難：「若世間人以此為倒，即世間人將何為正？」",
+          "source_hash": "sha256:6833c4960c65"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0027",
+      "index": 27,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0027_s001",
+          "index": 1,
+          "text": "阿難言：「如來竪臂，兜羅綿手上指於空，則名為正。」",
+          "source_hash": "sha256:8cdbe47a41a9"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0028",
+      "index": 28,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0028_s001",
+          "index": 1,
+          "text": "佛即竪臂，告阿難言：「若此顛倒首尾相換，諸世間人一倍瞻視，則知汝身與諸如來清淨法身比類發明；",
+          "source_hash": "sha256:d048e368d8dc"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0028_s002",
+          "index": 2,
+          "text": "如來之身名正遍知，汝等之身號性顛倒。",
+          "source_hash": "sha256:1b49bdda07ea"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0028_s003",
+          "index": 3,
+          "text": "隨汝諦觀汝身、佛身，稱顛倒者，名字何處號為顛倒？」",
+          "source_hash": "sha256:f6ac17c27884"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0029",
+      "index": 29,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0029_s001",
+          "index": 1,
+          "text": "于時阿難與諸大眾，瞪矒瞻佛目精不瞬，不知身心顛倒所在。",
+          "source_hash": "sha256:29f48b154c71"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0029_s002",
+          "index": 2,
+          "text": "佛興慈悲，哀愍阿難及諸大眾，發海潮音遍告同會：「諸善男子！",
+          "source_hash": "sha256:6f37d38cfdca"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0029_s003",
+          "index": 3,
+          "text": "我常說言：『色心諸緣及心所使、諸所緣法，唯心所現。』汝身、汝心，皆是妙明真精妙心中所現物。",
+          "source_hash": "sha256:4c63900da095"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0029_s004",
+          "index": 4,
+          "text": "云何汝等遺失本妙圓妙明心寶明妙性、認悟中迷？",
+          "source_hash": "sha256:91db544174bb"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0029_s005",
+          "index": 5,
+          "text": "晦昧為空；",
+          "source_hash": "sha256:a1e327805389"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0029_s006",
+          "index": 6,
+          "text": "空晦暗中結暗為色；",
+          "source_hash": "sha256:708b5980cffe"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0029_s007",
+          "index": 7,
+          "text": "色雜妄想，想相為身；",
+          "source_hash": "sha256:d113a04f5422"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0029_s008",
+          "index": 8,
+          "text": "聚緣內搖，趣外奔逸，昏擾擾相以為心性。",
+          "source_hash": "sha256:c4c1be85e33c"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0029_s009",
+          "index": 9,
+          "text": "一迷為心，決定惑為色身之內，不知色身外洎山河虛空大地，咸是妙明真心中物。",
+          "source_hash": "sha256:bdb8bd1a308c"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0029_s010",
+          "index": 10,
+          "text": "譬如澄清百千大海，棄之、唯認一浮漚體目為全潮，窮盡瀛渤。",
+          "source_hash": "sha256:622d6de20be7"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0029_s011",
+          "index": 11,
+          "text": "汝等即是迷中倍人！",
+          "source_hash": "sha256:f936baed8b3d"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0029_s012",
+          "index": 12,
+          "text": "如我垂手等無差別，如來說為可憐愍者。」",
+          "source_hash": "sha256:a95a776540cf"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0030",
+      "index": 30,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0030_s001",
+          "index": 1,
+          "text": "阿難承佛悲救深誨，垂泣叉手而白佛言：「我雖承佛如是妙音，悟妙明心元所圓滿常住心地，而我悟佛現說法音，現以緣心，允所瞻仰；",
+          "source_hash": "sha256:a9f41c6c5a21"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0030_s002",
+          "index": 2,
+          "text": "徒獲此心，未敢認為本元心地。",
+          "source_hash": "sha256:78ec140dc69e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0030_s003",
+          "index": 3,
+          "text": "願佛哀愍宣示圓音，拔我疑根歸無上道！」",
+          "source_hash": "sha256:11fafcfad5aa"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0031",
+      "index": 31,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0031_s001",
+          "index": 1,
+          "text": "佛告阿難：「汝等尚以緣心聽法，此法亦緣，非得法性。",
+          "source_hash": "sha256:a5add7d26d26"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0031_s002",
+          "index": 2,
+          "text": "如人以手指月示人，彼人因指當應看月，若復觀指以為月體，此人豈唯亡失月輪，亦亡其指。",
+          "source_hash": "sha256:0679feff0064"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0031_s003",
+          "index": 3,
+          "text": "何以故？",
+          "source_hash": "sha256:78567a572ad3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0031_s004",
+          "index": 4,
+          "text": "以所標指為明月故。",
+          "source_hash": "sha256:3988e3d4a2d7"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0031_s005",
+          "index": 5,
+          "text": "豈唯亡指，亦復不識明之與暗。",
+          "source_hash": "sha256:07c0eccf3221"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0031_s006",
+          "index": 6,
+          "text": "何以故？",
+          "source_hash": "sha256:78567a572ad3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0031_s007",
+          "index": 7,
+          "text": "即以指體為月明性，明暗二性無所了故。",
+          "source_hash": "sha256:f95c23c14ce6"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0031_s008",
+          "index": 8,
+          "text": "汝亦如是，若以分別我說法音為汝心者，此心自應離分別音、有分別性。",
+          "source_hash": "sha256:4fa447e87ec5"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0031_s009",
+          "index": 9,
+          "text": "譬如有客寄宿旅亭，暫止便去，終不常住；",
+          "source_hash": "sha256:c85f0caff887"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0031_s010",
+          "index": 10,
+          "text": "而掌亭人都無所去，名為亭主。",
+          "source_hash": "sha256:a7bbd8157250"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0031_s011",
+          "index": 11,
+          "text": "此亦如是，若真汝心，則無所去，云何離聲無分別性？",
+          "source_hash": "sha256:2108578c9ce5"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0031_s012",
+          "index": 12,
+          "text": "斯則豈唯聲分別心，分別我容，離諸色相無分別性；",
+          "source_hash": "sha256:4f43f8475f94"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0031_s013",
+          "index": 13,
+          "text": "如是乃至分別都無，非色非空，拘舍離等昧為冥諦，離諸法緣無分別性，則汝心性各有所還，云何為主？」",
+          "source_hash": "sha256:e5e39c9efd1f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0032",
+      "index": 32,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0032_s001",
+          "index": 1,
+          "text": "阿難言：「若我心性各有所還，則如來說妙明元心，云何無還？",
+          "source_hash": "sha256:15b466a0aad1"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0032_s002",
+          "index": 2,
+          "text": "唯垂哀愍為我宣說！」",
+          "source_hash": "sha256:25a31d467b5a"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0033",
+      "index": 33,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0033_s001",
+          "index": 1,
+          "text": "佛告阿難：「且汝見我見精明元，此見雖非妙精明心，如第二月；",
+          "source_hash": "sha256:7f3c940e6b05"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s002",
+          "index": 2,
+          "text": "非是月影。",
+          "source_hash": "sha256:5f58c9be9d2a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s003",
+          "index": 3,
+          "text": "汝應諦聽！",
+          "source_hash": "sha256:0679d51eeb60"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s004",
+          "index": 4,
+          "text": "今當示汝無所還地。",
+          "source_hash": "sha256:304d1ed16184"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s005",
+          "index": 5,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s006",
+          "index": 6,
+          "text": "此大講堂，洞開東方，日輪昇天則有明耀；",
+          "source_hash": "sha256:25eeaead9aab"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s007",
+          "index": 7,
+          "text": "中夜黑月，雲霧晦暝，則復昏暗；",
+          "source_hash": "sha256:38d993d71831"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s008",
+          "index": 8,
+          "text": "戶牖之隙則復見通；",
+          "source_hash": "sha256:1e330e0ea84f"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s009",
+          "index": 9,
+          "text": "牆宇之間則復觀擁；",
+          "source_hash": "sha256:778df7497607"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s010",
+          "index": 10,
+          "text": "分別之處則復見緣；",
+          "source_hash": "sha256:3946dc46b4e9"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s011",
+          "index": 11,
+          "text": "頑虛之中遍是空性；",
+          "source_hash": "sha256:92d0d4cd27de"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s012",
+          "index": 12,
+          "text": "欝𡋯之象則紆昏塵；",
+          "source_hash": "sha256:14731138403b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s013",
+          "index": 13,
+          "text": "澄霽斂氛又觀清淨。",
+          "source_hash": "sha256:36e0efc49adc"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s014",
+          "index": 14,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s015",
+          "index": 15,
+          "text": "汝咸看此諸變化相，吾今各還本所因處。",
+          "source_hash": "sha256:900b8bcaf67b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s016",
+          "index": 16,
+          "text": "云何本因？",
+          "source_hash": "sha256:52ec472e7bc4"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s017",
+          "index": 17,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s018",
+          "index": 18,
+          "text": "此諸變化，明還日輪；",
+          "source_hash": "sha256:eaf1b9428086"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s019",
+          "index": 19,
+          "text": "何以故？",
+          "source_hash": "sha256:78567a572ad3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s020",
+          "index": 20,
+          "text": "無日不明，明因屬日，是故還日。",
+          "source_hash": "sha256:54a4728f73b4"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s021",
+          "index": 21,
+          "text": "暗還黑月；",
+          "source_hash": "sha256:42340ccc2aec"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s022",
+          "index": 22,
+          "text": "通還戶牖；",
+          "source_hash": "sha256:abeda9017609"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s023",
+          "index": 23,
+          "text": "擁還牆宇；",
+          "source_hash": "sha256:765496b06d21"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s024",
+          "index": 24,
+          "text": "緣還分別；",
+          "source_hash": "sha256:e7923b5e86bf"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s025",
+          "index": 25,
+          "text": "頑虛還空；",
+          "source_hash": "sha256:5750152f7c12"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s026",
+          "index": 26,
+          "text": "欝𡋯還塵；",
+          "source_hash": "sha256:b59d3ae50bf7"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s027",
+          "index": 27,
+          "text": "清明還霽。",
+          "source_hash": "sha256:fdac39985506"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s028",
+          "index": 28,
+          "text": "則諸世間一切所有，不出斯類。",
+          "source_hash": "sha256:36e6a7c3f25e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s029",
+          "index": 29,
+          "text": "汝見八種見精明性，當欲誰還！",
+          "source_hash": "sha256:2ac68206ddb4"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s030",
+          "index": 30,
+          "text": "何以故？",
+          "source_hash": "sha256:78567a572ad3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s031",
+          "index": 31,
+          "text": "若還於明，則不明時無復見暗。",
+          "source_hash": "sha256:36346165b7a5"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s032",
+          "index": 32,
+          "text": "雖明暗等種種差別，見無差別，諸可還者自然非汝；",
+          "source_hash": "sha256:39799887c0de"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s033",
+          "index": 33,
+          "text": "不汝還者非汝而誰？",
+          "source_hash": "sha256:c37232b694a3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0033_s034",
+          "index": 34,
+          "text": "則知汝心本妙明淨，汝自迷悶喪本受輪，於生死中常被漂溺，是故如來名可憐愍。」",
+          "source_hash": "sha256:9734dbf05baf"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0034",
+      "index": 34,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0034_s001",
+          "index": 1,
+          "text": "阿難言：「我雖識此見性無還，云何得知是我真性？」",
+          "source_hash": "sha256:b5e7fc71b934"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0035",
+      "index": 35,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0035_s001",
+          "index": 1,
+          "text": "佛告阿難：「吾今問汝：今汝未得無漏清淨，承佛神力見於初禪，得無障礙；",
+          "source_hash": "sha256:68a4521a89bd"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s002",
+          "index": 2,
+          "text": "而阿那律見閻浮提，如觀掌中菴摩羅菓；",
+          "source_hash": "sha256:59519c8ce052"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s003",
+          "index": 3,
+          "text": "諸菩薩等見百千界；",
+          "source_hash": "sha256:3ca6ef71d6a5"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s004",
+          "index": 4,
+          "text": "十方如來窮盡微塵清淨國土無所不矚；",
+          "source_hash": "sha256:3a3f9ded7d83"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s005",
+          "index": 5,
+          "text": "眾生洞視不過分寸。",
+          "source_hash": "sha256:e7f5ffeb1057"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s006",
+          "index": 6,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s007",
+          "index": 7,
+          "text": "且吾與汝觀四天王所住宮殿，中間遍覽水陸空行，雖有昏明種種形像，無非前塵分別留礙。",
+          "source_hash": "sha256:4d3ebc65c2f3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s008",
+          "index": 8,
+          "text": "汝應於此分別自他，今吾將汝擇於見中，誰是我體？",
+          "source_hash": "sha256:88c967bdc0cb"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s009",
+          "index": 9,
+          "text": "誰為物象？",
+          "source_hash": "sha256:80ae9c6d5966"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s010",
+          "index": 10,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s011",
+          "index": 11,
+          "text": "極汝見源，從日月宮是物非汝，至七金山周遍諦觀，雖種種光亦物非汝；",
+          "source_hash": "sha256:d483a9873896"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s012",
+          "index": 12,
+          "text": "漸漸更觀雲騰、鳥飛、風動、塵起、樹木、山川、草芥、人畜，咸物非汝。",
+          "source_hash": "sha256:16a32adbdedd"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s013",
+          "index": 13,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s014",
+          "index": 14,
+          "text": "是諸近遠諸有物性，雖復差殊，同汝見精清淨所矚。",
+          "source_hash": "sha256:b0fa8f856891"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s015",
+          "index": 15,
+          "text": "則諸物類自有差別，見性無殊。",
+          "source_hash": "sha256:0235092b06b9"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s016",
+          "index": 16,
+          "text": "此精妙明，誠汝見性。",
+          "source_hash": "sha256:bd01368bebde"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s017",
+          "index": 17,
+          "text": "若見是物，則汝亦可見吾之見。",
+          "source_hash": "sha256:032ed47a7129"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s018",
+          "index": 18,
+          "text": "若同見者名為見吾，吾不見時，何不見吾不見之處？",
+          "source_hash": "sha256:63384cf12014"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s019",
+          "index": 19,
+          "text": "若見不見，自然非彼不見之相。",
+          "source_hash": "sha256:16dd1dcc4186"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s020",
+          "index": 20,
+          "text": "若不見吾不見之地，自然非物，云何非汝？",
+          "source_hash": "sha256:74d6e629c645"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s021",
+          "index": 21,
+          "text": "又則汝今見物之時，汝既見物，物亦見汝；",
+          "source_hash": "sha256:67603a446ee1"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s022",
+          "index": 22,
+          "text": "體性紛雜，則汝與我并諸世間不成安立。",
+          "source_hash": "sha256:79347706c673"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s023",
+          "index": 23,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s024",
+          "index": 24,
+          "text": "若汝見時，是汝非我；",
+          "source_hash": "sha256:e4f29f365d41"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s025",
+          "index": 25,
+          "text": "見性周遍，非汝而誰？",
+          "source_hash": "sha256:40d066e3e4d1"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0035_s026",
+          "index": 26,
+          "text": "云何自疑汝之真性，性汝不真，取我求實！」",
+          "source_hash": "sha256:007f0886b3ae"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0036",
+      "index": 36,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0036_s001",
+          "index": 1,
+          "text": "阿難白佛言：「世尊！",
+          "source_hash": "sha256:37fa7385f907"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0036_s002",
+          "index": 2,
+          "text": "若此見性必我非餘，我與如來觀四天王勝藏寶殿，居日月宮，此見周圓遍娑婆國；",
+          "source_hash": "sha256:f27819eda3fd"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0036_s003",
+          "index": 3,
+          "text": "退歸精舍只見伽藍，清心戶堂但瞻簷廡。",
+          "source_hash": "sha256:05474b3e22ee"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0036_s004",
+          "index": 4,
+          "text": "世尊！",
+          "source_hash": "sha256:fd4b778ef6bf"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0036_s005",
+          "index": 5,
+          "text": "此見如是，其體本來周遍一界，今在室中唯滿一室，為復此見縮大為小？",
+          "source_hash": "sha256:94b4e6ae1a04"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0036_s006",
+          "index": 6,
+          "text": "為當牆宇夾令斷絕？",
+          "source_hash": "sha256:bdaa6170364b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0036_s007",
+          "index": 7,
+          "text": "我今不知斯義所在，願垂弘慈為我敷演！」",
+          "source_hash": "sha256:353c151b109e"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0037",
+      "index": 37,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0037_s001",
+          "index": 1,
+          "text": "佛告阿難：「一切世間大小、內外諸所事業，各屬前塵，不應說言見有舒縮。",
+          "source_hash": "sha256:76ea9497447a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0037_s002",
+          "index": 2,
+          "text": "譬如方器中見方空，吾復問汝，此方器中所見方空，為復定方？",
+          "source_hash": "sha256:cbddd1f7a2f5"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0037_s003",
+          "index": 3,
+          "text": "為不定方？",
+          "source_hash": "sha256:cf5015649b3e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0037_s004",
+          "index": 4,
+          "text": "若定方者，別安圓器空應不圓；",
+          "source_hash": "sha256:fceaa85de6a9"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0037_s005",
+          "index": 5,
+          "text": "若不定者，在方器中應無方空。",
+          "source_hash": "sha256:c9b672628095"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0037_s006",
+          "index": 6,
+          "text": "汝言不知斯義所在，義性如是，云何為在？",
+          "source_hash": "sha256:f4d441b87333"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0037_s007",
+          "index": 7,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0037_s008",
+          "index": 8,
+          "text": "若復欲令入無方圓，但除器方。",
+          "source_hash": "sha256:263790228d9f"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0037_s009",
+          "index": 9,
+          "text": "空體無方，不應說言更除虛空方相所在。",
+          "source_hash": "sha256:26f380f0b50d"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0037_s010",
+          "index": 10,
+          "text": "若如汝問『入室之時縮見令小』，仰觀日時，汝豈挽見齊於日面？",
+          "source_hash": "sha256:2809606ead45"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0037_s011",
+          "index": 11,
+          "text": "若築牆宇能夾見斷，穿為小竇，寧無續迹？",
+          "source_hash": "sha256:136d33b66c55"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0037_s012",
+          "index": 12,
+          "text": "是義不然。",
+          "source_hash": "sha256:7e32430a28b0"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0037_s013",
+          "index": 13,
+          "text": "一切眾生從無始來迷己為物，失於本心，為物所轉；",
+          "source_hash": "sha256:30d13409b4c7"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0037_s014",
+          "index": 14,
+          "text": "故於是中觀大、觀小。",
+          "source_hash": "sha256:7d8a293397cd"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0037_s015",
+          "index": 15,
+          "text": "若能轉物，則同如來身心圓明，不動道場，於一毛端遍能含受十方國土。」",
+          "source_hash": "sha256:31cd78768e51"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0038",
+      "index": 38,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0038_s001",
+          "index": 1,
+          "text": "阿難白佛言：「世尊！",
+          "source_hash": "sha256:37fa7385f907"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0038_s002",
+          "index": 2,
+          "text": "若此見精必我妙性，今此妙性現在我前，見必我真，我今身心復是何物？",
+          "source_hash": "sha256:cc6bbad8bdbb"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0038_s003",
+          "index": 3,
+          "text": "而今身心分別有實，彼見無別分辨我身。",
+          "source_hash": "sha256:4076794e36b8"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0038_s004",
+          "index": 4,
+          "text": "若實我心，令我今見，見性實我而身非我，何殊如來先所難言『物能見我』？",
+          "source_hash": "sha256:6010ac12e6b4"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0038_s005",
+          "index": 5,
+          "text": "唯垂大慈，開發未悟！」",
+          "source_hash": "sha256:98f735754b35"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0039",
+      "index": 39,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0039_s001",
+          "index": 1,
+          "text": "佛告阿難：「今汝所言『見在汝前』，是義非實。",
+          "source_hash": "sha256:92c969e3dd7b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0039_s002",
+          "index": 2,
+          "text": "若實汝前，汝實見者，則此見精既有方所，非無指示。",
+          "source_hash": "sha256:256e6aefd070"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0039_s003",
+          "index": 3,
+          "text": "且今與汝坐祇陀林，遍觀林渠及與殿堂，上至日月，前對恒河。",
+          "source_hash": "sha256:7adbf33311e8"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0039_s004",
+          "index": 4,
+          "text": "汝今於我師子座前，舉手指陳是種種相——陰者是林，明者是日，礙者是壁，通者是空，如是乃至草樹纖毫——大小雖殊，但可有形無不指著。",
+          "source_hash": "sha256:c86e96c4f470"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0039_s005",
+          "index": 5,
+          "text": "若必有見現在汝前，汝應以手礭實指陳何者是見？",
+          "source_hash": "sha256:32e411f277ca"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0039_s006",
+          "index": 6,
+          "text": "阿難當知，若空是見，既已成見，何者是空？",
+          "source_hash": "sha256:aa9c3e5f1b01"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0039_s007",
+          "index": 7,
+          "text": "若物是見，既已是見，何者為物？",
+          "source_hash": "sha256:3e73f714a67e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0039_s008",
+          "index": 8,
+          "text": "汝可微細披剝萬象，析出精明淨妙見元，指陳示我，同彼諸物分明無惑。」",
+          "source_hash": "sha256:6e2169df611c"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0040",
+      "index": 40,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0040_s001",
+          "index": 1,
+          "text": "阿難言：「我今於此重閣講堂，遠洎恒河、上觀日月，舉手所指、縱目所觀，指皆是物，無是見者。",
+          "source_hash": "sha256:c91c3e62c280"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0040_s002",
+          "index": 2,
+          "text": "世尊！",
+          "source_hash": "sha256:fd4b778ef6bf"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0040_s003",
+          "index": 3,
+          "text": "如佛所說，況我有漏初學聲聞，乃至菩薩亦不能於萬物象前剖出精見離一切物別有自性！」",
+          "source_hash": "sha256:4852781b3d91"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0041",
+      "index": 41,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0041_s001",
+          "index": 1,
+          "text": "佛言：「如是，如是！」",
+          "source_hash": "sha256:08fd71c7cc13"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0042",
+      "index": 42,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0042_s001",
+          "index": 1,
+          "text": "佛復告阿難：「如汝所言『無有精見離一切物別有自性』，則汝所指是物之中無是見者。",
+          "source_hash": "sha256:374aa590fb29"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0042_s002",
+          "index": 2,
+          "text": "今復告汝，汝與如來坐祇陀林，更觀林苑乃至日月種種象殊，必無見精受汝所指；",
+          "source_hash": "sha256:8e17a6e272c0"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0042_s003",
+          "index": 3,
+          "text": "汝又發明此諸物中何者非見？」",
+          "source_hash": "sha256:64c391251a0f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0043",
+      "index": 43,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0043_s001",
+          "index": 1,
+          "text": "阿難言：「我實遍見此祇陀林，不知是中何者非見。",
+          "source_hash": "sha256:0d9a7ff60620"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0043_s002",
+          "index": 2,
+          "text": "何以故？",
+          "source_hash": "sha256:78567a572ad3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0043_s003",
+          "index": 3,
+          "text": "若樹非見，云何見樹？",
+          "source_hash": "sha256:9dca1661ba8e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0043_s004",
+          "index": 4,
+          "text": "若樹即見，復云何樹？",
+          "source_hash": "sha256:b43c80868b22"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0043_s005",
+          "index": 5,
+          "text": "如是乃至若空非見，云何為空？",
+          "source_hash": "sha256:6e9e766949b1"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0043_s006",
+          "index": 6,
+          "text": "若空即見，復云何空？",
+          "source_hash": "sha256:ba3145d19a0b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0043_s007",
+          "index": 7,
+          "text": "我又思惟：『是萬象中微細發明無非見者！』」",
+          "source_hash": "sha256:bb18a438fde9"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0044",
+      "index": 44,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0044_s001",
+          "index": 1,
+          "text": "佛言：「如是，如是。」",
+          "source_hash": "sha256:1e93e6bbb42f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0045",
+      "index": 45,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0045_s001",
+          "index": 1,
+          "text": "於是大眾非無學者，聞佛此言，茫然不知是義終始，一時惶悚，失其所守。",
+          "source_hash": "sha256:bfd5adadc299"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0045_s002",
+          "index": 2,
+          "text": "如來知其魂慮變慴，心生憐愍，安慰阿難及諸大眾：「諸善男子！",
+          "source_hash": "sha256:9e67c4105f6f"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0045_s003",
+          "index": 3,
+          "text": "無上法王是真實語！",
+          "source_hash": "sha256:4e1df44b6955"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0045_s004",
+          "index": 4,
+          "text": "如所如說不誑不妄，非末伽梨四種不死矯亂論議。",
+          "source_hash": "sha256:439f4f06f246"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0045_s005",
+          "index": 5,
+          "text": "汝諦思惟，無忝哀慕。」",
+          "source_hash": "sha256:0da8b99f0aab"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0046",
+      "index": 46,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0046_s001",
+          "index": 1,
+          "text": "是時，文殊師利法王子愍諸四眾，在大眾中即從座起，頂禮佛足，合掌恭敬而白佛言：「世尊！",
+          "source_hash": "sha256:60fdeb6b63a7"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0046_s002",
+          "index": 2,
+          "text": "此諸大眾，不悟如來發明二種精見色空、是非是義。",
+          "source_hash": "sha256:61cb125eb389"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0046_s003",
+          "index": 3,
+          "text": "世尊！",
+          "source_hash": "sha256:fd4b778ef6bf"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0046_s004",
+          "index": 4,
+          "text": "若此前緣色空等象，若是見者，應有所指；",
+          "source_hash": "sha256:b85f5091b0e7"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0046_s005",
+          "index": 5,
+          "text": "若非見者，應無所矚。",
+          "source_hash": "sha256:5e27df0766d1"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0046_s006",
+          "index": 6,
+          "text": "而今不知是義所歸，故有驚怖，非是疇昔善根輕尠。",
+          "source_hash": "sha256:d725798365d8"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0046_s007",
+          "index": 7,
+          "text": "唯願如來大慈發明，此諸物象與此見精元是何物，於其中間無是非是。」",
+          "source_hash": "sha256:286d617d47e8"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0047",
+      "index": 47,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0047_s001",
+          "index": 1,
+          "text": "佛告文殊及諸大眾：「十方如來及大菩薩，於其自住三摩地中，見與見緣并所想相，如虛空花本無所有；",
+          "source_hash": "sha256:0e4d26a89828"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0047_s002",
+          "index": 2,
+          "text": "此見及緣，元是菩提妙淨明體，云何於中有是非是？",
+          "source_hash": "sha256:3692e836b43c"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0047_s003",
+          "index": 3,
+          "text": "文殊！",
+          "source_hash": "sha256:c36179333f5d"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0047_s004",
+          "index": 4,
+          "text": "吾今問汝，如汝文殊，更有文殊是文殊者？",
+          "source_hash": "sha256:c088bcc881cb"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0047_s005",
+          "index": 5,
+          "text": "為無文殊？」",
+          "source_hash": "sha256:51e4924c92e2"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0048",
+      "index": 48,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0048_s001",
+          "index": 1,
+          "text": "「如是，世尊！",
+          "source_hash": "sha256:5298de31dc8e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0048_s002",
+          "index": 2,
+          "text": "我真文殊，無是文殊。",
+          "source_hash": "sha256:45e8819aa7fc"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0048_s003",
+          "index": 3,
+          "text": "何以故？",
+          "source_hash": "sha256:78567a572ad3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0048_s004",
+          "index": 4,
+          "text": "若有是者，則二文殊。",
+          "source_hash": "sha256:6ca8f39fa3ea"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0048_s005",
+          "index": 5,
+          "text": "然我今日非無文殊，於中實無是非二相。」",
+          "source_hash": "sha256:f0d9190fc9a6"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0049",
+      "index": 49,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0049_s001",
+          "index": 1,
+          "text": "佛言：「此見妙明與諸空塵，亦復如是。",
+          "source_hash": "sha256:4ab56c02f508"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0049_s002",
+          "index": 2,
+          "text": "本是妙明無上菩提淨圓真心，妄為色空及與聞見，如第二月，誰為是月？",
+          "source_hash": "sha256:2143a8a8bec0"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0049_s003",
+          "index": 3,
+          "text": "又誰非月？",
+          "source_hash": "sha256:8377b97dc460"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0049_s004",
+          "index": 4,
+          "text": "文殊！",
+          "source_hash": "sha256:c36179333f5d"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0049_s005",
+          "index": 5,
+          "text": "但一月真，中間自無是月、非月。",
+          "source_hash": "sha256:d497e2bac17b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0049_s006",
+          "index": 6,
+          "text": "是以汝今觀見與塵種種發明，名為妄想，不能於中出是非是。",
+          "source_hash": "sha256:5398dde6b497"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0049_s007",
+          "index": 7,
+          "text": "由是精真妙覺明性，故能令汝出指非指！」",
+          "source_hash": "sha256:00a6343ea85a"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0050",
+      "index": 50,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0050_s001",
+          "index": 1,
+          "text": "阿難白佛言：「世尊！",
+          "source_hash": "sha256:37fa7385f907"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0050_s002",
+          "index": 2,
+          "text": "誠如法王所說，覺緣遍十方界湛然常住，性非生滅；",
+          "source_hash": "sha256:4c79cf4958e0"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0050_s003",
+          "index": 3,
+          "text": "與先梵志娑毘迦羅所談冥諦，及投灰等諸外道種說有真我遍滿十方，有何差別？",
+          "source_hash": "sha256:96189b36a3e6"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0050_s004",
+          "index": 4,
+          "text": "世尊亦曾於楞伽山為大慧等敷演斯義——彼外道等常說自然，我說因緣非彼境界。",
+          "source_hash": "sha256:63a5600fc19d"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0050_s005",
+          "index": 5,
+          "text": "——我今觀此覺性自然，非生非滅，遠離一切虛妄顛倒，似非因緣與彼自然；",
+          "source_hash": "sha256:3f5652f83cc1"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0050_s006",
+          "index": 6,
+          "text": "云何開示，不入群邪，獲真實心妙覺明性？」",
+          "source_hash": "sha256:dcbf8c45677d"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0051",
+      "index": 51,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0051_s001",
+          "index": 1,
+          "text": "佛告阿難：「我今如是開示方便，真實告汝，汝猶未悟，惑為自然。",
+          "source_hash": "sha256:44fa604bf54e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0051_s002",
+          "index": 2,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0051_s003",
+          "index": 3,
+          "text": "若必自然，自須甄明有自然體。",
+          "source_hash": "sha256:5190e6b0795d"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0051_s004",
+          "index": 4,
+          "text": "汝且觀此妙明見中，以何為自？",
+          "source_hash": "sha256:0fe3a9847547"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0051_s005",
+          "index": 5,
+          "text": "此見為復以明為自？",
+          "source_hash": "sha256:f182c13235d6"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0051_s006",
+          "index": 6,
+          "text": "以暗為自？",
+          "source_hash": "sha256:73c17065a87f"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0051_s007",
+          "index": 7,
+          "text": "以空為自？",
+          "source_hash": "sha256:f2fd367c6ec6"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0051_s008",
+          "index": 8,
+          "text": "以塞為自？",
+          "source_hash": "sha256:c9f95ae84879"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0051_s009",
+          "index": 9,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0051_s010",
+          "index": 10,
+          "text": "若明為自，應不見暗？",
+          "source_hash": "sha256:c68ad1302a36"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0051_s011",
+          "index": 11,
+          "text": "若復以空為自體者，應不見塞？",
+          "source_hash": "sha256:dee05e128c19"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0051_s012",
+          "index": 12,
+          "text": "如是乃至諸暗等相以為自者，則於明時見性斷滅，云何見明？」",
+          "source_hash": "sha256:d215a47df797"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0052",
+      "index": 52,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0052_s001",
+          "index": 1,
+          "text": "阿難言：「必此妙見性非自然，我今發明是因緣性。",
+          "source_hash": "sha256:bf42bbb64826"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0052_s002",
+          "index": 2,
+          "text": "心猶未明，諮詢如來，是義云何合因緣性？」",
+          "source_hash": "sha256:f13d95e689c4"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0053",
+      "index": 53,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0053_s001",
+          "index": 1,
+          "text": "佛言：「汝言因緣，吾復問汝，汝今因見，見性現前，此見為復因明有見？",
+          "source_hash": "sha256:24f91c850931"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s002",
+          "index": 2,
+          "text": "因暗有見？",
+          "source_hash": "sha256:89fe78fa0fdf"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s003",
+          "index": 3,
+          "text": "因空有見？",
+          "source_hash": "sha256:03afd31bcccd"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s004",
+          "index": 4,
+          "text": "因塞有見？",
+          "source_hash": "sha256:93531287d520"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s005",
+          "index": 5,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s006",
+          "index": 6,
+          "text": "若因明有，應不見暗，如因暗有，應不見明；",
+          "source_hash": "sha256:d3197dbac012"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s007",
+          "index": 7,
+          "text": "如是乃至因空、因塞，同於明、暗。",
+          "source_hash": "sha256:4e3d8ac16276"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s008",
+          "index": 8,
+          "text": "復次，阿難！",
+          "source_hash": "sha256:c55e0322f72e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s009",
+          "index": 9,
+          "text": "此見又復緣明有見？",
+          "source_hash": "sha256:2bae445ea80c"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s010",
+          "index": 10,
+          "text": "緣暗有見？",
+          "source_hash": "sha256:ca6334f318dd"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s011",
+          "index": 11,
+          "text": "緣空有見？",
+          "source_hash": "sha256:59ef779638ce"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s012",
+          "index": 12,
+          "text": "緣塞有見？",
+          "source_hash": "sha256:725e3153159b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s013",
+          "index": 13,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s014",
+          "index": 14,
+          "text": "若緣空有，應不見塞；",
+          "source_hash": "sha256:775a7883ea17"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s015",
+          "index": 15,
+          "text": "若緣塞有，應不見空；",
+          "source_hash": "sha256:6ad9c7669507"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s016",
+          "index": 16,
+          "text": "如是乃至緣明、緣暗，同於空、塞。",
+          "source_hash": "sha256:30ad67e38550"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s017",
+          "index": 17,
+          "text": "當知如是精覺妙明，非因、非緣，亦非自然、非不自然；",
+          "source_hash": "sha256:1fba700c20ae"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s018",
+          "index": 18,
+          "text": "無非、不非，無是、非是；",
+          "source_hash": "sha256:1ffecf1982ee"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s019",
+          "index": 19,
+          "text": "離一切相，即一切法。",
+          "source_hash": "sha256:d3304d658e56"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s020",
+          "index": 20,
+          "text": "汝今云何於中措心，以諸世間戲論名相而得分別！",
+          "source_hash": "sha256:6b8fc52432b0"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s021",
+          "index": 21,
+          "text": "如以手掌撮摩虛空，只益自勞；",
+          "source_hash": "sha256:a7196a056077"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0053_s022",
+          "index": 22,
+          "text": "虛空云何隨汝執捉？」",
+          "source_hash": "sha256:2bd97ba1e273"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0054",
+      "index": 54,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0054_s001",
+          "index": 1,
+          "text": "阿難白佛言：「世尊！",
+          "source_hash": "sha256:37fa7385f907"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0054_s002",
+          "index": 2,
+          "text": "必妙覺性非因非緣，世尊！",
+          "source_hash": "sha256:7744272fa9a0"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0054_s003",
+          "index": 3,
+          "text": "云何常與比丘宣說見性具四種緣——所謂因空、因明、因心、因眼，是義云何？」",
+          "source_hash": "sha256:fb04e242cf80"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0055",
+      "index": 55,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0055_s001",
+          "index": 1,
+          "text": "佛言：「阿難！",
+          "source_hash": "sha256:296bbb50a4ab"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0055_s002",
+          "index": 2,
+          "text": "我說世間諸因緣相，非第一義。",
+          "source_hash": "sha256:7b561d744a8f"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0055_s003",
+          "index": 3,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0055_s004",
+          "index": 4,
+          "text": "吾復問汝，諸世間人說我能見，云何名見？",
+          "source_hash": "sha256:c4b54dcd4ab8"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0055_s005",
+          "index": 5,
+          "text": "云何不見？」",
+          "source_hash": "sha256:01548286f0bd"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0056",
+      "index": 56,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0056_s001",
+          "index": 1,
+          "text": "阿難言：「世人因於日、月、燈光見種種相，名之為見。",
+          "source_hash": "sha256:64d235706c64"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0056_s002",
+          "index": 2,
+          "text": "若復無此三種光明，則不能見。」",
+          "source_hash": "sha256:7bab4f592dbe"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0057",
+      "index": 57,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0057_s001",
+          "index": 1,
+          "text": "「阿難！",
+          "source_hash": "sha256:38216f041121"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s002",
+          "index": 2,
+          "text": "若無明時名不見者，應不見暗；",
+          "source_hash": "sha256:a83ab4ee3f73"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s003",
+          "index": 3,
+          "text": "若必見暗，此但無明云何無見？",
+          "source_hash": "sha256:c61aa56fc7a1"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s004",
+          "index": 4,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s005",
+          "index": 5,
+          "text": "若在暗時，不見明故名為不見；",
+          "source_hash": "sha256:91aa78cba6df"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s006",
+          "index": 6,
+          "text": "今在明時，不見暗相還名不見；",
+          "source_hash": "sha256:2897d516441f"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s007",
+          "index": 7,
+          "text": "如是二相俱名不見？",
+          "source_hash": "sha256:e6c80393b69f"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s008",
+          "index": 8,
+          "text": "若復二相自相𣣋奪，非汝見性於中暫無；",
+          "source_hash": "sha256:9f50ae7b16f4"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s009",
+          "index": 9,
+          "text": "如是則知二俱名見，云何不見？",
+          "source_hash": "sha256:3b2e4aa7e82d"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s010",
+          "index": 10,
+          "text": "是故阿難！",
+          "source_hash": "sha256:061c52efd777"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s011",
+          "index": 11,
+          "text": "汝今當知，見明之時，見非是明；",
+          "source_hash": "sha256:bf659c93fff5"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s012",
+          "index": 12,
+          "text": "見暗之時，見非是暗；",
+          "source_hash": "sha256:c705ea350a68"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s013",
+          "index": 13,
+          "text": "見空之時，見非是空；",
+          "source_hash": "sha256:f327eff5230b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s014",
+          "index": 14,
+          "text": "見塞之時，見非是塞，四義成就。",
+          "source_hash": "sha256:7c47db4c0f2b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s015",
+          "index": 15,
+          "text": "汝復應知，見見之時，見非是見，見猶離見，見不能及，云何復說因緣自然及和合相？",
+          "source_hash": "sha256:e4cbc2ccbbf3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s016",
+          "index": 16,
+          "text": "汝等聲聞狹劣無識，不能通達清淨實相。",
+          "source_hash": "sha256:bb54839a3ff5"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0057_s017",
+          "index": 17,
+          "text": "吾今誨汝，當善思惟，無得疲怠妙菩提路！」",
+          "source_hash": "sha256:67dbf5a30134"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0058",
+      "index": 58,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0058_s001",
+          "index": 1,
+          "text": "阿難白佛言：「世尊！",
+          "source_hash": "sha256:37fa7385f907"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0058_s002",
+          "index": 2,
+          "text": "如佛世尊為我等輩宣說因緣及與自然，諸和合相與不和合，心猶未開；",
+          "source_hash": "sha256:a77fabc302dd"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0058_s003",
+          "index": 3,
+          "text": "而今更聞見見非見，重增迷悶。",
+          "source_hash": "sha256:55d6036c2eb5"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0058_s004",
+          "index": 4,
+          "text": "伏願弘慈施大慧目，開示我等覺心明淨！」作是語已，悲淚頂禮，承受聖旨。",
+          "source_hash": "sha256:b1c6983a3ba1"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0059",
+      "index": 59,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0059_s001",
+          "index": 1,
+          "text": "爾時，世尊憐愍阿難及諸大眾，將欲敷演大陀羅尼諸三摩提妙修行路，告阿難言：「汝雖強記，但益多聞，於奢摩他微密觀照，心猶未了。",
+          "source_hash": "sha256:373b53ce77cf"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0059_s002",
+          "index": 2,
+          "text": "汝今諦聽！",
+          "source_hash": "sha256:6d85a9f38638"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0059_s003",
+          "index": 3,
+          "text": "吾當為汝分別開示，亦令將來諸有漏者獲菩提果。",
+          "source_hash": "sha256:4c8063f99485"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0059_s004",
+          "index": 4,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0059_s005",
+          "index": 5,
+          "text": "一切眾生輪迴世間，由二顛倒分別見妄，當處發生，當業輪轉。",
+          "source_hash": "sha256:c5bde1b71317"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0059_s006",
+          "index": 6,
+          "text": "云何二見？",
+          "source_hash": "sha256:d007cc2708ea"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0059_s007",
+          "index": 7,
+          "text": "一者、眾生別業妄見，二者、眾生同分妄見。",
+          "source_hash": "sha256:f52de880b893"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0060",
+      "index": 60,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0060_s001",
+          "index": 1,
+          "text": "「云何名為別業妄見？",
+          "source_hash": "sha256:aebd9255f17e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s002",
+          "index": 2,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s003",
+          "index": 3,
+          "text": "如世間人目有赤眚，夜見燈光別有圓影五色重疊。",
+          "source_hash": "sha256:f40415738ab1"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s004",
+          "index": 4,
+          "text": "於意云何？",
+          "source_hash": "sha256:3e03a3f6d286"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s005",
+          "index": 5,
+          "text": "此夜燈明所現圓光，為是燈色？",
+          "source_hash": "sha256:5a208954159a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s006",
+          "index": 6,
+          "text": "為當見色？",
+          "source_hash": "sha256:86f25e6cfc64"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s007",
+          "index": 7,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s008",
+          "index": 8,
+          "text": "此若燈色，則非眚人何不同見，而此圓影唯眚之觀。",
+          "source_hash": "sha256:cc4bfbaa2ea3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s009",
+          "index": 9,
+          "text": "若是見色，見已成色，則彼眚人見圓影者名為何等？",
+          "source_hash": "sha256:c18ff049a3d5"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s010",
+          "index": 10,
+          "text": "復次，阿難！",
+          "source_hash": "sha256:c55e0322f72e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s011",
+          "index": 11,
+          "text": "若此圓影離燈別有，則合傍觀屏帳、几筵有圓影出。",
+          "source_hash": "sha256:2572f125c467"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s012",
+          "index": 12,
+          "text": "離見別有，應非眼矚，云何眚人目見圓影？",
+          "source_hash": "sha256:514622cdab3a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s013",
+          "index": 13,
+          "text": "是故當知色實在燈，見病為影；",
+          "source_hash": "sha256:687025a0b8bf"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s014",
+          "index": 14,
+          "text": "影、見俱眚，見眚非病。",
+          "source_hash": "sha256:6b80c81c1668"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s015",
+          "index": 15,
+          "text": "終不應言『是燈是見，於是中有非燈非見』，如第二月非體非影。",
+          "source_hash": "sha256:259ec30a36f9"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s016",
+          "index": 16,
+          "text": "何以故？",
+          "source_hash": "sha256:78567a572ad3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s017",
+          "index": 17,
+          "text": "第二之觀，揑所成故。",
+          "source_hash": "sha256:da1673168e28"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s018",
+          "index": 18,
+          "text": "諸有智者不應說言『此揑根元，是形非形，離見非見』，此亦如是，目眚所成，今欲名誰是燈、是見？",
+          "source_hash": "sha256:d71f10414a5b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0060_s019",
+          "index": 19,
+          "text": "何況分別非燈、非見！",
+          "source_hash": "sha256:7a9bb646f7d5"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0061",
+      "index": 61,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0061_s001",
+          "index": 1,
+          "text": "「云何名為同分妄見？",
+          "source_hash": "sha256:e71233d7d022"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0061_s002",
+          "index": 2,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0061_s003",
+          "index": 3,
+          "text": "此閻浮提，除大海水，中間平陸有三千洲。",
+          "source_hash": "sha256:1434fc250988"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0061_s004",
+          "index": 4,
+          "text": "正中大洲，東西括量，大國凡有二千三百；",
+          "source_hash": "sha256:c87be975355e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0061_s005",
+          "index": 5,
+          "text": "其餘小洲，在諸海中，其間或有三兩百國，或一或二，至于三十、四十、五十。",
+          "source_hash": "sha256:82b163a340fb"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0061_s006",
+          "index": 6,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0061_s007",
+          "index": 7,
+          "text": "若復此中有一小洲，只有兩國。",
+          "source_hash": "sha256:e5570d8153b8"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0061_s008",
+          "index": 8,
+          "text": "唯一國人同感惡緣，則彼小洲當土眾生，覩諸一切不祥境界，或見二日，或見兩月，其中乃至暈蝕珮玦、彗勃飛流、負耳虹蜺。",
+          "source_hash": "sha256:95ad9ea30814"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0061_s009",
+          "index": 9,
+          "text": "種種惡相，但此國見；",
+          "source_hash": "sha256:2cd7fbc4fdd2"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0061_s010",
+          "index": 10,
+          "text": "彼國眾生，本所不見，亦復不聞。",
+          "source_hash": "sha256:d1c23b6017aa"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0061_s011",
+          "index": 11,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0061_s012",
+          "index": 12,
+          "text": "吾今為汝以此二事進退合明。",
+          "source_hash": "sha256:19a47be026e6"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0062",
+      "index": 62,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0062_s001",
+          "index": 1,
+          "text": "「阿難！",
+          "source_hash": "sha256:38216f041121"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0062_s002",
+          "index": 2,
+          "text": "如彼眾生別業妄見，矚燈光中所現圓影，雖現似境，終彼見者目眚所成。",
+          "source_hash": "sha256:d317c3098560"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0062_s003",
+          "index": 3,
+          "text": "眚即見勞，非色所造；",
+          "source_hash": "sha256:3b9120db6776"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0062_s004",
+          "index": 4,
+          "text": "然見眚者終無見咎。",
+          "source_hash": "sha256:724987a58780"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0062_s005",
+          "index": 5,
+          "text": "例汝今日，以目觀見山河國土及諸眾生，皆是無始見病所成。",
+          "source_hash": "sha256:7b12430a7702"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0062_s006",
+          "index": 6,
+          "text": "見與見緣似現前境，元我覺明見所緣眚。",
+          "source_hash": "sha256:28fbb52f83dc"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0062_s007",
+          "index": 7,
+          "text": "覺見即眚，本覺明心覺緣非眚；",
+          "source_hash": "sha256:6a44e91479ec"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0062_s008",
+          "index": 8,
+          "text": "覺所覺眚，覺非眚中，此實見見，云何復名覺、聞、知、見？",
+          "source_hash": "sha256:ce99b5461c23"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0062_s009",
+          "index": 9,
+          "text": "是故汝今見我及汝并諸世間十類眾生，皆即見眚，非見眚者；",
+          "source_hash": "sha256:13af668f9e38"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0062_s010",
+          "index": 10,
+          "text": "彼見真精性非眚者，故不名見。",
+          "source_hash": "sha256:619f66fba441"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0063",
+      "index": 63,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0063_s001",
+          "index": 1,
+          "text": "「阿難！",
+          "source_hash": "sha256:38216f041121"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0063_s002",
+          "index": 2,
+          "text": "如彼眾生同分妄見，例彼妄見別業一人，一病目人同彼一國。",
+          "source_hash": "sha256:aeade62c881e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0063_s003",
+          "index": 3,
+          "text": "彼見圓影，眚妄所生。",
+          "source_hash": "sha256:718a5d22d27e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0063_s004",
+          "index": 4,
+          "text": "此眾同分所現不祥，同見業中瘴惡所起，俱是無始見妄所生。",
+          "source_hash": "sha256:2b3db3def2bb"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0063_s005",
+          "index": 5,
+          "text": "例閻浮提三千洲中，兼四大海娑婆世界，并洎十方諸有漏國及諸眾生，同是覺明無漏妙心，見、聞、覺、知虛妄病緣、和合妄生，和合妄死。",
+          "source_hash": "sha256:2c300a8f2597"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0063_s006",
+          "index": 6,
+          "text": "若能遠離諸和合緣及不和合，則復滅除諸生死因；",
+          "source_hash": "sha256:1656e6529af0"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0063_s007",
+          "index": 7,
+          "text": "圓滿菩提不生滅性，清淨本心本覺常住。",
+          "source_hash": "sha256:05944a23f1f2"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0064",
+      "index": 64,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0064_s001",
+          "index": 1,
+          "text": "「阿難！",
+          "source_hash": "sha256:38216f041121"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s002",
+          "index": 2,
+          "text": "汝雖先悟本覺妙明性非因緣非自然性，而猶未明如是覺元非和合生及不和合。",
+          "source_hash": "sha256:ac669163b317"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s003",
+          "index": 3,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s004",
+          "index": 4,
+          "text": "吾今復以前塵問汝，汝今猶以一切世間妄想和合諸因緣性，而自疑惑證菩提心和合起者。",
+          "source_hash": "sha256:e2d7fd46c61c"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s005",
+          "index": 5,
+          "text": "則汝今者妙淨見精，為與明和？",
+          "source_hash": "sha256:377e371de7b2"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s006",
+          "index": 6,
+          "text": "為與闇和？",
+          "source_hash": "sha256:7d979a41ee81"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s007",
+          "index": 7,
+          "text": "為與通和？",
+          "source_hash": "sha256:c726c0df7fa7"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s008",
+          "index": 8,
+          "text": "為與塞和？",
+          "source_hash": "sha256:c9c87128eee5"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s009",
+          "index": 9,
+          "text": "若明和者，且汝觀明，當明現前，何處雜見？",
+          "source_hash": "sha256:92d8e7f33383"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s010",
+          "index": 10,
+          "text": "見相可辨，雜何形像？",
+          "source_hash": "sha256:926435635ce5"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s011",
+          "index": 11,
+          "text": "若非見者，云何見明？",
+          "source_hash": "sha256:3aba6ed34216"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s012",
+          "index": 12,
+          "text": "若即見者，云何見見？",
+          "source_hash": "sha256:5128fb32345a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s013",
+          "index": 13,
+          "text": "必見圓滿，何處和明？",
+          "source_hash": "sha256:69fbbc9d72de"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s014",
+          "index": 14,
+          "text": "若明圓滿不合見和，見必異明，雜則失彼性明名字；",
+          "source_hash": "sha256:de032c1d514f"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s015",
+          "index": 15,
+          "text": "雜失明性，和明非義。",
+          "source_hash": "sha256:69032924dfa2"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0064_s016",
+          "index": 16,
+          "text": "彼暗與通及諸群塞，亦復如是。",
+          "source_hash": "sha256:2e9a21c2d5ed"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0065",
+      "index": 65,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0065_s001",
+          "index": 1,
+          "text": "「復次，阿難！",
+          "source_hash": "sha256:581e6c539ecd"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0065_s002",
+          "index": 2,
+          "text": "又汝今者妙淨見精，為與明合？",
+          "source_hash": "sha256:bc89e491d8b4"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0065_s003",
+          "index": 3,
+          "text": "為與暗合？",
+          "source_hash": "sha256:69144241ab19"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0065_s004",
+          "index": 4,
+          "text": "為與通合？",
+          "source_hash": "sha256:cf1d74fe81a0"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0065_s005",
+          "index": 5,
+          "text": "為與塞合？",
+          "source_hash": "sha256:2760d5a5af9e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0065_s006",
+          "index": 6,
+          "text": "若明合者，至於暗時明相已滅，此見即不與諸暗合，云何見暗？",
+          "source_hash": "sha256:7e3e42533a86"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0065_s007",
+          "index": 7,
+          "text": "若見暗時不與暗合，與明合者應非見明？",
+          "source_hash": "sha256:c57f05d71eca"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0065_s008",
+          "index": 8,
+          "text": "既不見明，云何明合了明非暗？",
+          "source_hash": "sha256:c8ee64055d5b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0065_s009",
+          "index": 9,
+          "text": "彼暗與通及諸群塞，亦復如是。」",
+          "source_hash": "sha256:0aa1e9ccdfcc"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0066",
+      "index": 66,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0066_s001",
+          "index": 1,
+          "text": "阿難白佛言：「世尊！",
+          "source_hash": "sha256:37fa7385f907"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0066_s002",
+          "index": 2,
+          "text": "如我思惟，此妙覺元與諸緣塵及心念慮非和合耶？」",
+          "source_hash": "sha256:7374f2ecdd20"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0067",
+      "index": 67,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0067_s001",
+          "index": 1,
+          "text": "佛言：「汝今又言覺非和合，吾復問汝，此妙見精非和合者，為非明和？",
+          "source_hash": "sha256:755e716d3cb4"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0067_s002",
+          "index": 2,
+          "text": "為非暗和？",
+          "source_hash": "sha256:4585c9899c81"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0067_s003",
+          "index": 3,
+          "text": "為非通和？",
+          "source_hash": "sha256:e975f2d7a8d6"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0067_s004",
+          "index": 4,
+          "text": "為非塞和？",
+          "source_hash": "sha256:81096570d456"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0067_s005",
+          "index": 5,
+          "text": "若非明和，則見與明必有邊畔。",
+          "source_hash": "sha256:5667d34983c3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0067_s006",
+          "index": 6,
+          "text": "汝且諦觀，何處是明？",
+          "source_hash": "sha256:ca19a800d34f"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0067_s007",
+          "index": 7,
+          "text": "何處是見？",
+          "source_hash": "sha256:db1ad4bad6b8"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0067_s008",
+          "index": 8,
+          "text": "在見在明，自何為畔？",
+          "source_hash": "sha256:d8a865342509"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0067_s009",
+          "index": 9,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0067_s010",
+          "index": 10,
+          "text": "若明際中必無見者，則不相及；",
+          "source_hash": "sha256:84a4dbafe09b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0067_s011",
+          "index": 11,
+          "text": "自不知其明相所在，畔云何成？",
+          "source_hash": "sha256:b5b3c7304b6f"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0067_s012",
+          "index": 12,
+          "text": "彼暗與通及諸群塞，亦復如是。",
+          "source_hash": "sha256:2e9a21c2d5ed"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0068",
+      "index": 68,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0068_s001",
+          "index": 1,
+          "text": "「又妙見精非和合者，為非明合？",
+          "source_hash": "sha256:55d08719883a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0068_s002",
+          "index": 2,
+          "text": "為非暗合？",
+          "source_hash": "sha256:c92ba4a6aea6"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0068_s003",
+          "index": 3,
+          "text": "為非通合？",
+          "source_hash": "sha256:58bd29f2557a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0068_s004",
+          "index": 4,
+          "text": "為非塞合？",
+          "source_hash": "sha256:283041a001df"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0068_s005",
+          "index": 5,
+          "text": "若非明合，則見與明性相乖角，如耳與明了不相觸；",
+          "source_hash": "sha256:659da45b2d47"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0068_s006",
+          "index": 6,
+          "text": "見且不知明相所在，云何甄明合非合理？",
+          "source_hash": "sha256:01b667b21c9d"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0068_s007",
+          "index": 7,
+          "text": "彼暗與通及諸群塞，亦復如是。",
+          "source_hash": "sha256:2e9a21c2d5ed"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0069",
+      "index": 69,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0069_s001",
+          "index": 1,
+          "text": "「阿難！",
+          "source_hash": "sha256:38216f041121"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0069_s002",
+          "index": 2,
+          "text": "汝猶未明一切浮塵諸幻化相，當處出生，隨處滅盡；",
+          "source_hash": "sha256:73397b509762"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0069_s003",
+          "index": 3,
+          "text": "幻妄稱相，其性真為妙覺明體。",
+          "source_hash": "sha256:09675c2c81b3"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0069_s004",
+          "index": 4,
+          "text": "如是乃至五陰、六入，從十二處至十八界，因緣和合虛妄有生，因緣別離虛妄名滅；",
+          "source_hash": "sha256:9b4126358fae"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0069_s005",
+          "index": 5,
+          "text": "殊不能知生滅去來，本如來藏常住妙明不動周圓妙真如性，性真常中求於去來、迷悟、死生了無所得。",
+          "source_hash": "sha256:845c11ce0b81"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0070",
+      "index": 70,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0070_s001",
+          "index": 1,
+          "text": "「阿難！",
+          "source_hash": "sha256:38216f041121"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0070_s002",
+          "index": 2,
+          "text": "云何五陰本如來藏妙真如性？",
+          "source_hash": "sha256:fab5a11d95b7"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0071",
+      "index": 71,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0071_s001",
+          "index": 1,
+          "text": "「阿難！",
+          "source_hash": "sha256:38216f041121"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0071_s002",
+          "index": 2,
+          "text": "譬如有人，以清淨目觀晴明空，唯一晴虛，逈無所有。",
+          "source_hash": "sha256:3ca556627ef0"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0071_s003",
+          "index": 3,
+          "text": "其人無故不動目睛、瞪以發勞，則於虛空別見狂花，復有一切狂亂非相。",
+          "source_hash": "sha256:5a075992b148"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0071_s004",
+          "index": 4,
+          "text": "色陰當知亦復如是。",
+          "source_hash": "sha256:263fcf4dd90e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0071_s005",
+          "index": 5,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0071_s006",
+          "index": 6,
+          "text": "是諸狂花，非從空來，非從目出。",
+          "source_hash": "sha256:6de5a25514b6"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0071_s007",
+          "index": 7,
+          "text": "如是阿難！",
+          "source_hash": "sha256:46fe717af432"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0071_s008",
+          "index": 8,
+          "text": "若空來者，既從空來還從空入，若有出入即非虛空。",
+          "source_hash": "sha256:c81481617610"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0071_s009",
+          "index": 9,
+          "text": "空若非空，自不容其花相起滅，如阿難體不容阿難。",
+          "source_hash": "sha256:ff8a0535b021"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0071_s010",
+          "index": 10,
+          "text": "若目出者，既從目出還從目入；",
+          "source_hash": "sha256:796866c0d9c6"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0071_s011",
+          "index": 11,
+          "text": "即此花性從目出故，當合有見。",
+          "source_hash": "sha256:80f48ba6b672"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0071_s012",
+          "index": 12,
+          "text": "若有見者，去既花空，旋合見眼。",
+          "source_hash": "sha256:3acdcb5443d4"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0071_s013",
+          "index": 13,
+          "text": "若無見者，出既翳空，旋當翳眼。",
+          "source_hash": "sha256:c30a71166397"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0071_s014",
+          "index": 14,
+          "text": "又見花時目應無瞖，云何晴空號清明眼？",
+          "source_hash": "sha256:e08508c90665"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0071_s015",
+          "index": 15,
+          "text": "是故當知色陰虛妄，本非因緣、非自然性。",
+          "source_hash": "sha256:e8806d529442"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0072",
+      "index": 72,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0072_s001",
+          "index": 1,
+          "text": "「阿難！",
+          "source_hash": "sha256:38216f041121"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0072_s002",
+          "index": 2,
+          "text": "譬如有人，手足宴安，百骸調適，忽如忘生，性無違順。",
+          "source_hash": "sha256:6b5244150934"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0072_s003",
+          "index": 3,
+          "text": "其人無故以二手掌於空相摩，於二手中妄生澁、滑、冷、熱諸相。",
+          "source_hash": "sha256:89493ea30c91"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0072_s004",
+          "index": 4,
+          "text": "受陰當知亦復如是。",
+          "source_hash": "sha256:c627f2ce27d1"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0072_s005",
+          "index": 5,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0072_s006",
+          "index": 6,
+          "text": "是諸幻觸，不從空來，不從掌出。",
+          "source_hash": "sha256:2ee648e8e386"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0072_s007",
+          "index": 7,
+          "text": "如是阿難！",
+          "source_hash": "sha256:46fe717af432"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0072_s008",
+          "index": 8,
+          "text": "若空來者，既能觸掌何不觸身？",
+          "source_hash": "sha256:38bee4c559fa"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0072_s009",
+          "index": 9,
+          "text": "不應虛空選擇來觸。",
+          "source_hash": "sha256:032bcbceeaef"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0072_s010",
+          "index": 10,
+          "text": "若從掌出，應非待合。",
+          "source_hash": "sha256:053d7936084b"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0072_s011",
+          "index": 11,
+          "text": "又掌出故，合則掌知，離即觸入；",
+          "source_hash": "sha256:ea4d3dbf8005"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0072_s012",
+          "index": 12,
+          "text": "臂腕骨髓，應亦覺知入時蹤跡。",
+          "source_hash": "sha256:dd6ba65df911"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0072_s013",
+          "index": 13,
+          "text": "必有覺心知出知入，自有一物身中往來，何待合知要名為觸？",
+          "source_hash": "sha256:b7c2f35f335e"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0072_s014",
+          "index": 14,
+          "text": "是故當知受陰虛妄，本非因緣、非自然性。",
+          "source_hash": "sha256:2d21133dcb51"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0073",
+      "index": 73,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0073_s001",
+          "index": 1,
+          "text": "「阿難！",
+          "source_hash": "sha256:38216f041121"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0073_s002",
+          "index": 2,
+          "text": "譬如有人，談說醋梅口中水出，思踏懸崖足心酸澁。",
+          "source_hash": "sha256:6c60827a581c"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0073_s003",
+          "index": 3,
+          "text": "想陰當知亦復如是。",
+          "source_hash": "sha256:1bca9ebfbcd4"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0073_s004",
+          "index": 4,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0073_s005",
+          "index": 5,
+          "text": "如是醋說不從梅生，非從口入。",
+          "source_hash": "sha256:2fd1e8a5238a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0073_s006",
+          "index": 6,
+          "text": "如是阿難！",
+          "source_hash": "sha256:46fe717af432"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0073_s007",
+          "index": 7,
+          "text": "若梅生者，梅合自談何待人說？",
+          "source_hash": "sha256:deda33b6e38c"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0073_s008",
+          "index": 8,
+          "text": "若從口入，自合口聞，何須待耳？",
+          "source_hash": "sha256:3a93908bcf2f"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0073_s009",
+          "index": 9,
+          "text": "若獨耳聞，此水何不耳中而出？",
+          "source_hash": "sha256:176f82a80610"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0073_s010",
+          "index": 10,
+          "text": "想踏懸崖，與說相類。",
+          "source_hash": "sha256:f55a92e0d9cb"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0073_s011",
+          "index": 11,
+          "text": "是故當知想陰虛妄，本非因緣、非自然性。",
+          "source_hash": "sha256:c6d4845c619a"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0074",
+      "index": 74,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0074_s001",
+          "index": 1,
+          "text": "「阿難！",
+          "source_hash": "sha256:38216f041121"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0074_s002",
+          "index": 2,
+          "text": "譬如暴流波浪相續，前際後際不相踰越。",
+          "source_hash": "sha256:2581f0695611"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0074_s003",
+          "index": 3,
+          "text": "行陰當知亦復如是。",
+          "source_hash": "sha256:fcfd778925ac"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0074_s004",
+          "index": 4,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0074_s005",
+          "index": 5,
+          "text": "如是流性，不因空生，不因水有；",
+          "source_hash": "sha256:7dc6df6b318c"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0074_s006",
+          "index": 6,
+          "text": "亦非水性，非離空水。",
+          "source_hash": "sha256:791885fc6dd4"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0074_s007",
+          "index": 7,
+          "text": "如是阿難！",
+          "source_hash": "sha256:46fe717af432"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0074_s008",
+          "index": 8,
+          "text": "若因空生，則諸十方無盡虛空成無盡流，世界自然俱受淪溺。",
+          "source_hash": "sha256:d039a61463e4"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0074_s009",
+          "index": 9,
+          "text": "若因水有，則此暴流性應非水，有所、有相，今應現在。",
+          "source_hash": "sha256:e4c5223d6069"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0074_s010",
+          "index": 10,
+          "text": "若即水性，則澄清時應非水體；",
+          "source_hash": "sha256:7f1df18f04f6"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0074_s011",
+          "index": 11,
+          "text": "若離空水，空非有外，水外無流。",
+          "source_hash": "sha256:2662d86b2e64"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0074_s012",
+          "index": 12,
+          "text": "是故當知行陰虛妄，本非因緣、非自然性。",
+          "source_hash": "sha256:aae56b4fbbf0"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0075",
+      "index": 75,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0075_s001",
+          "index": 1,
+          "text": "「阿難！",
+          "source_hash": "sha256:38216f041121"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0075_s002",
+          "index": 2,
+          "text": "譬如有人，取頻伽瓶塞其兩孔，滿中擎空，千里遠行用餉他國。",
+          "source_hash": "sha256:da380a4bec24"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0075_s003",
+          "index": 3,
+          "text": "識陰當知亦復如是。",
+          "source_hash": "sha256:fea9741cf97c"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0075_s004",
+          "index": 4,
+          "text": "阿難！",
+          "source_hash": "sha256:f4aab294e48a"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0075_s005",
+          "index": 5,
+          "text": "如是虛空，非彼方來，非此方入。",
+          "source_hash": "sha256:598bad738cb1"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0075_s006",
+          "index": 6,
+          "text": "如是阿難，若彼方來，則本瓶中既貯空去，於本瓶地應少虛空。",
+          "source_hash": "sha256:b22296205d19"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0075_s007",
+          "index": 7,
+          "text": "若此方入，開孔倒瓶，應見空出。",
+          "source_hash": "sha256:106f8d589c8d"
+        },
+        {
+          "sentence_id": "T19n0945_002_p0075_s008",
+          "index": 8,
+          "text": "是故當知識陰虛妄，本非因緣、非自然性。",
+          "source_hash": "sha256:253765e9101b"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T19n0945_002_p0076",
+      "index": 76,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T19n0945_002_p0076_s001",
+          "index": 1,
+          "text": "大佛頂萬行首楞嚴經卷第二",
+          "source_hash": "sha256:e33d34d6805c"
+        }
+      ]
+    }
+  ]
+}

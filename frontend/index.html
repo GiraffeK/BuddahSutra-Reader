@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>大正新脩大藏經｜AI 白話翻譯與古大德註疏系統</title>
+  <link rel="stylesheet" href="/static/styles.css?v=20261123b" />
+</head>
+<body>
+  <!-- 頂部導覽列 -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <span class="brand-icon">🪷</span>
+      <span class="brand-title">大正新脩大藏經・AI 翻譯與古大德註疏</span>
+      <input
+        id="searchInput"
+        class="search-input"
+        type="text"
+        placeholder="搜尋部別、經名或本卷經文..."
+      />
+    </div>
+
+    <div class="topbar-right">
+      <label class="toggle-auto" title="游標停留在未翻譯句子 0.5 秒後自動呼叫 AI 翻譯並存入本地知識庫">
+        <input type="checkbox" id="autoHoverTranslate" />
+        <span>游標停留自動 AI 翻譯</span>
+      </label>
+
+      <div class="llm-picker">
+        <label for="providerSelect">LLM 引擎：</label>
+        <select id="providerSelect">
+          <option value="gemini" selected>Gemini API（預設）</option>
+          <option value="ollama">Ollama 本機模型</option>
+        </select>
+        <span id="llmStatusBadge" class="status-pill status-checking">檢查中...</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <!-- 左欄：大正新脩大藏經階層分類樹 -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2>大正新脩大藏經</h2>
+        <span class="kb-count" id="kbStatsBadge">知識庫載入中</span>
+      </div>
+      <div id="catalogTree" class="catalog-tree"></div>
+    </aside>
+
+    <!-- 主閱讀區 -->
+    <main class="main-area" id="mainArea">
+      <div class="sutra-header">
+        <div class="sutra-title-row">
+          <div class="sutra-title-left">
+            <h1 id="sutraTitle">載入經文中...</h1>
+            <span id="sutraCode" class="sutra-code"></span>
+          </div>
+          <!-- 卷次快速切換器 -->
+          <div class="fascicle-switcher">
+            <button id="prevFascicleBtn" class="fasc-nav-btn" title="上一卷">◀ 上一卷</button>
+            <select id="fascicleSelect" class="fasc-select" title="選擇卷次（未入庫卷次將自動從 CBETA 抓取並存於本地知識庫）"></select>
+            <button id="nextFascicleBtn" class="fasc-nav-btn" title="下一卷">下一卷 ▶</button>
+          </div>
+        </div>
+        <div id="sutraSubtitle" class="sutra-subtitle"></div>
+        <div id="cbetaToast" class="cbeta-toast" style="display:none;"></div>
+        <div class="notice-banner">
+          <strong>知識庫優先（Cache-First）模式：</strong>
+          游標移至右側任一經句即可即時檢視 <b>本地翻譯知識庫</b>（<code>translation_kb/</code>）與 <b>歷代古大德註疏</b>；
+          若本地尚無譯文，點擊句子或開啟「游標停留自動翻譯」將呼叫所選 LLM（預設 Gemini API）結合古大德法義翻譯並自動永久存入知識庫。
+          點擊經句可「鎖定」方便閱讀左側解析與切換祖師註疏。
+        </div>
+      </div>
+
+      <!-- 雙欄對照區：中欄（AI翻譯 + 古大德全文獨立捲動）｜右欄（漢文原文獨立捲動） -->
+      <div class="reader-grid">
+        <!-- 中欄：上方 AI 翻譯（可獨立捲動/收合）＋ 下方古大德註疏全文（獨立捲動＋自動捲至高亮處） -->
+        <section class="analysis-pane">
+          <div class="ai-panel-wrap" id="aiPanelWrap">
+            <div class="ai-panel-header">
+              <strong style="color:#6b411c;font-size:13.5px;">AI 白話翻譯與法義解析</strong>
+              <button id="toggleAiCollapseBtn" class="mini-btn">收合</button>
+            </div>
+            <div class="ai-panel-body" id="analysisPanel">
+              <div class="empty-state" style="padding:18px;">
+                <p class="empty-title" style="font-size:14px;">請將游標移至右側漢文經句</p>
+                <p class="empty-desc" style="font-size:12.5px;margin:0;">帶金色底線為本地知識庫已存譯文（0ms 命中）；點擊可鎖定並即時 AI 翻譯。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="comm-full-panel" id="commFullPanel">
+            <div class="comm-full-header">
+              <div class="comm-full-title-row">
+                <div class="master-picker-anchor" id="masterPickerAnchor">
+                  <button id="masterPickerBtn" class="master-picker-btn" type="button" title="點選切換歷代古大德註疏全文">
+                    <span id="commMasterTitle">古大德註疏全文</span>
+                    <span class="picker-caret">▾</span>
+                  </button>
+                  <!-- 點選後彈出之古大德清單 Pop-up -->
+                  <div id="masterPopupMenu" class="master-popup-menu" style="display:none;">
+                    <div class="master-popup-head">選擇精讀古大德註疏全文（點選後自動載入並順向對齊）</div>
+                    <div id="mastersChips" class="master-popup-list"></div>
+                  </div>
+                </div>
+                <span id="commAlignBadge" class="align-badge">尚未定位</span>
+              </div>
+              <div class="comm-juan-controls">
+                <button id="prevCommJuanBtn" class="mini-btn" title="註疏上一卷">◀</button>
+                <select id="commJuanSelect" class="mini-select" title="切換此古大德註疏卷次"></select>
+                <button id="nextCommJuanBtn" class="mini-btn" title="註疏下一卷">▶</button>
+              </div>
+            </div>
+            <div class="comm-full-body" id="commFullBody">
+              <div class="empty-state" style="padding:24px;">載入古大德註疏全文中...</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 右欄：漢文原文段落區（獨立捲軸） -->
+        <section class="sutra-pane" id="sutraContent"></section>
+      </div>
+    </main>
+
+    <!-- 右側浮動段落跳轉器 -->
+    <div class="jump-widget">
+      <div class="jump-label">段</div>
+      <input id="jumpParaInput" type="number" min="1" placeholder="1" />
+      <button id="jumpParaBtn">Go</button>
+    </div>
+  </div>
+
+  <script src="/static/app.js?v=20261123b"></script>
+</body>
+</html>

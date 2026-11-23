@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "sutra_id": "T19n0945",
+  "title": "大佛頂如來密因修證了義諸菩薩萬行首楞嚴經",
+  "edition": "十卷楞嚴（唐・般剌蜜帝譯）",
+  "division_id": "T_10_mijiao",
+  "division_name": "密教部",
+  "translator": "唐天竺沙門般剌蜜帝譯・烏萇國沙門彌伽釋迦譯語・羅浮山南樓寺沙門懷迪證譯・菩薩戒弟子前正議大夫同中書門下平章事清河房融筆受",
+  "fascicle_count": 10,
+  "available_fascicles": [1],
+  "masters": [
+    "zixuan_yishu",
+    "jiaoguang_zhengmai",
+    "hanshan_tongyi",
+    "ouyi_wenju",
+    "yuanying_jiangyi"
+  ]
+}

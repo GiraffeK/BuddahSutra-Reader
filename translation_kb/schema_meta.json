@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "project": "BuddhaSutra-註疏",
+  "description": "大正新脩大藏經 AI 白話翻譯與歷代古大德註疏本地知識庫",
+  "default_huayan_edition": "T10n0279",
+  "default_llm_provider": "gemini",
+  "supported_llm_providers": ["gemini", "ollama"],
+  "created_at": "2026-11-23T11:13:00+08:00",
+  "updated_at": "2026-11-23T11:13:00+08:00"
+}
