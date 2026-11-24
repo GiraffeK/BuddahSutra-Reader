@@ -1,1 +1,1 @@
-# BuddhaSutra-註疏 Backend Package
+# BuddhaSutra-Reader Backend Package

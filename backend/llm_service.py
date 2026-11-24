@@ -34,7 +34,7 @@ class LLMTranslationService:
     def __init__(self) -> None:
         self.default_provider = os.getenv("DEFAULT_LLM_PROVIDER", "gemini").strip().lower()
         self.gemini_api_key = os.getenv("GEMINI_API_KEY", "").strip()
-        self.gemini_model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash").strip()
+        self.gemini_model = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite").strip()
         self.ollama_base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").rstrip("/")
         self.ollama_model = os.getenv("OLLAMA_MODEL", "qwen2.5:14b").strip()
 
@@ -186,6 +186,7 @@ class LLMTranslationService:
         client = genai.Client(api_key=api_key)
         config = types.GenerateContentConfig(
             temperature=0.2,
+            max_output_tokens=8192,
             response_mime_type="application/json" if expect_json else "text/plain",
         )
         # google-genai client 呼叫為同步，以 asyncio.to_thread 避免阻塞事件迴圈

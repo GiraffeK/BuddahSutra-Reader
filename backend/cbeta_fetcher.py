@@ -11,6 +11,7 @@ from typing import Any
 
 import httpx
 
+from backend.gaiji import normalize_gaiji
 from backend.kb_store import compute_source_hash
 
 CBETA_API_BASE = "https://cbdata.dila.edu.tw/stable/juans"
@@ -150,7 +151,7 @@ class _CBETAHtmlParser(HTMLParser):
 
     def handle_data(self, data: str) -> None:
         if self.in_body and self.in_block and self.skip_depth == 0:
-            self.current_buf.append(data)
+            self.current_buf.append(normalize_gaiji(data))
 
 
 async def fetch_cbeta_fascicle(sutra_id: str, fascicle: int) -> dict[str, Any]:
@@ -346,7 +347,7 @@ async def search_cbeta_commentaries_for_sentence(
                 if not kresults:
                     return mid, None
                 first = kresults[0]
-                snippet = re.sub(r"\s+", "", first.get("kwic", "")).strip()
+                snippet = normalize_gaiji(re.sub(r"\s+", "", first.get("kwic", ""))).strip()
                 if not snippet:
                     return mid, None
                 m = work_to_master[w]
@@ -480,7 +481,7 @@ def _extract_juan_from_xml_p5a(xml_text: str, target_juan: int) -> list[dict[str
 
         if current_juan == target_juan and lt in {"p", "lg", "head", "byline", "juan"}:
             raw = _collect_text(node)
-            clean = re.sub(r"\[\*\]|\[＊\]|\s+", "", raw).strip()
+            clean = re.sub(r"\[\*\]|\[＊\]|\s+", "", normalize_gaiji(raw)).strip()
             if clean:
                 idx = len(paragraphs) + 1
                 b_type = "heading" if lt in {"head", "byline", "juan"} else "prose"

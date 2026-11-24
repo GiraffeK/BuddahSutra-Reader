@@ -1,0 +1,374 @@
+{
+  "schema_version": "2.0",
+  "sutra_id": "T19n0945",
+  "sutra_title": "大佛頂如來密因修證了義諸菩薩萬行首楞嚴經（楞嚴經）",
+  "updated_at": "2026-11-24T10:27:21+08:00",
+  "terms": {
+    "如是我聞": {
+      "term": "如是我聞",
+      "explanation": "佛教經典標準開場語，意指「我（阿難）親自聽聞佛陀如此宣說」，確立教法之真實性與傳承。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "常住真心": {
+      "term": "常住真心",
+      "explanation": "《楞嚴經》核心宗趣，指眾生本具、不生不滅、超越虛妄分別的清淨本覺心體（性淨明體）。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "金剛": {
+      "term": "金剛",
+      "explanation": "指最堅硬、不可破壞之寶石，佛法中象徵不可摧毀的大悲智體與不動真心。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "世尊": {
+      "term": "世尊",
+      "explanation": "佛陀十號之一，梵語薄伽梵（Bhagavān）。意譯為具足無量功德、為世間與出世間所共同尊崇敬仰者。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "一心": {
+      "term": "一心",
+      "explanation": "指專一不散亂的心，或指至誠清淨、無二無別的平等真心。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "一時": {
+      "term": "一時",
+      "explanation": "六成就之一的「時成就」。指教化機緣成熟、師弟說聽契合的特定時間。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "室羅筏城": {
+      "term": "室羅筏城",
+      "explanation": "即舍衛城（Śrāvastī），譯為「聞物」或「豐德」，因該城名聲遠播、五欲財寶與人才豐碩而得名。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "祇桓精舍": {
+      "term": "祇桓精舍",
+      "explanation": "即祇樹給孤獨園，由祇陀太子施樹、給孤獨長者買地布金所共同建立，表福慧雙嚴之聖處。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "大比丘眾": {
+      "term": "大比丘眾",
+      "explanation": "指受持具足戒、德高望重且多已證得無漏阿羅漢果位的出家修道大眾。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "千二百五十人俱": {
+      "term": "千二百五十人俱",
+      "explanation": "指佛陀成道初期先後度化之三迦葉、舍利弗、目犍連、耶舍等弟子及其徒眾共1250人，感念佛恩而常隨佛身邊，稱為「常隨眾」。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "無始來": {
+      "term": "無始來",
+      "explanation": "指眾生因無明妄動而輪迴綿延，追溯不到最初起頭的時間點。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "本心": {
+      "term": "本心",
+      "explanation": "即眾生本具的自性清淨心、本覺真心，離言絕相、湛然不動，非指能分別塵境的意識心。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "緣塵分別影事": {
+      "term": "緣塵分別影事",
+      "explanation": "指第六意識攀緣外在六塵（色聲香味觸法）境界時，在心中落下的虛妄影相以及對其產生的分別推度。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "失乳兒忽遇慈母": {
+      "term": "失乳兒忽遇慈母",
+      "explanation": "古德用以比喻背真逐妄的眾生慧命瀕臨枯竭（失乳將死），今蒙佛開示見性、得見本心（遇母），法乳滋養而慧命重生的極致喜悅。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "觀河之見": {
+      "term": "觀河之見",
+      "explanation": "指能觀察恆河的水與景致之能見見性（見精），非單指肉眼功能，而是指本具、不隨歲月衰老的覺照能見之體。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "童耄": {
+      "term": "童耄",
+      "explanation": "童年與年老衰退。在此指色身隨時間遷變而產生的幼少與衰老等生滅變異之相。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "生齡": {
+      "term": "生齡",
+      "explanation": "指人出生以後的年數、壽齡。長水子璿大師《註經》云：「齡，年也。」",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "童子": {
+      "term": "童子",
+      "explanation": "指幼童時期。長水大師註：「十五曰童，未巾冠也。」意指十五歲以下、尚未行成年禮（束髮加冠）的孩童。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "顏貌": {
+      "term": "顏貌",
+      "explanation": "指人的面容與氣色外貌，在此代表肉身隨歲月遷謝而顯現於外表上的無常相貌。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "無常變壞": {
+      "term": "無常變壞",
+      "explanation": "指一切有為法（身心與世間萬物）皆非永恆常住，隨時間與因緣推移而隨時發生變異與壞滅。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "念念遷謝": {
+      "term": "念念遷謝",
+      "explanation": "「念念」指極短的時間剎那；「遷謝」指遷流與謝落消逝。形容身心意識在極微細的時間內不斷新陳交替、前念滅而後念生。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "新新不住": {
+      "term": "新新不住",
+      "explanation": "每一個新產生的剎那狀態或生滅現象，都無法暫時停留保持（無『住』相），體現諸行無常、剎那生滅的本質。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "轉輪": {
+      "term": "轉輪",
+      "explanation": "即轉法輪。比喻佛菩薩宣說正法，能摧破眾生煩惱惑業，猶如轉輪聖王之寶輪能摧伏怨敵。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "遺囑": {
+      "term": "遺囑",
+      "explanation": "指佛陀臨涅槃前付囑弟子護持、弘揚正法之叮嚀與託付。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "毘尼": {
+      "term": "毘尼",
+      "explanation": "梵語 Vinaya 之音譯，譯為律或調伏。指佛陀所制定的戒律規範，能調伏身口意惡業。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "弘範": {
+      "term": "弘範",
+      "explanation": "廣大的軌範、典範。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "應身": {
+      "term": "應身",
+      "explanation": "佛三身之一。佛菩薩為應眾生根機與因緣，隨宜化現的身相。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "塵累": {
+      "term": "塵累",
+      "explanation": "塵勞與牽累，指世俗煩惱惑業對心性的染污與生死束縛。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "自恣日": {
+      "term": "自恣日",
+      "explanation": "指僧團夏安居九十天結束之日（農曆七月十五日）。僧眾於此日集會，任由他人舉出自身過失並自省懺悔，身心獲極清淨，令諸佛歡喜，故又稱為「佛歡喜日」。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "休夏自恣": {
+      "term": "休夏自恣",
+      "explanation": "「休夏」意為圓滿結束夏季安居修行；「自恣」指在安居結束當天進行相互檢視過失、懺悔清淨的律制儀式。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "咨決心疑": {
+      "term": "咨決心疑",
+      "explanation": "「咨」為請教詢問；「決」為裁決斷定。指菩薩向佛陀請益，以化解與決斷內心對於修證法門及實相理體上的疑惑。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "慈嚴": {
+      "term": "慈嚴",
+      "explanation": "慈悲與尊嚴（威德）。形容佛陀既有救度眾生的極大慈悲，又具足令眾生肅然起敬的無上威德與嚴淨戒律。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "密義": {
+      "term": "密義",
+      "explanation": "指如來至極深奧、不可思議的修證了義法門，即本經所闡明之「妙奢摩他、三摩、禪那」等首楞嚴大定與成佛最初方便。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "無漏": {
+      "term": "無漏",
+      "explanation": "指斷盡見思等煩惱，不使清淨本性流漏於生死輪迴。疏解亦指內冥中道、不落空有二邊之大智慧。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "大阿羅漢": {
+      "term": "大阿羅漢",
+      "explanation": "梵語 Arhat。譯為殺賊、應供、無生。此處指斷盡煩惱、德高望重之大比丘，註疏常指大權示現之十地菩薩。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "佛子住持": {
+      "term": "佛子住持",
+      "explanation": "指從佛法化生、能紹繼佛陀法脈，並住持護航正法使之永不斷絕的真正佛弟子。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "善超諸有": {
+      "term": "善超諸有",
+      "explanation": "善於超越欲界、色界、無色界等三界生死輪迴（諸有/二十五有）之繫縛。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "威儀": {
+      "term": "威儀",
+      "explanation": "指行、住、坐、臥等四威儀，身口意三業符合法度、端嚴肅穆，能令見者生起敬信之心。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "敷座宴安": {
+      "term": "敷座宴安",
+      "explanation": "鋪設座位並安然沉靜就座。既是演法前的威儀儀式，亦象徵佛陀體合真如、寂然不動的自性安樂。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "宣示深奧": {
+      "term": "宣示深奧",
+      "explanation": "宣揚開示至極深密、不可思議的佛法理體，在此特指《楞嚴經》所談之耳根圓通與妙真如性等大乘密義。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "法筵清眾": {
+      "term": "法筵清眾",
+      "explanation": "指參與這場清淨佛法盛宴（法筵）的戒德清淨大眾，包含常隨比丘、十方菩薩及應機前來的王臣等。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "得未曾有": {
+      "term": "得未曾有",
+      "explanation": "獲得過去從未曾體驗過的殊勝法喜、奇特感應或深刻體悟。為見聞希有妙法時的讚歎之詞。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "如是": {
+      "term": "如是",
+      "explanation": "意為「確實如此」，為佛弟子對佛陀所宣說之實相法理表示極度認同、印可與順從之用語。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "精真妙覺明性": {
+      "term": "精真妙覺明性",
+      "explanation": "指離卻一切妄想雜染、純一真實、具足本有光明與圓滿覺照的常住真心（即如來藏妙真如性）。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "出": {
+      "term": "出",
+      "explanation": "超越、脫離、不在其中受其拘束。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "指非指": {
+      "term": "指非指",
+      "explanation": "「指」代表可被明確指示、辨別的對象（如指物為見）；「非指」代表無法被指示、否定對象的狀態。兩者合指二元對立的分別心態。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "無上菩提": {
+      "term": "無上菩提",
+      "explanation": "指至高無上的佛果覺悟與圓滿智慧。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "真發明性": {
+      "term": "真發明性",
+      "explanation": "指真正開顯、明瞭本具的真如自性（本覺真心）。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "直心": {
+      "term": "直心",
+      "explanation": "指正直無偽、離諸諂曲的清淨心。在佛法中指直下承當、契合本覺真性的心，為入道與解脫之本。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "詶": {
+      "term": "詶",
+      "explanation": "音「酬」，同「酬」，意為回答、應答。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "此身": {
+      "term": "此身",
+      "explanation": "指由地、水、火、風四大假合所組成的血肉軀體（即色身）。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "變滅": {
+      "term": "變滅",
+      "explanation": "遷流變化與壞滅死亡。指一切有為法隨時間推移所呈現的無常敗壞之相。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "常住不朽": {
+      "term": "常住不朽",
+      "explanation": "常住指體性超越時間而永不變遷，不朽指永不壞滅。此處世尊設問肉身是否常住，用以反襯世間色相之無常生滅。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "肉身": {
+      "term": "肉身",
+      "explanation": "指由父母所生、地水火風四大假合構成的血肉軀體，屬於生滅變壞的有漏色法。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "真妄虛實": {
+      "term": "真妄虛實",
+      "explanation": "佛學中指本體與現象的相對關係。真與實指常住不變、非虛妄的真如自性；妄與虛指隨緣生滅、無實體可得的妄想塵勞。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "生滅與不生滅": {
+      "term": "生滅與不生滅",
+      "explanation": "生滅指有為法之遷流無常、有生有滅（如妄心與肉身）；不生滅指無為法之湛然常住、本無生滅（如真心自性）。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "發明性": {
+      "term": "發明性",
+      "explanation": "「發明」在古漢譯佛經中意為「顯發闡明」，非現代發明之意；「發明性」即指經由佛陀開示顯發出來的本質或法性。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "我聞": {
+      "term": "我聞",
+      "explanation": "指阿難尊者隨順世俗假稱為「我」，並親自以耳根聆聽佛陀言教，保證經文之真實傳承。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "宿習": {
+      "term": "宿習",
+      "explanation": "指過去累劫多世所積習留存的微細煩惱與習慣，即註疏中所指的「俱生習氣」，極難單憑自力一時斷除。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "摩訶薩怛多般怛囉": {
+      "term": "摩訶薩怛多般怛囉",
+      "explanation": "梵語 Mahā-sitatāpatra 的音譯，意譯為「大白傘蓋」。比喻佛陀清淨無戲論的法身功德，能遍覆護佑一切眾生、息滅一切障難。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "無上神呪": {
+      "term": "無上神呪",
+      "explanation": "即《楞嚴呪》。因其乃如來頂頭化佛所說，具備至高無上、至極不可思議的密化威德力，故稱「無上神呪」。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    }
+  }
+}

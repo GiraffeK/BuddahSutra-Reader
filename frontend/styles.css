@@ -92,6 +92,37 @@ body {
   flex-wrap: wrap;
 }
 
+/* 頂部列：知識庫使用提示（原經名下方說明列，精簡後併入此處；過長以省略號截斷，滑鼠停留看全文） */
+.topbar-left {
+  flex-shrink: 0;
+}
+
+.topbar-right {
+  flex: 1;
+  min-width: 0;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+.topbar-right > * {
+  flex-shrink: 0;
+}
+
+.topbar .topbar-hint {
+  flex: 1 1 auto;
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: #4a3417;
+  background: rgba(255, 253, 248, 0.55);
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: help;
+}
+
 .brand-icon {
   font-size: 20px;
 }
@@ -103,8 +134,12 @@ body {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
+.search-box-wrap {
+  position: relative;
+}
+
 .search-input {
-  width: 240px;
+  width: 250px;
   padding: 6px 12px;
   border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: 6px;
@@ -112,6 +147,75 @@ body {
   color: var(--text-main);
   font-size: 13px;
   outline: none;
+}
+
+.kb-search-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 65;
+  width: 480px;
+  max-width: calc(100vw - 40px);
+  max-height: 440px;
+  overflow-y: auto;
+  background: #fffdf8;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(45, 32, 14, 0.24);
+  color: var(--text-main);
+}
+
+.kb-search-head {
+  padding: 7px 12px;
+  font-size: 11.5px;
+  color: var(--accent-dark);
+  background: #f4ebd6;
+  border-bottom: 1px solid var(--border);
+  font-weight: 700;
+}
+
+.kb-search-group-title {
+  padding: 6px 12px 3px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--accent);
+  background: #fbf7ee;
+  border-top: 1px solid #eee6d6;
+}
+
+.kb-search-item {
+  width: 100%;
+  text-align: left;
+  padding: 7px 12px;
+  border: none;
+  border-bottom: 1px solid #f2ead9;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.kb-search-item:hover {
+  background: #f8eed8;
+}
+
+.kb-search-meta {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.kb-search-snippet {
+  font-size: 12.5px;
+  color: var(--text-main);
+  margin-top: 2px;
+  line-height: 1.45;
+}
+
+.kb-search-empty {
+  padding: 14px 12px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  text-align: center;
 }
 
 .search-input:focus {
@@ -305,6 +409,8 @@ body {
 .fascicle-list {
   padding-left: 14px;
   margin-top: 2px;
+  max-height: 240px;
+  overflow-y: auto;
 }
 
 .fascicle-btn {
@@ -904,6 +1010,13 @@ mark.comm-hit {
   margin-top: 10px;
 }
 
+.storage-path-note {
+  margin-top: 6px;
+  font-size: 11.5px;
+  color: #766a59;
+  word-break: break-all;
+}
+
 .primary-btn {
   padding: 7px 14px;
   border: none;
@@ -1154,3 +1267,200 @@ mark.comm-hit {
     overflow-y: visible;
   }
 }
+
+/* BYOK 與 Modal 樣式 */
+.byok-btn {
+  padding: 4px 10px;
+  background: #fdf6e2;
+  border: 1px solid #d8b87a;
+  border-radius: 6px;
+  color: #6b411c;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.byok-btn:hover {
+  background: #f8e8be;
+  border-color: #b8914b;
+  transform: translateY(-1px);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(30, 20, 10, 0.55);
+  backdrop-filter: blur(2px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modal-card {
+  background: #fffdf8;
+  border: 1px solid #dfd4bf;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 540px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 12px 32px rgba(45, 30, 10, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #ebdcc5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f2e4;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #5c3817;
+}
+
+.modal-close-btn {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  color: #8c7659;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-close-btn:hover {
+  color: #2d261e;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-desc {
+  font-size: 13px;
+  color: #6a5d4c;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+.modal-body .form-group {
+  margin-bottom: 14px;
+}
+
+.modal-body .form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #493928;
+  margin-bottom: 6px;
+}
+
+.input-with-btn {
+  display: flex;
+  gap: 8px;
+}
+
+.input-with-btn input {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 13px;
+  border: 1px solid #d4c5ab;
+  border-radius: 6px;
+  background: #fff;
+  color: #2d261e;
+}
+
+.modal-body select {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 13px;
+  border: 1px solid #d4c5ab;
+  border-radius: 6px;
+  background: #fff;
+  color: #2d261e;
+}
+
+.form-hint {
+  display: block;
+  font-size: 11.5px;
+  color: #8c7659;
+  margin-top: 5px;
+}
+
+.form-hint a {
+  color: #9c5c24;
+  text-decoration: underline;
+}
+
+.modal-action-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.danger-btn {
+  padding: 6px 12px;
+  background: #fdf0ed;
+  border: 1px solid #e8b0a2;
+  border-radius: 6px;
+  color: #aa3322;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.danger-btn:hover {
+  background: #fae0db;
+}
+
+.file-upload-btn {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.byok-status-msg {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12.5px;
+}
+
+.byok-status-msg.ok {
+  background: #e6f4ec;
+  color: #2c6e49;
+  border: 1px solid #a3d9b8;
+}
+
+.byok-status-msg.err {
+  background: #fdeeee;
+  color: #b32d2d;
+  border: 1px solid #f2b4b4;
+}
+
+.card-topbar-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.compact-translate-btn {
+  padding: 3px 10px !important;
+  font-size: 12px !important;
+  line-height: 1.4;
+  border-radius: 6px;
+}
+

@@ -1,0 +1,380 @@
+{
+  "schema_version": "2.0",
+  "sutra_id": "T10n0279",
+  "sutra_title": "大方廣佛華嚴經（八十華嚴）",
+  "updated_at": "2026-11-24T12:48:49+08:00",
+  "terms": {
+    "如是我聞": {
+      "term": "如是我聞",
+      "explanation": "佛教經典標準開場語，意指「我（阿難）親自聽聞佛陀如此宣說」，確立教法之真實性與傳承。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "阿蘭若法": {
+      "term": "阿蘭若法",
+      "explanation": "梵語 Araṇya，原意為寂靜處、無諍處。清涼澄觀《華嚴疏鈔》指出，於華嚴法界中亦表遠離煩惱喧雜之清淨法性。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "金剛": {
+      "term": "金剛",
+      "explanation": "指最堅硬、不可破壞之寶石，佛法中象徵不可摧毀的大悲智體與不動真心。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "寶輪": {
+      "term": "寶輪",
+      "explanation": "莊嚴道場之微妙寶輪，表能摧輾破除一切煩惱與惑業的佛法智慧。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "眾寶華": {
+      "term": "眾寶華",
+      "explanation": "各種珍寶所構成的花朵，表菩薩廣修六度萬行、妙花開敷的因行功德。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "清淨摩尼": {
+      "term": "清淨摩尼",
+      "explanation": "清淨無垢的摩尼如意寶珠，象徵離垢大智與圓滿自性，能隨應應現無邊妙用。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "諸色相海": {
+      "term": "諸色相海",
+      "explanation": "指種種極其微妙的物質與形象，其數量龐大、廣浩無邊，故喻之為「海」。在華嚴法界中，表彰依正二報萬德交映之相。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "摩尼為幢": {
+      "term": "摩尼為幢",
+      "explanation": "摩尼意為離垢、寶珠；幢為高豎以表威德之旗幟。指以隨意發光的摩尼寶珠做成尊勝的幢幡，象徵無垢大智高豎，能照破無明。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "眾寶羅網": {
+      "term": "眾寶羅網",
+      "explanation": "由各種珍寶編成的網蔓。在《華嚴經》中常用以比喻法界諸法重重無盡、互即互入、事事無礙的帝網重重境界。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "大方廣": {
+      "term": "大方廣",
+      "explanation": "梵語 Mahāvaipulya。極言法界理體之廣大圓滿。大者體大（本性清淨），方者相大（軌則正固），廣者用大（隨緣應用無量）。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "華嚴": {
+      "term": "華嚴",
+      "explanation": "梵語 Avataṃsaka。華同「花」，比喻菩薩所修之六度萬行；嚴者莊嚴，謂以因地萬行之華，莊嚴無上果德之佛地。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "經": {
+      "term": "經",
+      "explanation": "梵語修多羅（Sūtra），譯為契經。有貫穿法義、攝持眾生、常恆不變之義，指佛所說之聖教典籍。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "爾時": {
+      "term": "爾時",
+      "explanation": "那個時候。指如來成道並即將宣說《大方廣佛華嚴經》的時節因緣。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "道場": {
+      "term": "道場",
+      "explanation": "梵語 Bodhimaṇḍa。指得道成佛之地，亦指修習佛道、顯現無盡法界莊嚴的聖場。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "眾海": {
+      "term": "眾海",
+      "explanation": "比喻參加法會的大眾數量極多、智慧功德深廣，如大海般無量無邊、混融無礙。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "雲集": {
+      "term": "雲集",
+      "explanation": "比喻十方聖眾如大雲般從四面八方紛至沓來、重重圍繞，亦蘊含慈雲廣覆、澤被衆生之法義。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "無邊品類": {
+      "term": "無邊品類",
+      "explanation": "指無量無邊、種類繁多的眾生部族與品階。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "周匝遍滿": {
+      "term": "周匝遍滿",
+      "explanation": "周匝意為環繞四周，遍滿意為普遍充塞；形容無量聖眾圍繞並充塞於法會道場。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "形色": {
+      "term": "形色",
+      "explanation": "指事物的形體外貌與色彩相貌，於此處指會中無量諸天、菩薩、神眾等各自顯現的外在相貌與體態。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "部從": {
+      "term": "部從",
+      "explanation": "指隨侍、圍繞在各類大眾身旁的眷屬與跟隨者。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "各各差別": {
+      "term": "各各差別",
+      "explanation": "指諸眾生隨其過去世各自修習之業因果報與願力，於外相、眷屬及所解法門上所呈現出各不相同、千差萬別的現象。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "眾會": {
+      "term": "眾會",
+      "explanation": "指參與華嚴法會的無量菩薩、天神及各類聖眾。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "煩惱心垢": {
+      "term": "煩惱心垢",
+      "explanation": "指貪、瞋、癡等能染污自性清淨心的種種煩惱。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "餘習": {
+      "term": "餘習",
+      "explanation": "又稱習氣，指主要煩惱雖已斷除，但殘留下來的微細慣性與勢力。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "重障山": {
+      "term": "重障山",
+      "explanation": "比喻煩惱障（障礙解脫）與所知障（障礙大智）極為厚重，如高山般阻隔聖道。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "見佛無礙": {
+      "term": "見佛無礙",
+      "explanation": "指因內心清淨無障，故能隨處感應、無阻礙地親見佛陀的法身與報化身。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "解脫門": {
+      "term": "解脫門",
+      "explanation": "指通往擺脫煩惱束縛、證得法性與無礙智慧的觀修法門或自在境界。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "普詣": {
+      "term": "普詣",
+      "explanation": "普遍前往、無所不至。意指菩薩以廣大願力周遍契入一切法界與諸佛道場。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "具足功德境界": {
+      "term": "具足功德境界",
+      "explanation": "指諸佛在果位上圓滿修集、無所缺減的一切萬德與不可思議清淨境界。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "世尊": {
+      "term": "世尊",
+      "explanation": "佛陀十號之一，梵語薄伽梵（Bhagavān）。意譯為具足無量功德、為世間與出世間所共同尊崇敬仰者。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "親近": {
+      "term": "親近",
+      "explanation": "靠近、親近並依止善知識或諸佛，旨在隨順教誨、聽聞正法並修持梵行。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "一心": {
+      "term": "一心",
+      "explanation": "指專一不散亂的心，或指至誠清淨、無二無別的平等真心。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "瞻仰": {
+      "term": "瞻仰",
+      "explanation": "懷著極其虔誠、恭敬與渴仰的心情仰望佛陀尊相。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "毘盧遮那": {
+      "term": "毘盧遮那",
+      "explanation": "梵語 Vairocana 的音譯，意譯為「光明遍照」或「大日」，為《華嚴經》所依之本尊佛，代表遍一切處的清淨法身與圓滿報身。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "劫海": {
+      "term": "劫海",
+      "explanation": "以「海」喻時間之深廣無際。指極為漫長、難以計數的無量無邊大劫。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "菩薩行": {
+      "term": "菩薩行",
+      "explanation": "菩薩為求無上菩提、利益一切眾生所修集的大乘行業，包含六度萬行等善法。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "四攝事": {
+      "term": "四攝事",
+      "explanation": "又稱四攝法，為菩薩攝受眾生令入佛道的四種方便：布施攝、愛語攝、利行攝、同事攝。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "攝受": {
+      "term": "攝受",
+      "explanation": "以慈悲心與方便法吸引、護念、教化眾生，使其身心歸向佛法並獲得利益。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "摩尼寶": {
+      "term": "摩尼寶",
+      "explanation": "梵語 maṇi，譯為「如意寶珠」，能隨心所想雨下各種寶物、消除貧苦。於華嚴法義中，常比喻自性清淨、具足萬德且能應現無窮的法性。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "雨": {
+      "term": "雨",
+      "explanation": "此處作動詞用（音「玉」），意為如雨般密集地降下。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "其眾如雲": {
+      "term": "其眾如雲",
+      "explanation": "形容菩薩大眾數量極多，如密集遍布的雲彩一般充遍法界。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "俱時出現": {
+      "term": "俱時出現",
+      "explanation": "指無量菩薩於同一時間、一齊顯現，表法界時空無礙、頓現不急之妙用。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "如來威神力": {
+      "term": "如來威神力",
+      "explanation": "指佛陀所具足不可思議、威嚴赫赫的神通變化與功德力量。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "菩提樹": {
+      "term": "菩提樹",
+      "explanation": "原指佛陀成道處之樹。在華嚴經中象徵佛果的高顯殊特與根本大智。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "妙音": {
+      "term": "妙音",
+      "explanation": "微妙絕倫之音聲。在此指能宣演甚深法義、開導眾生的佛法之音。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "無有盡極": {
+      "term": "無有盡極",
+      "explanation": "無窮無盡、沒有極限。形容佛法廣大綿延，演說法音永不間斷。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "佛身": {
+      "term": "佛身",
+      "explanation": "指佛陀之身。在《華嚴經》中佛身總括法身、報身與化身，融通無礙，超越空間限制而普遍充滿一切法界。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "法界": {
+      "term": "法界",
+      "explanation": "佛法所認知宇宙萬有之實相與本體，包含一切事相與理性融通的無盡空間與境界。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "寂滅": {
+      "term": "寂滅",
+      "explanation": "指諸法實相離盡一切煩惱、妄想與生滅相，達到極度寂靜、究竟涅槃的本然狀態。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "無性": {
+      "term": "無性",
+      "explanation": "即「無自性」，指一切事物皆依因緣聚合而生，缺乏獨立自存、恆常不變的實體。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "妙華": {
+      "term": "妙華",
+      "explanation": "勝妙之花。在華嚴法義中，華常象徵菩薩修集六度萬行之「因華」，能導向圓滿佛果。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "莊嚴": {
+      "term": "莊嚴",
+      "explanation": "以功德、智慧、福德等無漏善根裝飾佛國淨土或法身，使其達到清淨微妙、圓滿殊勝之狀態。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "香風": {
+      "term": "香風",
+      "explanation": "帶有妙香之風。比喻佛陀之大悲心與戒定真香，能吹動並普薰一切法界眾生，使其斷惑證真。",
+      "first_seen_fascicle": null,
+      "updated_at": "2026-11-24T10:27:21+08:00"
+    },
+    "菩薩摩訶薩": {
+      "term": "菩薩摩訶薩",
+      "explanation": "梵語 Bodhisattva-mahāsattva，譯為「大菩提薩埵」或「大有情」，指已發大菩提心、志在求無上佛道並廣度眾生的高階大菩薩。",
+      "first_seen_fascicle": 18,
+      "updated_at": "2026-11-24T12:44:13+08:00"
+    },
+    "一切智心": {
+      "term": "一切智心",
+      "explanation": "即求取佛陀圓滿智慧（一切種智）的菩提心，是發心成佛以度化一切眾生的根本誓願。",
+      "first_seen_fascicle": 18,
+      "updated_at": "2026-11-24T12:44:13+08:00"
+    },
+    "菩薩正位": {
+      "term": "菩薩正位",
+      "explanation": "指菩薩入於「正性離生」或不退轉的聖者階位（如住位或地上位），離邪歸正，決定不再退墮於凡夫或二乘之地。",
+      "first_seen_fascicle": 18,
+      "updated_at": "2026-11-24T12:44:13+08:00"
+    },
+    "出世法": {
+      "term": "出世法",
+      "explanation": "超越世間生死輪迴、有漏煩惱，能導向涅槃與無上菩提的無漏清淨法門。",
+      "first_seen_fascicle": 18,
+      "updated_at": "2026-11-24T12:44:13+08:00"
+    },
+    "諸佛攝受": {
+      "term": "諸佛攝受",
+      "explanation": "過去、未來、現在三世諸佛以慈悲神通力護念、引導並加持菩薩，使其修行無有障礙、速證菩提。",
+      "first_seen_fascicle": 18,
+      "updated_at": "2026-11-24T12:44:13+08:00"
+    },
+    "佛子": {
+      "term": "佛子",
+      "explanation": "指發菩提心、能繼承佛陀家業、從佛法正教化生的大乘菩薩或修行者。",
+      "first_seen_fascicle": 18,
+      "updated_at": "2026-11-24T12:46:02+08:00"
+    },
+    "善根": {
+      "term": "善根",
+      "explanation": "能生出一切善法之根基，如不貪、不瞋、不痴等三善根，能發起並圓滿種種世出世間之功德。",
+      "first_seen_fascicle": 18,
+      "updated_at": "2026-11-24T12:48:49+08:00"
+    },
+    "惡趣諸難": {
+      "term": "惡趣諸難",
+      "explanation": "「惡趣」指地獄、餓鬼、畜生等三惡道；「諸難」指妨礙見佛聞法的種種障礙（如八難），此處指一切違緣苦難。",
+      "first_seen_fascicle": 18,
+      "updated_at": "2026-11-24T12:48:49+08:00"
+    },
+    "大智境界": {
+      "term": "大智境界",
+      "explanation": "菩薩所證得的大智慧及其相應的真理實相（包含自相、共相、不二相等理智一如之境界）。",
+      "first_seen_fascicle": 18,
+      "updated_at": "2026-11-24T12:48:49+08:00"
+    }
+  }
+}

@@ -1,0 +1,1956 @@
+{
+  "schema_version": "1.0",
+  "source": "CBETA Online Data API (cbdata.dila.edu.tw)",
+  "sutra_id": "T10n0279",
+  "sutra_title": "大方廣佛華嚴經",
+  "edition": "八十華嚴（唐・實叉難陀譯）",
+  "translator": "唐 實叉難陀譯",
+  "fascicle": 2,
+  "fascicle_count": 80,
+  "fascicle_title": "卷第2・1 世主妙嚴品・之二",
+  "paragraphs": [
+    {
+      "paragraph_id": "T10n0279_002_p0001",
+      "index": 1,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0001_s001",
+          "index": 1,
+          "text": "大方廣佛華嚴經卷第二",
+          "source_hash": "sha256:ccaea1afb374"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0002",
+      "index": 2,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0002_s001",
+          "index": 1,
+          "text": "[＊]于闐國三[＊]藏實叉難陀[＊]奉制譯",
+          "source_hash": "sha256:e834d61b715c"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0003",
+      "index": 3,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0003_s001",
+          "index": 1,
+          "text": "世主妙嚴品第一之二",
+          "source_hash": "sha256:2485b2468175"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0004",
+      "index": 4,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0004_s001",
+          "index": 1,
+          "text": "爾時，如來道場眾海，悉已雲集；",
+          "source_hash": "sha256:966d56065d4c"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0004_s002",
+          "index": 2,
+          "text": "無邊品類，周匝遍滿；",
+          "source_hash": "sha256:ca9dacc1afbd"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0004_s003",
+          "index": 3,
+          "text": "形色部從，各各差別；",
+          "source_hash": "sha256:b7b38a448dc7"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0004_s004",
+          "index": 4,
+          "text": "隨所來方，親近世尊，一心瞻仰。",
+          "source_hash": "sha256:1706e9212843"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0004_s005",
+          "index": 5,
+          "text": "此諸眾會，已離一切煩惱心垢及其餘習，摧重障山，見佛無礙。",
+          "source_hash": "sha256:ebbc01801110"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0004_s006",
+          "index": 6,
+          "text": "如是皆以毘盧遮那如來往昔之時，於劫海中修菩薩行，以四攝事而曾攝受；",
+          "source_hash": "sha256:c8971465a029"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0004_s007",
+          "index": 7,
+          "text": "一一佛所種善根時，皆已善攝種種方便，教化成熟，令其安立一切智道；",
+          "source_hash": "sha256:f4fd026e919f"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0004_s008",
+          "index": 8,
+          "text": "種無量善，獲眾大福，悉已入於方便願海；",
+          "source_hash": "sha256:a75b1cc97584"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0004_s009",
+          "index": 9,
+          "text": "所行之行，具足清淨；",
+          "source_hash": "sha256:0658e8038f75"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0004_s010",
+          "index": 10,
+          "text": "於出離道，已能善出；",
+          "source_hash": "sha256:2e20b0bce083"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0004_s011",
+          "index": 11,
+          "text": "常見於佛，分明照了；",
+          "source_hash": "sha256:def2c49adf11"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0004_s012",
+          "index": 12,
+          "text": "以勝解力入於如來功德大海，得於諸佛解脫之門遊戲神通。",
+          "source_hash": "sha256:676e5bd7e69f"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0004_s013",
+          "index": 13,
+          "text": "所謂：",
+          "source_hash": "sha256:37d7829cf87a"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0005",
+      "index": 5,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0005_s001",
+          "index": 1,
+          "text": "妙焰海大自在天王，得法界、虛空界寂靜方便力解脫門；",
+          "source_hash": "sha256:c9ce89c72252"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0005_s002",
+          "index": 2,
+          "text": "自在名稱光天王，得普觀一切法悉自在解脫門；",
+          "source_hash": "sha256:2cf3a1239793"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0005_s003",
+          "index": 3,
+          "text": "清淨功德眼天王，得知一切法不生、不滅、不來、不去、無功用行解脫門；",
+          "source_hash": "sha256:57543dab56c1"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0005_s004",
+          "index": 4,
+          "text": "可愛樂大慧天王，得現見一切法真實相智慧海解脫門；",
+          "source_hash": "sha256:dcd7b4371594"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0005_s005",
+          "index": 5,
+          "text": "不動光自在天王，得與眾生無邊安樂大方便定解脫門；",
+          "source_hash": "sha256:b180c14d7976"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0005_s006",
+          "index": 6,
+          "text": "妙莊嚴眼天王，得令觀寂靜法滅諸癡暗怖解脫門；",
+          "source_hash": "sha256:07377f7a733d"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0005_s007",
+          "index": 7,
+          "text": "善思惟光明天王，得善入無邊境界不起一切諸有思惟業解脫門；",
+          "source_hash": "sha256:630a244f07f7"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0005_s008",
+          "index": 8,
+          "text": "可愛樂大智天王，得普往十方說法而不動無所依解脫門；",
+          "source_hash": "sha256:750b841fe844"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0005_s009",
+          "index": 9,
+          "text": "普音莊嚴幢天王，得入佛寂靜境界普現光明解脫門；",
+          "source_hash": "sha256:15fa6513c7e2"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0005_s010",
+          "index": 10,
+          "text": "名稱光善精進天王，得住自所悟處而以無邊廣大境界為所緣解脫門。",
+          "source_hash": "sha256:2ae585884c7a"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0006",
+      "index": 6,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0006_s001",
+          "index": 1,
+          "text": "爾時，妙焰海天王，承佛威力，普觀一切自在天眾而說頌言：",
+          "source_hash": "sha256:3cc17a06559f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0007",
+      "index": 7,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0007_s001",
+          "index": 1,
+          "text": "「佛身普遍諸大會，充滿法界無窮盡，寂滅無性不可取，為救世間而出現。",
+          "source_hash": "sha256:f1a7784d0d2b"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0007_s002",
+          "index": 2,
+          "text": "如來法王出世間，能然照世妙法燈，境界無邊亦無盡，此自在名之所證。",
+          "source_hash": "sha256:51834141b769"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0007_s003",
+          "index": 3,
+          "text": "佛不思議離分別，了相十方無所有，為世廣開清淨道，如是淨眼能觀見。",
+          "source_hash": "sha256:d6262eb26712"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0007_s004",
+          "index": 4,
+          "text": "如來智慧無邊際，一切世間莫能測，永滅眾生癡暗心，大慧入此深安住。",
+          "source_hash": "sha256:6a8abd4b6910"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0007_s005",
+          "index": 5,
+          "text": "如來功德不思議，眾生見者煩惱滅，普使世間獲安樂，不動自在天能見。",
+          "source_hash": "sha256:a72650a877ac"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0007_s006",
+          "index": 6,
+          "text": "眾生癡暗常迷覆，如來為說寂靜法，是則照世智慧燈，妙眼能知此方便。",
+          "source_hash": "sha256:4feba1865523"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0007_s007",
+          "index": 7,
+          "text": "如來清淨妙色身，普現十方無有比，此身無性無依處，善思惟天所觀察。",
+          "source_hash": "sha256:d7617fe28b71"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0007_s008",
+          "index": 8,
+          "text": "如來音聲無限礙，堪受化者靡不聞，而佛寂然恒不動，此樂智天之解脫。",
+          "source_hash": "sha256:e7f6f7c1b992"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0007_s009",
+          "index": 9,
+          "text": "寂靜解脫天人主，十方無處不現前，光明照耀滿世間，此無礙法嚴幢見。",
+          "source_hash": "sha256:fc74fb6af8c0"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0007_s010",
+          "index": 10,
+          "text": "佛於無邊大劫海，為眾生故求菩提，種種神通化一切，名稱光天悟斯法。」",
+          "source_hash": "sha256:7194d05ce22c"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0008",
+      "index": 8,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0008_s001",
+          "index": 1,
+          "text": "復次，可愛樂法光明幢天王，得普觀一切眾生根為說法斷疑解脫門；",
+          "source_hash": "sha256:580babbbe075"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0008_s002",
+          "index": 2,
+          "text": "淨莊嚴海天王，得隨憶念令見佛解脫門；",
+          "source_hash": "sha256:10e990704929"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0008_s003",
+          "index": 3,
+          "text": "最勝慧光明天王，得法性平等無所依莊嚴身解脫門；",
+          "source_hash": "sha256:d26c301f02f3"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0008_s004",
+          "index": 4,
+          "text": "自在智慧幢天王，得了知一切世間法一念中安立不思議莊嚴海解脫門；",
+          "source_hash": "sha256:ec6dd9e2a0a4"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0008_s005",
+          "index": 5,
+          "text": "樂寂靜天王，得於一毛孔現不思議佛剎無障礙解脫門；",
+          "source_hash": "sha256:d2019bad6a92"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0008_s006",
+          "index": 6,
+          "text": "普智眼天王，得入普門觀察法界解脫門；",
+          "source_hash": "sha256:ef37513156dc"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0008_s007",
+          "index": 7,
+          "text": "樂旋慧天王，得為一切眾生種種出現無邊劫常現前解脫門；",
+          "source_hash": "sha256:4c3d97f0d63a"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0008_s008",
+          "index": 8,
+          "text": "善種慧光明天王，得觀一切世間境界入不思議法解脫門；",
+          "source_hash": "sha256:6c6acb288c5b"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0008_s009",
+          "index": 9,
+          "text": "無垢寂靜光天王，得示一切眾生出要法解脫門；",
+          "source_hash": "sha256:071a19aed937"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0008_s010",
+          "index": 10,
+          "text": "廣大清淨光天王，得觀察一切應化眾生令入佛法解脫門。",
+          "source_hash": "sha256:ff0377fb4c33"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0009",
+      "index": 9,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0009_s001",
+          "index": 1,
+          "text": "爾時，可愛樂法光明幢天王，承佛威力，普觀一切少廣天、無量廣天、廣果天眾而說頌言：",
+          "source_hash": "sha256:679de18bf533"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0010",
+      "index": 10,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0010_s001",
+          "index": 1,
+          "text": "「諸佛境界不思議，一切眾生莫能測，普令其心生信解，廣大意樂無窮盡。",
+          "source_hash": "sha256:6013ffb522f4"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0010_s002",
+          "index": 2,
+          "text": "若有眾生堪受法，佛威神力開導彼，令其恒覩佛現前，嚴海天王如是見。",
+          "source_hash": "sha256:4e8b964a2f22"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0010_s003",
+          "index": 3,
+          "text": "一切法性無所依，佛現世間亦如是，普於諸有無依處，此義勝智能觀察。",
+          "source_hash": "sha256:f1a79b565035"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0010_s004",
+          "index": 4,
+          "text": "隨諸眾生心所欲，佛神通力皆能現，各各差別不思議，此智幢王解脫海。",
+          "source_hash": "sha256:415e4e4f7400"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0010_s005",
+          "index": 5,
+          "text": "過去所有諸國土，一毛孔中皆示現，此是諸佛大神通，愛樂寂靜能宣說。",
+          "source_hash": "sha256:2b4c489b97c2"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0010_s006",
+          "index": 6,
+          "text": "一切法門無盡海，同會一法道場中，如是法性佛所說，智眼能明此方便。",
+          "source_hash": "sha256:ac2cbcce30c0"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0010_s007",
+          "index": 7,
+          "text": "十方所有諸國土，悉在其中而說法，佛身無去亦無來，愛樂慧旋之境界。",
+          "source_hash": "sha256:0e4e33307fb9"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0010_s008",
+          "index": 8,
+          "text": "佛觀世法如光影，入彼甚深幽奧處，說諸法性常寂然，善種思惟能見此。",
+          "source_hash": "sha256:ce4cae5e3061"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0010_s009",
+          "index": 9,
+          "text": "佛善了知諸境界，隨眾生根雨法雨，為啟難思出要門，此寂靜天能悟入。",
+          "source_hash": "sha256:ef4e20c111db"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0010_s010",
+          "index": 10,
+          "text": "世尊恒以大慈悲，利益眾生而出現，等雨法雨充其器，清淨光天能演說。」",
+          "source_hash": "sha256:ac6911a08ada"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0011",
+      "index": 11,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0011_s001",
+          "index": 1,
+          "text": "復次，清淨慧名稱天王，得了達一切眾生解脫道方便解脫門；",
+          "source_hash": "sha256:ae09d9aa8581"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0011_s002",
+          "index": 2,
+          "text": "最勝見天王，得隨一切諸天眾所樂如光影普示現解脫門；",
+          "source_hash": "sha256:7766b307edd7"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0011_s003",
+          "index": 3,
+          "text": "寂靜德天王，得普嚴淨一切佛境界大方便解脫門；",
+          "source_hash": "sha256:16b6683f7eb5"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0011_s004",
+          "index": 4,
+          "text": "須彌音天王，得隨諸眾生永流轉生死海解脫門；",
+          "source_hash": "sha256:97efaa313f3b"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0011_s005",
+          "index": 5,
+          "text": "淨念眼天王，得憶念如來調伏眾生行解脫門；",
+          "source_hash": "sha256:12d92fb45593"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0011_s006",
+          "index": 6,
+          "text": "可愛樂普照天王，得普門陀羅尼海所流出解脫門；",
+          "source_hash": "sha256:bed703024260"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0011_s007",
+          "index": 7,
+          "text": "世間自在主天王，得能令眾生值佛生信藏解脫門；",
+          "source_hash": "sha256:6ebf2750920e"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0011_s008",
+          "index": 8,
+          "text": "光焰自在天王，得能令一切眾生聞法信喜而出離解脫門；",
+          "source_hash": "sha256:072b2c80888b"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0011_s009",
+          "index": 9,
+          "text": "樂思惟法變化天王，得入一切菩薩調伏行如虛空無邊無盡解脫門；",
+          "source_hash": "sha256:78c5b88cd438"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0011_s010",
+          "index": 10,
+          "text": "變化幢天王，得觀眾生無量煩惱普悲智解脫門；",
+          "source_hash": "sha256:d567fe6d9ab7"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0011_s011",
+          "index": 11,
+          "text": "星宿音妙莊嚴天王，得放光現佛三輪攝化解脫門。",
+          "source_hash": "sha256:ee4797704942"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0012",
+      "index": 12,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0012_s001",
+          "index": 1,
+          "text": "爾時，清淨慧名稱天王，承佛威力，普觀一切少淨天、無量淨天、遍淨天眾而說頌言：",
+          "source_hash": "sha256:017330d1bc9c"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0013",
+      "index": 13,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0013_s001",
+          "index": 1,
+          "text": "「了知法性無礙者，普現十方無量剎，說佛境界不思議，令眾同歸解脫海。",
+          "source_hash": "sha256:a78fe87282fc"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0013_s002",
+          "index": 2,
+          "text": "如來處世無所依，譬如光影現眾國，法性究竟無生起，此勝見王所入門。",
+          "source_hash": "sha256:19da0380f37e"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0013_s003",
+          "index": 3,
+          "text": "無量劫海修方便，普淨十方諸國土，法界如如常不動，寂靜德天之所悟。",
+          "source_hash": "sha256:650b508b477a"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0013_s004",
+          "index": 4,
+          "text": "眾生愚癡所覆障，盲暗恒居生死中，如來示以清淨道，此須彌音之解脫。",
+          "source_hash": "sha256:95883a64c5a2"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0013_s005",
+          "index": 5,
+          "text": "諸佛所行無上道，一切眾生莫能測，示以種種方便門，淨眼諦觀能悉了。",
+          "source_hash": "sha256:de474f4dd0f0"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0013_s006",
+          "index": 6,
+          "text": "如來恒以總持門，譬如剎海微塵數，示教眾生遍一切，普照天王此能入。",
+          "source_hash": "sha256:270e3f603c31"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0013_s007",
+          "index": 7,
+          "text": "如來出世甚難值，無量劫海時一遇，能令眾生生信解，此自在天之所得。",
+          "source_hash": "sha256:d435bea7a660"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0013_s008",
+          "index": 8,
+          "text": "佛說法性皆無性，甚深廣大不思議，普使眾生生淨信，光焰天王能善了。",
+          "source_hash": "sha256:9141a130f6b6"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0013_s009",
+          "index": 9,
+          "text": "三世如來功德滿，化眾生界不思議，於彼思惟生慶悅，如是樂法能開演。",
+          "source_hash": "sha256:b4ac0c1b85fd"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0013_s010",
+          "index": 10,
+          "text": "眾生沒在煩惱海，愚癡見濁甚可怖，大師哀愍令永離，此化幢王所觀境。",
+          "source_hash": "sha256:fd5c937a4222"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0013_s011",
+          "index": 11,
+          "text": "如來恒放大光明，一一光中無量佛，各各現化眾生事，此妙音天所入門。」",
+          "source_hash": "sha256:f12a0b1759c5"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0014",
+      "index": 14,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0014_s001",
+          "index": 1,
+          "text": "復次，可愛樂光明天王，得恒受寂靜樂而能降現消滅世間苦解脫門；",
+          "source_hash": "sha256:2a9c28172474"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0014_s002",
+          "index": 2,
+          "text": "清淨妙光天王，得大悲心相應海一切眾生喜樂藏解脫門；",
+          "source_hash": "sha256:fc2129054490"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0014_s003",
+          "index": 3,
+          "text": "自在音天王，得一念中普現無邊劫一切眾生福德力解脫門；",
+          "source_hash": "sha256:1355bcb79e40"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0014_s004",
+          "index": 4,
+          "text": "最勝念智天王，得普使成住壞一切世間皆悉如虛空清淨解脫門；",
+          "source_hash": "sha256:25eac6b896f1"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0014_s005",
+          "index": 5,
+          "text": "可愛樂淨妙音天王，得愛樂信受一切聖人法解脫門；",
+          "source_hash": "sha256:d9e98c73805f"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0014_s006",
+          "index": 6,
+          "text": "善思惟音天王，得能經劫住演說一切地義及方便解脫門；",
+          "source_hash": "sha256:7935a638de4f"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0014_s007",
+          "index": 7,
+          "text": "演莊嚴音天王，得一切菩薩從兜率天宮沒下生時大供養方便解脫門；",
+          "source_hash": "sha256:808855028b76"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0014_s008",
+          "index": 8,
+          "text": "甚深光音天王，得觀察無盡神通智慧海解脫門；",
+          "source_hash": "sha256:23a98836143e"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0014_s009",
+          "index": 9,
+          "text": "廣大名稱天王，得一切佛功德海滿足出現世間方便力解脫門；",
+          "source_hash": "sha256:768133101aff"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0014_s010",
+          "index": 10,
+          "text": "最勝淨光天王，得如來往昔誓願力發生深信愛樂藏解脫門。",
+          "source_hash": "sha256:c764e3b6d948"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0015",
+      "index": 15,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0015_s001",
+          "index": 1,
+          "text": "爾時，可愛樂光明天王，承佛威力，普觀一切少光天、無量光天、極光天眾而說頌言：",
+          "source_hash": "sha256:04c6b7ca7acd"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0016",
+      "index": 16,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0016_s001",
+          "index": 1,
+          "text": "「我念如來昔所行，承事供養無邊佛，如本信心清淨業，以佛威神今悉見。",
+          "source_hash": "sha256:30b18249aef7"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0016_s002",
+          "index": 2,
+          "text": "佛身無相離眾垢，恒住慈悲哀愍地，世間憂患悉使除，此是妙光之解脫。",
+          "source_hash": "sha256:ee49cbfca7ee"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0016_s003",
+          "index": 3,
+          "text": "佛法廣大無涯際，一切剎海於中現，如其成壞各不同，自在音天解脫力。",
+          "source_hash": "sha256:63e8d4d1c39f"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0016_s004",
+          "index": 4,
+          "text": "佛神通力無與等，普現十方廣大剎，悉令嚴淨常現前，勝念解脫之方便。",
+          "source_hash": "sha256:875be44c80ef"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0016_s005",
+          "index": 5,
+          "text": "如諸剎海微塵數，所有如來咸敬奉，聞法離染不唐捐，此妙音天法門用。",
+          "source_hash": "sha256:4b2b1cd71aca"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0016_s006",
+          "index": 6,
+          "text": "佛於無量大劫海，說地方便無倫匹，所說無邊無有窮，善思音天知此義。",
+          "source_hash": "sha256:57746578db16"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0016_s007",
+          "index": 7,
+          "text": "如來神變無量門，一念現於一切處，降神成道大方便，此莊嚴音之解脫。",
+          "source_hash": "sha256:205d7646aa42"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0016_s008",
+          "index": 8,
+          "text": "威力所持能演說，及現諸佛神通事，隨其根欲悉令淨，此光音天解脫門。",
+          "source_hash": "sha256:e4afe08d286e"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0016_s009",
+          "index": 9,
+          "text": "如來智慧無邊際，世中無等無所著，慈心應物普現前，廣大名天悟斯道。",
+          "source_hash": "sha256:c475995c54ce"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0016_s010",
+          "index": 10,
+          "text": "佛昔修習菩提行，供養十方一切佛，一一佛所發誓心，最勝光聞大歡喜。」",
+          "source_hash": "sha256:c3021d99eb15"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0017",
+      "index": 17,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0017_s001",
+          "index": 1,
+          "text": "復次，尸棄梵王，得普住十方道場中說法而所行清淨無染著解脫門；",
+          "source_hash": "sha256:870d166f791e"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0017_s002",
+          "index": 2,
+          "text": "慧光梵王，得使一切眾生入禪三昧住解脫門；",
+          "source_hash": "sha256:7b31d38bd851"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0017_s003",
+          "index": 3,
+          "text": "善思慧光明梵王，得普入一切不思議法解脫門；",
+          "source_hash": "sha256:17a1e9a72d11"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0017_s004",
+          "index": 4,
+          "text": "普雲音梵王，得入諸佛一切音聲海解脫門；",
+          "source_hash": "sha256:57a1af4b3999"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0017_s005",
+          "index": 5,
+          "text": "觀世言音自在梵王，得能憶念菩薩教化一切眾生方便解脫門；",
+          "source_hash": "sha256:aa4ae1890cfe"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0017_s006",
+          "index": 6,
+          "text": "寂靜光明眼梵王，得現一切世間業報相各差別解脫門；",
+          "source_hash": "sha256:3b209145de3b"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0017_s007",
+          "index": 7,
+          "text": "普光明梵王，得隨一切眾生品類差別皆現前調伏解脫門；",
+          "source_hash": "sha256:2659917797a0"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0017_s008",
+          "index": 8,
+          "text": "變化音梵王，得住一切法清淨相寂滅行境界解脫門；",
+          "source_hash": "sha256:317dbae23288"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0017_s009",
+          "index": 9,
+          "text": "光耀眼梵王，得於一切有無所著、無邊際、無依止、常勤出現解脫門；",
+          "source_hash": "sha256:b634fa701757"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0017_s010",
+          "index": 10,
+          "text": "悅意海音梵王，得常思惟觀察無盡法解脫門。",
+          "source_hash": "sha256:606c66137cc3"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0018",
+      "index": 18,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0018_s001",
+          "index": 1,
+          "text": "爾時，尸棄大梵王，承佛神力，普觀一切梵身天、梵輔天、梵眾天、大梵天眾而說頌言：",
+          "source_hash": "sha256:05e14522ff2d"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0019",
+      "index": 19,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0019_s001",
+          "index": 1,
+          "text": "「佛身清淨常寂滅，光明照耀遍世間，無相無行無影像，譬如空雲如是見。",
+          "source_hash": "sha256:c05dcf515238"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0019_s002",
+          "index": 2,
+          "text": "佛身如是定境界，一切眾生莫能測，示彼難思方便門，此慧光王之所悟。",
+          "source_hash": "sha256:be5ff8ab06f0"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0019_s003",
+          "index": 3,
+          "text": "佛剎微塵法門海，一言演說盡無餘，如是劫海演不窮，善思慧光之解脫。",
+          "source_hash": "sha256:ee4614ac15f4"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0019_s004",
+          "index": 4,
+          "text": "諸佛圓音等世間，眾生隨類各得解，而於音聲不分別，普音梵天如是悟。",
+          "source_hash": "sha256:292730b7a40f"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0019_s005",
+          "index": 5,
+          "text": "三世所有諸如來，趣入菩提方便行，一切皆於佛身現，自在音天之解脫。",
+          "source_hash": "sha256:f65aed444ffe"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0019_s006",
+          "index": 6,
+          "text": "一切眾生業差別，隨其因感種種殊，世間如是佛皆現，寂靜光天能悟入。",
+          "source_hash": "sha256:68f76e7f11a0"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0019_s007",
+          "index": 7,
+          "text": "無量法門皆自在，調伏眾生遍十方，亦不於中起分別，此是普光之境界。",
+          "source_hash": "sha256:0f23eb5a5891"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0019_s008",
+          "index": 8,
+          "text": "佛身如空不可盡，無相無礙遍十方，所有應現皆如化，變化音王悟斯道。",
+          "source_hash": "sha256:65d7acfc3755"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0019_s009",
+          "index": 9,
+          "text": "如來身相無有邊，智慧音聲亦如是，處世現形無所著，光耀天王入此門。",
+          "source_hash": "sha256:d5f7c621281f"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0019_s010",
+          "index": 10,
+          "text": "法王安處妙法宮，法身光明無不照，法性無比無諸相，此海音王之解脫。」",
+          "source_hash": "sha256:e16d52e5a6a4"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0020",
+      "index": 20,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0020_s001",
+          "index": 1,
+          "text": "復次，自在天王，得現前成熟無量眾生自在藏解脫門；",
+          "source_hash": "sha256:1dcd44273f78"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0020_s002",
+          "index": 2,
+          "text": "善目主天王，得觀察一切眾生樂令入聖境界樂解脫門；",
+          "source_hash": "sha256:54b9cbcc5e52"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0020_s003",
+          "index": 3,
+          "text": "妙寶幢冠天王，得隨諸眾生種種欲解令起行解脫門；",
+          "source_hash": "sha256:36bd80d8ca27"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0020_s004",
+          "index": 4,
+          "text": "勇猛慧天王，得普攝為一切眾生所說義解脫門；",
+          "source_hash": "sha256:fab6dd50e689"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0020_s005",
+          "index": 5,
+          "text": "妙音句天王，得憶念如來廣大慈增進自所行解脫門；",
+          "source_hash": "sha256:8dafe06e2f8d"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0020_s006",
+          "index": 6,
+          "text": "妙光幢天王，得示現大悲門摧滅一切憍慢幢解脫門；",
+          "source_hash": "sha256:14788d110762"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0020_s007",
+          "index": 7,
+          "text": "寂靜境天王，得調伏一切世間瞋害心解脫門；",
+          "source_hash": "sha256:0fcca9bb8fd8"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0020_s008",
+          "index": 8,
+          "text": "妙輪莊嚴幢天王，得十方無邊佛隨憶念悉來赴解脫門；",
+          "source_hash": "sha256:8cb148ef9fe4"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0020_s009",
+          "index": 9,
+          "text": "華光慧天王，得隨眾生心念普現成正覺解脫門；",
+          "source_hash": "sha256:c86e81025669"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0020_s010",
+          "index": 10,
+          "text": "因陀羅妙光天王，得普入一切世間大威力自在法解脫門。",
+          "source_hash": "sha256:c2635c07da45"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0021",
+      "index": 21,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0021_s001",
+          "index": 1,
+          "text": "爾時，自在天王，承佛威神，遍觀一切自在天眾而說頌言：",
+          "source_hash": "sha256:05c9fd5ddc79"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0022",
+      "index": 22,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0022_s001",
+          "index": 1,
+          "text": "「佛身周遍等法界，普應眾生悉現前，種種教門常化誘，於法自在能開悟。",
+          "source_hash": "sha256:52af580ac471"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0022_s002",
+          "index": 2,
+          "text": "世間所有種種樂，聖寂滅樂為最勝，住於廣大法性中，妙眼天王觀見此。",
+          "source_hash": "sha256:f610bc3ddd40"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0022_s003",
+          "index": 3,
+          "text": "如來出現遍十方，普應群心而說法，一切疑念皆除斷，此妙幢冠解脫門。",
+          "source_hash": "sha256:82a668c8be21"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0022_s004",
+          "index": 4,
+          "text": "諸佛遍世演妙音，無量劫中所說法，能以一言咸說盡，勇猛慧大之解脫。",
+          "source_hash": "sha256:6638717f185b"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0022_s005",
+          "index": 5,
+          "text": "世間所有廣大慈，不及如來一毫分，佛慈如空不可盡，此妙音天之所得。",
+          "source_hash": "sha256:2c74132b0ef1"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0022_s006",
+          "index": 6,
+          "text": "一切眾生慢高山，十力摧殄悉無餘，此是如來大悲用，妙光幢王所行道。",
+          "source_hash": "sha256:c1399cee5131"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0022_s007",
+          "index": 7,
+          "text": "慧光清淨滿世間，若有見者除癡暗，令其遠離諸惡道，寂靜天王悟斯法。",
+          "source_hash": "sha256:a87f8f4a7b60"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0022_s008",
+          "index": 8,
+          "text": "毛孔光明能演說，等眾生數諸佛名，隨其所樂悉得聞，此妙輪幢之解脫。",
+          "source_hash": "sha256:872fc2f54487"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0022_s009",
+          "index": 9,
+          "text": "如來自在不可量，法界虛空悉充滿，一切眾會皆明覩，此解脫門華慧入。",
+          "source_hash": "sha256:d25c0edbd22b"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0022_s010",
+          "index": 10,
+          "text": "無量無邊大劫海，普現十方而說法，未曾見佛有去來，此主光天之所悟。」",
+          "source_hash": "sha256:4a6bf60cafbb"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0023",
+      "index": 23,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0023_s001",
+          "index": 1,
+          "text": "復次，善化天王，得開示一切業變化力解脫門；",
+          "source_hash": "sha256:8777ad865d73"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0023_s002",
+          "index": 2,
+          "text": "寂靜音光明天王，得捨離一切攀緣解脫門；",
+          "source_hash": "sha256:88a6400a711c"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0023_s003",
+          "index": 3,
+          "text": "變化力光明天王，得普滅一切眾生癡暗心令智慧圓滿解脫門；",
+          "source_hash": "sha256:5b6cdc37c53e"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0023_s004",
+          "index": 4,
+          "text": "莊嚴主天王，得示現無邊悅意聲解脫門；",
+          "source_hash": "sha256:2dc6ffe07f22"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0023_s005",
+          "index": 5,
+          "text": "念光天王，得了知一切佛無盡福德相解脫門；",
+          "source_hash": "sha256:e8336ae5d01a"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0023_s006",
+          "index": 6,
+          "text": "最上雲音天王，得普知過去一切劫成壞次第解脫門；",
+          "source_hash": "sha256:a135e75502cf"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0023_s007",
+          "index": 7,
+          "text": "勝光天王，得開悟一切眾生智解脫門；",
+          "source_hash": "sha256:d503c701c067"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0023_s008",
+          "index": 8,
+          "text": "妙髻天王，得舒光疾滿十方虛空界解脫門；",
+          "source_hash": "sha256:04c1a233ee97"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0023_s009",
+          "index": 9,
+          "text": "喜慧天王，得一切所作無能壞精進力解脫門；",
+          "source_hash": "sha256:9d1f52ab1cae"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0023_s010",
+          "index": 10,
+          "text": "華光髻天王，得知一切眾生業所受報解脫門；",
+          "source_hash": "sha256:62f205d2c1b8"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0023_s011",
+          "index": 11,
+          "text": "普見十方天王，得示現不思議眾生形類差別解脫門。",
+          "source_hash": "sha256:b14e2d527d05"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0024",
+      "index": 24,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0024_s001",
+          "index": 1,
+          "text": "爾時，善化天王，承佛威力，普觀一切善化天眾而說頌言：",
+          "source_hash": "sha256:9cc86e3f7055"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0025",
+      "index": 25,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0025_s001",
+          "index": 1,
+          "text": "「世間業性不思議，佛為群迷悉開示，巧說因緣真實理，一切眾生差別業。",
+          "source_hash": "sha256:e1f08edde6bb"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0025_s002",
+          "index": 2,
+          "text": "種種觀佛無所有，十方求覓不可得，法身示現無真實，此法寂音之所見。",
+          "source_hash": "sha256:adf4a228526b"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0025_s003",
+          "index": 3,
+          "text": "佛於劫海修諸行，為滅世間癡暗惑，是故清淨最照明，此是力光心所悟。",
+          "source_hash": "sha256:942dd8b72f9f"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0025_s004",
+          "index": 4,
+          "text": "世間所有妙音聲，無有能比如來音，佛以一音遍十方，入此解脫莊嚴主。",
+          "source_hash": "sha256:7381a7d9e18f"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0025_s005",
+          "index": 5,
+          "text": "世間所有眾福力，不與如來一相等，如來福德同虛空，此念光天所觀見。",
+          "source_hash": "sha256:671ba7404ebf"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0025_s006",
+          "index": 6,
+          "text": "三世所有無量劫，如其成敗種種相，佛一毛孔皆能現，最上雲音所了知。",
+          "source_hash": "sha256:28cf5f252c37"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0025_s007",
+          "index": 7,
+          "text": "十方虛空可知量，佛毛孔量不可得，如是無礙不思議，妙髻天王已能悟。",
+          "source_hash": "sha256:d4a445cbb5ad"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0025_s008",
+          "index": 8,
+          "text": "佛於曩世無量劫，具修廣大波羅蜜，勤行精進無厭怠，喜慧能知此法門。",
+          "source_hash": "sha256:302443a62cd7"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0025_s009",
+          "index": 9,
+          "text": "業性因緣不可思，佛為世間皆演說，法性本淨無諸垢，此是華光之入處。",
+          "source_hash": "sha256:8c47146bde56"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0025_s010",
+          "index": 10,
+          "text": "汝應觀佛一毛孔，一切眾生悉在中，彼亦不來亦不去，此普見王之所了。」",
+          "source_hash": "sha256:d556c09de517"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0026",
+      "index": 26,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0026_s001",
+          "index": 1,
+          "text": "復次，知足天王，得一切佛出興世圓滿教輪解脫門；",
+          "source_hash": "sha256:25d6970d850c"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0026_s002",
+          "index": 2,
+          "text": "喜樂海髻天王，得盡虛空界清淨光明身解脫門；",
+          "source_hash": "sha256:2e68d9f33d82"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0026_s003",
+          "index": 3,
+          "text": "最勝功德幢天王，得消滅世間苦淨願海解脫門；",
+          "source_hash": "sha256:95e1d556c290"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0026_s004",
+          "index": 4,
+          "text": "寂靜光天王，得普現身說法解脫門；",
+          "source_hash": "sha256:6c7c569a6058"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0026_s005",
+          "index": 5,
+          "text": "善目天王，得普淨一切眾生界解脫門；",
+          "source_hash": "sha256:b3efb57b481b"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0026_s006",
+          "index": 6,
+          "text": "寶峯月天王，得普化世間常現前無盡藏解脫門；",
+          "source_hash": "sha256:fd0bfa9a46f2"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0026_s007",
+          "index": 7,
+          "text": "勇健力天王，得開示一切佛正覺境界解脫門；",
+          "source_hash": "sha256:39b20776056e"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0026_s008",
+          "index": 8,
+          "text": "金剛妙光天王，得堅固一切眾生菩提心令不可壞解脫門；",
+          "source_hash": "sha256:823f497075f1"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0026_s009",
+          "index": 9,
+          "text": "星宿幢天王，得一切佛出興咸親近觀察調伏眾生方便解脫門；",
+          "source_hash": "sha256:a7d1da350419"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0026_s010",
+          "index": 10,
+          "text": "妙莊嚴天王，得一念悉知眾生心隨機應現解脫門。",
+          "source_hash": "sha256:6a46307e9284"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0027",
+      "index": 27,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0027_s001",
+          "index": 1,
+          "text": "爾時，知足天王，承佛威力，普觀一切知足天眾而說頌言：",
+          "source_hash": "sha256:c28560531ab8"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0028",
+      "index": 28,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0028_s001",
+          "index": 1,
+          "text": "「如來廣大遍法界，於諸眾生悉平等，普應群情闡妙門，令入難思清淨法。",
+          "source_hash": "sha256:a3a050eab876"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0028_s002",
+          "index": 2,
+          "text": "佛身普現於十方，無著無礙不可取，種種色像世咸見，此喜髻天之所入。",
+          "source_hash": "sha256:b8fbf48269a9"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0028_s003",
+          "index": 3,
+          "text": "如來往昔修諸行，清淨大願深如海，一切佛法皆令滿，勝德能知此方便。",
+          "source_hash": "sha256:4ed3168569d5"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0028_s004",
+          "index": 4,
+          "text": "如來法身不思議，如影分形等法界，處處闡明一切法，寂靜光天解脫門。",
+          "source_hash": "sha256:34a4b399bda3"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0028_s005",
+          "index": 5,
+          "text": "眾生業惑所纏覆，憍慢放逸心馳蕩，如來為說寂靜法，善目照知心喜慶。",
+          "source_hash": "sha256:f7ea07c8bc7d"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0028_s006",
+          "index": 6,
+          "text": "一切世間真導師，為救為歸而出現，普示眾生安樂處，峯月於此能深入。",
+          "source_hash": "sha256:ba199972b37b"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0028_s007",
+          "index": 7,
+          "text": "諸佛境界不思議，一切法界皆周遍，入於諸法到彼岸，勇慧見此生歡喜。",
+          "source_hash": "sha256:25ddf758271a"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0028_s008",
+          "index": 8,
+          "text": "若有眾生堪受化，聞佛功德趣菩提，令住福海常清淨，妙光於此能觀察。",
+          "source_hash": "sha256:9f7161b7de71"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0028_s009",
+          "index": 9,
+          "text": "十方剎海微塵數，一切佛所皆往集，恭敬供養聽聞法，此莊嚴幢之所見。",
+          "source_hash": "sha256:c0c3e404a425"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0028_s010",
+          "index": 10,
+          "text": "眾生心海不思議，無住無動無依處，佛於一念皆明見，妙莊嚴天斯善了。」",
+          "source_hash": "sha256:18b36e0cfa34"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0029",
+      "index": 29,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0029_s001",
+          "index": 1,
+          "text": "復次，時分天王，得發起一切眾生善根令永離憂惱解脫門；",
+          "source_hash": "sha256:a1a0474e4958"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0029_s002",
+          "index": 2,
+          "text": "妙光天王，得普入一切境界解脫門；",
+          "source_hash": "sha256:9cc65c42eb6e"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0029_s003",
+          "index": 3,
+          "text": "無盡慧功德幢天王，得滅除一切患大悲輪解脫門；",
+          "source_hash": "sha256:f7935697ffa5"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0029_s004",
+          "index": 4,
+          "text": "善化端嚴天王，得了知三世一切眾生心解脫門；",
+          "source_hash": "sha256:2f3de56d8d74"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0029_s005",
+          "index": 5,
+          "text": "總持大光明天王，得陀羅尼門光明憶持一切法無忘失解脫門；",
+          "source_hash": "sha256:feef7a6c76b8"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0029_s006",
+          "index": 6,
+          "text": "不思議慧天王，得善入一切業自性不思議方便解脫門；",
+          "source_hash": "sha256:3238e2079750"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0029_s007",
+          "index": 7,
+          "text": "輪臍天王，得轉法輪成熟眾生方便解脫門；",
+          "source_hash": "sha256:21ce7455f746"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0029_s008",
+          "index": 8,
+          "text": "光焰天王，得廣大眼普觀眾生而往調伏解脫門；",
+          "source_hash": "sha256:257740dfe9d2"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0029_s009",
+          "index": 9,
+          "text": "光照天王，得超出一切業障不隨魔所作解脫門；",
+          "source_hash": "sha256:bfb3f3fc37be"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0029_s010",
+          "index": 10,
+          "text": "普觀察大名稱天王，得善誘誨一切諸天眾令受行心清淨解脫門。",
+          "source_hash": "sha256:79d218a9639a"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0030",
+      "index": 30,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0030_s001",
+          "index": 1,
+          "text": "爾時，時分天王，承佛威力，普觀一切時分天眾而說頌言：",
+          "source_hash": "sha256:686e738c8ec5"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0031",
+      "index": 31,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0031_s001",
+          "index": 1,
+          "text": "「佛於無量久遠劫，已竭世間憂惱海，廣闢離塵清淨道，永耀眾生智慧燈。",
+          "source_hash": "sha256:5f4e0b5cdd63"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0031_s002",
+          "index": 2,
+          "text": "如來法身甚廣大，十方邊際不可得，一切方便無限量，妙光明天智能入。",
+          "source_hash": "sha256:e5bf963f1c25"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0031_s003",
+          "index": 3,
+          "text": "生老病死憂悲苦，逼迫世間無暫歇，大師哀愍誓悉除，無盡慧光能覺了。",
+          "source_hash": "sha256:89393fd9b6e3"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0031_s004",
+          "index": 4,
+          "text": "佛如幻智無所礙，於三世法悉明達，普入眾生心行中，此善化天之境界。",
+          "source_hash": "sha256:c40aa5c94790"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0031_s005",
+          "index": 5,
+          "text": "總持邊際不可得，辯才大海亦無盡，能轉清淨妙法輪，此是大光之解脫。",
+          "source_hash": "sha256:cae3d597d51c"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0031_s006",
+          "index": 6,
+          "text": "業性廣大無窮盡，智慧覺了善開示，一切方便不思議，如是慧天之所入。",
+          "source_hash": "sha256:165df296e206"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0031_s007",
+          "index": 7,
+          "text": "轉不思議妙法輪，顯示修習菩提道，永滅一切眾生苦，此是輪臍方便地。",
+          "source_hash": "sha256:d38f4f125aa6"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0031_s008",
+          "index": 8,
+          "text": "如來真身本無二，應物隨形滿世間，眾生各見在其前，此是焰天之境界。",
+          "source_hash": "sha256:8e51cbee7f53"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0031_s009",
+          "index": 9,
+          "text": "若有眾生一見佛，必使淨除諸業障，離諸魔業永無餘，光照天王所行道。",
+          "source_hash": "sha256:92903c62a942"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0031_s010",
+          "index": 10,
+          "text": "一切眾會廣如海，佛在其中最威耀，普雨法雨潤眾生，此解脫門名稱入。」",
+          "source_hash": "sha256:3f7c8d05352d"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0032",
+      "index": 32,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0032_s001",
+          "index": 1,
+          "text": "復次，釋迦因陀羅天王，得憶念三世佛出興乃至剎成壞皆明見大歡喜解脫門；",
+          "source_hash": "sha256:1a89ff26b42a"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0032_s002",
+          "index": 2,
+          "text": "普稱滿音天王，得能令佛色身最清淨廣大世無能比解脫門；",
+          "source_hash": "sha256:30ee9e74cd45"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0032_s003",
+          "index": 3,
+          "text": "慈目寶髻天王，得慈雲普覆解脫門；",
+          "source_hash": "sha256:f59f4a370d4f"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0032_s004",
+          "index": 4,
+          "text": "寶光幢名稱天王，得恒見佛於一切世主前現種種形相威德身解脫門；",
+          "source_hash": "sha256:e10ba03d684f"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0032_s005",
+          "index": 5,
+          "text": "發生喜樂髻天王，得知一切眾生城邑宮殿從何福業生解脫門；",
+          "source_hash": "sha256:accadf776e2b"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0032_s006",
+          "index": 6,
+          "text": "端正念天王，得開示諸佛成熟眾生事解脫門；",
+          "source_hash": "sha256:cf7720cd0484"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0032_s007",
+          "index": 7,
+          "text": "高勝音天王，得知一切世間成壞劫轉變相解脫門；",
+          "source_hash": "sha256:a8e6297db17e"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0032_s008",
+          "index": 8,
+          "text": "成就念天王，得憶念當來菩薩調伏眾生行解脫門；",
+          "source_hash": "sha256:5ef463dc1f7c"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0032_s009",
+          "index": 9,
+          "text": "淨華光天王，得了知一切諸天快樂因解脫門；",
+          "source_hash": "sha256:c2026ce071f1"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0032_s010",
+          "index": 10,
+          "text": "智日眼天王，得開示一切諸天子受生善根𢔌無癡惑解脫門；",
+          "source_hash": "sha256:16053acd6e96"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0032_s011",
+          "index": 11,
+          "text": "自在光明天王，得開悟一切諸天眾令永斷種種疑解脫門。",
+          "source_hash": "sha256:abb14b40e98e"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0033",
+      "index": 33,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0033_s001",
+          "index": 1,
+          "text": "爾時，釋迦因陀羅天王，承佛威力，普觀一切三十三天眾而說頌言：",
+          "source_hash": "sha256:5cf50f8c1839"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0034",
+      "index": 34,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0034_s001",
+          "index": 1,
+          "text": "「我念三世一切佛，所有境界悉平等，如其國土壞與成，以佛威神皆得見。",
+          "source_hash": "sha256:ebbbd15162b8"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0034_s002",
+          "index": 2,
+          "text": "佛身廣大遍十方，妙色無比利群生，光明照耀靡不及，此道普稱能觀見。",
+          "source_hash": "sha256:d68c007a74c4"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0034_s003",
+          "index": 3,
+          "text": "如來方便大慈海，往劫修行極清淨，化導眾生無有邊，寶髻天王斯悟了。",
+          "source_hash": "sha256:c7a22a241973"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0034_s004",
+          "index": 4,
+          "text": "我念法王功德海，世中最上無與等，發生廣大歡喜心，此寶光天之解脫。",
+          "source_hash": "sha256:5c7c28d2ed3d"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0034_s005",
+          "index": 5,
+          "text": "佛知眾生善業海，種種勝因生大福，皆令顯現無有餘，此喜髻天之所見。",
+          "source_hash": "sha256:f44d9e10f023"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0034_s006",
+          "index": 6,
+          "text": "諸佛出現於十方，普遍一切世間中，觀眾生心示調伏，正念天王悟斯道。",
+          "source_hash": "sha256:6235dc2bf330"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0034_s007",
+          "index": 7,
+          "text": "如來智身廣大眼，世界微塵無不見，如是普遍於十方，此雲音天之解脫。",
+          "source_hash": "sha256:081d89741286"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0034_s008",
+          "index": 8,
+          "text": "一切佛子菩提行，如來悉現毛孔中，如其無量皆具足，此念天王所明見。",
+          "source_hash": "sha256:221334b119d4"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0034_s009",
+          "index": 9,
+          "text": "世間所有安樂事，一切皆由佛出生，如來功德勝無等，此解脫處華王入。",
+          "source_hash": "sha256:26f0c45c1c01"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0034_s010",
+          "index": 10,
+          "text": "若念如來少功德，乃至一念心專仰，諸惡道怖悉永除，智眼於此能深悟。",
+          "source_hash": "sha256:8d13e5617ec8"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0034_s011",
+          "index": 11,
+          "text": "寂滅法中大神通，普應群心靡不周，所有疑惑皆令斷，此光明王之所得。」",
+          "source_hash": "sha256:b16c2d5d881a"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0035",
+      "index": 35,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0035_s001",
+          "index": 1,
+          "text": "復次，日天子，得淨光普照十方眾生盡未來劫常為利益解脫門；",
+          "source_hash": "sha256:90b1ea874716"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0035_s002",
+          "index": 2,
+          "text": "光焰眼天子，得以一切隨類身開悟眾生令入智慧海解脫門；",
+          "source_hash": "sha256:231971d60099"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0035_s003",
+          "index": 3,
+          "text": "須彌光歡喜幢天子，得為一切眾生主令勤修無邊淨功德解脫門；",
+          "source_hash": "sha256:57ee8d885a11"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0035_s004",
+          "index": 4,
+          "text": "淨寶月天子，得修一切苦行深心歡喜解脫門；",
+          "source_hash": "sha256:d2399a3ea27d"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0035_s005",
+          "index": 5,
+          "text": "勇猛不退轉天子，得無礙光普照令一切眾生益其精爽解脫門；",
+          "source_hash": "sha256:e4631dd2439d"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0035_s006",
+          "index": 6,
+          "text": "妙華纓光明天子，得淨光普照眾生身令生歡喜信解海解脫門；",
+          "source_hash": "sha256:54fd8d212b81"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0035_s007",
+          "index": 7,
+          "text": "最勝幢光明天子，得光明普照一切世間令成辦種種妙功德解脫門；",
+          "source_hash": "sha256:5ff1cbbf059b"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0035_s008",
+          "index": 8,
+          "text": "寶髻普光明天子，得大悲海現無邊境界種種色相寶解脫門；",
+          "source_hash": "sha256:3480f4c44657"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0035_s009",
+          "index": 9,
+          "text": "光明眼天子，得淨治一切眾生眼令見法界藏解脫門；",
+          "source_hash": "sha256:4cac5cb5d174"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0035_s010",
+          "index": 10,
+          "text": "持德天子，得發生清淨相續心令不失壞解脫門；",
+          "source_hash": "sha256:5a8c13aab38a"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0035_s011",
+          "index": 11,
+          "text": "普運行光明天子，得普運日宮殿照十方一切眾生令成就所作業解脫門。",
+          "source_hash": "sha256:2714594b2a4f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0036",
+      "index": 36,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0036_s001",
+          "index": 1,
+          "text": "爾時，日天子，承佛威力，遍觀一切日天子眾而說頌言：",
+          "source_hash": "sha256:efc59af6877f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0037",
+      "index": 37,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0037_s001",
+          "index": 1,
+          "text": "「如來廣大智慧光，普照十方諸國土，一切眾生咸見佛，種種調伏多方便。",
+          "source_hash": "sha256:1738939178b6"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0037_s002",
+          "index": 2,
+          "text": "如來色相無有邊，隨其所樂悉現身，普為世間開智海，焰眼如是觀於佛。",
+          "source_hash": "sha256:727a57f0d4a2"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0037_s003",
+          "index": 3,
+          "text": "佛身無等無有比，光明照耀遍十方，超過一切最無上，如是法門歡喜得。",
+          "source_hash": "sha256:aa3ec3ae1471"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0037_s004",
+          "index": 4,
+          "text": "為利世間修苦行，往來諸有無量劫，光明遍淨如虛空，寶月能知此方便。",
+          "source_hash": "sha256:8edad1470ed5"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0037_s005",
+          "index": 5,
+          "text": "佛演妙音無障礙，普遍十方諸國土，以法滋味益群生，勇猛能知此方便。",
+          "source_hash": "sha256:f2cf58047842"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0037_s006",
+          "index": 6,
+          "text": "放光明網不思議，普淨一切諸含識，悉使發生深信解，此華纓天所入門。",
+          "source_hash": "sha256:903dd59fc350"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0037_s007",
+          "index": 7,
+          "text": "世間所有諸光明，不及佛一毛孔光，佛光如是不思議，此勝幢光之解脫。",
+          "source_hash": "sha256:27d4458d14eb"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0037_s008",
+          "index": 8,
+          "text": "一切諸佛法如是，悉坐菩提樹王下，令非道者住於道，寶髻光明如是見。",
+          "source_hash": "sha256:bdb3733c2231"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0037_s009",
+          "index": 9,
+          "text": "眾生盲闇愚癡苦，佛欲令其生淨眼，是故為然智慧燈，善目於此深觀察。",
+          "source_hash": "sha256:8f7e11b319cf"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0037_s010",
+          "index": 10,
+          "text": "解脫方便自在尊，若有曾見一供養，悉使修行至於果，此是德天方便力。",
+          "source_hash": "sha256:6b8d894026a3"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0037_s011",
+          "index": 11,
+          "text": "一法門中無量門，無量千劫如是說，所演法門廣大義，普運光天之所了。」",
+          "source_hash": "sha256:07e1473d95d3"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0038",
+      "index": 38,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0038_s001",
+          "index": 1,
+          "text": "復次，月天子，得淨光普照法界攝化眾生解脫門；",
+          "source_hash": "sha256:2c98d04c24b7"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0038_s002",
+          "index": 2,
+          "text": "華王髻光明天子，得觀察一切眾生界令普入無邊法解脫門；",
+          "source_hash": "sha256:43301296680e"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0038_s003",
+          "index": 3,
+          "text": "眾妙淨光天子，得了知一切眾生心海種種攀緣轉解脫門；",
+          "source_hash": "sha256:93c9df7b9940"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0038_s004",
+          "index": 4,
+          "text": "安樂世間心天子，得與一切眾生不可思議樂令踊躍大歡喜解脫門；",
+          "source_hash": "sha256:40cacbcafb4d"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0038_s005",
+          "index": 5,
+          "text": "樹王眼光明天子，得如田家作業種芽莖等隨時守護令成就解脫門；",
+          "source_hash": "sha256:f728cda4e9b4"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0038_s006",
+          "index": 6,
+          "text": "出現淨光天子，得慈悲救護一切眾生令現見受苦受樂事解脫門；",
+          "source_hash": "sha256:19740e85665b"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0038_s007",
+          "index": 7,
+          "text": "普遊不動光天子，得能持清淨月普現十方解脫門；",
+          "source_hash": "sha256:de87877c121d"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0038_s008",
+          "index": 8,
+          "text": "星宿王自在天子，得開示一切法如幻如虛空無相無自性解脫門；",
+          "source_hash": "sha256:ff0ec3cfe252"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0038_s009",
+          "index": 9,
+          "text": "淨覺月天子，得普為一切眾生起大業用解脫門；",
+          "source_hash": "sha256:dd920b6e9666"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0038_s010",
+          "index": 10,
+          "text": "大威德光明天子，得普斷一切疑惑解脫門。",
+          "source_hash": "sha256:20a40a0c701a"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0039",
+      "index": 39,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0039_s001",
+          "index": 1,
+          "text": "爾時，月天子，承佛神力，普觀一切月宮殿中諸天眾會而說頌曰：",
+          "source_hash": "sha256:b5885d881316"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0040",
+      "index": 40,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0040_s001",
+          "index": 1,
+          "text": "「佛放光明遍世間，照耀十方諸國土，演不思議廣大法，永破眾生癡惑暗。",
+          "source_hash": "sha256:d448e8243181"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0040_s002",
+          "index": 2,
+          "text": "境界無邊無有盡，於無量劫常開導，種種自在化群生，華髻如是觀於佛。",
+          "source_hash": "sha256:e0402e644b38"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0040_s003",
+          "index": 3,
+          "text": "眾生心海念念殊，佛智寬廣悉了知，普為說法令歡喜，此妙光明之解脫。",
+          "source_hash": "sha256:a27fab835994"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0040_s004",
+          "index": 4,
+          "text": "眾生無有聖安樂，沈迷惡道受諸苦，如來示彼法性門，安樂思惟如是見。",
+          "source_hash": "sha256:73c404fa2c08"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0040_s005",
+          "index": 5,
+          "text": "如來希有大慈悲，為利眾生入諸有，說法勸善令成就，此目光天所了知。",
+          "source_hash": "sha256:96543c4822d2"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0040_s006",
+          "index": 6,
+          "text": "世尊開闡法光明，分別世間諸業性，善惡所行無失壞，淨光見此生歡喜。",
+          "source_hash": "sha256:ffaac5b3e60a"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0040_s007",
+          "index": 7,
+          "text": "佛為一切福所依，譬如大地持宮室，巧示離憂安隱道，不動能知此方便。",
+          "source_hash": "sha256:0ae7138c4cf1"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0040_s008",
+          "index": 8,
+          "text": "智火大明周法界，現形無數等眾生，普為一切開真實，星宿王天悟斯道。",
+          "source_hash": "sha256:5373b900ed35"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0040_s009",
+          "index": 9,
+          "text": "佛如虛空無自性，為利眾生現世間，相好莊嚴如影像，淨覺天王如是見。",
+          "source_hash": "sha256:0f398aa1f504"
+        },
+        {
+          "sentence_id": "T10n0279_002_p0040_s010",
+          "index": 10,
+          "text": "佛身毛孔普演音，法雲覆世悉無餘，聽聞莫不生歡喜，如是解脫光天悟。」",
+          "source_hash": "sha256:06fb7d9db50f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_002_p0041",
+      "index": 41,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_002_p0041_s001",
+          "index": 1,
+          "text": "大方廣佛華嚴經卷第二",
+          "source_hash": "sha256:ccaea1afb374"
+        }
+      ]
+    }
+  ]
+}

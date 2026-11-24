@@ -6,3 +6,5 @@ venv/
 translation_kb/.index/
 *.tmp
 .DS_Store
+.firebase/
+firebase-debug.log

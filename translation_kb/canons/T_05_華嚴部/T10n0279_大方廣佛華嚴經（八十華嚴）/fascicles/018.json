@@ -1,0 +1,2416 @@
+{
+  "schema_version": "1.0",
+  "source": "CBETA Online Data API (cbdata.dila.edu.tw)",
+  "sutra_id": "T10n0279",
+  "sutra_title": "大方廣佛華嚴經",
+  "edition": "八十華嚴（唐・實叉難陀譯）",
+  "translator": "唐 實叉難陀譯",
+  "fascicle": 18,
+  "fascicle_count": 80,
+  "fascicle_title": "卷第18・18 明法品",
+  "paragraphs": [
+    {
+      "paragraph_id": "T10n0279_018_p0001",
+      "index": 1,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0001_s001",
+          "index": 1,
+          "text": "大方廣佛華嚴經卷第十八",
+          "source_hash": "sha256:471b4ce3e60c"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0002",
+      "index": 2,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0002_s001",
+          "index": 1,
+          "text": "于闐國三藏實叉難陀奉制譯",
+          "source_hash": "sha256:21bcf9513e55"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0003",
+      "index": 3,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0003_s001",
+          "index": 1,
+          "text": "明法品第十八",
+          "source_hash": "sha256:98cd378cbda4"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0004",
+      "index": 4,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0004_s001",
+          "index": 1,
+          "text": "爾時，精進慧菩薩白法慧菩薩言：",
+          "source_hash": "sha256:6bfdc3d624b1"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0005",
+      "index": 5,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0005_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0005_s002",
+          "index": 2,
+          "text": "菩薩摩訶薩初發求一切智心，成就如是無量功德，具大莊嚴，昇一切智乘，入菩薩正位，捨諸世間法，得佛出世法，去、來、現在諸佛攝受，決定至於無上菩提究竟之處。",
+          "source_hash": "sha256:76937ef322e8"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0005_s003",
+          "index": 3,
+          "text": "彼諸菩薩於佛教中云何修習，令諸如來皆生歡喜，入諸菩薩所住之處，一切大行皆得清淨，所有大願悉使滿足，獲諸菩薩廣大之藏，隨所應化常為說法，而恒不捨波羅蜜行，所念眾生咸令得度，紹三寶種使不斷絕，善根方便皆悉不虛？",
+          "source_hash": "sha256:af2f307cfaf0"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0005_s004",
+          "index": 4,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0005_s005",
+          "index": 5,
+          "text": "彼諸菩薩以何方便，能令此法當得圓滿？",
+          "source_hash": "sha256:d7565e6c08af"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0005_s006",
+          "index": 6,
+          "text": "願垂哀愍，為我宣說；",
+          "source_hash": "sha256:f40d9a1bb0ca"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0005_s007",
+          "index": 7,
+          "text": "此諸大會，靡不樂聞！",
+          "source_hash": "sha256:f2e94aa48710"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0006",
+      "index": 6,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0006_s001",
+          "index": 1,
+          "text": "「復次，如諸菩薩摩訶薩常勤修習，滅除一切無明黑暗，降伏魔怨，制諸外道，永滌一切煩惱心垢；",
+          "source_hash": "sha256:b5752c4a4849"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0006_s002",
+          "index": 2,
+          "text": "悉能成就一切善根，永出一切惡趣諸難，淨治一切大智境界；",
+          "source_hash": "sha256:56dbe735c35c"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0006_s003",
+          "index": 3,
+          "text": "成就一切菩薩諸地、諸波羅蜜、總持三昧、六通、三明、四無所畏清淨功德，莊嚴一切諸佛國土，及諸相好身、語、心行成就滿足，善知一切諸佛如來力、無所畏、不共佛法、一切智智所行境界；",
+          "source_hash": "sha256:78ccd7e62b6b"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0006_s004",
+          "index": 4,
+          "text": "為欲成熟一切眾生，隨其心樂而取佛土，隨根、隨時如應說法；",
+          "source_hash": "sha256:d364e8a9ae83"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0006_s005",
+          "index": 5,
+          "text": "種種無量廣大佛事，及餘無量諸功德法、諸行、諸道及諸境界，皆悉圓滿，疾與如來功德平等；",
+          "source_hash": "sha256:7ac5da65b9c6"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0006_s006",
+          "index": 6,
+          "text": "於諸如來、應、正等覺百千阿僧祇劫修菩薩行時所集法藏，悉能守護，開示演說，諸魔外道無能沮壞，攝持正法無有窮盡；",
+          "source_hash": "sha256:44c60c4ba6e5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0006_s007",
+          "index": 7,
+          "text": "於一切世界演說法時，天王、龍王、夜叉王、乾闥婆王、阿脩羅王、迦樓羅王、緊那羅王、摩睺羅伽王、人王、梵王、如來法王，皆悉守護；",
+          "source_hash": "sha256:40c9b4d14c2c"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0006_s008",
+          "index": 8,
+          "text": "一切世間，恭敬供養；",
+          "source_hash": "sha256:2ecbc2d1cdcb"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0006_s009",
+          "index": 9,
+          "text": "同灌其頂，常為諸佛之所護念，一切菩薩亦皆愛敬；",
+          "source_hash": "sha256:ad9774a1137e"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0006_s010",
+          "index": 10,
+          "text": "得善根力，增長白法，開演如來甚深法藏，攝持正法以自莊嚴。",
+          "source_hash": "sha256:0e732f39c28e"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0006_s011",
+          "index": 11,
+          "text": "一切菩薩所行次第，願皆演說！」",
+          "source_hash": "sha256:062b9d924690"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0007",
+      "index": 7,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0007_s001",
+          "index": 1,
+          "text": "爾時，精進慧菩薩欲重宣其義而說頌言：",
+          "source_hash": "sha256:986ec902da08"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0008",
+      "index": 8,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0008_s001",
+          "index": 1,
+          "text": "「大名稱者善能演，菩薩所成功德法，深入無邊廣大行，具足清淨無師智。",
+          "source_hash": "sha256:b3af16990323"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0008_s002",
+          "index": 2,
+          "text": "若有菩薩初發心，成就福德智慧乘，入離生位超世間，普獲正等菩提法。",
+          "source_hash": "sha256:3b9a8f51e581"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0008_s003",
+          "index": 3,
+          "text": "彼復云何佛教中，堅固勤修轉增勝，令諸如來悉歡喜，佛所住地速當入？",
+          "source_hash": "sha256:39aca8d65081"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0008_s004",
+          "index": 4,
+          "text": "所行清淨願皆滿，及得廣大智慧藏，常能說法度眾生，而心無依無所著。",
+          "source_hash": "sha256:14dcf736c4ff"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0008_s005",
+          "index": 5,
+          "text": "菩薩一切波羅蜜，悉善修行無缺減，所念眾生咸救度，常持佛種使不絕。",
+          "source_hash": "sha256:f2b0a67522b7"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0008_s006",
+          "index": 6,
+          "text": "所作堅固不唐捐，一切功成得出離，如諸勝者所修行，彼清淨道願宣說！",
+          "source_hash": "sha256:13df949a4f00"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0008_s007",
+          "index": 7,
+          "text": "永破一切無明暗，降伏眾魔及外道，所有垢穢悉滌除，得近如來大智慧。",
+          "source_hash": "sha256:beaadfc2070a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0008_s008",
+          "index": 8,
+          "text": "永離惡趣諸險難，淨治大智殊勝境，獲妙道力隣上尊，一切功德皆成就。",
+          "source_hash": "sha256:4b1f7678b32b"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0008_s009",
+          "index": 9,
+          "text": "證得如來最勝智，住於無量諸國土，隨眾生心而說法，及作廣大諸佛事。",
+          "source_hash": "sha256:ba27937ff859"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0008_s010",
+          "index": 10,
+          "text": "云何而得諸妙道，開演如來正法藏，常能受持諸佛法，無能超勝無與等？",
+          "source_hash": "sha256:65e8223193b4"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0008_s011",
+          "index": 11,
+          "text": "云何無畏如師子，所行清淨如滿月？",
+          "source_hash": "sha256:022d59b6f287"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0008_s012",
+          "index": 12,
+          "text": "云何修習佛功德，猶如蓮華不著水？」",
+          "source_hash": "sha256:951f5905d163"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0009",
+      "index": 9,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0009_s001",
+          "index": 1,
+          "text": "爾時，法慧菩薩告精進慧菩薩言：",
+          "source_hash": "sha256:dc2393ac05f7"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0010",
+      "index": 10,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0010_s001",
+          "index": 1,
+          "text": "「善哉！",
+          "source_hash": "sha256:9dbd865cd37e"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0010_s002",
+          "index": 2,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0010_s003",
+          "index": 3,
+          "text": "汝今為欲多所饒益、多所安樂、多所惠利，哀愍世間諸天及人，問於如是菩薩所修清淨之行。",
+          "source_hash": "sha256:c1d224d2506a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0010_s004",
+          "index": 4,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0010_s005",
+          "index": 5,
+          "text": "汝住實法，發大精進，增長不退，已得解脫；",
+          "source_hash": "sha256:e401037de3b5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0010_s006",
+          "index": 6,
+          "text": "能作是問，同於如來。",
+          "source_hash": "sha256:f84465ec30c8"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0010_s007",
+          "index": 7,
+          "text": "諦聽！",
+          "source_hash": "sha256:8f844962273a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0010_s008",
+          "index": 8,
+          "text": "諦聽！",
+          "source_hash": "sha256:8f844962273a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0010_s009",
+          "index": 9,
+          "text": "善思念之！",
+          "source_hash": "sha256:86fe9de44efd"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0010_s010",
+          "index": 10,
+          "text": "我今承佛威神之力，為汝於中說其少分。",
+          "source_hash": "sha256:12ad5ef6b8bc"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0011",
+      "index": 11,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0011_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s002",
+          "index": 2,
+          "text": "菩薩摩訶薩已發一切智心，應離癡暗，精勤守護，無令放逸。",
+          "source_hash": "sha256:76b4341c32fa"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s003",
+          "index": 3,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s004",
+          "index": 4,
+          "text": "菩薩摩訶薩住十種法，名：不放逸。",
+          "source_hash": "sha256:1590ba505cbd"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s005",
+          "index": 5,
+          "text": "何者為十？",
+          "source_hash": "sha256:9a806289b4ce"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s006",
+          "index": 6,
+          "text": "一者，護持眾戒；",
+          "source_hash": "sha256:0477b71d8c35"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s007",
+          "index": 7,
+          "text": "二者，遠離愚癡，淨菩提心；",
+          "source_hash": "sha256:b6dbc916b954"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s008",
+          "index": 8,
+          "text": "三者，心樂質直，離諸諂誑；",
+          "source_hash": "sha256:7a46f3993750"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s009",
+          "index": 9,
+          "text": "四者，勤修善根，無有退轉；",
+          "source_hash": "sha256:cf22e7adf294"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s010",
+          "index": 10,
+          "text": "五者，恒善思惟，自所發心；",
+          "source_hash": "sha256:7614f9883f63"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s011",
+          "index": 11,
+          "text": "六者，不樂親近在家、出家一切凡夫；",
+          "source_hash": "sha256:e324ee521f33"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s012",
+          "index": 12,
+          "text": "七者，修諸善業而不願求世間果報；",
+          "source_hash": "sha256:f00ff304b23e"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s013",
+          "index": 13,
+          "text": "八者，永離二乘，行菩薩道；",
+          "source_hash": "sha256:6a80922240d3"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s014",
+          "index": 14,
+          "text": "九者，樂修眾善，令不斷絕；",
+          "source_hash": "sha256:0e888c2e36f5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s015",
+          "index": 15,
+          "text": "十者，恒善觀察自相續力。",
+          "source_hash": "sha256:021a3b57c8e2"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s016",
+          "index": 16,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0011_s017",
+          "index": 17,
+          "text": "若諸菩薩行此十法，是則名為住不放逸。",
+          "source_hash": "sha256:40bacb312cab"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0012",
+      "index": 12,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0012_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s002",
+          "index": 2,
+          "text": "菩薩摩訶薩住不放逸，得十種清淨。",
+          "source_hash": "sha256:d0d6d16ed865"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s003",
+          "index": 3,
+          "text": "何者為十？",
+          "source_hash": "sha256:9a806289b4ce"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s004",
+          "index": 4,
+          "text": "一者，如說而行；",
+          "source_hash": "sha256:cf9b0e5dcbed"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s005",
+          "index": 5,
+          "text": "二者，念智成就；",
+          "source_hash": "sha256:e52573d5d969"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s006",
+          "index": 6,
+          "text": "三者，住於深定，不沈不舉；",
+          "source_hash": "sha256:9915620e5340"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s007",
+          "index": 7,
+          "text": "四者，樂求佛法，無有懈息；",
+          "source_hash": "sha256:a9dcbff92a45"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s008",
+          "index": 8,
+          "text": "五者，隨所聞法，如理觀察，具足出生巧妙智慧；",
+          "source_hash": "sha256:1d17cc70dd3d"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s009",
+          "index": 9,
+          "text": "六者，入深禪定，得佛神通；",
+          "source_hash": "sha256:509ce6527b49"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s010",
+          "index": 10,
+          "text": "七者，其心平等，無有高下；",
+          "source_hash": "sha256:b2c550e00c04"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s011",
+          "index": 11,
+          "text": "八者，於諸眾生上、中、下類，心無障礙，猶如大地等作利益；",
+          "source_hash": "sha256:d2ac3e86b308"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s012",
+          "index": 12,
+          "text": "九者，若見眾生乃至一發菩提之心，尊重承事猶如和尚；",
+          "source_hash": "sha256:5739e0629661"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s013",
+          "index": 13,
+          "text": "十者，於授戒和尚及阿闍梨、一切菩薩、諸善知識、法師之所，常生尊重，承事供養。",
+          "source_hash": "sha256:2980a6d522aa"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s014",
+          "index": 14,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s015",
+          "index": 15,
+          "text": "是名菩薩住不放逸十種清淨。",
+          "source_hash": "sha256:6715a47fb1da"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s016",
+          "index": 16,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s017",
+          "index": 17,
+          "text": "菩薩摩訶薩住不放逸，發大精進；",
+          "source_hash": "sha256:78fe115edae7"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s018",
+          "index": 18,
+          "text": "起於正念，生勝欲樂，所行不息；",
+          "source_hash": "sha256:e134df30f88c"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s019",
+          "index": 19,
+          "text": "於一切法，心無依處；",
+          "source_hash": "sha256:1a1fd6f84a64"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s020",
+          "index": 20,
+          "text": "於甚深法，能勤修習；",
+          "source_hash": "sha256:633a9c583c72"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s021",
+          "index": 21,
+          "text": "入無諍門，增廣大心；",
+          "source_hash": "sha256:542d754d63d0"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0012_s022",
+          "index": 22,
+          "text": "佛法無邊，能順了知，令諸如來皆悉歡喜。",
+          "source_hash": "sha256:867884c9f04d"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0013",
+      "index": 13,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0013_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0013_s002",
+          "index": 2,
+          "text": "菩薩摩訶薩復有十法，能令一切諸佛歡喜。",
+          "source_hash": "sha256:ae97d3f4e1d8"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0013_s003",
+          "index": 3,
+          "text": "何等為十？",
+          "source_hash": "sha256:bd0af9c30b82"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0013_s004",
+          "index": 4,
+          "text": "一者，精進不退；",
+          "source_hash": "sha256:9ca005c373b5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0013_s005",
+          "index": 5,
+          "text": "二者，不惜身命；",
+          "source_hash": "sha256:12b701883715"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0013_s006",
+          "index": 6,
+          "text": "三者，於諸利養無有希求；",
+          "source_hash": "sha256:41445ed0bccc"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0013_s007",
+          "index": 7,
+          "text": "四者，知一切法皆如虛空；",
+          "source_hash": "sha256:acbc88b8fd99"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0013_s008",
+          "index": 8,
+          "text": "五者，善能觀察，普入法界；",
+          "source_hash": "sha256:488f71d4dfce"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0013_s009",
+          "index": 9,
+          "text": "六者，知諸法印，心無倚著；",
+          "source_hash": "sha256:dcdb9907368c"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0013_s010",
+          "index": 10,
+          "text": "七者，常發大願；",
+          "source_hash": "sha256:95f0faab82b0"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0013_s011",
+          "index": 11,
+          "text": "八者，成就清淨忍智光明；",
+          "source_hash": "sha256:e40e03f36ca2"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0013_s012",
+          "index": 12,
+          "text": "九者，觀自善法，心無增減；",
+          "source_hash": "sha256:d43baca6b369"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0013_s013",
+          "index": 13,
+          "text": "十者，依無作門，修諸淨行。",
+          "source_hash": "sha256:396693dcf36f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0013_s014",
+          "index": 14,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0013_s015",
+          "index": 15,
+          "text": "是為菩薩住十種法，能令一切如來歡喜。",
+          "source_hash": "sha256:3e32193bb613"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0014",
+      "index": 14,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0014_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0014_s002",
+          "index": 2,
+          "text": "復有十法，能令一切諸佛歡喜。",
+          "source_hash": "sha256:468d0430039f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0014_s003",
+          "index": 3,
+          "text": "何者為十？",
+          "source_hash": "sha256:9a806289b4ce"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0014_s004",
+          "index": 4,
+          "text": "所謂：安住不放逸；",
+          "source_hash": "sha256:481263d2e939"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0014_s005",
+          "index": 5,
+          "text": "安住無生忍；",
+          "source_hash": "sha256:d2c32a9c710e"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0014_s006",
+          "index": 6,
+          "text": "安住大慈；",
+          "source_hash": "sha256:2a336b7d37b6"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0014_s007",
+          "index": 7,
+          "text": "安住大悲；",
+          "source_hash": "sha256:a849475f787e"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0014_s008",
+          "index": 8,
+          "text": "安住滿足諸波羅蜜；",
+          "source_hash": "sha256:5962b9872abb"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0014_s009",
+          "index": 9,
+          "text": "安住諸行；",
+          "source_hash": "sha256:1365a1e4e368"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0014_s010",
+          "index": 10,
+          "text": "安住大願；",
+          "source_hash": "sha256:efd8dd09a370"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0014_s011",
+          "index": 11,
+          "text": "安住巧方便；",
+          "source_hash": "sha256:dfcc97e3259f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0014_s012",
+          "index": 12,
+          "text": "安住勇猛力；",
+          "source_hash": "sha256:7333e5afb41a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0014_s013",
+          "index": 13,
+          "text": "安住智慧，觀一切法皆無所住，猶如虛空。",
+          "source_hash": "sha256:ed110104524d"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0014_s014",
+          "index": 14,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0014_s015",
+          "index": 15,
+          "text": "若諸菩薩住此十法，能令一切諸佛歡喜。",
+          "source_hash": "sha256:882d3dd7e0ed"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0015",
+      "index": 15,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0015_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0015_s002",
+          "index": 2,
+          "text": "有十種法，令諸菩薩速入諸地。",
+          "source_hash": "sha256:0f8d2e6abb90"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0015_s003",
+          "index": 3,
+          "text": "何等為十？",
+          "source_hash": "sha256:bd0af9c30b82"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0015_s004",
+          "index": 4,
+          "text": "一者，善巧圓滿福、智二行；",
+          "source_hash": "sha256:c793d64ca66f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0015_s005",
+          "index": 5,
+          "text": "二者，能大莊嚴波羅蜜道；",
+          "source_hash": "sha256:15956c0f5a05"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0015_s006",
+          "index": 6,
+          "text": "三者，智慧明達，不隨他語；",
+          "source_hash": "sha256:ea113f82af49"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0015_s007",
+          "index": 7,
+          "text": "四者，承事善友，恒不捨離；",
+          "source_hash": "sha256:800102211ad2"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0015_s008",
+          "index": 8,
+          "text": "五者，常行精進，無有懈怠；",
+          "source_hash": "sha256:64bc8ee85d96"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0015_s009",
+          "index": 9,
+          "text": "六者，善能安住如來神力；",
+          "source_hash": "sha256:f17bf7853e2d"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0015_s010",
+          "index": 10,
+          "text": "七者，修諸善根，不生疲倦；",
+          "source_hash": "sha256:8b6b060c1291"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0015_s011",
+          "index": 11,
+          "text": "八者，深心利智，以大乘法而自莊嚴；",
+          "source_hash": "sha256:03b264e4a2b9"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0015_s012",
+          "index": 12,
+          "text": "九者，於地地法門，心無所住；",
+          "source_hash": "sha256:e0f250ea9495"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0015_s013",
+          "index": 13,
+          "text": "十者，與三世佛善根方便同一體性。",
+          "source_hash": "sha256:66c252779df3"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0015_s014",
+          "index": 14,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0015_s015",
+          "index": 15,
+          "text": "此十種法，令諸菩薩速入諸地。",
+          "source_hash": "sha256:00661231a48d"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0016",
+      "index": 16,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0016_s001",
+          "index": 1,
+          "text": "「復次，佛子！",
+          "source_hash": "sha256:7823c482e638"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0016_s002",
+          "index": 2,
+          "text": "諸菩薩初住地時，應善觀察；",
+          "source_hash": "sha256:3af9cf0e9606"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0016_s003",
+          "index": 3,
+          "text": "隨其所有一切法門，隨其所有甚深智慧，隨所修因，隨所得果，隨其境界，隨其力用，隨其示現，隨其分別，隨其所得，悉善觀察。",
+          "source_hash": "sha256:8ea48bcbf864"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0016_s004",
+          "index": 4,
+          "text": "知一切法，皆是自心，而無所著；",
+          "source_hash": "sha256:3384724051ef"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0016_s005",
+          "index": 5,
+          "text": "如是知已，入菩薩地，能善安住。",
+          "source_hash": "sha256:190cfc8409ab"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0016_s006",
+          "index": 6,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0016_s007",
+          "index": 7,
+          "text": "彼諸菩薩作是思惟：『我等宜應速入諸地。",
+          "source_hash": "sha256:0c7cc4ef3d31"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0016_s008",
+          "index": 8,
+          "text": "何以故？",
+          "source_hash": "sha256:78567a572ad3"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0016_s009",
+          "index": 9,
+          "text": "我等若於地地中住，成就如是廣大功德；",
+          "source_hash": "sha256:cba203c583d8"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0016_s010",
+          "index": 10,
+          "text": "具功德已，漸入佛地；",
+          "source_hash": "sha256:d9e165f6483e"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0016_s011",
+          "index": 11,
+          "text": "住佛地已，能作無邊廣大佛事。",
+          "source_hash": "sha256:70d4ff16b55b"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0016_s012",
+          "index": 12,
+          "text": "是故宜應常勤修習，無有休息，無有疲厭，以大功德而自莊嚴入菩薩地。』",
+          "source_hash": "sha256:3a90e6c6f7fa"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0017",
+      "index": 17,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0017_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0017_s002",
+          "index": 2,
+          "text": "有十種法，令諸菩薩所行清淨。",
+          "source_hash": "sha256:25749121b0f4"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0017_s003",
+          "index": 3,
+          "text": "何等為十？",
+          "source_hash": "sha256:bd0af9c30b82"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0017_s004",
+          "index": 4,
+          "text": "一者，悉捨資財，滿眾生意；",
+          "source_hash": "sha256:23dc3d6124db"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0017_s005",
+          "index": 5,
+          "text": "二者，持戒清淨，無所毀犯；",
+          "source_hash": "sha256:72d532ab1a1b"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0017_s006",
+          "index": 6,
+          "text": "三者，柔和忍辱，無有窮盡；",
+          "source_hash": "sha256:5665d38919f7"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0017_s007",
+          "index": 7,
+          "text": "四者，勤修諸行，永不退轉；",
+          "source_hash": "sha256:d6e01fea5494"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0017_s008",
+          "index": 8,
+          "text": "五者，以正念力，心無迷亂；",
+          "source_hash": "sha256:77b9acd73f66"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0017_s009",
+          "index": 9,
+          "text": "六者，分別了知無量諸法；",
+          "source_hash": "sha256:8871f6344261"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0017_s010",
+          "index": 10,
+          "text": "七者，修一切行而無所著；",
+          "source_hash": "sha256:1329fee9dc6e"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0017_s011",
+          "index": 11,
+          "text": "八者，其心不動，猶如山王；",
+          "source_hash": "sha256:5e435e347882"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0017_s012",
+          "index": 12,
+          "text": "九者，廣度眾生，猶如橋梁；",
+          "source_hash": "sha256:7c84a1492ef1"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0017_s013",
+          "index": 13,
+          "text": "十者，知一切眾生與諸如來同一體性。",
+          "source_hash": "sha256:33a64140d3d9"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0017_s014",
+          "index": 14,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0017_s015",
+          "index": 15,
+          "text": "是為十法，令諸菩薩所行清淨。",
+          "source_hash": "sha256:1bf11681a64b"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0018",
+      "index": 18,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0018_s001",
+          "index": 1,
+          "text": "「菩薩既得行清淨已，復獲十種增勝法。",
+          "source_hash": "sha256:b1d23c492a20"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0018_s002",
+          "index": 2,
+          "text": "何等為十？",
+          "source_hash": "sha256:bd0af9c30b82"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0018_s003",
+          "index": 3,
+          "text": "一者，他方諸佛，皆悉護念；",
+          "source_hash": "sha256:93bfa039bfc8"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0018_s004",
+          "index": 4,
+          "text": "二者，善根增勝，超諸等列；",
+          "source_hash": "sha256:0b007da99d6b"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0018_s005",
+          "index": 5,
+          "text": "三者，善能領受佛加持力；",
+          "source_hash": "sha256:4246d73b15fd"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0018_s006",
+          "index": 6,
+          "text": "四者，常得善人，為所依怙；",
+          "source_hash": "sha256:456a29b5a1a5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0018_s007",
+          "index": 7,
+          "text": "五者，安住精進，恒不放逸；",
+          "source_hash": "sha256:7c7bb7a69abd"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0018_s008",
+          "index": 8,
+          "text": "六者，知一切法平等無異；",
+          "source_hash": "sha256:eaefef7d4b30"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0018_s009",
+          "index": 9,
+          "text": "七者，心恒安住無上大悲；",
+          "source_hash": "sha256:6991d452b7a9"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0018_s010",
+          "index": 10,
+          "text": "八者，如實觀法，出生妙慧；",
+          "source_hash": "sha256:73e9992eada1"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0018_s011",
+          "index": 11,
+          "text": "九者，能善修行巧妙方便；",
+          "source_hash": "sha256:f207ed8a993f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0018_s012",
+          "index": 12,
+          "text": "十者，能知如來方便之力。",
+          "source_hash": "sha256:20137d98cda3"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0018_s013",
+          "index": 13,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0018_s014",
+          "index": 14,
+          "text": "是為菩薩十種增勝法。",
+          "source_hash": "sha256:6435a3152859"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0019",
+      "index": 19,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0019_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0019_s002",
+          "index": 2,
+          "text": "菩薩有十種清淨願。",
+          "source_hash": "sha256:4781e0b8260d"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0019_s003",
+          "index": 3,
+          "text": "何等為十？",
+          "source_hash": "sha256:bd0af9c30b82"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0019_s004",
+          "index": 4,
+          "text": "一願，成熟眾生，無有疲倦；",
+          "source_hash": "sha256:8192b6dbb026"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0019_s005",
+          "index": 5,
+          "text": "二願，具行眾善，淨諸世界；",
+          "source_hash": "sha256:6e0134450b01"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0019_s006",
+          "index": 6,
+          "text": "三願，承事如來，常生尊重；",
+          "source_hash": "sha256:7467a58419d9"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0019_s007",
+          "index": 7,
+          "text": "四願，護持正法，不惜軀命；",
+          "source_hash": "sha256:9d842de09788"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0019_s008",
+          "index": 8,
+          "text": "五願，以智觀察，入諸佛土；",
+          "source_hash": "sha256:132931478d1f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0019_s009",
+          "index": 9,
+          "text": "六願，與諸菩薩同一體性；",
+          "source_hash": "sha256:8499e3f99ca8"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0019_s010",
+          "index": 10,
+          "text": "七願，入如來門，了一切法；",
+          "source_hash": "sha256:3c0ed24ef546"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0019_s011",
+          "index": 11,
+          "text": "八願，見者生信，無不獲益；",
+          "source_hash": "sha256:c8e2e16e9f0c"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0019_s012",
+          "index": 12,
+          "text": "九願，神力住世，盡未來劫；",
+          "source_hash": "sha256:9d76f90393b7"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0019_s013",
+          "index": 13,
+          "text": "十願，具普賢行，淨治一切種智之門。",
+          "source_hash": "sha256:db3e42503323"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0019_s014",
+          "index": 14,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0019_s015",
+          "index": 15,
+          "text": "是為菩薩十種清淨願。",
+          "source_hash": "sha256:3395806f3448"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0020",
+      "index": 20,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0020_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0020_s002",
+          "index": 2,
+          "text": "菩薩住十種法，令諸大願皆得圓滿。",
+          "source_hash": "sha256:b0167aff2d57"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0020_s003",
+          "index": 3,
+          "text": "何等為十？",
+          "source_hash": "sha256:bd0af9c30b82"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0020_s004",
+          "index": 4,
+          "text": "一者，心無疲厭；",
+          "source_hash": "sha256:f7eee7e67f94"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0020_s005",
+          "index": 5,
+          "text": "二者，具大莊嚴；",
+          "source_hash": "sha256:dda937e914ff"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0020_s006",
+          "index": 6,
+          "text": "三者，念諸菩薩殊勝願力；",
+          "source_hash": "sha256:70e8e1ebcb12"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0020_s007",
+          "index": 7,
+          "text": "四者，聞諸佛土，悉願往生；",
+          "source_hash": "sha256:6e17849416da"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0020_s008",
+          "index": 8,
+          "text": "五者，深心長久，盡未來劫；",
+          "source_hash": "sha256:6cfaa8b04ea9"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0020_s009",
+          "index": 9,
+          "text": "六者，願悉成就一切眾生；",
+          "source_hash": "sha256:74d2689cda22"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0020_s010",
+          "index": 10,
+          "text": "七者，住一切劫，不以為勞；",
+          "source_hash": "sha256:3b8199bfc12b"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0020_s011",
+          "index": 11,
+          "text": "八者，受一切苦，不生厭離；",
+          "source_hash": "sha256:25c2b62bef7b"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0020_s012",
+          "index": 12,
+          "text": "九者，於一切樂，心無貪著；",
+          "source_hash": "sha256:d3ecad952bd6"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0020_s013",
+          "index": 13,
+          "text": "十者，常勤守護無上法門。",
+          "source_hash": "sha256:5660c3a8f189"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0021",
+      "index": 21,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0021_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0021_s002",
+          "index": 2,
+          "text": "菩薩滿足如是願時，即得十種無盡藏。",
+          "source_hash": "sha256:128e1ae91e13"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0021_s003",
+          "index": 3,
+          "text": "何等為十？",
+          "source_hash": "sha256:bd0af9c30b82"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0021_s004",
+          "index": 4,
+          "text": "所謂：普見諸佛無盡藏、總持不忘無盡藏、決了諸法無盡藏、大悲救護無盡藏、種種三昧無盡藏、滿眾生心廣大福德無盡藏、演一切法甚深智慧無盡藏、報得神通無盡藏、住無量劫無盡藏、入無邊世界無盡藏。",
+          "source_hash": "sha256:1d7abf5ccac4"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0021_s005",
+          "index": 5,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0021_s006",
+          "index": 6,
+          "text": "是為菩薩十無盡藏。",
+          "source_hash": "sha256:a7f179363a2a"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0022",
+      "index": 22,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0022_s001",
+          "index": 1,
+          "text": "「菩薩得是十種藏已，福德具足，智慧清淨；",
+          "source_hash": "sha256:5d0e070c37d3"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s002",
+          "index": 2,
+          "text": "於諸眾生，隨其所應而為說法。",
+          "source_hash": "sha256:d0b0f6a13ec5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s003",
+          "index": 3,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s004",
+          "index": 4,
+          "text": "菩薩云何於諸眾生，隨其所應而為說法？",
+          "source_hash": "sha256:a111a3551e73"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s005",
+          "index": 5,
+          "text": "所謂：知其所作，知其因緣，知其心行，知其欲樂。",
+          "source_hash": "sha256:43c2381c7f63"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s006",
+          "index": 6,
+          "text": "貪欲多者，為說不淨；",
+          "source_hash": "sha256:b2c9b2720066"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s007",
+          "index": 7,
+          "text": "瞋恚多者，為說大慈；",
+          "source_hash": "sha256:81838b035670"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s008",
+          "index": 8,
+          "text": "愚癡多者，教勤觀察；",
+          "source_hash": "sha256:b4d60f936499"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s009",
+          "index": 9,
+          "text": "三毒等者，為說成就勝智法門；",
+          "source_hash": "sha256:fa77b858bb5a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s010",
+          "index": 10,
+          "text": "樂生死者，為說三苦；",
+          "source_hash": "sha256:01f42718845c"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s011",
+          "index": 11,
+          "text": "若著處所，說處空寂；",
+          "source_hash": "sha256:8ce84599ec68"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s012",
+          "index": 12,
+          "text": "心懈怠者，說大精進；",
+          "source_hash": "sha256:1b6ebb08832c"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s013",
+          "index": 13,
+          "text": "懷我慢者，說法平等；",
+          "source_hash": "sha256:3a2700452c59"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s014",
+          "index": 14,
+          "text": "多諂誑者，為說菩薩，其心質直；",
+          "source_hash": "sha256:beed1f83f38b"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s015",
+          "index": 15,
+          "text": "樂寂靜者，廣為說法，令其成就。",
+          "source_hash": "sha256:4421f8be76af"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s016",
+          "index": 16,
+          "text": "菩薩如是隨其所應而為說法。",
+          "source_hash": "sha256:fc063b81c7af"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s017",
+          "index": 17,
+          "text": "為說法時，文相連屬，義無舛謬；",
+          "source_hash": "sha256:5fab04b26616"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s018",
+          "index": 18,
+          "text": "觀法先後，以智分別；",
+          "source_hash": "sha256:ce781df278f5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s019",
+          "index": 19,
+          "text": "是非審定，不違法印；",
+          "source_hash": "sha256:cc7019581a0a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s020",
+          "index": 20,
+          "text": "次第建立無邊行門，令諸眾生斷一切疑；",
+          "source_hash": "sha256:a063923c8e72"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s021",
+          "index": 21,
+          "text": "善知諸根，入如來教；",
+          "source_hash": "sha256:e125d22f1f16"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s022",
+          "index": 22,
+          "text": "證真實際，知法平等；",
+          "source_hash": "sha256:90c884163553"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s023",
+          "index": 23,
+          "text": "斷諸法愛，除一切執；",
+          "source_hash": "sha256:5f7abc02b636"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s024",
+          "index": 24,
+          "text": "常念諸佛，心無暫捨；",
+          "source_hash": "sha256:04a3ae5faf28"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s025",
+          "index": 25,
+          "text": "了知音聲，體性平等；",
+          "source_hash": "sha256:c7f619ea43f9"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s026",
+          "index": 26,
+          "text": "於諸言說，心無所著；",
+          "source_hash": "sha256:184e81c17f08"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0022_s027",
+          "index": 27,
+          "text": "巧說譬諭，無相違反，悉令得悟一切諸佛隨應普現平等智身。",
+          "source_hash": "sha256:034f870000af"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0023",
+      "index": 23,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0023_s001",
+          "index": 1,
+          "text": "「菩薩如是為諸眾生而演說法，則自修習，增長義利，不捨諸度，具足莊嚴波羅蜜道。",
+          "source_hash": "sha256:8f7bd850cdd9"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s002",
+          "index": 2,
+          "text": "是時，菩薩為令眾生心滿足故，內外悉捨而無所著，是則能淨檀波羅蜜。",
+          "source_hash": "sha256:9320e95c42de"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s003",
+          "index": 3,
+          "text": "具持眾戒而無所著，永離我慢，是則能淨尸波羅蜜。",
+          "source_hash": "sha256:9713af746f42"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s004",
+          "index": 4,
+          "text": "悉能忍受一切諸惡，於諸眾生，其心平等，無有動搖，譬如大地能持一切，是則能淨忍波羅蜜。",
+          "source_hash": "sha256:1269eaedfa49"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s005",
+          "index": 5,
+          "text": "普發眾業，常修靡懈，諸有所作恒不退轉，勇猛勢力無能制伏，於諸功德不取不捨，而能滿足一切智門，是則能淨精進波羅蜜。",
+          "source_hash": "sha256:94b58a202112"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s006",
+          "index": 6,
+          "text": "於五欲境無所貪著，諸次第定悉能成就，常正思惟，不住不出，而能銷滅一切煩惱，出生無量諸三昧門，成就無邊大神通力；",
+          "source_hash": "sha256:6458f5291076"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s007",
+          "index": 7,
+          "text": "逆順次第，入諸三昧，於一三昧門入無邊三昧門，悉知一切三昧境界，與一切三昧三摩鉢底智印不相違背，能速入於一切智地，是則能淨禪波羅蜜。",
+          "source_hash": "sha256:a76af186a4c7"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s008",
+          "index": 8,
+          "text": "於諸佛所聞法受持，近善知識承事不倦；",
+          "source_hash": "sha256:cd366fb833a6"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s009",
+          "index": 9,
+          "text": "常樂聞法，心無厭足；",
+          "source_hash": "sha256:e6e3ceaefe34"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s010",
+          "index": 10,
+          "text": "隨所聽受，如理思惟；",
+          "source_hash": "sha256:39195e560725"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s011",
+          "index": 11,
+          "text": "入真三昧，離諸僻見；",
+          "source_hash": "sha256:32b9cd4c370b"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s012",
+          "index": 12,
+          "text": "善觀諸法，得實相印，了知如來無功用道；",
+          "source_hash": "sha256:34db3b8082e7"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s013",
+          "index": 13,
+          "text": "乘普門慧，入於一切智智之門，永得休息，是則能淨般若波羅蜜。",
+          "source_hash": "sha256:8576bd12fe4a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s014",
+          "index": 14,
+          "text": "示現一切世間作業，教化眾生而不厭倦，隨其心樂而為現身；",
+          "source_hash": "sha256:d374db9dee64"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s015",
+          "index": 15,
+          "text": "一切所行皆無染著，或現凡夫、或現聖人所行之行，或現生死，或現涅槃；",
+          "source_hash": "sha256:9f2648cb5358"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s016",
+          "index": 16,
+          "text": "善能觀察一切所作，示現一切諸莊嚴事而不貪著，遍入諸趣度脫眾生，是則能淨方便波羅蜜。",
+          "source_hash": "sha256:197e82df21af"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s017",
+          "index": 17,
+          "text": "盡成就一切眾生，盡莊嚴一切世界，盡供養一切諸佛，盡通達無障礙法，盡修行遍法界行，身恒住盡未來劫，智盡知一切心念，盡覺悟流轉還滅，盡示現一切國土，盡證得如來智慧，是則能淨願波羅蜜。",
+          "source_hash": "sha256:e9c56f45f062"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s018",
+          "index": 18,
+          "text": "具深心力，無有雜染故；",
+          "source_hash": "sha256:b7c2894c6486"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s019",
+          "index": 19,
+          "text": "具深信力，無能摧伏故；",
+          "source_hash": "sha256:2d358a484917"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s020",
+          "index": 20,
+          "text": "具大悲力，不生疲厭故；",
+          "source_hash": "sha256:3fd0d7c94362"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s021",
+          "index": 21,
+          "text": "具大慈力，所行平等故；",
+          "source_hash": "sha256:5054b352a356"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s022",
+          "index": 22,
+          "text": "具總持力，能以方便持一切義故；",
+          "source_hash": "sha256:f96e02c34f5f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s023",
+          "index": 23,
+          "text": "具辯才力，令一切眾生歡喜滿足故；",
+          "source_hash": "sha256:eddfe1c4f512"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s024",
+          "index": 24,
+          "text": "具波羅蜜力，莊嚴大乘故；",
+          "source_hash": "sha256:7a31b500f28f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s025",
+          "index": 25,
+          "text": "具大願力，永不斷絕故；",
+          "source_hash": "sha256:3c2ddae14d1f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s026",
+          "index": 26,
+          "text": "具神通力，出生無量故；",
+          "source_hash": "sha256:f8b66bf78e64"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s027",
+          "index": 27,
+          "text": "具加持力，令信解領受故，是則能淨力波羅蜜。",
+          "source_hash": "sha256:3255b282f631"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0023_s028",
+          "index": 28,
+          "text": "知貪欲行者，知瞋恚行者，知愚癡行者，知等分行者，知修學地行者，一念中知無邊眾生行，知無邊眾生心，知一切法真實，知一切如來力，普覺悟法界門，是則能淨智波羅蜜。",
+          "source_hash": "sha256:b6aff03253a0"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0024",
+      "index": 24,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0024_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0024_s002",
+          "index": 2,
+          "text": "菩薩如是清淨諸波羅蜜時、圓滿諸波羅蜜時、不捨諸波羅蜜時，住大莊嚴菩薩乘中。",
+          "source_hash": "sha256:20220744e41e"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0024_s003",
+          "index": 3,
+          "text": "隨其所念，一切眾生皆為說法，令增淨業而得度脫。",
+          "source_hash": "sha256:891ddb465ae7"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0024_s004",
+          "index": 4,
+          "text": "墮惡道者，教使發心；",
+          "source_hash": "sha256:15b2b76af5af"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0024_s005",
+          "index": 5,
+          "text": "在難中者，令勤精進；",
+          "source_hash": "sha256:752b83631127"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0024_s006",
+          "index": 6,
+          "text": "多貪眾生，示無貪法；",
+          "source_hash": "sha256:298585fa3482"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0024_s007",
+          "index": 7,
+          "text": "多瞋眾生，令行平等；",
+          "source_hash": "sha256:9bdb75d2d472"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0024_s008",
+          "index": 8,
+          "text": "著見眾生，為說緣起；",
+          "source_hash": "sha256:44d4f62f808e"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0024_s009",
+          "index": 9,
+          "text": "欲界眾生，教離欲恚惡不善法；",
+          "source_hash": "sha256:3b3d403a9dee"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0024_s010",
+          "index": 10,
+          "text": "色界眾生，為其宣說毘鉢舍那；",
+          "source_hash": "sha256:8de0e4135c45"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0024_s011",
+          "index": 11,
+          "text": "無色界眾生，為其宣說微妙智慧；",
+          "source_hash": "sha256:01d5cefc488e"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0024_s012",
+          "index": 12,
+          "text": "二乘之人，教寂靜行；",
+          "source_hash": "sha256:a2fc13d174bd"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0024_s013",
+          "index": 13,
+          "text": "樂大乘者，為說十力廣大莊嚴。",
+          "source_hash": "sha256:fdc93fcacbbd"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0024_s014",
+          "index": 14,
+          "text": "如其往昔初發心時，見無量眾生墮諸惡道，大師子吼作如是言：『我當以種種法門，隨其所應而度脫之！』菩薩具足如是智慧，廣能度脫一切眾生。",
+          "source_hash": "sha256:0a843ec97aee"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0025",
+      "index": 25,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0025_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0025_s002",
+          "index": 2,
+          "text": "菩薩具足如是智慧，令三寶種永不斷絕。",
+          "source_hash": "sha256:207e1d0e1248"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0025_s003",
+          "index": 3,
+          "text": "所以者何？",
+          "source_hash": "sha256:44e1f92edcc6"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0025_s004",
+          "index": 4,
+          "text": "菩薩摩訶薩教諸眾生發菩提心，是故能令佛種不斷；",
+          "source_hash": "sha256:fc03f046c577"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0025_s005",
+          "index": 5,
+          "text": "常為眾生開闡法藏，是故能令法種不斷；",
+          "source_hash": "sha256:39d3e145da5e"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0025_s006",
+          "index": 6,
+          "text": "善持教法，無所乖違，是故能令僧種不斷。",
+          "source_hash": "sha256:4ed8bfffd1ea"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0025_s007",
+          "index": 7,
+          "text": "復次，悉能稱讚一切大願，是故能令佛種不斷；",
+          "source_hash": "sha256:91c60b022a8c"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0025_s008",
+          "index": 8,
+          "text": "分別演說因緣之門，是故能令法種不斷；",
+          "source_hash": "sha256:a623790fcc95"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0025_s009",
+          "index": 9,
+          "text": "常勤修習六和敬法，是故能令僧種不斷。",
+          "source_hash": "sha256:9588918bdc53"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0025_s010",
+          "index": 10,
+          "text": "復次，於眾生田中下佛種子，是故能令佛種不斷；",
+          "source_hash": "sha256:83dc338bf215"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0025_s011",
+          "index": 11,
+          "text": "護持正法，不惜身命，是故能令法種不斷；",
+          "source_hash": "sha256:fa0cceb5d0e6"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0025_s012",
+          "index": 12,
+          "text": "統理大眾，無有疲倦，是故能令僧種不斷。",
+          "source_hash": "sha256:6aa8570ca99f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0025_s013",
+          "index": 13,
+          "text": "復次，於去、來、今佛，所說之法、所制之戒，皆悉奉持，心不捨離，是故能令佛、法、僧種永不斷絕。",
+          "source_hash": "sha256:b98d4b374b4a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0025_s014",
+          "index": 14,
+          "text": "菩薩如是紹隆三寶，一切所行無有過失，隨有所作，皆以迴向一切智門，是故三業皆無瑕玷。",
+          "source_hash": "sha256:1d4c30c979da"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0025_s015",
+          "index": 15,
+          "text": "無瑕玷故，所作眾善，所行諸行，教化眾生，隨應說法，乃至一念，無有錯謬，皆與方便智慧相應，悉以向於一切智智，無空過者。",
+          "source_hash": "sha256:b6eb41ba174f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0026",
+      "index": 26,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0026_s001",
+          "index": 1,
+          "text": "「菩薩如是修習善法，念念具足十種莊嚴。",
+          "source_hash": "sha256:336226fb17d1"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s002",
+          "index": 2,
+          "text": "何者為十？",
+          "source_hash": "sha256:9a806289b4ce"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s003",
+          "index": 3,
+          "text": "所謂：身莊嚴，隨諸眾生所應調伏而為示現故；",
+          "source_hash": "sha256:21df9f5128ab"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s004",
+          "index": 4,
+          "text": "語莊嚴，斷一切疑，皆令歡喜故；",
+          "source_hash": "sha256:8e422919d2b0"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s005",
+          "index": 5,
+          "text": "心莊嚴，於一念中入諸三昧故；",
+          "source_hash": "sha256:f0b030f4d45e"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s006",
+          "index": 6,
+          "text": "佛剎莊嚴，一切清淨，離諸煩惱故；",
+          "source_hash": "sha256:96645b15fe46"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s007",
+          "index": 7,
+          "text": "光明莊嚴，放無邊光普照眾生故；",
+          "source_hash": "sha256:ee4d6e7f8048"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s008",
+          "index": 8,
+          "text": "眾會莊嚴，普攝眾會，皆令歡喜故；",
+          "source_hash": "sha256:3e83f8a3c5e8"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s009",
+          "index": 9,
+          "text": "神通莊嚴，隨眾生心，自在示現故；",
+          "source_hash": "sha256:836d93230464"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s010",
+          "index": 10,
+          "text": "正教莊嚴，能攝一切聰慧人故；",
+          "source_hash": "sha256:57477debb11a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s011",
+          "index": 11,
+          "text": "涅槃地莊嚴，於一處成道，周遍十方悉無餘故；",
+          "source_hash": "sha256:3856025c4dcd"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s012",
+          "index": 12,
+          "text": "巧說莊嚴，隨處、隨時、隨其根器為說法故。",
+          "source_hash": "sha256:0aa6c4ad999b"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s013",
+          "index": 13,
+          "text": "菩薩成就如是莊嚴，於念念中，身、語、意業皆無空過，悉以迴向一切智門。",
+          "source_hash": "sha256:372ab048b1b0"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s014",
+          "index": 14,
+          "text": "若有眾生見此菩薩，當知亦復無空過者，以必當成阿耨多羅三藐三菩提故。",
+          "source_hash": "sha256:01ead73e63db"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s015",
+          "index": 15,
+          "text": "若聞名，若供養，若同住，若憶念，若隨出家，若聞說法，若隨喜善根，若遙生欽敬，乃至稱揚、讚歎名字，皆當得阿耨多羅三藐三菩提。",
+          "source_hash": "sha256:147fb4abf916"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s016",
+          "index": 16,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s017",
+          "index": 17,
+          "text": "譬如有藥，名為：善見，眾生見者，眾毒悉除；",
+          "source_hash": "sha256:bff1e357c688"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0026_s018",
+          "index": 18,
+          "text": "菩薩如是成就此法，眾生若見，諸煩惱毒皆得除滅，善法增長。",
+          "source_hash": "sha256:0bb26d822146"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0027",
+      "index": 27,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0027_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0027_s002",
+          "index": 2,
+          "text": "菩薩摩訶薩住此法中，勤加修習，以智慧明，滅諸癡闇；",
+          "source_hash": "sha256:eaabe3883f76"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0027_s003",
+          "index": 3,
+          "text": "以慈悲力，摧伏魔軍；",
+          "source_hash": "sha256:e5f48fd5f2b7"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0027_s004",
+          "index": 4,
+          "text": "以大智慧及福德力，制諸外道；",
+          "source_hash": "sha256:f824ea95377a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0027_s005",
+          "index": 5,
+          "text": "以金剛定，滅除一切心垢煩惱；",
+          "source_hash": "sha256:b29cf5be5c46"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0027_s006",
+          "index": 6,
+          "text": "以精進力，集諸善根；",
+          "source_hash": "sha256:7f5398a3d23c"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0027_s007",
+          "index": 7,
+          "text": "以淨佛土諸善根力，遠離一切惡道諸難；",
+          "source_hash": "sha256:b260e61da8ae"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0027_s008",
+          "index": 8,
+          "text": "以無所著力，淨智境界；",
+          "source_hash": "sha256:8a6e96ceb8a6"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0027_s009",
+          "index": 9,
+          "text": "以方便智慧力，出生一切菩薩諸地、諸波羅蜜，及諸三昧、六通、三明、四無所畏，悉令清淨；",
+          "source_hash": "sha256:c111a290af8d"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0027_s010",
+          "index": 10,
+          "text": "以一切善法力，成滿一切諸佛淨土、無邊相好，身、語及心具足莊嚴；",
+          "source_hash": "sha256:20a0499a2bd2"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0027_s011",
+          "index": 11,
+          "text": "以智自在觀察力，知一切如來力、無所畏、不共佛法，悉皆平等；",
+          "source_hash": "sha256:c196b0a81033"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0027_s012",
+          "index": 12,
+          "text": "以廣大智慧力，了知一切智智境界；",
+          "source_hash": "sha256:715e9038799f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0027_s013",
+          "index": 13,
+          "text": "以往昔誓願力，隨所應化，現佛國土，轉大法輪，度脫無量無邊眾生。",
+          "source_hash": "sha256:cd355abcee76"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0028",
+      "index": 28,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0028_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s002",
+          "index": 2,
+          "text": "菩薩摩訶薩勤修此法，次第成就諸菩薩行，乃至得與諸佛平等，於無邊世界中為大法師，護持正法；",
+          "source_hash": "sha256:6dfeff8b7347"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s003",
+          "index": 3,
+          "text": "一切諸佛之所護念，守護受持廣大法藏；",
+          "source_hash": "sha256:31558bd37b23"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s004",
+          "index": 4,
+          "text": "獲無礙辯，深入法門；",
+          "source_hash": "sha256:ca13166db643"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s005",
+          "index": 5,
+          "text": "於無邊世界大眾之中，隨類不同，普現其身，色相具足，最勝無比，以無礙辯巧說深法；",
+          "source_hash": "sha256:567cf38fcc02"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s006",
+          "index": 6,
+          "text": "其音圓滿善巧分布故，能令聞者入於無盡智慧之門；",
+          "source_hash": "sha256:e6764e0ef111"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s007",
+          "index": 7,
+          "text": "知諸眾生心行煩惱而為說法，所出言音具足清淨故，一音演暢，能令一切皆生歡喜；",
+          "source_hash": "sha256:9720fe41aa8f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s008",
+          "index": 8,
+          "text": "其身端正有大威力故，處於眾會，無能過者；",
+          "source_hash": "sha256:fe0883ee6f41"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s009",
+          "index": 9,
+          "text": "善知眾心故，能普現身；",
+          "source_hash": "sha256:9a5bd8a07e84"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s010",
+          "index": 10,
+          "text": "善巧說法故，音聲無礙；",
+          "source_hash": "sha256:bb435bbbb617"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s011",
+          "index": 11,
+          "text": "得心自在故，巧說大法，無能沮壞；",
+          "source_hash": "sha256:28d3d66ac795"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s012",
+          "index": 12,
+          "text": "得無所畏故，心無怯弱；",
+          "source_hash": "sha256:aac46c0666e2"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s013",
+          "index": 13,
+          "text": "於法自在故，無能過者；",
+          "source_hash": "sha256:4fbd6428d93b"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s014",
+          "index": 14,
+          "text": "於智自在故，無能勝者；",
+          "source_hash": "sha256:f03012153909"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s015",
+          "index": 15,
+          "text": "般若波羅蜜自在故，所說法相，不相違背；",
+          "source_hash": "sha256:b251ec61faa6"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s016",
+          "index": 16,
+          "text": "辯才自在故，隨樂說法，相續不斷；",
+          "source_hash": "sha256:4ff2afed1f94"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s017",
+          "index": 17,
+          "text": "陀羅尼自在故，決定開示諸法實相；",
+          "source_hash": "sha256:36aa61073c4f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s018",
+          "index": 18,
+          "text": "辯才自在故，隨所演說，能開種種譬諭之門；",
+          "source_hash": "sha256:d6093f60c288"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s019",
+          "index": 19,
+          "text": "大悲自在故，勤誨眾生，心無懈息；",
+          "source_hash": "sha256:0328bb62458b"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s020",
+          "index": 20,
+          "text": "大慈自在故，放光明網悅可眾心。",
+          "source_hash": "sha256:f746153c50f4"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s021",
+          "index": 21,
+          "text": "菩薩如是處於高廣師子之座，演說大法。",
+          "source_hash": "sha256:512a386cf1d4"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s022",
+          "index": 22,
+          "text": "唯除如來及勝願智諸大菩薩，其餘眾生無能勝者、無見頂者、無映奪者；",
+          "source_hash": "sha256:19bbe38b7ccb"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0028_s023",
+          "index": 23,
+          "text": "欲以難問令其退屈，無有是處。",
+          "source_hash": "sha256:396963494a87"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0029",
+      "index": 29,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0029_s001",
+          "index": 1,
+          "text": "「佛子！",
+          "source_hash": "sha256:730f4440069a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0029_s002",
+          "index": 2,
+          "text": "菩薩摩訶薩得如是自在力已，假使有不可說世界量廣大道場，滿中眾生，一一眾生威德色相皆如三千大千世界主。",
+          "source_hash": "sha256:efd1d8097d3f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0029_s003",
+          "index": 3,
+          "text": "菩薩於此，纔現其身，悉能映蔽如是大眾，以大慈悲安其怯弱，以深智慧察其欲樂，以無畏辯為其說法，能令一切皆生歡喜。",
+          "source_hash": "sha256:e8e2f8e6b999"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0029_s004",
+          "index": 4,
+          "text": "何以故？",
+          "source_hash": "sha256:78567a572ad3"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0029_s005",
+          "index": 5,
+          "text": "佛子！",
+          "source_hash": "sha256:5d445e388af5"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0029_s006",
+          "index": 6,
+          "text": "菩薩摩訶薩成就無量智慧輪故，成就無量巧分別故，成就廣大正念力故，成就無盡善巧慧故，成就決了諸法實相陀羅尼故，成就無邊際菩提心故，成就無錯謬妙辯才故，成就得一切佛加持深信解故，成就普入三世諸佛眾會道場智慧力故，成就知三世諸佛同一體性清淨心故，成就三世一切如來智、一切菩薩大願智能作大法師開闡諸佛正法藏及護持故。」",
+          "source_hash": "sha256:8d12f486c25b"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0030",
+      "index": 30,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0030_s001",
+          "index": 1,
+          "text": "爾時，法慧菩薩欲重宣其義，承佛神力而說頌言：",
+          "source_hash": "sha256:eefcb39c8a13"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0031",
+      "index": 31,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0031_s001",
+          "index": 1,
+          "text": "「心住菩提集眾福，常不放逸植堅慧，正念其意恒不忘，十方諸佛皆歡喜。",
+          "source_hash": "sha256:bad9dcb48d41"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0031_s002",
+          "index": 2,
+          "text": "念欲堅固自勤勵，於世無依無退怯，以無諍行入深法，十方諸佛皆歡喜。",
+          "source_hash": "sha256:04c6a83da66f"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0031_s003",
+          "index": 3,
+          "text": "佛歡喜已堅精進，修行福智助道法，入於諸地淨眾行，滿足如來所說願。",
+          "source_hash": "sha256:be24019c8b24"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0031_s004",
+          "index": 4,
+          "text": "如是而修獲妙法，既得法已施群生，隨其心樂及根性，悉順其宜為開演。",
+          "source_hash": "sha256:93774e708769"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0031_s005",
+          "index": 5,
+          "text": "菩薩為他演說法，不捨自己諸度行，波羅蜜道既已成，常於有海濟群生。",
+          "source_hash": "sha256:ed0ca803633d"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0031_s006",
+          "index": 6,
+          "text": "晝夜勤修無懈倦，令三寶種不斷絕，所行一切白淨法，悉以迴向如來地。",
+          "source_hash": "sha256:f7bf78ee0867"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0031_s007",
+          "index": 7,
+          "text": "菩薩所修眾善行，普為成就諸群生，令其破闇滅煩惱，降伏魔軍成正覺。",
+          "source_hash": "sha256:505f1a64004a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0031_s008",
+          "index": 8,
+          "text": "如是修行得佛智，深入如來正法藏，為大法師演妙法，譬如甘露悉霑灑。",
+          "source_hash": "sha256:cd042aacca3a"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0031_s009",
+          "index": 9,
+          "text": "慈悲哀愍遍一切，眾生心行靡不知，如其所樂為開闡，無量無邊諸佛法。",
+          "source_hash": "sha256:42616cab82ca"
+        },
+        {
+          "sentence_id": "T10n0279_018_p0031_s010",
+          "index": 10,
+          "text": "進止安徐如象王，勇猛無畏猶師子，不動如山智如海，亦如大雨除眾熱。」",
+          "source_hash": "sha256:3d2d6d632655"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0032",
+      "index": 32,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0032_s001",
+          "index": 1,
+          "text": "時，法慧菩薩說此頌已，如來歡喜，大眾奉行。",
+          "source_hash": "sha256:3d1aa98b0e81"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_018_p0033",
+      "index": 33,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_018_p0033_s001",
+          "index": 1,
+          "text": "大方廣佛華嚴經卷第十八",
+          "source_hash": "sha256:471b4ce3e60c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "project": "BuddhaSutra-註疏",
+  "project": "BuddhaSutra-Reader",
   "description": "AI Agent 外部支援需求與閉環追蹤公告欄。當需要其他 Agent / Skills / Tools / API / MCP 或使用者提供外部資源時，依時間順序疊加記錄，完成後回填 status 與 resolution。",
   "entries": [
     {

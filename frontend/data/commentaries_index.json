@@ -1,0 +1,18 @@
+{
+  "local_juans": {
+    "chengguan_shuchao": [4],
+    "chengguan_yanyichao": [5],
+    "hanshan_gangyao": [1, 2],
+    "hanshan_tongyi": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "jiaoguang_zhengmai": [1, 2, 3, 4, 7, 8, 9],
+    "jiehuan_yaojie": [4]
+  },
+  "default_juan_map": {
+    "chengguan_shuchao": {
+      "1": 4
+    },
+    "chengguan_yanyichao": {
+      "1": 5
+    }
+  }
+}

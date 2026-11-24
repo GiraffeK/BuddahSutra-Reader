@@ -1,70 +1,63 @@
 # 翻譯知識庫（`translation_kb/`）資料結構設計規格書
 
-> 版本：`v1.0`  
-> 適用專案：大藏經 AI 白話翻譯與古大德註疏系統（`BuddhaSutra-註疏`）  
-> 核心原則：**JSON 檔案為單一真實來源（Single Source of Truth）**、可讀可版本控管、依「經號＋卷次」分片（Sharding）、支援多 AI 引擎版本留存與人工校訂鎖定。
+> 版本：`v2.0`  
+> 適用專案：大藏經 AI 白話翻譯與古大德註疏系統（`BuddhaSutra-Reader`）  
+> 核心原則：**依「部別／經典／卷次」分片之 JSON 檔案為單一真實來源（Single Source of Truth）**、單經獨立名相庫、可讀可版本控管、並搭配可隨時從 JSON 重建之 SQLite 全文索引。
 
 ---
 
-## 1. 目錄樹結構設計
+## 1. 目錄樹結構設計（v2.0）
 
 ```text
 translation_kb/
-├── schema_meta.json                    # 知識庫版本、最後更新時間、統計摘要
+├── schema_meta.json                    # 知識庫版本（2.0）、布局模式與索引路徑
 ├── catalog/
-│   └── taisho_tree.json                # 完整大正新脩大藏經 32 部階層目錄樹
-├── sutras/                             # 經文原文基準庫（依經號/卷次分片）
-│   ├── T10n0279/                       # 八十華嚴（唐・實叉難陀譯，主預設譯本）
-│   │   ├── meta.json                   # 經名、譯者、卷數、品目對照、關聯古大德清單
-│   │   └── fascicles/
-│   │       ├── 001.json                # 卷第一（段落 + 句級切分 + 原文 Hash）
-│   │       └── ...
-│   └── T19n0945/                       # 首楞嚴經（唐・般剌蜜帝譯）
-│       ├── meta.json
-│       └── fascicles/
-│           └── 001.json
-├── commentaries/                       # 古大德註疏庫（全部收錄，供使用者自由勾選）
-│   ├── masters_registry.json           # 歷代註疏大德總表（朝代、名號、代表著作、針對譯本、特色）
-│   ├── T10n0279/                       # 華嚴經系古大德註疏（含針對80/60/40卷之跨譯本對照標記）
-│   │   ├── chengguan_shuchao/          # 唐・澄觀大師《華嚴經疏》《隨疏演義鈔》（針對80華嚴）
-│   │   │   └── 001.json
-│   │   ├── litongxuan_lun/             # 唐・李通玄長者《新華嚴經論》（針對80華嚴）
-│   │   ├── hanshan_gangyao/            # 明・憨山德清《華嚴經綱要》（針對80華嚴）
-│   │   ├── xufa_zuanyao/               # 清・續法大師《華嚴經疏論纂要》（會通澄觀＋李通玄）
-│   │   ├── zhiyan_souxuan/             # 唐・智儼大師《華嚴經搜玄記》（針對60華嚴，附跨譯本對應）
-│   │   ├── fazang_tanxuan/             # 唐・法藏大師《華嚴經探玄記》（針對60華嚴，附跨譯本對應）
-│   │   └── zongmi_xingyuan/            # 唐・宗密大師《華嚴經行願品疏鈔》（針對40華嚴）
-│   └── T19n0945/                       # 楞嚴經系古大德註疏
-│       ├── zixuan_yishu/               # 宋・長水子璿《首楞嚴義疏注經》
-│       ├── jiaoguang_zhengmai/         # 明・交光真鑑《楞嚴經正脈疏》
-│       ├── hanshan_tongyi/             # 明・憨山德清《楞嚴經通議》
-│       ├── ouyi_wenju/                 # 明・蕅益智旭《大佛頂經文句》
-│       └── yuanying_jiangyi/           # 民國・圓瑛大師《楞嚴經講義》
-├── translations/                       # ★ AI 經文翻譯知識庫（Cache-First 核心儲存區）
-│   ├── T10n0279/
-│   │   └── 001.json                    # 卷第一所有已翻譯句子（Key = sentence_id）
-│   └── T19n0945/
+│   └── taisho_tree.json                # 完整大正新脩大藏經 25 部階層目錄樹
+├── commentaries/
+│   └── masters_registry.json           # 歷代註疏大德總表（朝代、名號、代表著作、對應卷次）
+├── commentary_fulltext/                # 古大德整卷註疏原文快取（依著述作品獨立存放，可跨譯本共用）
+│   ├── chengguan_shuchao/
+│   │   └── 004.json
+│   └── hanshan_tongyi/
 │       └── 001.json
-├── commentary_translations/            # ★ 古大德文言註疏之 AI 白話導讀快取
-│   └── T10n0279/
-│       └── chengguan_shuchao/
-│           └── 001.json                # Key = commentary_id
-├── glossary/                           # ★ 跨經共用的佛學名相知識庫
-│   └── terms.json                      # 累積常見佛學名相，確保跨卷/跨經釋義一致
-└── .index/                             # 自動生成之加速索引（可隨時由 JSON 重建，不入 Git）
+├── canons/                             # ★ 依「部別 / 經號_經名」集中管理每部經典的一切資產
+│   ├── T_05_華嚴部/
+│   │   └── T10n0279_大方廣佛華嚴經（八十華嚴）/
+│   │       ├── meta.json               # 經名、譯者、卷數、關聯古大德清單
+│   │       ├── glossary.json           # 本經專屬佛學名相知識庫（不再跨藏混用單檔）
+│   │       ├── fascicles/              # 經文原文基準庫（按卷分片）
+│   │       │   ├── 001.json
+│   │       │   └── ...
+│   │       ├── translations/           # ★ AI 經文翻譯知識庫（按卷分片，Key = sentence_id）
+│   │       │   └── 001.json
+│   │       ├── commentaries/           # 逐句註疏對照快取（依大德／卷次分片）
+│   │       │   └── chengguan_shuchao/
+│   │       │       └── 001.json
+│   │       └── commentary_translations/# 古大德文言註疏之 AI 白話導讀快取
+│   │           └── ...
+│   └── T_10_密教部/
+│       └── T19n0945_楞嚴經/
+│           ├── meta.json
+│           ├── glossary.json
+│           ├── fascicles/
+│           ├── translations/
+│           ├── commentaries/
+│           └── commentary_translations/
+└── .index/                             # ★ 可隨時由 JSON 重建之 SQLite 全文加速索引（已列入 .gitignore）
     └── kb_index.sqlite
 ```
 
-### 為什麼選「依經號＋卷次分片（Per-Fascicle JSON）」？
-1. **避免單檔過大**：整部八十華嚴若塞同一檔案將達數十 MB，讀寫極慢；按卷分片後單檔約 100KB–500KB，毫秒級載入。
-2. **避免小檔爆炸**：若每句一個檔案，全藏數百萬句會拖垮 Windows NTFS 檔案系統；按卷分片兼顧效能與管理。
-3. **人類可讀、易備份**：隨時可用文字編輯器檢視、人工校訂或用 Git 追蹤變更。
+### 為什麼採用「部別／經典集中 ＋ 依卷分片 ＋ 單經獨立名相 ＋ SQLite 索引」？
+1. **以「單部經」為整理單位**：某部經的原文、翻譯、註疏對照與佛學名相全集中在同一資料夾且含中文經名，備份、分享或移除極為直覺。
+2. **避免單檔過大**：經文與翻譯按卷分片（單檔 100KB–500KB）；原本全藏共用的 `glossary/terms.json` 亦改為每部經獨立一個 `glossary.json`，徹底杜絕單檔膨脹與跨宗派釋義覆蓋。
+3. **避免小檔爆炸**：仍以卷為分片粒度，不拆成每句一個檔案。
+4. **跨經毫秒級檢索**：透過 `translation_kb/.index/kb_index.sqlite`（表：`sentences`、`translations`、`glossary`、`commentaries`），經由 `GET /api/kb/search`、`GET /api/kb/stats`、`POST /api/kb/reindex` 與 `GET /api/glossary/{sutra_id}` 提供全庫搜尋；任何時候刪除 `.index/` 皆可自 JSON 無損重建。
 
 ---
 
 ## 2. 核心資料結構（JSON Schema）
 
-### 2.1 經文原文檔：`sutras/{sutra_id}/fascicles/{fascicle}.json`
+### 2.1 經文原文檔：`canons/{division}/{sutra_dir}/fascicles/{fascicle}.json`
 
 ```json
 {
@@ -102,7 +95,7 @@ translation_kb/
 
 ---
 
-### 2.2 AI 翻譯知識庫：`translations/{sutra_id}/{fascicle}.json`（最核心）
+### 2.2 AI 翻譯知識庫：`canons/{division}/{sutra_dir}/translations/{fascicle}.json`（最核心）
 
 ```json
 {
@@ -252,7 +245,7 @@ translation_kb/
 ```
 > 註：同架構亦收錄《楞嚴經》歷代大德（長水子璿、戒環、交光真鑑、憨山德清、蕅益智旭、圓瑛大師），使用者可在前端勾選想對照的 1～N 位大德。
 
-#### B. 註疏條目與經文對齊：`commentaries/{sutra_id}/{master_id}/{fascicle}.json`
+#### B. 註疏條目與經文對齊：`canons/{division}/{sutra_dir}/commentaries/{master_id}/{fascicle}.json`
 ```json
 {
   "master_id": "chengguan_shuchao",
@@ -284,7 +277,7 @@ translation_kb/
 游標指到 / 點擊句子 (sentence_id)
         │
         ▼
-[Step 1] 查詢 translation_kb/translations/{sutra_id}/{fascicle}.json
+[Step 1] 查詢 translation_kb/canons/{division}/{sutra_dir}/translations/{fascicle}.json
         │
    ┌────┴─────────────────────────┐
    │ Hit（命中本地知識庫）          │ Miss（本地找不到）
@@ -298,8 +291,8 @@ translation_kb/
                                   │
                                   ▼
                             [Step 4] Atomic Write（寫入 .tmp → os.replace）
-                            存入 translation_kb/translations/{sutra_id}/{fascicle}.json
-                            並同步將新名相寫入 glossary/terms.json
+                            存入 canons/{division}/{sutra_dir}/translations/{fascicle}.json
+                            並同步寫入該經 glossary.json 與 .index/kb_index.sqlite
                                   │
                                   ▼
                             回傳前端顯示（下次再指到此句即 0ms 命中！）

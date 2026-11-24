@@ -1,0 +1,42 @@
+{
+  "master_id": "hanshan_gangyao",
+  "sutra_id": "T10n0279",
+  "fascicle": 1,
+  "entries": [
+    {
+      "commentary_id": "hanshan_T10n0279_001_c001",
+      "target_sentence_ids": [
+        "T10n0279_001_p0004_s001",
+        "T10n0279_001_p0005_s001"
+      ],
+      "alignment_type": "exact",
+      "section_heading": "綱要・總明起教因緣",
+      "original_commentary": "綱要曰：全經大旨，唯在「一真法界」四字。首明「阿蘭若法菩提場中始成正覺」，乃示如來初成正覺時，直將自證法界全體和盤托出，此即華嚴頓教之源頭，學者當從此直入，不必為繁瑣名相所困。",
+      "cross_edition_note": null
+    },
+    {
+      "commentary_id": "hanshan_T10n0279_001_c002",
+      "target_sentence_ids": [
+        "T10n0279_001_p0005_s002",
+        "T10n0279_001_p0006_s001",
+        "T10n0279_001_p0007_s001"
+      ],
+      "alignment_type": "exact",
+      "section_heading": "綱要・四種道場莊嚴總攝",
+      "original_commentary": "綱要曰：經文歷敘金剛地、菩提樹、宮殿樓閣、師子座四重莊嚴，總為顯示「稱性依報」——心淨則佛土淨，法身既遍十方，其所居道場自然重重無盡、光影互攝。",
+      "cross_edition_note": null
+    },
+    {
+      "commentary_id": "hanshan_T10n0279_001_c003",
+      "target_sentence_ids": [
+        "T10n0279_001_p0008_s001",
+        "T10n0279_001_p0008_s003",
+        "T10n0279_001_p0008_s005"
+      ],
+      "alignment_type": "exact",
+      "section_heading": "綱要・如來果德如虛空日輪",
+      "original_commentary": "綱要曰：世尊坐此寶座，身語意三業圓滿無礙，以虛空喻其體之無分別，以日輪喻其用之普照明，此正是一切眾生本具如來藏性之究竟顯現。",
+      "cross_edition_note": null
+    }
+  ]
+}

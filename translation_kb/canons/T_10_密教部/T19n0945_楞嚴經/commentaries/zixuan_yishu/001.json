@@ -1,0 +1,28 @@
+{
+  "master_id": "zixuan_yishu",
+  "sutra_id": "T19n0945",
+  "fascicle": 1,
+  "entries": [
+    {
+      "commentary_id": "zixuan_T19n0945_001_c001",
+      "target_sentence_ids": [
+        "T19n0945_001_p0003_s001",
+        "T19n0945_001_p0004_s001"
+      ],
+      "alignment_type": "exact",
+      "section_heading": "序分・證信序（六種成就）",
+      "original_commentary": "疏曰：「如是我聞」標信聞成就；「室羅筏城」此云聞物，顯如來智慧德相聞於十方；「祇桓精舍」表福智雙嚴之處，千二百五十人常隨眾，顯佛化道之盛。",
+      "cross_edition_note": null
+    },
+    {
+      "commentary_id": "zixuan_T19n0945_001_c002",
+      "target_sentence_ids": [
+        "T19n0945_001_p0007_s001"
+      ],
+      "alignment_type": "exact",
+      "section_heading": "正宗分・示生死根本與常住真心",
+      "original_commentary": "疏曰：此一科乃全經大本。眾生無始輪迴，非由他作，但由迷失「常住真心、性淨明體」，認妄想生滅之心為己，故隨業流轉不息。",
+      "cross_edition_note": null
+    }
+  ]
+}

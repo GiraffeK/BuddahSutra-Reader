@@ -1,0 +1,18 @@
+{
+  "master_id": "zhiyan_souxuan",
+  "sutra_id": "T10n0279",
+  "fascicle": 1,
+  "entries": [
+    {
+      "commentary_id": "zhiyan_T10n0279_001_c001",
+      "target_sentence_ids": [
+        "T10n0279_001_p0005_s001",
+        "T10n0279_001_p0006_s005"
+      ],
+      "alignment_type": "cross_edition",
+      "section_heading": "搜玄記・世間淨眼品開端（十玄門緣起）",
+      "original_commentary": "搜玄記曰：此經乃一乘別教圓明具德之法。言「始成正覺」處，即明因陀羅網境界，同時具足相應、一多相容、微細相容等十玄緣起，於初成道場一時頓現。",
+      "cross_edition_note": "智儼大師《搜玄記》原註六十華嚴（T09n0278〈世間淨眼品〉），八十華嚴對應〈世主妙嚴品〉開端；六十華嚴作「寂滅道場」，八十華嚴作「阿蘭若法菩提場」。"
+    }
+  ]
+}

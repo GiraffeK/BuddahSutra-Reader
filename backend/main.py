@@ -1,5 +1,5 @@
 """
-BuddhaSutra-註疏 FastAPI 主服務。
+BuddhaSutra-Reader FastAPI 主服務。
 提供大藏經階層目錄、經文與古大德註疏讀取、以及 Cache-First AI 翻譯 API。
 """
 from __future__ import annotations
@@ -20,6 +20,7 @@ from backend.cbeta_fetcher import (
     resolve_commentary_juan,
     search_cbeta_commentaries_for_sentence,
 )
+from backend.gaiji import normalize_paragraphs
 from backend.kb_store import KnowledgeBaseStore
 from backend.llm_service import LLMTranslationService
 
@@ -44,6 +45,11 @@ async def disable_static_cache(request, call_next):
     return response
 
 kb = KnowledgeBaseStore(KB_DIR)
+if kb.index is not None:
+    try:
+        kb.index.ensure_ready(kb)
+    except Exception:
+        pass
 llm = LLMTranslationService()
 
 # 併發去重鎖：避免滑鼠重複劃過同一未翻譯句子時打多次 LLM API
@@ -54,6 +60,18 @@ def _get_inflight_lock(key: str) -> asyncio.Lock:
     if key not in _inflight_locks:
         _inflight_locks[key] = asyncio.Lock()
     return _inflight_locks[key]
+
+
+_NETWORK_HINT = (
+    "無法連線 CBETA（網路或 DNS 解析失敗）。此卷尚未入庫，需要連網下載；"
+    "請確認網路／VPN／防火牆後重試。已入庫的經卷與註疏不受影響。"
+)
+
+
+def _is_network_error(exc: BaseException) -> bool:
+    import httpx
+
+    return isinstance(exc, (httpx.ConnectError, httpx.ConnectTimeout, httpx.ReadTimeout, OSError))
 
 
 class TranslateSentenceRequest(BaseModel):
@@ -86,7 +104,7 @@ class LookupCommentariesRequest(BaseModel):
 
 @app.get("/api/health")
 async def health() -> dict[str, str]:
-    return {"status": "ok", "project": "BuddhaSutra-註疏"}
+    return {"status": "ok", "project": "BuddhaSutra-Reader"}
 
 
 @app.get("/api/llm/status")
@@ -106,6 +124,37 @@ async def get_catalog() -> dict[str, Any]:
         for s in div.get("sutras", []):
             s["local_fascicles"] = kb.list_local_fascicles(s["sutra_id"])
     return cat
+
+
+@app.get("/api/kb/stats")
+async def get_kb_stats() -> dict[str, Any]:
+    index_stats = kb.index.get_stats() if kb.index is not None else None
+    return {"storage": kb.get_storage_summary(), "index": index_stats}
+
+
+@app.get("/api/kb/search")
+async def search_kb(
+    q: str = "",
+    scope: str = "all",
+    sutra_id: str | None = None,
+    limit: int = 30,
+) -> dict[str, Any]:
+    if kb.index is None:
+        raise HTTPException(status_code=503, detail="SQLite 索引未啟用")
+    return kb.index.search(q, scope=scope, sutra_id=sutra_id, limit=limit)
+
+
+@app.post("/api/kb/reindex")
+async def reindex_kb() -> dict[str, Any]:
+    if kb.index is None:
+        raise HTTPException(status_code=503, detail="SQLite 索引未啟用")
+    stats = kb.index.rebuild_from_json(kb)
+    return {"status": "ok", "index": stats}
+
+
+@app.get("/api/glossary/{sutra_id}")
+async def get_sutra_glossary(sutra_id: str) -> dict[str, Any]:
+    return kb.get_glossary(sutra_id)
 
 
 @app.get("/api/sutras/{sutra_id}/fascicles/{fascicle}")
@@ -128,6 +177,8 @@ async def get_fascicle_bundle(sutra_id: str, fascicle: int) -> dict[str, Any]:
                 except FileNotFoundError as exc:
                     raise HTTPException(status_code=404, detail=str(exc)) from exc
                 except Exception as exc:
+                    if _is_network_error(exc):
+                        raise HTTPException(status_code=503, detail=_NETWORK_HINT) from exc
                     raise HTTPException(status_code=502, detail=f"從 CBETA 下載經文失敗：{exc}") from exc
 
     masters = kb.get_masters_for_sutra(sutra_id)
@@ -144,18 +195,20 @@ async def get_fascicle_bundle(sutra_id: str, fascicle: int) -> dict[str, Any]:
         "fascicle_count": fascicle_count,
         "local_fascicles": local_fascicles,
         "fetched_from_cbeta": fetched_from_cbeta,
+        "storage_paths": kb.get_storage_paths(sutra_id, fascicle),
     }
 
 
 @app.post("/api/translate/sentence")
 async def translate_sentence(req: TranslateSentenceRequest) -> dict[str, Any]:
     lock_key = f"{req.sutra_id}:{req.fascicle}:{req.sentence_id}"
+    storage_path = kb.get_storage_paths(req.sutra_id, req.fascicle)["translation_file"]
     async with _get_inflight_lock(lock_key):
         # Step 1: Cache-First 查詢本地翻譯知識庫
         if not req.force_refresh:
             cached = kb.get_sentence_translation(req.sutra_id, req.fascicle, req.sentence_id)
             if cached:
-                return {"from_kb": True, "entry": cached}
+                return {"from_kb": True, "entry": cached, "storage_path": storage_path}
 
         # Step 2: 讀取原文上下文與已勾選古大德註疏
         try:
@@ -211,7 +264,7 @@ async def translate_sentence(req: TranslateSentenceRequest) -> dict[str, Any]:
             content=content,
             referenced_masters=referenced_masters,
         )
-        return {"from_kb": False, "entry": saved}
+        return {"from_kb": False, "entry": saved, "storage_path": storage_path}
 
 
 @app.get("/api/commentaries/fulltext")
@@ -281,6 +334,8 @@ async def get_commentary_fulltext_api(
                 except FileNotFoundError as exc:
                     raise HTTPException(status_code=404, detail=str(exc)) from exc
                 except Exception as exc:
+                    if _is_network_error(exc):
+                        raise HTTPException(status_code=503, detail=_NETWORK_HINT) from exc
                     raise HTTPException(
                         status_code=502,
                         detail=f"載入古大德註疏全文失敗：{type(exc).__name__}: {exc}",
@@ -292,7 +347,7 @@ async def get_commentary_fulltext_api(
         "total_juans": data.get("total_juans") or master.get("total_juans", 1),
         "fetched_from_cbeta": fetched_from_cbeta,
         "local_juans": kb.list_local_commentary_juans(master_id),
-        "paragraphs": data.get("paragraphs", []),
+        "paragraphs": normalize_paragraphs(data.get("paragraphs", [])),
     }
 
 
@@ -392,6 +447,14 @@ async def translate_commentary(req: TranslateCommentaryRequest) -> dict[str, Any
 
 if FRONTEND_DIR.exists():
     app.mount("/static", StaticFiles(directory=str(FRONTEND_DIR)), name="static")
+
+    @app.get("/styles.css")
+    async def serve_styles() -> FileResponse:
+        return FileResponse(FRONTEND_DIR / "styles.css")
+
+    @app.get("/app.js")
+    async def serve_app_js() -> FileResponse:
+        return FileResponse(FRONTEND_DIR / "app.js")
 
     @app.get("/")
     async def serve_index() -> FileResponse:

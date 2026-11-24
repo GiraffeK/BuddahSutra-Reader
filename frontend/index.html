@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>大正新脩大藏經｜AI 白話翻譯與古大德註疏系統</title>
-  <link rel="stylesheet" href="/static/styles.css?v=20261123b" />
+  <link rel="stylesheet" href="./styles.css?v=20261124g" />
 </head>
 <body>
   <!-- 頂部導覽列 -->
@@ -12,15 +12,22 @@
     <div class="topbar-left">
       <span class="brand-icon">🪷</span>
       <span class="brand-title">大正新脩大藏經・AI 翻譯與古大德註疏</span>
-      <input
-        id="searchInput"
-        class="search-input"
-        type="text"
-        placeholder="搜尋部別、經名或本卷經文..."
-      />
+      <div class="search-box-wrap" id="searchBoxWrap">
+        <input
+          id="searchInput"
+          class="search-input"
+          type="text"
+          placeholder="搜尋部別、經名、本卷或全庫索引..."
+        />
+        <div id="kbSearchDropdown" class="kb-search-dropdown" style="display:none;"></div>
+      </div>
     </div>
 
     <div class="topbar-right">
+      <span
+        class="topbar-hint"
+        title="知識庫優先（Cache-First）：游標指向經句，即時顯示本地分卷譯文（translation_kb/canons/）與歷代古大德註疏；尚無譯文時，點擊經句或開啟「游標停留自動翻譯」，由所選 LLM 參酌註疏翻譯並永久存庫；點擊經句可鎖定。"
+      >💡 <b>知識庫優先</b>：指句即查譯文與註疏；無譯文則點句或開自動翻譯，AI 譯後存庫；點句可鎖定</span>
       <label class="toggle-auto" title="游標停留在未翻譯句子 0.5 秒後自動呼叫 AI 翻譯並存入本地知識庫">
         <input type="checkbox" id="autoHoverTranslate" />
         <span>游標停留自動 AI 翻譯</span>
@@ -34,6 +41,8 @@
         </select>
         <span id="llmStatusBadge" class="status-pill status-checking">檢查中...</span>
       </div>
+
+      <button id="byokBtn" class="byok-btn" title="設定個人 Gemini API Key 與本機知識庫備份">🔑 API 設定</button>
     </div>
   </header>
 
@@ -64,12 +73,6 @@
         </div>
         <div id="sutraSubtitle" class="sutra-subtitle"></div>
         <div id="cbetaToast" class="cbeta-toast" style="display:none;"></div>
-        <div class="notice-banner">
-          <strong>知識庫優先（Cache-First）模式：</strong>
-          游標移至右側任一經句即可即時檢視 <b>本地翻譯知識庫</b>（<code>translation_kb/</code>）與 <b>歷代古大德註疏</b>；
-          若本地尚無譯文，點擊句子或開啟「游標停留自動翻譯」將呼叫所選 LLM（預設 Gemini API）結合古大德法義翻譯並自動永久存入知識庫。
-          點擊經句可「鎖定」方便閱讀左側解析與切換祖師註疏。
-        </div>
       </div>
 
       <!-- 雙欄對照區：中欄（AI翻譯 + 古大德全文獨立捲動）｜右欄（漢文原文獨立捲動） -->
@@ -130,6 +133,85 @@
     </div>
   </div>
 
-  <script src="/static/app.js?v=20261123b"></script>
+  <!-- API Key 與本機知識庫設定 Modal -->
+  <div id="byokModal" class="modal-backdrop" style="display:none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>🔑 個人 Gemini API Key 與本機知識庫設定</h3>
+        <button id="closeByokModalBtn" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">
+          當前運作模式：<strong id="appModeLabel">偵測中...</strong><br />
+          在雲端純前端模式（Firebase Hosting）下，無需伺服器維護。您的個人 API Key 與自選經文翻譯記錄僅儲存於您個人的本機瀏覽器（LocalStorage / IndexedDB），完全私密且絕不上傳伺服器。
+        </p>
+
+        <div class="form-group">
+          <label for="byokApiKeyInput">Gemini API Key：</label>
+          <div class="input-with-btn">
+            <input id="byokApiKeyInput" type="password" placeholder="請貼上 AIzaSy 開頭的 Gemini API Key..." />
+            <button id="toggleKeyVisibilityBtn" type="button" class="mini-btn">顯示</button>
+          </div>
+          <small class="form-hint">
+            尚未持有金鑰？可至 <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio 免費申請 API Key</a>。
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="byokModelSelect">Gemini 模型型號（實際驗證可用之 3.5 ～ 4 世代）：</label>
+          <select id="byokModelSelect">
+            <option value="gemini-3.5-flash-lite" selected>gemini-3.5-flash-lite（預設推薦，輕量高速、免費配額較寬鬆）</option>
+            <option value="gemini-3.8-flash">gemini-3.8-flash（3.x 最新高速主力）</option>
+            <option value="gemini-3.7-flash">gemini-3.7-flash</option>
+            <option value="gemini-3.6-flash">gemini-3.6-flash</option>
+            <option value="gemini-3.5-flash">gemini-3.5-flash</option>
+            <option value="gemini-4-neon">gemini-4-neon（Gemini 4 最新世代）</option>
+            <option value="gemini-4-hydrogen">gemini-4-hydrogen（Gemini 4 最新世代）</option>
+            <option value="gemini-4-argon">gemini-4-argon（Gemini 4 最新世代）</option>
+            <option value="gemini-4-carbon">gemini-4-carbon（Gemini 4 最新世代）</option>
+            <option value="gemini-3.1-pro-preview">gemini-3.1-pro-preview（深度法義剖析）</option>
+            <option value="gemini-2.5-flash">gemini-2.5-flash（2.5 穩定備援）</option>
+            <option value="gemini-2.5-flash-lite">gemini-2.5-flash-lite（2.5 輕量備援）</option>
+            <option value="custom">自訂模型型號...</option>
+          </select>
+          <input
+            id="byokCustomModelInput"
+            type="text"
+            placeholder="請輸入自訂 Gemini 模型代碼（例如 gemini-flash-latest）..."
+            style="display:none; margin-top:8px;"
+          />
+          <small class="form-hint">
+            若所選模型達免費層每日配額（429），系統將自動切換至其他可用備援模型完成翻譯。
+          </small>
+        </div>
+
+        <div class="modal-action-row">
+          <button id="saveByokKeyBtn" class="primary-btn">儲存金鑰</button>
+          <button id="testByokKeyBtn" class="secondary-btn">測試連線</button>
+          <button id="clearByokKeyBtn" class="danger-btn">清除金鑰</button>
+        </div>
+        <div id="byokStatusMsg" class="byok-status-msg" style="display:none;"></div>
+
+        <hr style="margin: 20px 0; border: none; border-top: 1px solid #e4dccb;" />
+
+        <div class="kb-storage-section">
+          <h4>📦 個人本機知識庫備份與還原（IndexedDB）</h4>
+          <p class="modal-desc" style="font-size:12.5px;">
+            您翻譯的經句、法義解析與關鍵名相，皆保存在此瀏覽器本機知識庫。您可以隨時匯出為 JSON 檔保存，或匯入至其他裝置。
+          </p>
+          <div class="modal-action-row">
+            <button id="exportKbBtn" class="secondary-btn">📥 匯出個人知識庫備份 (JSON)</button>
+            <label class="file-upload-btn secondary-btn">
+              📤 匯入知識庫備份 (JSON)
+              <input type="file" id="importKbInput" accept=".json" style="display:none;" />
+            </label>
+          </div>
+          <div id="kbStorageStats" style="font-size:12px; color:#766a59; margin-top:8px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js?v=20261124k"></script>
 </body>
 </html>

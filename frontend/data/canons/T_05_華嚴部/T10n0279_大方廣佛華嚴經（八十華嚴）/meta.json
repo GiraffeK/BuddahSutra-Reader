@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "sutra_id": "T10n0279",
+  "title": "大方廣佛華嚴經",
+  "edition": "八十華嚴（唐・實叉難陀譯）",
+  "division_id": "T_05_huayan",
+  "division_name": "華嚴部",
+  "translator": "于闐國三藏沙門實叉難陀奉制譯",
+  "fascicle_count": 80,
+  "available_fascicles": [
+    1
+  ],
+  "masters": [
+    "chengguan_shuchao",
+    "litongxuan_lun",
+    "hanshan_gangyao",
+    "xufa_zuanyao",
+    "zhiyan_souxuan",
+    "fazang_tanxuan",
+    "zongmi_xingyuan"
+  ]
+}

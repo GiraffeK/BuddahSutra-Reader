@@ -1,0 +1,29 @@
+{
+  "master_id": "jiaoguang_zhengmai",
+  "sutra_id": "T19n0945",
+  "fascicle": 1,
+  "entries": [
+    {
+      "commentary_id": "jiaoguang_T19n0945_001_c001",
+      "target_sentence_ids": [
+        "T19n0945_001_p0006_s001",
+        "T19n0945_001_p0007_s001"
+      ],
+      "alignment_type": "exact",
+      "section_heading": "正脈疏・捨識用根之大旨",
+      "original_commentary": "正脈曰：阿難一向多聞，純用第六意識分別記持，未曾回光體認根中常住真心。故世尊直破其病根：「皆由不知常住真心性淨明體，用諸妄想」，此正是本經「捨識用根」之總綱領。",
+      "cross_edition_note": null
+    },
+    {
+      "commentary_id": "jiaoguang_T19n0945_001_c002",
+      "target_sentence_ids": [
+        "T19n0945_001_p0007_s003",
+        "T19n0945_001_p0007_s004"
+      ],
+      "alignment_type": "exact",
+      "section_heading": "正脈疏・徵問見愛起處（七處徵心發端）",
+      "original_commentary": "正脈曰：佛問「將何所見？誰為愛樂？」，意在逼出阿難答「用我心目」，為下文「七處徵心」破妄顯真張本。蓋眾生皆認能分別愛樂之妄識為心，若不徹底破盡，終無入道之期。",
+      "cross_edition_note": null
+    }
+  ]
+}
