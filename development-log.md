@@ -846,3 +846,22 @@
 - 第 3 條：無需外部支援，`Bulletin.json` 保持最新。
 - 第 4 條：`.env` 受 `.gitignore` 保護未提交，未手動改動 `.git/` 內部檔案。
 - 第 5 條：全程嚴格透過 `test_safe_command.py` 執行，腳本已重設還原。
+
+---
+
+## [2026-11-24 15:17] Session 36：將《楞嚴經》預設第一古大德註疏改為憨山德清大師《楞嚴經通議》
+
+### 1. 接收到的 User Prompt
+- 使用者指示：「楞嚴經的部分，讓憨山大師的通議為第一個選擇，default用他的注疏」。
+
+### 2. 修改內容與部署
+- 更新 `translation_kb/commentaries/masters_registry.json`：將 `hanshan_tongyi`（明・憨山德清大師《楞嚴經通議》）移至 `T19n0945` 第一順位並設 `"default_selected": true`，`jiaoguang_zhengmai` 改為第二順位且 `"default_selected": false`。
+- 同步更新 `frontend/data/masters_registry.json` 與所有 10 卷 `frontend/data/bundles/T19n0945_*.json` 內嵌之 `masters` 清單。
+- 同步部署至 Firebase Hosting（`buddahsutra-reader`）並提交推送至 GitHub。
+
+### 3. 規範查核
+- 第 1 條：於回覆結尾附上標準履約查核標籤。
+- 第 2 條：已記錄 Session 36。
+- 第 3 條：無需外部支援，`Bulletin.json` 保持最新。
+- 第 4 條：未修改 `.env` 與敏感金鑰。
+- 第 5 條：全程嚴格透過 `test_safe_command.py` 執行，腳本已重設還原。

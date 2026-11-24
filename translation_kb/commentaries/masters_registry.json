@@ -137,21 +137,6 @@
       "default_selected": false
     },
     {
-      "master_id": "jiaoguang_zhengmai",
-      "sutra_id": "T19n0945",
-      "sutra_family": "shurangama",
-      "dynasty": "明",
-      "name": "交光真鑑大師",
-      "work_title": "《楞嚴經正脈疏》",
-      "cbeta_id": "X12n0275",
-      "primary_work": "X0275",
-      "total_juans": 10,
-      "target_edition": "T19n0945",
-      "target_edition_label": "十卷楞嚴",
-      "description": "力主「捨識用根」之直截修法，科判明晰，為明清以來最受推崇之楞嚴註疏。",
-      "default_selected": true
-    },
-    {
       "master_id": "hanshan_tongyi",
       "sutra_id": "T19n0945",
       "sutra_family": "shurangama",
@@ -164,6 +149,21 @@
       "target_edition": "T19n0945",
       "target_edition_label": "十卷楞嚴",
       "description": "以禪門實證心要貫通全經大義，文筆簡練明暢，直指一心真源。",
+      "default_selected": true
+    },
+    {
+      "master_id": "jiaoguang_zhengmai",
+      "sutra_id": "T19n0945",
+      "sutra_family": "shurangama",
+      "dynasty": "明",
+      "name": "交光真鑑大師",
+      "work_title": "《楞嚴經正脈疏》",
+      "cbeta_id": "X12n0275",
+      "primary_work": "X0275",
+      "total_juans": 10,
+      "target_edition": "T19n0945",
+      "target_edition_label": "十卷楞嚴",
+      "description": "力主「捨識用根」之直截修法，科判明晰，為明清以來最受推崇之楞嚴註疏。",
       "default_selected": false
     },
     {
