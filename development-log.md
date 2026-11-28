@@ -1110,3 +1110,27 @@
 ### 2. 修改與驗證
 - 於 `frontend/app.js` 新增 `showCbetaToast(msg, 5)` 與 `hideCbetaToast()`，顯示「（5 秒後自動關閉）」並每秒倒數歸零自動隱藏，切卷時自動清除舊計時器；更新 `?v=20261128o` 並透過 `python test_safe_command.py` 驗證 PASS。
 - 透過 `python test_safe_command.py` 推送至 GitHub（`origin/main`）並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。
+
+---
+
+## [2026-11-28 16:30] Session 55：將 AI 翻譯狀態標籤濃縮移入面板標題列
+
+### 1. 接收到的 User Prompt
+- 使用者附截圖指示：「框1訊息請濃縮放入框2」。
+
+### 2. 修改與驗證
+- 於 `frontend/index.html` 的 `.ai-panel-header-left` 新增 `#aiHeaderStatusBadge`，移至「📌 已鎖定點擊之經文」右側，並移除面板內原 `.card-topbar` 釋放垂直閱讀空間。
+- 於 `frontend/app.js` 新增 `setAiHeaderStatus()`，以精簡格式顯示 `知識庫 · <model>` / `新譯入庫 · <model>` / `⏳ 翻譯中 · <model>` / `尚無譯文`（滑鼠懸停可看完整引擎與型號）；更新 `?v=20261128p` 並透過 `python test_safe_command.py` 驗證 PASS。
+- 依截圖調整 `.ai-panel-header` 與 `.ai-panel-header-left` 為強制單排（`flex-wrap: nowrap`），防止「收合」直排與狀態膠囊換行，狀態標籤自動依剩餘寬度省略顯示（`?v=20261128q`）。
+
+---
+
+## [2026-11-28 16:37] Session 56：古大德註疏標題列濃縮為單排顯示
+
+### 1. 接收到的 User Prompt
+- 使用者附古大德標題列截圖指示：「這個也濃縮成一排」。
+
+### 2. 修改與驗證
+- 更新 `frontend/styles.css`：將 `.comm-full-header` 與 `.comm-full-title-row` 改為 `flex-wrap: nowrap`，`#commMasterTitle` 與 `.align-badge` 依剩餘寬度自動單行省略（同時不設父層 `overflow: hidden` 以確保大德 Pop-up 選單正常展開），右側 `.comm-juan-controls` 固定不換行。
+- 更新 `frontend/app.js` 將註疏卷次選單由 `註疏卷 3/60` 精簡為 `卷 3/60`；更新 `?v=20261128r` 並透過 `python test_safe_command.py` 驗證 PASS。
+- 透過 `python test_safe_command.py` 推送至 GitHub（`origin/main`）並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。

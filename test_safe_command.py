@@ -22,7 +22,7 @@ for line in status.splitlines():
 if status.strip():
     run(["git", "add", "-A"], "git add")
     run(
-        ["git", "commit", "-m", "ui: move lock badge to AI panel header and auto-dismiss CBETA toast after 5s"],
+        ["git", "commit", "-m", "ui: compact AI and commentary panel headers into single non-wrapping rows"],
         "git commit",
     )
     run(["git", "push", "origin", "main"], "git push")

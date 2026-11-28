@@ -687,16 +687,42 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding: 7px 12px;
+  padding: 6px 10px;
   background: #f4ebd6;
   border-bottom: 1px solid var(--bg-card-border);
+  flex-wrap: nowrap;
 }
 
 .ai-panel-header-left {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
+  gap: 6px;
+  flex-wrap: nowrap;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.ai-panel-header-left strong,
+.ai-panel-header-left .badge-lock,
+.ai-panel-header .mini-btn {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.ai-panel-header-left .badge-lock {
+  font-size: 11px;
+  padding: 2px 7px;
+}
+
+.ai-header-status {
+  flex: 0 1 auto;
+  min-width: 0;
+  font-size: 11px;
+  padding: 2px 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .ai-panel-body {
@@ -826,9 +852,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
-  flex-wrap: wrap;
-  padding: 8px 12px;
+  gap: 6px;
+  flex-wrap: nowrap;
+  padding: 6px 10px;
   background: #f7f1e3;
   border-bottom: 1px solid var(--border);
 }
@@ -836,13 +862,38 @@ body {
 .comm-full-title-row {
   display: flex;
   align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
+  gap: 6px;
+  flex-wrap: nowrap;
+  flex: 1;
+  min-width: 0;
+}
+
+.comm-full-title-row .master-picker-anchor {
+  min-width: 0;
+  flex: 0 1 auto;
+}
+
+.comm-full-title-row .master-picker-btn {
+  max-width: 100%;
+  padding: 3px 8px;
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+
+#commMasterTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .align-badge {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 11px;
-  padding: 2px 8px;
+  padding: 2px 7px;
   border-radius: 999px;
   background: var(--green-kb-bg);
   color: var(--green-kb);
@@ -857,7 +908,13 @@ body {
 .comm-juan-controls {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.comm-juan-controls .mini-btn {
+  padding: 2px 6px;
 }
 
 .mini-select {

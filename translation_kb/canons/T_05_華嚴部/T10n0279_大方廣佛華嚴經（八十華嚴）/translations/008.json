@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "sutra_id": "T10n0279",
   "fascicle": 8,
-  "updated_at": "2026-11-28T16:27:42+08:00",
+  "updated_at": "2026-11-28T16:39:17+08:00",
   "entries": {
     "T10n0279_008_p0004_s002": {
       "sentence_id": "T10n0279_008_p0004_s002",
@@ -44,6 +44,48 @@
               {
                 "term": "願力嚴淨",
                 "explanation": "依大願力所莊嚴清淨，非共業感果，顯自行化他、願行圓融之華嚴特勝義。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T10n0279_008_p0004_s001": {
+      "sentence_id": "T10n0279_008_p0004_s001",
+      "source_text": "爾時，普賢菩薩復告大眾言：「諸佛子！",
+      "source_hash": "sha256:93ec530ca706",
+      "active_version_id": "v_20261128_163917_nvidia",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_163917_nvidia",
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "chengguan_shuchao"
+          ],
+          "created_at": "2026-11-28T16:39:17+08:00",
+          "content": {
+            "literal_translation": "那個時候，普賢菩薩又告訴大眾說：「諸位佛的兒子們！",
+            "colloquial_translation": "當時，普賢菩薩再次向大眾開示道：「各位佛子！",
+            "dharma_analysis": "清涼國師澄觀大師指出此處『普賢』乃約義名重，不動前會而圓融顯現，表彰法界緣起無礙之理。普賢菩薩作為華藏世界海之主伴覺者，於此接續文殊師利菩薩說法，發起『華藏世界品』，表顯果德圓滿、行願普遍之義。",
+            "terms": [
+              {
+                "term": "爾時",
+                "explanation": "經文標準起文用語，指法會進行至特定因緣成熟之時機，非單指歷史時間，乃顯法爾如是之當機時節。"
+              },
+              {
+                "term": "普賢菩薩",
+                "explanation": "梵名 Samantabhadra，義翻『普賢』或『遍吉』。澄觀疏釋：約法超絕世染，約行遍修萬行，約位等覺妙覺。為華嚴法界主伴覺者，表徵理智圓融、行願周遍之德。"
+              },
+              {
+                "term": "大眾",
+                "explanation": "指集會聽法之諸菩薩、聲聞、天龍八部等一切與會聖賢大眾。"
+              },
+              {
+                "term": "諸佛子",
+                "explanation": "菩薩對大眾之尊稱，意謂一切眾生皆具佛性，能修萬行，當證佛果，故稱『佛子』，以啟發其大乘種性。"
               }
             ]
           }

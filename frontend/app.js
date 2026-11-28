@@ -54,6 +54,7 @@ const els = {
   aiPanelWrap: document.getElementById("aiPanelWrap"),
   toggleAiCollapseBtn: document.getElementById("toggleAiCollapseBtn"),
   unlockBtn: document.getElementById("unlockBtn"),
+  aiHeaderStatusBadge: document.getElementById("aiHeaderStatusBadge"),
   analysisPanel: document.getElementById("analysisPanel"),
   commMasterTitle: document.getElementById("commMasterTitle"),
   commAlignBadge: document.getElementById("commAlignBadge"),
@@ -2821,7 +2822,7 @@ function renderCommJuanControls() {
   for (let i = 1; i <= total; i++) {
     const opt = document.createElement("option");
     opt.value = String(i);
-    opt.textContent = `註疏卷 ${i}/${total}${localSet.has(i) ? " ✓" : ""}`;
+    opt.textContent = `卷 ${i}/${total}${localSet.has(i) ? " ✓" : ""}`;
     if (i === cur) opt.selected = true;
     els.commJuanSelect.appendChild(opt);
   }
@@ -3330,11 +3331,25 @@ function syncLockHeaderBadge() {
   els.unlockBtn.style.display = state.lockedSentenceId ? "inline-flex" : "none";
 }
 
+function setAiHeaderStatus(text, cls = "badge-ai", title = "") {
+  if (!els.aiHeaderStatusBadge) return;
+  if (!text) {
+    els.aiHeaderStatusBadge.style.display = "none";
+    els.aiHeaderStatusBadge.textContent = "";
+    return;
+  }
+  els.aiHeaderStatusBadge.textContent = text;
+  els.aiHeaderStatusBadge.className = `${cls} ai-header-status`;
+  els.aiHeaderStatusBadge.title = title || text;
+  els.aiHeaderStatusBadge.style.display = "inline-block";
+}
+
 // ---------- 渲染上方 AI 翻譯面板 ----------
 function renderAnalysisPanel(errorMsg = null) {
   syncLockHeaderBadge();
   const sid = state.activeSentenceId;
   if (!sid || !state.bundle) {
+    setAiHeaderStatus("");
     els.analysisPanel.innerHTML = `
       <div class="empty-state" style="padding:18px;">
         <p class="empty-title" style="font-size:14px;">請將游標移至左側漢文經句</p>
@@ -3346,22 +3361,19 @@ function renderAnalysisPanel(errorMsg = null) {
   const sourceText = findSentenceText(sid);
   const entry = state.bundle.translations?.[sid];
   const isTranslating = state.translatingSet.has(sid);
-  const isLocked = state.lockedSentenceId === sid;
   const transPath = getCurrentTranslationPath();
 
   let aiBodyHtml = "";
-  let statusBadge = `<span class="badge-ai">本地知識庫尚無譯文</span>`;
-  let topbarLeftExtra = "";
 
   if (isTranslating) {
     const p = els.providerSelect.value;
-    const provName =
+    const shortModel =
       p === "nvidia"
-        ? `NVIDIA NIM (${(state.nvidiaModel || "").split("/").pop()})`
+        ? (state.nvidiaModel || "").split("/").pop()
         : p === "ollama"
           ? "Ollama"
-          : `Gemini (${state.userModel})`;
-    statusBadge = `<span class="badge-ai">AI 翻譯中（${escapeHtml(provName)}）...</span>`;
+          : state.userModel;
+    setAiHeaderStatus(`⏳ 翻譯中 · ${shortModel}`, "badge-ai", `AI 翻譯中（${p} / ${shortModel}）`);
     aiBodyHtml = `<p style="color:#766a59;font-size:13.5px;margin:0;">正在結合前後文與古大德法義翻譯，完成後自動存入 <code>${escapeHtml(transPath)}</code>...</p>`;
   } else if (entry) {
     const activeVer =
@@ -3370,10 +3382,13 @@ function renderAnalysisPanel(errorMsg = null) {
       {};
     const c = activeVer.content || {};
     const fromKb = entry._lastFromKb !== false;
-    const verLabel = `${activeVer.provider || "Gemini"}${activeVer.model ? ` / ${activeVer.model}` : ""}`;
-    statusBadge = fromKb
-      ? `<span class="badge-kb">本地知識庫命中（${escapeHtml(verLabel)}）</span>`
-      : `<span class="badge-ai">AI 新譯並已入庫（${escapeHtml(verLabel)}）</span>`;
+    const shortModel = String(activeVer.model || activeVer.provider || "AI").split("/").pop();
+    const fullTitle = `${fromKb ? "本地知識庫命中" : "AI 新譯並已入庫"}（${activeVer.provider || "Gemini"}${activeVer.model ? ` / ${activeVer.model}` : ""}）`;
+    setAiHeaderStatus(
+      fromKb ? `知識庫 · ${shortModel}` : `新譯入庫 · ${shortModel}`,
+      fromKb ? "badge-kb" : "badge-ai",
+      fullTitle
+    );
 
     const termsHtml = (c.terms || [])
       .map(
@@ -3401,6 +3416,7 @@ function renderAnalysisPanel(errorMsg = null) {
         : p === "ollama"
           ? "Ollama"
           : `Gemini (${state.userModel})`;
+    setAiHeaderStatus("尚無譯文", "badge-ai", "本地知識庫尚無譯文；點擊左側經句可即時翻譯");
     const actionHint = els.autoHoverTranslate.checked
       ? `游標停留 0.5 秒將自動由 <strong>${escapeHtml(engName)}</strong> 翻譯並存入本機知識庫。`
       : `請直接<strong>點擊左側經句</strong>，即由 <strong>${escapeHtml(engName)}</strong> 翻譯並存入本機知識庫（或勾選頂部「游標停留自動 AI 翻譯」）。`;
@@ -3412,12 +3428,6 @@ function renderAnalysisPanel(errorMsg = null) {
   }
 
   els.analysisPanel.innerHTML = `
-    <div class="card-topbar" style="margin-bottom:8px;padding-bottom:6px;">
-      <div class="card-topbar-left">
-        ${statusBadge}
-      </div>
-      ${isLocked ? "" : `<span style="font-size:11px;color:#766a59;">點擊原文鎖定</span>`}
-    </div>
     <div class="source-quote" style="font-size:14.5px;padding:6px 10px;margin-bottom:8px;">${escapeHtml(sourceText)}</div>
     ${aiBodyHtml}
     ${errorMsg ? `<div class="error-box">⚠️ ${escapeHtml(errorMsg)}</div>` : ""}
