@@ -3131,7 +3131,13 @@ function renderAnalysisPanel(errorMsg = null) {
   let topbarLeftExtra = "";
 
   if (isTranslating) {
-    const provName = state.isBackendAvailable ? els.providerSelect.value : `Gemini BYOK (${state.userModel})`;
+    const p = els.providerSelect.value;
+    const provName =
+      p === "nvidia"
+        ? `NVIDIA NIM (${(state.nvidiaModel || "").split("/").pop()})`
+        : p === "ollama"
+          ? "Ollama"
+          : `Gemini (${state.userModel})`;
     statusBadge = `<span class="badge-ai">AI 翻譯中（${escapeHtml(provName)}）...</span>`;
     aiBodyHtml = `<p style="color:#766a59;font-size:13.5px;margin:0;">正在結合前後文與古大德法義翻譯，完成後自動存入 <code>${escapeHtml(transPath)}</code>...</p>`;
   } else if (entry) {
@@ -3141,9 +3147,10 @@ function renderAnalysisPanel(errorMsg = null) {
       {};
     const c = activeVer.content || {};
     const fromKb = entry._lastFromKb !== false;
+    const verLabel = `${activeVer.provider || "Gemini"}${activeVer.model ? ` / ${activeVer.model}` : ""}`;
     statusBadge = fromKb
-      ? `<span class="badge-kb">本地知識庫命中（${escapeHtml(activeVer.provider || "Gemini")} / ${escapeHtml(activeVer.model || "")}）</span>`
-      : `<span class="badge-ai">AI 新譯並已入庫（${escapeHtml(activeVer.provider || "Gemini")}）</span>`;
+      ? `<span class="badge-kb">本地知識庫命中（${escapeHtml(verLabel)}）</span>`
+      : `<span class="badge-ai">AI 新譯並已入庫（${escapeHtml(verLabel)}）</span>`;
 
     const termsHtml = (c.terms || [])
       .map(
@@ -3164,7 +3171,13 @@ function renderAnalysisPanel(errorMsg = null) {
       <div class="storage-path-note">分卷存檔位置：<code>${escapeHtml(transPath)}</code></div>
     `;
   } else {
-    const engName = state.isBackendAvailable ? els.providerSelect.value : "Gemini API (BYOK)";
+    const p = els.providerSelect.value;
+    const engName =
+      p === "nvidia"
+        ? `NVIDIA NIM (${(state.nvidiaModel || "").split("/").pop()})`
+        : p === "ollama"
+          ? "Ollama"
+          : `Gemini (${state.userModel})`;
     const actionHint = els.autoHoverTranslate.checked
       ? `游標停留 0.5 秒將自動由 <strong>${escapeHtml(engName)}</strong> 翻譯並存入本機知識庫。`
       : `請直接<strong>點擊右側經句</strong>，即由 <strong>${escapeHtml(engName)}</strong> 翻譯並存入本機知識庫（或勾選頂部「游標停留自動 AI 翻譯」）。`;

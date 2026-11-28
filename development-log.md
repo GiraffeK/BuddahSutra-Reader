@@ -990,3 +990,14 @@
   - `getNvidiaChatEndpoint()` 自動優先使用代理網址發送連線測試、背景模型探測與經文翻譯；若在純前端模式未填代理網址則顯示明確的 CORS 提示而非誤報 0/8 不可用。
 - 透過 `python test_safe_command.py` 驗證 JS 語法（`frontend/app.js` 與 `cloudflare-worker/nvidia-proxy.js`）皆 PASS。
 - 使用者已部署 Cloudflare Worker 至 `https://nvidia-nim-proxy.seantang-mal.workers.dev`；已將該網址設為前端預設代理網址，並透過 `test_safe_command.py` 實測 OPTIONS CORS 標頭、推送 GitHub 與部署至 Firebase Hosting。
+
+---
+
+## [2026-11-28 14:50] Session 45：修復翻譯面板使用 NVIDIA NIM 時誤顯示 `Gemini BYOK` 標籤
+
+### 1. 接收到的 User Prompt
+- 使用者截圖回報頂部已選 `NVIDIA NIM API`（且成功連線 `nemotron-3-ultra-550b-a55b`），但翻譯中狀態列仍顯示 `AI 翻譯中（Gemini BYOK (gemini-3.5-flash-lite)）...`。
+
+### 2. 根因與修復
+- **根因**：`frontend/app.js` 中 `renderAnalysisPanel()` 的 `provName` 與 `engName` 在純前端模式下仍寫死 `Gemini BYOK`。
+- **修復**：改依 `els.providerSelect.value` 動態顯示 `NVIDIA NIM (<model>)` / `Gemini (<model>)` / `Ollama`，並於新譯完成標籤同步顯示模型名稱；更新 `?v=20261128h` 並透過 `test_safe_command.py` 驗證、推送與部署至 Firebase Hosting。
