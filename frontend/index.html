@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>大正新脩大藏經｜AI 白話翻譯與古大德註疏系統</title>
-  <link rel="stylesheet" href="./styles.css?v=20261124g" />
+  <link rel="stylesheet" href="./styles.css?v=20261128a" />
 </head>
 <body>
   <!-- 頂部導覽列 -->
@@ -180,6 +180,10 @@
             placeholder="請輸入自訂 Gemini 模型代碼（例如 gemini-flash-latest）..."
             style="display:none; margin-top:8px;"
           />
+          <div id="modelProbeBar" class="model-probe-bar">
+            <span id="modelProbeSummary" class="model-probe-summary">進入網頁時將自動在背景逐一檢測模型連線狀態</span>
+            <button id="reprobeModelsBtn" type="button" class="mini-btn">🔄 重新檢測全部</button>
+          </div>
           <small class="form-hint">
             若所選模型達免費層每日配額（429），系統將自動切換至其他可用備援模型完成翻譯。
           </small>
@@ -212,6 +216,6 @@
     </div>
   </div>
 
-  <script src="./app.js?v=20261124k"></script>
+  <script src="./app.js?v=20261128a"></script>
 </body>
 </html>

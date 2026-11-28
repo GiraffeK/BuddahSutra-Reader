@@ -202,6 +202,91 @@ class LLMTranslationService:
 
         return await asyncio.to_thread(_sync_call)
 
+    async def probe_gemini_model(
+        self,
+        model_name: str,
+        api_key_override: str | None = None,
+    ) -> dict[str, Any]:
+        """以極小 Token（maxOutputTokens=1）快速探測指定 Gemini 模型是否可連線。"""
+        import time
+
+        load_dotenv(override=True)
+        api_key = (api_key_override or os.getenv("GEMINI_API_KEY", "")).strip()
+        if not api_key:
+            return {
+                "model": model_name,
+                "ok": False,
+                "status": "no_key",
+                "http_status": None,
+                "latency_ms": 0,
+                "message": "尚未設定 GEMINI_API_KEY",
+            }
+
+        url = (
+            f"https://generativelanguage.googleapis.com/v1beta/models/"
+            f"{model_name}:generateContent"
+        )
+        payload = {
+            "contents": [{"parts": [{"text": "ok"}]}],
+            "generationConfig": {"maxOutputTokens": 1, "temperature": 0},
+        }
+        t0 = time.perf_counter()
+        try:
+            async with httpx.AsyncClient(timeout=8.0) as client:
+                r = await client.post(url, params={"key": api_key}, json=payload)
+            latency_ms = int((time.perf_counter() - t0) * 1000)
+            if r.status_code == 200:
+                return {
+                    "model": model_name,
+                    "ok": True,
+                    "status": "ok",
+                    "http_status": 200,
+                    "latency_ms": latency_ms,
+                    "message": "可連線",
+                }
+            err_msg = ""
+            try:
+                err_msg = str(r.json().get("error", {}).get("message", ""))
+            except Exception:
+                err_msg = r.text[:160]
+            low = err_msg.lower()
+            if r.status_code == 429 or "quota" in low or "rate limit" in low:
+                st = "quota"
+            elif r.status_code == 404 or "not found" in low:
+                st = "not_found"
+            elif r.status_code in (400, 401) and ("api key" in low or "api_key_invalid" in low):
+                st = "auth_error"
+            elif r.status_code == 403:
+                st = "auth_error" if "api key" in low else "forbidden"
+            else:
+                st = "error"
+            return {
+                "model": model_name,
+                "ok": False,
+                "status": st,
+                "http_status": r.status_code,
+                "latency_ms": latency_ms,
+                "message": err_msg[:180] or f"HTTP {r.status_code}",
+            }
+        except httpx.TimeoutException:
+            return {
+                "model": model_name,
+                "ok": False,
+                "status": "timeout",
+                "http_status": None,
+                "latency_ms": int((time.perf_counter() - t0) * 1000),
+                "message": "連線逾時",
+            }
+        except Exception as exc:
+            return {
+                "model": model_name,
+                "ok": False,
+                "status": "error",
+                "http_status": None,
+                "latency_ms": int((time.perf_counter() - t0) * 1000),
+                "message": str(exc)[:180],
+            }
+
     async def _call_ollama(self, prompt: str, model_name: str, expect_json: bool) -> str:
         payload: dict[str, Any] = {
             "model": model_name,

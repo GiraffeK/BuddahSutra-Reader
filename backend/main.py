@@ -102,6 +102,11 @@ class LookupCommentariesRequest(BaseModel):
     selected_masters: list[str] | None = None
 
 
+class ProbeModelRequest(BaseModel):
+    model: str
+    api_key: str | None = None
+
+
 @app.get("/api/health")
 async def health() -> dict[str, str]:
     return {"status": "ok", "project": "BuddhaSutra-Reader"}
@@ -110,6 +115,14 @@ async def health() -> dict[str, str]:
 @app.get("/api/llm/status")
 async def llm_status() -> dict[str, Any]:
     return await llm.get_status()
+
+
+@app.post("/api/llm/probe-model")
+async def probe_llm_model(req: ProbeModelRequest) -> dict[str, Any]:
+    model_name = req.model.strip()
+    if not model_name:
+        raise HTTPException(status_code=400, detail="model 不可為空")
+    return await llm.probe_gemini_model(model_name, api_key_override=req.api_key)
 
 
 @app.get("/api/catalog")

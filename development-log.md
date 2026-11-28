@@ -865,3 +865,23 @@
 - 第 3 條：無需外部支援，`Bulletin.json` 保持最新。
 - 第 4 條：未修改 `.env` 與敏感金鑰。
 - 第 5 條：全程嚴格透過 `test_safe_command.py` 執行，腳本已重設還原。
+
+---
+
+## [2026-11-28 11:52] Session 37：實作進入網頁時自動背景逐一檢測 Gemini 模型連線狀態
+
+### 1. 接收到的 User Prompt
+- 使用者附「API 設定」模型選單截圖並提問：「這個能在進入網頁的一開始就逐一在背景確任是否可以連線嗎？不要讓使用者一個一個去測試」。
+
+### 2. 設計與實作內容
+1. **後端輕量探測端點（支援本機 FastAPI `.env` 金鑰模式）**：
+   - 於 `backend/llm_service.py` 新增 `probe_gemini_model()`，以極小 Token（`maxOutputTokens: 1`、`timeout: 8s`）探測指定模型，精準分類回傳 `ok`（含延遲 ms）、`quota`（429）、`not_found`（404）、`forbidden`（403）、`auth_error`、`timeout`。
+   - 於 `backend/main.py` 開放 `POST /api/llm/probe-model`。
+2. **前端自動背景逐一檢測（雙模通用：本機 FastAPI ＋ 雲端 BYOK）**：
+   - 於 `frontend/app.js` 新增 `probeAllGeminiModelsInBackground()`，在 `init()` 完成狀態檢測後立即於背景非阻塞啟動（併發度 2，避免觸發瞬間限流；若遇 `auth_error` 立即中止；結果於 `sessionStorage` 快取 10 分鐘避免重整浪費配額）。
+   - 下拉選單 `#byokModelSelect` 各模型選項即時以燈號標示：`⏳ 檢測中`、`🟢 [可連線 xxxms]`、`🟡 [配額已滿 429]`、`🔴 [不支援 404]`、`⚪ [連線逾時]`。
+   - 於 `frontend/index.html` 與 `frontend/styles.css` 在選單下方新增即時摘要列 `#modelProbeBar` 與「🔄 重新檢測全部」按鈕；儲存／清除金鑰時亦自動重新檢測。
+   - `callDirectGeminiApi()` 自動整合背景檢測結果：優先選用已確認 `🟢 可連線` 模型並自動略過已知 `404` 模型。
+3. **驗證與部署**：
+   - 透過 `test_safe_command.py` 驗證 `node --check frontend/app.js` 與 FastAPI `/api/llm/probe-model` 端點皆 PASS。
+   - 已部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）並提交推送至 GitHub（`origin/main`）。

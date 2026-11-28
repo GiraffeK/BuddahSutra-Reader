@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "sutra_id": "T10n0279",
   "fascicle": 1,
-  "updated_at": "2026-11-24T10:27:21+08:00",
+  "updated_at": "2026-11-28T13:16:56+08:00",
   "entries": {
     "T10n0279_001_p0004_s001": {
       "sentence_id": "T10n0279_001_p0004_s001",
@@ -306,6 +306,84 @@
               {
                 "term": "香風",
                 "explanation": "帶有妙香之風。比喻佛陀之大悲心與戒定真香，能吹動並普薰一切法界眾生，使其斷惑證真。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T10n0279_001_p0002_s001": {
+      "sentence_id": "T10n0279_001_p0002_s001",
+      "source_text": "于闐國三藏沙門實叉難陀奉制譯",
+      "source_hash": "sha256:cd428c828c7a",
+      "active_version_id": "v_20261128_131643_gemini",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_131643_gemini",
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "prompt_version": "v1.0",
+          "referenced_masters": [],
+          "created_at": "2026-11-28T13:16:43+08:00",
+          "content": {
+            "literal_translation": "于闐國精通三藏的沙門實叉難陀，奉遵皇帝詔命所翻譯。",
+            "colloquial_translation": "這部經典是由來自于闐國、通達經律論三藏的實叉難陀法師，遵照朝廷（武則天）的聖旨所翻譯的。",
+            "dharma_analysis": "本句為《八十華嚴》的譯者題署。「奉制譯」顯發了唐代武則天時期朝廷對大乘法寶譯經事業的高度護持與尊重，具足極其莊嚴的歷史與法義背景。譯者實叉難陀大師通達三藏，遠涉絲路將完備的梵本帶至漢地並進行主持翻譯，使圓頓大教的《華嚴經》得以更加完整地廣宣流布。",
+            "terms": [
+              {
+                "term": "于闐國",
+                "explanation": "古代西域大乘佛教重鎮（位於今新疆和田一帶），亦為八十卷《華嚴經》梵本之出處。"
+              },
+              {
+                "term": "三藏沙門",
+                "explanation": "指通達經、律、論三藏聖教，且勤修戒定慧的出家修行者。"
+              },
+              {
+                "term": "實叉難陀",
+                "explanation": "唐代西域譯經高僧，華譯為「學喜」，受武則天禮請至洛陽主譯八十卷本《華嚴經》。"
+              },
+              {
+                "term": "奉制譯",
+                "explanation": "奉遵皇帝（此指武則天）的詔敕與命令進行經典翻譯，標誌著國家級譯場的隆重與權威。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T10n0279_001_p0003_s001": {
+      "sentence_id": "T10n0279_001_p0003_s001",
+      "source_text": "世主妙嚴品第一之一",
+      "source_hash": "sha256:f1635f9669ec",
+      "active_version_id": "v_20261128_131656_gemini",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_131656_gemini",
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "chengguan_shuchao"
+          ],
+          "created_at": "2026-11-28T13:16:56+08:00",
+          "content": {
+            "literal_translation": "世間之主妙麗莊嚴品，第一品之第一部分。",
+            "colloquial_translation": "《華嚴經》第一品〈世主妙嚴品〉的第一部分。",
+            "dharma_analysis": "依唐代澄觀大師《華嚴經疏》解，本品為全經三十九品之首。「世主」兼指導師佛陀與護持海會之諸天世王；「妙嚴」則指所通達之萬德法門，以及依報國土、正報身心皆具足不思議之妙麗莊嚴。本品劃分義類以彰顯品名，並冠於群篇之首，故稱為「世主妙嚴品第一」。",
+            "terms": [
+              {
+                "term": "世主",
+                "explanation": "世間之主。據清涼國師疏解，兼指徹底覺悟的佛陀（法王）以及隨喜護持的諸天王、神王等世間領袖。"
+              },
+              {
+                "term": "妙嚴",
+                "explanation": "妙麗莊嚴。指佛法萬德法門、依報（國土環境）與正報（身心果報）皆達到微妙圓融、無礙殊勝之境界。"
+              },
+              {
+                "term": "品",
+                "explanation": "佛經的分章單位（梵語 Varga），將義理類聚的文句彙編為同一章篇段落。"
               }
             ]
           }

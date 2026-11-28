@@ -1464,3 +1464,38 @@ mark.comm-hit {
   border-radius: 6px;
 }
 
+.model-probe-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  padding: 6px 10px;
+  background: #f8f3e7;
+  border: 1px solid #e4dccb;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #5b4a36;
+}
+
+.model-probe-summary {
+  flex: 1;
+  min-width: 180px;
+  line-height: 1.45;
+}
+
+.model-probe-summary.ok {
+  color: #2c6e49;
+  font-weight: 600;
+}
+
+.model-probe-summary.warn {
+  color: #9a5b13;
+}
+
+.model-probe-summary.err {
+  color: #b32d2d;
+  font-weight: 600;
+}
+

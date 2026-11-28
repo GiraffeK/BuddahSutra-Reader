@@ -6,6 +6,9 @@ const state = {
   userApiKey: localStorage.getItem("buddhasutra_gemini_api_key") || "",
   userModel: localStorage.getItem("buddhasutra_gemini_model") || "gemini-3.5-flash-lite",
   lastUsedModel: "",
+  modelProbeResults: {}, // model -> { ok, status, http_status, latency_ms, message }
+  modelProbeRunning: false,
+  modelProbeRunId: 0,
   catalog: null,
   currentSutraId: "T10n0279",
   currentFascicle: 1,
@@ -66,6 +69,8 @@ const els = {
   toggleKeyVisibilityBtn: document.getElementById("toggleKeyVisibilityBtn"),
   byokModelSelect: document.getElementById("byokModelSelect"),
   byokCustomModelInput: document.getElementById("byokCustomModelInput"),
+  modelProbeSummary: document.getElementById("modelProbeSummary"),
+  reprobeModelsBtn: document.getElementById("reprobeModelsBtn"),
   saveByokKeyBtn: document.getElementById("saveByokKeyBtn"),
   testByokKeyBtn: document.getElementById("testByokKeyBtn"),
   clearByokKeyBtn: document.getElementById("clearByokKeyBtn"),
@@ -354,9 +359,24 @@ async function callDirectGeminiApi(prompt, isJson = true, allowFallback = true) 
     throw new Error("尚未設定 Gemini API Key，請點擊頂部「🔑 API 設定」填入個人金鑰。");
   }
   const primaryModel = state.userModel || "gemini-3.5-flash-lite";
-  const candidates = allowFallback
+  let candidates = allowFallback
     ? [primaryModel, ...GEMINI_FALLBACK_MODELS.filter((m) => m !== primaryModel)]
     : [primaryModel];
+
+  // 若背景檢測已有結果，優先嘗試確認可連線(ok)的模型，並略過已知 404 模型
+  if (allowFallback && Object.keys(state.modelProbeResults || {}).length > 0) {
+    const probes = state.modelProbeResults;
+    const filtered = candidates.filter((m) => probes[m]?.status !== "not_found");
+    if (filtered.length > 0) candidates = filtered;
+    const rank = (m) => {
+      const st = probes[m]?.status;
+      if (st === "ok") return m === primaryModel ? 0 : 1;
+      if (!st || st === "checking") return m === primaryModel ? 2 : 3;
+      if (st === "quota") return 4;
+      return 5;
+    };
+    candidates = [...candidates].sort((a, b) => rank(a) - rank(b));
+  }
 
   let lastErr = null;
   const triedQuotaModels = [];
@@ -388,12 +408,252 @@ async function callDirectGeminiApi(prompt, isJson = true, allowFallback = true) 
   throw lastErr || new Error("Gemini API 呼叫失敗");
 }
 
+// ==================== 背景逐一檢測 Gemini 模型連線狀態 ====================
+const MODEL_PROBE_CACHE_TTL_MS = 10 * 60 * 1000;
+
+function getPresetGeminiModels() {
+  if (!els.byokModelSelect) return [];
+  return Array.from(els.byokModelSelect.options)
+    .map((o) => o.value)
+    .filter((v) => v && v !== "custom");
+}
+
+function getProbeCacheKey(apiKeyOverride = "") {
+  const key = (apiKeyOverride || state.userApiKey || "").trim();
+  if (key) return `buddhasutra_model_probes_v1:key_${key.slice(-6)}`;
+  if (state.isBackendAvailable && state.llmStatus?.gemini?.configured) {
+    return "buddhasutra_model_probes_v1:backend_env";
+  }
+  return null;
+}
+
+function formatProbeSuffix(res) {
+  if (!res) return { icon: "", suffix: "" };
+  switch (res.status) {
+    case "checking":
+      return { icon: "⏳ ", suffix: " — 檢測中..." };
+    case "ok":
+      return { icon: "🟢 ", suffix: res.latency_ms ? ` [可連線 ${res.latency_ms}ms]` : " [可連線]" };
+    case "quota":
+      return { icon: "🟡 ", suffix: " [配額已滿 429]" };
+    case "not_found":
+      return { icon: "🔴 ", suffix: " [不支援 404]" };
+    case "forbidden":
+      return { icon: "🔴 ", suffix: " [無權限 403]" };
+    case "auth_error":
+      return { icon: "🔴 ", suffix: " [金鑰無效]" };
+    case "timeout":
+      return { icon: "⚪ ", suffix: " [連線逾時]" };
+    default:
+      return { icon: "🔴 ", suffix: res.http_status ? ` [失敗 ${res.http_status}]` : " [無法連線]" };
+  }
+}
+
+function applyModelProbeOptionLabels() {
+  if (!els.byokModelSelect) return;
+  for (const opt of els.byokModelSelect.options) {
+    if (!opt.value || opt.value === "custom") continue;
+    if (!opt.dataset.baseLabel) opt.dataset.baseLabel = opt.textContent;
+    const base = opt.dataset.baseLabel;
+    const res = state.modelProbeResults[opt.value];
+    if (!res) {
+      opt.textContent = base;
+    } else {
+      const { icon, suffix } = formatProbeSuffix(res);
+      opt.textContent = `${icon}${base}${suffix}`;
+    }
+  }
+}
+
+function updateModelProbeSummary(customText = null, tone = "") {
+  if (!els.modelProbeSummary) return;
+  if (customText !== null) {
+    els.modelProbeSummary.textContent = customText;
+    els.modelProbeSummary.className = `model-probe-summary ${tone}`.trim();
+    return;
+  }
+
+  const models = getPresetGeminiModels();
+  const total = models.length;
+  let done = 0;
+  let okCount = 0;
+  let quotaCount = 0;
+  let failCount = 0;
+
+  for (const m of models) {
+    const r = state.modelProbeResults[m];
+    if (!r || r.status === "checking") continue;
+    done++;
+    if (r.status === "ok") okCount++;
+    else if (r.status === "quota") quotaCount++;
+    else failCount++;
+  }
+
+  if (state.modelProbeRunning) {
+    els.modelProbeSummary.textContent = `🔄 背景檢測中 (${done}/${total})… 目前 ${okCount} 個可連線`;
+    els.modelProbeSummary.className = "model-probe-summary";
+  } else if (done > 0) {
+    const parts = [`${okCount}/${total} 個模型可連線`];
+    if (quotaCount > 0) parts.push(`${quotaCount} 個配額滿`);
+    if (failCount > 0) parts.push(`${failCount} 個不可用`);
+    els.modelProbeSummary.textContent = `✓ 背景檢測完成：${parts.join("、")}`;
+    els.modelProbeSummary.className = `model-probe-summary ${okCount > 0 ? "ok" : "warn"}`;
+  }
+}
+
+async function probeSingleGeminiModelDirect(apiKey, model) {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 8000);
+  const t0 = performance.now();
+  try {
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: "ok" }] }],
+        generationConfig: { maxOutputTokens: 1, temperature: 0 },
+      }),
+      signal: controller.signal,
+    });
+    const latency_ms = Math.round(performance.now() - t0);
+    if (res.ok) {
+      return { model, ok: true, status: "ok", http_status: 200, latency_ms, message: "可連線" };
+    }
+    const data = await res.json().catch(() => ({}));
+    const rawMsg = data.error?.message || `HTTP ${res.status}`;
+    const low = rawMsg.toLowerCase();
+    let status = "error";
+    if (res.status === 429 || /quota|rate.?limit/.test(low)) status = "quota";
+    else if (res.status === 404 || low.includes("not found")) status = "not_found";
+    else if ((res.status === 400 || res.status === 401) && (low.includes("api key") || low.includes("api_key_invalid"))) status = "auth_error";
+    else if (res.status === 403) status = low.includes("api key") ? "auth_error" : "forbidden";
+    return { model, ok: false, status, http_status: res.status, latency_ms, message: rawMsg };
+  } catch (err) {
+    const latency_ms = Math.round(performance.now() - t0);
+    const isAbort = err?.name === "AbortError";
+    return {
+      model,
+      ok: false,
+      status: isAbort ? "timeout" : "error",
+      http_status: null,
+      latency_ms,
+      message: isAbort ? "連線逾時" : (err?.message || "網路錯誤"),
+    };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function probeSingleGeminiModel(model, apiKeyOverride = "") {
+  const key = (apiKeyOverride || state.userApiKey || "").trim();
+  if (key) {
+    return probeSingleGeminiModelDirect(key, model);
+  }
+  if (state.isBackendAvailable && state.llmStatus?.gemini?.configured) {
+    try {
+      return await apiJson("/api/llm/probe-model", {
+        method: "POST",
+        body: JSON.stringify({ model }),
+      });
+    } catch (err) {
+      return { model, ok: false, status: "error", http_status: null, latency_ms: 0, message: err.message };
+    }
+  }
+  return { model, ok: false, status: "no_key", http_status: null, latency_ms: 0, message: "尚未設定金鑰" };
+}
+
+async function probeAllGeminiModelsInBackground({ force = false, apiKeyOverride = "" } = {}) {
+  const models = getPresetGeminiModels();
+  if (!models.length) return;
+
+  const cacheKey = getProbeCacheKey(apiKeyOverride);
+  if (!cacheKey) {
+    state.modelProbeResults = {};
+    state.modelProbeRunning = false;
+    applyModelProbeOptionLabels();
+    updateModelProbeSummary("尚未設定 Gemini API Key，設定後將自動背景檢測全部模型", "warn");
+    return;
+  }
+
+  // 優先讀取本分頁 10 分鐘內快取，避免重整頁面重複消耗配額
+  if (!force) {
+    try {
+      const cachedRaw = sessionStorage.getItem(cacheKey);
+      if (cachedRaw) {
+        const cached = JSON.parse(cachedRaw);
+        if (cached && Date.now() - (cached.ts || 0) < MODEL_PROBE_CACHE_TTL_MS && cached.results) {
+          state.modelProbeResults = cached.results;
+          state.modelProbeRunning = false;
+          applyModelProbeOptionLabels();
+          updateModelProbeSummary();
+          return;
+        }
+      }
+    } catch {
+      // ignore storage errors
+    }
+  }
+
+  const runId = ++state.modelProbeRunId;
+  state.modelProbeRunning = true;
+  state.modelProbeResults = {};
+  for (const m of models) {
+    state.modelProbeResults[m] = { model: m, ok: false, status: "checking", latency_ms: 0 };
+  }
+  if (els.reprobeModelsBtn) els.reprobeModelsBtn.disabled = true;
+  applyModelProbeOptionLabels();
+  updateModelProbeSummary();
+
+  let abortedByAuth = false;
+  let cursor = 0;
+  const concurrency = 2;
+
+  async function worker() {
+    while (cursor < models.length && !abortedByAuth && state.modelProbeRunId === runId) {
+      const m = models[cursor++];
+      const res = await probeSingleGeminiModel(m, apiKeyOverride);
+      if (state.modelProbeRunId !== runId) return;
+      state.modelProbeResults[m] = res;
+      if (res.status === "auth_error") {
+        abortedByAuth = true;
+        for (const rem of models) {
+          if (state.modelProbeResults[rem]?.status === "checking") {
+            state.modelProbeResults[rem] = { model: rem, ok: false, status: "auth_error", message: "金鑰無效" };
+          }
+        }
+      }
+      applyModelProbeOptionLabels();
+      updateModelProbeSummary();
+    }
+  }
+
+  await Promise.all(Array.from({ length: concurrency }, () => worker()));
+  if (state.modelProbeRunId !== runId) return;
+
+  state.modelProbeRunning = false;
+  if (els.reprobeModelsBtn) els.reprobeModelsBtn.disabled = false;
+
+  if (abortedByAuth) {
+    updateModelProbeSummary("❌ API Key 無效或無存取權限，已停止背景檢測", "err");
+  } else {
+    updateModelProbeSummary();
+    try {
+      sessionStorage.setItem(cacheKey, JSON.stringify({ ts: Date.now(), results: state.modelProbeResults }));
+    } catch {
+      // ignore
+    }
+  }
+}
+
 // ---------- 初始化 ----------
 async function init() {
   bindEvents();
   initByokModal();
   await checkBackendAvailability();
   await Promise.all([loadLlmStatus(), loadCatalog()]);
+  // 背景逐一確認各 Gemini 模型連線狀態（不阻塞經文載入）
+  probeAllGeminiModelsInBackground();
   await loadFascicle(state.currentSutraId, state.currentFascicle);
 }
 
@@ -514,11 +774,23 @@ function bindEvents() {
 
 function initByokModal() {
   if (els.byokApiKeyInput) els.byokApiKeyInput.value = state.userApiKey;
+  if (els.byokModelSelect) {
+    for (const opt of els.byokModelSelect.options) {
+      if (opt.value && opt.value !== "custom" && !opt.dataset.baseLabel) {
+        opt.dataset.baseLabel = opt.textContent;
+      }
+    }
+  }
 
   els.byokBtn?.addEventListener("click", openByokModal);
   els.closeByokModalBtn?.addEventListener("click", closeByokModal);
   els.byokModal?.addEventListener("click", (e) => {
     if (e.target === els.byokModal) closeByokModal();
+  });
+
+  els.reprobeModelsBtn?.addEventListener("click", () => {
+    const typedKey = els.byokApiKeyInput?.value.trim() || "";
+    probeAllGeminiModelsInBackground({ force: true, apiKeyOverride: typedKey });
   });
 
   els.byokModelSelect?.addEventListener("change", () => {
@@ -551,6 +823,7 @@ function initByokModal() {
     localStorage.setItem("buddhasutra_gemini_model", model);
     showByokStatus(`✓ 金鑰與模型 (${model}) 已儲存至本機瀏覽器 LocalStorage！`, "ok");
     updateLlmBadge();
+    probeAllGeminiModelsInBackground({ force: true });
   });
 
   els.clearByokKeyBtn?.addEventListener("click", () => {
@@ -560,6 +833,7 @@ function initByokModal() {
     els.byokApiKeyInput.value = "";
     showByokStatus("已清除本機金鑰。", "err");
     updateLlmBadge();
+    probeAllGeminiModelsInBackground({ force: true });
   });
 
   els.testByokKeyBtn?.addEventListener("click", async () => {
