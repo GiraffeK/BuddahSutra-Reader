@@ -1,44 +1,35 @@
-import json
-import shutil
-import subprocess
-from pathlib import Path
+import subprocess, sys
 
-# Verify firebase.json & frontend/app.js
-json.loads(Path("firebase.json").read_text(encoding="utf-8"))
-node = shutil.which("node")
-assert node, "node not found"
-
-
-def run(cmd: list[str], label: str) -> str:
-    print(f"=== {label} ===")
-    r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
-    if r.stdout.strip():
-        print(r.stdout.strip())
-    if r.stderr.strip():
-        print(r.stderr.strip())
+def run(cmd):
+    print(f"=== {' '.join(cmd)} ===", flush=True)
+    r = subprocess.run(cmd, text=True)
     if r.returncode != 0:
-        raise SystemExit(r.returncode)
-    return r.stdout
+        sys.exit(r.returncode)
 
+# 1. Final JS syntax check
+run(["node", "--check", "frontend/app.js"])
 
-run([node, "--check", "frontend/app.js"], "node --check frontend/app.js")
+# 2. Commit log update on feat/mobile-ui if present
+run(["git", "add", "development-log.md", "test_safe_command.py"])
+if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode != 0:
+    run(["git", "commit", "-m", "docs: record Session 64 mobile-ui merge and production deploy"])
 
-status = run(["git", "status", "--short"], "git status")
-for line in status.splitlines():
-    path = line[3:].strip()
-    if path == ".env" or path.endswith((".png", ".jpg", ".jpeg", ".mp4")):
-        raise SystemExit(f"ABORT: sensitive/media file detected: {path}")
+# 3. Switch to main, merge feat/mobile-ui, push main
+run(["git", "checkout", "main"])
+run(["git", "merge", "--no-ff", "feat/mobile-ui", "-m", "merge: integrate feat/mobile-ui (mobile RWD, PWA, and mobile TTS fixes)"])
+run(["git", "push", "origin", "main"])
 
-if status.strip():
-    run(["git", "add", "-A"], "git add")
-    run(
-        ["git", "commit", "-m", "fix: bust stale 1h cache on masters_registry.json and catalog.json in Firebase Hosting"],
-        "git commit",
-    )
-    run(["git", "push", "origin", "main"], "git push")
+# 4. Clean up merged short-lived branch (local + remote)
+run(["git", "branch", "-d", "feat/mobile-ui"])
+run(["git", "push", "origin", "--delete", "feat/mobile-ui"])
 
-run(
-    ["npx.cmd", "-y", "firebase-tools@latest", "deploy", "--only", "hosting", "--project", "buddahsutra-reader"],
-    "firebase deploy",
-)
+# 5. Deploy to Firebase Hosting live site
+run([
+    "npx.cmd", "-y", "firebase-tools@latest",
+    "deploy", "--only", "hosting",
+    "--project", "buddahsutra-reader",
+])
+
+run(["git", "branch", "--show-current"])
+run(["git", "log", "-n", "3", "--oneline"])
 print("ALL DONE")

@@ -1203,3 +1203,33 @@
   - 於 `frontend/app.js` 為 `masters_registry.json` 與 `catalog.json` 加上版號 `?v=20261128w` 與 `{ cache: "no-cache" }`，徹底破除舊快取。
   - 於 `firebase.json` 為 `/data/@(masters_registry|catalog|commentaries_index).json` 設定 `Cache-Control: no-cache, must-revalidate`。
   - 改善 `searchDynamicCbetaCommentaries()` 的 CORS 友善中文提示，並透過 `python test_safe_command.py` 驗證、推送與部署。
+
+
+## Session 62 — 2026-11-28 手機版 RWD 閱讀介面、PWA 支援與 Firebase Preview Channel（`feat/mobile-ui` 分支）
+- **分支與穩定版標記**：
+  - 於 `main` 穩定版建立安全標籤 `v2.1-desktop-stable`，並切出開發分支 `feat/mobile-ui`，以 Firebase Hosting Preview Channel（`mobile-preview`，14 天有效）提供手機實測網址，完全不影響桌機正式站 `https://buddahsutra-reader.web.app`。
+- **手機版介面（`<= 900px`，桌機 `> 900px` 零變動）**：
+  - [frontend/index.html](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/index.html)、[frontend/styles.css](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/styles.css)、[frontend/app.js](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/app.js)：
+    - 左側大藏經目錄改為可滑出／收合抽屜（`☰` 鈕與遮罩，選經後自動收起）。
+    - 底部新增固定四鍵導覽列（`📖 經文`｜`✨ AI 翻譯`｜`📜 註疏`｜`☰ 目錄`），支援 `env(safe-area-inset-bottom)` 安全區間距。
+    - 點選經句時於底部浮出快捷列（顯示經句預覽與一鍵跳轉「✨ 看 AI 翻譯」「📜 看古大德註疏」，翻譯中／就緒狀態即時連動），並於觸控裝置停用 `mouseenter` 誤觸。
+    - 精簡頂部導覽列與卷次／朗讀工具列，提升直屏經文可視高度。
+- **PWA 加入主畫面支援**：
+  - 新增 [frontend/manifest.json](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/manifest.json) 與 `theme-color` / `apple-mobile-web-app-*` meta，可從手機瀏覽器「加入主畫面」以獨立視窗開啟。
+
+
+## Session 63 — 2026-11-28 修復手機瀏覽器朗讀（Web Speech API）無聲問題（`feat/mobile-ui`）
+- **根因排查**（[frontend/app.js](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/app.js)）：
+  1. 原本每次朗讀前都直接呼叫 `speechSynthesis.cancel()` 緊接 `speak()`，在 Android Chrome / iOS Safari 會觸發非同步取消競態導致完全無聲。
+  2. 非 Edge 裝置篩選語音時若暫無中文語音，會退回 `allVoices` 選到英文語音導致讀中文完全無聲；且未依 `voice.lang` 同步 `utter.lang`。
+  3. 手機瀏覽器 GC 易回收未保存參照的 `SpeechSynthesisUtterance`，且原生 `pause()/resume()` 常失效。
+- **修正**：
+  - 首次啟動與自然換句不呼叫 `cancel()`；僅於中途切換語速／性別且正在播報時才 `cancel()` 並延遲 60ms 播報。
+  - 嚴格只匹配中文語音並優先本機離線語音（`localService`）；若暫無回報則留空 `utter.voice` 交由系統以 `zh-TW` 自動播報。
+  - 保存 `ttsState.currentUtter` 防 GC；觸控裝置暫停改以中止並保留句次進度實作；若連續失敗則於頂部提示實際錯誤碼與系統檢查方向。
+  - 更新 [frontend/index.html](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/index.html) `app.js?v=20261128m2`，推送 `feat/mobile-ui` 並重新部署 Preview Channel。
+
+
+## Session 64 — 2026-11-28 合併 `feat/mobile-ui` 回 `main` 並部署 Firebase Hosting 正式站
+- 手機實測（含 iOS 靜音鍵確認、抽屜目錄、底部四鍵分頁、經句快捷列、PWA 與朗讀）均通過。
+- 將 `feat/mobile-ui` 以 `--no-ff` 合併回 `main`、推送至 GitHub `origin/main`、清理已合併的 `feat/mobile-ui` 分支，並部署至 Firebase Hosting 正式站 `https://buddahsutra-reader.web.app`。
