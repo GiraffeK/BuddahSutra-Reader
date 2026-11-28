@@ -686,9 +686,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
   padding: 7px 12px;
   background: #f4ebd6;
   border-bottom: 1px solid var(--bg-card-border);
+}
+
+.ai-panel-header-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .ai-panel-body {

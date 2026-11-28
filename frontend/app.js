@@ -53,6 +53,7 @@ const els = {
   sutraContent: document.getElementById("sutraContent"),
   aiPanelWrap: document.getElementById("aiPanelWrap"),
   toggleAiCollapseBtn: document.getElementById("toggleAiCollapseBtn"),
+  unlockBtn: document.getElementById("unlockBtn"),
   analysisPanel: document.getElementById("analysisPanel"),
   commMasterTitle: document.getElementById("commMasterTitle"),
   commAlignBadge: document.getElementById("commAlignBadge"),
@@ -1390,6 +1391,12 @@ function bindEvents() {
     els.toggleAiCollapseBtn.textContent = collapsed ? "展開" : "收合";
   });
 
+  els.unlockBtn?.addEventListener("click", () => {
+    state.lockedSentenceId = null;
+    syncSentenceHighlight();
+    renderAnalysisPanel();
+  });
+
   els.jumpParaBtn.addEventListener("click", () => {
     const idx = parseInt(els.jumpParaInput.value, 10);
     if (!idx) return;
@@ -2312,6 +2319,32 @@ async function buildClientBundleFromSutra(sutraId, fascicle, sutraObj, fetchedFr
   };
 }
 
+let _cbetaToastTimer = null;
+
+function hideCbetaToast() {
+  if (_cbetaToastTimer) {
+    clearInterval(_cbetaToastTimer);
+    _cbetaToastTimer = null;
+  }
+  if (els.cbetaToast) els.cbetaToast.style.display = "none";
+}
+
+function showCbetaToast(baseMsg, seconds = 5) {
+  hideCbetaToast();
+  if (!els.cbetaToast) return;
+  let remaining = seconds;
+  els.cbetaToast.textContent = `${baseMsg}（${remaining} 秒後自動關閉）`;
+  els.cbetaToast.style.display = "block";
+  _cbetaToastTimer = setInterval(() => {
+    remaining -= 1;
+    if (remaining <= 0) {
+      hideCbetaToast();
+    } else if (els.cbetaToast) {
+      els.cbetaToast.textContent = `${baseMsg}（${remaining} 秒後自動關閉）`;
+    }
+  }, 1000);
+}
+
 // ---------- 載入經卷 ----------
 async function loadFascicle(sutraId, fascicle, targetSentenceId = null) {
   stopSutraTts();
@@ -2323,7 +2356,7 @@ async function loadFascicle(sutraId, fascicle, targetSentenceId = null) {
   state.commCursorIdx = 0;
   state.commAlignedIdx = null;
   state.commMatchedPhrase = null;
-  els.cbetaToast.style.display = "none";
+  hideCbetaToast();
 
   els.sutraContent.innerHTML = `
     <div class="empty-state">
@@ -2394,8 +2427,10 @@ async function loadFascicle(sutraId, fascicle, targetSentenceId = null) {
   state.bundle = bundle;
 
   if (bundle.fetched_from_cbeta) {
-    els.cbetaToast.textContent = `✓ 已自動從 CBETA 下載「${bundle.sutra.sutra_title}」第 ${fascicle} 卷，並永久存入本地知識庫！`;
-    els.cbetaToast.style.display = "block";
+    showCbetaToast(
+      `✓ 已自動從 CBETA 下載「${bundle.sutra.sutra_title}」第 ${fascicle} 卷，並永久存入本地知識庫！`,
+      5
+    );
   }
 
   // 以本次 bundle 回傳的最新已入庫卷次，即時同步左側目錄樹
@@ -3290,8 +3325,14 @@ async function triggerTranslateCommentaryPara(para, btnEl, forceRefresh = false)
   }
 }
 
+function syncLockHeaderBadge() {
+  if (!els.unlockBtn) return;
+  els.unlockBtn.style.display = state.lockedSentenceId ? "inline-flex" : "none";
+}
+
 // ---------- 渲染上方 AI 翻譯面板 ----------
 function renderAnalysisPanel(errorMsg = null) {
+  syncLockHeaderBadge();
   const sid = state.activeSentenceId;
   if (!sid || !state.bundle) {
     els.analysisPanel.innerHTML = `
@@ -3375,25 +3416,13 @@ function renderAnalysisPanel(errorMsg = null) {
       <div class="card-topbar-left">
         ${statusBadge}
       </div>
-      ${
-        isLocked
-          ? `<button class="badge-lock" id="unlockBtn">📌 已鎖定（解除）</button>`
-          : `<span style="font-size:11px;color:#766a59;">點擊原文鎖定</span>`
-      }
+      ${isLocked ? "" : `<span style="font-size:11px;color:#766a59;">點擊原文鎖定</span>`}
     </div>
     <div class="source-quote" style="font-size:14.5px;padding:6px 10px;margin-bottom:8px;">${escapeHtml(sourceText)}</div>
     ${aiBodyHtml}
     ${errorMsg ? `<div class="error-box">⚠️ ${escapeHtml(errorMsg)}</div>` : ""}
   `;
 
-  const unlockBtn = document.getElementById("unlockBtn");
-  if (unlockBtn) {
-    unlockBtn.addEventListener("click", () => {
-      state.lockedSentenceId = null;
-      syncSentenceHighlight();
-      renderAnalysisPanel();
-    });
-  }
   const retranslateBtn = document.getElementById("retranslateBtn");
   if (retranslateBtn) {
     retranslateBtn.addEventListener("click", () => triggerTranslateSentence(sid, true));

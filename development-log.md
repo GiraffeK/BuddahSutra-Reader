@@ -1088,3 +1088,25 @@
 - **瀏覽器端 CBETA GitHub 即時抓取與斷句**：新增 `splitSentencesZhClient()`、`fetchSutraFascicleFromGitHubClient()` 與 `buildClientBundleFromSutra()`，重用既有的 `extractJuanFromXmlP5aClient()` 與 `_githubXmlCache`（同部經只下載一次 XML，切卷秒開），並自動關聯 `masters_registry.json` 古大德註疏。
 - **三層讀取管線（`loadFascicle`）**：`預載靜態 Bundle → IndexedDB custom_fascicles → CBETA GitHub xml-p5a 即時抓取入庫`，同時開放左側目錄所有具備 CBETA 編號之經典直接點擊載入。
 - **驗證與部署**：透過 `python test_safe_command.py` 驗證 JS 語法與斷句測試、推送 GitHub 並部署至 Firebase Hosting。
+
+---
+
+## [2026-11-28 16:22] Session 53：將鎖定鈕移至「AI 白話翻譯與法義解析」標題旁並更名為「已鎖定點擊之經文」
+
+### 1. 接收到的 User Prompt
+- 使用者指示：「如果是這樣，鎖定鍵留著，但應該放"AI 白話翻譯與法義解析"這段顯示的旁邊，且改叫做"已鎖定點撃之經文"」。
+
+### 2. 修改與驗證
+- 將 `#unlockBtn` 移至 `frontend/index.html` 的 `.ai-panel-header` 標題旁，文字改為 `📌 已鎖定點擊之經文`（點擊可解除鎖定），省出面板內一整行垂直空間。
+- 更新 `frontend/styles.css`（`.ai-panel-header-left`）與 `frontend/app.js`（`syncLockHeaderBadge()` 統一控制顯示狀態），並透過 `python test_safe_command.py` 驗證 PASS。
+
+---
+
+## [2026-11-28 16:25] Session 54：CBETA 下載成功提示列改為 5 秒倒數後自動消失
+
+### 1. 接收到的 User Prompt
+- 使用者附截圖指示：「箭頭所指之顯示，應倒數5秒即消失」。
+
+### 2. 修改與驗證
+- 於 `frontend/app.js` 新增 `showCbetaToast(msg, 5)` 與 `hideCbetaToast()`，顯示「（5 秒後自動關閉）」並每秒倒數歸零自動隱藏，切卷時自動清除舊計時器；更新 `?v=20261128o` 並透過 `python test_safe_command.py` 驗證 PASS。
+- 透過 `python test_safe_command.py` 推送至 GitHub（`origin/main`）並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。

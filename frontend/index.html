@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>大正新脩大藏經｜AI 白話翻譯與古大德註疏系統</title>
-  <link rel="stylesheet" href="./styles.css?v=20261128l" />
+  <link rel="stylesheet" href="./styles.css?v=20261128n" />
 </head>
 <body>
   <!-- 頂部導覽列 -->
@@ -96,7 +96,10 @@
         <section class="analysis-pane">
           <div class="ai-panel-wrap" id="aiPanelWrap">
             <div class="ai-panel-header">
-              <strong style="color:#6b411c;font-size:13.5px;">AI 白話翻譯與法義解析</strong>
+              <div class="ai-panel-header-left">
+                <strong style="color:#6b411c;font-size:13.5px;">AI 白話翻譯與法義解析</strong>
+                <button id="unlockBtn" class="badge-lock" type="button" style="display:none;" title="點擊解除鎖定，恢復游標滑過即時預覽">📌 已鎖定點擊之經文</button>
+              </div>
               <button id="toggleAiCollapseBtn" class="mini-btn">收合</button>
             </div>
             <div class="ai-panel-body" id="analysisPanel">
@@ -297,6 +300,6 @@
     </div>
   </div>
 
-  <script src="./app.js?v=20261128m"></script>
+  <script src="./app.js?v=20261128o"></script>
 </body>
 </html>

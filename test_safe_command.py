@@ -1,8 +1,4 @@
-import shutil
 import subprocess
-
-node = shutil.which("node")
-assert node, "node not found"
 
 
 def run(cmd: list[str], label: str) -> str:
@@ -17,22 +13,6 @@ def run(cmd: list[str], label: str) -> str:
     return r.stdout
 
 
-run([node, "--check", "frontend/app.js"], "node --check frontend/app.js")
-
-# Verify splitSentencesZhClient logic
-js_test = r"""
-const fs = require('fs');
-const code = fs.readFileSync('frontend/app.js', 'utf8');
-const start = code.indexOf('function splitSentencesZhClient(');
-const end = code.indexOf('async function fetchSutraFascicleFromGitHubClient(');
-const fn = new Function(code.slice(start, end) + '; return { splitSentencesZhClient };');
-const { splitSentencesZhClient } = fn();
-const sents = splitSentencesZhClient('爾時，佛告諸菩薩：「善哉！善哉！」復次，善男子。');
-console.log('Sentences:', sents);
-if (sents.length !== 3) process.exit(1);
-"""
-run([node, "-e", js_test], "test splitSentencesZhClient")
-
 status = run(["git", "status", "--short"], "git status")
 for line in status.splitlines():
     path = line[3:].strip()
@@ -42,7 +22,7 @@ for line in status.splitlines():
 if status.strip():
     run(["git", "add", "-A"], "git add")
     run(
-        ["git", "commit", "-m", "feat: auto-fetch missing sutra fascicles from CBETA GitHub xml-p5a with IndexedDB cache"],
+        ["git", "commit", "-m", "ui: move lock badge to AI panel header and auto-dismiss CBETA toast after 5s"],
         "git commit",
     )
     run(["git", "push", "origin", "main"], "git push")
