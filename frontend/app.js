@@ -9,6 +9,13 @@ const state = {
   modelProbeResults: {}, // model -> { ok, status, http_status, latency_ms, message }
   modelProbeRunning: false,
   modelProbeRunId: 0,
+  nvidiaApiKey: localStorage.getItem("buddhasutra_nvidia_api_key") || "",
+  nvidiaModel: localStorage.getItem("buddhasutra_nvidia_model") || "nvidia/nemotron-3-ultra-550b-a55b",
+  lastUsedNvidiaModel: "",
+  nvidiaProbeResults: {},
+  nvidiaProbeRunning: false,
+  nvidiaProbeRunId: 0,
+  activeApiTab: "gemini",
   catalog: null,
   currentSutraId: "T10n0279",
   currentFascicle: 1,
@@ -60,11 +67,21 @@ const els = {
   kbSearchDropdown: document.getElementById("kbSearchDropdown"),
   jumpParaInput: document.getElementById("jumpParaInput"),
   jumpParaBtn: document.getElementById("jumpParaBtn"),
+  // 佛經原文朗讀（Web Speech API）
+  ttsBar: document.getElementById("ttsBar"),
+  ttsPlayBtn: document.getElementById("ttsPlayBtn"),
+  ttsStopBtn: document.getElementById("ttsStopBtn"),
+  ttsRateSelect: document.getElementById("ttsRateSelect"),
+  ttsVoiceSelect: document.getElementById("ttsVoiceSelect"),
   // BYOK
   byokBtn: document.getElementById("byokBtn"),
   byokModal: document.getElementById("byokModal"),
   closeByokModalBtn: document.getElementById("closeByokModalBtn"),
   appModeLabel: document.getElementById("appModeLabel"),
+  tabGeminiBtn: document.getElementById("tabGeminiBtn"),
+  tabNvidiaBtn: document.getElementById("tabNvidiaBtn"),
+  geminiSettingsPane: document.getElementById("geminiSettingsPane"),
+  nvidiaSettingsPane: document.getElementById("nvidiaSettingsPane"),
   byokApiKeyInput: document.getElementById("byokApiKeyInput"),
   toggleKeyVisibilityBtn: document.getElementById("toggleKeyVisibilityBtn"),
   byokModelSelect: document.getElementById("byokModelSelect"),
@@ -75,6 +92,17 @@ const els = {
   testByokKeyBtn: document.getElementById("testByokKeyBtn"),
   clearByokKeyBtn: document.getElementById("clearByokKeyBtn"),
   byokStatusMsg: document.getElementById("byokStatusMsg"),
+  // NVIDIA NIM
+  nvidiaApiKeyInput: document.getElementById("nvidiaApiKeyInput"),
+  toggleNvidiaKeyVisibilityBtn: document.getElementById("toggleNvidiaKeyVisibilityBtn"),
+  nvidiaModelSelect: document.getElementById("nvidiaModelSelect"),
+  nvidiaCustomModelInput: document.getElementById("nvidiaCustomModelInput"),
+  nvidiaProbeSummary: document.getElementById("nvidiaProbeSummary"),
+  reprobeNvidiaModelsBtn: document.getElementById("reprobeNvidiaModelsBtn"),
+  saveNvidiaKeyBtn: document.getElementById("saveNvidiaKeyBtn"),
+  testNvidiaKeyBtn: document.getElementById("testNvidiaKeyBtn"),
+  clearNvidiaKeyBtn: document.getElementById("clearNvidiaKeyBtn"),
+  nvidiaStatusMsg: document.getElementById("nvidiaStatusMsg"),
   exportKbBtn: document.getElementById("exportKbBtn"),
   importKbInput: document.getElementById("importKbInput"),
   kbStorageStats: document.getElementById("kbStorageStats"),
@@ -408,6 +436,117 @@ async function callDirectGeminiApi(prompt, isJson = true, allowFallback = true) 
   throw lastErr || new Error("Gemini API 呼叫失敗");
 }
 
+// ==================== 純前端 NVIDIA NIM 呼叫器 ====================
+const NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1";
+const NVIDIA_FALLBACK_MODELS = [
+  "nvidia/nemotron-3-ultra-550b-a55b",
+  "qwen/qwen3.5-397b-a17b",
+  "qwen/qwen3-235b-a22b",
+  "deepseek-ai/deepseek-v3.2",
+  "deepseek-ai/deepseek-r1",
+  "z-ai/glm-4.7",
+  "z-ai/glm-5.3-flash",
+  "moonshotai/kimi-k2",
+];
+
+function stripThinkTags(text) {
+  return String(text || "").replace(/<think>[\s\S]*?<\/think>/g, "").trim();
+}
+
+async function _callSingleNvidiaModel(apiKey, model, prompt, isJson) {
+  const url = `${NVIDIA_BASE_URL}/chat/completions`;
+  let res;
+  try {
+    res = await fetch(url, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        model,
+        messages: [{ role: "user", content: prompt }],
+        temperature: 0.2,
+        top_p: 0.9,
+        max_tokens: 4096,
+        stream: false,
+      }),
+    });
+  } catch (netErr) {
+    const err = new Error(
+      "無法由瀏覽器直連 NVIDIA NIM API（可能因瀏覽器 CORS 跨域限制或網路異常）。建議改用本機後端模式（python run_app.py）代理呼叫 NVIDIA NIM，或切換為 Gemini API。"
+    );
+    err.status = 0;
+    err.model = model;
+    throw err;
+  }
+
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    const rawMsg = data.detail || data.error?.message || `HTTP ${res.status}`;
+    const err = new Error(rawMsg);
+    err.status = res.status;
+    err.model = model;
+    throw err;
+  }
+
+  const rawText = stripThinkTags(data.choices?.[0]?.message?.content || "");
+  if (!rawText) throw new Error("NVIDIA NIM 未回傳有效內容");
+  if (!isJson) return rawText;
+
+  let text = rawText;
+  const fence = text.match(/```(?:json)?\s*(\{.*?\})\s*```/s);
+  if (fence) {
+    text = fence[1];
+  } else {
+    const s = text.indexOf("{");
+    const e = text.lastIndexOf("}");
+    if (s !== -1 && e > s) text = text.slice(s, e + 1);
+  }
+  return JSON.parse(text);
+}
+
+async function callDirectNvidiaApi(prompt, isJson = true, allowFallback = true) {
+  const apiKey = state.nvidiaApiKey.trim();
+  if (!apiKey) {
+    throw new Error("尚未設定 NVIDIA API Key，請點擊頂部「🔑 API 設定」→「🟢 NVIDIA NIM API」填入個人金鑰。");
+  }
+  const primaryModel = state.nvidiaModel || "nvidia/nemotron-3-ultra-550b-a55b";
+  let candidates = allowFallback
+    ? [primaryModel, ...NVIDIA_FALLBACK_MODELS.filter((m) => m !== primaryModel)]
+    : [primaryModel];
+
+  if (allowFallback && Object.keys(state.nvidiaProbeResults || {}).length > 0) {
+    const probes = state.nvidiaProbeResults;
+    const filtered = candidates.filter((m) => probes[m]?.status !== "not_found");
+    if (filtered.length > 0) candidates = filtered;
+    const rank = (m) => {
+      const st = probes[m]?.status;
+      if (st === "ok") return m === primaryModel ? 0 : 1;
+      if (!st || st === "checking") return m === primaryModel ? 2 : 3;
+      if (st === "quota") return 4;
+      return 5;
+    };
+    candidates = [...candidates].sort((a, b) => rank(a) - rank(b));
+  }
+
+  let lastErr = null;
+  for (const model of candidates) {
+    try {
+      const result = await _callSingleNvidiaModel(apiKey, model, prompt, isJson);
+      state.lastUsedNvidiaModel = model;
+      return result;
+    } catch (err) {
+      lastErr = err;
+      const isRetryable = err.status === 429 || err.status === 404;
+      if (allowFallback && isRetryable) continue;
+      throw err;
+    }
+  }
+  throw lastErr || new Error("NVIDIA NIM API 呼叫失敗");
+}
+
 // ==================== 背景逐一檢測 Gemini 模型連線狀態 ====================
 const MODEL_PROBE_CACHE_TTL_MS = 10 * 60 * 1000;
 
@@ -646,14 +785,462 @@ async function probeAllGeminiModelsInBackground({ force = false, apiKeyOverride 
   }
 }
 
+// ==================== 背景逐一檢測 NVIDIA NIM 模型連線狀態 ====================
+function getPresetNvidiaModels() {
+  if (!els.nvidiaModelSelect) return [];
+  return Array.from(els.nvidiaModelSelect.options)
+    .map((o) => o.value)
+    .filter((v) => v && v !== "custom");
+}
+
+function getNvidiaProbeCacheKey(apiKeyOverride = "") {
+  const key = (apiKeyOverride || state.nvidiaApiKey || "").trim();
+  if (key) return `buddhasutra_nvidia_probes_v1:key_${key.slice(-6)}`;
+  if (state.isBackendAvailable && state.llmStatus?.nvidia?.configured) {
+    return "buddhasutra_nvidia_probes_v1:backend_env";
+  }
+  return null;
+}
+
+function applyNvidiaProbeOptionLabels() {
+  if (!els.nvidiaModelSelect) return;
+  for (const opt of els.nvidiaModelSelect.options) {
+    if (!opt.value || opt.value === "custom") continue;
+    if (!opt.dataset.baseLabel) opt.dataset.baseLabel = opt.textContent;
+    const base = opt.dataset.baseLabel;
+    const res = state.nvidiaProbeResults[opt.value];
+    if (!res) {
+      opt.textContent = base;
+    } else {
+      const { icon, suffix } = formatProbeSuffix(res);
+      opt.textContent = `${icon}${base}${suffix}`;
+    }
+  }
+}
+
+function updateNvidiaProbeSummary(customText = null, tone = "") {
+  if (!els.nvidiaProbeSummary) return;
+  if (customText !== null) {
+    els.nvidiaProbeSummary.textContent = customText;
+    els.nvidiaProbeSummary.className = `model-probe-summary ${tone}`.trim();
+    return;
+  }
+
+  const models = getPresetNvidiaModels();
+  const total = models.length;
+  let done = 0;
+  let okCount = 0;
+  let quotaCount = 0;
+  let failCount = 0;
+
+  for (const m of models) {
+    const r = state.nvidiaProbeResults[m];
+    if (!r || r.status === "checking") continue;
+    done++;
+    if (r.status === "ok") okCount++;
+    else if (r.status === "quota") quotaCount++;
+    else failCount++;
+  }
+
+  if (state.nvidiaProbeRunning) {
+    els.nvidiaProbeSummary.textContent = `🔄 NVIDIA 背景檢測中 (${done}/${total})… 目前 ${okCount} 個可連線`;
+    els.nvidiaProbeSummary.className = "model-probe-summary";
+  } else if (done > 0) {
+    const parts = [`${okCount}/${total} 個模型可連線`];
+    if (quotaCount > 0) parts.push(`${quotaCount} 個限流`);
+    if (failCount > 0) parts.push(`${failCount} 個不可用`);
+    els.nvidiaProbeSummary.textContent = `✓ NVIDIA 背景檢測完成：${parts.join("、")}`;
+    els.nvidiaProbeSummary.className = `model-probe-summary ${okCount > 0 ? "ok" : "warn"}`;
+  }
+}
+
+async function probeSingleNvidiaModel(model, apiKeyOverride = "") {
+  const key = (apiKeyOverride || state.nvidiaApiKey || "").trim();
+  // 本機後端模式優先由 FastAPI 代理探測（完全避開瀏覽器 CORS 限制）
+  if (state.isBackendAvailable) {
+    if (!key && !state.llmStatus?.nvidia?.configured) {
+      return { model, ok: false, status: "no_key", http_status: null, latency_ms: 0, message: "尚未設定金鑰" };
+    }
+    try {
+      return await apiJson("/api/llm/probe-model", {
+        method: "POST",
+        body: JSON.stringify({ model, provider: "nvidia", api_key: key || undefined }),
+      });
+    } catch (err) {
+      return { model, ok: false, status: "error", http_status: null, latency_ms: 0, message: err.message };
+    }
+  }
+
+  if (!key) {
+    return { model, ok: false, status: "no_key", http_status: null, latency_ms: 0, message: "尚未設定金鑰" };
+  }
+
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 10000);
+  const t0 = performance.now();
+  try {
+    const res = await fetch(`${NVIDIA_BASE_URL}/chat/completions`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${key}`,
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        model,
+        messages: [{ role: "user", content: "ok" }],
+        max_tokens: 1,
+        temperature: 0,
+        stream: false,
+      }),
+      signal: controller.signal,
+    });
+    const latency_ms = Math.round(performance.now() - t0);
+    if (res.ok) {
+      return { model, ok: true, status: "ok", http_status: 200, latency_ms, message: "可連線" };
+    }
+    const data = await res.json().catch(() => ({}));
+    const rawMsg = data.detail || data.error?.message || `HTTP ${res.status}`;
+    const low = rawMsg.toLowerCase();
+    let status = "error";
+    if (res.status === 429 || /rate.?limit|quota/.test(low)) status = "quota";
+    else if (res.status === 404 || low.includes("not found")) status = "not_found";
+    else if (res.status === 401 || low.includes("unauthorized") || low.includes("invalid api key")) status = "auth_error";
+    else if (res.status === 403) status = "forbidden";
+    return { model, ok: false, status, http_status: res.status, latency_ms, message: rawMsg };
+  } catch (err) {
+    const latency_ms = Math.round(performance.now() - t0);
+    const isAbort = err?.name === "AbortError";
+    return {
+      model,
+      ok: false,
+      status: isAbort ? "timeout" : "error",
+      http_status: null,
+      latency_ms,
+      message: isAbort ? "連線逾時" : "瀏覽器 CORS 限制或網路錯誤",
+    };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function probeAllNvidiaModelsInBackground({ force = false, apiKeyOverride = "" } = {}) {
+  const models = getPresetNvidiaModels();
+  if (!models.length) return;
+
+  const cacheKey = getNvidiaProbeCacheKey(apiKeyOverride);
+  if (!cacheKey) {
+    state.nvidiaProbeResults = {};
+    state.nvidiaProbeRunning = false;
+    applyNvidiaProbeOptionLabels();
+    updateNvidiaProbeSummary("尚未設定 NVIDIA API Key，設定後將自動背景檢測全部模型", "warn");
+    return;
+  }
+
+  if (!force) {
+    try {
+      const cachedRaw = sessionStorage.getItem(cacheKey);
+      if (cachedRaw) {
+        const cached = JSON.parse(cachedRaw);
+        if (cached && Date.now() - (cached.ts || 0) < MODEL_PROBE_CACHE_TTL_MS && cached.results) {
+          state.nvidiaProbeResults = cached.results;
+          state.nvidiaProbeRunning = false;
+          applyNvidiaProbeOptionLabels();
+          updateNvidiaProbeSummary();
+          return;
+        }
+      }
+    } catch {
+      // ignore
+    }
+  }
+
+  const runId = ++state.nvidiaProbeRunId;
+  state.nvidiaProbeRunning = true;
+  state.nvidiaProbeResults = {};
+  for (const m of models) {
+    state.nvidiaProbeResults[m] = { model: m, ok: false, status: "checking", latency_ms: 0 };
+  }
+  if (els.reprobeNvidiaModelsBtn) els.reprobeNvidiaModelsBtn.disabled = true;
+  applyNvidiaProbeOptionLabels();
+  updateNvidiaProbeSummary();
+
+  let abortedByAuth = false;
+  let cursor = 0;
+  const concurrency = 2;
+
+  async function worker() {
+    while (cursor < models.length && !abortedByAuth && state.nvidiaProbeRunId === runId) {
+      const m = models[cursor++];
+      const res = await probeSingleNvidiaModel(m, apiKeyOverride);
+      if (state.nvidiaProbeRunId !== runId) return;
+      state.nvidiaProbeResults[m] = res;
+      if (res.status === "auth_error") {
+        abortedByAuth = true;
+        for (const rem of models) {
+          if (state.nvidiaProbeResults[rem]?.status === "checking") {
+            state.nvidiaProbeResults[rem] = { model: rem, ok: false, status: "auth_error", message: "金鑰無效" };
+          }
+        }
+      }
+      applyNvidiaProbeOptionLabels();
+      updateNvidiaProbeSummary();
+    }
+  }
+
+  await Promise.all(Array.from({ length: concurrency }, () => worker()));
+  if (state.nvidiaProbeRunId !== runId) return;
+
+  state.nvidiaProbeRunning = false;
+  if (els.reprobeNvidiaModelsBtn) els.reprobeNvidiaModelsBtn.disabled = false;
+
+  if (abortedByAuth) {
+    updateNvidiaProbeSummary("❌ NVIDIA API Key 無效或無存取權限，已停止背景檢測", "err");
+  } else {
+    updateNvidiaProbeSummary();
+    try {
+      sessionStorage.setItem(cacheKey, JSON.stringify({ ts: Date.now(), results: state.nvidiaProbeResults }));
+    } catch {
+      // ignore
+    }
+  }
+}
+
+// ==================== 佛經原文朗讀（方案 A：Web Speech API + 佛經正音） ====================
+const BUDDHIST_PRONUNCIATION_MAP = [
+  [/南無/g, "拿摩"],
+  [/般若/g, "波惹"],
+  [/阿彌陀/g, "啊彌陀"],
+  [/阿難/g, "啊難"],
+  [/阿耨多羅/g, "啊耨多羅"],
+  [/阿羅漢/g, "啊羅漢"],
+  [/阿修羅/g, "啊修羅"],
+  [/阿僧祇/g, "啊僧祇"],
+  [/阿蘭若/g, "啊蘭惹"],
+  [/阿毗達磨/g, "啊毗達磨"],
+  [/阿闍梨/g, "啊闍梨"],
+  [/阿鼻/g, "啊鼻"],
+  [/摩訶/g, "摩呵"],
+  [/伽藍/g, "茄藍"],
+  [/伽耶/g, "茄耶"],
+  [/波斯匿/g, "波斯逆"],
+  [/舍利弗/g, "設利弗"],
+  [/優婆塞/g, "優婆賽"],
+];
+
+function normalizeSutraPronunciation(text) {
+  let out = String(text || "").replace(/\[\*\]|\[＊\]/g, "");
+  for (const [pattern, reading] of BUDDHIST_PRONUNCIATION_MAP) {
+    out = out.replace(pattern, reading);
+  }
+  return out;
+}
+
+const ttsState = {
+  playing: false,
+  paused: false,
+  queue: [],
+  idx: 0,
+  runId: 0,
+  speakingSentenceId: null,
+  voices: [],
+};
+
+function initSutraTts() {
+  if (!("speechSynthesis" in window) || !els.ttsBar) {
+    if (els.ttsBar) els.ttsBar.style.display = "none";
+    return;
+  }
+
+  const savedRate = localStorage.getItem("buddhasutra_tts_rate");
+  if (savedRate && els.ttsRateSelect) els.ttsRateSelect.value = savedRate;
+
+  populateTtsVoices();
+  window.speechSynthesis.addEventListener("voiceschanged", populateTtsVoices);
+
+  els.ttsPlayBtn?.addEventListener("click", toggleSutraTts);
+  els.ttsStopBtn?.addEventListener("click", stopSutraTts);
+  els.ttsRateSelect?.addEventListener("change", () => {
+    localStorage.setItem("buddhasutra_tts_rate", els.ttsRateSelect.value);
+    if (ttsState.playing && !ttsState.paused) {
+      speakQueueIndex(ttsState.idx, ttsState.runId);
+    }
+  });
+  els.ttsVoiceSelect?.addEventListener("change", () => {
+    localStorage.setItem("buddhasutra_tts_voice", els.ttsVoiceSelect.value);
+    if (ttsState.playing && !ttsState.paused) {
+      speakQueueIndex(ttsState.idx, ttsState.runId);
+    }
+  });
+  window.addEventListener("beforeunload", stopSutraTts);
+}
+
+function populateTtsVoices() {
+  if (!els.ttsVoiceSelect || !("speechSynthesis" in window)) return;
+  const all = window.speechSynthesis.getVoices() || [];
+  if (!all.length) return;
+
+  const scoreVoice = (v) => {
+    const lang = (v.lang || "").toLowerCase();
+    const name = (v.name || "").toLowerCase();
+    let s = 0;
+    if (lang.startsWith("zh-tw") || lang.includes("hant")) s += 100;
+    else if (lang.startsWith("zh")) s += 60;
+    if (name.includes("natural") || name.includes("online")) s += 40;
+    if (name.includes("hsiaochen") || name.includes("yunjhe")) s += 20;
+    return s;
+  };
+
+  const zhVoices = all
+    .filter((v) => (v.lang || "").toLowerCase().startsWith("zh"))
+    .sort((a, b) => scoreVoice(b) - scoreVoice(a));
+  const list = zhVoices.length ? zhVoices : all;
+  ttsState.voices = list;
+
+  const savedVoice = localStorage.getItem("buddhasutra_tts_voice");
+  els.ttsVoiceSelect.innerHTML = "";
+  list.forEach((v) => {
+    const opt = document.createElement("option");
+    opt.value = v.name;
+    opt.textContent = v.name.replace(/^Microsoft\s+/i, "").replace(/\s*-\s*Chinese.*$/i, "");
+    if (savedVoice && v.name === savedVoice) opt.selected = true;
+    els.ttsVoiceSelect.appendChild(opt);
+  });
+}
+
+function updateTtsButtons() {
+  if (!els.ttsPlayBtn || !els.ttsStopBtn) return;
+  if (!ttsState.playing) {
+    els.ttsPlayBtn.textContent = "🔊 朗讀原文";
+    els.ttsPlayBtn.classList.remove("active");
+    els.ttsStopBtn.style.display = "none";
+  } else if (ttsState.paused) {
+    els.ttsPlayBtn.textContent = "▶ 繼續朗讀";
+    els.ttsPlayBtn.classList.add("active");
+    els.ttsStopBtn.style.display = "inline-block";
+  } else {
+    els.ttsPlayBtn.textContent = "⏸ 暫停朗讀";
+    els.ttsPlayBtn.classList.add("active");
+    els.ttsStopBtn.style.display = "inline-block";
+  }
+}
+
+function syncSpeakingHighlight(sentenceId) {
+  ttsState.speakingSentenceId = sentenceId;
+  document.querySelectorAll(".sentence.speaking").forEach((el) => el.classList.remove("speaking"));
+  if (!sentenceId) return;
+  const el = document.querySelector(`.sentence[data-sentence-id="${sentenceId}"]`);
+  if (el) {
+    el.classList.add("speaking");
+    el.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+}
+
+function toggleSutraTts() {
+  if (!("speechSynthesis" in window)) return;
+  if (ttsState.playing && !ttsState.paused) {
+    window.speechSynthesis.pause();
+    ttsState.paused = true;
+    updateTtsButtons();
+    return;
+  }
+  if (ttsState.playing && ttsState.paused) {
+    window.speechSynthesis.resume();
+    ttsState.paused = false;
+    updateTtsButtons();
+    return;
+  }
+  startSutraTts();
+}
+
+function startSutraTts() {
+  if (!state.bundle?.sutra?.paragraphs?.length) return;
+  const queue = [];
+  for (const p of state.bundle.sutra.paragraphs) {
+    if (p.type !== "prose") continue;
+    for (const s of p.sentences || []) {
+      if (s.text && s.text.trim()) {
+        queue.push({ sentence_id: s.sentence_id, text: s.text });
+      }
+    }
+  }
+  if (!queue.length) return;
+
+  const anchorId = state.lockedSentenceId || state.activeSentenceId;
+  const startIdx = anchorId ? Math.max(0, queue.findIndex((q) => q.sentence_id === anchorId)) : 0;
+
+  ttsState.queue = queue;
+  ttsState.idx = startIdx;
+  ttsState.playing = true;
+  ttsState.paused = false;
+  ttsState.runId += 1;
+  updateTtsButtons();
+  speakQueueIndex(startIdx, ttsState.runId);
+}
+
+function speakQueueIndex(index, runId) {
+  if (runId !== ttsState.runId || !ttsState.playing) return;
+  if (index >= ttsState.queue.length) {
+    stopSutraTts();
+    return;
+  }
+
+  ttsState.idx = index;
+  const item = ttsState.queue[index];
+  syncSpeakingHighlight(item.sentence_id);
+
+  // 同步顯示右側句子的既有譯文與古大德註疏（不觸發自動 AI 翻譯）
+  state.activeSentenceId = item.sentence_id;
+  syncSentenceHighlight();
+  renderAnalysisPanel();
+  alignCommentaryToSentence(item.sentence_id);
+
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(normalizeSutraPronunciation(item.text));
+  utter.lang = "zh-TW";
+  utter.rate = parseFloat(els.ttsRateSelect?.value || "0.95") || 0.95;
+
+  const selectedName = els.ttsVoiceSelect?.value;
+  const voice = ttsState.voices.find((v) => v.name === selectedName) || ttsState.voices[0];
+  if (voice) utter.voice = voice;
+
+  utter.onend = () => {
+    if (runId === ttsState.runId && ttsState.playing) {
+      speakQueueIndex(index + 1, runId);
+    }
+  };
+  utter.onerror = (ev) => {
+    if (ev?.error === "interrupted" || ev?.error === "canceled") return;
+    if (runId === ttsState.runId && ttsState.playing) {
+      speakQueueIndex(index + 1, runId);
+    }
+  };
+
+  window.speechSynthesis.speak(utter);
+}
+
+function stopSutraTts() {
+  ttsState.runId += 1;
+  ttsState.playing = false;
+  ttsState.paused = false;
+  ttsState.queue = [];
+  if ("speechSynthesis" in window) {
+    window.speechSynthesis.cancel();
+  }
+  syncSpeakingHighlight(null);
+  updateTtsButtons();
+}
+
 // ---------- 初始化 ----------
 async function init() {
   bindEvents();
   initByokModal();
+  initSutraTts();
   await checkBackendAvailability();
   await Promise.all([loadLlmStatus(), loadCatalog()]);
-  // 背景逐一確認各 Gemini 模型連線狀態（不阻塞經文載入）
+  // 背景逐一確認已設定金鑰之 Gemini / NVIDIA 模型連線狀態（不阻塞經文載入）
   probeAllGeminiModelsInBackground();
+  probeAllNvidiaModelsInBackground();
   await loadFascicle(state.currentSutraId, state.currentFascicle);
 }
 
@@ -679,7 +1266,18 @@ async function checkBackendAvailability() {
 }
 
 function bindEvents() {
-  els.providerSelect.addEventListener("change", updateLlmBadge);
+  els.providerSelect.addEventListener("change", () => {
+    localStorage.setItem("buddhasutra_llm_provider", els.providerSelect.value);
+    updateLlmBadge();
+    if (els.providerSelect.value === "nvidia" && Object.keys(state.nvidiaProbeResults).length === 0) {
+      probeAllNvidiaModelsInBackground();
+    }
+  });
+
+  els.llmStatusBadge?.addEventListener("click", () => {
+    const p = els.providerSelect?.value;
+    openByokModal(p === "nvidia" ? "nvidia" : "gemini");
+  });
 
   els.toggleAiCollapseBtn.addEventListener("click", () => {
     const collapsed = els.aiPanelWrap.classList.toggle("collapsed");
@@ -772,8 +1370,29 @@ function bindEvents() {
   });
 }
 
+function switchApiModalTab(tab) {
+  const target = tab === "nvidia" ? "nvidia" : "gemini";
+  state.activeApiTab = target;
+  if (els.tabGeminiBtn) els.tabGeminiBtn.classList.toggle("active", target === "gemini");
+  if (els.tabNvidiaBtn) els.tabNvidiaBtn.classList.toggle("active", target === "nvidia");
+  if (els.geminiSettingsPane) els.geminiSettingsPane.style.display = target === "gemini" ? "block" : "none";
+  if (els.nvidiaSettingsPane) els.nvidiaSettingsPane.style.display = target === "nvidia" ? "block" : "none";
+}
+
+function showNvidiaStatus(msg, type = "ok") {
+  if (!els.nvidiaStatusMsg) return;
+  els.nvidiaStatusMsg.textContent = msg;
+  els.nvidiaStatusMsg.className = `byok-status-msg ${type}`;
+  els.nvidiaStatusMsg.style.display = "block";
+}
+
+function hideNvidiaStatus() {
+  if (els.nvidiaStatusMsg) els.nvidiaStatusMsg.style.display = "none";
+}
+
 function initByokModal() {
   if (els.byokApiKeyInput) els.byokApiKeyInput.value = state.userApiKey;
+  if (els.nvidiaApiKeyInput) els.nvidiaApiKeyInput.value = state.nvidiaApiKey;
   if (els.byokModelSelect) {
     for (const opt of els.byokModelSelect.options) {
       if (opt.value && opt.value !== "custom" && !opt.dataset.baseLabel) {
@@ -781,8 +1400,21 @@ function initByokModal() {
       }
     }
   }
+  if (els.nvidiaModelSelect) {
+    for (const opt of els.nvidiaModelSelect.options) {
+      if (opt.value && opt.value !== "custom" && !opt.dataset.baseLabel) {
+        opt.dataset.baseLabel = opt.textContent;
+      }
+    }
+  }
 
-  els.byokBtn?.addEventListener("click", openByokModal);
+  els.tabGeminiBtn?.addEventListener("click", () => switchApiModalTab("gemini"));
+  els.tabNvidiaBtn?.addEventListener("click", () => switchApiModalTab("nvidia"));
+
+  els.byokBtn?.addEventListener("click", () => {
+    const p = els.providerSelect?.value;
+    openByokModal(p === "nvidia" ? "nvidia" : "gemini");
+  });
   els.closeByokModalBtn?.addEventListener("click", closeByokModal);
   els.byokModal?.addEventListener("click", (e) => {
     if (e.target === els.byokModal) closeByokModal();
@@ -791,6 +1423,80 @@ function initByokModal() {
   els.reprobeModelsBtn?.addEventListener("click", () => {
     const typedKey = els.byokApiKeyInput?.value.trim() || "";
     probeAllGeminiModelsInBackground({ force: true, apiKeyOverride: typedKey });
+  });
+
+  els.reprobeNvidiaModelsBtn?.addEventListener("click", () => {
+    const typedKey = els.nvidiaApiKeyInput?.value.trim() || "";
+    probeAllNvidiaModelsInBackground({ force: true, apiKeyOverride: typedKey });
+  });
+
+  els.nvidiaModelSelect?.addEventListener("change", () => {
+    const isCustom = els.nvidiaModelSelect.value === "custom";
+    if (els.nvidiaCustomModelInput) {
+      els.nvidiaCustomModelInput.style.display = isCustom ? "block" : "none";
+      if (isCustom) els.nvidiaCustomModelInput.focus();
+    }
+  });
+
+  els.toggleNvidiaKeyVisibilityBtn?.addEventListener("click", () => {
+    const isPw = els.nvidiaApiKeyInput.type === "password";
+    els.nvidiaApiKeyInput.type = isPw ? "text" : "password";
+    els.toggleNvidiaKeyVisibilityBtn.textContent = isPw ? "隱藏" : "顯示";
+  });
+
+  function resolveSelectedNvidiaModel() {
+    if (els.nvidiaModelSelect?.value === "custom") {
+      return els.nvidiaCustomModelInput?.value.trim() || "nvidia/nemotron-3-ultra-550b-a55b";
+    }
+    return els.nvidiaModelSelect?.value || "nvidia/nemotron-3-ultra-550b-a55b";
+  }
+
+  els.saveNvidiaKeyBtn?.addEventListener("click", () => {
+    const key = els.nvidiaApiKeyInput.value.trim();
+    const model = resolveSelectedNvidiaModel();
+    state.nvidiaApiKey = key;
+    state.nvidiaModel = model;
+    localStorage.setItem("buddhasutra_nvidia_api_key", key);
+    localStorage.setItem("buddhasutra_nvidia_model", model);
+    showNvidiaStatus(`✓ NVIDIA 金鑰與模型 (${model}) 已獨立儲存至本機瀏覽器！`, "ok");
+    updateLlmBadge();
+    probeAllNvidiaModelsInBackground({ force: true });
+  });
+
+  els.clearNvidiaKeyBtn?.addEventListener("click", () => {
+    if (!confirm("確定要清除本機儲存的 NVIDIA API Key 嗎？（不影響 Gemini 金鑰）")) return;
+    state.nvidiaApiKey = "";
+    localStorage.removeItem("buddhasutra_nvidia_api_key");
+    els.nvidiaApiKeyInput.value = "";
+    showNvidiaStatus("已清除本機 NVIDIA 金鑰。", "err");
+    updateLlmBadge();
+    probeAllNvidiaModelsInBackground({ force: true });
+  });
+
+  els.testNvidiaKeyBtn?.addEventListener("click", async () => {
+    const key = els.nvidiaApiKeyInput.value.trim();
+    const hasBackendKey = state.isBackendAvailable && state.llmStatus?.nvidia?.configured;
+    if (!key && !hasBackendKey) {
+      showNvidiaStatus("請先輸入 nvapi- 開頭的 NVIDIA API Key 再進行測試。", "err");
+      return;
+    }
+    const testModel = resolveSelectedNvidiaModel();
+    showNvidiaStatus(`正在連線 NVIDIA NIM API 測試中 (${testModel})...`, "ok");
+    const res = await probeSingleNvidiaModel(testModel, key);
+    if (res.ok) {
+      if (key) {
+        state.nvidiaApiKey = key;
+        localStorage.setItem("buddhasutra_nvidia_api_key", key);
+      }
+      state.nvidiaModel = testModel;
+      localStorage.setItem("buddhasutra_nvidia_model", testModel);
+      state.nvidiaProbeResults[testModel] = res;
+      applyNvidiaProbeOptionLabels();
+      showNvidiaStatus(`✓ 連線成功！NVIDIA NIM (${testModel}) 正常運作（${res.latency_ms}ms）。`, "ok");
+      updateLlmBadge();
+    } else {
+      showNvidiaStatus(`❌ 測試失敗：${res.message || res.status}`, "err");
+    }
   });
 
   els.byokModelSelect?.addEventListener("change", () => {
@@ -900,9 +1606,12 @@ function initByokModal() {
   });
 }
 
-async function openByokModal() {
+async function openByokModal(initialTab = null) {
   if (els.byokModal) els.byokModal.style.display = "flex";
   if (els.byokApiKeyInput) els.byokApiKeyInput.value = state.userApiKey;
+  if (els.nvidiaApiKeyInput) els.nvidiaApiKeyInput.value = state.nvidiaApiKey;
+
+  switchApiModalTab(initialTab || (els.providerSelect?.value === "nvidia" ? "nvidia" : "gemini"));
 
   const currentM = state.userModel || "gemini-3.5-flash-lite";
   let hasOption = false;
@@ -925,7 +1634,29 @@ async function openByokModal() {
     }
   }
 
+  const currentNvM = state.nvidiaModel || "nvidia/nemotron-3-ultra-550b-a55b";
+  let hasNvOption = false;
+  if (els.nvidiaModelSelect) {
+    for (const opt of els.nvidiaModelSelect.options) {
+      if (opt.value === currentNvM) {
+        hasNvOption = true;
+        break;
+      }
+    }
+    if (hasNvOption) {
+      els.nvidiaModelSelect.value = currentNvM;
+      if (els.nvidiaCustomModelInput) els.nvidiaCustomModelInput.style.display = "none";
+    } else {
+      els.nvidiaModelSelect.value = "custom";
+      if (els.nvidiaCustomModelInput) {
+        els.nvidiaCustomModelInput.style.display = "block";
+        els.nvidiaCustomModelInput.value = currentNvM;
+      }
+    }
+  }
+
   hideByokStatus();
+  hideNvidiaStatus();
   await updateKbModalStats();
 }
 
@@ -966,10 +1697,13 @@ function closeMasterPopup() {
 }
 
 async function loadLlmStatus() {
+  const savedProvider = localStorage.getItem("buddhasutra_llm_provider");
   if (state.isBackendAvailable) {
     try {
       state.llmStatus = await apiJson("/api/llm/status");
-      if (state.llmStatus.default_provider) {
+      if (savedProvider && ["gemini", "nvidia", "ollama"].includes(savedProvider)) {
+        els.providerSelect.value = savedProvider;
+      } else if (state.llmStatus.default_provider) {
         els.providerSelect.value = state.llmStatus.default_provider;
       }
       updateLlmBadge();
@@ -980,11 +1714,18 @@ async function loadLlmStatus() {
   }
 
   // 純前端 BYOK 模式
+  if (savedProvider && ["gemini", "nvidia"].includes(savedProvider)) {
+    els.providerSelect.value = savedProvider;
+  }
   state.llmStatus = {
-    default_provider: "gemini",
+    default_provider: els.providerSelect.value || "gemini",
     gemini: {
       configured: Boolean(state.userApiKey),
       model: state.userModel,
+    },
+    nvidia: {
+      configured: Boolean(state.nvidiaApiKey),
+      model: state.nvidiaModel,
     },
     ollama: { reachable: false },
   };
@@ -992,37 +1733,67 @@ async function loadLlmStatus() {
 }
 
 function updateLlmBadge() {
-  if (!state.isBackendAvailable) {
-    if (state.userApiKey) {
-      els.llmStatusBadge.textContent = `Gemini 就緒 (${state.userModel}・BYOK)`;
-      els.llmStatusBadge.className = "status-pill status-ok";
-      els.llmStatusBadge.title = "已設定個人本機 API Key，點擊可重設或測試";
+  const p = els.providerSelect.value;
+
+  if (p === "nvidia") {
+    const shortNvModel = (state.nvidiaModel || state.llmStatus?.nvidia?.model || "nemotron-3-ultra-550b-a55b")
+      .split("/")
+      .pop();
+    const configured = Boolean(state.nvidiaApiKey) || (state.isBackendAvailable && state.llmStatus?.nvidia?.configured);
+    if (configured) {
+      els.llmStatusBadge.textContent = `🔑 NVIDIA 就緒 (${shortNvModel})`;
+      els.llmStatusBadge.className = "status-pill status-ok status-btn";
+      els.llmStatusBadge.title = `NVIDIA NIM 模型：${state.nvidiaModel}，點擊可設定獨立金鑰、切換模型與管理知識庫`;
     } else {
-      els.llmStatusBadge.textContent = "請設定 Gemini API Key";
-      els.llmStatusBadge.className = "status-pill status-warn";
-      els.llmStatusBadge.title = "點擊「🔑 API 設定」填入金鑰即可開啟 AI 白話翻譯";
+      els.llmStatusBadge.textContent = "🔑 請設定 NVIDIA API Key";
+      els.llmStatusBadge.className = "status-pill status-warn status-btn";
+      els.llmStatusBadge.title = "點擊開啟「🟢 NVIDIA NIM API」設定獨立金鑰（nvapi-...）";
+    }
+    return;
+  }
+
+  if (!state.isBackendAvailable) {
+    if (p === "ollama") {
+      els.llmStatusBadge.textContent = "🔑 Ollama 僅限本機模式";
+      els.llmStatusBadge.className = "status-pill status-warn status-btn";
+      els.llmStatusBadge.title = "雲端純前端模式無法連線本機 Ollama，點擊可設定 Gemini 或 NVIDIA 金鑰";
+      return;
+    }
+    if (state.userApiKey) {
+      els.llmStatusBadge.textContent = `🔑 Gemini 就緒 (${state.userModel}・BYOK)`;
+      els.llmStatusBadge.className = "status-pill status-ok status-btn";
+      els.llmStatusBadge.title = "已設定個人本機 API Key，點擊可重設、測試或備份知識庫";
+    } else {
+      els.llmStatusBadge.textContent = "🔑 請設定 Gemini API Key";
+      els.llmStatusBadge.className = "status-pill status-warn status-btn";
+      els.llmStatusBadge.title = "點擊填入個人 Gemini API Key 即可開啟 AI 白話翻譯";
     }
     return;
   }
 
   if (!state.llmStatus) return;
-  const p = els.providerSelect.value;
   if (p === "gemini") {
-    if (state.llmStatus.gemini.configured) {
-      els.llmStatusBadge.textContent = `Gemini 就緒 (${state.llmStatus.gemini.model})`;
-      els.llmStatusBadge.className = "status-pill status-ok";
+    const configured = state.llmStatus.gemini.configured || Boolean(state.userApiKey);
+    if (configured) {
+      const m = state.userModel || state.llmStatus.gemini.model;
+      els.llmStatusBadge.textContent = `🔑 Gemini 就緒 (${m})`;
+      els.llmStatusBadge.className = "status-pill status-ok status-btn";
+      els.llmStatusBadge.title = "點擊可管理 API Key、切換模型與備份知識庫";
     } else {
-      els.llmStatusBadge.textContent = "Gemini 尚未設定金鑰";
-      els.llmStatusBadge.className = "status-pill status-warn";
+      els.llmStatusBadge.textContent = "🔑 請設定 Gemini API Key";
+      els.llmStatusBadge.className = "status-pill status-warn status-btn";
+      els.llmStatusBadge.title = "點擊設定 Gemini API Key";
     }
   } else {
     if (state.llmStatus.ollama.reachable) {
       const m = state.llmStatus.ollama.available_models[0] || state.llmStatus.ollama.default_model;
-      els.llmStatusBadge.textContent = `Ollama 就緒 (${m})`;
-      els.llmStatusBadge.className = "status-pill status-ok";
+      els.llmStatusBadge.textContent = `🔑 Ollama 就緒 (${m})`;
+      els.llmStatusBadge.className = "status-pill status-ok status-btn";
+      els.llmStatusBadge.title = "點擊可管理 API 設定與本機知識庫";
     } else {
-      els.llmStatusBadge.textContent = "Ollama 本機未啟動";
-      els.llmStatusBadge.className = "status-pill status-warn";
+      els.llmStatusBadge.textContent = "🔑 Ollama 本機未啟動";
+      els.llmStatusBadge.className = "status-pill status-warn status-btn";
+      els.llmStatusBadge.title = "本機 Ollama 未啟動，點擊可改設定 Gemini / NVIDIA API Key";
     }
   }
 }
@@ -1308,6 +2079,7 @@ function getCurrentTranslationPath() {
 
 // ---------- 載入經卷 ----------
 async function loadFascicle(sutraId, fascicle, targetSentenceId = null) {
+  stopSutraTts();
   const sutraChanged = state.currentSutraId !== sutraId;
   state.currentSutraId = sutraId;
   state.currentFascicle = fascicle;
@@ -2052,15 +2824,30 @@ async function triggerTranslateSentence(sentenceId, forceRefresh = false) {
   renderAnalysisPanel();
 
   let errorMsg = null;
+  const chosenProvider = els.providerSelect.value;
   try {
     if (state.isBackendAvailable) {
+      const chosenModel =
+        chosenProvider === "nvidia"
+          ? state.nvidiaModel
+          : chosenProvider === "gemini"
+            ? state.userModel
+            : undefined;
+      const chosenKey =
+        chosenProvider === "nvidia"
+          ? state.nvidiaApiKey.trim() || undefined
+          : chosenProvider === "gemini"
+            ? state.userApiKey.trim() || undefined
+            : undefined;
       const res = await apiJson("/api/translate/sentence", {
         method: "POST",
         body: JSON.stringify({
           sutra_id: state.currentSutraId,
           fascicle: state.currentFascicle,
           sentence_id: sentenceId,
-          provider: els.providerSelect.value,
+          provider: chosenProvider,
+          model: chosenModel,
+          api_key: chosenKey,
           selected_masters: state.selectedMasterId ? [state.selectedMasterId] : [],
           force_refresh: forceRefresh,
         }),
@@ -2068,10 +2855,18 @@ async function triggerTranslateSentence(sentenceId, forceRefresh = false) {
       state.bundle.translations[sentenceId] = res.entry;
       state.bundle.translations[sentenceId]._lastFromKb = res.from_kb;
     } else {
-      // 純前端 BYOK 模式
-      if (!state.userApiKey) {
+      // 純前端 BYOK 模式（支援 Gemini 與 NVIDIA NIM 各自獨立金鑰）
+      if (chosenProvider === "nvidia") {
+        if (!state.nvidiaApiKey) {
+          state.translatingSet.delete(sentenceId);
+          openByokModal("nvidia");
+          showNvidiaStatus("請先輸入您的個人 NVIDIA API Key（nvapi-...）即可開啟白話翻譯！", "err");
+          renderAnalysisPanel();
+          return;
+        }
+      } else if (!state.userApiKey) {
         state.translatingSet.delete(sentenceId);
-        openByokModal();
+        openByokModal("gemini");
         showByokStatus("請先輸入您的個人 Gemini API Key 即可開啟白話翻譯！", "err");
         renderAnalysisPanel();
         return;
@@ -2102,8 +2897,13 @@ async function triggerTranslateSentence(sentenceId, forceRefresh = false) {
         commentaries
       );
 
-      const parsed = await callDirectGeminiApi(prompt, true, true);
-      const actualModel = state.lastUsedModel || state.userModel;
+      const isNv = chosenProvider === "nvidia";
+      const parsed = isNv
+        ? await callDirectNvidiaApi(prompt, true, true)
+        : await callDirectGeminiApi(prompt, true, true);
+      const actualModel = isNv
+        ? state.lastUsedNvidiaModel || state.nvidiaModel
+        : state.lastUsedModel || state.userModel;
       const entry = {
         sentence_id: sentenceId,
         source_text: targetText,
@@ -2111,7 +2911,7 @@ async function triggerTranslateSentence(sentenceId, forceRefresh = false) {
         versions: [
           {
             version_id: "v_byok_1",
-            provider: "gemini-byok",
+            provider: isNv ? "nvidia-byok" : "gemini-byok",
             model: actualModel,
             created_at: new Date().toISOString(),
             content: parsed,
@@ -2142,8 +2942,21 @@ async function triggerTranslateCommentaryPara(para, btnEl, forceRefresh = false)
   btnEl.disabled = true;
   btnEl.textContent = "導讀生成中...";
 
+  const chosenProvider = els.providerSelect.value;
   try {
     if (state.isBackendAvailable) {
+      const chosenModel =
+        chosenProvider === "nvidia"
+          ? state.nvidiaModel
+          : chosenProvider === "gemini"
+            ? state.userModel
+            : undefined;
+      const chosenKey =
+        chosenProvider === "nvidia"
+          ? state.nvidiaApiKey.trim() || undefined
+          : chosenProvider === "gemini"
+            ? state.userApiKey.trim() || undefined
+            : undefined;
       const res = await apiJson("/api/translate/commentary", {
         method: "POST",
         body: JSON.stringify({
@@ -2152,17 +2965,27 @@ async function triggerTranslateCommentaryPara(para, btnEl, forceRefresh = false)
           fascicle: state.commFull?.juan || state.currentFascicle,
           commentary_id: para.para_id,
           original_text: para.text,
-          provider: els.providerSelect.value,
+          provider: chosenProvider,
+          model: chosenModel,
+          api_key: chosenKey,
           force_refresh: forceRefresh,
         }),
       });
       state.commentaryGuides[para.para_id] = { ...res.record, from_kb: res.from_kb };
     } else {
-      // 純前端 BYOK 模式
-      if (!state.userApiKey) {
+      // 純前端 BYOK 模式（支援 Gemini 與 NVIDIA NIM 獨立金鑰）
+      const isNv = chosenProvider === "nvidia";
+      if (isNv && !state.nvidiaApiKey) {
         btnEl.disabled = false;
         btnEl.textContent = "✨ AI 白話導讀";
-        openByokModal();
+        openByokModal("nvidia");
+        showNvidiaStatus("請先輸入您的個人 NVIDIA API Key（nvapi-...）即可開啟註疏導讀！", "err");
+        return;
+      }
+      if (!isNv && !state.userApiKey) {
+        btnEl.disabled = false;
+        btnEl.textContent = "✨ AI 白話導讀";
+        openByokModal("gemini");
         showByokStatus("請先輸入您的個人 Gemini API Key 即可開啟註疏導讀！", "err");
         return;
       }
@@ -2172,12 +2995,16 @@ async function triggerTranslateCommentaryPara(para, btnEl, forceRefresh = false)
         state.commFull?.master?.work_title || "註疏",
         para.text
       );
-      const guideText = await callDirectGeminiApi(prompt, false, true);
+      const guideText = isNv
+        ? await callDirectNvidiaApi(prompt, false, true)
+        : await callDirectGeminiApi(prompt, false, true);
 
       const record = {
         plain_guide: guideText,
-        provider: "gemini-byok",
-        model: state.lastUsedModel || state.userModel,
+        provider: isNv ? "nvidia-byok" : "gemini-byok",
+        model: isNv
+          ? state.lastUsedNvidiaModel || state.nvidiaModel
+          : state.lastUsedModel || state.userModel,
         from_kb: false,
       };
 

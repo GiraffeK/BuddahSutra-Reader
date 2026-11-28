@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "sutra_id": "T10n0279",
   "fascicle": 1,
-  "updated_at": "2026-11-28T13:16:56+08:00",
+  "updated_at": "2026-11-28T14:07:09+08:00",
   "entries": {
     "T10n0279_001_p0004_s001": {
       "sentence_id": "T10n0279_001_p0004_s001",
@@ -384,6 +384,220 @@
               {
                 "term": "品",
                 "explanation": "佛經的分章單位（梵語 Varga），將義理類聚的文句彙編為同一章篇段落。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T10n0279_001_p0005_s005": {
+      "sentence_id": "T10n0279_001_p0005_s005",
+      "source_text": "其菩提樹，高顯殊特，金剛為身，瑠璃為幹，眾雜妙寶以為枝條；",
+      "source_hash": "sha256:de074d74f3f6",
+      "active_version_id": "v_20261128_134730_nvidia",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_134730_nvidia",
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "chengguan_shuchao"
+          ],
+          "created_at": "2026-11-28T13:47:30+08:00",
+          "content": {
+            "literal_translation": "其菩提樹，高顯殊特，金剛為身，瑠璃為幹，眾雜妙寶以為枝條；",
+            "colloquial_translation": "這棵菩提樹高聳顯著、殊勝特異，樹身由金剛寶構成，樹幹以瑠璃寶所成，枝條則以各種微妙寶物莊嚴。",
+            "dharma_analysis": "澄觀大師釋云：樹身高顯表佛果德高出九界；金剛為身表法身堅固不壞；瑠璃為幹表內外明徹、智慧通達；枝條華果表萬行果德圓滿。依報樹林亦能演說妙法，顯華嚴法界情與無情同圓種智。",
+            "terms": [
+              {
+                "term": "菩提樹",
+                "explanation": "佛陀成道之處，象徵覺悟果德；此處指道場莊嚴中表法身智慧之寶樹。"
+              },
+              {
+                "term": "金剛為身",
+                "explanation": "喻如來法身堅固不可破壞，猶如金剛寶性堅硬無比。"
+              },
+              {
+                "term": "瑠璃為幹",
+                "explanation": "喻佛智內外明徹、清淨透徹，如瑠璃寶光潔通透。"
+              },
+              {
+                "term": "眾雜妙寶",
+                "explanation": "指種種微妙寶物，象徵菩薩萬行莊嚴、福智雙修之相。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T10n0279_001_p0005_s006": {
+      "sentence_id": "T10n0279_001_p0005_s006",
+      "source_text": "寶葉扶疎，垂蔭如雲，寶華雜色，分枝布影，復以摩尼而為其果，含暉發焰，與華間列。",
+      "source_hash": "sha256:33284711b403",
+      "active_version_id": "v_20261128_134800_nvidia",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_134800_nvidia",
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "chengguan_shuchao"
+          ],
+          "created_at": "2026-11-28T13:48:00+08:00",
+          "content": {
+            "literal_translation": "寶葉稀疏茂盛，垂下的蔭涼像雲一樣，寶花顏色雜雜，分開枝條佈滿影子，又用摩尼珠作為它的果實，包含光輝發出焰光，與花交互排列。",
+            "colloquial_translation": "寶葉繁茂疏密有致，垂蔭如雲朵般覆蓋；寶花色彩繽紛，枝條分佈下斑駁光影；更以摩尼寶珠為果，蘊含光輝綻放焰光，與花朵交相間列。",
+            "dharma_analysis": "清涼疏釋枝條花果表萬行果德，此句摩尼為果、含暉發焰、與華間列，正是顯示佛果智慧光明（摩尼果）與悲智萬行（寶華）圓融無礙。依報菩提樹能放光雨寶、出音說法，證成華嚴法界情與無情同圓種智、依正不二之勝義莊嚴。",
+            "terms": [
+              {
+                "term": "扶疎",
+                "explanation": "形容樹木枝葉茂盛而疏密得宜，喻菩薩萬行莊嚴圓滿、自在不礙。"
+              },
+              {
+                "term": "摩尼",
+                "explanation": "梵語 Maṇi 譯為「無垢珠」或「如意珠」，象徵如來清淨法身與圓滿無礙智慧。"
+              },
+              {
+                "term": "含暉發焰",
+                "explanation": "蘊含光輝、發出焰光，喻佛果智慧內證外照、顯密雙運、自利利他。"
+              },
+              {
+                "term": "間列",
+                "explanation": "交互排列，象徵福慧雙修、萬行莊嚴與果德圓滿無礙共融。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T10n0279_001_p0006_s001": {
+      "sentence_id": "T10n0279_001_p0006_s001",
+      "source_text": "如來所處宮殿樓閣，廣博嚴麗，充遍十方，眾色摩尼之所集成，種種寶華以為莊校；",
+      "source_hash": "sha256:9cc32f2e8cca",
+      "active_version_id": "v_20261128_134858_nvidia",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_134858_nvidia",
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "chengguan_shuchao"
+          ],
+          "created_at": "2026-11-28T13:48:58+08:00",
+          "content": {
+            "literal_translation": "如來所住處之宮殿樓閣，寬廣博大莊嚴美麗，充滿遍滿十方，由各種顏色之摩尼寶所集合成就，以種種寶華作為莊嚴飾校。",
+            "colloquial_translation": "佛陀所居住的宮殿樓閣極其寬廣莊嚴，遍滿十方世界，全都是由各色摩尼寶珠聚集而成，並以各種寶花作為裝飾點綴。",
+            "dharma_analysis": "清涼疏釋此段顯示法身無礙，「不離當處而遍一切處」，一念之間即包攝法界。此正彰顯華嚴十玄門中「十世隔法異成門」與「一多相容不同門」之義，念劫圓融、塵剎互攝，宮殿即是法界莊嚴之表現。",
+            "terms": [
+              {
+                "term": "宮殿樓閣",
+                "explanation": "表表法身佛之依果莊嚴，非世間實體建築，乃如來願力與功德所顯現之無礙道場。"
+              },
+              {
+                "term": "充遍十方",
+                "explanation": "形容法身無邊際，不離當處而普遍一切處，體現「一即一切、一切即一」之圓融無礙。"
+              },
+              {
+                "term": "摩尼寶",
+                "explanation": "梵語 Maṇi 譯音，意為「無垢寶」或「如意珠」，象淨除煩惱垢染、隨願滿足眾生所求之佛法功德。"
+              },
+              {
+                "term": "莊校",
+                "explanation": "即莊嚴、飾校，指以寶華等妙物嚴飾道場，表彰萬行莊嚴成就之果德。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T10n0279_001_p0006_s002": {
+      "sentence_id": "T10n0279_001_p0006_s002",
+      "source_text": "諸莊嚴具，流光如雲，從宮殿間，萃影成幢；無邊菩薩，道場眾會，咸集其所。",
+      "source_hash": "sha256:46bf151f1252",
+      "active_version_id": "v_20261128_134930_nvidia",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_134930_nvidia",
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "chengguan_shuchao"
+          ],
+          "created_at": "2026-11-28T13:49:30+08:00",
+          "content": {
+            "literal_translation": "諸莊嚴具，流光如雲，從宮殿間，萃影成幢；無邊菩薩，道場眾會，咸集其所。",
+            "colloquial_translation": "各種莊嚴的寶具散發出如雲般的光芒，從宮殿樓閣之間聚集影像形成寶幢；無數無邊的菩薩，以及道場中的大眾集會，全都聚集在菩提樹下這個道場之中。",
+            "dharma_analysis": "此段描繪果海依報莊嚴之相，光影交映表『一多相容不同門』與『十世隔法異成門』。宮殿充遍十方即法身無礙，光影聚幢顯塵剎互攝，無邊菩薩咸集證『一念之間悉包法界』之圓融境界。",
+            "terms": [
+              {
+                "term": "莊嚴具",
+                "explanation": "指莊嚴道場之寶具，即前文所列眾色摩尼、寶華等依報莊嚴之總稱。"
+              },
+              {
+                "term": "流光如雲",
+                "explanation": "光明流動遍滿猶如雲霧，喻佛果智慧光無礙遍照、柔和普被之相。"
+              },
+              {
+                "term": "萃影成幢",
+                "explanation": "眾多光影聚集形成寶幢，表『一多相容』：一一光影互為因緣，不壞自相而成總相。"
+              },
+              {
+                "term": "無邊菩薩",
+                "explanation": "指十方剎海極微塵數等無邊際之菩薩眾，證得法界緣起、同時赴感之果位大士。"
+              },
+              {
+                "term": "道場眾會",
+                "explanation": "菩提道場中之聖賢大眾集會，包含菩薩、聲聞、天龍八部等一切得益有情。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T10n0279_001_p0006_s003": {
+      "sentence_id": "T10n0279_001_p0006_s003",
+      "source_text": "以能出現諸佛神力，摩尼寶王而為其網，如來自在神通之力，所有境界，皆於中現。",
+      "source_hash": "sha256:a6cf62f91679",
+      "active_version_id": "v_20261128_140709_nvidia",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_140709_nvidia",
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "chengguan_shuchao"
+          ],
+          "created_at": "2026-11-28T14:07:09+08:00",
+          "content": {
+            "literal_translation": "以能出現諸佛神力，摩尼寶王而為其網，如來自在神通之力，所有境界，皆於中現。",
+            "colloquial_translation": "這宮殿樓閣能顯現諸佛的神力，以摩尼寶王作為網羅，如來自在神通的威力，所有一切境界都在其中顯現。",
+            "dharma_analysis": "此句顯示莊嚴具非屬世間物質，乃依如來自在神力（加持力）與法界緣起（所緣境）雙重條件而顯現。澄觀大師指出「一念之間，悉包法界」，正揭「十玄門」中「一多相容不同門」與「十世隔法異成門」之義：剎那即永劫、微塵即法界，宮殿網羅無礙容納一切剎土眾生影像，證成法身充遍十方、不離當處而遍一切處之實相。",
+            "terms": [
+              {
+                "term": "摩尼寶王",
+                "explanation": "梵語 Maṇi-rāja，意為「寶珠之王」，象徵清淨無垢、能滿一切願、普照十方之法界緣起妙用，此喻宮殿網羅之體性清淨、功德圓滿。"
+              },
+              {
+                "term": "如來自在神通之力",
+                "explanation": "指佛果位中究竟圓滿之十自在（或十種神通），非世間神通可比，乃法身妙用隨緣顯現、無作而無不作之自在威力。"
+              },
+              {
+                "term": "境界",
+                "explanation": "即「所緣境」，此處雙關：一指宮殿網羅所攝之十方剎土、眾生、莊嚴等色法境界；二指如來智慧所照之法界實相境界，二者於緣起門中不二。"
+              },
+              {
+                "term": "一念之間，悉包法界",
+                "explanation": "澄觀疏釋此為「十玄門」中「一多相容不同門」與「十世隔法異成門」之顯現：剎那心念即能圓融容納無邊剎海塵劫，無時空障礙。"
               }
             ]
           }

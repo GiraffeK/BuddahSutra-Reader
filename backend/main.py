@@ -78,8 +78,9 @@ class TranslateSentenceRequest(BaseModel):
     sutra_id: str
     fascicle: int
     sentence_id: str
-    provider: str | None = Field(default=None, description="gemini 或 ollama，預設走設定值 gemini")
+    provider: str | None = Field(default=None, description="gemini、nvidia 或 ollama，預設走設定值 gemini")
     model: str | None = None
+    api_key: str | None = None
     selected_masters: list[str] | None = None
     force_refresh: bool = False
 
@@ -92,6 +93,7 @@ class TranslateCommentaryRequest(BaseModel):
     original_text: str | None = None
     provider: str | None = None
     model: str | None = None
+    api_key: str | None = None
     force_refresh: bool = False
 
 
@@ -104,6 +106,7 @@ class LookupCommentariesRequest(BaseModel):
 
 class ProbeModelRequest(BaseModel):
     model: str
+    provider: str = "gemini"
     api_key: str | None = None
 
 
@@ -122,6 +125,9 @@ async def probe_llm_model(req: ProbeModelRequest) -> dict[str, Any]:
     model_name = req.model.strip()
     if not model_name:
         raise HTTPException(status_code=400, detail="model 不可為空")
+    prov = (req.provider or "gemini").strip().lower()
+    if prov == "nvidia":
+        return await llm.probe_nvidia_model(model_name, api_key_override=req.api_key)
     return await llm.probe_gemini_model(model_name, api_key_override=req.api_key)
 
 
@@ -250,7 +256,7 @@ async def translate_sentence(req: TranslateSentenceRequest) -> dict[str, Any]:
                     req.sutra_id, req.fascicle, req.sentence_id, req.selected_masters
                 )
 
-        # Step 3: 呼叫 LLM（預設 Gemini API，可選 Ollama）
+        # Step 3: 呼叫 LLM（支援 Gemini、NVIDIA NIM、Ollama）
         try:
             content, used_provider, used_model = await llm.translate_sentence(
                 sutra_title=ctx["sutra_title"],
@@ -261,6 +267,7 @@ async def translate_sentence(req: TranslateSentenceRequest) -> dict[str, Any]:
                 commentaries=commentaries,
                 provider=req.provider,
                 model_override=req.model,
+                api_key_override=req.api_key,
             )
         except Exception as exc:
             raise HTTPException(status_code=503, detail=str(exc)) from exc
@@ -442,6 +449,7 @@ async def translate_commentary(req: TranslateCommentaryRequest) -> dict[str, Any
             original_commentary=orig_text,
             provider=req.provider,
             model_override=req.model,
+            api_key_override=req.api_key,
         )
     except Exception as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc

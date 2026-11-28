@@ -885,3 +885,56 @@
 3. **驗證與部署**：
    - 透過 `test_safe_command.py` 驗證 `node --check frontend/app.js` 與 FastAPI `/api/llm/probe-model` 端點皆 PASS。
    - 已部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）並提交推送至 GitHub（`origin/main`）。
+
+---
+
+## [2026-11-28 13:28] Session 38：新增 NVIDIA NIM API 引擎與獨立 API Key 管理（含 `nemotron-3-ultra-550b-a55b` 及古籍精選模型）
+
+### 1. 接收到的 User Prompt
+- 使用者提供 NVIDIA NIM 連結 `https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b?nim=hosted` 與頂部 LLM 引擎下拉截圖，要求：
+  1. 在頂部「LLM 引擎」加入 **NVIDIA** 選項。
+  2. 收錄適合解譯佛經古籍之 NVIDIA NIM 模型供選擇（以 `nvidia/nemotron-3-ultra-550b-a55b` 為首選，並納入 Qwen 3.5/3、DeepSeek V3.2/R1、GLM-4.7/5.3、Kimi K2 等）。
+  3. NVIDIA 使用**獨立的另一組 API Key**（`nvapi-...`），與 Gemini API Key 分開管理。
+
+### 2. 實作內容
+- **後端（`backend/llm_service.py`、`backend/main.py`、`.env.example`）**：
+  - 新增 `NVIDIA_API_KEY`、`NVIDIA_MODEL`（預設 `nvidia/nemotron-3-ultra-550b-a55b`）、`NVIDIA_BASE_URL`（`https://integrate.api.nvidia.com/v1`）。
+  - 實作 `_call_nvidia()`（OpenAI 相容 `/chat/completions` 並自動剝除推理模型 `<think>...</think>` 標籤）與 `probe_nvidia_model()` 輕量背景探測。
+  - `/api/translate/sentence`、`/api/translate/commentary`、`/api/llm/probe-model` 支援 `provider="nvidia"` 與前端傳入之獨立 `api_key` 覆寫。
+- **前端（`frontend/index.html`、`frontend/styles.css`、`frontend/app.js`）**：
+  - 頂部 `#providerSelect` 新增 `NVIDIA NIM API`，切換時狀態膠囊即時顯示 NVIDIA 狀態（點擊膠囊可直接開啟對應分頁）。
+  - 「🔑 API 設定」彈窗升級為雙分頁（`✨ Gemini API` / `🟢 NVIDIA NIM API`），各自獨立儲存與清除 `buddhasutra_gemini_api_key` 與 `buddhasutra_nvidia_api_key`。
+  - 實作 `callDirectNvidiaApi()` 與 `probeAllNvidiaModelsInBackground()`，進入網頁或儲存 NVIDIA 金鑰後同樣會於背景逐一檢測 NVIDIA 模型連線狀態並以燈號顯示於選單。
+- **驗證**：透過 `test_safe_command.py` 驗證 JS 語法、後端 `/api/llm/status`（含 `nvidia` 欄位）與 `/api/llm/probe-model`（`provider="nvidia"`）全數 PASS。
+- **頂部列精簡**：依使用者截圖回饋，移除重複的「🔑 API 設定」按鈕，將其與 `#llmStatusBadge` 合併為單一可點擊的狀態設定按鈕（帶 `🔑` 圖示），點擊直接開啟對應引擎分頁。
+
+---
+
+## [2026-11-28 13:51] Session 39：佛經朗讀功能（TTS）架構與體驗設計建議
+
+### 1. 接收到的 User Prompt
+- 使用者詢問：「現在，我想完成朗讀功能，你有何建議？」
+
+### 2. AI 的分析與建議方向
+- 針對佛經精讀情境提出三大核心設計：
+  1. **三種語音引擎分級**：優先以「瀏覽器 Web Speech API（Firebase 純前端＋本機皆免費用，Edge 內建台灣自然男女聲極佳）」起步，日後可選配本機 `edge-tts`（跨瀏覽器一致神經語音）或 Gemini TTS（莊嚴法師語氣）。
+  2. **佛經正音替換字典（必備特色）**：僅於送入 TTS 前將多音字／梵音詞（如南無→拿摩、般若→波惹、阿難→啊難等）替換為正音讀法，畫面原文不動。
+  3. **逐句同步連動體驗**：支援從目前鎖定經句開始連續朗讀，提供「僅讀經文／經文＋白話交替／僅讀白話」三模式、語速調節，並隨朗讀自動高亮經句與捲動古大德註疏。
+
+---
+
+## [2026-11-28 14:00] Session 40：實作方案 A「佛經原文朗讀」（Web Speech API + 佛經正音）並回覆 Global Rules 放置路徑
+
+### 1. 接收到的 User Prompt
+- 使用者決定先實作方案 A（Edge 瀏覽器朗讀佛經原文即可，其他模式日後再補），並詢問如何將自訂的 `CLAUDE.md` 設為 AI Agent 寫程式時的全域規範（Global Rules）。
+
+### 2. 實作內容（精簡外科式修改）
+- **前端介面（`frontend/index.html`、`frontend/styles.css`）**：
+  - 於經文副標題列右側加入精簡「🔊 朗讀原文 / ⏹ 停止 / 語速 / 語音選擇」控制列，並新增 `.sentence.speaking` 淡綠高亮樣式。
+- **前端朗讀邏輯（`frontend/app.js`）**：
+  - 內建 `BUDDHIST_PRONUNCIATION_MAP` 佛經正音替換表（僅作用於語音合成字串，畫面原文不動）。
+  - 自動優先排序並選取 Edge 台灣繁體中文自然語音（`HsiaoChen` / `YunJhe`），記住語速與語音偏好。
+  - 預設從目前鎖定／選中句（或卷首正文）開始逐句連續誦讀，唸到哪句自動高亮並置中捲動，同時聯動更新左側既有譯文與古大德註疏（不觸發多餘 AI 翻譯）；切換卷次或關閉頁面時自動停止朗讀。
+- **驗證**：透過 `test_safe_command.py` 驗證 `node --check frontend/app.js`、佛經正音替換單元測試與靜態頁面檢查皆 PASS。
+- **Global Rules 建置**：依使用者明確指示，確認 `C:\Users\AdminSean\.gemini\config\GEMINI.md` 尚不存在後，將全域編碼準則寫入該檔。
+- **部署與推送**：同步推送 NVIDIA NIM 整合、頂部列精簡與方案 A 佛經原文朗讀至 GitHub（`origin/main`），並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。

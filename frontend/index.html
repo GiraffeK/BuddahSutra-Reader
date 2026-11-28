@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>大正新脩大藏經｜AI 白話翻譯與古大德註疏系統</title>
-  <link rel="stylesheet" href="./styles.css?v=20261128a" />
+  <link rel="stylesheet" href="./styles.css?v=20261128d" />
 </head>
 <body>
   <!-- 頂部導覽列 -->
@@ -37,12 +37,11 @@
         <label for="providerSelect">LLM 引擎：</label>
         <select id="providerSelect">
           <option value="gemini" selected>Gemini API（預設）</option>
+          <option value="nvidia">NVIDIA NIM API</option>
           <option value="ollama">Ollama 本機模型</option>
         </select>
-        <span id="llmStatusBadge" class="status-pill status-checking">檢查中...</span>
+        <button id="llmStatusBadge" type="button" class="status-pill status-checking status-btn" title="點擊設定 API Key、切換模型與管理本機知識庫">🔑 檢查中...</button>
       </div>
-
-      <button id="byokBtn" class="byok-btn" title="設定個人 Gemini API Key 與本機知識庫備份">🔑 API 設定</button>
     </div>
   </header>
 
@@ -71,7 +70,21 @@
             <button id="nextFascicleBtn" class="fasc-nav-btn" title="下一卷">下一卷 ▶</button>
           </div>
         </div>
-        <div id="sutraSubtitle" class="sutra-subtitle"></div>
+        <div class="sutra-subtitle-row">
+          <div id="sutraSubtitle" class="sutra-subtitle"></div>
+          <div class="tts-bar" id="ttsBar">
+            <button id="ttsPlayBtn" type="button" class="fasc-nav-btn tts-play-btn" title="從目前選中句（或卷首）開始朗讀佛經原文">🔊 朗讀原文</button>
+            <button id="ttsStopBtn" type="button" class="fasc-nav-btn" style="display:none;" title="停止朗讀">⏹ 停止</button>
+            <select id="ttsRateSelect" class="mini-select" title="朗讀語速">
+              <option value="0.75">0.75x</option>
+              <option value="0.85">0.85x</option>
+              <option value="0.95" selected>0.95x</option>
+              <option value="1.05">1.05x</option>
+              <option value="1.2">1.2x</option>
+            </select>
+            <select id="ttsVoiceSelect" class="mini-select tts-voice-select" title="選擇瀏覽器語音（Edge 建議選 HsiaoChen 或 YunJhe 自然語音）"></select>
+          </div>
+        </div>
         <div id="cbetaToast" class="cbeta-toast" style="display:none;"></div>
       </div>
 
@@ -137,64 +150,121 @@
   <div id="byokModal" class="modal-backdrop" style="display:none;">
     <div class="modal-card">
       <div class="modal-header">
-        <h3>🔑 個人 Gemini API Key 與本機知識庫設定</h3>
+        <h3>🔑 個人 AI API Key 與本機知識庫設定</h3>
         <button id="closeByokModalBtn" class="modal-close-btn">&times;</button>
       </div>
       <div class="modal-body">
         <p class="modal-desc">
           當前運作模式：<strong id="appModeLabel">偵測中...</strong><br />
-          在雲端純前端模式（Firebase Hosting）下，無需伺服器維護。您的個人 API Key 與自選經文翻譯記錄僅儲存於您個人的本機瀏覽器（LocalStorage / IndexedDB），完全私密且絕不上傳伺服器。
+          Gemini 與 NVIDIA NIM 各自使用獨立的 API Key；所有個人金鑰與翻譯記錄僅儲存於您本機瀏覽器（LocalStorage / IndexedDB），絕不上傳至第三方伺服器。
         </p>
 
-        <div class="form-group">
-          <label for="byokApiKeyInput">Gemini API Key：</label>
-          <div class="input-with-btn">
-            <input id="byokApiKeyInput" type="password" placeholder="請貼上 AIzaSy 開頭的 Gemini API Key..." />
-            <button id="toggleKeyVisibilityBtn" type="button" class="mini-btn">顯示</button>
-          </div>
-          <small class="form-hint">
-            尚未持有金鑰？可至 <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio 免費申請 API Key</a>。
-          </small>
+        <div class="api-provider-tabs">
+          <button id="tabGeminiBtn" type="button" class="api-tab-btn active">✨ Gemini API</button>
+          <button id="tabNvidiaBtn" type="button" class="api-tab-btn">🟢 NVIDIA NIM API</button>
         </div>
 
-        <div class="form-group">
-          <label for="byokModelSelect">Gemini 模型型號（實際驗證可用之 3.5 ～ 4 世代）：</label>
-          <select id="byokModelSelect">
-            <option value="gemini-3.5-flash-lite" selected>gemini-3.5-flash-lite（預設推薦，輕量高速、免費配額較寬鬆）</option>
-            <option value="gemini-3.8-flash">gemini-3.8-flash（3.x 最新高速主力）</option>
-            <option value="gemini-3.7-flash">gemini-3.7-flash</option>
-            <option value="gemini-3.6-flash">gemini-3.6-flash</option>
-            <option value="gemini-3.5-flash">gemini-3.5-flash</option>
-            <option value="gemini-4-neon">gemini-4-neon（Gemini 4 最新世代）</option>
-            <option value="gemini-4-hydrogen">gemini-4-hydrogen（Gemini 4 最新世代）</option>
-            <option value="gemini-4-argon">gemini-4-argon（Gemini 4 最新世代）</option>
-            <option value="gemini-4-carbon">gemini-4-carbon（Gemini 4 最新世代）</option>
-            <option value="gemini-3.1-pro-preview">gemini-3.1-pro-preview（深度法義剖析）</option>
-            <option value="gemini-2.5-flash">gemini-2.5-flash（2.5 穩定備援）</option>
-            <option value="gemini-2.5-flash-lite">gemini-2.5-flash-lite（2.5 輕量備援）</option>
-            <option value="custom">自訂模型型號...</option>
-          </select>
-          <input
-            id="byokCustomModelInput"
-            type="text"
-            placeholder="請輸入自訂 Gemini 模型代碼（例如 gemini-flash-latest）..."
-            style="display:none; margin-top:8px;"
-          />
-          <div id="modelProbeBar" class="model-probe-bar">
-            <span id="modelProbeSummary" class="model-probe-summary">進入網頁時將自動在背景逐一檢測模型連線狀態</span>
-            <button id="reprobeModelsBtn" type="button" class="mini-btn">🔄 重新檢測全部</button>
+        <!-- Gemini 設定分頁 -->
+        <div id="geminiSettingsPane">
+          <div class="form-group">
+            <label for="byokApiKeyInput">Gemini API Key：</label>
+            <div class="input-with-btn">
+              <input id="byokApiKeyInput" type="password" placeholder="請貼上 AIzaSy 開頭的 Gemini API Key..." />
+              <button id="toggleKeyVisibilityBtn" type="button" class="mini-btn">顯示</button>
+            </div>
+            <small class="form-hint">
+              尚未持有金鑰？可至 <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio 免費申請 API Key</a>。
+            </small>
           </div>
-          <small class="form-hint">
-            若所選模型達免費層每日配額（429），系統將自動切換至其他可用備援模型完成翻譯。
-          </small>
+
+          <div class="form-group">
+            <label for="byokModelSelect">Gemini 模型型號（實際驗證可用之 3.5 ～ 4 世代）：</label>
+            <select id="byokModelSelect">
+              <option value="gemini-3.5-flash-lite" selected>gemini-3.5-flash-lite（預設推薦，輕量高速、免費配額較寬鬆）</option>
+              <option value="gemini-3.8-flash">gemini-3.8-flash（3.x 最新高速主力）</option>
+              <option value="gemini-3.7-flash">gemini-3.7-flash</option>
+              <option value="gemini-3.6-flash">gemini-3.6-flash</option>
+              <option value="gemini-3.5-flash">gemini-3.5-flash</option>
+              <option value="gemini-4-neon">gemini-4-neon（Gemini 4 最新世代）</option>
+              <option value="gemini-4-hydrogen">gemini-4-hydrogen（Gemini 4 最新世代）</option>
+              <option value="gemini-4-argon">gemini-4-argon（Gemini 4 最新世代）</option>
+              <option value="gemini-4-carbon">gemini-4-carbon（Gemini 4 最新世代）</option>
+              <option value="gemini-3.1-pro-preview">gemini-3.1-pro-preview（深度法義剖析）</option>
+              <option value="gemini-2.5-flash">gemini-2.5-flash（2.5 穩定備援）</option>
+              <option value="gemini-2.5-flash-lite">gemini-2.5-flash-lite（2.5 輕量備援）</option>
+              <option value="custom">自訂模型型號...</option>
+            </select>
+            <input
+              id="byokCustomModelInput"
+              type="text"
+              placeholder="請輸入自訂 Gemini 模型代碼（例如 gemini-flash-latest）..."
+              style="display:none; margin-top:8px;"
+            />
+            <div id="modelProbeBar" class="model-probe-bar">
+              <span id="modelProbeSummary" class="model-probe-summary">進入網頁時將自動在背景逐一檢測模型連線狀態</span>
+              <button id="reprobeModelsBtn" type="button" class="mini-btn">🔄 重新檢測全部</button>
+            </div>
+            <small class="form-hint">
+              若所選模型達免費層每日配額（429），系統將自動切換至其他可用備援模型完成翻譯。
+            </small>
+          </div>
+
+          <div class="modal-action-row">
+            <button id="saveByokKeyBtn" class="primary-btn">儲存 Gemini 金鑰</button>
+            <button id="testByokKeyBtn" class="secondary-btn">測試連線</button>
+            <button id="clearByokKeyBtn" class="danger-btn">清除金鑰</button>
+          </div>
+          <div id="byokStatusMsg" class="byok-status-msg" style="display:none;"></div>
         </div>
 
-        <div class="modal-action-row">
-          <button id="saveByokKeyBtn" class="primary-btn">儲存金鑰</button>
-          <button id="testByokKeyBtn" class="secondary-btn">測試連線</button>
-          <button id="clearByokKeyBtn" class="danger-btn">清除金鑰</button>
+        <!-- NVIDIA NIM 設定分頁 -->
+        <div id="nvidiaSettingsPane" style="display:none;">
+          <div class="form-group">
+            <label for="nvidiaApiKeyInput">NVIDIA NIM API Key（獨立金鑰，與 Gemini 分開儲存）：</label>
+            <div class="input-with-btn">
+              <input id="nvidiaApiKeyInput" type="password" placeholder="請貼上 nvapi- 開頭的 NVIDIA API Key..." />
+              <button id="toggleNvidiaKeyVisibilityBtn" type="button" class="mini-btn">顯示</button>
+            </div>
+            <small class="form-hint">
+              尚未持有金鑰？可至 <a href="https://build.nvidia.com/settings/api-keys" target="_blank" rel="noopener">NVIDIA Build (NIM) 申請免費 API Key</a>（<code>nvapi-...</code>）。本機後端模式亦支援於 <code>.env</code> 設定 <code>NVIDIA_API_KEY</code>。
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label for="nvidiaModelSelect">NVIDIA NIM 模型型號（精選適合漢傳佛經與古文解譯）：</label>
+            <select id="nvidiaModelSelect">
+              <option value="nvidia/nemotron-3-ultra-550b-a55b" selected>nvidia/nemotron-3-ultra-550b-a55b（預設，NVIDIA 旗艦 550B 深度推論）</option>
+              <option value="qwen/qwen3.5-397b-a17b">qwen/qwen3.5-397b-a17b（通義千問 3.5 旗艦，古漢語與佛學典籍極強）</option>
+              <option value="qwen/qwen3-235b-a22b">qwen/qwen3-235b-a22b（通義千問 3 235B，文言直譯與繁中流暢）</option>
+              <option value="deepseek-ai/deepseek-v3.2">deepseek-ai/deepseek-v3.2（DeepSeek V3.2，漢文義理與古籍語感極佳）</option>
+              <option value="deepseek-ai/deepseek-r1">deepseek-ai/deepseek-r1（DeepSeek R1，深度法義推理剖析）</option>
+              <option value="z-ai/glm-4.7">z-ai/glm-4.7（智譜 GLM-4.7，中文古籍與長文解讀）</option>
+              <option value="z-ai/glm-5.3-flash">z-ai/glm-5.3-flash（智譜 GLM-5.3 Flash，高速中文解譯）</option>
+              <option value="moonshotai/kimi-k2">moonshotai/kimi-k2（Kimi K2，長文本與文言脈絡理解）</option>
+              <option value="custom">自訂 NVIDIA NIM 模型代碼...</option>
+            </select>
+            <input
+              id="nvidiaCustomModelInput"
+              type="text"
+              placeholder="請輸入 NVIDIA NIM 模型代碼（例如 nvidia/nemotron-3-ultra-550b-a55b）..."
+              style="display:none; margin-top:8px;"
+            />
+            <div id="nvidiaProbeBar" class="model-probe-bar">
+              <span id="nvidiaProbeSummary" class="model-probe-summary">設定 NVIDIA 金鑰後將自動在背景逐一檢測模型連線狀態</span>
+              <button id="reprobeNvidiaModelsBtn" type="button" class="mini-btn">🔄 重新檢測全部</button>
+            </div>
+            <small class="form-hint">
+              提示：NVIDIA NIM 端點（<code>integrate.api.nvidia.com</code>）若在純前端雲端瀏覽器遇 CORS 限制，建議於本機執行 <code>python run_app.py</code> 使用後端代理呼叫。
+            </small>
+          </div>
+
+          <div class="modal-action-row">
+            <button id="saveNvidiaKeyBtn" class="primary-btn">儲存 NVIDIA 金鑰</button>
+            <button id="testNvidiaKeyBtn" class="secondary-btn">測試連線</button>
+            <button id="clearNvidiaKeyBtn" class="danger-btn">清除金鑰</button>
+          </div>
+          <div id="nvidiaStatusMsg" class="byok-status-msg" style="display:none;"></div>
         </div>
-        <div id="byokStatusMsg" class="byok-status-msg" style="display:none;"></div>
 
         <hr style="margin: 20px 0; border: none; border-top: 1px solid #e4dccb;" />
 
@@ -216,6 +286,6 @@
     </div>
   </div>
 
-  <script src="./app.js?v=20261128a"></script>
+  <script src="./app.js?v=20261128d"></script>
 </body>
 </html>

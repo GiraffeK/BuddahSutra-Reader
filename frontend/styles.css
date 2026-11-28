@@ -257,6 +257,21 @@ body {
   font-weight: 600;
 }
 
+.status-btn {
+  border: 1px solid rgba(107, 65, 28, 0.22);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 11px;
+  transition: filter 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+.status-btn:hover {
+  filter: brightness(0.96);
+  box-shadow: 0 2px 6px rgba(60, 42, 20, 0.14);
+}
+
 .status-ok {
   background: var(--green-kb-bg);
   color: var(--green-kb);
@@ -1497,5 +1512,69 @@ mark.comm-hit {
 .model-probe-summary.err {
   color: #b32d2d;
   font-weight: 600;
+}
+
+.api-provider-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #e4dccb;
+  padding-bottom: 8px;
+}
+
+.api-tab-btn {
+  flex: 1;
+  padding: 7px 12px;
+  border: 1px solid #d7c7aa;
+  border-radius: 7px;
+  background: #f8f3e7;
+  color: #5b4a36;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.api-tab-btn:hover {
+  background: #efe5cf;
+}
+
+.api-tab-btn.active {
+  background: #8c5a2b;
+  border-color: #6b411c;
+  color: #fffdf8;
+}
+
+/* 佛經原文朗讀控制列（Web Speech API） */
+.sutra-subtitle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.tts-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tts-play-btn.active {
+  background: #2c6e49;
+  border-color: #215437;
+  color: #fffdf8;
+}
+
+.tts-voice-select {
+  max-width: 210px;
+}
+
+.sentence.speaking {
+  background: #d9f2e4;
+  outline: 1.5px solid #2c6e49;
+  border-radius: 4px;
 }
 
