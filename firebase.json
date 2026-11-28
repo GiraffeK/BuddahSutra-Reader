@@ -43,6 +43,15 @@
             "value": "max-age=3600"
           }
         ]
+      },
+      {
+        "source": "/data/@(masters_registry|catalog|commentaries_index).json",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, must-revalidate"
+          }
+        ]
       }
     ]
   }

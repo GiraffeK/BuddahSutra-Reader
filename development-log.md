@@ -1188,3 +1188,18 @@
 - **方案 B（CBETA 動態搜尋備援）**：
   - 於 `frontend/app.js` 新增 `searchDynamicCbetaCommentaries()`：凡點選尚未預錄大德之經典，右下角提供「🔍 向 CBETA 搜尋相關古大德註疏」按鈕，即時檢索 CBETA 經疏部／卍續藏並支援點擊直接載入閱讀。
 - **驗證、推送與部署**：透過 `python test_safe_command.py` 同步名錄、驗證 JS 語法與 JSON 完整性、推送至 GitHub（`origin/main`）並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。
+
+
+---
+
+## [2026-11-28 17:11] Session 61：修復 Firebase Hosting 瀏覽器 1 小時快取舊版 `masters_registry.json` 導致法華經大德未顯示問題
+
+### 1. 接收到的 User Prompt
+- 使用者附 Firebase 線上版截圖回報：「明明法華經有古大德注疏, 似乎localhost可以讀到注疏，但firebase不行」。
+
+### 2. 根因與修復
+- **根因**：`firebase.json` 對 `/data/**/*.json` 設定了 `Cache-Control: max-age=3600`（1 小時快取），且前端 `fetch("./data/masters_registry.json")` 未帶版本號，導致瀏覽器重整時仍命中 1 小時前的舊版名錄（不含法華經等新增的 15 部經大德）。此外 `cbdata.dila.edu.tw` 在純前端瀏覽器遇 CORS 時直接顯示英文 `Failed to fetch`。
+- **修復**：
+  - 於 `frontend/app.js` 為 `masters_registry.json` 與 `catalog.json` 加上版號 `?v=20261128w` 與 `{ cache: "no-cache" }`，徹底破除舊快取。
+  - 於 `firebase.json` 為 `/data/@(masters_registry|catalog|commentaries_index).json` 設定 `Cache-Control: no-cache, must-revalidate`。
+  - 改善 `searchDynamicCbetaCommentaries()` 的 CORS 友善中文提示，並透過 `python test_safe_command.py` 驗證、推送與部署。

@@ -1932,9 +1932,9 @@ async function loadCatalog() {
     }
   }
 
-  // 純前端模式：讀取 ./data/catalog.json
+  // 純前端模式：讀取 ./data/catalog.json（帶版本號避免命中舊版 1 小時 CDN/瀏覽器快取）
   try {
-    const res = await fetch("./data/catalog.json");
+    const res = await fetch("./data/catalog.json?v=20261128w", { cache: "no-cache" });
     state.catalog = await res.json();
     renderCatalogTree("");
   } catch (err) {
@@ -2211,7 +2211,7 @@ let _mastersRegistryCache = null;
 async function getMastersRegistryClient() {
   if (_mastersRegistryCache) return _mastersRegistryCache;
   try {
-    const res = await fetch("./data/masters_registry.json");
+    const res = await fetch("./data/masters_registry.json?v=20261128w", { cache: "no-cache" });
     if (res.ok) {
       _mastersRegistryCache = await res.json();
       return _mastersRegistryCache;
@@ -2578,7 +2578,10 @@ async function searchDynamicCbetaCommentaries(sutraId, sutraTitle) {
       listEl.appendChild(itemBtn);
     });
   } catch (err) {
-    listEl.innerHTML = `<div class="error-box">⚠️ ${escapeHtml(err.message)}</div>`;
+    const msg = /failed to fetch|networkerror/i.test(err?.message || "")
+      ? "CBETA 線上檢索端點（cbdata.dila.edu.tw）目前不允許純前端瀏覽器跨域查詢（CORS）或暫時無回應；已收錄之 17 部核心經論（含法華、華嚴、楞嚴、金剛、心經、淨土三經等）古大德皆會自動從 GitHub 鏡像載入。"
+      : err.message;
+    listEl.innerHTML = `<div class="error-box">⚠️ ${escapeHtml(msg)}</div>`;
   } finally {
     if (btn) {
       btn.disabled = false;

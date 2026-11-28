@@ -1,0 +1,906 @@
+{
+  "schema_version": "1.0",
+  "source": "CBETA Online Data API (cbdata.dila.edu.tw)",
+  "sutra_id": "T12n0366",
+  "sutra_title": "佛說阿彌陀經",
+  "edition": "1卷本",
+  "translator": "姚秦 鳩摩羅什譯",
+  "fascicle": 1,
+  "fascicle_count": 1,
+  "fascicle_title": "卷第1",
+  "paragraphs": [
+    {
+      "paragraph_id": "T12n0366_001_p0001",
+      "index": 1,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0001_s001",
+          "index": 1,
+          "text": "佛說阿彌陀經",
+          "source_hash": "sha256:4ddc776a6968"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0002",
+      "index": 2,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0002_s001",
+          "index": 1,
+          "text": "姚秦龜茲三藏鳩摩羅什譯",
+          "source_hash": "sha256:683a4a032c8b"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0003",
+      "index": 3,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0003_s001",
+          "index": 1,
+          "text": "如是我聞：",
+          "source_hash": "sha256:37e23269047f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0004",
+      "index": 4,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0004_s001",
+          "index": 1,
+          "text": "一時，佛在舍衛國祇樹給孤獨園，與大比丘僧千二百五十人俱，皆是大阿羅漢，眾所知識。",
+          "source_hash": "sha256:1fb93ff43836"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0004_s002",
+          "index": 2,
+          "text": "長老舍利弗、摩訶目乾連、摩訶迦葉、摩訶迦栴延、摩訶拘絺羅、離婆多、周梨槃陀迦、難陀、阿難陀、羅睺羅、憍梵波提、賓頭盧頗羅墮、迦留陀夷、摩訶劫賓那、薄俱羅、阿㝹樓馱，如是等諸大弟子，并諸菩薩摩訶薩——文殊師利法王子、阿逸多菩薩、乾陀訶提菩薩、常精進菩薩——與如是等諸大菩薩，及釋提桓因等無量諸天大眾俱。",
+          "source_hash": "sha256:f454555ae56b"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0005",
+      "index": 5,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0005_s001",
+          "index": 1,
+          "text": "爾時，佛告長老舍利弗：",
+          "source_hash": "sha256:a8e56aea1c26"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0006",
+      "index": 6,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0006_s001",
+          "index": 1,
+          "text": "「從是西方過十萬億佛土，有世界名曰極樂。",
+          "source_hash": "sha256:3c6ebe6e3237"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0006_s002",
+          "index": 2,
+          "text": "其土有佛，號阿彌陀，今現在說法。",
+          "source_hash": "sha256:e779415cea2b"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0006_s003",
+          "index": 3,
+          "text": "舍利弗！",
+          "source_hash": "sha256:4c5d61d793d5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0006_s004",
+          "index": 4,
+          "text": "彼土何故名為極樂？",
+          "source_hash": "sha256:d7a0aaf8105d"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0006_s005",
+          "index": 5,
+          "text": "其國眾生無有眾苦，但受諸樂，故名極樂。",
+          "source_hash": "sha256:b48eac35226e"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0006_s006",
+          "index": 6,
+          "text": "又舍利弗！",
+          "source_hash": "sha256:2245292f38de"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0006_s007",
+          "index": 7,
+          "text": "極樂國土，七重欄楯、七重羅網、七重行樹，皆是四寶周匝圍繞，是故彼國名曰極樂。",
+          "source_hash": "sha256:e18fba27b9eb"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0007",
+      "index": 7,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0007_s001",
+          "index": 1,
+          "text": "「又舍利弗！",
+          "source_hash": "sha256:02a7be76410f"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0007_s002",
+          "index": 2,
+          "text": "極樂國土有七寶池，八功德水充滿其中，池底純以金沙布地。",
+          "source_hash": "sha256:7b12124d0983"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0007_s003",
+          "index": 3,
+          "text": "四邊階道，金、銀、琉璃、頗梨合成；",
+          "source_hash": "sha256:a84d95ed6077"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0007_s004",
+          "index": 4,
+          "text": "上有樓閣，亦以金、銀、琉璃、頗梨、車𤦲、赤珠、馬瑙而嚴飾之。",
+          "source_hash": "sha256:17429474fa5e"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0007_s005",
+          "index": 5,
+          "text": "池中蓮花，大如車輪，青色青光，黃色黃光，赤色赤光，白色白光，微妙香潔。",
+          "source_hash": "sha256:65011e0dfb78"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0007_s006",
+          "index": 6,
+          "text": "舍利弗！",
+          "source_hash": "sha256:4c5d61d793d5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0007_s007",
+          "index": 7,
+          "text": "極樂國土成就如是功德莊嚴。",
+          "source_hash": "sha256:45eaaa51f96d"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0008",
+      "index": 8,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0008_s001",
+          "index": 1,
+          "text": "「又舍利弗！",
+          "source_hash": "sha256:02a7be76410f"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0008_s002",
+          "index": 2,
+          "text": "彼佛國土，常作天樂，黃金為地，晝夜六時，天雨曼陀羅華。",
+          "source_hash": "sha256:5187de2cc886"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0008_s003",
+          "index": 3,
+          "text": "其國眾生，常以清旦，各以衣裓盛眾妙華，供養他方十萬億佛；",
+          "source_hash": "sha256:cc5ab14a7415"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0008_s004",
+          "index": 4,
+          "text": "即以食時，還到本國，飯食經行。",
+          "source_hash": "sha256:29fee7dfe3da"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0008_s005",
+          "index": 5,
+          "text": "舍利弗！",
+          "source_hash": "sha256:4c5d61d793d5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0008_s006",
+          "index": 6,
+          "text": "極樂國土成就如是功德莊嚴。",
+          "source_hash": "sha256:45eaaa51f96d"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0009",
+      "index": 9,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0009_s001",
+          "index": 1,
+          "text": "「復次舍利弗！",
+          "source_hash": "sha256:51fd382a491d"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0009_s002",
+          "index": 2,
+          "text": "彼國常有種種奇妙雜色之鳥——白鵠、孔雀、鸚鵡、舍利、迦陵頻伽、共命之鳥。",
+          "source_hash": "sha256:6c9ab440d282"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0009_s003",
+          "index": 3,
+          "text": "是諸眾鳥，晝夜六時出和雅音，其音演暢五根、五力、七菩提分、八聖道分如是等法。",
+          "source_hash": "sha256:4e4eb58c4a39"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0009_s004",
+          "index": 4,
+          "text": "其土眾生聞是音已，皆悉念佛、念法、念僧。",
+          "source_hash": "sha256:a7118e773b1b"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0009_s005",
+          "index": 5,
+          "text": "舍利弗！",
+          "source_hash": "sha256:4c5d61d793d5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0009_s006",
+          "index": 6,
+          "text": "汝勿謂此鳥實是罪報所生。",
+          "source_hash": "sha256:162bd9b05856"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0009_s007",
+          "index": 7,
+          "text": "所以者何？",
+          "source_hash": "sha256:44e1f92edcc6"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0009_s008",
+          "index": 8,
+          "text": "彼佛國土無三惡趣。",
+          "source_hash": "sha256:695633cbc003"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0009_s009",
+          "index": 9,
+          "text": "舍利弗！",
+          "source_hash": "sha256:4c5d61d793d5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0009_s010",
+          "index": 10,
+          "text": "其佛國土尚無三惡道之名，何況有實？",
+          "source_hash": "sha256:a25b36af90d2"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0009_s011",
+          "index": 11,
+          "text": "是諸眾鳥，皆是阿彌陀佛欲令法音宣流，變化所作。",
+          "source_hash": "sha256:e243529839f6"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0009_s012",
+          "index": 12,
+          "text": "舍利弗！",
+          "source_hash": "sha256:4c5d61d793d5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0009_s013",
+          "index": 13,
+          "text": "彼佛國土微風吹動，諸寶行樹及寶羅網出微妙音，譬如百千種樂同時俱作，聞是音者，皆自然生念佛、念法、念僧之心。",
+          "source_hash": "sha256:f50364706331"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0009_s014",
+          "index": 14,
+          "text": "舍利弗！",
+          "source_hash": "sha256:4c5d61d793d5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0009_s015",
+          "index": 15,
+          "text": "其佛國土成就如是功德莊嚴。",
+          "source_hash": "sha256:06bfb8380c32"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0010",
+      "index": 10,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0010_s001",
+          "index": 1,
+          "text": "「舍利弗！",
+          "source_hash": "sha256:c1e982126836"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0010_s002",
+          "index": 2,
+          "text": "於汝意云何？",
+          "source_hash": "sha256:cc9d40ae1f11"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0010_s003",
+          "index": 3,
+          "text": "彼佛何故號阿彌陀？",
+          "source_hash": "sha256:f2a0364ce507"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0010_s004",
+          "index": 4,
+          "text": "舍利弗！",
+          "source_hash": "sha256:4c5d61d793d5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0010_s005",
+          "index": 5,
+          "text": "彼佛光明無量，照十方國無所障礙，是故號為阿彌陀。",
+          "source_hash": "sha256:cfee27dd3537"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0010_s006",
+          "index": 6,
+          "text": "又舍利弗！",
+          "source_hash": "sha256:2245292f38de"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0010_s007",
+          "index": 7,
+          "text": "彼佛壽命及其人民，無量無邊阿僧祇劫，故名阿彌陀。",
+          "source_hash": "sha256:a1d26552527b"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0010_s008",
+          "index": 8,
+          "text": "舍利弗！",
+          "source_hash": "sha256:4c5d61d793d5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0010_s009",
+          "index": 9,
+          "text": "阿彌陀佛成佛已來，於今十劫。",
+          "source_hash": "sha256:2ac6359b3463"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0010_s010",
+          "index": 10,
+          "text": "又舍利弗！",
+          "source_hash": "sha256:2245292f38de"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0010_s011",
+          "index": 11,
+          "text": "彼佛有無量無邊聲聞弟子，皆阿羅漢，非是算數之所能知；",
+          "source_hash": "sha256:9269f24593fc"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0010_s012",
+          "index": 12,
+          "text": "諸菩薩，亦復如是。",
+          "source_hash": "sha256:031a3b6c8307"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0010_s013",
+          "index": 13,
+          "text": "舍利弗！",
+          "source_hash": "sha256:4c5d61d793d5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0010_s014",
+          "index": 14,
+          "text": "彼佛國土成就如是功德莊嚴。",
+          "source_hash": "sha256:9fd72a7aaaf8"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0011",
+      "index": 11,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0011_s001",
+          "index": 1,
+          "text": "「又舍利弗！",
+          "source_hash": "sha256:02a7be76410f"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0011_s002",
+          "index": 2,
+          "text": "極樂國土眾生生者，皆是阿鞞跋致。",
+          "source_hash": "sha256:f951cb682799"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0011_s003",
+          "index": 3,
+          "text": "其中多有一生補處，其數甚多，非是算數所能知之，但可以無量無邊阿僧祇劫說。",
+          "source_hash": "sha256:ffae6c35516f"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0011_s004",
+          "index": 4,
+          "text": "舍利弗！",
+          "source_hash": "sha256:4c5d61d793d5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0011_s005",
+          "index": 5,
+          "text": "眾生聞者，應當發願，願生彼國。",
+          "source_hash": "sha256:019d24375830"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0011_s006",
+          "index": 6,
+          "text": "所以者何？",
+          "source_hash": "sha256:44e1f92edcc6"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0011_s007",
+          "index": 7,
+          "text": "得與如是諸上善人俱會一處。",
+          "source_hash": "sha256:3c003eceddf9"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0012",
+      "index": 12,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0012_s001",
+          "index": 1,
+          "text": "「舍利弗！",
+          "source_hash": "sha256:c1e982126836"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0012_s002",
+          "index": 2,
+          "text": "不可以少善根福德因緣得生彼國。",
+          "source_hash": "sha256:cb7930f5f0c5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0012_s003",
+          "index": 3,
+          "text": "舍利弗！",
+          "source_hash": "sha256:4c5d61d793d5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0012_s004",
+          "index": 4,
+          "text": "若有善男子、善女人，聞說阿彌陀佛，執持名號，若一日、若二日、若三日、若四日、若五日、若六日、若七日，一心不亂。",
+          "source_hash": "sha256:c4589ec1e713"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0012_s005",
+          "index": 5,
+          "text": "其人臨命終時，阿彌陀佛與諸聖眾，現在其前。",
+          "source_hash": "sha256:d650b2e0482b"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0012_s006",
+          "index": 6,
+          "text": "是人終時，心不顛倒，即得往生阿彌陀佛極樂國土。",
+          "source_hash": "sha256:2e1dbc7560f4"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0012_s007",
+          "index": 7,
+          "text": "舍利弗！",
+          "source_hash": "sha256:4c5d61d793d5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0012_s008",
+          "index": 8,
+          "text": "我見是利，故說此言。",
+          "source_hash": "sha256:c14edd7f675b"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0012_s009",
+          "index": 9,
+          "text": "若有眾生聞是說者，應當發願生彼國土。",
+          "source_hash": "sha256:dd17c33408e3"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0013",
+      "index": 13,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0013_s001",
+          "index": 1,
+          "text": "「舍利弗！",
+          "source_hash": "sha256:c1e982126836"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0013_s002",
+          "index": 2,
+          "text": "如我今者，讚歎阿彌陀佛不可思議功德；",
+          "source_hash": "sha256:ffeedee819a5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0013_s003",
+          "index": 3,
+          "text": "東方亦有阿閦鞞佛、須彌相佛、大須彌佛、須彌光佛、妙音佛，如是等恒河沙數諸佛，各於其國出廣長舌相，遍覆三千大千世界，說誠實言：『汝等眾生，當信是稱讚不可思議功德一切諸佛所護念經。』",
+          "source_hash": "sha256:1cd58d3432a5"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0014",
+      "index": 14,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0014_s001",
+          "index": 1,
+          "text": "「舍利弗！",
+          "source_hash": "sha256:c1e982126836"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0014_s002",
+          "index": 2,
+          "text": "南方世界有日月燈佛、名聞光佛、大焰肩佛、須彌燈佛、無量精進佛，如是等恒河沙數諸佛，各於其國出廣長舌相，遍覆三千大千世界，說誠實言：『汝等眾生，當信是稱讚不可思議功德一切諸佛所護念經。』",
+          "source_hash": "sha256:15d98184a14b"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0015",
+      "index": 15,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0015_s001",
+          "index": 1,
+          "text": "「舍利弗！",
+          "source_hash": "sha256:c1e982126836"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0015_s002",
+          "index": 2,
+          "text": "西方世界有無量壽佛、無量相佛、無量幢佛、大光佛、大明佛、寶相佛、淨光佛，如是等恒河沙數諸佛，各於其國出廣長舌相，遍覆三千大千世界，說誠實言：『汝等眾生，當信是稱讚不可思議功德一切諸佛所護念經。』",
+          "source_hash": "sha256:f12935fc7711"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0016",
+      "index": 16,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0016_s001",
+          "index": 1,
+          "text": "「舍利弗！",
+          "source_hash": "sha256:c1e982126836"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0016_s002",
+          "index": 2,
+          "text": "北方世界有焰肩佛、最勝音佛、難沮佛、日生佛、網明佛，如是等恒河沙數諸佛，各於其國出廣長舌相，遍覆三千大千世界，說誠實言：『汝等眾生，當信是稱讚不可思議功德一切諸佛所護念經。』",
+          "source_hash": "sha256:ffd67449cced"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0017",
+      "index": 17,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0017_s001",
+          "index": 1,
+          "text": "「舍利弗！",
+          "source_hash": "sha256:c1e982126836"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0017_s002",
+          "index": 2,
+          "text": "下方世界有師子佛、名聞佛、名光佛、達摩佛、法幢佛、持法佛，如是等恒河沙數諸佛，各於其國出廣長舌相，遍覆三千大千世界，說誠實言：『汝等眾生，當信是稱讚不可思議功德一切諸佛所護念經。』",
+          "source_hash": "sha256:a2593f9f2593"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0018",
+      "index": 18,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0018_s001",
+          "index": 1,
+          "text": "「舍利弗！",
+          "source_hash": "sha256:c1e982126836"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0018_s002",
+          "index": 2,
+          "text": "上方世界有梵音佛、宿王佛、香上佛、香光佛、大焰肩佛、雜色寶華嚴身佛、娑羅樹王佛、寶華德佛、見一切義佛、如須彌山佛，如是等恒河沙數諸佛，各於其國出廣長舌相，遍覆三千大千世界，說誠實言：『汝等眾生，當信是稱讚不可思議功德一切諸佛所護念經。』",
+          "source_hash": "sha256:4dcd20b4bece"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0019",
+      "index": 19,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0019_s001",
+          "index": 1,
+          "text": "「舍利弗！",
+          "source_hash": "sha256:c1e982126836"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0019_s002",
+          "index": 2,
+          "text": "於汝意云何？",
+          "source_hash": "sha256:cc9d40ae1f11"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0019_s003",
+          "index": 3,
+          "text": "何故名為『一切諸佛所護念經』？",
+          "source_hash": "sha256:5c21a0afe8f2"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0019_s004",
+          "index": 4,
+          "text": "舍利弗！",
+          "source_hash": "sha256:4c5d61d793d5"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0019_s005",
+          "index": 5,
+          "text": "若有善男子、善女人，聞是經受持者，及聞諸佛名者；",
+          "source_hash": "sha256:1af1ab28c50b"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0019_s006",
+          "index": 6,
+          "text": "是諸善男子、善女人，皆為一切諸佛共所護念，皆得不退轉於阿耨多羅三藐三菩提。",
+          "source_hash": "sha256:d4bf738aae63"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0019_s007",
+          "index": 7,
+          "text": "是故舍利弗！",
+          "source_hash": "sha256:d81a0984f637"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0019_s008",
+          "index": 8,
+          "text": "汝等皆當信受我語及諸佛所說。",
+          "source_hash": "sha256:80649c8d3ee2"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0020",
+      "index": 20,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0020_s001",
+          "index": 1,
+          "text": "「舍利弗！",
+          "source_hash": "sha256:c1e982126836"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0020_s002",
+          "index": 2,
+          "text": "若有人已發願、今發願、當發願，欲生阿彌陀佛國者；",
+          "source_hash": "sha256:e52772a5ff41"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0020_s003",
+          "index": 3,
+          "text": "是諸人等，皆得不退轉於阿耨多羅三藐三菩提，於彼國土若已生、若今生、若當生。",
+          "source_hash": "sha256:d9417c6bcdbc"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0020_s004",
+          "index": 4,
+          "text": "是故舍利弗！",
+          "source_hash": "sha256:d81a0984f637"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0020_s005",
+          "index": 5,
+          "text": "諸善男子、善女人若有信者，應當發願生彼國土。",
+          "source_hash": "sha256:39e543fa0f7d"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0021",
+      "index": 21,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0021_s001",
+          "index": 1,
+          "text": "「舍利弗！",
+          "source_hash": "sha256:c1e982126836"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0021_s002",
+          "index": 2,
+          "text": "如我今者，稱讚諸佛不可思議功德；",
+          "source_hash": "sha256:bbc56bb58e79"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0021_s003",
+          "index": 3,
+          "text": "彼諸佛等，亦稱說我不可思議功德，而作是言：『釋迦牟尼佛能為甚難希有之事，能於娑婆國土五濁惡世，劫濁、見濁、煩惱濁、眾生濁、命濁中，得阿耨多羅三藐三菩提，為諸眾生說是一切世間難信之法。』舍利弗！",
+          "source_hash": "sha256:7cac462ed8a1"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0021_s004",
+          "index": 4,
+          "text": "當知我於五濁惡世行此難事，得阿耨多羅三藐三菩提，為一切世間說此難信之法，是為甚難！」",
+          "source_hash": "sha256:8ba847c97552"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0022",
+      "index": 22,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0022_s001",
+          "index": 1,
+          "text": "佛說此經已，舍利弗及諸比丘，一切世間天、人、阿修羅等，聞佛所說，歡喜信受，作禮而去。",
+          "source_hash": "sha256:668f745891f3"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0023",
+      "index": 23,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0023_s001",
+          "index": 1,
+          "text": "佛說阿彌陀經",
+          "source_hash": "sha256:4ddc776a6968"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0024",
+      "index": 24,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0024_s001",
+          "index": 1,
+          "text": "無量壽佛說往生淨土呪：",
+          "source_hash": "sha256:ce700e4ec201"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0025",
+      "index": 25,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0025_s001",
+          "index": 1,
+          "text": "南無阿彌多婆夜哆他伽哆夜哆地夜他阿彌唎都婆毘阿彌唎哆悉耽婆毘阿彌唎哆毘迦蘭哆伽彌膩伽伽那抧多迦隸莎婆訶",
+          "source_hash": "sha256:5f2f4a9f10d1"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0026",
+      "index": 26,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0026_s001",
+          "index": 1,
+          "text": "誦此呪者，阿彌陀佛常住其頂，命終之後任運往生。",
+          "source_hash": "sha256:81a38a905f36"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0027",
+      "index": 27,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0027_s001",
+          "index": 1,
+          "text": "龍樹菩薩願生安養，夢感此呪。",
+          "source_hash": "sha256:3034fbd0ca5d"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0028",
+      "index": 28,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0028_s001",
+          "index": 1,
+          "text": "耶舍三藏誦此呪，天平寺銹法師從耶舍三藏口受此呪。",
+          "source_hash": "sha256:883b4af80a9b"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0028_s002",
+          "index": 2,
+          "text": "其人云：「經本外國不來。",
+          "source_hash": "sha256:1c3d955a2cf8"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0028_s003",
+          "index": 3,
+          "text": "受持呪法，日夜六時各誦三七遍；",
+          "source_hash": "sha256:19c002e17ab3"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0028_s004",
+          "index": 4,
+          "text": "晨夜澡漱，嚼楊枝，然香火，於形象前跪，合掌誦三七遍。",
+          "source_hash": "sha256:3bb5bf25fdd9"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0028_s005",
+          "index": 5,
+          "text": "日日恒爾，即滅四重、五逆、十惡，謗方等罪悉得除滅。",
+          "source_hash": "sha256:dbe32f8ca892"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0028_s006",
+          "index": 6,
+          "text": "現在不為一切諸邪鬼神之所惱亂，命終之後任運往生阿彌陀國。",
+          "source_hash": "sha256:d3b38c4a1ca7"
+        },
+        {
+          "sentence_id": "T12n0366_001_p0028_s007",
+          "index": 7,
+          "text": "何況晝夜受持誦讀功德不可思議！」",
+          "source_hash": "sha256:0f6aeaedc6cf"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T12n0366_001_p0029",
+      "index": 29,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T12n0366_001_p0029_s001",
+          "index": 1,
+          "text": "佛說阿彌陀經卷第一",
+          "source_hash": "sha256:43ef0fc67a9d"
+        }
+      ]
+    }
+  ]
+}

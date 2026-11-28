@@ -3,19 +3,10 @@ import shutil
 import subprocess
 from pathlib import Path
 
-# 1. Sync translation_kb/commentaries/masters_registry.json -> frontend/data/masters_registry.json
-src = Path("translation_kb/commentaries/masters_registry.json")
-dst = Path("frontend/data/masters_registry.json")
-data = json.loads(src.read_text(encoding="utf-8"))
-masters = data["masters"]
-sutras = set()
-for m in masters:
-    if m.get("sutra_id"):
-        sutras.add(m["sutra_id"])
-    for a in m.get("applicable_sutras") or []:
-        sutras.add(a)
-print(f"Total verified masters: {len(masters)} across {len(sutras)} sutras")
-dst.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+# Verify firebase.json & frontend/app.js
+json.loads(Path("firebase.json").read_text(encoding="utf-8"))
+node = shutil.which("node")
+assert node, "node not found"
 
 
 def run(cmd: list[str], label: str) -> str:
@@ -30,12 +21,8 @@ def run(cmd: list[str], label: str) -> str:
     return r.stdout
 
 
-# 2. JS syntax check
-node = shutil.which("node")
-assert node, "node not found"
 run([node, "--check", "frontend/app.js"], "node --check frontend/app.js")
 
-# 3. Safe git status check + commit + push
 status = run(["git", "status", "--short"], "git status")
 for line in status.splitlines():
     path = line[3:].strip()
@@ -45,12 +32,11 @@ for line in status.splitlines():
 if status.strip():
     run(["git", "add", "-A"], "git add")
     run(
-        ["git", "commit", "-m", "feat: add verified classic commentaries for 16 sutras and dynamic CBETA commentary search"],
+        ["git", "commit", "-m", "fix: bust stale 1h cache on masters_registry.json and catalog.json in Firebase Hosting"],
         "git commit",
     )
     run(["git", "push", "origin", "main"], "git push")
 
-# 4. Deploy to Firebase Hosting
 run(
     ["npx.cmd", "-y", "firebase-tools@latest", "deploy", "--only", "hosting", "--project", "buddahsutra-reader"],
     "firebase deploy",
