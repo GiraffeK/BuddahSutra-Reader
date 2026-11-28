@@ -961,3 +961,32 @@
 - 於 `frontend/app.js` 新增 `CURATED_TTS_VOICES` 與 `curateVoicesByGender()`，從原本近 20 個語音精簡為差異度最高的 4 個自然中文語音（女聲：曉臻、曉曉；男聲：雲哲、雲健），支援朗讀中途即時切換男／女聲並各自記憶偏好。
 - 透過 `test_safe_command.py` 驗證 JS 語法與男女聲篩選邏輯全數 PASS。
 - 依更新後第 5b 條規範，統一透過 `test_safe_command.py` 執行安全檢查、`git push` 至 `origin/main` 與部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。
+
+---
+
+## [2026-11-28 14:29] Session 43：診斷 Firebase Hosting 純前端模式無法直連 NVIDIA NIM API（CORS 限制）
+
+### 1. 接收到的 User Prompt
+- 使用者截圖回報 Firebase Hosting 線上版（雲端純前端模式）檢測 NVIDIA NIM 出現 `0/8 個模型可連線、8 個不可用`。
+
+### 2. 根因分析與可行解法
+- **根因**：NVIDIA NIM 端點（`https://integrate.api.nvidia.com/v1/chat/completions`）未開放瀏覽器端跨網域標頭（CORS），與 Google Gemini API 不同，瀏覽器會直接擋掉來自 `https://buddahsutra-reader.web.app` 的 `fetch()` 請求。
+- 提供三套解法供使用者選擇：
+  1. **Cloudflare Worker 極簡轉發代理**（免費方案每日 10 萬次、免綁卡、不存金鑰，僅透傳 `Authorization` 並補上 CORS 標頭）。
+  2. **Firebase Cloud Functions / Cloud Run 轉發**（同在 Firebase 專案，但需 Blaze 方案）。
+  3. **本機後端模式（`python run_app.py`）使用 NVIDIA NIM**，Firebase 純前端版則使用支援 CORS 直連的 Gemini API。
+
+---
+
+## [2026-11-28 14:33] Session 44：新增 Cloudflare Worker NVIDIA NIM CORS 代理腳本與前端代理網址設定
+
+### 1. 接收到的 User Prompt
+- 使用者選定方案 1，要求提供 Cloudflare Workers 手把手教學並整合支援。
+
+### 2. 實作內容
+- 建立 `cloudflare-worker/nvidia-proxy.js`：零依賴、不儲存金鑰之極簡 CORS 代理（僅允許 `buddahsutra-reader.web.app` / `firebaseapp.com` / `localhost:8000` 呼叫 `POST /v1/chat/completions`）。
+- 更新 `frontend/index.html`（`?v=20261128f`）與 `frontend/app.js`：
+  - 於 NVIDIA 分頁新增「Cloudflare Worker 代理網址」輸入欄位（存於 `localStorage`：`buddhasutra_nvidia_proxy_url`）。
+  - `getNvidiaChatEndpoint()` 自動優先使用代理網址發送連線測試、背景模型探測與經文翻譯；若在純前端模式未填代理網址則顯示明確的 CORS 提示而非誤報 0/8 不可用。
+- 透過 `python test_safe_command.py` 驗證 JS 語法（`frontend/app.js` 與 `cloudflare-worker/nvidia-proxy.js`）皆 PASS。
+- 使用者已部署 Cloudflare Worker 至 `https://nvidia-nim-proxy.seantang-mal.workers.dev`；已將該網址設為前端預設代理網址，並透過 `test_safe_command.py` 實測 OPTIONS CORS 標頭、推送 GitHub 與部署至 Firebase Hosting。

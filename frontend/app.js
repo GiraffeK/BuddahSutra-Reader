@@ -10,6 +10,10 @@ const state = {
   modelProbeRunning: false,
   modelProbeRunId: 0,
   nvidiaApiKey: localStorage.getItem("buddhasutra_nvidia_api_key") || "",
+  nvidiaProxyUrl: (
+    localStorage.getItem("buddhasutra_nvidia_proxy_url") ||
+    "https://nvidia-nim-proxy.seantang-mal.workers.dev"
+  ).replace(/\/+$/, ""),
   nvidiaModel: localStorage.getItem("buddhasutra_nvidia_model") || "nvidia/nemotron-3-ultra-550b-a55b",
   lastUsedNvidiaModel: "",
   nvidiaProbeResults: {},
@@ -95,6 +99,7 @@ const els = {
   byokStatusMsg: document.getElementById("byokStatusMsg"),
   // NVIDIA NIM
   nvidiaApiKeyInput: document.getElementById("nvidiaApiKeyInput"),
+  nvidiaProxyUrlInput: document.getElementById("nvidiaProxyUrlInput"),
   toggleNvidiaKeyVisibilityBtn: document.getElementById("toggleNvidiaKeyVisibilityBtn"),
   nvidiaModelSelect: document.getElementById("nvidiaModelSelect"),
   nvidiaCustomModelInput: document.getElementById("nvidiaCustomModelInput"),
@@ -454,8 +459,17 @@ function stripThinkTags(text) {
   return String(text || "").replace(/<think>[\s\S]*?<\/think>/g, "").trim();
 }
 
+function getNvidiaChatEndpoint(proxyOverride = null) {
+  const raw = proxyOverride !== null ? proxyOverride : state.nvidiaProxyUrl;
+  const cleaned = String(raw || "").trim().replace(/\/+$/, "");
+  if (cleaned) {
+    return cleaned.endsWith("/v1/chat/completions") ? cleaned : `${cleaned}/v1/chat/completions`;
+  }
+  return `${NVIDIA_BASE_URL}/chat/completions`;
+}
+
 async function _callSingleNvidiaModel(apiKey, model, prompt, isJson) {
-  const url = `${NVIDIA_BASE_URL}/chat/completions`;
+  const url = getNvidiaChatEndpoint();
   let res;
   try {
     res = await fetch(url, {
@@ -475,9 +489,10 @@ async function _callSingleNvidiaModel(apiKey, model, prompt, isJson) {
       }),
     });
   } catch (netErr) {
-    const err = new Error(
-      "無法由瀏覽器直連 NVIDIA NIM API（可能因瀏覽器 CORS 跨域限制或網路異常）。建議改用本機後端模式（python run_app.py）代理呼叫 NVIDIA NIM，或切換為 Gemini API。"
-    );
+    const hint = state.nvidiaProxyUrl
+      ? `無法連線至 NVIDIA 代理網址（${state.nvidiaProxyUrl}），請確認 Cloudflare Worker 是否已部署且網址正確。`
+      : "無法由瀏覽器直連 NVIDIA NIM API（瀏覽器 CORS 限制）。請於「🔑 API 設定 → NVIDIA」填入 Cloudflare Worker 代理網址，或改用本機後端模式（python run_app.py）。";
+    const err = new Error(hint);
     err.status = 0;
     err.model = model;
     throw err;
@@ -796,9 +811,10 @@ function getPresetNvidiaModels() {
 
 function getNvidiaProbeCacheKey(apiKeyOverride = "") {
   const key = (apiKeyOverride || state.nvidiaApiKey || "").trim();
-  if (key) return `buddhasutra_nvidia_probes_v1:key_${key.slice(-6)}`;
+  const proxyTag = state.nvidiaProxyUrl ? `_p${state.nvidiaProxyUrl.slice(-8)}` : "_direct";
+  if (key) return `buddhasutra_nvidia_probes_v2:key_${key.slice(-6)}${proxyTag}`;
   if (state.isBackendAvailable && state.llmStatus?.nvidia?.configured) {
-    return "buddhasutra_nvidia_probes_v1:backend_env";
+    return "buddhasutra_nvidia_probes_v2:backend_env";
   }
   return null;
 }
@@ -880,7 +896,7 @@ async function probeSingleNvidiaModel(model, apiKeyOverride = "") {
   const timer = setTimeout(() => controller.abort(), 10000);
   const t0 = performance.now();
   try {
-    const res = await fetch(`${NVIDIA_BASE_URL}/chat/completions`, {
+    const res = await fetch(getNvidiaChatEndpoint(), {
       method: "POST",
       headers: {
         Authorization: `Bearer ${key}`,
@@ -915,10 +931,14 @@ async function probeSingleNvidiaModel(model, apiKeyOverride = "") {
     return {
       model,
       ok: false,
-      status: isAbort ? "timeout" : "error",
+      status: isAbort ? "timeout" : state.nvidiaProxyUrl ? "error" : "cors",
       http_status: null,
       latency_ms,
-      message: isAbort ? "連線逾時" : "瀏覽器 CORS 限制或網路錯誤",
+      message: isAbort
+        ? "連線逾時"
+        : state.nvidiaProxyUrl
+          ? "代理網址連線失敗，請檢查 Cloudflare Worker"
+          : "瀏覽器 CORS 限制（請填入 Cloudflare Worker 代理網址）",
     };
   } finally {
     clearTimeout(timer);
@@ -954,6 +974,14 @@ async function probeAllNvidiaModelsInBackground({ force = false, apiKeyOverride 
     } catch {
       // ignore
     }
+  }
+
+  if (!state.isBackendAvailable && !state.nvidiaProxyUrl) {
+    state.nvidiaProbeResults = {};
+    state.nvidiaProbeRunning = false;
+    applyNvidiaProbeOptionLabels();
+    updateNvidiaProbeSummary("⚠️ 雲端純前端模式需先填入 Cloudflare Worker 代理網址才能繞過 NVIDIA CORS 限制", "warn");
+    return;
   }
 
   const runId = ++state.nvidiaProbeRunId;
@@ -1437,6 +1465,7 @@ function hideNvidiaStatus() {
 function initByokModal() {
   if (els.byokApiKeyInput) els.byokApiKeyInput.value = state.userApiKey;
   if (els.nvidiaApiKeyInput) els.nvidiaApiKeyInput.value = state.nvidiaApiKey;
+  if (els.nvidiaProxyUrlInput) els.nvidiaProxyUrlInput.value = state.nvidiaProxyUrl;
   if (els.byokModelSelect) {
     for (const opt of els.byokModelSelect.options) {
       if (opt.value && opt.value !== "custom" && !opt.dataset.baseLabel) {
@@ -1497,12 +1526,15 @@ function initByokModal() {
 
   els.saveNvidiaKeyBtn?.addEventListener("click", () => {
     const key = els.nvidiaApiKeyInput.value.trim();
+    const proxyUrl = (els.nvidiaProxyUrlInput?.value || "").trim().replace(/\/+$/, "");
     const model = resolveSelectedNvidiaModel();
     state.nvidiaApiKey = key;
+    state.nvidiaProxyUrl = proxyUrl;
     state.nvidiaModel = model;
     localStorage.setItem("buddhasutra_nvidia_api_key", key);
+    localStorage.setItem("buddhasutra_nvidia_proxy_url", proxyUrl);
     localStorage.setItem("buddhasutra_nvidia_model", model);
-    showNvidiaStatus(`✓ NVIDIA 金鑰與模型 (${model}) 已獨立儲存至本機瀏覽器！`, "ok");
+    showNvidiaStatus(`✓ NVIDIA 金鑰與設定 (${model}) 已獨立儲存至本機瀏覽器！`, "ok");
     updateLlmBadge();
     probeAllNvidiaModelsInBackground({ force: true });
   });
@@ -1519,6 +1551,8 @@ function initByokModal() {
 
   els.testNvidiaKeyBtn?.addEventListener("click", async () => {
     const key = els.nvidiaApiKeyInput.value.trim();
+    const proxyUrl = (els.nvidiaProxyUrlInput?.value || "").trim().replace(/\/+$/, "");
+    state.nvidiaProxyUrl = proxyUrl;
     const hasBackendKey = state.isBackendAvailable && state.llmStatus?.nvidia?.configured;
     if (!key && !hasBackendKey) {
       showNvidiaStatus("請先輸入 nvapi- 開頭的 NVIDIA API Key 再進行測試。", "err");
@@ -1532,6 +1566,7 @@ function initByokModal() {
         state.nvidiaApiKey = key;
         localStorage.setItem("buddhasutra_nvidia_api_key", key);
       }
+      localStorage.setItem("buddhasutra_nvidia_proxy_url", proxyUrl);
       state.nvidiaModel = testModel;
       localStorage.setItem("buddhasutra_nvidia_model", testModel);
       state.nvidiaProbeResults[testModel] = res;
@@ -1654,6 +1689,7 @@ async function openByokModal(initialTab = null) {
   if (els.byokModal) els.byokModal.style.display = "flex";
   if (els.byokApiKeyInput) els.byokApiKeyInput.value = state.userApiKey;
   if (els.nvidiaApiKeyInput) els.nvidiaApiKeyInput.value = state.nvidiaApiKey;
+  if (els.nvidiaProxyUrlInput) els.nvidiaProxyUrlInput.value = state.nvidiaProxyUrl;
 
   switchApiModalTab(initialTab || (els.providerSelect?.value === "nvidia" ? "nvidia" : "gemini"));
 

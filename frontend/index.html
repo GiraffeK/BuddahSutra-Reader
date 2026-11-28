@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>大正新脩大藏經｜AI 白話翻譯與古大德註疏系統</title>
-  <link rel="stylesheet" href="./styles.css?v=20261128e" />
+  <link rel="stylesheet" href="./styles.css?v=20261128g" />
 </head>
 <body>
   <!-- 頂部導覽列 -->
@@ -235,6 +235,18 @@
           </div>
 
           <div class="form-group">
+            <label for="nvidiaProxyUrlInput">Cloudflare Worker 代理網址（Firebase 線上版繞過 CORS 必填；本機模式可留空）：</label>
+            <input
+              id="nvidiaProxyUrlInput"
+              type="url"
+              placeholder="預設：https://nvidia-nim-proxy.seantang-mal.workers.dev"
+            />
+            <small class="form-hint">
+              因 NVIDIA NIM 未開放瀏覽器直連 CORS，在 Firebase 線上版請填入您的免費 Cloudflare Worker 轉發網址（專案內已備妥 <code>cloudflare-worker/nvidia-proxy.js</code>）。
+            </small>
+          </div>
+
+          <div class="form-group">
             <label for="nvidiaModelSelect">NVIDIA NIM 模型型號（精選適合漢傳佛經與古文解譯）：</label>
             <select id="nvidiaModelSelect">
               <option value="nvidia/nemotron-3-ultra-550b-a55b" selected>nvidia/nemotron-3-ultra-550b-a55b（預設，NVIDIA 旗艦 550B 深度推論）</option>
@@ -290,6 +302,6 @@
     </div>
   </div>
 
-  <script src="./app.js?v=20261128e"></script>
+  <script src="./app.js?v=20261128g"></script>
 </body>
 </html>

@@ -1397,7 +1397,9 @@ mark.comm-hit {
   color: #2d261e;
 }
 
-.modal-body select {
+.modal-body select,
+.modal-body input[type="url"],
+.modal-body input[type="text"] {
   width: 100%;
   padding: 8px 10px;
   font-size: 13px;

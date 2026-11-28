@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "sutra_id": "T10n0279",
   "fascicle": 1,
-  "updated_at": "2026-11-28T14:07:09+08:00",
+  "updated_at": "2026-11-28T14:27:40+08:00",
   "entries": {
     "T10n0279_001_p0004_s001": {
       "sentence_id": "T10n0279_001_p0004_s001",
@@ -598,6 +598,86 @@
               {
                 "term": "一念之間，悉包法界",
                 "explanation": "澄觀疏釋此為「十玄門」中「一多相容不同門」與「十世隔法異成門」之顯現：剎那心念即能圓融容納無邊剎海塵劫，無時空障礙。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T10n0279_001_p0006_s005": {
+      "sentence_id": "T10n0279_001_p0006_s005",
+      "source_text": "又以諸佛神力所加，一念之間，悉包法界。",
+      "source_hash": "sha256:203d8989fb21",
+      "active_version_id": "v_20261128_142518_nvidia",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_142518_nvidia",
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "chengguan_shuchao"
+          ],
+          "created_at": "2026-11-28T14:25:18+08:00",
+          "content": {
+            "literal_translation": "又 以 諸佛 神力 所 加，一念 之間，悉 包 法界。",
+            "colloquial_translation": "又承諸佛神力加持，在一念心瞬間，就能圓滿包容整個法界。",
+            "dharma_analysis": "清涼大師依十玄門判釋：此句正顯「十世隔法異成門」中念劫圓融、一念即含十世，及「一多相容不同門」中一念（一）與法界（多）互攝無礙。不離當念當處，而遍周法界塵剎，證成法身無礙莊嚴。",
+            "terms": [
+              {
+                "term": "諸佛神力所加",
+                "explanation": "指諸佛如來以大悲願力與神通威德，加持護念行者或莊嚴道場，使有情機感相應，顯現不可思議境界。"
+              },
+              {
+                "term": "一念",
+                "explanation": "極短時間單位，約一彈指頃六十刹那；華嚴宗以此表「念念無生」之真心當體，含攝過去、現在、未來三世（十世）。"
+              },
+              {
+                "term": "法界",
+                "explanation": "一切法之總稱，即真如緣起之總體；包含事法界、理法界、理事無礙法界、事事無礙法界四種，此處指事事無礙之重重無盡剎海。"
+              },
+              {
+                "term": "十玄門",
+                "explanation": "華嚴宗判教核心綱領，由智儼大師創立、清涼大師發揚；十門互攝，圓融無礙，用以詮釋《華嚴經》「一即一切、一切即一」之玄旨。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T10n0279_001_p0006_s004": {
+      "sentence_id": "T10n0279_001_p0006_s004",
+      "source_text": "一切眾生居處之室，皆於此中現其影像。",
+      "source_hash": "sha256:4539d80c7e7f",
+      "active_version_id": "v_20261128_142740_nvidia",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_142740_nvidia",
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "chengguan_shuchao"
+          ],
+          "created_at": "2026-11-28T14:27:40+08:00",
+          "content": {
+            "literal_translation": "一切眾生居住處所之室，悉皆於此中顯現其影像。",
+            "colloquial_translation": "所有眾生所居住的房舍，全都在這寶網宮殿之中顯現出它們的倒影。",
+            "dharma_analysis": "此句顯示「依報莊嚴」與「正報莊嚴」互融無礙：眾生各別業感之室（依報），不離當處而全體現於摩尼寶網（正報莊嚴）之中。澄觀大師釋「宮殿充遍十方，表法身無礙」，此即「一多相容不同門」與「十世隔法異成門」之現前境界，塵剎互攝、念劫圓融，不動道場而遍現一切眾生界。",
+            "terms": [
+              {
+                "term": "影像",
+                "explanation": "指摩尼寶網（因陀羅網）中所現之倒影。華嚴喻顯「緣起性空、互融無礙」之理：一寶含萬寶，一室攝一切室，影像雖現而無實體，表法界緣起之虛妙不思議。"
+              },
+              {
+                "term": "居處之室",
+                "explanation": "眾生業力所感之依報環境（器世間）。經文意指十法界一切眾生、一切處所之室舍，皆不出華藏世界海一塵一剎之內。"
+              },
+              {
+                "term": "此中",
+                "explanation": "指上文「摩尼寶王而為其網」所成之宮殿樓閣、師子座及道場眾會之總體。即毘盧遮那佛法身所現之莊嚴境界，亦即一真法界。"
               }
             ]
           }
