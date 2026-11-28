@@ -1269,7 +1269,7 @@ function speakQueueIndex(index, runId) {
   window.speechSynthesis.cancel();
   const utter = new SpeechSynthesisUtterance(normalizeSutraPronunciation(item.text));
   utter.lang = "zh-TW";
-  utter.rate = parseFloat(els.ttsRateSelect?.value || "0.95") || 0.95;
+  utter.rate = parseFloat(els.ttsRateSelect?.value || "1.0") || 1.0;
 
   const selectedName = els.ttsVoiceSelect?.value;
   const voice = ttsState.voices.find((v) => v.name === selectedName) || ttsState.voices[0];

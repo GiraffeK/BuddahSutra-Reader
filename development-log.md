@@ -1038,3 +1038,14 @@
 - 一併清理 `frontend/app.js` 中不再使用的 `els.sutraSubtitle` 參照。
 - 透過 `python test_safe_command.py` 驗證 JS 語法與 HTML 結構全數 PASS。
 - 透過 `python test_safe_command.py` 一併推送本次介面微調與 `nvidia-proxy.js` 來源收緊至 GitHub（`origin/main`），並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。
+
+---
+
+## [2026-11-28 15:50] Session 49：朗讀語速補齊 `1.0x` 選項並設為預設值
+
+### 1. 接收到的 User Prompt
+- 使用者附語速選單截圖指出：「要有一倍的吧」。
+
+### 2. 修改與驗證
+- 更新 `frontend/index.html` 語速選單為 `0.75x`、`0.85x`、`0.95x`、`1.0x`（預設）、`1.1x`、`1.25x`，同步調整 `frontend/app.js` 預設語速為 `1.0`，透過 `python test_safe_command.py` 驗證 PASS。
+- 透過 `python test_safe_command.py` 推送至 GitHub（`origin/main`）並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。
