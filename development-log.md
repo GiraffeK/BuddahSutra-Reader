@@ -1159,3 +1159,32 @@
   - 凡具合法 CBETA 編號之經典改標示藍色 **`CBETA`**（代表可直接點入即時下載閱讀），不再誤稱「建置中」。
   - 一旦點入並成功載入任一卷，立即將狀態升級為綠色 **`可閱讀`** 並於下方展開已入庫卷次清單（`?v=20261128t`）。
 - 透過 `python test_safe_command.py` 一併推送 Session 57–58 至 GitHub（`origin/main`）並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。
+
+
+---
+
+## [2026-11-28 16:53] Session 59：修復切換未收錄大德經典時殘留前經註疏 Bug，並收錄《妙法蓮華經》6 位歷代古大德註疏
+
+### 1. 接收到的 User Prompt
+- 使用者附截圖回報：「讀法華經時，古大德的注疏卻停在華嚴經」。
+
+### 2. 根因與修復
+- **根因**：`loadFascicle()` 在 `state.selectedMasterId` 為 `null`（該經尚無收錄大德）時未清空前一部經的 `state.commFull` 與註疏面板 DOM，導致殘留澄觀《華嚴經疏》。
+- **修復**：
+  1. 於 `frontend/app.js` 補齊 `else` 清空分支：切換至尚無大德清單的經典時，立即清空舊註疏並顯示清楚的空狀態提示。
+  2. 經 CBETA GitHub `xml-p5a` 逐筆驗證編號後，於 `translation_kb/commentaries/masters_registry.json`（並同步至 `frontend/data/masters_registry.json`）新增《妙法蓮華經》（`T09n0262`）6 位歷代權威古大德：明・憨山《法華經通義》（`X31n0611`，7 卷預設）、隋・智顗《妙法蓮華經文句》（`T34n1718`，10 卷）、明・蕅益《法華台宗會義》（`X32n0616`，7 卷）、宋・戒環《法華要解》（`X30n0602`，7 卷）、隋・吉藏《法華義疏》（`T34n1721`，12 卷）、唐・窺基《法華玄贊》（`T34n1723`，10 卷）。
+
+
+---
+
+## [2026-11-28 17:02] Session 60：完成方案 A（全目錄核心經典古大德補齊並驗證）＋ 方案 B（CBETA 動態搜尋古註疏），同步推送並部署
+
+### 1. 接收到的 User Prompt
+- 使用者指示：「A+B一起做，做好之後git push and deploy to firebase」。
+
+### 2. 實作與驗證內容
+- **方案 A（全目錄核心經典古大德全量驗證補齊）**：
+  - 逐筆向 CBETA GitHub `xml-p5a` 核對作者與卷數後，於 `translation_kb/commentaries/masters_registry.json`（並同步至 `frontend/data/masters_registry.json`）補齊：金剛經（4 家）、心經（2 家）、六十／四十華嚴（跨譯本關聯）、無量壽經（2 家）、阿彌陀經（3 家）、大般涅槃經（2 家）、維摩詰經（2 家）、楞伽經（憨山記）、圓覺經（宗密略疏）、大日經（一行疏）、梵網經（2 家）、成唯識論（窺基述記）、大乘起信論（2 家），連同先前之八十華嚴、楞嚴經、妙法蓮華經，總計收錄 16 部核心經論之歷代權威古大德。
+- **方案 B（CBETA 動態搜尋備援）**：
+  - 於 `frontend/app.js` 新增 `searchDynamicCbetaCommentaries()`：凡點選尚未預錄大德之經典，右下角提供「🔍 向 CBETA 搜尋相關古大德註疏」按鈕，即時檢索 CBETA 經疏部／卍續藏並支援點擊直接載入閱讀。
+- **驗證、推送與部署**：透過 `python test_safe_command.py` 同步名錄、驗證 JS 語法與 JSON 完整性、推送至 GitHub（`origin/main`）並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。

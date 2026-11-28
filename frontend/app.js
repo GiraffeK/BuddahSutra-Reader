@@ -2472,9 +2472,118 @@ async function loadFascicle(sutraId, fascicle, targetSentenceId = null) {
     els.sutraContent.scrollTop = 0;
   }
 
-  // 同步載入所選古大德的對應整卷註疏全文
+  // 同步載入所選古大德的對應整卷註疏全文；若此經尚無收錄古大德則清空舊註疏並提供 CBETA 動態搜尋（方案 B）
   if (state.selectedMasterId) {
     await loadCommentaryFulltext(state.selectedMasterId, null);
+  } else {
+    state.commFull = null;
+    state.commCursorIdx = 0;
+    state.commAlignedIdx = null;
+    state.commMatchedPhrase = null;
+    const sutraTitleStr = bundle.sutra?.sutra_title || sutraId;
+    els.commMasterTitle.textContent = "本經尚無預錄古大德註疏";
+    els.commAlignBadge.textContent = "可線上搜尋";
+    els.commAlignBadge.className = "align-badge hold";
+    els.commJuanSelect.innerHTML = "";
+    els.prevCommJuanBtn.disabled = true;
+    els.nextCommJuanBtn.disabled = true;
+    els.commFullBody.innerHTML = `
+      <div class="empty-state" style="padding:24px;">
+        <p class="empty-title" style="font-size:14px;">《${escapeHtml(sutraTitleStr)}》尚未預錄古大德註疏</p>
+        <p class="empty-desc" style="font-size:12.5px;margin:0 0 12px;">可點擊下方按鈕即時向 CBETA 檢索相關古大德註疏並直接載入閱讀；左側經文、朗讀與 AI 白話翻譯均可正常使用。</p>
+        <button id="searchCbetaCommBtn" type="button" class="primary-btn">🔍 向 CBETA 搜尋相關古大德註疏</button>
+        <div id="cbetaDynamicMastersList" style="margin-top:12px;text-align:left;"></div>
+      </div>`;
+    document.getElementById("searchCbetaCommBtn")?.addEventListener("click", () => {
+      searchDynamicCbetaCommentaries(sutraId, sutraTitleStr);
+    });
+  }
+}
+
+async function searchDynamicCbetaCommentaries(sutraId, sutraTitle) {
+  const btn = document.getElementById("searchCbetaCommBtn");
+  const listEl = document.getElementById("cbetaDynamicMastersList");
+  if (!listEl) return;
+  if (btn) {
+    btn.disabled = true;
+    btn.textContent = "搜尋 CBETA 註疏中...";
+  }
+
+  // 擷取經名核心關鍵字（去掉括號、佛說、大方廣等前綴以提高命中率）
+  const keyword = String(sutraTitle || "")
+    .replace(/（.*?）|\(.*?\)/g, "")
+    .replace(/^(?:佛說|大方廣|大佛頂|大方等|佛垂般)/, "")
+    .replace(/經$/, "")
+    .trim()
+    .slice(0, 6);
+
+  try {
+    const url = `https://cbdata.dila.edu.tw/stable/works?q=${encodeURIComponent(keyword || sutraTitle)}&rows=30`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`CBETA 檢索失敗（HTTP ${res.status}）`);
+    const data = await res.json();
+    const rawList = data.results || [];
+    const filtered = rawList.filter((w) => {
+      const wid = w.work || "";
+      const title = w.title || "";
+      if (wid === sutraId.replace(/^[A-Z]+\d+n/, (m) => m[0])) return false;
+      const isCommCanon = /^X/.test(wid) || /^T1[6-9]\d\d|^T2[0-9]\d\d/.test(wid);
+      const isCommTitle = /(?:疏|註|注|解|記|論|義|鈔|直說|要解|通義|玄贊|文句|科註|略疏)/.test(title);
+      return isCommCanon && isCommTitle;
+    });
+
+    if (!filtered.length) {
+      listEl.innerHTML = `<p style="font-size:12.5px;color:#766a59;text-align:center;">CBETA 未檢索到「${escapeHtml(keyword)}」相關古註疏，您仍可直接點選左側經句使用 AI 白話翻譯。</p>`;
+      return;
+    }
+
+    listEl.innerHTML = `<div style="font-size:12px;color:#6b411c;font-weight:600;margin-bottom:6px;">找到 ${filtered.length} 部相關古註疏（點選立即載入）：</div>`;
+    filtered.slice(0, 12).forEach((w) => {
+      const workCode = w.work || "";
+      const vol = w.vol || "";
+      const cbetaId = vol && workCode ? `${vol}n${workCode.replace(/^[A-Z]+/, "").padStart(4, "0")}` : workCode;
+      const itemBtn = document.createElement("button");
+      itemBtn.type = "button";
+      itemBtn.className = "master-popup-item";
+      itemBtn.style.border = "1px solid #e4dccb";
+      itemBtn.style.marginBottom = "6px";
+      itemBtn.style.background = "#fffdf8";
+      itemBtn.innerHTML = `
+        <div class="master-popup-row1">
+          <span>${escapeHtml(w.byline || "古大德")} 《${escapeHtml(w.title || workCode)}》</span>
+          <span class="chip-tag">${escapeHtml(cbetaId)}・${escapeHtml(w.juan || 1)}卷</span>
+        </div>`;
+      itemBtn.addEventListener("click", () => {
+        const dynMaster = {
+          master_id: `cbeta_dyn_${workCode}`,
+          sutra_id: sutraId,
+          dynasty: "",
+          name: w.byline || "古大德",
+          work_title: `《${w.title || workCode}》`,
+          cbeta_id: cbetaId,
+          primary_work: workCode,
+          total_juans: Number(w.juan) || 1,
+          target_edition: sutraId,
+          target_edition_label: "CBETA 動態檢索",
+          description: "即時檢索自 CBETA 線上典籍庫",
+        };
+        state.bundle.masters = state.bundle.masters || [];
+        if (!state.bundle.masters.some((m) => m.master_id === dynMaster.master_id)) {
+          state.bundle.masters.push(dynMaster);
+        }
+        state.selectedMasterId = dynMaster.master_id;
+        renderMastersChips();
+        loadCommentaryFulltext(dynMaster.master_id, null);
+      });
+      listEl.appendChild(itemBtn);
+    });
+  } catch (err) {
+    listEl.innerHTML = `<div class="error-box">⚠️ ${escapeHtml(err.message)}</div>`;
+  } finally {
+    if (btn) {
+      btn.disabled = false;
+      btn.textContent = "🔍 重新搜尋 CBETA 註疏";
+    }
   }
 }
 
