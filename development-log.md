@@ -1247,3 +1247,8 @@
 
 ## Session 66 — 2026-11-28 補內建正音「著地」（ㄓㄠˊ ㄉㄧˋ）
 - 使用者回報《金剛經》「右膝著地」朗讀錯誤；於 [frontend/app.js](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/app.js) `BUDDHIST_PRONUNCIATION_MAP` 新增 `著地`→`着地`（ㄓㄠˊ），並更新 `app.js?v=20261128m4`。
+
+
+## Session 67 — 2026-11-28 將佛經高頻破音詞典抽離為獨立設定檔 `佛經高頻破音詞典-設定.lst`
+- 新增獨立純文字設定檔 [frontend/data/佛經高頻破音詞典-設定.lst](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/data/佛經高頻破音詞典-設定.lst)，格式為每行 `經文原詞 = 改唸為`（亦相容 `→`、`#` 註解與空行），自動依原詞長度由長到短套用。
+- 修改 [frontend/app.js](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/app.js) 於啟動時以 `loadBuiltinPronunciationDict()` 動態載入該 `.lst` 檔，並更新 [frontend/index.html](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/index.html)（`app.js?v=20261128m5`）與 [firebase.json](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/firebase.json)（為 `/data/**/*.lst` 加上 UTF-8 `Content-Type` 與 `no-cache`）。

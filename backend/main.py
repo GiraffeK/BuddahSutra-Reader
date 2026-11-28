@@ -468,6 +468,12 @@ async def translate_commentary(req: TranslateCommentaryRequest) -> dict[str, Any
 
 if FRONTEND_DIR.exists():
     app.mount("/static", StaticFiles(directory=str(FRONTEND_DIR)), name="static")
+    if (FRONTEND_DIR / "data").exists():
+        app.mount("/data", StaticFiles(directory=str(FRONTEND_DIR / "data")), name="data")
+
+    @app.get("/manifest.json")
+    async def serve_manifest() -> FileResponse:
+        return FileResponse(FRONTEND_DIR / "manifest.json")
 
     @app.get("/styles.css")
     async def serve_styles() -> FileResponse:

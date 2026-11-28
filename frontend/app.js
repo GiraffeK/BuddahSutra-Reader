@@ -1095,88 +1095,34 @@ async function probeAllNvidiaModelsInBackground({ force = false, apiKeyOverride 
 // ==================== 佛經原文朗讀（方案 A：Web Speech API + 佛經正音） ====================
 const CUSTOM_PRONUNCIATION_KEY = "buddhasutra_custom_pronunciations";
 
-// 內建佛經高頻破音詞組正音表（長詞組優先，僅改朗讀發音、絕不更動原文）
-const BUDDHIST_PRONUNCIATION_MAP = [
-  // 金剛經／般若部常見破音
-  [/祇樹給孤獨/g, "奇樹己孤獨"],
-  [/給孤獨/g, "己孤獨"],
-  [/祇園/g, "奇園"],
-  [/還至本處/g, "環至本處"],
-  [/還至/g, "環至"],
-  [/還歸/g, "環歸"],
-  [/往還/g, "往環"],
-  [/著衣/g, "卓衣"],
-  [/著地/g, "着地"],
-  [/著相/g, "卓向"],
-  [/執著/g, "執卓"],
-  [/無著/g, "無卓"],
-  [/愛著/g, "愛卓"],
-  [/貪著/g, "貪卓"],
-  [/長老/g, "掌老"],
-  [/長者/g, "掌者"],
-  [/復次/g, "付次"],
-  [/降伏/g, "祥伏"],
-  [/降魔/g, "祥魔"],
-  [/應無所住/g, "英無所住"],
-  [/樂小法/g, "藥小法"],
-  [/樂說/g, "藥說"],
-  [/好樂/g, "耗藥"],
-  [/愛樂/g, "愛藥"],
-  [/無為法/g, "無韋法"],
-  [/有為法/g, "有韋法"],
-  [/相好/g, "向好"],
-  [/供養/g, "共養"],
-  [/行布施/g, "形布施"],
-  [/行深/g, "形深"],
-  [/行者/g, "形者"],
-  [/菩薩行/g, "菩薩形"],
-  [/梵行/g, "梵形"],
-  [/苦行/g, "苦形"],
-  [/修行/g, "修形"],
-  [/大行/g, "大形"],
-  [/數數/g, "朔朔"],
-  // 大乘經論常見梵譯與宗派專詞
-  [/南無/g, "拿摩"],
-  [/般若/g, "波惹"],
-  [/摩訶迦葉/g, "摩呵家設"],
-  [/迦葉/g, "家設"],
-  [/摩訶/g, "摩呵"],
-  [/阿耨多羅/g, "啊耨多羅"],
-  [/阿彌陀/g, "啊彌陀"],
-  [/阿羅漢/g, "啊羅漢"],
-  [/阿修羅/g, "啊修羅"],
-  [/阿僧祇/g, "啊僧奇"],
-  [/阿蘭若/g, "啊蘭惹"],
-  [/阿毗達磨/g, "啊毗達磨"],
-  [/阿闍梨/g, "啊闍梨"],
-  [/阿難/g, "啊難"],
-  [/阿鼻/g, "啊鼻"],
-  [/阿閦/g, "啊處"],
-  [/阿含/g, "啊含"],
-  [/舍利弗/g, "設利弗"],
-  [/舍利子/g, "設利子"],
-  [/舍衛/g, "設衛"],
-  [/伽藍/g, "茄藍"],
-  [/伽耶/g, "茄耶"],
-  [/摩睺羅伽/g, "摩侯羅茄"],
-  [/乾闥婆/g, "前達婆"],
-  [/波斯匿/g, "波斯逆"],
-  [/優婆塞/g, "優婆賽"],
-  [/優婆夷/g, "優婆姨"],
-  [/毗盧遮那/g, "皮盧遮那"],
-  [/毘盧遮那/g, "皮盧遮那"],
-  [/法華/g, "法花"],
-  [/華嚴/g, "花嚴"],
-  [/華藏/g, "花藏"],
-  [/大乘/g, "大稱"],
-  [/小乘/g, "小稱"],
-  [/一乘/g, "一稱"],
-  [/三乘/g, "三稱"],
-  [/佛乘/g, "佛稱"],
-  [/菩薩乘/g, "菩薩稱"],
-  [/聲聞乘/g, "聲聞稱"],
-  [/緣覺乘/g, "緣覺稱"],
-];
+// 內建佛經高頻破音詞組正音表：改由 frontend/data/佛經高頻破音詞典-設定.lst 載入（格式：原詞 = 改唸為）
+const BUILTIN_PRONUNCIATION_FILE = "./data/佛經高頻破音詞典-設定.lst";
+let BUDDHIST_PRONUNCIATION_MAP = []; // [[原詞, 讀音], ...]，已依原詞長度由長到短排序
+
+function parsePronunciationLst(text) {
+  const rules = [];
+  for (const rawLine of String(text || "").split(/\r?\n/)) {
+    const line = rawLine.trim();
+    if (!line || line.startsWith("#")) continue;
+    const m = line.match(/^(.+?)\s*(?:=|→)\s*(.+)$/);
+    if (!m) continue;
+    const src = m[1].trim();
+    const read = m[2].trim();
+    if (src && read) rules.push([src, read]);
+  }
+  return rules.sort((a, b) => b[0].length - a[0].length);
+}
+
+async function loadBuiltinPronunciationDict() {
+  try {
+    const res = await fetch(`${encodeURI(BUILTIN_PRONUNCIATION_FILE)}?v=20261128m5`, { cache: "no-cache" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    BUDDHIST_PRONUNCIATION_MAP = parsePronunciationLst(await res.text());
+  } catch (err) {
+    console.warn("載入佛經高頻破音詞典失敗：", err);
+  }
+  renderTtsCustomDictList();
+}
 
 function loadCustomPronunciations() {
   try {
@@ -1205,9 +1151,9 @@ function normalizeSutraPronunciation(text) {
       out = out.split(src).join(read);
     }
   }
-  // 2. 內建佛經破音詞組表
-  for (const [pattern, reading] of BUDDHIST_PRONUNCIATION_MAP) {
-    out = out.replace(pattern, reading);
+  // 2. 內建佛經破音詞組表（來自 佛經高頻破音詞典-設定.lst，已長詞組優先排序）
+  for (const [src, read] of BUDDHIST_PRONUNCIATION_MAP) {
+    if (out.includes(src)) out = out.split(src).join(read);
   }
   return out;
 }
@@ -1221,7 +1167,7 @@ function showTtsDictStatus(msg, type = "ok") {
 
 function renderTtsCustomDictList() {
   if (els.ttsDictBuiltinSummary) {
-    els.ttsDictBuiltinSummary.textContent = `內建佛經破音正音詞典：共 ${BUDDHIST_PRONUNCIATION_MAP.length} 條（已內建祇樹給孤獨、還至本處、著衣、長老、迦葉、般若、南無、大乘等）。`;
+    els.ttsDictBuiltinSummary.textContent = `內建佛經破音正音詞典（佛經高頻破音詞典-設定.lst）：共 ${BUDDHIST_PRONUNCIATION_MAP.length} 條。`;
   }
   if (!els.ttsDictCustomList) return;
   const list = loadCustomPronunciations();
@@ -1688,6 +1634,7 @@ async function init() {
   initByokModal();
   initSutraTts();
   initTtsDictUi();
+  loadBuiltinPronunciationDict();
   initMobileUi();
   await checkBackendAvailability();
   await Promise.all([loadLlmStatus(), loadCatalog()]);
