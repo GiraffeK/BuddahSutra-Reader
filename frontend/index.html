@@ -2,14 +2,20 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#b8a382" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="大藏經閱讀" />
+  <link rel="manifest" href="./manifest.json" />
   <title>大正新脩大藏經｜AI 白話翻譯與古大德註疏系統</title>
-  <link rel="stylesheet" href="./styles.css?v=20261128t" />
+  <link rel="stylesheet" href="./styles.css?v=20261128m1" />
 </head>
-<body>
+<body class="mobile-tab-sutra">
   <!-- 頂部導覽列 -->
   <header class="topbar">
     <div class="topbar-left">
+      <button id="mobileMenuBtn" type="button" class="mobile-only-btn mobile-menu-btn" aria-label="開啟大藏經目錄">☰</button>
       <span class="brand-icon">🪷</span>
       <span class="brand-title">大正新脩大藏經・AI 翻譯與古大德註疏</span>
       <div class="search-box-wrap" id="searchBoxWrap">
@@ -46,11 +52,15 @@
   </header>
 
   <div class="app-shell">
+    <!-- 手機版側邊目錄遮罩 -->
+    <div id="mobileDrawerBackdrop" class="mobile-drawer-backdrop"></div>
+
     <!-- 左欄：大正新脩大藏經階層分類樹 -->
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
         <h2>大正新脩大藏經</h2>
         <span class="kb-count" id="kbStatsBadge">知識庫載入中</span>
+        <button id="mobileSidebarCloseBtn" type="button" class="mobile-only-btn mobile-drawer-close" aria-label="關閉目錄">✕</button>
       </div>
       <div id="catalogTree" class="catalog-tree"></div>
     </aside>
@@ -147,6 +157,38 @@
       <input id="jumpParaInput" type="number" min="1" placeholder="1" />
       <button id="jumpParaBtn">Go</button>
     </div>
+
+    <!-- 手機版：點選經句後浮動快捷列 -->
+    <div id="mobileSentenceBar" class="mobile-sentence-bar" style="display:none;">
+      <div class="mobile-sentence-bar-top">
+        <span id="mobileSentencePreview" class="mobile-sentence-preview"></span>
+        <button id="mobileSentenceCloseBtn" type="button" class="mobile-sentence-close" aria-label="關閉提示">✕</button>
+      </div>
+      <div class="mobile-sentence-bar-actions">
+        <button id="mobileGoAiBtn" type="button" class="mobile-quick-btn primary">✨ 看 AI 翻譯</button>
+        <button id="mobileGoCommBtn" type="button" class="mobile-quick-btn">📜 看古大德註疏</button>
+      </div>
+    </div>
+
+    <!-- 手機版底部導覽分頁列 -->
+    <nav id="mobileBottomNav" class="mobile-bottom-nav" aria-label="手機閱讀分頁">
+      <button type="button" class="mobile-nav-btn active" data-mobile-tab="sutra">
+        <span class="mobile-nav-icon">📖</span>
+        <span>經文</span>
+      </button>
+      <button type="button" class="mobile-nav-btn" data-mobile-tab="ai">
+        <span class="mobile-nav-icon">✨</span>
+        <span>AI 翻譯</span>
+      </button>
+      <button type="button" class="mobile-nav-btn" data-mobile-tab="comm">
+        <span class="mobile-nav-icon">📜</span>
+        <span>註疏</span>
+      </button>
+      <button type="button" class="mobile-nav-btn" id="mobileNavMenuBtn">
+        <span class="mobile-nav-icon">☰</span>
+        <span>目錄</span>
+      </button>
+    </nav>
   </div>
 
   <!-- API Key 與本機知識庫設定 Modal -->
@@ -301,6 +343,6 @@
     </div>
   </div>
 
-  <script src="./app.js?v=20261128w"></script>
+  <script src="./app.js?v=20261128m1"></script>
 </body>
 </html>

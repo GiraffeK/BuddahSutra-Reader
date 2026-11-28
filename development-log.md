@@ -1203,3 +1203,16 @@
   - 於 `frontend/app.js` 為 `masters_registry.json` 與 `catalog.json` 加上版號 `?v=20261128w` 與 `{ cache: "no-cache" }`，徹底破除舊快取。
   - 於 `firebase.json` 為 `/data/@(masters_registry|catalog|commentaries_index).json` 設定 `Cache-Control: no-cache, must-revalidate`。
   - 改善 `searchDynamicCbetaCommentaries()` 的 CORS 友善中文提示，並透過 `python test_safe_command.py` 驗證、推送與部署。
+
+
+## Session 62 — 2026-11-28 手機版 RWD 閱讀介面、PWA 支援與 Firebase Preview Channel（`feat/mobile-ui` 分支）
+- **分支與穩定版標記**：
+  - 於 `main` 穩定版建立安全標籤 `v2.1-desktop-stable`，並切出開發分支 `feat/mobile-ui`，以 Firebase Hosting Preview Channel（`mobile-preview`，14 天有效）提供手機實測網址，完全不影響桌機正式站 `https://buddahsutra-reader.web.app`。
+- **手機版介面（`<= 900px`，桌機 `> 900px` 零變動）**：
+  - [frontend/index.html](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/index.html)、[frontend/styles.css](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/styles.css)、[frontend/app.js](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/app.js)：
+    - 左側大藏經目錄改為可滑出／收合抽屜（`☰` 鈕與遮罩，選經後自動收起）。
+    - 底部新增固定四鍵導覽列（`📖 經文`｜`✨ AI 翻譯`｜`📜 註疏`｜`☰ 目錄`），支援 `env(safe-area-inset-bottom)` 安全區間距。
+    - 點選經句時於底部浮出快捷列（顯示經句預覽與一鍵跳轉「✨ 看 AI 翻譯」「📜 看古大德註疏」，翻譯中／就緒狀態即時連動），並於觸控裝置停用 `mouseenter` 誤觸。
+    - 精簡頂部導覽列與卷次／朗讀工具列，提升直屏經文可視高度。
+- **PWA 加入主畫面支援**：
+  - 新增 [frontend/manifest.json](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/manifest.json) 與 `theme-color` / `apple-mobile-web-app-*` meta，可從手機瀏覽器「加入主畫面」以獨立視窗開啟。

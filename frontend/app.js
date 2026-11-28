@@ -111,6 +111,17 @@ const els = {
   exportKbBtn: document.getElementById("exportKbBtn"),
   importKbInput: document.getElementById("importKbInput"),
   kbStorageStats: document.getElementById("kbStorageStats"),
+  // 手機版 UI 元件
+  mobileMenuBtn: document.getElementById("mobileMenuBtn"),
+  mobileSidebarCloseBtn: document.getElementById("mobileSidebarCloseBtn"),
+  mobileDrawerBackdrop: document.getElementById("mobileDrawerBackdrop"),
+  mobileBottomNav: document.getElementById("mobileBottomNav"),
+  mobileNavMenuBtn: document.getElementById("mobileNavMenuBtn"),
+  mobileSentenceBar: document.getElementById("mobileSentenceBar"),
+  mobileSentencePreview: document.getElementById("mobileSentencePreview"),
+  mobileSentenceCloseBtn: document.getElementById("mobileSentenceCloseBtn"),
+  mobileGoAiBtn: document.getElementById("mobileGoAiBtn"),
+  mobileGoCommBtn: document.getElementById("mobileGoCommBtn"),
 };
 
 const STOP_PHRASES = new Set([
@@ -1339,11 +1350,99 @@ function stopSutraTts() {
   updateTtsButtons();
 }
 
+// ---------- 手機版 RWD 抽屜與分頁切換 ----------
+const mobileUiState = {
+  tab: "sutra", // "sutra" | "ai" | "comm"
+  sentenceBarDismissedId: null,
+};
+
+function isMobileViewport() {
+  return window.matchMedia && window.matchMedia("(max-width: 900px)").matches;
+}
+
+function toggleMobileDrawer(open) {
+  const next = typeof open === "boolean" ? open : !document.body.classList.contains("mobile-drawer-open");
+  document.body.classList.toggle("mobile-drawer-open", next);
+}
+
+function setMobileTab(tab) {
+  const valid = tab === "ai" || tab === "comm" ? tab : "sutra";
+  mobileUiState.tab = valid;
+  document.body.classList.remove("mobile-tab-sutra", "mobile-tab-ai", "mobile-tab-comm");
+  document.body.classList.add(`mobile-tab-${valid}`);
+  els.mobileBottomNav?.querySelectorAll("[data-mobile-tab]").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.mobileTab === valid);
+  });
+  if (valid === "comm" && state.commAlignedIdx !== null) {
+    setTimeout(() => {
+      const targetEl = els.commFullBody?.querySelector(`[data-comm-index="${state.commAlignedIdx}"]`);
+      targetEl?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 60);
+  }
+  updateMobileSentenceBar();
+}
+
+function updateMobileSentenceBar() {
+  if (!els.mobileSentenceBar) return;
+  const sid = state.lockedSentenceId || state.activeSentenceId;
+  if (!isMobileViewport() || mobileUiState.tab !== "sutra" || !sid || mobileUiState.sentenceBarDismissedId === sid) {
+    els.mobileSentenceBar.style.display = "none";
+    return;
+  }
+  const txt = findSentenceText(sid);
+  if (!txt) {
+    els.mobileSentenceBar.style.display = "none";
+    return;
+  }
+  els.mobileSentencePreview.textContent = txt;
+  const isTranslating = state.translatingSet.has(sid);
+  const hasTrans = Boolean(state.bundle?.translations?.[sid]);
+  if (els.mobileGoAiBtn) {
+    els.mobileGoAiBtn.textContent = isTranslating
+      ? "⏳ AI 翻譯中（點我看）"
+      : hasTrans
+        ? "✨ 看 AI 翻譯（已就緒）"
+        : "✨ 看 AI 翻譯";
+  }
+  els.mobileSentenceBar.style.display = "flex";
+}
+
+function initMobileUi() {
+  els.mobileMenuBtn?.addEventListener("click", () => toggleMobileDrawer(true));
+  els.mobileNavMenuBtn?.addEventListener("click", () => toggleMobileDrawer(true));
+  els.mobileSidebarCloseBtn?.addEventListener("click", () => toggleMobileDrawer(false));
+  els.mobileDrawerBackdrop?.addEventListener("click", () => toggleMobileDrawer(false));
+
+  els.mobileBottomNav?.querySelectorAll("[data-mobile-tab]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      toggleMobileDrawer(false);
+      setMobileTab(btn.dataset.mobileTab);
+    });
+  });
+
+  els.mobileGoAiBtn?.addEventListener("click", () => setMobileTab("ai"));
+  els.mobileGoCommBtn?.addEventListener("click", () => setMobileTab("comm"));
+  els.mobileSentenceCloseBtn?.addEventListener("click", () => {
+    mobileUiState.sentenceBarDismissedId = state.lockedSentenceId || state.activeSentenceId;
+    if (els.mobileSentenceBar) els.mobileSentenceBar.style.display = "none";
+  });
+
+  window.addEventListener("resize", () => {
+    if (!isMobileViewport()) {
+      toggleMobileDrawer(false);
+      if (els.mobileSentenceBar) els.mobileSentenceBar.style.display = "none";
+    } else {
+      updateMobileSentenceBar();
+    }
+  });
+}
+
 // ---------- 初始化 ----------
 async function init() {
   bindEvents();
   initByokModal();
   initSutraTts();
+  initMobileUi();
   await checkBackendAvailability();
   await Promise.all([loadLlmStatus(), loadCatalog()]);
   // 背景逐一確認已設定金鑰之 Gemini / NVIDIA 模型連線狀態（不阻塞經文載入）
@@ -1480,6 +1579,7 @@ function bindEvents() {
       closeMasterPopup();
       closeKbSearchDropdown();
       closeByokModal();
+      toggleMobileDrawer(false);
     }
   });
 }
@@ -2472,6 +2572,13 @@ async function loadFascicle(sutraId, fascicle, targetSentenceId = null) {
     els.sutraContent.scrollTop = 0;
   }
 
+  // 手機版選完經文／卷次後自動收起左側目錄抽屜並切回經文頁
+  if (isMobileViewport()) {
+    toggleMobileDrawer(false);
+    mobileUiState.sentenceBarDismissedId = null;
+    setMobileTab("sutra");
+  }
+
   // 同步載入所選古大德的對應整卷註疏全文；若此經尚無收錄古大德則清空舊註疏並提供 CBETA 動態搜尋（方案 B）
   if (state.selectedMasterId) {
     await loadCommentaryFulltext(state.selectedMasterId, null);
@@ -3169,6 +3276,9 @@ function syncSentenceHighlight() {
 
 // ---------- 游標連動與 Cache-First 翻譯 ----------
 function handleSentenceHover(sentenceId) {
+  if (window.matchMedia && window.matchMedia("(pointer: coarse)").matches) {
+    return;
+  }
   if (state.lockedSentenceId && state.lockedSentenceId !== sentenceId) {
     return;
   }
@@ -3202,9 +3312,11 @@ function handleSentenceClick(sentenceId) {
     state.lockedSentenceId = sentenceId;
     state.activeSentenceId = sentenceId;
   }
+  mobileUiState.sentenceBarDismissedId = null;
   syncSentenceHighlight();
   renderAnalysisPanel();
   alignCommentaryToSentence(sentenceId);
+  updateMobileSentenceBar();
 
   if (clickToTranslate && state.lockedSentenceId === sentenceId && isUntranslated) {
     triggerTranslateSentence(sentenceId, false);
@@ -3558,6 +3670,7 @@ function renderAnalysisPanel(errorMsg = null) {
   if (retranslateBtn) {
     retranslateBtn.addEventListener("click", () => triggerTranslateSentence(sid, true));
   }
+  updateMobileSentenceBar();
 }
 
 init();
