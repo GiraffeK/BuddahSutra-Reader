@@ -77,6 +77,16 @@ const els = {
   ttsRateSelect: document.getElementById("ttsRateSelect"),
   ttsGenderToggle: document.getElementById("ttsGenderToggle"),
   ttsVoiceSelect: document.getElementById("ttsVoiceSelect"),
+  openTtsDictBtn: document.getElementById("openTtsDictBtn"),
+  tabTtsDictBtn: document.getElementById("tabTtsDictBtn"),
+  ttsDictSettingsPane: document.getElementById("ttsDictSettingsPane"),
+  ttsDictSrcInput: document.getElementById("ttsDictSrcInput"),
+  ttsDictReadInput: document.getElementById("ttsDictReadInput"),
+  ttsDictAddBtn: document.getElementById("ttsDictAddBtn"),
+  ttsDictTestBtn: document.getElementById("ttsDictTestBtn"),
+  ttsDictStatusMsg: document.getElementById("ttsDictStatusMsg"),
+  ttsDictCustomList: document.getElementById("ttsDictCustomList"),
+  ttsDictBuiltinSummary: document.getElementById("ttsDictBuiltinSummary"),
   // BYOK
   byokBtn: document.getElementById("byokBtn"),
   byokModal: document.getElementById("byokModal"),
@@ -1083,33 +1093,207 @@ async function probeAllNvidiaModelsInBackground({ force = false, apiKeyOverride 
 }
 
 // ==================== 佛經原文朗讀（方案 A：Web Speech API + 佛經正音） ====================
+const CUSTOM_PRONUNCIATION_KEY = "buddhasutra_custom_pronunciations";
+
+// 內建佛經高頻破音詞組正音表（長詞組優先，僅改朗讀發音、絕不更動原文）
 const BUDDHIST_PRONUNCIATION_MAP = [
+  // 金剛經／般若部常見破音
+  [/祇樹給孤獨/g, "奇樹己孤獨"],
+  [/給孤獨/g, "己孤獨"],
+  [/祇園/g, "奇園"],
+  [/還至本處/g, "環至本處"],
+  [/還至/g, "環至"],
+  [/還歸/g, "環歸"],
+  [/往還/g, "往環"],
+  [/著衣/g, "卓衣"],
+  [/著相/g, "卓向"],
+  [/執著/g, "執卓"],
+  [/無著/g, "無卓"],
+  [/愛著/g, "愛卓"],
+  [/貪著/g, "貪卓"],
+  [/長老/g, "掌老"],
+  [/長者/g, "掌者"],
+  [/復次/g, "付次"],
+  [/降伏/g, "祥伏"],
+  [/降魔/g, "祥魔"],
+  [/應無所住/g, "英無所住"],
+  [/樂小法/g, "藥小法"],
+  [/樂說/g, "藥說"],
+  [/好樂/g, "耗藥"],
+  [/愛樂/g, "愛藥"],
+  [/無為法/g, "無韋法"],
+  [/有為法/g, "有韋法"],
+  [/相好/g, "向好"],
+  [/供養/g, "共養"],
+  [/行布施/g, "形布施"],
+  [/行深/g, "形深"],
+  [/行者/g, "形者"],
+  [/菩薩行/g, "菩薩形"],
+  [/梵行/g, "梵形"],
+  [/苦行/g, "苦形"],
+  [/修行/g, "修形"],
+  [/大行/g, "大形"],
+  [/數數/g, "朔朔"],
+  // 大乘經論常見梵譯與宗派專詞
   [/南無/g, "拿摩"],
   [/般若/g, "波惹"],
-  [/阿彌陀/g, "啊彌陀"],
-  [/阿難/g, "啊難"],
+  [/摩訶迦葉/g, "摩呵家設"],
+  [/迦葉/g, "家設"],
+  [/摩訶/g, "摩呵"],
   [/阿耨多羅/g, "啊耨多羅"],
+  [/阿彌陀/g, "啊彌陀"],
   [/阿羅漢/g, "啊羅漢"],
   [/阿修羅/g, "啊修羅"],
-  [/阿僧祇/g, "啊僧祇"],
+  [/阿僧祇/g, "啊僧奇"],
   [/阿蘭若/g, "啊蘭惹"],
   [/阿毗達磨/g, "啊毗達磨"],
   [/阿闍梨/g, "啊闍梨"],
+  [/阿難/g, "啊難"],
   [/阿鼻/g, "啊鼻"],
-  [/摩訶/g, "摩呵"],
+  [/阿閦/g, "啊處"],
+  [/阿含/g, "啊含"],
+  [/舍利弗/g, "設利弗"],
+  [/舍利子/g, "設利子"],
+  [/舍衛/g, "設衛"],
   [/伽藍/g, "茄藍"],
   [/伽耶/g, "茄耶"],
+  [/摩睺羅伽/g, "摩侯羅茄"],
+  [/乾闥婆/g, "前達婆"],
   [/波斯匿/g, "波斯逆"],
-  [/舍利弗/g, "設利弗"],
   [/優婆塞/g, "優婆賽"],
+  [/優婆夷/g, "優婆姨"],
+  [/毗盧遮那/g, "皮盧遮那"],
+  [/毘盧遮那/g, "皮盧遮那"],
+  [/法華/g, "法花"],
+  [/華嚴/g, "花嚴"],
+  [/華藏/g, "花藏"],
+  [/大乘/g, "大稱"],
+  [/小乘/g, "小稱"],
+  [/一乘/g, "一稱"],
+  [/三乘/g, "三稱"],
+  [/佛乘/g, "佛稱"],
+  [/菩薩乘/g, "菩薩稱"],
+  [/聲聞乘/g, "聲聞稱"],
+  [/緣覺乘/g, "緣覺稱"],
 ];
+
+function loadCustomPronunciations() {
+  try {
+    const raw = localStorage.getItem(CUSTOM_PRONUNCIATION_KEY);
+    const parsed = raw ? JSON.parse(raw) : [];
+    return Array.isArray(parsed)
+      ? parsed.filter((x) => x && typeof x.src === "string" && x.src.trim() && typeof x.read === "string")
+      : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveCustomPronunciations(list) {
+  try {
+    localStorage.setItem(CUSTOM_PRONUNCIATION_KEY, JSON.stringify(list));
+  } catch {}
+}
 
 function normalizeSutraPronunciation(text) {
   let out = String(text || "").replace(/\[\*\]|\[＊\]/g, "");
+  // 1. 使用者自訂正音優先（依原詞長度由長到短套用）
+  const custom = loadCustomPronunciations().sort((a, b) => b.src.length - a.src.length);
+  for (const { src, read } of custom) {
+    if (src && out.includes(src)) {
+      out = out.split(src).join(read);
+    }
+  }
+  // 2. 內建佛經破音詞組表
   for (const [pattern, reading] of BUDDHIST_PRONUNCIATION_MAP) {
     out = out.replace(pattern, reading);
   }
   return out;
+}
+
+function showTtsDictStatus(msg, type = "ok") {
+  if (!els.ttsDictStatusMsg) return;
+  els.ttsDictStatusMsg.textContent = msg;
+  els.ttsDictStatusMsg.className = `byok-status-msg ${type}`;
+  els.ttsDictStatusMsg.style.display = "block";
+}
+
+function renderTtsCustomDictList() {
+  if (els.ttsDictBuiltinSummary) {
+    els.ttsDictBuiltinSummary.textContent = `內建佛經破音正音詞典：共 ${BUDDHIST_PRONUNCIATION_MAP.length} 條（已內建祇樹給孤獨、還至本處、著衣、長老、迦葉、般若、南無、大乘等）。`;
+  }
+  if (!els.ttsDictCustomList) return;
+  const list = loadCustomPronunciations();
+  if (!list.length) {
+    els.ttsDictCustomList.innerHTML = `<div class="tts-dict-empty">尚未新增自訂正音；聽經時若遇到唸錯的字詞，可隨時在上方新增。</div>`;
+    return;
+  }
+  els.ttsDictCustomList.innerHTML = "";
+  list.forEach((item, idx) => {
+    const row = document.createElement("div");
+    row.className = "tts-dict-item";
+    row.innerHTML = `
+      <span class="tts-dict-item-pair"><strong>${escapeHtml(item.src)}</strong> → ${escapeHtml(item.read)}</span>
+      <button type="button" class="mini-btn" data-del-idx="${idx}">刪除</button>
+    `;
+    row.querySelector("button")?.addEventListener("click", () => {
+      const next = loadCustomPronunciations().filter((_, i) => i !== idx);
+      saveCustomPronunciations(next);
+      renderTtsCustomDictList();
+      showTtsDictStatus(`已刪除「${item.src}」正音規則。`, "ok");
+    });
+    els.ttsDictCustomList.appendChild(row);
+  });
+}
+
+function initTtsDictUi() {
+  renderTtsCustomDictList();
+  els.openTtsDictBtn?.addEventListener("click", () => {
+    openByokModal("tts");
+  });
+  els.tabTtsDictBtn?.addEventListener("click", () => switchApiModalTab("tts"));
+
+  els.ttsDictAddBtn?.addEventListener("click", () => {
+    const src = (els.ttsDictSrcInput?.value || "").trim();
+    const read = (els.ttsDictReadInput?.value || "").trim();
+    if (!src || !read) {
+      showTtsDictStatus("請同時輸入「原詞」與「改唸為」文字。", "err");
+      return;
+    }
+    const list = loadCustomPronunciations().filter((x) => x.src !== src);
+    list.unshift({ src, read });
+    saveCustomPronunciations(list);
+    if (els.ttsDictSrcInput) els.ttsDictSrcInput.value = "";
+    if (els.ttsDictReadInput) els.ttsDictReadInput.value = "";
+    renderTtsCustomDictList();
+    showTtsDictStatus(`✓ 已新增正音：「${src}」→「${read}」，下次朗讀即刻生效！`, "ok");
+  });
+
+  els.ttsDictTestBtn?.addEventListener("click", () => {
+    const sample = (els.ttsDictReadInput?.value || "").trim() || (els.ttsDictSrcInput?.value || "").trim();
+    if (!sample) {
+      showTtsDictStatus("請先在上方輸入要試聽的讀音文字。", "err");
+      return;
+    }
+    if (!("speechSynthesis" in window)) {
+      showTtsDictStatus("此瀏覽器不支援語音試聽。", "err");
+      return;
+    }
+    const synth = window.speechSynthesis;
+    if (synth.speaking || synth.pending) synth.cancel();
+    const u = new SpeechSynthesisUtterance(sample);
+    u.rate = parseFloat(els.ttsRateSelect?.value || "1.0") || 1.0;
+    const selectedName = els.ttsVoiceSelect?.value;
+    const voice = ttsState.voices.find((v) => v.name === selectedName) || ttsState.voices[0] || null;
+    if (voice) {
+      u.voice = voice;
+      u.lang = voice.lang || "zh-TW";
+    } else {
+      u.lang = "zh-TW";
+    }
+    ttsState.currentUtter = u;
+    synth.speak(u);
+  });
 }
 
 const ttsState = {
@@ -1502,6 +1686,7 @@ async function init() {
   bindEvents();
   initByokModal();
   initSutraTts();
+  initTtsDictUi();
   initMobileUi();
   await checkBackendAvailability();
   await Promise.all([loadLlmStatus(), loadCatalog()]);
@@ -1645,12 +1830,14 @@ function bindEvents() {
 }
 
 function switchApiModalTab(tab) {
-  const target = tab === "nvidia" ? "nvidia" : "gemini";
+  const target = tab === "nvidia" ? "nvidia" : tab === "tts" ? "tts" : "gemini";
   state.activeApiTab = target;
   if (els.tabGeminiBtn) els.tabGeminiBtn.classList.toggle("active", target === "gemini");
   if (els.tabNvidiaBtn) els.tabNvidiaBtn.classList.toggle("active", target === "nvidia");
+  if (els.tabTtsDictBtn) els.tabTtsDictBtn.classList.toggle("active", target === "tts");
   if (els.geminiSettingsPane) els.geminiSettingsPane.style.display = target === "gemini" ? "block" : "none";
   if (els.nvidiaSettingsPane) els.nvidiaSettingsPane.style.display = target === "nvidia" ? "block" : "none";
+  if (els.ttsDictSettingsPane) els.ttsDictSettingsPane.style.display = target === "tts" ? "block" : "none";
 }
 
 function showNvidiaStatus(msg, type = "ok") {
@@ -2450,6 +2637,7 @@ async function fetchSutraFascicleFromGitHubClient(sutraId, fascicle) {
   const meta = findCatalogSutraMeta(sutraId);
   return {
     schema_version: "1.0",
+    parser_version: 2,
     source: `CBETA GitHub xml-p5a (${sutraId}.xml)`,
     sutra_id: sutraId,
     sutra_title: meta?.title || sutraId,
@@ -2552,11 +2740,11 @@ async function loadFascicle(sutraId, fascicle, targetSentenceId = null) {
       }
     } catch {}
 
-    // Tier 2：讀取瀏覽器 IndexedDB 已快取的自載經卷
+    // Tier 2：讀取瀏覽器 IndexedDB 已快取的自載經卷（parser_version < 2 者自動重抓以清除舊版梵音標註）
     if (!bundle) {
       try {
         const cachedSutra = await dbHelper.getCustomFascicle(sutraId, fascicle);
-        if (cachedSutra) {
+        if (cachedSutra && Number(cachedSutra.parser_version || 1) >= 2) {
           bundle = await buildClientBundleFromSutra(sutraId, fascicle, cachedSutra, false);
         }
       } catch {}
@@ -2898,7 +3086,7 @@ function extractJuanFromXmlP5aClient(xmlText, targetJuan, workCode) {
   const body = doc.getElementsByTagName("body")[0];
   if (!body) return [];
 
-  const SKIP_TAGS = new Set(["note", "rdg", "figDesc", "lb", "pb", "milestone", "mulu"]);
+  const SKIP_TAGS = new Set(["note", "rdg", "sic", "foreign", "figDesc", "lb", "pb", "milestone", "mulu"]);
   const BLOCK_TAGS = new Set(["p", "lg", "head", "byline", "juan"]);
 
   function collectText(node) {
@@ -2909,6 +3097,12 @@ function extractJuanFromXmlP5aClient(xmlText, targetJuan, workCode) {
       } else if (child.nodeType === 1) {
         const lt = child.localName || child.nodeName.split(":").pop();
         if (SKIP_TAGS.has(lt)) continue;
+        // 跳過 CBETA 雙語對照中的非漢文附註（例如 <cb:t xml:lang="sa-Latn">subhūti</cb:t> 或 place="foot"）
+        if (lt === "t") {
+          const lang = (child.getAttribute("xml:lang") || child.getAttribute("lang") || "").toLowerCase();
+          const place = (child.getAttribute("place") || "").toLowerCase();
+          if ((lang && !lang.startsWith("zh")) || place === "foot") continue;
+        }
         parts.push(collectText(child));
       }
     }

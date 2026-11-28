@@ -455,7 +455,17 @@ def _extract_juan_from_xml_p5a(xml_text: str, target_juan: int) -> list[dict[str
             parts.append(node.text)
         for child in node:
             lt = _local(child.tag)
-            if lt in {"note", "rdg", "figDesc", "lb", "pb", "milestone", "mulu"}:
+            xml_lang = (
+                child.attrib.get("{http://www.w3.org/XML/1998/namespace}lang")
+                or child.attrib.get("lang")
+                or ""
+            ).lower()
+            is_non_zh_gloss = (
+                lt == "foreign"
+                or (lt == "t" and xml_lang and not xml_lang.startswith("zh"))
+                or (lt == "t" and child.attrib.get("place") == "foot")
+            )
+            if lt in {"note", "rdg", "sic", "figDesc", "lb", "pb", "milestone", "mulu"} or is_non_zh_gloss:
                 if child.tail:
                     parts.append(child.tail)
                 continue

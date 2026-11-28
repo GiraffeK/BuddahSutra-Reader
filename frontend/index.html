@@ -9,7 +9,7 @@
   <meta name="apple-mobile-web-app-title" content="大藏經閱讀" />
   <link rel="manifest" href="./manifest.json" />
   <title>大正新脩大藏經｜AI 白話翻譯與古大德註疏系統</title>
-  <link rel="stylesheet" href="./styles.css?v=20261128m1" />
+  <link rel="stylesheet" href="./styles.css?v=20261128m3" />
 </head>
 <body class="mobile-tab-sutra">
   <!-- 頂部導覽列 -->
@@ -92,6 +92,7 @@
               <button type="button" class="tts-gender-btn" data-gender="male">男聲</button>
             </div>
             <select id="ttsVoiceSelect" class="mini-select tts-voice-select" title="選擇精選語音"></select>
+            <button id="openTtsDictBtn" type="button" class="fasc-nav-btn" title="管理佛經破音字自訂正音表（原詞 → 讀音字）">正音</button>
           </div>
         </div>
         <div id="cbetaToast" class="cbeta-toast" style="display:none;"></div>
@@ -206,7 +207,8 @@
 
         <div class="api-provider-tabs">
           <button id="tabGeminiBtn" type="button" class="api-tab-btn active">✨ Gemini API</button>
-          <button id="tabNvidiaBtn" type="button" class="api-tab-btn">🟢 NVIDIA NIM API</button>
+          <button id="tabNvidiaBtn" type="button" class="api-tab-btn">🟢 NVIDIA NIM</button>
+          <button id="tabTtsDictBtn" type="button" class="api-tab-btn">🔊 朗讀正音</button>
         </div>
 
         <!-- Gemini 設定分頁 -->
@@ -323,6 +325,30 @@
           <div id="nvidiaStatusMsg" class="byok-status-msg" style="display:none;"></div>
         </div>
 
+        <!-- 佛經朗讀正音設定分頁 -->
+        <div id="ttsDictSettingsPane" style="display:none;">
+          <p class="modal-desc" style="margin-bottom:12px;">
+            僅修正朗讀發音，<strong>絕不更動畫面上的經文原字</strong>。建議輸入 2～5 字詞組（如「還至本處」→「環至本處」），以免誤傷其他語境；自訂規則優先於內建詞典，儲存於本機瀏覽器。
+          </p>
+          <div class="tts-dict-form">
+            <input id="ttsDictSrcInput" type="text" placeholder="原詞（例：還至本處）" />
+            <span class="tts-dict-arrow">→</span>
+            <input id="ttsDictReadInput" type="text" placeholder="改唸為（例：環至本處）" />
+          </div>
+          <div class="modal-action-row" style="margin-top:8px;">
+            <button id="ttsDictAddBtn" type="button" class="primary-btn">＋ 新增正音</button>
+            <button id="ttsDictTestBtn" type="button" class="secondary-btn">🔊 試聽讀音</button>
+          </div>
+          <div id="ttsDictStatusMsg" class="byok-status-msg" style="display:none;"></div>
+
+          <div class="tts-dict-list-wrap">
+            <div class="tts-dict-list-head">我的自訂正音表（點擊刪除）</div>
+            <div id="ttsDictCustomList" class="tts-dict-list"></div>
+          </div>
+
+          <div id="ttsDictBuiltinSummary" class="form-hint" style="margin-top:10px;"></div>
+        </div>
+
         <hr style="margin: 20px 0; border: none; border-top: 1px solid #e4dccb;" />
 
         <div class="kb-storage-section">
@@ -343,6 +369,6 @@
     </div>
   </div>
 
-  <script src="./app.js?v=20261128m2"></script>
+  <script src="./app.js?v=20261128m3"></script>
 </body>
 </html>

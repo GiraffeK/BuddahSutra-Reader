@@ -1233,3 +1233,13 @@
 ## Session 64 — 2026-11-28 合併 `feat/mobile-ui` 回 `main` 並部署 Firebase Hosting 正式站
 - 手機實測（含 iOS 靜音鍵確認、抽屜目錄、底部四鍵分頁、經句快捷列、PWA 與朗讀）均通過。
 - 將 `feat/mobile-ui` 以 `--no-ff` 合併回 `main`、推送至 GitHub `origin/main`、清理已合併的 `feat/mobile-ui` 分支，並部署至 Firebase Hosting 正式站 `https://buddahsutra-reader.web.app`。
+
+
+## Session 65 — 2026-11-28 濾除 CBETA XML 梵音附註（如 `subhūti`）＋ 佛經破音正音詞典擴充與自訂正音介面
+- **修復 CBETA XML 非漢文附註滲入正文**：
+  - [frontend/app.js](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/app.js)（`extractJuanFromXmlP5aClient`）與 [backend/cbeta_fetcher.py](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/backend/cbeta_fetcher.py)（`_extract_juan_from_xml_p5a`）新增跳過 `<foreign>`、`<sic>` 以及 `xml:lang` 非 `zh*` 或 `place="foot"` 的 `<cb:t>` 節點，徹底移除如 `subhūti須菩提` 之梵文羅馬轉寫。
+  - 前端自載經卷加上 `parser_version: 2`，舊版 IndexedDB 快取（如已下載之《金剛經》）將於再次開啟時自動重抓刷新。
+- **第一層：擴充內建佛經破音詞組正音表**（[frontend/app.js](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/app.js)）：
+  - 擴充 `BUDDHIST_PRONUNCIATION_MAP` 至 72 條高頻佛經詞組（含 `祇樹給孤獨`→`奇樹己孤獨`、`還至本處`→`環至本處`、`著衣`→`卓衣`、`長老`→`掌老`、`迦葉`→`家設`、`行深`→`形深`、`大乘`→`大稱`、`法華`→`法花` 等），僅調整朗讀發音、絕不更動畫面原字。
+- **第二層：使用者自訂正音表介面**（[frontend/index.html](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/index.html)、[frontend/styles.css](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/styles.css)、[frontend/app.js](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/app.js)）：
+  - 於朗讀工具列新增「**正音**」快捷鈕，並於設定視窗新增「**🔊 朗讀正音**」分頁，支援新增／刪除「原詞 → 改唸為」、即時「🔊 試聽讀音」，自訂規則優先套用並保存於 `localStorage`。

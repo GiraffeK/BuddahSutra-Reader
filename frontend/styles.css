@@ -2140,3 +2140,71 @@ mark.comm-hit {
   }
 }
 
+/* 佛經朗讀正音設定分頁 */
+.tts-dict-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tts-dict-form input[type="text"] {
+  flex: 1;
+  min-width: 0;
+}
+
+.tts-dict-arrow {
+  font-weight: 700;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.tts-dict-list-wrap {
+  margin-top: 14px;
+  border: 1px solid #e4dccb;
+  border-radius: 8px;
+  background: #faf6ec;
+  overflow: hidden;
+}
+
+.tts-dict-list-head {
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-dark);
+  background: #efe5cf;
+  border-bottom: 1px solid #e4dccb;
+}
+
+.tts-dict-list {
+  max-height: 180px;
+  overflow-y: auto;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tts-dict-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 5px 8px;
+  border-radius: 6px;
+  background: #fffdf8;
+  border: 1px solid #ebe2cf;
+  font-size: 13px;
+}
+
+.tts-dict-item-pair {
+  font-family: var(--font-serif);
+  color: var(--text-main);
+}
+
+.tts-dict-empty {
+  padding: 10px;
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
