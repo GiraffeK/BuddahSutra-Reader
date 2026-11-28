@@ -1049,3 +1049,16 @@
 ### 2. 修改與驗證
 - 更新 `frontend/index.html` 語速選單為 `0.75x`、`0.85x`、`0.95x`、`1.0x`（預設）、`1.1x`、`1.25x`，同步調整 `frontend/app.js` 預設語速為 `1.0`，透過 `python test_safe_command.py` 驗證 PASS。
 - 透過 `python test_safe_command.py` 推送至 GitHub（`origin/main`）並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。
+
+---
+
+## [2026-11-28 15:57] Session 50：移除主區重複經名標題、卷次切換器左移整合單列、CBETA 檔名移至左側目錄經名後
+
+### 1. 接收到的 User Prompt
+- 使用者附 2 張截圖指示：「框1功能移到框2，而原框2的顯示似乎也多了，可以把經名拿掉，並把cbeta檔名移到左列的經名之後。」
+
+### 2. 修改與驗證
+- 移除 `frontend/index.html` 中重複的 `#sutraTitle` 與 `#sutraCode`，將卷次切換器（`.fascicle-switcher`）移至左側並與朗讀控制列（`.tts-bar`）整合於單一緊湊工具列 `.sutra-toolbar-row`，大幅釋放閱讀高度。
+- 於 `frontend/app.js` 的 `renderCatalogTree()` 中，將 CBETA 檔名（目前閱讀經典顯示如 `T10n0279_001`，其餘經典顯示經號）直接附於左側目錄樹的經名之後，並清理不再使用的 `els.sutraTitle` / `els.sutraCode` 參照。
+- 透過 `python test_safe_command.py` 驗證 JS 語法與 HTML/CSS 結構全數 PASS。
+- 透過 `python test_safe_command.py` 推送至 GitHub（`origin/main`）並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。

@@ -42,8 +42,6 @@ const state = {
 const els = {
   catalogTree: document.getElementById("catalogTree"),
   kbStatsBadge: document.getElementById("kbStatsBadge"),
-  sutraTitle: document.getElementById("sutraTitle"),
-  sutraCode: document.getElementById("sutraCode"),
   prevFascicleBtn: document.getElementById("prevFascicleBtn"),
   fascicleSelect: document.getElementById("fascicleSelect"),
   nextFascicleBtn: document.getElementById("nextFascicleBtn"),
@@ -1947,7 +1945,11 @@ function renderCatalogTree(query) {
         ? `<span class="badge-avail">可閱讀</span>`
         : `<span class="badge-planned">建置中</span>`;
 
-      sBtn.innerHTML = `<span>${escapeHtml(sutra.title)}</span>${badge}`;
+      const isActiveSutra = sutra.sutra_id === state.currentSutraId;
+      const cbetaLabel = isActiveSutra
+        ? `${sutra.sutra_id}_${String(state.currentFascicle).padStart(3, "0")}`
+        : sutra.sutra_id;
+      sBtn.innerHTML = `<span>${escapeHtml(sutra.title)} <span class="sidebar-cbeta-code">${escapeHtml(cbetaLabel)}</span></span>${badge}`;
       sBtn.title = `${sutra.sutra_id}｜${sutra.translator}（共 ${sutra.fascicle_count} 卷）`;
 
       sBtn.addEventListener("click", () => {
@@ -2220,9 +2222,6 @@ async function loadFascicle(sutraId, fascicle, targetSentenceId = null) {
     const defMaster = (bundle.masters || []).find((m) => m.default_selected) || (bundle.masters || [])[0];
     state.selectedMasterId = defMaster ? defMaster.master_id : null;
   }
-
-  els.sutraTitle.textContent = bundle.sutra.sutra_title;
-  els.sutraCode.textContent = `${bundle.sutra.sutra_id}_${String(fascicle).padStart(3, "0")}`;
 
   renderFascicleSwitcher();
   updateKbStats();

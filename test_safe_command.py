@@ -22,7 +22,7 @@ for line in status.splitlines():
 if status.strip():
     run(["git", "add", "-A"], "git add")
     run(
-        ["git", "commit", "-m", "ui: add 1.0x default option to TTS rate selector"],
+        ["git", "commit", "-m", "ui: compact single toolbar row and move CBETA code to sidebar sutra name"],
         "git commit",
     )
     run(["git", "push", "origin", "main"], "git push")

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>大正新脩大藏經｜AI 白話翻譯與古大德註疏系統</title>
-  <link rel="stylesheet" href="./styles.css?v=20261128j" />
+  <link rel="stylesheet" href="./styles.css?v=20261128l" />
 </head>
 <body>
   <!-- 頂部導覽列 -->
@@ -58,19 +58,14 @@
     <!-- 主閱讀區 -->
     <main class="main-area" id="mainArea">
       <div class="sutra-header">
-        <div class="sutra-title-row">
-          <div class="sutra-title-left">
-            <h1 id="sutraTitle">載入經文中...</h1>
-            <span id="sutraCode" class="sutra-code"></span>
-          </div>
-          <!-- 卷次快速切換器 -->
+        <div class="sutra-toolbar-row">
+          <!-- 卷次快速切換器（移至左側原經名位置） -->
           <div class="fascicle-switcher">
             <button id="prevFascicleBtn" class="fasc-nav-btn" title="上一卷">◀ 上一卷</button>
             <select id="fascicleSelect" class="fasc-select" title="選擇卷次（未入庫卷次將自動從 CBETA 抓取並存於本地知識庫）"></select>
             <button id="nextFascicleBtn" class="fasc-nav-btn" title="下一卷">下一卷 ▶</button>
           </div>
-        </div>
-        <div class="sutra-subtitle-row">
+          <!-- 佛經原文朗讀控制列 -->
           <div class="tts-bar" id="ttsBar">
             <button id="ttsPlayBtn" type="button" class="fasc-nav-btn tts-play-btn" title="從目前選中句（或卷首）開始朗讀佛經原文">🔊 朗讀原文</button>
             <button id="ttsStopBtn" type="button" class="fasc-nav-btn" style="display:none;" title="停止朗讀">⏹ 停止</button>
@@ -302,6 +297,6 @@
     </div>
   </div>
 
-  <script src="./app.js?v=20261128k"></script>
+  <script src="./app.js?v=20261128l"></script>
 </body>
 </html>
