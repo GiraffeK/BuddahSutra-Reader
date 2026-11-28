@@ -1955,7 +1955,7 @@ function renderCatalogTree(query) {
     if (!divMatch) return;
 
     const divEl = document.createElement("div");
-    const hasAvail = div.sutras.some((s) => s.status === "available");
+    const hasAvail = div.sutras.some((s) => s.status === "available" || s.sutra_id === state.currentSutraId);
     divEl.className = "division-item" + (hasAvail || q ? " open" : "");
 
     const btn = document.createElement("button");
@@ -1980,15 +1980,18 @@ function renderCatalogTree(query) {
       node.className = "sutra-node";
 
       const sBtn = document.createElement("button");
-      const isAvail = sutra.status === "available";
+      const hasCbetaId = /^[A-Z]+\d+n\d+[A-Za-z]?$/.test(sutra.sutra_id || "");
+      const isAvail = sutra.status === "available" || (sutra.local_fascicles?.length > 0);
       sBtn.className =
         "sutra-btn" +
-        (isAvail ? "" : " planned") +
+        (isAvail || hasCbetaId ? "" : " planned") +
         (sutra.sutra_id === state.currentSutraId ? " active" : "");
 
       const badge = isAvail
         ? `<span class="badge-avail">可閱讀</span>`
-        : `<span class="badge-planned">建置中</span>`;
+        : hasCbetaId
+          ? `<span class="badge-cbeta">CBETA</span>`
+          : `<span class="badge-planned">建置中</span>`;
 
       const isActiveSutra = sutra.sutra_id === state.currentSutraId;
       const cbetaLabel = isActiveSutra
@@ -2481,6 +2484,12 @@ function syncCatalogLocalFascicles(sutraId, localFascicles) {
     const s = (div.sutras || []).find((x) => x.sutra_id === sutraId);
     if (s) {
       s.local_fascicles = [...localFascicles];
+      if (localFascicles.length > 0) {
+        s.status = "available";
+        s.available_fascicles = Array.from(
+          new Set([...(s.available_fascicles || []), ...localFascicles])
+        ).sort((a, b) => a - b);
+      }
       return;
     }
   }

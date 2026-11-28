@@ -1,0 +1,2632 @@
+{
+  "schema_version": "1.0",
+  "source": "CBETA Online Data API (cbdata.dila.edu.tw)",
+  "sutra_id": "T10n0279",
+  "sutra_title": "大方廣佛華嚴經",
+  "edition": "八十華嚴（唐・實叉難陀譯）",
+  "translator": "唐 實叉難陀譯",
+  "fascicle": 9,
+  "fascicle_count": 80,
+  "fascicle_title": "卷第9・5 華藏世界品・之二",
+  "paragraphs": [
+    {
+      "paragraph_id": "T10n0279_009_p0001",
+      "index": 1,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0001_s001",
+          "index": 1,
+          "text": "大方廣佛華嚴經卷第九",
+          "source_hash": "sha256:14600ea81ead"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_009_p0002",
+      "index": 2,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0002_s001",
+          "index": 1,
+          "text": "于闐國三藏實叉難陀奉制譯",
+          "source_hash": "sha256:21bcf9513e55"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_009_p0003",
+      "index": 3,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0003_s001",
+          "index": 1,
+          "text": "華藏世界品第五之二",
+          "source_hash": "sha256:4a410ce9f844"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_009_p0004",
+      "index": 4,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0004_s001",
+          "index": 1,
+          "text": "爾時，普賢菩薩復告大眾言：",
+          "source_hash": "sha256:ab905210f6e2"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_009_p0005",
+      "index": 5,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0005_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s002",
+          "index": 2,
+          "text": "此無邊妙華光香水海東，次有香水海，名：離垢焰藏；",
+          "source_hash": "sha256:ff3a16831d49"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s003",
+          "index": 3,
+          "text": "出大蓮華，名：一切香摩尼王妙莊嚴；",
+          "source_hash": "sha256:888184043c8b"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s004",
+          "index": 4,
+          "text": "有世界種而住其上，名：遍照剎旋，以菩薩行吼音為體。",
+          "source_hash": "sha256:be0079ae8e50"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s005",
+          "index": 5,
+          "text": "此中最下方，有世界，名：宮殿莊嚴幢；",
+          "source_hash": "sha256:e4886547257c"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s006",
+          "index": 6,
+          "text": "其形四方，依一切寶莊嚴海住，蓮華光網雲彌覆其上，佛剎微塵數世界圍遶，純一清淨，佛號：眉間光遍照。",
+          "source_hash": "sha256:6ae28f8093b9"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s007",
+          "index": 7,
+          "text": "此上過佛剎微塵數世界，有世界，名：德華藏；",
+          "source_hash": "sha256:12851f3cbe75"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s008",
+          "index": 8,
+          "text": "其形周圓，依一切寶華蘂海住，真珠幢師子座雲彌覆其上，二佛剎微塵數世界圍遶，佛號：一切無邊法海慧。",
+          "source_hash": "sha256:d72b75be86f6"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s009",
+          "index": 9,
+          "text": "此上過佛剎微塵數世界，有世界，名：善變化妙香輪；",
+          "source_hash": "sha256:708ee47b4979"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s010",
+          "index": 10,
+          "text": "形如金剛，依一切寶莊嚴鈴網海住，種種莊嚴圓光雲彌覆其上，三佛剎微塵數世界圍遶，佛號：功德相光明普照。",
+          "source_hash": "sha256:4286cc0d0b80"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s011",
+          "index": 11,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙色光明；",
+          "source_hash": "sha256:3d8133b6440a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s012",
+          "index": 12,
+          "text": "其狀猶如摩尼寶輪，依無邊色寶香水海住，普光明真珠樓閣雲彌覆其上，四佛剎微塵數世界圍遶，純一清淨，佛號：善眷屬出興遍照。",
+          "source_hash": "sha256:a132798e27eb"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s013",
+          "index": 13,
+          "text": "此上過佛剎微塵數世界，有世界，名：善蓋覆；",
+          "source_hash": "sha256:ef5e44e3ed47"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s014",
+          "index": 14,
+          "text": "狀如蓮華，依金剛香水海住，離塵光明香水雲彌覆其上，五佛剎微塵數世界圍遶，佛號：法喜無盡慧。",
+          "source_hash": "sha256:5b8151a01811"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s015",
+          "index": 15,
+          "text": "此上過佛剎微塵數世界，有世界，名：尸利華光輪；",
+          "source_hash": "sha256:d5e37574d92a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s016",
+          "index": 16,
+          "text": "其形三角，依一切堅固寶莊嚴海住，菩薩摩尼冠光明雲彌覆其上，六佛剎微塵數世界圍遶，佛號：清淨普光明雲。",
+          "source_hash": "sha256:e24467b11526"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s017",
+          "index": 17,
+          "text": "此上過佛剎微塵數世界，有世界，名：寶蓮華莊嚴；",
+          "source_hash": "sha256:c3be049c42be"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s018",
+          "index": 18,
+          "text": "形如半月，依一切蓮華莊嚴海住，一切寶華雲彌覆其上，七佛剎微塵數世界圍遶，純一清淨，佛號：功德華清淨眼。",
+          "source_hash": "sha256:88c9922c45eb"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s019",
+          "index": 19,
+          "text": "此上過佛剎微塵數世界，有世界，名：無垢焰莊嚴；",
+          "source_hash": "sha256:c436235c3c45"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s020",
+          "index": 20,
+          "text": "其狀猶如寶燈行列，依寶焰藏海住，常雨香水種種身雲彌覆其上，八佛剎微塵數世界圍遶，佛號：慧力無能勝。",
+          "source_hash": "sha256:1ce8283d3580"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s021",
+          "index": 21,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙梵音；",
+          "source_hash": "sha256:bfa025013e57"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s022",
+          "index": 22,
+          "text": "形如卐字，依寶衣幢海住，一切華莊嚴帳雲彌覆其上，九佛剎微塵數世界圍遶，佛號：廣大目如空中淨月。",
+          "source_hash": "sha256:a47b253d6b7e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s023",
+          "index": 23,
+          "text": "此上過佛剎微塵數世界，有世界，名：微塵數音聲；",
+          "source_hash": "sha256:4f44273c332d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s024",
+          "index": 24,
+          "text": "其狀猶如因陀羅網，依一切寶水海住，一切樂音寶蓋雲彌覆其上，十佛剎微塵數世界圍遶，純一清淨，佛號：金色須彌燈。",
+          "source_hash": "sha256:26ce1f802c21"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s025",
+          "index": 25,
+          "text": "此上過佛剎微塵數世界，有世界，名：寶色莊嚴；",
+          "source_hash": "sha256:009dd163f3d0"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s026",
+          "index": 26,
+          "text": "形如卐字，依帝釋形寶王海住，日光明華雲彌覆其上，十一佛剎微塵數世界圍遶，佛號：迥照法界光明智。",
+          "source_hash": "sha256:dc6265883221"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s027",
+          "index": 27,
+          "text": "此上過佛剎微塵數世界，有世界，名：金色妙光；",
+          "source_hash": "sha256:ea5f1e6aecfd"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s028",
+          "index": 28,
+          "text": "其狀猶如廣大城廓，依一切寶莊嚴海住，道場寶華雲彌覆其上，十二佛剎微塵數世界圍遶，佛號：寶燈普照幢。",
+          "source_hash": "sha256:6ae3a622f57f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s029",
+          "index": 29,
+          "text": "此上過佛剎微塵數世界，有世界，名：遍照光明輪；",
+          "source_hash": "sha256:fcf3f560a2f5"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s030",
+          "index": 30,
+          "text": "狀如華旋，依寶衣旋海住，佛音聲寶王樓閣雲彌覆其上，十三佛剎微塵數世界圍遶，純一清淨，佛號：蓮華焰遍照。",
+          "source_hash": "sha256:338e57f5d756"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s031",
+          "index": 31,
+          "text": "此上過佛剎微塵數世界，有世界，名：寶藏莊嚴；",
+          "source_hash": "sha256:bff9428db436"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s032",
+          "index": 32,
+          "text": "狀如四洲，依寶瓔珞須彌住，寶焰摩尼雲彌覆其上，十四佛剎微塵數世界圍遶，佛號：無盡福開敷華。",
+          "source_hash": "sha256:21548f084590"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s033",
+          "index": 33,
+          "text": "此上過佛剎微塵數世界，有世界，名：如鏡像普現；",
+          "source_hash": "sha256:1aa296d5f908"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s034",
+          "index": 34,
+          "text": "其狀猶如阿脩羅身，依金剛蓮華海住，寶冠光影雲彌覆其上，十五佛剎微塵數世界圍遶，佛號：甘露音。",
+          "source_hash": "sha256:c534b3236a77"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s035",
+          "index": 35,
+          "text": "此上過佛剎微塵數世界，有世界，名：栴檀月；",
+          "source_hash": "sha256:6cfbcd63526a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s036",
+          "index": 36,
+          "text": "其形八隅，依金剛栴檀寶海住，真珠華摩尼雲彌覆其上，十六佛剎微塵數世界圍遶，純一清淨，佛號：最勝法無等智。",
+          "source_hash": "sha256:24638498e50c"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s037",
+          "index": 37,
+          "text": "此上過佛剎微塵數世界，有世界，名：離垢光明；",
+          "source_hash": "sha256:294b8f84d658"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s038",
+          "index": 38,
+          "text": "其狀猶如香水漩流，依無邊色寶光海住，妙香光明雲彌覆其上，十七佛剎微塵數世界圍遶，佛號：遍照虛空光明音。",
+          "source_hash": "sha256:89b90dcc047a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s039",
+          "index": 39,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙華莊嚴；",
+          "source_hash": "sha256:6be5497e6267"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s040",
+          "index": 40,
+          "text": "其狀猶如旋遶之形，依一切華海住，一切樂音摩尼雲彌覆其上，十八佛剎微塵數世界圍遶，佛號：普現勝光明。",
+          "source_hash": "sha256:242e56efd159"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s041",
+          "index": 41,
+          "text": "此上過佛剎微塵數世界，有世界，名：勝音莊嚴；",
+          "source_hash": "sha256:38182669d066"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s042",
+          "index": 42,
+          "text": "其狀猶如師子之座，依金師子座海住，眾色蓮華藏師子座雲彌覆其上，十九佛剎微塵數世界圍遶，佛號：無邊功德稱普光明。",
+          "source_hash": "sha256:cadedcff8d9e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s043",
+          "index": 43,
+          "text": "此上過佛剎微塵數世界，有世界，名：高勝燈；",
+          "source_hash": "sha256:2265bb1ae3a9"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0005_s044",
+          "index": 44,
+          "text": "狀如佛掌，依寶衣服香幢海住，日輪普照寶王樓閣雲彌覆其上，二十佛剎微塵數世界圍遶，純一清淨，佛號：普照虛空燈。",
+          "source_hash": "sha256:4fbaa1c2b3d7"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_009_p0006",
+      "index": 6,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0006_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s002",
+          "index": 2,
+          "text": "此離垢焰藏香水海南，次有香水海，名：無盡光明輪；",
+          "source_hash": "sha256:8f518294fa24"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s003",
+          "index": 3,
+          "text": "世界種，名：佛幢莊嚴；",
+          "source_hash": "sha256:311f926d22db"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s004",
+          "index": 4,
+          "text": "以一切佛功德海音聲為體。",
+          "source_hash": "sha256:468753533965"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s005",
+          "index": 5,
+          "text": "此中最下方，有世界，名：愛見華；",
+          "source_hash": "sha256:38cd28e9188b"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s006",
+          "index": 6,
+          "text": "狀如寶輪，依摩尼樹藏寶王海住，化現菩薩形寶藏雲彌覆其上，佛剎微塵數世界圍遶，純一清淨，佛號：蓮華光歡喜面。",
+          "source_hash": "sha256:17a788407ee8"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s007",
+          "index": 7,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙音；",
+          "source_hash": "sha256:792ef55015cb"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s008",
+          "index": 8,
+          "text": "佛號：須彌寶燈。",
+          "source_hash": "sha256:47c70317c433"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s009",
+          "index": 9,
+          "text": "此上過佛剎微塵數世界，有世界，名：眾寶莊嚴光；",
+          "source_hash": "sha256:6ec11e0bfafd"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s010",
+          "index": 10,
+          "text": "佛號：法界音聲幢。",
+          "source_hash": "sha256:37b3e112f959"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s011",
+          "index": 11,
+          "text": "此上過佛剎微塵數世界，有世界，名：香藏金剛；",
+          "source_hash": "sha256:eece6cd10c7b"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s012",
+          "index": 12,
+          "text": "佛號：光明音。",
+          "source_hash": "sha256:9cf68481873b"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s013",
+          "index": 13,
+          "text": "此上過佛剎微塵數世界，有世界，名：淨妙音；",
+          "source_hash": "sha256:6c4cb17aad26"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s014",
+          "index": 14,
+          "text": "佛號：最勝精進力。",
+          "source_hash": "sha256:74536dd94941"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s015",
+          "index": 15,
+          "text": "此上過佛剎微塵數世界，有世界，名：寶蓮華莊嚴；",
+          "source_hash": "sha256:c3be049c42be"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s016",
+          "index": 16,
+          "text": "佛號：法城雲雷音。",
+          "source_hash": "sha256:2668eb3f54a9"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s017",
+          "index": 17,
+          "text": "此上過佛剎微塵數世界，有世界，名：與安樂；",
+          "source_hash": "sha256:8bf7a5c03c9e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s018",
+          "index": 18,
+          "text": "佛號：大名稱智慧燈。",
+          "source_hash": "sha256:f532a5580aee"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s019",
+          "index": 19,
+          "text": "此上過佛剎微塵數世界，有世界，名：無垢網；",
+          "source_hash": "sha256:49ccfd007460"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s020",
+          "index": 20,
+          "text": "佛號：師子光功德海。",
+          "source_hash": "sha256:bf75c2d9e3eb"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s021",
+          "index": 21,
+          "text": "此上過佛剎微塵數世界，有世界，名：華林幢遍照；",
+          "source_hash": "sha256:7a184c63a979"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s022",
+          "index": 22,
+          "text": "佛號：大智蓮華光。",
+          "source_hash": "sha256:82142862c871"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s023",
+          "index": 23,
+          "text": "此上過佛剎微塵數世界，有世界，名：無量莊嚴；",
+          "source_hash": "sha256:6772db0e94e8"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s024",
+          "index": 24,
+          "text": "佛號：普眼法界幢。",
+          "source_hash": "sha256:f79ce16800e6"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s025",
+          "index": 25,
+          "text": "此上過佛剎微塵數世界，有世界，名：普光寶莊嚴；",
+          "source_hash": "sha256:c62b63a5194c"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s026",
+          "index": 26,
+          "text": "佛號：勝智大商主。",
+          "source_hash": "sha256:20fdac006e8d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s027",
+          "index": 27,
+          "text": "此上過佛剎微塵數世界，有世界，名：華王；",
+          "source_hash": "sha256:3714ec7db3c7"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s028",
+          "index": 28,
+          "text": "佛號：月光幢。",
+          "source_hash": "sha256:2668ec99019e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s029",
+          "index": 29,
+          "text": "此上過佛剎微塵數世界，有世界，名：離垢藏；",
+          "source_hash": "sha256:23ebb35bd921"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s030",
+          "index": 30,
+          "text": "佛號：清淨覺。",
+          "source_hash": "sha256:b3c4de00134c"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s031",
+          "index": 31,
+          "text": "此上過佛剎微塵數世界，有世界，名：寶光明；",
+          "source_hash": "sha256:4193d0e92248"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s032",
+          "index": 32,
+          "text": "佛號：一切智虛空燈。",
+          "source_hash": "sha256:13cc67b1fa9a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s033",
+          "index": 33,
+          "text": "此上過佛剎微塵數世界，有世界，名：出生寶瓔珞；",
+          "source_hash": "sha256:4786d3f9a0ef"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s034",
+          "index": 34,
+          "text": "佛號：諸度福海相光明。",
+          "source_hash": "sha256:edff4e615ce4"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s035",
+          "index": 35,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙輪遍覆；",
+          "source_hash": "sha256:24979e74f9cf"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s036",
+          "index": 36,
+          "text": "佛號：調伏一切染著心令歡喜。",
+          "source_hash": "sha256:d89735ed123f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s037",
+          "index": 37,
+          "text": "此上過佛剎微塵數世界，有世界，名：寶華幢；",
+          "source_hash": "sha256:f606430c1239"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s038",
+          "index": 38,
+          "text": "佛號：廣博功德音大名稱。",
+          "source_hash": "sha256:7e8dfb995fb9"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s039",
+          "index": 39,
+          "text": "此上過佛剎微塵數世界，有世界，名：無量莊嚴；",
+          "source_hash": "sha256:6772db0e94e8"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s040",
+          "index": 40,
+          "text": "佛號：平等智光明功德海。",
+          "source_hash": "sha256:45a90e1e28ee"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s041",
+          "index": 41,
+          "text": "此上過佛剎微塵數世界，有世界，名：無盡光莊嚴幢；",
+          "source_hash": "sha256:877d05e1e433"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0006_s042",
+          "index": 42,
+          "text": "狀如蓮華，依一切寶網海住，蓮華光摩尼網彌覆其上，二十佛剎微塵數世界圍遶，純一清淨，佛號：法界淨光明。",
+          "source_hash": "sha256:be8324f87253"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_009_p0007",
+      "index": 7,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0007_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s002",
+          "index": 2,
+          "text": "此無盡光明輪香水海右旋，次有香水海，名：金剛寶焰光；",
+          "source_hash": "sha256:4b7473868e4c"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s003",
+          "index": 3,
+          "text": "世界種，名：佛光莊嚴藏，以稱說一切如來名音聲為體。",
+          "source_hash": "sha256:38643b6c77ca"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s004",
+          "index": 4,
+          "text": "此中最下方，有世界，名：寶焰蓮華；",
+          "source_hash": "sha256:21d37b37015e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s005",
+          "index": 5,
+          "text": "其狀猶如摩尼色眉間毫相，依一切寶色水漩海住，一切莊嚴樓閣雲彌覆其上，佛剎微塵數世界圍遶，純一清淨，佛號：無垢寶光明。",
+          "source_hash": "sha256:b9274c0c7fe4"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s006",
+          "index": 6,
+          "text": "此上過佛剎微塵數世界，有世界，名：光焰藏；",
+          "source_hash": "sha256:56f0e3c765b9"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s007",
+          "index": 7,
+          "text": "佛號：無礙自在智慧光。",
+          "source_hash": "sha256:0d55d56d2b38"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s008",
+          "index": 8,
+          "text": "此上過佛剎微塵數世界，有世界，名：寶輪妙莊嚴；",
+          "source_hash": "sha256:e89b33ac2294"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s009",
+          "index": 9,
+          "text": "佛號：一切寶光明。",
+          "source_hash": "sha256:5bf9299f30a2"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s010",
+          "index": 10,
+          "text": "此上過佛剎微塵數世界，有世界，名：栴檀樹華幢；",
+          "source_hash": "sha256:8dde0cc07f46"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s011",
+          "index": 11,
+          "text": "佛號：清淨智光明。",
+          "source_hash": "sha256:672ea66cd6fa"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s012",
+          "index": 12,
+          "text": "此上過佛剎微塵數世界，有世界，名：佛剎妙莊嚴；",
+          "source_hash": "sha256:1ca538d5da9f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s013",
+          "index": 13,
+          "text": "佛號：廣大歡喜音。",
+          "source_hash": "sha256:a037fb4abf61"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s014",
+          "index": 14,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙光莊嚴；",
+          "source_hash": "sha256:d26031ef2180"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s015",
+          "index": 15,
+          "text": "佛號：法界自在智。",
+          "source_hash": "sha256:eacc58dd9a77"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s016",
+          "index": 16,
+          "text": "此上過佛剎微塵數世界，有世界，名：無邊相；",
+          "source_hash": "sha256:14d1e033a00a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s017",
+          "index": 17,
+          "text": "佛號：無礙智。",
+          "source_hash": "sha256:06ef7784716b"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s018",
+          "index": 18,
+          "text": "此上過佛剎微塵數世界，有世界，名：焰雲幢；",
+          "source_hash": "sha256:13f715966b7e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s019",
+          "index": 19,
+          "text": "佛號：演說不退輪。",
+          "source_hash": "sha256:d1cb00b674d8"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s020",
+          "index": 20,
+          "text": "此上過佛剎微塵數世界，有世界，名：眾寶莊嚴清淨輪；",
+          "source_hash": "sha256:7d00ac26e6fc"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s021",
+          "index": 21,
+          "text": "佛號：離垢華光明。",
+          "source_hash": "sha256:6d579a178f30"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s022",
+          "index": 22,
+          "text": "此上過佛剎微塵數世界，有世界，名：廣大出離；",
+          "source_hash": "sha256:eb5ba4b5e81f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s023",
+          "index": 23,
+          "text": "佛號：無礙智日眼。",
+          "source_hash": "sha256:6b9637194421"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s024",
+          "index": 24,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙莊嚴金剛座；",
+          "source_hash": "sha256:43fdd4364a2b"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s025",
+          "index": 25,
+          "text": "佛號：法界智大光明。",
+          "source_hash": "sha256:a590317e449d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s026",
+          "index": 26,
+          "text": "此上過佛剎微塵數世界，有世界，名：智慧普莊嚴；",
+          "source_hash": "sha256:4572ce846e31"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s027",
+          "index": 27,
+          "text": "佛號：智炬光明王。",
+          "source_hash": "sha256:e903a2d20e15"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s028",
+          "index": 28,
+          "text": "此上過佛剎微塵數世界，有世界，名：蓮華池深妙音；",
+          "source_hash": "sha256:105e5548ed7f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s029",
+          "index": 29,
+          "text": "佛號：一切智普照。",
+          "source_hash": "sha256:26808a17a9e4"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s030",
+          "index": 30,
+          "text": "此上過佛剎微塵數世界，有世界，名：種種色光明；",
+          "source_hash": "sha256:c4c485795226"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s031",
+          "index": 31,
+          "text": "佛號：普光華王雲。",
+          "source_hash": "sha256:2e10a535ef8a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s032",
+          "index": 32,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙寶幢；",
+          "source_hash": "sha256:969996e5fafb"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s033",
+          "index": 33,
+          "text": "佛號：功德光。",
+          "source_hash": "sha256:a8836fba0209"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s034",
+          "index": 34,
+          "text": "此上過佛剎微塵數世界，有世界，名：摩尼華毫相光；",
+          "source_hash": "sha256:cb8e9e9a5a12"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s035",
+          "index": 35,
+          "text": "佛號：普音雲。",
+          "source_hash": "sha256:11a642959249"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s036",
+          "index": 36,
+          "text": "此上過佛剎微塵數世界，有世界，名：甚深海；",
+          "source_hash": "sha256:bc5c28051ae5"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s037",
+          "index": 37,
+          "text": "佛號：十方眾生主。",
+          "source_hash": "sha256:7f2baa09d84d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s038",
+          "index": 38,
+          "text": "此上過佛剎微塵數世界，有世界，名：須彌光；",
+          "source_hash": "sha256:f05e8f108f8c"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s039",
+          "index": 39,
+          "text": "佛號：法界普智音。",
+          "source_hash": "sha256:404125014e34"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s040",
+          "index": 40,
+          "text": "此上過佛剎微塵數世界，有世界，名：金蓮華；",
+          "source_hash": "sha256:5b15ea6532b1"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s041",
+          "index": 41,
+          "text": "佛號：福德藏普光明。",
+          "source_hash": "sha256:2ebbf817e197"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s042",
+          "index": 42,
+          "text": "此上過佛剎微塵數世界，有世界，名：寶莊嚴藏；",
+          "source_hash": "sha256:97f5aca0b2be"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0007_s043",
+          "index": 43,
+          "text": "形如卐字，依一切香摩尼莊嚴樹海住，清淨光明雲彌覆其上，二十佛剎微塵數世界圍遶，純一清淨，佛號：大變化光明網。",
+          "source_hash": "sha256:0c7bb21abd93"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_009_p0008",
+      "index": 8,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0008_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s002",
+          "index": 2,
+          "text": "此金剛寶焰香水海右旋，次有香水海，名：帝青寶莊嚴；",
+          "source_hash": "sha256:498cadd1a513"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s003",
+          "index": 3,
+          "text": "世界種，名：光照十方，依一切妙莊嚴蓮華香雲住，無邊佛音聲為體。",
+          "source_hash": "sha256:5ee066858346"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s004",
+          "index": 4,
+          "text": "於此最下方，有世界，名：十方無盡色藏輪；",
+          "source_hash": "sha256:ca3616140bc6"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s005",
+          "index": 5,
+          "text": "其狀周迴，有無量角，依無邊色一切寶藏海住，因陀羅網而覆其上，佛剎微塵數世界圍遶，純一清淨，佛號：蓮華眼光明遍照。",
+          "source_hash": "sha256:0057bedff6e0"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s006",
+          "index": 6,
+          "text": "此上過佛剎微塵數世界，有世界，名：淨妙莊嚴藏；",
+          "source_hash": "sha256:5bca6a2633da"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s007",
+          "index": 7,
+          "text": "佛號：無上慧大師子。",
+          "source_hash": "sha256:e78d263795f4"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s008",
+          "index": 8,
+          "text": "此上過佛剎微塵數世界，有世界，名：出現蓮華座；",
+          "source_hash": "sha256:afe03eebad6f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s009",
+          "index": 9,
+          "text": "佛號：遍照法界光明王。",
+          "source_hash": "sha256:fdaf195e0739"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s010",
+          "index": 10,
+          "text": "此上過佛剎微塵數世界，有世界，名：寶幢音；",
+          "source_hash": "sha256:8ecfdf7df0c3"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s011",
+          "index": 11,
+          "text": "佛號：大功德普名稱。",
+          "source_hash": "sha256:6e169d926abc"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s012",
+          "index": 12,
+          "text": "此上過佛剎微塵數世界，有世界，名：金剛寶莊嚴藏；",
+          "source_hash": "sha256:2e5c25ab2f18"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s013",
+          "index": 13,
+          "text": "佛號：蓮華日光明。",
+          "source_hash": "sha256:04c11a64326d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s014",
+          "index": 14,
+          "text": "此上過佛剎微塵數世界，有世界，名：因陀羅華月；",
+          "source_hash": "sha256:b74d5250730a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s015",
+          "index": 15,
+          "text": "佛號：法自在智慧幢。",
+          "source_hash": "sha256:6dd6bbb69757"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s016",
+          "index": 16,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙輪藏；",
+          "source_hash": "sha256:515ad3d2637f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s017",
+          "index": 17,
+          "text": "佛號：大喜清淨音。",
+          "source_hash": "sha256:26e8ef60bc95"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s018",
+          "index": 18,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙音藏；",
+          "source_hash": "sha256:64bfb37f21e7"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s019",
+          "index": 19,
+          "text": "佛號：大力善商主。",
+          "source_hash": "sha256:585c57aefe75"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s020",
+          "index": 20,
+          "text": "此上過佛剎微塵數世界，有世界，名：清淨月；",
+          "source_hash": "sha256:a9e9cf0afb39"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s021",
+          "index": 21,
+          "text": "佛號：須彌光智慧力。",
+          "source_hash": "sha256:082e25f2f3de"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s022",
+          "index": 22,
+          "text": "此上過佛剎微塵數世界，有世界，名：無邊莊嚴相；",
+          "source_hash": "sha256:ad75618d9d8d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s023",
+          "index": 23,
+          "text": "佛號：方便願淨月光。",
+          "source_hash": "sha256:d61ff18c0efb"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s024",
+          "index": 24,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙華音；",
+          "source_hash": "sha256:602b1a06ff16"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s025",
+          "index": 25,
+          "text": "佛號：法海大願音。",
+          "source_hash": "sha256:1790e2be8c2a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s026",
+          "index": 26,
+          "text": "此上過佛剎微塵數世界，有世界，名：一切寶莊嚴；",
+          "source_hash": "sha256:c7bfc6bb0e9d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s027",
+          "index": 27,
+          "text": "佛號：功德寶光明相。",
+          "source_hash": "sha256:3ee9f57fc1a6"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s028",
+          "index": 28,
+          "text": "此上過佛剎微塵數世界，有世界，名：堅固地；",
+          "source_hash": "sha256:6621846b3a30"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s029",
+          "index": 29,
+          "text": "佛號：美音最勝天。",
+          "source_hash": "sha256:67b685b5b3d4"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s030",
+          "index": 30,
+          "text": "此上過佛剎微塵數世界，有世界，名：普光善化；",
+          "source_hash": "sha256:dc85cdc037fb"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s031",
+          "index": 31,
+          "text": "佛號：大精進寂靜慧。",
+          "source_hash": "sha256:af33f5a316ff"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s032",
+          "index": 32,
+          "text": "此上過佛剎微塵數世界，有世界，名：善守護莊嚴行；",
+          "source_hash": "sha256:4bcb594f8511"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s033",
+          "index": 33,
+          "text": "佛號：見者生歡喜。",
+          "source_hash": "sha256:5420ac1707cb"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s034",
+          "index": 34,
+          "text": "此上過佛剎微塵數世界，有世界，名：栴檀寶華藏；",
+          "source_hash": "sha256:adad83ef4e3a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s035",
+          "index": 35,
+          "text": "佛號：甚深不可動智慧光遍照。",
+          "source_hash": "sha256:d1bee9357a40"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s036",
+          "index": 36,
+          "text": "此上過佛剎微塵數世界，有世界，名：現種種色相海；",
+          "source_hash": "sha256:b3a02191d760"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s037",
+          "index": 37,
+          "text": "佛號：普放不思議勝義王光明。",
+          "source_hash": "sha256:37ca358052e0"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s038",
+          "index": 38,
+          "text": "此上過佛剎微塵數世界，有世界，名：化現十方大光明；",
+          "source_hash": "sha256:d90185b4a264"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s039",
+          "index": 39,
+          "text": "佛號：勝功德威光無與等。",
+          "source_hash": "sha256:cc05fcaab6b5"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s040",
+          "index": 40,
+          "text": "此上過佛剎微塵數世界，有世界，名：須彌雲幢；",
+          "source_hash": "sha256:e0a28fb2a555"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s041",
+          "index": 41,
+          "text": "佛號：極淨光明眼。",
+          "source_hash": "sha256:d7dd2453f4e9"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s042",
+          "index": 42,
+          "text": "此上過佛剎微塵數世界，有世界，名：蓮華遍照；",
+          "source_hash": "sha256:23139325161d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0008_s043",
+          "index": 43,
+          "text": "其狀周圓，依無邊色眾妙香摩尼海住，一切乘莊嚴雲彌覆其上，二十佛剎微塵數世界圍遶，純一清淨，佛號：解脫精進日。",
+          "source_hash": "sha256:417f52c5a597"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_009_p0009",
+      "index": 9,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0009_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s002",
+          "index": 2,
+          "text": "此帝青寶莊嚴香水海右旋，次有香水海，名：金剛輪莊嚴底；",
+          "source_hash": "sha256:80924c68c751"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s003",
+          "index": 3,
+          "text": "世界種，名：妙寶間錯因陀羅網，普賢智所生音聲為體。",
+          "source_hash": "sha256:f9c89916d113"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s004",
+          "index": 4,
+          "text": "此中最下方，有世界，名：蓮華網；",
+          "source_hash": "sha256:7a69d171248e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s005",
+          "index": 5,
+          "text": "其狀猶如須彌山形，依眾妙華山幢海住，佛境界摩尼王帝網雲而覆其上，佛剎微塵數世界圍遶，純一清淨，佛號：法身普覺慧。",
+          "source_hash": "sha256:e7099ef12461"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s006",
+          "index": 6,
+          "text": "此上過佛剎微塵數世界，有世界，名：無盡日光明；",
+          "source_hash": "sha256:6bcff8297e54"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s007",
+          "index": 7,
+          "text": "佛號：最勝大覺慧。",
+          "source_hash": "sha256:370630bb4594"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s008",
+          "index": 8,
+          "text": "此上過佛剎微塵數世界，有世界，名：普放妙光明；",
+          "source_hash": "sha256:de9717d86382"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s009",
+          "index": 9,
+          "text": "佛號：大福雲無盡力。",
+          "source_hash": "sha256:028c46fa435b"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s010",
+          "index": 10,
+          "text": "此上過佛剎微塵數世界，有世界，名：樹華幢；",
+          "source_hash": "sha256:96933e6a433b"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s011",
+          "index": 11,
+          "text": "佛號：無邊智法界音。",
+          "source_hash": "sha256:31fcc361de66"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s012",
+          "index": 12,
+          "text": "此上過佛剎微塵數世界，有世界，名：真珠蓋；",
+          "source_hash": "sha256:9118d9bd662f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s013",
+          "index": 13,
+          "text": "佛號：波羅蜜師子頻申。",
+          "source_hash": "sha256:12b9b791d85f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s014",
+          "index": 14,
+          "text": "此上過佛剎微塵數世界，有世界，名：無邊音；",
+          "source_hash": "sha256:d9be64774b51"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s015",
+          "index": 15,
+          "text": "佛號：一切智妙覺慧。",
+          "source_hash": "sha256:3101325fc274"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s016",
+          "index": 16,
+          "text": "此上過佛剎微塵數世界，有世界，名：普見樹峯；",
+          "source_hash": "sha256:77c50e12b24f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s017",
+          "index": 17,
+          "text": "佛號：普現眾生前。",
+          "source_hash": "sha256:0fbf56b8c984"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s018",
+          "index": 18,
+          "text": "此上過佛剎微塵數世界，有世界，名：師子帝網光；",
+          "source_hash": "sha256:7e6bb86d3b8f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s019",
+          "index": 19,
+          "text": "佛號：無垢日金色光焰雲。",
+          "source_hash": "sha256:eb7535ad1cb7"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s020",
+          "index": 20,
+          "text": "此上過佛剎微塵數世界，有世界，名：眾寶間錯；",
+          "source_hash": "sha256:be3956b53169"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s021",
+          "index": 21,
+          "text": "佛號：帝幢最勝慧。",
+          "source_hash": "sha256:2b6f70534e66"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s022",
+          "index": 22,
+          "text": "此上過佛剎微塵數世界，有世界，名：無垢光明地；",
+          "source_hash": "sha256:d362d9eb04b5"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s023",
+          "index": 23,
+          "text": "佛號：一切力清淨月。",
+          "source_hash": "sha256:fea47ca4578c"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s024",
+          "index": 24,
+          "text": "此上過佛剎微塵數世界，有世界，名：恒出歎佛功德音；",
+          "source_hash": "sha256:ddbc86bad6d4"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s025",
+          "index": 25,
+          "text": "佛號：如虛空普覺慧。",
+          "source_hash": "sha256:c6a0800011f8"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s026",
+          "index": 26,
+          "text": "此上過佛剎微塵數世界，有世界，名：高焰藏；",
+          "source_hash": "sha256:1b44737dbefd"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s027",
+          "index": 27,
+          "text": "佛號：化現十方大雲幢。",
+          "source_hash": "sha256:37bed8c85d3b"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s028",
+          "index": 28,
+          "text": "此上過佛剎微塵數世界，有世界，名：光嚴道場；",
+          "source_hash": "sha256:6fa2765176ac"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s029",
+          "index": 29,
+          "text": "佛號：無等智遍照。",
+          "source_hash": "sha256:669aed9ff6bb"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s030",
+          "index": 30,
+          "text": "此上過佛剎微塵數世界，有世界，名：出生一切寶莊嚴；",
+          "source_hash": "sha256:d443e1aaacf1"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s031",
+          "index": 31,
+          "text": "佛號：廣度眾生神通王。",
+          "source_hash": "sha256:64aff169cb79"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s032",
+          "index": 32,
+          "text": "此上過佛剎微塵數世界，有世界，名：光嚴妙宮殿；",
+          "source_hash": "sha256:880aa7bf40b1"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s033",
+          "index": 33,
+          "text": "佛號：一切義成廣大慧。",
+          "source_hash": "sha256:b7d35d84d16d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s034",
+          "index": 34,
+          "text": "此上過佛剎微塵數世界，有世界，名：離塵寂靜；",
+          "source_hash": "sha256:20a800869713"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s035",
+          "index": 35,
+          "text": "佛號：不唐現。",
+          "source_hash": "sha256:9d668962a606"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s036",
+          "index": 36,
+          "text": "此上過佛剎微塵數世界，有世界，名：摩尼華幢；",
+          "source_hash": "sha256:96a4c72522a3"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s037",
+          "index": 37,
+          "text": "佛號：悅意吉祥音。",
+          "source_hash": "sha256:d55d80eeb3d4"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s038",
+          "index": 38,
+          "text": "此上過佛剎微塵數世界，有世界，名：普雲藏；",
+          "source_hash": "sha256:76d4dc2c927f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0009_s039",
+          "index": 39,
+          "text": "其狀猶如樓閣之形，依種種宮殿香水海住，一切寶燈雲彌覆其上，二十佛剎微塵數世界圍遶，純一清淨，佛號：最勝覺神通王。",
+          "source_hash": "sha256:ca904ac32612"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_009_p0010",
+      "index": 10,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0010_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s002",
+          "index": 2,
+          "text": "此金剛輪莊嚴底香水海右旋，次有香水海，名：蓮華因陀羅網；",
+          "source_hash": "sha256:e09603585163"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s003",
+          "index": 3,
+          "text": "世界種，名：普現十方影，依一切香摩尼莊嚴蓮華住，一切佛智光音聲為體。",
+          "source_hash": "sha256:a08334239f1d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s004",
+          "index": 4,
+          "text": "此中最下方，有世界，名：眾生海寶光明；",
+          "source_hash": "sha256:9c3a24acfc74"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s005",
+          "index": 5,
+          "text": "其狀猶如真珠之藏，依一切摩尼瓔珞海漩住，水光明摩尼雲而覆其上，佛剎微塵數世界圍遶，純一清淨，佛號：不思議功德遍照月。",
+          "source_hash": "sha256:aa7f82762632"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s006",
+          "index": 6,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙香輪；",
+          "source_hash": "sha256:a2e30ce6dbf6"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s007",
+          "index": 7,
+          "text": "佛號：無量力幢。",
+          "source_hash": "sha256:8d7142590606"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s008",
+          "index": 8,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙光輪；",
+          "source_hash": "sha256:5a2fd6cea5b6"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s009",
+          "index": 9,
+          "text": "佛號：法界光音覺悟慧。",
+          "source_hash": "sha256:b2226630511d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s010",
+          "index": 10,
+          "text": "此上過佛剎微塵數世界，有世界，名：吼聲摩尼幢；",
+          "source_hash": "sha256:cc9d1e496f13"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s011",
+          "index": 11,
+          "text": "佛號：蓮華光恒垂妙臂。",
+          "source_hash": "sha256:4f31a8ab79c2"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s012",
+          "index": 12,
+          "text": "此上過佛剎微塵數世界，有世界，名：極堅固輪；",
+          "source_hash": "sha256:cae97f78f48c"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s013",
+          "index": 13,
+          "text": "佛號：不退轉功德海光明。",
+          "source_hash": "sha256:6d15e8aa6c9b"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s014",
+          "index": 14,
+          "text": "此上過佛剎微塵數世界，有世界，名：眾行光莊嚴；",
+          "source_hash": "sha256:2f88c226769c"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s015",
+          "index": 15,
+          "text": "佛號：一切智普勝尊。",
+          "source_hash": "sha256:826044c17065"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s016",
+          "index": 16,
+          "text": "此上過佛剎微塵數世界，有世界，名：師子座遍照；",
+          "source_hash": "sha256:65d9ce8ab516"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s017",
+          "index": 17,
+          "text": "佛號：師子光無量力覺慧。",
+          "source_hash": "sha256:ebc3f160fc95"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s018",
+          "index": 18,
+          "text": "此上過佛剎微塵數世界，有世界，名：寶焰莊嚴；",
+          "source_hash": "sha256:5d03347de0c0"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s019",
+          "index": 19,
+          "text": "佛號：一切法清淨智。",
+          "source_hash": "sha256:e42607fad113"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s020",
+          "index": 20,
+          "text": "此上過佛剎微塵數世界，有世界，名：無量燈；",
+          "source_hash": "sha256:149834a8427f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s021",
+          "index": 21,
+          "text": "佛號：無憂相。",
+          "source_hash": "sha256:c8573f92bd89"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s022",
+          "index": 22,
+          "text": "此上過佛剎微塵數世界，有世界，名：常聞佛音；",
+          "source_hash": "sha256:1ce7312f1cb3"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s023",
+          "index": 23,
+          "text": "佛號：自然勝威光。",
+          "source_hash": "sha256:82496eb460e0"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s024",
+          "index": 24,
+          "text": "此上過佛剎微塵數世界，有世界，名：清淨變化；",
+          "source_hash": "sha256:25b9f4aab429"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s025",
+          "index": 25,
+          "text": "佛號：金蓮華光明。",
+          "source_hash": "sha256:f2ba66fae83b"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s026",
+          "index": 26,
+          "text": "此上過佛剎微塵數世界，有世界，名：普入十方；",
+          "source_hash": "sha256:25f0b5672b2e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s027",
+          "index": 27,
+          "text": "佛號：觀法界頻申慧。",
+          "source_hash": "sha256:b1b2bf93a788"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s028",
+          "index": 28,
+          "text": "此上過佛剎微塵數世界，有世界，名：熾然焰；",
+          "source_hash": "sha256:0d7224ea9c87"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s029",
+          "index": 29,
+          "text": "佛號：光焰樹緊那羅王。",
+          "source_hash": "sha256:9b3d439bb57d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s030",
+          "index": 30,
+          "text": "此上過佛剎微塵數世界，有世界，名：香光遍照；",
+          "source_hash": "sha256:970aae3289cb"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s031",
+          "index": 31,
+          "text": "佛號：香燈善化王。",
+          "source_hash": "sha256:438bb4c9f624"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s032",
+          "index": 32,
+          "text": "此上過佛剎微塵數世界，有世界，名：無量華聚輪；",
+          "source_hash": "sha256:88989c5c0f5e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s033",
+          "index": 33,
+          "text": "佛號：普現佛功德。",
+          "source_hash": "sha256:b90bb8d81cde"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s034",
+          "index": 34,
+          "text": "此上過佛剎微塵數世界，有世界，名：眾妙普清淨；",
+          "source_hash": "sha256:983e7af1a1d5"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s035",
+          "index": 35,
+          "text": "佛號：一切法平等神通王。",
+          "source_hash": "sha256:cadb11c6d020"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s036",
+          "index": 36,
+          "text": "此上過佛剎微塵數世界，有世界，名：金光海；",
+          "source_hash": "sha256:80dd908d8ee7"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s037",
+          "index": 37,
+          "text": "佛號：十方自在大變化。",
+          "source_hash": "sha256:8db2aebb6d8d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s038",
+          "index": 38,
+          "text": "此上過佛剎微塵數世界，有世界，名：真珠華藏；",
+          "source_hash": "sha256:6fd36d5a3037"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s039",
+          "index": 39,
+          "text": "佛號：法界寶光明不可思議慧。",
+          "source_hash": "sha256:7f00e5c455de"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s040",
+          "index": 40,
+          "text": "此上過佛剎微塵數世界，有世界，名：帝釋須彌師子座；",
+          "source_hash": "sha256:f370c4810d3d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s041",
+          "index": 41,
+          "text": "佛號：勝力光。",
+          "source_hash": "sha256:ec93e5c93694"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s042",
+          "index": 42,
+          "text": "此上過佛剎微塵數世界，有世界，名：無邊寶普照；",
+          "source_hash": "sha256:f4dd9e414fba"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0010_s043",
+          "index": 43,
+          "text": "其形四方，依華林海住，普雨無邊色摩尼王帝網彌覆其上，二十佛剎微塵數世界圍遶，純一清淨，佛號：遍照世間最勝音。",
+          "source_hash": "sha256:098ae7167b28"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_009_p0011",
+      "index": 11,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0011_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s002",
+          "index": 2,
+          "text": "此蓮華因陀羅網香水海右旋，次有香水海，名：積集寶香藏；",
+          "source_hash": "sha256:9921588b73ba"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s003",
+          "index": 3,
+          "text": "世界種，名：一切威德莊嚴，以一切佛法輪音聲為體。",
+          "source_hash": "sha256:9c4764bf4db9"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s004",
+          "index": 4,
+          "text": "此中最下方，有世界，名：種種出生；",
+          "source_hash": "sha256:71d424db8998"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s005",
+          "index": 5,
+          "text": "形如金剛，依種種金剛山幢住，金剛寶光雲而覆其上，佛剎微塵數世界圍遶，純一清淨，佛號：蓮華眼。",
+          "source_hash": "sha256:bd5ad75547fd"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s006",
+          "index": 6,
+          "text": "此上過佛剎微塵數世界，有世界，名：喜見音；",
+          "source_hash": "sha256:cc9e8fb1fbef"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s007",
+          "index": 7,
+          "text": "佛號：生喜樂。",
+          "source_hash": "sha256:bac24215b2d5"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s008",
+          "index": 8,
+          "text": "此上過佛剎微塵數世界，有世界，名：寶莊嚴幢；",
+          "source_hash": "sha256:c19f50d89deb"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s009",
+          "index": 9,
+          "text": "佛號：一切智。",
+          "source_hash": "sha256:7cb2156a1fc0"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s010",
+          "index": 10,
+          "text": "此上過佛剎微塵數世界，有世界，名：多羅華普照；",
+          "source_hash": "sha256:7cc71faf9a0e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s011",
+          "index": 11,
+          "text": "佛號：無垢寂妙音。",
+          "source_hash": "sha256:abf451eae2ef"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s012",
+          "index": 12,
+          "text": "此上過佛剎微塵數世界，有世界，名：變化光；",
+          "source_hash": "sha256:b19e3e6bf463"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s013",
+          "index": 13,
+          "text": "佛號：清淨空智慧月。",
+          "source_hash": "sha256:73344ad0af44"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s014",
+          "index": 14,
+          "text": "此上過佛剎微塵數世界，有世界，名：眾妙間錯；",
+          "source_hash": "sha256:47a940dd25be"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s015",
+          "index": 15,
+          "text": "佛號：開示福德海密雲相。",
+          "source_hash": "sha256:4e4256e4a6c7"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s016",
+          "index": 16,
+          "text": "此上過佛剎微塵數世界，有世界，名：一切莊嚴具妙音聲；",
+          "source_hash": "sha256:db2834e0db18"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s017",
+          "index": 17,
+          "text": "佛號：歡喜雲。",
+          "source_hash": "sha256:ed1af4cae5e5"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s018",
+          "index": 18,
+          "text": "此上過佛剎微塵數世界，有世界，名：蓮華池；",
+          "source_hash": "sha256:96592a0a87d9"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s019",
+          "index": 19,
+          "text": "佛號：名稱幢。",
+          "source_hash": "sha256:2f3d83cc2b6d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s020",
+          "index": 20,
+          "text": "此上過佛剎微塵數世界，有世界，名：一切寶莊嚴；",
+          "source_hash": "sha256:c7bfc6bb0e9d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s021",
+          "index": 21,
+          "text": "佛號：頻申觀察眼。",
+          "source_hash": "sha256:c7a2b0ddebeb"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s022",
+          "index": 22,
+          "text": "此上過佛剎微塵數世界，有世界，名：淨妙華；",
+          "source_hash": "sha256:0d15fd4782e0"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s023",
+          "index": 23,
+          "text": "佛號：無盡金剛智。",
+          "source_hash": "sha256:f0e342ef06a5"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s024",
+          "index": 24,
+          "text": "此上過佛剎微塵數世界，有世界，名：蓮華莊嚴城；",
+          "source_hash": "sha256:2ea0d863857d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s025",
+          "index": 25,
+          "text": "佛號：日藏眼普光明。",
+          "source_hash": "sha256:9e61e2b6ec2a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s026",
+          "index": 26,
+          "text": "此上過佛剎微塵數世界，有世界，名：無量樹峯；",
+          "source_hash": "sha256:d3749a5db7c0"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s027",
+          "index": 27,
+          "text": "佛號：一切法雷音。",
+          "source_hash": "sha256:aa0382c9ff72"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s028",
+          "index": 28,
+          "text": "此上過佛剎微塵數世界，有世界，名：日光明；",
+          "source_hash": "sha256:b30d6531f315"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s029",
+          "index": 29,
+          "text": "佛號：開示無量智。",
+          "source_hash": "sha256:dc0a06f754ab"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s030",
+          "index": 30,
+          "text": "此上過佛剎微塵數世界，有世界，名：依止蓮華葉；",
+          "source_hash": "sha256:660efcb6c986"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s031",
+          "index": 31,
+          "text": "佛號：一切福德山。",
+          "source_hash": "sha256:8e13ff1c8054"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s032",
+          "index": 32,
+          "text": "此上過佛剎微塵數世界，有世界，名：風普持；",
+          "source_hash": "sha256:80fe7053384d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s033",
+          "index": 33,
+          "text": "佛號：日曜根。",
+          "source_hash": "sha256:527c26dbb19d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s034",
+          "index": 34,
+          "text": "此上過佛剎微塵數世界，有世界，名：光明顯現；",
+          "source_hash": "sha256:2deab2a547b4"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s035",
+          "index": 35,
+          "text": "佛號：身光普照。",
+          "source_hash": "sha256:3a2b1c2dd41c"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s036",
+          "index": 36,
+          "text": "此上過佛剎微塵數世界，有世界，名：香雷音金剛寶普照；",
+          "source_hash": "sha256:3536b448338d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s037",
+          "index": 37,
+          "text": "佛號：最勝華開敷相。",
+          "source_hash": "sha256:7041508a89e3"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s038",
+          "index": 38,
+          "text": "此上過佛剎微塵數世界，有世界，名：帝網莊嚴；",
+          "source_hash": "sha256:d2b210297d0d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0011_s039",
+          "index": 39,
+          "text": "形如欄楯，依一切莊嚴海住，光焰樓閣雲彌覆其上，二十佛剎微塵數世界圍遶，純一清淨，佛號：示現無畏雲。",
+          "source_hash": "sha256:23f9a1d7299a"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_009_p0012",
+      "index": 12,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0012_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s002",
+          "index": 2,
+          "text": "此積集寶香藏香水海右旋，次有香水海，名：寶莊嚴；",
+          "source_hash": "sha256:d8bd9df10f0e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s003",
+          "index": 3,
+          "text": "世界種，名：普無垢，以一切微塵中佛剎神變聲為體。",
+          "source_hash": "sha256:4c37a8268375"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s004",
+          "index": 4,
+          "text": "此中最下方，有世界，名：淨妙平坦；",
+          "source_hash": "sha256:9fbd78422481"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s005",
+          "index": 5,
+          "text": "形如寶身，依一切寶光輪海住，種種栴檀摩尼真珠雲而覆其上，佛剎微塵數世界圍遶，純一清淨，佛號：難摧伏無等幢。",
+          "source_hash": "sha256:9290397f02d1"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s006",
+          "index": 6,
+          "text": "此上過佛剎微塵數世界，有世界，名：熾然妙莊嚴；",
+          "source_hash": "sha256:c041436c15af"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s007",
+          "index": 7,
+          "text": "佛號：蓮華慧神通王。",
+          "source_hash": "sha256:64dcc6722bfe"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s008",
+          "index": 8,
+          "text": "此上過佛剎微塵數世界，有世界，名：微妙相輪幢；",
+          "source_hash": "sha256:34e0cafc28c1"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s009",
+          "index": 9,
+          "text": "佛號：十方大名稱無盡光。",
+          "source_hash": "sha256:51e348eae868"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s010",
+          "index": 10,
+          "text": "此上過佛剎微塵數世界，有世界，名：焰藏摩尼妙莊嚴；",
+          "source_hash": "sha256:41ee36f3ea44"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s011",
+          "index": 11,
+          "text": "佛號：大智慧見聞皆歡喜。",
+          "source_hash": "sha256:06db4229ed2d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s012",
+          "index": 12,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙華莊嚴；",
+          "source_hash": "sha256:6be5497e6267"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s013",
+          "index": 13,
+          "text": "佛號：無量力最勝智。",
+          "source_hash": "sha256:6a8b900f2c4a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s014",
+          "index": 14,
+          "text": "此上過佛剎微塵數世界，有世界，名：出生淨微塵；",
+          "source_hash": "sha256:952434991ba3"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s015",
+          "index": 15,
+          "text": "佛號：超勝梵。",
+          "source_hash": "sha256:94fe3c68f435"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s016",
+          "index": 16,
+          "text": "此上過佛剎微塵數世界，有世界，名：普光明變化香；",
+          "source_hash": "sha256:566a9ba6b30c"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s017",
+          "index": 17,
+          "text": "佛號：香象金剛大力勢。",
+          "source_hash": "sha256:5f57f2a65835"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s018",
+          "index": 18,
+          "text": "此上過佛剎微塵數世界，有世界，名：光明旋；",
+          "source_hash": "sha256:a67b2668792c"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s019",
+          "index": 19,
+          "text": "佛號：義成善名稱。",
+          "source_hash": "sha256:6d68ad5179da"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s020",
+          "index": 20,
+          "text": "此上過佛剎微塵數世界，有世界，名：寶瓔珞海；",
+          "source_hash": "sha256:5abe2b50e705"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s021",
+          "index": 21,
+          "text": "佛號：無比光遍照。",
+          "source_hash": "sha256:c4cf17b5d397"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s022",
+          "index": 22,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙華燈幢；",
+          "source_hash": "sha256:8c3fb7c34896"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s023",
+          "index": 23,
+          "text": "佛號：究竟功德無礙慧燈。",
+          "source_hash": "sha256:1bac7b857903"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s024",
+          "index": 24,
+          "text": "此上過佛剎微塵數世界，有世界，名：善巧莊嚴；",
+          "source_hash": "sha256:5a724aab718e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s025",
+          "index": 25,
+          "text": "佛號：慧日波羅蜜。",
+          "source_hash": "sha256:dc3f5515e55a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s026",
+          "index": 26,
+          "text": "此上過佛剎微塵數世界，有世界，名：栴檀華普光明；",
+          "source_hash": "sha256:52209c004d03"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s027",
+          "index": 27,
+          "text": "佛號：無邊慧法界音。",
+          "source_hash": "sha256:5bab3ba9c9b6"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s028",
+          "index": 28,
+          "text": "此上過佛剎微塵數世界，有世界，名：帝網幢；",
+          "source_hash": "sha256:f261fe8c1e81"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s029",
+          "index": 29,
+          "text": "佛號：燈光逈照。",
+          "source_hash": "sha256:c0e0d155584a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s030",
+          "index": 30,
+          "text": "此上過佛剎微塵數世界，有世界，名：淨華輪；",
+          "source_hash": "sha256:fdffd453988d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s031",
+          "index": 31,
+          "text": "佛號：法界日光明。",
+          "source_hash": "sha256:527f79a7cfe5"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s032",
+          "index": 32,
+          "text": "此上過佛剎微塵數世界，有世界，名：大威耀；",
+          "source_hash": "sha256:6ed22ee96902"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s033",
+          "index": 33,
+          "text": "佛號：無邊功德海法輪音。",
+          "source_hash": "sha256:c71ab878132f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s034",
+          "index": 34,
+          "text": "此上過佛剎微塵數世界，有世界，名：同安住寶蓮華池；",
+          "source_hash": "sha256:30d2b03b3880"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s035",
+          "index": 35,
+          "text": "佛號：開示入不可思議智。",
+          "source_hash": "sha256:b5df8fee8e3f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s036",
+          "index": 36,
+          "text": "此上過佛剎微塵數世界，有世界，名：平坦地；",
+          "source_hash": "sha256:eadedf2fa447"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s037",
+          "index": 37,
+          "text": "佛號：功德寶光明王。",
+          "source_hash": "sha256:ba5585601f40"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s038",
+          "index": 38,
+          "text": "此上過佛剎微塵數世界，有世界，名：香摩尼聚：佛號：無盡福德海妙莊嚴。",
+          "source_hash": "sha256:8c7acb4fac8a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s039",
+          "index": 39,
+          "text": "此上過佛剎微塵數世界，有世界，名：微妙光明：佛號：無等力普遍音。",
+          "source_hash": "sha256:90b7fbb31a00"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s040",
+          "index": 40,
+          "text": "此上過佛剎微塵數世界，有世界，名：十方普堅固莊嚴照耀；",
+          "source_hash": "sha256:108110291c7e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0012_s041",
+          "index": 41,
+          "text": "其形八隅，依心王摩尼輪海住，一切寶莊嚴帳雲彌覆其上，二十佛剎微塵數世界圍遶，純一清淨，佛號：普眼大明燈。",
+          "source_hash": "sha256:bf479c30b777"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_009_p0013",
+      "index": 13,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0013_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s002",
+          "index": 2,
+          "text": "此寶莊嚴香水海右旋，次有香水海，名：金剛寶聚；",
+          "source_hash": "sha256:a2a6f8451bfe"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s003",
+          "index": 3,
+          "text": "世界種，名：法界行，以一切菩薩地方便法音聲為體。",
+          "source_hash": "sha256:b1df602487e5"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s004",
+          "index": 4,
+          "text": "此中最下方，有世界，名：淨光照耀；",
+          "source_hash": "sha256:3d6a7418847f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s005",
+          "index": 5,
+          "text": "形如珠貫，依一切寶色珠瓔海住，菩薩珠髻光明摩尼雲而覆其上，佛剎微塵數世界圍遶，純一清淨，佛號：最勝功德光。",
+          "source_hash": "sha256:032b457e83cd"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s006",
+          "index": 6,
+          "text": "此上過佛剎微塵數世界，有世界，名：妙蓋；",
+          "source_hash": "sha256:2f8e2096c542"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s007",
+          "index": 7,
+          "text": "佛號：法自在慧。",
+          "source_hash": "sha256:0a3d642529c4"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s008",
+          "index": 8,
+          "text": "此上過佛剎微塵數世界，有世界，名：寶莊嚴師子座；",
+          "source_hash": "sha256:6eb62a01876b"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s009",
+          "index": 9,
+          "text": "佛號：大龍淵。",
+          "source_hash": "sha256:7f2cca03e605"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s010",
+          "index": 10,
+          "text": "此上過佛剎微塵數世界，有世界，名：出現金剛座：佛號：昇師子座蓮華臺；",
+          "source_hash": "sha256:cc0dc2a61490"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s011",
+          "index": 11,
+          "text": "此上過佛剎微塵數世界，有世界，名：蓮華勝音：佛號：智光普開悟。",
+          "source_hash": "sha256:6b1fc611511e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s012",
+          "index": 12,
+          "text": "此上過佛剎微塵數世界，有世界，名：善慣習；",
+          "source_hash": "sha256:dc6e1914e6ea"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s013",
+          "index": 13,
+          "text": "佛號：持地妙光王。",
+          "source_hash": "sha256:f2203859aa78"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s014",
+          "index": 14,
+          "text": "此上過佛剎微塵數世界，有世界，名：喜樂音；",
+          "source_hash": "sha256:08c0662b97ad"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s015",
+          "index": 15,
+          "text": "佛號：法燈王。",
+          "source_hash": "sha256:d1ccf2ccc241"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s016",
+          "index": 16,
+          "text": "此上過佛剎微塵數世界，有世界，名：摩尼藏因陀羅網；",
+          "source_hash": "sha256:418c547c83e4"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s017",
+          "index": 17,
+          "text": "佛號：不空見。",
+          "source_hash": "sha256:50c42c6ad658"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s018",
+          "index": 18,
+          "text": "此上過佛剎微塵數世界，有世界，名：眾妙地藏：佛號：焰身幢。",
+          "source_hash": "sha256:4337589483e4"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s019",
+          "index": 19,
+          "text": "此上過佛剎微塵數世界，有世界，名：金光輪；",
+          "source_hash": "sha256:713d47c942f7"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s020",
+          "index": 20,
+          "text": "佛號：淨治眾生行。",
+          "source_hash": "sha256:3b669f97fc7f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s021",
+          "index": 21,
+          "text": "此上過佛剎微塵數世界，有世界，名：須彌山莊嚴；",
+          "source_hash": "sha256:6079e09b599b"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s022",
+          "index": 22,
+          "text": "佛號：一切功德雲普照。",
+          "source_hash": "sha256:40c78377fdab"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s023",
+          "index": 23,
+          "text": "此上過佛剎微塵數世界，有世界，名：眾樹形；",
+          "source_hash": "sha256:43231c985bcc"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s024",
+          "index": 24,
+          "text": "佛號：寶華相淨月覺。",
+          "source_hash": "sha256:c9956977bf17"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s025",
+          "index": 25,
+          "text": "此上過佛剎微塵數世界，有世界，名：無怖畏；",
+          "source_hash": "sha256:bdded5ecea6e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s026",
+          "index": 26,
+          "text": "佛號：最勝金光炬。",
+          "source_hash": "sha256:7c8af301d0d8"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s027",
+          "index": 27,
+          "text": "此上過佛剎微塵數世界，有世界，名：大名稱龍王幢；",
+          "source_hash": "sha256:93d5e26fef57"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s028",
+          "index": 28,
+          "text": "佛號：觀等一切法。",
+          "source_hash": "sha256:37b7344229bb"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s029",
+          "index": 29,
+          "text": "此上過佛剎微塵數世界，有世界，名：示現摩尼色；",
+          "source_hash": "sha256:cf53624fd8de"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s030",
+          "index": 30,
+          "text": "佛號：變化日。",
+          "source_hash": "sha256:8cb0d8df80ef"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s031",
+          "index": 31,
+          "text": "此上過佛剎微塵數世界，有世界，名：光焰燈莊嚴：佛號：寶蓋光遍照。",
+          "source_hash": "sha256:224912f89a28"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s032",
+          "index": 32,
+          "text": "此上過佛剎微塵數世界，有世界，名：香光雲：佛號：思惟慧。",
+          "source_hash": "sha256:02dd8e8cfb49"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s033",
+          "index": 33,
+          "text": "此上過佛剎微塵數世界，有世界，名：無怨讎；",
+          "source_hash": "sha256:ee2397960515"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s034",
+          "index": 34,
+          "text": "佛號：精進勝慧海。",
+          "source_hash": "sha256:355df2e35c88"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s035",
+          "index": 35,
+          "text": "此上過佛剎微塵數世界，有世界，名：一切莊嚴具光明幢；",
+          "source_hash": "sha256:b78c5bf8feb8"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s036",
+          "index": 36,
+          "text": "佛號：普現悅意蓮華自在王。",
+          "source_hash": "sha256:553329230c80"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s037",
+          "index": 37,
+          "text": "此上過佛剎微塵數世界，有世界，名：毫相莊嚴；",
+          "source_hash": "sha256:0f3491fe187f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0013_s038",
+          "index": 38,
+          "text": "形如半月，依須彌山摩尼華海住，一切莊嚴熾盛光摩尼王雲彌覆其上，二十佛剎微塵數世界圍遶，純一清淨，佛號：清淨眼。",
+          "source_hash": "sha256:5de9525190dc"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_009_p0014",
+      "index": 14,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0014_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s002",
+          "index": 2,
+          "text": "此金剛寶聚香水海右旋，次有香水海，名：天城寶堞；",
+          "source_hash": "sha256:b1abdd1ba72e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s003",
+          "index": 3,
+          "text": "世界種，名：燈焰光明，以普示一切平等法輪音為體。",
+          "source_hash": "sha256:4ffc62d7cdd3"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s004",
+          "index": 4,
+          "text": "此中最下方，有世界，名：寶月光焰輪；",
+          "source_hash": "sha256:b9e7629c5a1c"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s005",
+          "index": 5,
+          "text": "形如一切莊嚴具，依一切寶莊嚴華海住，瑠璃色師子座雲而覆其上。",
+          "source_hash": "sha256:182e1cec45b7"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s006",
+          "index": 6,
+          "text": "佛剎微塵數世界圍遶，純一清淨，佛號：日月自在光。",
+          "source_hash": "sha256:075e96142251"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s007",
+          "index": 7,
+          "text": "此上過佛剎微塵數世界，有世界，名：須彌寶光；",
+          "source_hash": "sha256:daf961942981"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s008",
+          "index": 8,
+          "text": "佛號：無盡法寶幢。",
+          "source_hash": "sha256:abaf1750b701"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s009",
+          "index": 9,
+          "text": "此上過佛剎微塵數世界，有世界，名：眾妙光明幢；",
+          "source_hash": "sha256:698dc7c5ca63"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s010",
+          "index": 10,
+          "text": "佛號：大華聚。",
+          "source_hash": "sha256:f98187f2300a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s011",
+          "index": 11,
+          "text": "此上過佛剎微塵數世界，有世界，名：摩尼光明華；",
+          "source_hash": "sha256:e12a7d576622"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s012",
+          "index": 12,
+          "text": "佛號：人中最自在。",
+          "source_hash": "sha256:64af8aa7efc0"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s013",
+          "index": 13,
+          "text": "此上過佛剎微塵數世界，有世界，名：普音；",
+          "source_hash": "sha256:ecc765580e9e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s014",
+          "index": 14,
+          "text": "佛號：一切智遍照。",
+          "source_hash": "sha256:fc2204cc8342"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s015",
+          "index": 15,
+          "text": "此上過佛剎微塵數世界，有世界，名：大樹緊那羅音；",
+          "source_hash": "sha256:7bff304937ea"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s016",
+          "index": 16,
+          "text": "佛號：無量福德自在龍。",
+          "source_hash": "sha256:805bebe276ad"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s017",
+          "index": 17,
+          "text": "此上過佛剎微塵數世界，有世界，名：無邊淨光明；",
+          "source_hash": "sha256:6ffb5c3d74d6"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s018",
+          "index": 18,
+          "text": "佛號：功德寶華光。",
+          "source_hash": "sha256:36ea2c7c5e12"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s019",
+          "index": 19,
+          "text": "此上過佛剎微塵數世界，有世界，名：最勝音；",
+          "source_hash": "sha256:02f712e251e3"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s020",
+          "index": 20,
+          "text": "佛號：一切智莊嚴。",
+          "source_hash": "sha256:ad5bee7c59d4"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s021",
+          "index": 21,
+          "text": "此上過佛剎微塵數世界，有世界，名：眾寶間飾；",
+          "source_hash": "sha256:e49d40fd8c35"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s022",
+          "index": 22,
+          "text": "佛號：寶焰須彌山。",
+          "source_hash": "sha256:a6144b75790f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s023",
+          "index": 23,
+          "text": "此上過佛剎微塵數世界，有世界，名：清淨須彌音；",
+          "source_hash": "sha256:e6c7097b4c8b"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s024",
+          "index": 24,
+          "text": "佛號：出現一切行光明。",
+          "source_hash": "sha256:30295a471671"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s025",
+          "index": 25,
+          "text": "此上過佛剎微塵數世界，有世界，名：香水蓋；",
+          "source_hash": "sha256:0dd2dfbba41e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s026",
+          "index": 26,
+          "text": "佛號：一切波羅蜜無礙海。",
+          "source_hash": "sha256:5f9e5a64ac0f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s027",
+          "index": 27,
+          "text": "此上過佛剎微塵數世界，有世界，名：師子華網；",
+          "source_hash": "sha256:68f6cd2f7b50"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s028",
+          "index": 28,
+          "text": "佛號：寶焰幢。",
+          "source_hash": "sha256:18e5d38b9b0f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s029",
+          "index": 29,
+          "text": "此上過佛剎微塵數世界，有世界，名：金剛妙華燈；",
+          "source_hash": "sha256:441bca1fa58a"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s030",
+          "index": 30,
+          "text": "佛號：一切大願光。",
+          "source_hash": "sha256:bfede2dbf138"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s031",
+          "index": 31,
+          "text": "此上過佛剎微塵數世界，有世界，名：一切法光明地；",
+          "source_hash": "sha256:fce9fa9dbf62"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s032",
+          "index": 32,
+          "text": "佛號：一切法廣大真實義。",
+          "source_hash": "sha256:2a9ac30086f0"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s033",
+          "index": 33,
+          "text": "此上過佛剎微塵數世界，有世界，名：真珠末平坦莊嚴；",
+          "source_hash": "sha256:c20b6dff071e"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s034",
+          "index": 34,
+          "text": "佛號：勝慧光明網。",
+          "source_hash": "sha256:247b06dbb068"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s035",
+          "index": 35,
+          "text": "此上過佛剎微塵數世界，有世界，名：瑠璃華；",
+          "source_hash": "sha256:0f757f37557f"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s036",
+          "index": 36,
+          "text": "佛號：寶積幢。",
+          "source_hash": "sha256:28dc24489022"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s037",
+          "index": 37,
+          "text": "此上過佛剎微塵數世界，有世界，名：無量妙光輪；",
+          "source_hash": "sha256:7df9c7584056"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s038",
+          "index": 38,
+          "text": "佛號：大威力智海藏。",
+          "source_hash": "sha256:1e27c6c47948"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s039",
+          "index": 39,
+          "text": "此上過佛剎微塵數世界，有世界，名：明見十方；",
+          "source_hash": "sha256:19150a2ec9b8"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s040",
+          "index": 40,
+          "text": "佛號：淨修一切功德幢。",
+          "source_hash": "sha256:85d44e478717"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s041",
+          "index": 41,
+          "text": "此上過佛剎微塵數世界，有世界，名：可愛樂梵音；",
+          "source_hash": "sha256:1d0930c55eee"
+        },
+        {
+          "sentence_id": "T10n0279_009_p0014_s042",
+          "index": 42,
+          "text": "形如佛手，依寶光網海住，菩薩身一切莊嚴雲彌覆其上，二十佛剎微塵數世界圍遶，純一清淨，佛號：普照法界無礙光。」",
+          "source_hash": "sha256:7da11b1341f2"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_009_p0015",
+      "index": 15,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_009_p0015_s001",
+          "index": 1,
+          "text": "大方廣佛華嚴經卷第九",
+          "source_hash": "sha256:14600ea81ead"
+        }
+      ]
+    }
+  ]
+}

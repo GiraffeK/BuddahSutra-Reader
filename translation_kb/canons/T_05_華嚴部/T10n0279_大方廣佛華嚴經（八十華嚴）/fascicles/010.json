@@ -1,0 +1,2425 @@
+{
+  "schema_version": "1.0",
+  "source": "CBETA Online Data API (cbdata.dila.edu.tw)",
+  "sutra_id": "T10n0279",
+  "sutra_title": "大方廣佛華嚴經",
+  "edition": "八十華嚴（唐・實叉難陀譯）",
+  "translator": "唐 實叉難陀譯",
+  "fascicle": 10,
+  "fascicle_count": 80,
+  "fascicle_title": "卷第10・5 華藏世界品・之三",
+  "paragraphs": [
+    {
+      "paragraph_id": "T10n0279_010_p0001",
+      "index": 1,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0001_s001",
+          "index": 1,
+          "text": "大方廣佛華嚴經卷第十",
+          "source_hash": "sha256:9e199ebcb0f0"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0002",
+      "index": 2,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0002_s001",
+          "index": 1,
+          "text": "于闐國三藏實叉難陀奉制譯",
+          "source_hash": "sha256:21bcf9513e55"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0003",
+      "index": 3,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0003_s001",
+          "index": 1,
+          "text": "華藏世界品第五之三",
+          "source_hash": "sha256:f6ba5251a0db"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0004",
+      "index": 4,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0004_s001",
+          "index": 1,
+          "text": "爾時，普賢菩薩復告大眾言：",
+          "source_hash": "sha256:ab905210f6e2"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0005",
+      "index": 5,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0005_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s002",
+          "index": 2,
+          "text": "彼離垢焰藏香水海東，次有香水海，名：變化微妙身；",
+          "source_hash": "sha256:24ef3f4e9e60"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s003",
+          "index": 3,
+          "text": "此海中，有世界種，名：善布差別方。",
+          "source_hash": "sha256:e41d4ee14267"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s004",
+          "index": 4,
+          "text": "次有香水海，名：金剛眼幢；",
+          "source_hash": "sha256:bb74f5228712"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s005",
+          "index": 5,
+          "text": "世界種，名：莊嚴法界橋。",
+          "source_hash": "sha256:ca2e4125229d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s006",
+          "index": 6,
+          "text": "次有香水海，名：種種蓮華妙莊嚴；",
+          "source_hash": "sha256:54c77cdc90b9"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s007",
+          "index": 7,
+          "text": "世界種，名：恒出十方變化。",
+          "source_hash": "sha256:3aca9a7d3998"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s008",
+          "index": 8,
+          "text": "次有香水海，名：無間寶王輪；",
+          "source_hash": "sha256:ba6e8566a0d4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s009",
+          "index": 9,
+          "text": "世界種，名：寶蓮華莖密雲。",
+          "source_hash": "sha256:0ad6450fde78"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s010",
+          "index": 10,
+          "text": "次有香水海，名：妙香焰普莊嚴；",
+          "source_hash": "sha256:2ce8be6d8bbe"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s011",
+          "index": 11,
+          "text": "世界種，名：毘盧遮那變化行。",
+          "source_hash": "sha256:c9a83515688d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s012",
+          "index": 12,
+          "text": "次有香水海，名：寶末閻浮幢；",
+          "source_hash": "sha256:f9a214b699c4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s013",
+          "index": 13,
+          "text": "世界種，名：諸佛護念境界。",
+          "source_hash": "sha256:4c8d4f9034e7"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s014",
+          "index": 14,
+          "text": "次有香水海，名：一切色熾然光；",
+          "source_hash": "sha256:b97c6421f427"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s015",
+          "index": 15,
+          "text": "世界種，名：最勝光遍照。",
+          "source_hash": "sha256:d861c95e2ffd"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s016",
+          "index": 16,
+          "text": "次有香水海，名：一切莊嚴具境界；",
+          "source_hash": "sha256:e2abc238d6e1"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s017",
+          "index": 17,
+          "text": "世界種，名：寶焰燈……。",
+          "source_hash": "sha256:b00e15f9ece8"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s018",
+          "index": 18,
+          "text": "如是等不可說佛剎微塵數香水海，其最近輪圍山香水海，名：玻瓈地；",
+          "source_hash": "sha256:2600a4bcb7a3"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s019",
+          "index": 19,
+          "text": "世界種，名：常放光明，以世界海清淨劫音聲為體。",
+          "source_hash": "sha256:ff46aee7b52e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s020",
+          "index": 20,
+          "text": "此中最下方，有世界，名：可愛樂淨光幢，佛剎微塵數世界圍遶，純一清淨，佛號；",
+          "source_hash": "sha256:f04b32d46594"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s021",
+          "index": 21,
+          "text": "最勝三昧精進慧。",
+          "source_hash": "sha256:fe73745874fb"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s022",
+          "index": 22,
+          "text": "此上過十佛剎微塵數世界，與金剛幢世界齊等，有世界，名：香莊嚴幢，十佛剎微塵數世界圍遶，純一清淨，佛號：無障礙法界燈。",
+          "source_hash": "sha256:51ae0e38e78a"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s023",
+          "index": 23,
+          "text": "此上過三佛剎微塵數世界，與娑婆世界齊等，有世界，名：放光明藏；",
+          "source_hash": "sha256:d971882a899e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s024",
+          "index": 24,
+          "text": "佛號：遍法界無障礙慧明。",
+          "source_hash": "sha256:c0347f962e08"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0005_s025",
+          "index": 25,
+          "text": "此上過七佛剎微塵數世界，至此世界種最上方，有世界，名：最勝身香，二十佛剎微塵數世界圍遶，純一清淨，佛號：覺分華。",
+          "source_hash": "sha256:ed01efcf592b"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0006",
+      "index": 6,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0006_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s002",
+          "index": 2,
+          "text": "彼無盡光明輪香水海外，次有香水海，名：具足妙光；",
+          "source_hash": "sha256:ce280054b59a"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s003",
+          "index": 3,
+          "text": "世界種，名：遍無垢。",
+          "source_hash": "sha256:3bc4e44bf7fd"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s004",
+          "index": 4,
+          "text": "次有香水海，名：光耀蓋；",
+          "source_hash": "sha256:0bf90ef5a761"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s005",
+          "index": 5,
+          "text": "世界種，名：無邊普莊嚴。",
+          "source_hash": "sha256:77fb477682ef"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s006",
+          "index": 6,
+          "text": "次有香水海，名：妙寶莊嚴；",
+          "source_hash": "sha256:e8733b5bb6a2"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s007",
+          "index": 7,
+          "text": "世界種，名：香摩尼軌度形。",
+          "source_hash": "sha256:630a4bfc2e56"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s008",
+          "index": 8,
+          "text": "次有香水海，名：出佛音聲；",
+          "source_hash": "sha256:1b98f6a7da46"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s009",
+          "index": 9,
+          "text": "世界種，名：善建立莊嚴。",
+          "source_hash": "sha256:2a01f0741c55"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s010",
+          "index": 10,
+          "text": "次有香水海，名：香幢須彌藏；",
+          "source_hash": "sha256:ab73fe27df64"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s011",
+          "index": 11,
+          "text": "世界種，名：光明遍滿。",
+          "source_hash": "sha256:5ad665dd789e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s012",
+          "index": 12,
+          "text": "次有香水海，名：栴檀妙光明；",
+          "source_hash": "sha256:a1a8f0e6a4a8"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s013",
+          "index": 13,
+          "text": "世界種，名：華焰輪。",
+          "source_hash": "sha256:e73940947605"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s014",
+          "index": 14,
+          "text": "次有香水海，名：風力持：世界種，名：寶焰雲幢。",
+          "source_hash": "sha256:d7dcd4363c3f"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s015",
+          "index": 15,
+          "text": "次有香水海，名：帝釋身莊嚴；",
+          "source_hash": "sha256:a82060553681"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s016",
+          "index": 16,
+          "text": "世界種，名：真珠藏。",
+          "source_hash": "sha256:18fdad6344f5"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s017",
+          "index": 17,
+          "text": "次有香水海，名：平坦嚴淨；",
+          "source_hash": "sha256:70f87da382ae"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s018",
+          "index": 18,
+          "text": "世界種，名：毘瑠璃末種種莊嚴……。",
+          "source_hash": "sha256:7413d8e7294f"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s019",
+          "index": 19,
+          "text": "如是等不可說佛剎微塵數香水海，其最近輪圍山香水海，名：妙樹華：世界種，名：出生諸方廣大剎，以一切佛摧伏魔音為體。",
+          "source_hash": "sha256:d7a05a6a494d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s020",
+          "index": 20,
+          "text": "此中最下方，有世界，名：焰炬幢；",
+          "source_hash": "sha256:2f6264311a85"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s021",
+          "index": 21,
+          "text": "佛號：世間功德海。",
+          "source_hash": "sha256:86d83a4e3e83"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s022",
+          "index": 22,
+          "text": "此上過十佛剎微塵數世界，與金剛幢世界齊等，有世界，名：出生寶；",
+          "source_hash": "sha256:8505ca23ab61"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s023",
+          "index": 23,
+          "text": "佛號：師子力寶雲。",
+          "source_hash": "sha256:ead3232a4239"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s024",
+          "index": 24,
+          "text": "此上與娑婆世界齊等，有世界，名：衣服幢；",
+          "source_hash": "sha256:af732799e218"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s025",
+          "index": 25,
+          "text": "佛號：一切智海王。",
+          "source_hash": "sha256:cc3adda5e858"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s026",
+          "index": 26,
+          "text": "於此世界種最上方，有世界，名：寶瓔珞師子光明；",
+          "source_hash": "sha256:2e519d1978b5"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0006_s027",
+          "index": 27,
+          "text": "佛號：善變化蓮華幢。",
+          "source_hash": "sha256:993e4838db61"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0007",
+      "index": 7,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0007_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s002",
+          "index": 2,
+          "text": "彼金剛焰光明香水海外，次有香水海，名：一切莊嚴具瑩飾幢；",
+          "source_hash": "sha256:950c071c333c"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s003",
+          "index": 3,
+          "text": "世界種，名：清淨行莊嚴。",
+          "source_hash": "sha256:69af13278cf9"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s004",
+          "index": 4,
+          "text": "次有香水海，名：一切寶華光耀海；",
+          "source_hash": "sha256:42dbfe52eb96"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s005",
+          "index": 5,
+          "text": "世界種，名：功德相莊嚴。",
+          "source_hash": "sha256:01326c3efc18"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s006",
+          "index": 6,
+          "text": "次有香水海，名：蓮華開敷；",
+          "source_hash": "sha256:9b518dd79df6"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s007",
+          "index": 7,
+          "text": "世界種，名：菩薩摩尼冠莊嚴。",
+          "source_hash": "sha256:9494aae91d82"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s008",
+          "index": 8,
+          "text": "次有香水海，名：妙寶衣服；",
+          "source_hash": "sha256:ba53272f8b18"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s009",
+          "index": 9,
+          "text": "世界種，名：淨珠輪。",
+          "source_hash": "sha256:c5792713dc34"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s010",
+          "index": 10,
+          "text": "次有香水海，名：可愛華遍照；",
+          "source_hash": "sha256:4bcf9e888451"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s011",
+          "index": 11,
+          "text": "世界種，名：百光雲照耀。",
+          "source_hash": "sha256:0432653b5374"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s012",
+          "index": 12,
+          "text": "次有香水海，名：遍虛空大光明；",
+          "source_hash": "sha256:be3ccb031922"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s013",
+          "index": 13,
+          "text": "世界種，名：寶光普照。",
+          "source_hash": "sha256:d39de5b7fa23"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s014",
+          "index": 14,
+          "text": "次有香水海，名：妙華莊嚴幢；",
+          "source_hash": "sha256:72e54b31c9bf"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s015",
+          "index": 15,
+          "text": "世界種，名：金月眼瓔珞。",
+          "source_hash": "sha256:bc1425d0e843"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s016",
+          "index": 16,
+          "text": "次有香水海，名：真珠香海藏；",
+          "source_hash": "sha256:651c12b70760"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s017",
+          "index": 17,
+          "text": "世界種，名：佛光明。",
+          "source_hash": "sha256:c778dec53910"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s018",
+          "index": 18,
+          "text": "次有香水海，名：寶輪光明；",
+          "source_hash": "sha256:30e85d66d66e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s019",
+          "index": 19,
+          "text": "世界種，名：善化現佛境界光明……。",
+          "source_hash": "sha256:e5da4feca986"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s020",
+          "index": 20,
+          "text": "如是等不可說佛剎微塵數香水海，其最近輪圍山香水海，名：無邊輪莊嚴底；",
+          "source_hash": "sha256:1aa2e7ed9d66"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s021",
+          "index": 21,
+          "text": "世界種，名：無量方差別，以一切國土種種言說音為體。",
+          "source_hash": "sha256:2a089f91f4ae"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s022",
+          "index": 22,
+          "text": "此中最下方，有世界，名：金剛華蓋；",
+          "source_hash": "sha256:bce813e74a24"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s023",
+          "index": 23,
+          "text": "佛號：無盡相光明普門音。",
+          "source_hash": "sha256:aab3b6649852"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s024",
+          "index": 24,
+          "text": "此上過十佛剎微塵數世界，有世界，與金剛幢世界齊等，名：出生寶衣幢；",
+          "source_hash": "sha256:95982fdda8cf"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s025",
+          "index": 25,
+          "text": "佛號：福德雲大威勢。",
+          "source_hash": "sha256:042f01d573c2"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s026",
+          "index": 26,
+          "text": "此上與娑婆世界齊等，有世界，名：眾寶具妙莊嚴；",
+          "source_hash": "sha256:9468d1e9d0ee"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s027",
+          "index": 27,
+          "text": "佛號：勝慧海。",
+          "source_hash": "sha256:f0eba26f8912"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s028",
+          "index": 28,
+          "text": "於此世界種最上方，有世界，名：日光明衣服幢；",
+          "source_hash": "sha256:4019b260d7a9"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0007_s029",
+          "index": 29,
+          "text": "佛號：智日蓮華雲。",
+          "source_hash": "sha256:ecaef233c3a7"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0008",
+      "index": 8,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0008_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s002",
+          "index": 2,
+          "text": "彼帝青寶莊嚴香水海外，次有香水海，名：阿修羅宮殿；",
+          "source_hash": "sha256:6868dbb98948"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s003",
+          "index": 3,
+          "text": "世界種，名：香水光所持。",
+          "source_hash": "sha256:e1cca6e31622"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s004",
+          "index": 4,
+          "text": "次有香水海，名：寶師子莊嚴；",
+          "source_hash": "sha256:5442478451b4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s005",
+          "index": 5,
+          "text": "世界種，名：遍示十方一切寶；",
+          "source_hash": "sha256:f8a1ff1801e0"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s006",
+          "index": 6,
+          "text": "次有香水海，名：宮殿色光明雲；",
+          "source_hash": "sha256:d805675bd9a4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s007",
+          "index": 7,
+          "text": "世界種，名：寶輪妙莊嚴。",
+          "source_hash": "sha256:3bcdb64fc4b4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s008",
+          "index": 8,
+          "text": "次有香水海，名：出大蓮華；",
+          "source_hash": "sha256:c162587b1b96"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s009",
+          "index": 9,
+          "text": "世界種，名：妙莊嚴遍照法界。",
+          "source_hash": "sha256:dca8a013c254"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s010",
+          "index": 10,
+          "text": "次有香水海，名：燈焰妙眼；",
+          "source_hash": "sha256:8055e7a7b389"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s011",
+          "index": 11,
+          "text": "世界種，名：遍觀察十方變化。",
+          "source_hash": "sha256:713ec5567c21"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s012",
+          "index": 12,
+          "text": "次有香水海，名：不思議莊嚴輪；",
+          "source_hash": "sha256:e794005e5094"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s013",
+          "index": 13,
+          "text": "世界種，名：十方光明普名稱。",
+          "source_hash": "sha256:e689b8283fd8"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s014",
+          "index": 14,
+          "text": "次有香水海，名：寶積莊嚴；",
+          "source_hash": "sha256:053dfb42e457"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s015",
+          "index": 15,
+          "text": "世界種，名：燈光照耀。",
+          "source_hash": "sha256:c201da5fae98"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s016",
+          "index": 16,
+          "text": "次有香水海，名：清淨寶光明；",
+          "source_hash": "sha256:3921232c8226"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s017",
+          "index": 17,
+          "text": "世界種，名：須彌無能為礙風。",
+          "source_hash": "sha256:df665cf93ac5"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s018",
+          "index": 18,
+          "text": "次有香水海，名：寶衣欄楯；",
+          "source_hash": "sha256:7bca22fd760f"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s019",
+          "index": 19,
+          "text": "世界種，名：如來身光明……。",
+          "source_hash": "sha256:67511cdcb961"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s020",
+          "index": 20,
+          "text": "如是等不可說佛剎微塵數香水海，其最近輪圍山香水海，名：樹莊嚴幢；",
+          "source_hash": "sha256:cbcd1fba9ef0"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s021",
+          "index": 21,
+          "text": "世界種，名：安住帝網，以一切菩薩智地音聲為體。",
+          "source_hash": "sha256:7453104a87d3"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s022",
+          "index": 22,
+          "text": "此中最下方，有世界，名：妙金色；",
+          "source_hash": "sha256:7eb479fe8ebb"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s023",
+          "index": 23,
+          "text": "佛號：香焰勝威光。",
+          "source_hash": "sha256:8925e7b42fa3"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s024",
+          "index": 24,
+          "text": "此上過十佛剎微塵數世界，與金剛幢世界齊等，有世界，名：摩尼樹華；",
+          "source_hash": "sha256:f51d769f4229"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s025",
+          "index": 25,
+          "text": "佛號：無礙普現。",
+          "source_hash": "sha256:b5dd4a2dac3f"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s026",
+          "index": 26,
+          "text": "此上與娑婆世界齊等，有世界，名：毘瑠璃妙莊嚴；",
+          "source_hash": "sha256:e8d25a9d5a32"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s027",
+          "index": 27,
+          "text": "佛號：法自在堅固慧。",
+          "source_hash": "sha256:7968d3127066"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s028",
+          "index": 28,
+          "text": "於此世界種最上方，有世界，名：梵音妙莊嚴；",
+          "source_hash": "sha256:2ebd4c35eac0"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0008_s029",
+          "index": 29,
+          "text": "佛號：蓮華開敷光明王。",
+          "source_hash": "sha256:86aabe37d7dd"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0009",
+      "index": 9,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0009_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s002",
+          "index": 2,
+          "text": "彼金剛輪莊嚴底香水海外，次有香水海，名：化現蓮華處；",
+          "source_hash": "sha256:18fed7fb815b"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s003",
+          "index": 3,
+          "text": "世界種，名：國土平正。",
+          "source_hash": "sha256:b80bbe569a3e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s004",
+          "index": 4,
+          "text": "次有香水海，名：摩尼光；",
+          "source_hash": "sha256:2d16be5c9a1d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s005",
+          "index": 5,
+          "text": "世界種，名：遍法界無迷惑。",
+          "source_hash": "sha256:2e1592121d8c"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s006",
+          "index": 6,
+          "text": "次有香水海，名：眾妙香日摩尼；",
+          "source_hash": "sha256:d661fda5c694"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s007",
+          "index": 7,
+          "text": "世界種，名：普現十方。",
+          "source_hash": "sha256:3a7490e43a8e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s008",
+          "index": 8,
+          "text": "次有香水海，名：恒納寶流；",
+          "source_hash": "sha256:06eeec956878"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s009",
+          "index": 9,
+          "text": "世界種，名：普行佛言音。",
+          "source_hash": "sha256:b7c859419b8b"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s010",
+          "index": 10,
+          "text": "次有香水海，名：無邊深妙音；",
+          "source_hash": "sha256:298d9ef9be3f"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s011",
+          "index": 11,
+          "text": "世界種，名：無邊方差別。",
+          "source_hash": "sha256:80ee22d02f45"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s012",
+          "index": 12,
+          "text": "次有香水海，名：堅實積聚；",
+          "source_hash": "sha256:46e95bf5eb9b"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s013",
+          "index": 13,
+          "text": "世界種，名：無量處差別。",
+          "source_hash": "sha256:b6c29e200560"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s014",
+          "index": 14,
+          "text": "次有香水海，名：清淨梵音；",
+          "source_hash": "sha256:0d8783889fe4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s015",
+          "index": 15,
+          "text": "世界種，名：普清淨莊嚴。",
+          "source_hash": "sha256:dbaf18ef7880"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s016",
+          "index": 16,
+          "text": "次有香水海，名：栴檀欄楯音聲藏；",
+          "source_hash": "sha256:79821f258f5d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s017",
+          "index": 17,
+          "text": "世界種，名：逈出幢。",
+          "source_hash": "sha256:8e23515a7402"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s018",
+          "index": 18,
+          "text": "次有香水海，名：妙香寶王光莊嚴；",
+          "source_hash": "sha256:5223a5bac2f9"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0009_s019",
+          "index": 19,
+          "text": "世界種，名：普現光明力。",
+          "source_hash": "sha256:2082ef16e63f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0010",
+      "index": 10,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0010_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s002",
+          "index": 2,
+          "text": "彼蓮華因陀羅網香水海外，次有香水海，名：銀蓮華妙莊嚴；",
+          "source_hash": "sha256:3ee89c53eede"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s003",
+          "index": 3,
+          "text": "世界種，名：普遍行。",
+          "source_hash": "sha256:2e45cceb58e7"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s004",
+          "index": 4,
+          "text": "次有香水海，名：毘瑠璃竹密焰雲；",
+          "source_hash": "sha256:2890bfa0eb3d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s005",
+          "index": 5,
+          "text": "世界種，名：普出十方音。",
+          "source_hash": "sha256:2519b0bb59f7"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s006",
+          "index": 6,
+          "text": "次有香水海，名：十方光焰聚；",
+          "source_hash": "sha256:057103664f6f"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s007",
+          "index": 7,
+          "text": "世界種，名：恒出變化分布十方。",
+          "source_hash": "sha256:a84eee230f27"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s008",
+          "index": 8,
+          "text": "次有香水海，名：出現真金摩尼幢；",
+          "source_hash": "sha256:3a1312d343d8"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s009",
+          "index": 9,
+          "text": "世界種，名：金剛幢相。",
+          "source_hash": "sha256:ada241935bc5"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s010",
+          "index": 10,
+          "text": "次有香水海，名：平等大莊嚴；",
+          "source_hash": "sha256:fd50a9787b9a"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s011",
+          "index": 11,
+          "text": "世界種，名：法界勇猛旋。",
+          "source_hash": "sha256:4330019c64c9"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s012",
+          "index": 12,
+          "text": "次有香水海，名：寶華叢無盡光；",
+          "source_hash": "sha256:78466770cd15"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s013",
+          "index": 13,
+          "text": "世界種，名：無邊淨光明。",
+          "source_hash": "sha256:e441ce4aba2d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s014",
+          "index": 14,
+          "text": "次有香水海，名：妙金幢；",
+          "source_hash": "sha256:c0d66e58928d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s015",
+          "index": 15,
+          "text": "世界種，名：演說微密處。",
+          "source_hash": "sha256:ef462c33972a"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s016",
+          "index": 16,
+          "text": "次有香水海，名：光影遍照；",
+          "source_hash": "sha256:85fb641b3c18"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s017",
+          "index": 17,
+          "text": "世界種，名：普莊嚴。",
+          "source_hash": "sha256:0acca7ba4ed4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s018",
+          "index": 18,
+          "text": "次有香水海，名：寂音；",
+          "source_hash": "sha256:901ee22abf8b"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s019",
+          "index": 19,
+          "text": "世界種，名：現前垂布……。",
+          "source_hash": "sha256:4b0b0e6ccba5"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s020",
+          "index": 20,
+          "text": "如是等不可說佛剎微塵數香水海，其最近輪圍山香水海，名：密焰雲幢；",
+          "source_hash": "sha256:ce0cd13705f7"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s021",
+          "index": 21,
+          "text": "世界種，名：一切光莊嚴，以一切如來道場眾會音為體。",
+          "source_hash": "sha256:f4c107b519bc"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s022",
+          "index": 22,
+          "text": "於此最下方，有世界，名：淨眼莊嚴；",
+          "source_hash": "sha256:9a19aa627e78"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s023",
+          "index": 23,
+          "text": "佛號：金剛月遍照十方。",
+          "source_hash": "sha256:7192a975f209"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s024",
+          "index": 24,
+          "text": "此上過十佛剎微塵數世界，與金剛幢世界齊等，有世界，名：蓮華德；",
+          "source_hash": "sha256:f62775333210"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s025",
+          "index": 25,
+          "text": "佛號：大精進善覺慧。",
+          "source_hash": "sha256:9a98596a6eb2"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s026",
+          "index": 26,
+          "text": "此上與娑婆世界齊等，有世界，名：金剛密莊嚴；",
+          "source_hash": "sha256:1d6253f027f4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s027",
+          "index": 27,
+          "text": "佛號：娑羅王幢。",
+          "source_hash": "sha256:d55da4b6c33b"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s028",
+          "index": 28,
+          "text": "此上過七佛剎微塵數世界，有世界，名：淨海莊嚴；",
+          "source_hash": "sha256:9ac094b0d963"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0010_s029",
+          "index": 29,
+          "text": "佛號：威德絕倫無能制伏。",
+          "source_hash": "sha256:cccdd2a273f3"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0011",
+      "index": 11,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0011_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s002",
+          "index": 2,
+          "text": "彼積集寶香藏香水海外，次有香水海，名：一切寶光明遍照；",
+          "source_hash": "sha256:8fd86a2087d9"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s003",
+          "index": 3,
+          "text": "世界種，名：無垢稱莊嚴。",
+          "source_hash": "sha256:920814588caf"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s004",
+          "index": 4,
+          "text": "次有香水海，名：眾寶華開敷；",
+          "source_hash": "sha256:8111734073ce"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s005",
+          "index": 5,
+          "text": "世界種，名：虛空相。",
+          "source_hash": "sha256:b2921dd9d00d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s006",
+          "index": 6,
+          "text": "次有香水海，名：吉祥幄遍照；",
+          "source_hash": "sha256:75511b1801b8"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s007",
+          "index": 7,
+          "text": "世界種，名：無礙光普莊嚴。",
+          "source_hash": "sha256:27040d2325da"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s008",
+          "index": 8,
+          "text": "次有香水海，名：栴檀樹華；",
+          "source_hash": "sha256:eef100855ae2"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s009",
+          "index": 9,
+          "text": "世界種，名：普現十方旋。",
+          "source_hash": "sha256:6d42f6fd3bd9"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s010",
+          "index": 10,
+          "text": "次有香水海，名：出生妙色寶；",
+          "source_hash": "sha256:9ca1ebe23662"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s011",
+          "index": 11,
+          "text": "世界種，名：勝幢周遍行。",
+          "source_hash": "sha256:5d385e1c4cc6"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s012",
+          "index": 12,
+          "text": "次有香水海，名普生金剛華；",
+          "source_hash": "sha256:6f5ab6f71f5a"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s013",
+          "index": 13,
+          "text": "世界種，名：現不思議莊嚴。",
+          "source_hash": "sha256:51cd171f2609"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s014",
+          "index": 14,
+          "text": "次有香水海，名：心王摩尼輪嚴飾；",
+          "source_hash": "sha256:b4fcaf4a50d6"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s015",
+          "index": 15,
+          "text": "世界種，名：示現無礙佛光明。",
+          "source_hash": "sha256:ab29997949c2"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s016",
+          "index": 16,
+          "text": "次有香水海，名：積集寶瓔珞；",
+          "source_hash": "sha256:394f889820f6"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s017",
+          "index": 17,
+          "text": "世界種，名：淨除疑。",
+          "source_hash": "sha256:0f19d3ad7c6a"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s018",
+          "index": 18,
+          "text": "次有香水海，名：真珠輪普莊嚴；",
+          "source_hash": "sha256:bdd0d3bc07c6"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s019",
+          "index": 19,
+          "text": "世界種，名：諸佛願所流……。",
+          "source_hash": "sha256:877915e70222"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s020",
+          "index": 20,
+          "text": "如是等不可說佛剎微塵數香水海，其最近輪圍山香水海，名：閻浮檀寶藏輪；",
+          "source_hash": "sha256:47658366a409"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s021",
+          "index": 21,
+          "text": "世界種，名：普音幢，以入一切智門音聲為體。",
+          "source_hash": "sha256:da423ca5538e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s022",
+          "index": 22,
+          "text": "此中最下方，有世界，名：華蘂焰；",
+          "source_hash": "sha256:243d7ad85e9e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s023",
+          "index": 23,
+          "text": "佛號：精進施。",
+          "source_hash": "sha256:56a7734ed692"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s024",
+          "index": 24,
+          "text": "此上過十佛剎微塵數世界，與金剛幢世界齊等，有世界，名：蓮華光明幢；",
+          "source_hash": "sha256:06d5082e5c9c"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s025",
+          "index": 25,
+          "text": "佛號：一切功德最勝心王。",
+          "source_hash": "sha256:07dd18e552d6"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s026",
+          "index": 26,
+          "text": "此上過三佛剎微塵數世界，與娑婆世界齊等，有世界，名：十力莊嚴；",
+          "source_hash": "sha256:238c9ac9d31b"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s027",
+          "index": 27,
+          "text": "佛號：善出現無量功德王。",
+          "source_hash": "sha256:679cf713fd59"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s028",
+          "index": 28,
+          "text": "於此世界種最上方，有世界，名：摩尼香山幢；",
+          "source_hash": "sha256:12ce5a8912dd"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0011_s029",
+          "index": 29,
+          "text": "佛號：廣大善眼淨除疑。",
+          "source_hash": "sha256:0fc26c5effef"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0012",
+      "index": 12,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0012_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s002",
+          "index": 2,
+          "text": "彼寶莊嚴香水海外，次有香水海，名：持須彌光明藏；",
+          "source_hash": "sha256:31d69e73bcba"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s003",
+          "index": 3,
+          "text": "世界種，名：出生廣大雲。",
+          "source_hash": "sha256:3e86ccf1346c"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s004",
+          "index": 4,
+          "text": "次有香水海，名：種種莊嚴大威力境界；",
+          "source_hash": "sha256:05bf53f84147"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s005",
+          "index": 5,
+          "text": "世界種，名：無礙淨莊嚴。",
+          "source_hash": "sha256:f284e58f66cd"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s006",
+          "index": 6,
+          "text": "次有香水海，名：密布寶蓮華；",
+          "source_hash": "sha256:e058723bcf63"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s007",
+          "index": 7,
+          "text": "世界種，名：最勝燈莊嚴。",
+          "source_hash": "sha256:28eccfe2cd4f"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s008",
+          "index": 8,
+          "text": "次有香水海，名：依止一切寶莊嚴；",
+          "source_hash": "sha256:a7613901f7e1"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s009",
+          "index": 9,
+          "text": "世界種，名：日光明網藏。",
+          "source_hash": "sha256:1b998542fae5"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s010",
+          "index": 10,
+          "text": "次有香水海，名：眾多嚴淨；",
+          "source_hash": "sha256:79aded36ac4d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s011",
+          "index": 11,
+          "text": "世界種，名：寶華依處。",
+          "source_hash": "sha256:4d09f0a7e82a"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s012",
+          "index": 12,
+          "text": "次有香水海，名：極聰慧行：世界種，名：最勝形莊嚴。",
+          "source_hash": "sha256:ec7593311ddd"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s013",
+          "index": 13,
+          "text": "次有香水海，名：持妙摩尼峯；",
+          "source_hash": "sha256:d597fbd92793"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s014",
+          "index": 14,
+          "text": "世界種，名：普淨虛空藏。",
+          "source_hash": "sha256:adc0b55c2c0c"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s015",
+          "index": 15,
+          "text": "次有香水海，名：大光遍照；",
+          "source_hash": "sha256:a23852cf8cb4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s016",
+          "index": 16,
+          "text": "世界種，名：帝青炬光明。",
+          "source_hash": "sha256:5597036930ad"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s017",
+          "index": 17,
+          "text": "次有香水海，名：可愛摩尼珠充滿遍照；",
+          "source_hash": "sha256:eaf1bc649b9e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s018",
+          "index": 18,
+          "text": "世界種，名：普吼聲……。",
+          "source_hash": "sha256:338756a7409e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s019",
+          "index": 19,
+          "text": "如是等不可說佛剎微塵數香水海，其最近輪圍山香水海，名：出帝青寶；",
+          "source_hash": "sha256:3229765a9ed3"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s020",
+          "index": 20,
+          "text": "世界種，名：周遍無差別，以一切菩薩震吼聲為體。",
+          "source_hash": "sha256:5649cd25d0e4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s021",
+          "index": 21,
+          "text": "此中最下方，有世界，名：妙勝藏；",
+          "source_hash": "sha256:0615f69c7839"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s022",
+          "index": 22,
+          "text": "佛號：最勝功德慧。",
+          "source_hash": "sha256:48064a079f3e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s023",
+          "index": 23,
+          "text": "此上過十佛剎微塵數世界，與金剛幢世界齊等，有世界，名：莊嚴相；",
+          "source_hash": "sha256:529755c87642"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s024",
+          "index": 24,
+          "text": "佛號：超勝大光明。",
+          "source_hash": "sha256:cf23efc05758"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s025",
+          "index": 25,
+          "text": "此上與娑婆世界齊等，有世界，名：瑠璃輪普莊嚴；",
+          "source_hash": "sha256:35a6dc8cb001"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s026",
+          "index": 26,
+          "text": "佛號：須彌燈。",
+          "source_hash": "sha256:e350b172c4bb"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s027",
+          "index": 27,
+          "text": "於此世界種最上方，有世界，名：華幢海；",
+          "source_hash": "sha256:d2efad3c9f22"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0012_s028",
+          "index": 28,
+          "text": "佛號：無盡變化妙慧雲。",
+          "source_hash": "sha256:0b11106e92ff"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0013",
+      "index": 13,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0013_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s002",
+          "index": 2,
+          "text": "彼金剛寶聚香水海外，次有香水海，名：崇飾寶埤堄；",
+          "source_hash": "sha256:1d0bfc81845f"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s003",
+          "index": 3,
+          "text": "世界種，名：秀出寶幢。",
+          "source_hash": "sha256:7f9ffa5e97c0"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s004",
+          "index": 4,
+          "text": "次有香水海，名：寶幢莊嚴；",
+          "source_hash": "sha256:64346dd74353"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s005",
+          "index": 5,
+          "text": "世界種，名：現一切光明。",
+          "source_hash": "sha256:f605710379d1"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s006",
+          "index": 6,
+          "text": "次有香水海，名：妙寶雲；",
+          "source_hash": "sha256:04c036face7f"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s007",
+          "index": 7,
+          "text": "世界種，名：一切寶莊嚴光明遍照。",
+          "source_hash": "sha256:4da252ca8501"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s008",
+          "index": 8,
+          "text": "次有香水海，名：寶樹華莊嚴；",
+          "source_hash": "sha256:bec49225e183"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s009",
+          "index": 9,
+          "text": "世界種，名：妙華間飾。",
+          "source_hash": "sha256:fa2b29be82ee"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s010",
+          "index": 10,
+          "text": "次有香水海，名：妙寶衣莊嚴；",
+          "source_hash": "sha256:e61c290fc430"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s011",
+          "index": 11,
+          "text": "世界種，名：光明海。",
+          "source_hash": "sha256:4a9c246e3a29"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s012",
+          "index": 12,
+          "text": "次有香水海，名：寶樹峯；",
+          "source_hash": "sha256:cd3ba9f077e6"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s013",
+          "index": 13,
+          "text": "世界種，名：寶焰雲。",
+          "source_hash": "sha256:5ef4050f4789"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s014",
+          "index": 14,
+          "text": "次有香水海，名：示現光明；",
+          "source_hash": "sha256:0a23657dfa0e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s015",
+          "index": 15,
+          "text": "世界種，名：入金剛無所礙。",
+          "source_hash": "sha256:b142835a004e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s016",
+          "index": 16,
+          "text": "次有香水海，名：蓮華普莊嚴；",
+          "source_hash": "sha256:92cafe19a44f"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s017",
+          "index": 17,
+          "text": "世界種，名：無邊岸海淵。",
+          "source_hash": "sha256:38f1d4cf2653"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s018",
+          "index": 18,
+          "text": "次有香水海，名：妙寶莊嚴；",
+          "source_hash": "sha256:e8733b5bb6a2"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s019",
+          "index": 19,
+          "text": "世界種，名：普示現國土藏……。",
+          "source_hash": "sha256:77c533b6d070"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s020",
+          "index": 20,
+          "text": "如是等不可說佛剎微塵數香水海，其最近輪圍山香水海，名：不可壞海；",
+          "source_hash": "sha256:048ff542c22c"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s021",
+          "index": 21,
+          "text": "世界種，名：妙輪間錯蓮華場，以一切佛力所出音為體。",
+          "source_hash": "sha256:5c7ce5bbe430"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s022",
+          "index": 22,
+          "text": "此中最下方，有世界，名：最妙香；",
+          "source_hash": "sha256:5a54e0e9f649"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s023",
+          "index": 23,
+          "text": "佛號；",
+          "source_hash": "sha256:b8f106cad91a"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s024",
+          "index": 24,
+          "text": "變化無量塵數光。",
+          "source_hash": "sha256:4ccd6caa1fc4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s025",
+          "index": 25,
+          "text": "此上過十佛剎微塵數世界，與金剛幢世界齊等，有世界，名：不思議差別莊嚴門；",
+          "source_hash": "sha256:6789d0a00bca"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s026",
+          "index": 26,
+          "text": "佛號：無量智。",
+          "source_hash": "sha256:b3ca7f0df424"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s027",
+          "index": 27,
+          "text": "此上與娑婆世界齊等，有世界，名：十方光明妙華藏；",
+          "source_hash": "sha256:528268ba9718"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s028",
+          "index": 28,
+          "text": "佛號：師子眼光焰雲。",
+          "source_hash": "sha256:75c3d14b0785"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s029",
+          "index": 29,
+          "text": "於此最上方，有世界，名：海音聲；",
+          "source_hash": "sha256:d122733dff08"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0013_s030",
+          "index": 30,
+          "text": "佛號：水天光焰門。",
+          "source_hash": "sha256:3ed3bf5231cf"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0014",
+      "index": 14,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0014_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s002",
+          "index": 2,
+          "text": "彼天城寶堞香水海外，次有香水海，名：焰輪赫奕光；",
+          "source_hash": "sha256:95f280a596de"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s003",
+          "index": 3,
+          "text": "世界種，名：不可說種種莊嚴。",
+          "source_hash": "sha256:b5a34bca1652"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s004",
+          "index": 4,
+          "text": "次有香水海，名：寶塵路；",
+          "source_hash": "sha256:deb257493afc"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s005",
+          "index": 5,
+          "text": "世界種，名：普入無量旋。",
+          "source_hash": "sha256:650b8850d71a"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s006",
+          "index": 6,
+          "text": "次有香水海，名：具一切莊嚴；",
+          "source_hash": "sha256:ce08df9d7932"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s007",
+          "index": 7,
+          "text": "世界種，名：寶光遍照。",
+          "source_hash": "sha256:70f14222bbf3"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s008",
+          "index": 8,
+          "text": "次有香水海，名：布眾寶網；",
+          "source_hash": "sha256:0689d6365178"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s009",
+          "index": 9,
+          "text": "世界種，名：安布深密。",
+          "source_hash": "sha256:ee07d3a482d1"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s010",
+          "index": 10,
+          "text": "次有香水海，名：妙寶莊嚴幢；",
+          "source_hash": "sha256:8f84170a600d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s011",
+          "index": 11,
+          "text": "世界種，名：世界海明了音。",
+          "source_hash": "sha256:01a2de278add"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s012",
+          "index": 12,
+          "text": "次有香水海，名：日宮清淨影；",
+          "source_hash": "sha256:298511f8629c"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s013",
+          "index": 13,
+          "text": "世界種，名：遍入因陀羅網。",
+          "source_hash": "sha256:bf635ab064bb"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s014",
+          "index": 14,
+          "text": "次有香水海，名：一切鼓樂美妙音；",
+          "source_hash": "sha256:7daef16fddf4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s015",
+          "index": 15,
+          "text": "世界種，名，圓滿平正。",
+          "source_hash": "sha256:d7a7ec738d0a"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s016",
+          "index": 16,
+          "text": "次有香水海，名：種種妙莊嚴；",
+          "source_hash": "sha256:84c33b269444"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s017",
+          "index": 17,
+          "text": "世界種，名：淨密光焰雲。",
+          "source_hash": "sha256:a81a93677bd1"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s018",
+          "index": 18,
+          "text": "次有香水海，名：周遍寶焰燈；",
+          "source_hash": "sha256:0f6b442fa269"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s019",
+          "index": 19,
+          "text": "世界種，名：隨佛本願種種形……。",
+          "source_hash": "sha256:8286dbb0a66c"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s020",
+          "index": 20,
+          "text": "如是等不可說佛剎微塵數香水海，其最近輪圍山香水海，名：積集瓔珞衣；",
+          "source_hash": "sha256:0872624f2401"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s021",
+          "index": 21,
+          "text": "世界種，名：化現妙衣，以三世一切佛音聲為體。",
+          "source_hash": "sha256:b6e6c80e5bf3"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s022",
+          "index": 22,
+          "text": "此中最下方，有香水海，名：因陀羅華藏，世界名：發生歡喜，佛剎微塵數世界圍遶，純一清淨，佛號：堅悟智。",
+          "source_hash": "sha256:d6b7f5b9c57f"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s023",
+          "index": 23,
+          "text": "此上過十佛剎微塵數世界，與金剛幢世界齊等，有世界，名：寶網莊嚴，十佛剎微塵數世界圍遶，純一清淨，佛號：無量歡喜光。",
+          "source_hash": "sha256:34d9ce196433"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s024",
+          "index": 24,
+          "text": "此上過三佛剎微塵數世界，與娑婆世界齊等，有世界，名：寶蓮華師子座，十三佛剎微塵數世界圍遶，佛號：最清淨不空聞。",
+          "source_hash": "sha256:001c18dc2a72"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0014_s025",
+          "index": 25,
+          "text": "此上過七佛剎微塵數世界，至此世界種最上方，有世界，名：寶色龍光明，二十佛剎微塵數世界圍遶，純一清淨，佛號：遍法界普照明。",
+          "source_hash": "sha256:35bf4ddc2a2f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0015",
+      "index": 15,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0015_s001",
+          "index": 1,
+          "text": "「諸佛子！",
+          "source_hash": "sha256:95af529b713d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0015_s002",
+          "index": 2,
+          "text": "如是十不可說佛剎微塵數香水海中，有十不可說佛剎微塵數世界種，皆依現一切菩薩形摩尼王幢莊嚴蓮華住，各各莊嚴際無有間斷，各各放寶色光明，各各光明雲而覆其上，各各莊嚴具，各各劫差別，各各佛出現，各各演法海，各各眾生遍充滿，各各十方普趣入，各各一切佛神力所加持。",
+          "source_hash": "sha256:f95d7b5032ec"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0015_s003",
+          "index": 3,
+          "text": "此一一世界種中，一切世界依種種莊嚴住，遞相接連，成世界網；",
+          "source_hash": "sha256:487f58dad366"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0015_s004",
+          "index": 4,
+          "text": "於華藏莊嚴世界海，種種差別，周遍建立。」",
+          "source_hash": "sha256:028c5b99ac61"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0016",
+      "index": 16,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0016_s001",
+          "index": 1,
+          "text": "爾時，普賢菩薩欲重宣其義，承佛威力而說頌言：",
+          "source_hash": "sha256:341452fd520b"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0017",
+      "index": 17,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0017_s001",
+          "index": 1,
+          "text": "「華藏世界海，法界等無別，莊嚴極清淨，安住於虛空。",
+          "source_hash": "sha256:8587c009b3a5"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s002",
+          "index": 2,
+          "text": "此世界海中，剎種難思議，一一皆自在，各各無雜亂。",
+          "source_hash": "sha256:6341588a8656"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s003",
+          "index": 3,
+          "text": "華藏世界海，剎種善安布，殊形異莊嚴，種種相不同。",
+          "source_hash": "sha256:3b243f77c6fa"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s004",
+          "index": 4,
+          "text": "諸佛變化音，種種為其體，隨其業力見，剎種妙嚴飾。",
+          "source_hash": "sha256:6a61810249b4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s005",
+          "index": 5,
+          "text": "須彌山城網，水旋輪圓形，廣大蓮華開，彼彼互圍遶。",
+          "source_hash": "sha256:e0e4e3efa2e9"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s006",
+          "index": 6,
+          "text": "山幢樓閣形，旋轉金剛形，如是不思議，廣大諸剎種。",
+          "source_hash": "sha256:cc3e7f98b4a1"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s007",
+          "index": 7,
+          "text": "大海真珠焰，光網不思議，如是諸剎種，悉在蓮華住。",
+          "source_hash": "sha256:7689ebaec303"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s008",
+          "index": 8,
+          "text": "一一諸剎種，光網不可說，光中現眾剎，普遍十方海。",
+          "source_hash": "sha256:e2429fe2fb42"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s009",
+          "index": 9,
+          "text": "一切諸剎種，所有莊嚴具，國土悉入中，普見無有盡。",
+          "source_hash": "sha256:32b32e57ad45"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s010",
+          "index": 10,
+          "text": "剎種不思議，世界無邊際，種種妙嚴好，皆由大仙力。",
+          "source_hash": "sha256:b81fb8523c07"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s011",
+          "index": 11,
+          "text": "一切剎種中，世界不思議，或成或有壞，或有已壞滅。",
+          "source_hash": "sha256:57e94decef42"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s012",
+          "index": 12,
+          "text": "譬如林中葉，有生亦有落，如是剎種中，世界有成壞。",
+          "source_hash": "sha256:1baf75fe51a0"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s013",
+          "index": 13,
+          "text": "譬如依樹林，種種果差別，如是依剎種，種種眾生住。",
+          "source_hash": "sha256:709427ac1dcf"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s014",
+          "index": 14,
+          "text": "譬如種子別，生果各殊異，業力差別故，眾生剎不同。",
+          "source_hash": "sha256:4e0a520dfb51"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s015",
+          "index": 15,
+          "text": "譬如心王寶，隨心見眾色，眾生心淨故，得見清淨剎。",
+          "source_hash": "sha256:e71b17260427"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s016",
+          "index": 16,
+          "text": "譬如大龍王，興雲遍虛空，如是佛願力，出生諸國土。",
+          "source_hash": "sha256:b2991a347856"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s017",
+          "index": 17,
+          "text": "如幻師呪術，能現種種事，眾生業力故，國土不思議。",
+          "source_hash": "sha256:f92a400250ed"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s018",
+          "index": 18,
+          "text": "譬如眾繢像，畫師之所作，如是一切剎，心畫師所成。",
+          "source_hash": "sha256:1b7e22a66b9c"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s019",
+          "index": 19,
+          "text": "眾生身各異，隨心分別起，如是剎種種，莫不皆由業。",
+          "source_hash": "sha256:5bfdf45a9950"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s020",
+          "index": 20,
+          "text": "譬如見導師，種種色差別，隨眾生心行，見諸剎亦然。",
+          "source_hash": "sha256:fe426c539cd5"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s021",
+          "index": 21,
+          "text": "一切諸剎際，周布蓮華網，種種相不同，莊嚴悉清淨。",
+          "source_hash": "sha256:8fbc8d1e34aa"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s022",
+          "index": 22,
+          "text": "彼諸蓮華網，剎網所安住，種種莊嚴事，種種眾生居。",
+          "source_hash": "sha256:ee02fa45fe93"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s023",
+          "index": 23,
+          "text": "或有剎土中，險惡不平坦，由眾生煩惱，於彼如是見。",
+          "source_hash": "sha256:e6e3d24c2340"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s024",
+          "index": 24,
+          "text": "雜染及清淨，無量諸剎種，隨眾生心起，菩薩力所持。",
+          "source_hash": "sha256:4797abb8ec6f"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s025",
+          "index": 25,
+          "text": "或有剎土中，雜染及清淨，斯由業力起，菩薩之所化。",
+          "source_hash": "sha256:d7ce4186428e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s026",
+          "index": 26,
+          "text": "有剎放光明，離垢寶所成，種種妙嚴飾，諸佛令清淨。",
+          "source_hash": "sha256:852125c6d77a"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s027",
+          "index": 27,
+          "text": "一一剎種中，劫燒不思議，所現雖敗惡，其處常堅固。",
+          "source_hash": "sha256:7857e1283924"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s028",
+          "index": 28,
+          "text": "由眾生業力，出生多剎土，依止於風輪，及以水輪住。",
+          "source_hash": "sha256:dcab06f63dd8"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s029",
+          "index": 29,
+          "text": "世界法如是，種種見不同，而實無有生，亦復無滅壞。",
+          "source_hash": "sha256:ccc54368be5e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s030",
+          "index": 30,
+          "text": "一一心念中，出生無量剎，以佛威神力，悉見淨無垢。",
+          "source_hash": "sha256:f5d4201f2b89"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s031",
+          "index": 31,
+          "text": "有剎泥土成，其體甚堅鞕，黑闇無光照，惡業者所居。",
+          "source_hash": "sha256:8697f22314a1"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s032",
+          "index": 32,
+          "text": "有剎金剛成，雜染大憂怖，苦多而樂少，薄福之所處。",
+          "source_hash": "sha256:9d4a07340dd0"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s033",
+          "index": 33,
+          "text": "或有用鐵成，或以赤銅作，石山險可畏，罪惡者充滿。",
+          "source_hash": "sha256:60dd5c93b05a"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s034",
+          "index": 34,
+          "text": "剎中有地獄，眾生苦無救，常在黑闇中，焰海所燒然。",
+          "source_hash": "sha256:ae2211e079fb"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s035",
+          "index": 35,
+          "text": "或復有畜生，種種醜陋形，由其自惡業，常受諸苦惱。",
+          "source_hash": "sha256:30db229f4dec"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s036",
+          "index": 36,
+          "text": "或見閻羅界，飢渴所煎逼，登上大火山，受諸極重苦。",
+          "source_hash": "sha256:e36d608ba408"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s037",
+          "index": 37,
+          "text": "或有諸剎土，七寶所合成，種種諸宮殿，斯由淨業得。",
+          "source_hash": "sha256:95ca37856f78"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s038",
+          "index": 38,
+          "text": "汝應觀世間，其中人與天，淨業果成就，隨時受快樂。",
+          "source_hash": "sha256:3ec54bf9e6fa"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s039",
+          "index": 39,
+          "text": "一一毛孔中，億剎不思議，種種相莊嚴，未曾有迫隘。",
+          "source_hash": "sha256:ddc6eb362d6e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s040",
+          "index": 40,
+          "text": "眾生各各業，世界無量種，於中取著生，受苦樂不同。",
+          "source_hash": "sha256:875b2e5720f7"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s041",
+          "index": 41,
+          "text": "有剎眾寶成，常放無邊光，金剛妙蓮華，莊嚴淨無垢。",
+          "source_hash": "sha256:ad00761a8ee3"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s042",
+          "index": 42,
+          "text": "有剎光為體，依止光輪住，金色栴檀香，焰雲普照明。",
+          "source_hash": "sha256:8e58f1136a14"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s043",
+          "index": 43,
+          "text": "有剎月輪成，香衣悉周布，於一蓮華內，菩薩皆充滿。",
+          "source_hash": "sha256:916747c671a2"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s044",
+          "index": 44,
+          "text": "有剎眾寶成，色相無諸垢，譬如天帝網，光明恒照耀。",
+          "source_hash": "sha256:8495489f2962"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s045",
+          "index": 45,
+          "text": "有剎香為體，或是金剛華，摩尼光影形，觀察甚清淨。",
+          "source_hash": "sha256:28194a379e88"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s046",
+          "index": 46,
+          "text": "或有難思剎，華旋所成就，化佛皆充滿，菩薩普光明。",
+          "source_hash": "sha256:61826a83b3da"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s047",
+          "index": 47,
+          "text": "或有清淨剎，悉是眾華樹，妙枝布道場，蔭以摩尼雲。",
+          "source_hash": "sha256:67e8a500a78e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s048",
+          "index": 48,
+          "text": "有剎淨光照，金剛華所成，有是佛化音，無邊列成網。",
+          "source_hash": "sha256:c978eaaea72d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s049",
+          "index": 49,
+          "text": "有剎如菩薩，摩尼妙寶冠，或有如座形，從化光明出。",
+          "source_hash": "sha256:f18e4d10c2fd"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s050",
+          "index": 50,
+          "text": "或是栴檀末，或是眉間光，或佛光中音，而成斯妙剎。",
+          "source_hash": "sha256:879bcdf83bf1"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s051",
+          "index": 51,
+          "text": "有見清淨剎，以一光莊嚴，或見多莊嚴，種種皆奇妙。",
+          "source_hash": "sha256:6eee0755644d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s052",
+          "index": 52,
+          "text": "或用十國土，妙物作嚴飾，或以千土中，一切為莊校；",
+          "source_hash": "sha256:02efbde56f26"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s053",
+          "index": 53,
+          "text": "或以億剎物，莊嚴於一土，種種相不同，皆如影像現。",
+          "source_hash": "sha256:e3c339a95110"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s054",
+          "index": 54,
+          "text": "不可說土物，莊嚴於一剎，各各放光明，如來願力起。",
+          "source_hash": "sha256:40e41dcb3bc4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s055",
+          "index": 55,
+          "text": "或有諸國土，願力所淨治，一切莊嚴中，普見眾剎海。",
+          "source_hash": "sha256:6f09bb7ad2eb"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s056",
+          "index": 56,
+          "text": "諸修普賢願，所得清淨土，三世剎莊嚴，一切於中現。",
+          "source_hash": "sha256:a9971aa7e8d7"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s057",
+          "index": 57,
+          "text": "佛子汝應觀，剎種威神力，未來諸國土，如夢悉令見。",
+          "source_hash": "sha256:a091ce23a26a"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s058",
+          "index": 58,
+          "text": "十方諸世界，過去國土海，咸於一剎中，現像猶如化。",
+          "source_hash": "sha256:4c13865f35ea"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s059",
+          "index": 59,
+          "text": "三世一切佛，及以其國土，於一剎種中，一切悉觀見。",
+          "source_hash": "sha256:2f16820a06c7"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s060",
+          "index": 60,
+          "text": "一切佛神力，塵中現眾土，種種悉明見，如影無真實。",
+          "source_hash": "sha256:4eeae4be03ac"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s061",
+          "index": 61,
+          "text": "或有眾多剎，其形如大海，或如須彌山，世界不思議。",
+          "source_hash": "sha256:bd0dd3eff06f"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s062",
+          "index": 62,
+          "text": "有剎善安住，其形如帝網，或如樹林形，諸佛滿其中。",
+          "source_hash": "sha256:5e6185360ad5"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s063",
+          "index": 63,
+          "text": "或作寶輪形，或有蓮華狀，八隅備眾飾，種種悉清淨。",
+          "source_hash": "sha256:2f59fa7e9f88"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s064",
+          "index": 64,
+          "text": "或有如座形，或復有三隅，或如佉勒迦，城廓梵王身。",
+          "source_hash": "sha256:fe9a7b7de2bd"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s065",
+          "index": 65,
+          "text": "或如天主髻，或有如半月，或如摩尼山，或如日輪形。",
+          "source_hash": "sha256:cc8138f05a23"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s066",
+          "index": 66,
+          "text": "或有世界形，譬如香海旋，或作光明輪，佛昔所嚴淨。",
+          "source_hash": "sha256:8d43fb4b2308"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s067",
+          "index": 67,
+          "text": "或有輪輞形，或有壇墠形，或如佛毫相，肉髻廣長眼。",
+          "source_hash": "sha256:0e3e4ab98118"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s068",
+          "index": 68,
+          "text": "或有如佛手，或如金剛杵，或如焰山形，菩薩悉周遍。",
+          "source_hash": "sha256:af087fdc9ac4"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s069",
+          "index": 69,
+          "text": "或如師子形，或如海蚌形，無量諸色相，體性各差別。",
+          "source_hash": "sha256:193982caa51b"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s070",
+          "index": 70,
+          "text": "於一剎種中，剎形無有盡，皆由佛願力，護念得安住。",
+          "source_hash": "sha256:0c3ecad6ac45"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s071",
+          "index": 71,
+          "text": "有剎住一劫，或住於十劫，乃至過百千，國土微塵數。",
+          "source_hash": "sha256:beb04f737e6b"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s072",
+          "index": 72,
+          "text": "或於一劫中，見剎有成壞，或無量無數，乃至不思議。",
+          "source_hash": "sha256:34ab98dfa367"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s073",
+          "index": 73,
+          "text": "或有剎有佛，或有剎無佛，或有唯一佛，或有無量佛。",
+          "source_hash": "sha256:7acdfdf7da16"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s074",
+          "index": 74,
+          "text": "國土若無佛，他方世界中，有佛變化來，為現諸能事。",
+          "source_hash": "sha256:8f37d6d2e55a"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s075",
+          "index": 75,
+          "text": "沒天與降神，處胎及出生，降魔成正覺，轉無上法輪。",
+          "source_hash": "sha256:540c6b3a1697"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s076",
+          "index": 76,
+          "text": "隨眾生心樂，示現種種相，為轉妙法輪，悉應其根欲。",
+          "source_hash": "sha256:bc278711a3fc"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s077",
+          "index": 77,
+          "text": "一一佛剎中，一佛出興世，經於億千歲，演說無上法。",
+          "source_hash": "sha256:898b528233cf"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s078",
+          "index": 78,
+          "text": "眾生非法器，不能見諸佛，若有心樂者，一切處皆見。",
+          "source_hash": "sha256:2c268a04750d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s079",
+          "index": 79,
+          "text": "一一剎土中，各有佛興世，一切剎中佛，億數不思議。",
+          "source_hash": "sha256:1ba1e86b3c05"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s080",
+          "index": 80,
+          "text": "此中一一佛，現無量神變，悉遍於法界，調伏眾生海。",
+          "source_hash": "sha256:74cdd40ccf2c"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s081",
+          "index": 81,
+          "text": "有剎無光明，黑闇多恐懼，苦觸如刀劍，見者自酸毒。",
+          "source_hash": "sha256:582676f41d39"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s082",
+          "index": 82,
+          "text": "或有諸天光，或有宮殿光，或日月光明，剎網難思議。",
+          "source_hash": "sha256:0119c346544e"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s083",
+          "index": 83,
+          "text": "有剎自光明，或樹放淨光，未曾有苦惱，眾生福力故。",
+          "source_hash": "sha256:6936bed5ca1b"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s084",
+          "index": 84,
+          "text": "或有山光明，或有摩尼光，或以燈光照，悉眾生業力。",
+          "source_hash": "sha256:f37715dc400b"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s085",
+          "index": 85,
+          "text": "或有佛光明，菩薩滿其中，有是蓮華光，焰色甚嚴好。",
+          "source_hash": "sha256:e7286b9ce398"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s086",
+          "index": 86,
+          "text": "有剎華光照，有以香水照，塗香燒香照，皆由淨願力。",
+          "source_hash": "sha256:0487217dfbe5"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s087",
+          "index": 87,
+          "text": "有以雲光照，摩尼蚌光照，佛神力光照，能宣悅意聲。",
+          "source_hash": "sha256:09de24a3a603"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s088",
+          "index": 88,
+          "text": "或以寶光照，或金剛焰照，淨音能遠震，所至無眾苦。",
+          "source_hash": "sha256:bb02e3a7fa17"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s089",
+          "index": 89,
+          "text": "或有摩尼光，或是嚴具光，或道場光明，照耀眾會中。",
+          "source_hash": "sha256:ef0993a6c8f6"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s090",
+          "index": 90,
+          "text": "佛放大光明，化佛滿其中，其光普照觸，法界悉周遍。",
+          "source_hash": "sha256:f6679232f50d"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s091",
+          "index": 91,
+          "text": "有剎甚可畏，嘷叫大苦聲，其聲極酸楚，聞者生厭怖。",
+          "source_hash": "sha256:f90b581523f8"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s092",
+          "index": 92,
+          "text": "地獄畜生道，及以閻羅處，是濁惡世界，恒出憂苦聲。",
+          "source_hash": "sha256:c15a88543278"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s093",
+          "index": 93,
+          "text": "或有國土中，常出可樂音，悅意順其教，斯由淨業得。",
+          "source_hash": "sha256:1848c8987665"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s094",
+          "index": 94,
+          "text": "或有國土中，恒聞帝釋音，或聞梵天音，一切世主音。",
+          "source_hash": "sha256:f119fda317ac"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s095",
+          "index": 95,
+          "text": "或有諸剎土，雲中出妙聲，寶海摩尼樹，及樂音遍滿。",
+          "source_hash": "sha256:fa37f0a96b1c"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s096",
+          "index": 96,
+          "text": "諸佛圓光內，化聲無有盡，及菩薩妙音，周聞十方剎。",
+          "source_hash": "sha256:ddf3f88c30d6"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s097",
+          "index": 97,
+          "text": "不可思議國，普轉法輪聲，願海所出聲，修行妙音聲。",
+          "source_hash": "sha256:3602256781ad"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s098",
+          "index": 98,
+          "text": "三世一切佛，出生諸世界，名號皆具足，音聲無有盡。",
+          "source_hash": "sha256:d4f3645dd124"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s099",
+          "index": 99,
+          "text": "或有剎中聞，一切佛力音，地度及無量，如是法皆演。",
+          "source_hash": "sha256:8ce130094741"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s100",
+          "index": 100,
+          "text": "普賢誓願力，億剎演妙音，其音若雷震，住劫亦無盡。",
+          "source_hash": "sha256:0a7953430301"
+        },
+        {
+          "sentence_id": "T10n0279_010_p0017_s101",
+          "index": 101,
+          "text": "佛於清淨國，示現自在音，十方法界中，一切無不聞。」",
+          "source_hash": "sha256:973f377bbf33"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T10n0279_010_p0018",
+      "index": 18,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T10n0279_010_p0018_s001",
+          "index": 1,
+          "text": "大方廣佛華嚴經卷第十",
+          "source_hash": "sha256:9e199ebcb0f0"
+        }
+      ]
+    }
+  ]
+}

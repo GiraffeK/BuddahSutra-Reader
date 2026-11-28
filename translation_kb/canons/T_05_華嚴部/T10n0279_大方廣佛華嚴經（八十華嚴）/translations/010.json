@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "sutra_id": "T10n0279",
+  "fascicle": 10,
+  "updated_at": "2026-11-28T16:44:57+08:00",
+  "entries": {
+    "T10n0279_010_p0004_s001": {
+      "sentence_id": "T10n0279_010_p0004_s001",
+      "source_text": "爾時，普賢菩薩復告大眾言：",
+      "source_hash": "sha256:ab905210f6e2",
+      "active_version_id": "v_20261128_164457_nvidia",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_164457_nvidia",
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "chengguan_shuchao"
+          ],
+          "created_at": "2026-11-28T16:44:57+08:00",
+          "content": {
+            "literal_translation": "那時，普賢菩薩又告訴大眾說：",
+            "colloquial_translation": "當時，普賢菩薩再次向大眾開示道：",
+            "dharma_analysis": "澄觀大師釋云「約人，名普慧普賢問答之會」，顯示普賢菩薩為華藏世界品之主講者，承接前會「不動前二而升四天」之圓融法門，體現「燈光涉入無礙」之重會義，非單純時序前後，乃是法界緣起、主伴圓融之教相顯現。",
+            "terms": [
+              {
+                "term": "爾時",
+                "explanation": "標示法會教起時節，非世間剎那時間，乃機教相應、緣熟發起之「教時」。"
+              },
+              {
+                "term": "普賢菩薩",
+                "explanation": "梵名 Samantabhadra，譯為「普賢」或「遍賢」，華嚴法會上首菩薩，表行願圓滿、普遍賢德，此處為華藏世界品之能說主。"
+              },
+              {
+                "term": "復",
+                "explanation": "再、又，顯示法門層層遞進、重疊無礙之圓融義，非單純重複，乃重會重說之勝義。"
+              },
+              {
+                "term": "大眾",
+                "explanation": "指集會聽法之總機緣，包含諸大菩薩、聲聞眾、天龍八部及一切法界含識。"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

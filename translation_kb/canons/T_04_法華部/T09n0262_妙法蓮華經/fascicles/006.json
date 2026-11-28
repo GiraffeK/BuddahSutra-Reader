@@ -1,0 +1,2910 @@
+{
+  "schema_version": "1.0",
+  "source": "CBETA Online Data API (cbdata.dila.edu.tw)",
+  "sutra_id": "T09n0262",
+  "sutra_title": "妙法蓮華經",
+  "edition": "7卷本",
+  "translator": "姚秦 鳩摩羅什譯",
+  "fascicle": 6,
+  "fascicle_count": 7,
+  "fascicle_title": "卷第6・18 隨喜功德品・19 法師功德品",
+  "paragraphs": [
+    {
+      "paragraph_id": "T09n0262_006_p0001",
+      "index": 1,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0001_s001",
+          "index": 1,
+          "text": "妙法蓮華經卷第六",
+          "source_hash": "sha256:d08779bf925f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0002",
+      "index": 2,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0002_s001",
+          "index": 1,
+          "text": "後秦龜茲國三藏法師鳩摩羅什奉詔譯",
+          "source_hash": "sha256:94055645bab2"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0003",
+      "index": 3,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0003_s001",
+          "index": 1,
+          "text": "◎隨喜功德品第十八",
+          "source_hash": "sha256:48ce4865f8bc"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0004",
+      "index": 4,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0004_s001",
+          "index": 1,
+          "text": "爾時，彌勒菩薩摩訶薩白佛言：「世尊！",
+          "source_hash": "sha256:c9940777e65d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0004_s002",
+          "index": 2,
+          "text": "若有善男子、善女人，聞是法華經隨喜者，得幾所福？」",
+          "source_hash": "sha256:64364b05eb83"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0005",
+      "index": 5,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0005_s001",
+          "index": 1,
+          "text": "而說偈言：",
+          "source_hash": "sha256:adcaa7d12bcc"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0006",
+      "index": 6,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0006_s001",
+          "index": 1,
+          "text": "「世尊滅度後，其有聞是經，若能隨喜者，為得幾所福？」",
+          "source_hash": "sha256:152fa1c48af1"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0007",
+      "index": 7,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0007_s001",
+          "index": 1,
+          "text": "爾時，佛告彌勒菩薩摩訶薩：「阿逸多！",
+          "source_hash": "sha256:bc5ad97d6083"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0007_s002",
+          "index": 2,
+          "text": "如來滅後，若比丘、比丘尼、優婆塞、優婆夷，及餘智者若長若幼，聞是經隨喜已，從法會出，至於餘處，若在僧坊，若空閑地，若城邑、巷陌、聚落、田里，如其所聞，為父母、宗親、善友、知識，隨力演說。",
+          "source_hash": "sha256:51e11c67e606"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0007_s003",
+          "index": 3,
+          "text": "是諸人等，聞已隨喜，復行轉教；",
+          "source_hash": "sha256:a0eea2821f6d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0007_s004",
+          "index": 4,
+          "text": "餘人聞已，亦隨喜轉教。",
+          "source_hash": "sha256:6e641673e1bb"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0007_s005",
+          "index": 5,
+          "text": "如是展轉，至第五十。",
+          "source_hash": "sha256:d229a83a3c14"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0008",
+      "index": 8,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0008_s001",
+          "index": 1,
+          "text": "「阿逸多！",
+          "source_hash": "sha256:8e6da9c72491"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0008_s002",
+          "index": 2,
+          "text": "其第五十善男子、善女人，隨喜功德，我今說之，汝當善聽。",
+          "source_hash": "sha256:1b8da92fb53f"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0008_s003",
+          "index": 3,
+          "text": "若四百萬億阿僧祇世界，六趣四生眾生——卵生、胎生、濕生、化生，若有形、無形，有想、無想，非有想、非無想，無足、二足、四足、多足，如是等在眾生數者——有人求福，隨其所欲娛樂之具，皆給與之。",
+          "source_hash": "sha256:5b8b0b746b2c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0008_s004",
+          "index": 4,
+          "text": "一一眾生，與滿閻浮提金、銀、琉璃、車𤦲馬腦、珊瑚、虎珀，諸妙珍寶，及象、馬車乘，七寶所成宮殿樓閣等。",
+          "source_hash": "sha256:4d38346f79c3"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0008_s005",
+          "index": 5,
+          "text": "是大施主，如是布施滿八十年已，而作是念：『我已施眾生娛樂之具，隨意所欲，然此眾生，皆已衰老年過八十，髮白面皺，將死不久，我當以佛法而訓導之。』即集此眾生，宣布法化，示教利喜，一時皆得須陀洹道、斯陀含道、阿那含道、阿羅漢道，盡諸有漏，於深禪定皆得自在，具八解脫。",
+          "source_hash": "sha256:4a1663776764"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0008_s006",
+          "index": 6,
+          "text": "於汝意云何，是大施主所得功德寧為多不？」",
+          "source_hash": "sha256:064a9226d886"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0009",
+      "index": 9,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0009_s001",
+          "index": 1,
+          "text": "彌勒白佛言：「世尊！",
+          "source_hash": "sha256:25fdc07e665b"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0009_s002",
+          "index": 2,
+          "text": "是人功德甚多，無量無邊。",
+          "source_hash": "sha256:061f189b4dd2"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0009_s003",
+          "index": 3,
+          "text": "若是施主，但施眾生一切樂具，功德無量；",
+          "source_hash": "sha256:058f3daca4d5"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0009_s004",
+          "index": 4,
+          "text": "何況令得阿羅漢果。」",
+          "source_hash": "sha256:c775a5a900b4"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0010",
+      "index": 10,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0010_s001",
+          "index": 1,
+          "text": "佛告彌勒：「我今分明語汝，是人以一切樂具，施於四百萬億阿僧祇世界六趣眾生，又令得阿羅漢果，所得功德，不如是第五十人，聞法華經一偈隨喜功德，百分、千分、百千萬億分、不及其一，乃至算數譬喻所不能知。",
+          "source_hash": "sha256:b20a1f6cb278"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0011",
+      "index": 11,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0011_s001",
+          "index": 1,
+          "text": "「阿逸多！",
+          "source_hash": "sha256:8e6da9c72491"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0011_s002",
+          "index": 2,
+          "text": "如是第五十人展轉聞法華經隨喜功德，尚無量無邊阿僧祇，何況最初於會中聞而隨喜者，其福復勝，無量無邊阿僧祇，不可得比。",
+          "source_hash": "sha256:73de46c56283"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0012",
+      "index": 12,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0012_s001",
+          "index": 1,
+          "text": "「又，阿逸多！",
+          "source_hash": "sha256:73d6a270f7d6"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0012_s002",
+          "index": 2,
+          "text": "若人為是經故，往詣僧坊，若坐、若立須臾聽受，緣是功德，轉身所生，得好上妙象、馬車乘、珍寶輦輿，及乘天宮。",
+          "source_hash": "sha256:21ba06b8e5ef"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0012_s003",
+          "index": 3,
+          "text": "若復有人於講法處坐，更有人來，勸令坐聽，若分座令坐，是人功德，轉身得帝釋坐處，若梵王坐處，若轉輪聖王所坐之處。",
+          "source_hash": "sha256:9924b29220b8"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0013",
+      "index": 13,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0013_s001",
+          "index": 1,
+          "text": "「阿逸多！",
+          "source_hash": "sha256:8e6da9c72491"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0013_s002",
+          "index": 2,
+          "text": "若復有人，語餘人言：『有經，名法華，可共往聽。』即受其教，乃至須臾間聞，是人功德，轉身得與陀羅尼菩薩共生一處，利根智慧，百千萬世終不瘖瘂，口氣不臭，舌常無病，口亦無病，齒不垢黑、不黃、不踈，亦不缺落，不差、不曲，脣不下垂亦不褰縮、不麁澁、不瘡胗，亦不缺壞，亦不喎斜，不厚、不大，亦不黧黑，無諸可惡。",
+          "source_hash": "sha256:a235878cb5fb"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0013_s003",
+          "index": 3,
+          "text": "鼻不匾㔸，亦不曲戾，面色不黑，亦不狹長，亦不窊曲，無有一切不可喜相。",
+          "source_hash": "sha256:214b27a0e86d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0013_s004",
+          "index": 4,
+          "text": "脣舌牙齒悉皆嚴好，鼻修高直，面貌圓滿，眉高而長，額廣平正，人相具足，世世所生，見佛聞法、信受教誨。",
+          "source_hash": "sha256:7785723be644"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0014",
+      "index": 14,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0014_s001",
+          "index": 1,
+          "text": "「阿逸多！",
+          "source_hash": "sha256:8e6da9c72491"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0014_s002",
+          "index": 2,
+          "text": "汝且觀是，勸於一人令往聽法，功德如此，何況一心聽說、讀誦，而於大眾為人分別、如說修行？」",
+          "source_hash": "sha256:ebcf47acbad8"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0015",
+      "index": 15,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0015_s001",
+          "index": 1,
+          "text": "爾時世尊欲重宣此義，而說偈言：",
+          "source_hash": "sha256:884f79468225"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0016",
+      "index": 16,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0016_s001",
+          "index": 1,
+          "text": "「若人於法會，得聞是經典，乃至於一偈，隨喜為他說，如是展轉教，至于第五十，最後人獲福，今當分別之。",
+          "source_hash": "sha256:5f9bb584a82c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0016_s002",
+          "index": 2,
+          "text": "如有大施主，供給無量眾，具滿八十歲，隨意之所欲。",
+          "source_hash": "sha256:8e7e402c36fb"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0016_s003",
+          "index": 3,
+          "text": "見彼衰老相，髮白而面皺，齒踈形枯竭，念其死不久，我今應當教，令得於道果。",
+          "source_hash": "sha256:d360240bc49c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0016_s004",
+          "index": 4,
+          "text": "即為方便說，涅槃真實法，世皆不牢固，如水沫泡焰，汝等咸應當，疾生厭離心。",
+          "source_hash": "sha256:42ac40c35a9e"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0016_s005",
+          "index": 5,
+          "text": "諸人聞是法，皆得阿羅漢，具足六神通，三明八解脫。",
+          "source_hash": "sha256:3b51f43f2969"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0016_s006",
+          "index": 6,
+          "text": "最後第五十，聞一偈隨喜，是人福勝彼，不可為譬喻。",
+          "source_hash": "sha256:e6f8ab883e08"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0016_s007",
+          "index": 7,
+          "text": "如是展轉聞，其福尚無量，何況於法會，初聞隨喜者。",
+          "source_hash": "sha256:468dbc376645"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0016_s008",
+          "index": 8,
+          "text": "若有勸一人，將引聽法華，言此經深妙，千萬劫難遇，即受教往聽，乃至須臾聞，斯人之福報，今當分別說。",
+          "source_hash": "sha256:f17706dc7a46"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0016_s009",
+          "index": 9,
+          "text": "世世無口患，齒不踈黃黑，脣不厚褰缺，無有可惡相，舌不乾黑短，鼻高修且直，額廣而平正，面目悉端嚴，為人所喜見，口氣無臭穢，優鉢華之香、常從其口出。",
+          "source_hash": "sha256:2e3b6c103d7f"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0016_s010",
+          "index": 10,
+          "text": "若故詣僧坊，欲聽法華經，須臾聞歡喜，今當說其福。",
+          "source_hash": "sha256:b30bb970d4c9"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0016_s011",
+          "index": 11,
+          "text": "後生天人中，得妙象馬車，珍寶之輦輿，及乘天宮殿。",
+          "source_hash": "sha256:5ffd060dfb53"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0016_s012",
+          "index": 12,
+          "text": "若於講法處，勸人坐聽經，是福因緣得，釋梵轉輪座。",
+          "source_hash": "sha256:0003c12b5deb"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0016_s013",
+          "index": 13,
+          "text": "何況一心聽，解說其義趣，如說而修行，其福不可量。」",
+          "source_hash": "sha256:099e2a6eed70"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0017",
+      "index": 17,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0017_s001",
+          "index": 1,
+          "text": "妙法蓮華經法師功德品第十九",
+          "source_hash": "sha256:b54427ed2061"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0018",
+      "index": 18,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0018_s001",
+          "index": 1,
+          "text": "爾時佛告常精進菩薩摩訶薩：「若善男子、善女人，受持是法華經，若讀、若誦、若解說、若書寫，是人當得八百眼功德、千二百耳功德、八百鼻功德、千二百舌功德、八百身功德、千二百意功德，以是功德、莊嚴六根，皆令清淨。",
+          "source_hash": "sha256:fb25fe53356f"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0018_s002",
+          "index": 2,
+          "text": "是善男子、善女人，父母所生清淨肉眼，見於三千大千世界內外所有山林河海，下至阿鼻地獄，上至有頂，亦見其中一切眾生，及業因緣、果報生處，悉見悉知。」",
+          "source_hash": "sha256:26b83b48fcfd"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0019",
+      "index": 19,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0019_s001",
+          "index": 1,
+          "text": "爾時世尊欲重宣此義，而說偈言：",
+          "source_hash": "sha256:884f79468225"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0020",
+      "index": 20,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0020_s001",
+          "index": 1,
+          "text": "「若於大眾中，以無所畏心、說是法華經，汝聽其功德。",
+          "source_hash": "sha256:ef326a83f38c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0020_s002",
+          "index": 2,
+          "text": "是人得八百、功德殊勝眼，以是莊嚴故，其目甚清淨。",
+          "source_hash": "sha256:c4a61c6b8f5f"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0020_s003",
+          "index": 3,
+          "text": "父母所生眼，悉見三千界，內外彌樓山，須彌及鐵圍，并諸餘山林、大海江河水，下至阿鼻獄，上至有頂處，其中諸眾生，一切皆悉見。",
+          "source_hash": "sha256:8d984e8d45f9"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0020_s004",
+          "index": 4,
+          "text": "雖未得天眼，肉眼力如是。",
+          "source_hash": "sha256:5ec47748f3fb"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0021",
+      "index": 21,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0021_s001",
+          "index": 1,
+          "text": "「復次，常精進！",
+          "source_hash": "sha256:2c9add76b555"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0021_s002",
+          "index": 2,
+          "text": "若善男子、善女人，受持此經，若讀、若誦、若解說、若書寫，得千二百耳功德。",
+          "source_hash": "sha256:64036fc31c8b"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0021_s003",
+          "index": 3,
+          "text": "以是清淨耳，聞三千大千世界，下至阿鼻地獄，上至有頂，其中內外種種語言音聲——象聲、馬聲、牛聲、車聲，啼哭聲、愁歎聲，螺聲、鼓聲、鍾聲、鈴聲，笑聲、語聲，男聲、女聲、童子聲、童女聲，法聲、非法聲，苦聲、樂聲，凡夫聲、聖人聲，喜聲、不喜聲，天聲、龍聲、夜叉聲、乾闥婆聲、阿修羅聲、迦樓羅聲、緊那羅聲、摩睺羅伽聲，火聲、水聲、風聲，地獄聲、畜生聲、餓鬼聲，比丘聲、比丘尼聲，聲聞聲、辟支佛聲，菩薩聲、佛聲——以要言之，三千大千世界中一切內外所有諸聲，雖未得天耳，以父母所生清淨常耳，皆悉聞知，如是分別種種音聲而不壞耳根。」",
+          "source_hash": "sha256:e24ddf4c76ca"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0022",
+      "index": 22,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0022_s001",
+          "index": 1,
+          "text": "爾時世尊欲重宣此義，而說偈言：",
+          "source_hash": "sha256:884f79468225"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0023",
+      "index": 23,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0023_s001",
+          "index": 1,
+          "text": "「父母所生耳，清淨無濁穢，以此常耳聞，三千世界聲。",
+          "source_hash": "sha256:2a454a633b00"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0023_s002",
+          "index": 2,
+          "text": "象馬車牛聲，鍾鈴螺鼓聲，琴瑟箜篌聲，簫笛之音聲，清淨好歌聲，聽之而不著，無數種人聲，聞悉能解了。",
+          "source_hash": "sha256:e76ad86d8f7c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0023_s003",
+          "index": 3,
+          "text": "又聞諸天聲，微妙之歌音，及聞男女聲，童子童女聲。",
+          "source_hash": "sha256:2b0d00bc66b4"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0023_s004",
+          "index": 4,
+          "text": "山川嶮谷中，迦陵頻伽聲，命命等諸鳥，悉聞其音聲。",
+          "source_hash": "sha256:cb00ea57efff"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0023_s005",
+          "index": 5,
+          "text": "地獄眾苦痛，種種楚毒聲，餓鬼飢渴逼，求索飲食聲，諸阿修羅等，居在大海邊，自共語言時，出于大音聲。",
+          "source_hash": "sha256:41435219858a"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0023_s006",
+          "index": 6,
+          "text": "如是說法者，安住於此間，遙聞是眾聲，而不壞耳根。",
+          "source_hash": "sha256:b47daef35d1b"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0023_s007",
+          "index": 7,
+          "text": "十方世界中，禽獸鳴相呼，其說法之人，於此悉聞之。",
+          "source_hash": "sha256:45b566eecb67"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0023_s008",
+          "index": 8,
+          "text": "其諸梵天上，光音及遍淨，乃至有頂天，言語之音聲，法師住於此，悉皆得聞之。",
+          "source_hash": "sha256:460ce46d9472"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0023_s009",
+          "index": 9,
+          "text": "一切比丘眾，及諸比丘尼，若讀誦經典，若為他人說，法師住於此，悉皆得聞之。",
+          "source_hash": "sha256:0817fcef7235"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0023_s010",
+          "index": 10,
+          "text": "復有諸菩薩，讀誦於經法，若為他人說，撰集解其義，如是諸音聲，悉皆得聞之。",
+          "source_hash": "sha256:e259ec7fd1a3"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0023_s011",
+          "index": 11,
+          "text": "諸佛大聖尊，教化眾生者，於諸大會中，演說微妙法，持此法華者，悉皆得聞之。",
+          "source_hash": "sha256:048cc520ea08"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0023_s012",
+          "index": 12,
+          "text": "三千大千界，內外諸音聲，下至阿鼻獄，上至有頂天，皆聞其音聲，而不壞耳根，其耳聰利故，悉能分別知。",
+          "source_hash": "sha256:676ee32469a8"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0023_s013",
+          "index": 13,
+          "text": "持是法花者，雖未得天耳，但用所生耳，功德已如是。",
+          "source_hash": "sha256:95df09da7957"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0024",
+      "index": 24,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0024_s001",
+          "index": 1,
+          "text": "「復次，常精進！",
+          "source_hash": "sha256:2c9add76b555"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0024_s002",
+          "index": 2,
+          "text": "若善男子、善女人，受持是經，若讀、若誦、若解說、若書寫，成就八百鼻功德。",
+          "source_hash": "sha256:78f69134fabe"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0024_s003",
+          "index": 3,
+          "text": "以是清淨鼻根，聞於三千大千世界上下內外種種諸香——須曼那華香、闍提華香、末利華香、瞻蔔華香、波羅羅華香，赤蓮華香、青蓮華香、白蓮華香，華樹香、菓樹香，栴檀香、沈水香、多摩羅跋香、多伽羅香，及千萬種和香，若末、若丸、若塗香——持是經者，於此間住，悉能分別。",
+          "source_hash": "sha256:7411ecc05179"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0024_s004",
+          "index": 4,
+          "text": "又復別知眾生之香——象香、馬香、牛羊等香，男香、女香、童子香、童女香，及草木叢林香——若近、若遠、所有諸香，悉皆得聞，分別不錯。",
+          "source_hash": "sha256:214b52a30fb0"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0024_s005",
+          "index": 5,
+          "text": "持是經者，雖住於此，亦聞天上諸天之香——波利質多羅、拘鞞陀羅樹香，及曼陀羅華香、摩訶曼陀羅華香、曼殊沙華香、摩訶曼殊沙華香、栴檀、沈水、種種末香，諸雜華香——如是等天香和合所出之香，無不聞知。",
+          "source_hash": "sha256:f7bed40d1b1d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0024_s006",
+          "index": 6,
+          "text": "又聞諸天身香——釋提桓因在勝殿上，五欲娛樂嬉戲時香；",
+          "source_hash": "sha256:65fbb9425ea5"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0024_s007",
+          "index": 7,
+          "text": "若在妙法堂上，為忉利諸天說法時香；",
+          "source_hash": "sha256:b4dbf995e882"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0024_s008",
+          "index": 8,
+          "text": "若於諸園遊戲時香；",
+          "source_hash": "sha256:4e5621eac7ce"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0024_s009",
+          "index": 9,
+          "text": "及餘天等男女身香，皆悉遙聞。",
+          "source_hash": "sha256:943ba2d42c6e"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0024_s010",
+          "index": 10,
+          "text": "如是展轉乃至梵世，上至有頂諸天身香，亦皆聞之，并聞諸天所燒之香。",
+          "source_hash": "sha256:53ecf2ce0711"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0024_s011",
+          "index": 11,
+          "text": "及聲聞香、辟支佛香、菩薩香、諸佛身香，亦皆遙聞，知其所在。",
+          "source_hash": "sha256:1e83a88dfc93"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0024_s012",
+          "index": 12,
+          "text": "雖聞此香，然於鼻根不壞不錯，若欲分別為他人說，憶念不謬。」",
+          "source_hash": "sha256:a185c5cd9ede"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0025",
+      "index": 25,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0025_s001",
+          "index": 1,
+          "text": "爾時世尊欲重宣此義，而說偈言：",
+          "source_hash": "sha256:884f79468225"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0026",
+      "index": 26,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0026_s001",
+          "index": 1,
+          "text": "「是人鼻清淨，於此世界中，若香若臭物，種種悉聞知。",
+          "source_hash": "sha256:766947559de2"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s002",
+          "index": 2,
+          "text": "須曼那闍提、多摩羅栴檀、沈水及桂香，種種華菓香，及知眾生香，男子女人香，說法者遠住，聞香知所在。",
+          "source_hash": "sha256:7428e5bd5a04"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s003",
+          "index": 3,
+          "text": "大勢轉輪王，小轉輪及子，群臣諸宮人，聞香知所在。",
+          "source_hash": "sha256:5201c25df776"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s004",
+          "index": 4,
+          "text": "身所著珍寶，及地中寶藏，轉輪王寶女，聞香知所在。",
+          "source_hash": "sha256:a96f2f0c602b"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s005",
+          "index": 5,
+          "text": "諸人嚴身具，衣服及瓔珞，種種所塗香，聞香知其身。",
+          "source_hash": "sha256:c2962fc3a905"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s006",
+          "index": 6,
+          "text": "諸天若行坐，遊戲及神變，持是法華者，聞香悉能知。",
+          "source_hash": "sha256:70d0f45e3689"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s007",
+          "index": 7,
+          "text": "諸樹華菓實，及酥油香氣，持經者住此，悉知其所在。",
+          "source_hash": "sha256:f078a19bfc1f"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s008",
+          "index": 8,
+          "text": "諸山深嶮處，栴檀樹花敷，眾生在中者，聞香皆能知。",
+          "source_hash": "sha256:0e056c02c6f0"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s009",
+          "index": 9,
+          "text": "鐵圍山大海，地中諸眾生，持經者聞香，悉知其所在。",
+          "source_hash": "sha256:0bf896c4f97f"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s010",
+          "index": 10,
+          "text": "阿修羅男女，及其諸眷屬，鬪諍遊戲時，聞香皆能知。",
+          "source_hash": "sha256:f7a7fc717946"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s011",
+          "index": 11,
+          "text": "曠野險隘處，師子象虎狼，野牛水牛等，聞香知所在。",
+          "source_hash": "sha256:a52fc04a85af"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s012",
+          "index": 12,
+          "text": "若有懷妊者，未辯其男女，無根及非人，聞香悉能知。",
+          "source_hash": "sha256:bb8edd559e4b"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s013",
+          "index": 13,
+          "text": "以聞香力故，知其初懷妊，成就不成就，安樂產福子。",
+          "source_hash": "sha256:458adaddb3cf"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s014",
+          "index": 14,
+          "text": "以聞香力故，知男女所念，染欲癡恚心，亦知修善者。",
+          "source_hash": "sha256:05a046a75af6"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s015",
+          "index": 15,
+          "text": "地中眾伏藏，金銀諸珍寶，銅器之所盛，聞香悉能知。",
+          "source_hash": "sha256:e5828adb5057"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s016",
+          "index": 16,
+          "text": "種種諸瓔珞，無能識其價，聞香知貴賤，出處及所在。",
+          "source_hash": "sha256:1822607d7110"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s017",
+          "index": 17,
+          "text": "天上諸華等，曼陀曼殊沙、波利質多樹，聞香悉能知。",
+          "source_hash": "sha256:5deb318fd5a7"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s018",
+          "index": 18,
+          "text": "天上諸宮殿，上中下差別，眾寶花莊嚴，聞香悉能知。",
+          "source_hash": "sha256:de80238457e2"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s019",
+          "index": 19,
+          "text": "天園林勝殿，諸觀妙法堂，在中而娛樂，聞香悉能知。",
+          "source_hash": "sha256:6ba50de47ec1"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s020",
+          "index": 20,
+          "text": "諸天若聽法，或受五欲時，來往行坐臥，聞香悉能知。",
+          "source_hash": "sha256:dd3758c0749c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s021",
+          "index": 21,
+          "text": "天女所著衣，好華香莊嚴，周旋遊戲時，聞香悉能知。",
+          "source_hash": "sha256:c6ca4845ccf7"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s022",
+          "index": 22,
+          "text": "如是展轉上，乃至於梵世，入禪出禪者，聞香悉能知。",
+          "source_hash": "sha256:680947d1dd73"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s023",
+          "index": 23,
+          "text": "光音遍淨天，乃至于有頂，初生及退沒，聞香悉能知。",
+          "source_hash": "sha256:49409fadfa35"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s024",
+          "index": 24,
+          "text": "諸比丘眾等，於法常精進，若坐若經行，及讀誦經法，或在林樹下，專精而坐禪，持經者聞香，悉知其所在。",
+          "source_hash": "sha256:e225e9a1a1ec"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s025",
+          "index": 25,
+          "text": "菩薩志堅固，坐禪若讀誦，或為人說法，聞香悉能知。",
+          "source_hash": "sha256:0a1154151690"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s026",
+          "index": 26,
+          "text": "在在方世尊，一切所恭敬，愍眾而說法，聞香悉能知。",
+          "source_hash": "sha256:7677d26e9972"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s027",
+          "index": 27,
+          "text": "眾生在佛前，聞經皆歡喜，如法而修行，聞香悉能知。",
+          "source_hash": "sha256:8faf1b41df5e"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0026_s028",
+          "index": 28,
+          "text": "雖未得菩薩，無漏法生鼻，而是持經者，先得此鼻相。」",
+          "source_hash": "sha256:0c717b9244b1"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0027",
+      "index": 27,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0027_s001",
+          "index": 1,
+          "text": "「復次，常精進！",
+          "source_hash": "sha256:2c9add76b555"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0027_s002",
+          "index": 2,
+          "text": "若善男子、善女人，受持是經，若讀、若誦、若解說、若書寫，得千二百舌功德。",
+          "source_hash": "sha256:4bcf72e444c6"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0027_s003",
+          "index": 3,
+          "text": "若好、若醜，若美、不美，及諸苦澁物，在其舌根，皆變成上味，如天甘露，無不美者。",
+          "source_hash": "sha256:5061e68235c7"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0027_s004",
+          "index": 4,
+          "text": "若以舌根於大眾中有所演說，出深妙聲，能入其心，皆令歡喜快樂。",
+          "source_hash": "sha256:e9e95d74f087"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0027_s005",
+          "index": 5,
+          "text": "又諸天子、天女，釋梵諸天，聞是深妙音聲，有所演說言論次第，皆悉來聽。",
+          "source_hash": "sha256:06691e2628da"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0027_s006",
+          "index": 6,
+          "text": "及諸龍、龍女，夜叉、夜叉女，乾闥婆、乾闥婆女，阿修羅、阿修羅女，迦樓羅、迦樓羅女，緊那羅、緊那羅女，摩睺羅伽、摩睺羅伽女，為聽法故，皆來親近恭敬供養。",
+          "source_hash": "sha256:0b9db049c75b"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0027_s007",
+          "index": 7,
+          "text": "及比丘、比丘尼，優婆塞、優婆夷，國王、王子、群臣、眷屬，小轉輪王、大轉輪王、七寶千子內外眷屬，乘其宮殿，俱來聽法，以是菩薩善說法故。",
+          "source_hash": "sha256:3486804ef90d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0027_s008",
+          "index": 8,
+          "text": "婆羅門、居士、國內人民、盡其形壽，隨侍供養。",
+          "source_hash": "sha256:0ff8bdd4fcaf"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0027_s009",
+          "index": 9,
+          "text": "又諸聲聞、辟支佛、菩薩、諸佛，常樂見之。",
+          "source_hash": "sha256:476f3395ace1"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0027_s010",
+          "index": 10,
+          "text": "是人所在方面，諸佛皆向其處說法，悉能受持一切佛法，又能出於深妙法音。」",
+          "source_hash": "sha256:56b496d5f89c"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0028",
+      "index": 28,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0028_s001",
+          "index": 1,
+          "text": "爾時世尊欲重宣此義，而說偈言：",
+          "source_hash": "sha256:884f79468225"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0029",
+      "index": 29,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0029_s001",
+          "index": 1,
+          "text": "「是人舌根淨，終不受惡味，其有所食噉，悉皆成甘露。",
+          "source_hash": "sha256:9fbe87d5b984"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0029_s002",
+          "index": 2,
+          "text": "以深淨妙聲，於大眾說法，以諸因緣喻，引導眾生心，聞者皆歡喜，設諸上供養。",
+          "source_hash": "sha256:f557af117332"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0029_s003",
+          "index": 3,
+          "text": "諸天龍夜叉，及阿修羅等，皆以恭敬心，而共來聽法，是說法之人，若欲以妙音，遍滿三千界，隨意即能至。",
+          "source_hash": "sha256:7e6c1edfb826"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0029_s004",
+          "index": 4,
+          "text": "大小轉輪王，及千子眷屬，合掌恭敬心，常來聽受法。",
+          "source_hash": "sha256:540314a7b6ed"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0029_s005",
+          "index": 5,
+          "text": "諸天龍夜叉、羅剎毘舍闍，亦以歡喜心，常樂來供養。",
+          "source_hash": "sha256:60625829a98f"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0029_s006",
+          "index": 6,
+          "text": "梵天王魔王，自在大自在，如是諸天眾，常來至其所。",
+          "source_hash": "sha256:234fab9bfc52"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0029_s007",
+          "index": 7,
+          "text": "諸佛及弟子，聞其說法音，常念而守護，或時為現身。",
+          "source_hash": "sha256:4389dc68d4c2"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0030",
+      "index": 30,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0030_s001",
+          "index": 1,
+          "text": "「復次，常精進！",
+          "source_hash": "sha256:2c9add76b555"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0030_s002",
+          "index": 2,
+          "text": "若善男子、善女人，受持是經，若讀、若誦，若解說、若書寫，得八百身功德。",
+          "source_hash": "sha256:3daf59fdd0f7"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0030_s003",
+          "index": 3,
+          "text": "得清淨身、如淨琉璃，眾生憙見。",
+          "source_hash": "sha256:63eb7cdc5fe2"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0030_s004",
+          "index": 4,
+          "text": "其身淨故，三千大千世界眾生，生時、死時，上下、好醜，生善處、惡處，悉於中現。",
+          "source_hash": "sha256:c0f8d0373f1f"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0030_s005",
+          "index": 5,
+          "text": "及鐵圍山、大鐵圍山、彌樓山、摩訶彌樓山等諸山，及其中眾生，悉於中現。",
+          "source_hash": "sha256:f30b64335d39"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0030_s006",
+          "index": 6,
+          "text": "下至阿鼻地獄，上至有頂，所有及眾生，悉於中現。",
+          "source_hash": "sha256:c370be4dddc2"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0030_s007",
+          "index": 7,
+          "text": "若聲聞、辟支佛、菩薩、諸佛說法，皆於身中現其色像。」",
+          "source_hash": "sha256:01e3887de427"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0031",
+      "index": 31,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0031_s001",
+          "index": 1,
+          "text": "爾時世尊欲重宣此義，而說偈言：",
+          "source_hash": "sha256:884f79468225"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0032",
+      "index": 32,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0032_s001",
+          "index": 1,
+          "text": "「若持法花者，其身甚清淨，如彼淨琉璃，眾生皆憙見。",
+          "source_hash": "sha256:2976fa2da9da"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0032_s002",
+          "index": 2,
+          "text": "又如淨明鏡，悉見諸色像，菩薩於淨身，皆見世所有，唯獨自明了，餘人所不見。",
+          "source_hash": "sha256:b0dbdcf6888c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0032_s003",
+          "index": 3,
+          "text": "三千世界中，一切諸群萌，天人阿修羅、地獄鬼畜生，如是諸色像，皆於身中現。",
+          "source_hash": "sha256:67891f1861fd"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0032_s004",
+          "index": 4,
+          "text": "諸天等宮殿，乃至於有頂，鐵圍及彌樓、摩訶彌樓山，諸大海水等，皆於身中現。",
+          "source_hash": "sha256:a0b486677837"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0032_s005",
+          "index": 5,
+          "text": "諸佛及聲聞，佛子菩薩等，若獨若在眾，說法悉皆現。",
+          "source_hash": "sha256:6293bbfd8119"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0032_s006",
+          "index": 6,
+          "text": "雖未得無漏，法性之妙身，以清淨常體，一切於中現。",
+          "source_hash": "sha256:e6305f937681"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0033",
+      "index": 33,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0033_s001",
+          "index": 1,
+          "text": "「復次，常精進！",
+          "source_hash": "sha256:2c9add76b555"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0033_s002",
+          "index": 2,
+          "text": "若善男子、善女人，如來滅後、受持是經，若讀、若誦、若解說、若書寫，得千二百意功德。",
+          "source_hash": "sha256:076ac782f525"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0033_s003",
+          "index": 3,
+          "text": "以是清淨意根，乃至聞一偈一句，通達無量無邊之義，解是義已，能演說一句一偈至於一月、四月乃至一歲，諸所說法，隨其義趣，皆與實相不相違背。",
+          "source_hash": "sha256:82dc04658daa"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0033_s004",
+          "index": 4,
+          "text": "若說俗間經書、治世語言、資生業等，皆順正法。",
+          "source_hash": "sha256:fe7cdce2b1ec"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0033_s005",
+          "index": 5,
+          "text": "三千大千世界六趣眾生，心之所行、心所動作、心所戲論，皆悉知之。",
+          "source_hash": "sha256:9afa3cf5e2c6"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0033_s006",
+          "index": 6,
+          "text": "雖未得無漏智慧，而其意根、清淨如此。",
+          "source_hash": "sha256:ec00c63d7b4e"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0033_s007",
+          "index": 7,
+          "text": "是人有所思惟、籌量、言說，皆是佛法，無不真實，亦是先佛經中所說。」",
+          "source_hash": "sha256:720e805e17f6"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0034",
+      "index": 34,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0034_s001",
+          "index": 1,
+          "text": "爾時世尊欲重宣此義，而說偈言：",
+          "source_hash": "sha256:884f79468225"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0035",
+      "index": 35,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0035_s001",
+          "index": 1,
+          "text": "「是人意清淨，明利無穢濁，以此妙意根，知上中下法，乃至聞一偈，通達無量義，次第如法說，月四月至歲。",
+          "source_hash": "sha256:76d98992b095"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0035_s002",
+          "index": 2,
+          "text": "是世界內外，一切諸眾生，若天龍及人、夜叉鬼神等，其在六趣中，所念若干種，持法花之報，一時皆悉知。",
+          "source_hash": "sha256:29015d088b1c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0035_s003",
+          "index": 3,
+          "text": "十方無數佛，百福莊嚴相，為眾生說法，悉聞能受持。",
+          "source_hash": "sha256:735ae24b8c57"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0035_s004",
+          "index": 4,
+          "text": "思惟無量義，說法亦無量，終始不忘錯，以持法華故。",
+          "source_hash": "sha256:fadce76bcf8c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0035_s005",
+          "index": 5,
+          "text": "悉知諸法相，隨義識次第，達名字語言，如所知演說。",
+          "source_hash": "sha256:5cecd4487ee7"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0035_s006",
+          "index": 6,
+          "text": "此人有所說，皆是先佛法，以演此法故，於眾無所畏。",
+          "source_hash": "sha256:b7bb464ced71"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0035_s007",
+          "index": 7,
+          "text": "持法花經者，意根淨若斯，雖未得無漏，先有如是相。",
+          "source_hash": "sha256:49c24d5e280a"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0035_s008",
+          "index": 8,
+          "text": "是人持此經，安住希有地，為一切眾生，歡喜而愛敬。",
+          "source_hash": "sha256:6348fd1a8489"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0035_s009",
+          "index": 9,
+          "text": "能以千萬種，善巧之語言，分別而說法，持法花經故。」",
+          "source_hash": "sha256:06588471155d"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0036",
+      "index": 36,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0036_s001",
+          "index": 1,
+          "text": "妙法蓮華經常不輕菩薩品第二十",
+          "source_hash": "sha256:a49c447045a7"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0037",
+      "index": 37,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0037_s001",
+          "index": 1,
+          "text": "爾時，佛告得大勢菩薩摩訶薩：「汝今當知！",
+          "source_hash": "sha256:785797ffc065"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0037_s002",
+          "index": 2,
+          "text": "若比丘、比丘尼、優婆塞、優婆夷持法花經者，若有惡口、罵詈、誹謗，獲大罪報，如前所說；",
+          "source_hash": "sha256:a4480542c9d6"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0037_s003",
+          "index": 3,
+          "text": "其所得功德，如向所說，眼、耳、鼻、舌、身、意清淨。",
+          "source_hash": "sha256:59bbad8eeea5"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0038",
+      "index": 38,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0038_s001",
+          "index": 1,
+          "text": "「得大勢！",
+          "source_hash": "sha256:bff78494efa4"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0038_s002",
+          "index": 2,
+          "text": "乃往古昔，過無量無邊不可思議阿僧祇劫，有佛名威音王如來、應供、正遍知、明行足、善逝、世間解、無上士、調御丈夫、天人師、佛、世尊。",
+          "source_hash": "sha256:0c5dffda4b4b"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0038_s003",
+          "index": 3,
+          "text": "劫名離衰，國名大成。",
+          "source_hash": "sha256:34ae5fc20d16"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0038_s004",
+          "index": 4,
+          "text": "其威音王佛，於彼世中，為天、人、阿修羅說法，為求聲聞者，說應四諦法，度生老病死，究竟涅槃；",
+          "source_hash": "sha256:40f24d3956a7"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0038_s005",
+          "index": 5,
+          "text": "為求辟支佛者，說應十二因緣法；",
+          "source_hash": "sha256:df5400ff1e75"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0038_s006",
+          "index": 6,
+          "text": "為諸菩薩，因阿耨多羅三藐三菩提，說應六波羅蜜法，究竟佛慧。",
+          "source_hash": "sha256:0133efcc8285"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0039",
+      "index": 39,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0039_s001",
+          "index": 1,
+          "text": "「得大勢！",
+          "source_hash": "sha256:bff78494efa4"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0039_s002",
+          "index": 2,
+          "text": "是威音王佛，壽四十萬億那由他恒河沙劫；",
+          "source_hash": "sha256:016243682f35"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0039_s003",
+          "index": 3,
+          "text": "正法住世劫數，如一閻浮提微塵；",
+          "source_hash": "sha256:f6b4b287d85c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0039_s004",
+          "index": 4,
+          "text": "像法住世劫數，如四天下微塵。",
+          "source_hash": "sha256:c27b8c0c586c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0039_s005",
+          "index": 5,
+          "text": "其佛饒益眾生已，然後滅度。",
+          "source_hash": "sha256:e60cf3573502"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0039_s006",
+          "index": 6,
+          "text": "正法、像法滅盡之後，於此國土復有佛出，亦號威音王如來、應供、正遍知、明行足、善逝、世間解、無上士、調御丈夫、天人師、佛、世尊。",
+          "source_hash": "sha256:2fd17d33c4ad"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0039_s007",
+          "index": 7,
+          "text": "如是次第有二萬億佛，皆同一號。",
+          "source_hash": "sha256:90d88e946a9c"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0040",
+      "index": 40,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0040_s001",
+          "index": 1,
+          "text": "「最初威音王如來既已滅度，正法滅後，於像法中，增上慢比丘有大勢力。",
+          "source_hash": "sha256:cc969316983b"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0040_s002",
+          "index": 2,
+          "text": "爾時有一菩薩比丘名常不輕。",
+          "source_hash": "sha256:7679098e0bfa"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0040_s003",
+          "index": 3,
+          "text": "得大勢！",
+          "source_hash": "sha256:9598ab003913"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0040_s004",
+          "index": 4,
+          "text": "以何因緣名常不輕？",
+          "source_hash": "sha256:7bfbc440b08b"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0040_s005",
+          "index": 5,
+          "text": "是比丘，凡有所見——若比丘、比丘尼、優婆塞、優婆夷——皆悉禮拜讚歎而作是言：『我深敬汝等，不敢輕慢。",
+          "source_hash": "sha256:abedd892fa62"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0040_s006",
+          "index": 6,
+          "text": "所以者何？",
+          "source_hash": "sha256:44e1f92edcc6"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0040_s007",
+          "index": 7,
+          "text": "汝等皆行菩薩道，當得作佛。』而是比丘，不專讀誦經典，但行禮拜，乃至遠見四眾，亦復故往禮拜讚歎而作是言：『我不敢輕於汝等，汝等皆當作佛。』四眾之中，有生瞋恚、心不淨者，惡口罵詈言：『是無智比丘從何所來？",
+          "source_hash": "sha256:ec67801d6cf9"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0040_s008",
+          "index": 8,
+          "text": "自言：「我不輕汝。」而與我等授記，當得作佛。",
+          "source_hash": "sha256:5661ca267c3f"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0040_s009",
+          "index": 9,
+          "text": "我等不用如是虛妄授記。』如此經歷多年，常被罵詈，不生瞋恚，常作是言：『汝當作佛。』說是語時，眾人或以杖木瓦石而打擲之，避走遠住，猶高聲唱言：『我不敢輕於汝等，汝等皆當作佛。』以其常作是語故，增上慢比丘、比丘尼、優婆塞、優婆夷，號之為常不輕。",
+          "source_hash": "sha256:3e2ebeb1f3c9"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0040_s010",
+          "index": 10,
+          "text": "是比丘臨欲終時，於虛空中，具聞威音王佛先所說法華經二十千萬億偈，悉能受持，即得如上眼根清淨、耳鼻舌身意根清淨。",
+          "source_hash": "sha256:1a9827890a42"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0040_s011",
+          "index": 11,
+          "text": "得是六根清淨已，更增壽命二百萬億那由他歲，廣為人說是法華經。",
+          "source_hash": "sha256:7b46da1fff6d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0040_s012",
+          "index": 12,
+          "text": "於時增上慢四眾——比丘、比丘尼、優婆塞、優婆夷——輕賤是人，為作不輕名者，見其得大神通力、樂說辯力、大善寂力，聞其所說，皆信伏隨從。",
+          "source_hash": "sha256:3405c8f4fabb"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0040_s013",
+          "index": 13,
+          "text": "是菩薩復化千萬億眾，令住阿耨多羅三藐三菩提。",
+          "source_hash": "sha256:cafadd9aacca"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0040_s014",
+          "index": 14,
+          "text": "命終之後，得值二千億佛，皆號日月燈明，於其法中，說是法華經。",
+          "source_hash": "sha256:8a4c3e834f01"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0040_s015",
+          "index": 15,
+          "text": "以是因緣，復值二千億佛，同號雲自在燈王，於此諸佛法中，受持讀誦，為諸四眾說此經典故，得是常眼清淨，耳、鼻、舌、身、意諸根清淨，於四眾中說法，心無所畏。",
+          "source_hash": "sha256:3d741f5ac04a"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0041",
+      "index": 41,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0041_s001",
+          "index": 1,
+          "text": "「得大勢！",
+          "source_hash": "sha256:bff78494efa4"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0041_s002",
+          "index": 2,
+          "text": "是常不輕菩薩摩訶薩，供養如是若干諸佛，恭敬、尊重、讚歎、種諸善根，於後復值千萬億佛，亦於諸佛法中說是經典，功德成就，當得作佛。",
+          "source_hash": "sha256:d6fc8f70080b"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0042",
+      "index": 42,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0042_s001",
+          "index": 1,
+          "text": "「得大勢！",
+          "source_hash": "sha256:bff78494efa4"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0042_s002",
+          "index": 2,
+          "text": "於意云何？",
+          "source_hash": "sha256:3e03a3f6d286"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0042_s003",
+          "index": 3,
+          "text": "爾時常不輕菩薩豈異人乎？",
+          "source_hash": "sha256:22329e96fc00"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0042_s004",
+          "index": 4,
+          "text": "則我身是。",
+          "source_hash": "sha256:26ae9ac66c16"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0042_s005",
+          "index": 5,
+          "text": "若我於宿世不受持讀誦此經、為他人說者，不能疾得阿耨多羅三藐三菩提。",
+          "source_hash": "sha256:c00f587b3270"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0042_s006",
+          "index": 6,
+          "text": "我於先佛所，受持讀誦此經、為人說故，疾得阿耨多羅三藐三菩提。",
+          "source_hash": "sha256:99498b601ea6"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0043",
+      "index": 43,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0043_s001",
+          "index": 1,
+          "text": "「得大勢！",
+          "source_hash": "sha256:bff78494efa4"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0043_s002",
+          "index": 2,
+          "text": "彼時四眾——比丘、比丘尼、優婆塞、優婆夷——以瞋恚意輕賤我故，二百億劫常不值佛、不聞法、不見僧，千劫於阿鼻地獄受大苦惱。",
+          "source_hash": "sha256:7cc2940c397e"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0043_s003",
+          "index": 3,
+          "text": "畢是罪已，復遇常不輕菩薩，教化阿耨多羅三藐三菩提。",
+          "source_hash": "sha256:729fa9b4afab"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0044",
+      "index": 44,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0044_s001",
+          "index": 1,
+          "text": "「得大勢，於汝意云何？",
+          "source_hash": "sha256:555af41c5410"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0044_s002",
+          "index": 2,
+          "text": "爾時四眾常輕是菩薩者，豈異人乎？",
+          "source_hash": "sha256:3d9db1a4e66a"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0044_s003",
+          "index": 3,
+          "text": "今此會中跋陀婆羅等五百菩薩、師子月等五百比丘、尼思佛等五百優婆塞，皆於阿耨多羅三藐三菩提不退轉者是。",
+          "source_hash": "sha256:be490509f09b"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0045",
+      "index": 45,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0045_s001",
+          "index": 1,
+          "text": "「得大勢！",
+          "source_hash": "sha256:bff78494efa4"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0045_s002",
+          "index": 2,
+          "text": "當知是法華經，大饒益諸菩薩摩訶薩，能令至於阿耨多羅三藐三菩提。",
+          "source_hash": "sha256:325315a7bf54"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0045_s003",
+          "index": 3,
+          "text": "是故諸菩薩摩訶薩，於如來滅後，常應受持、讀誦、解說、書寫是經。」",
+          "source_hash": "sha256:0032e38d523b"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0046",
+      "index": 46,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0046_s001",
+          "index": 1,
+          "text": "爾時世尊欲重宣此義，而說偈言：",
+          "source_hash": "sha256:884f79468225"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0047",
+      "index": 47,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0047_s001",
+          "index": 1,
+          "text": "「過去有佛，號威音王，神智無量，將導一切，天人龍神，所共供養。",
+          "source_hash": "sha256:be2a3a023dcb"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s002",
+          "index": 2,
+          "text": "是佛滅後，法欲盡時，有一菩薩，名常不輕。",
+          "source_hash": "sha256:294306d16c1b"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s003",
+          "index": 3,
+          "text": "時諸四眾，計著於法。",
+          "source_hash": "sha256:62583e0a8d23"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s004",
+          "index": 4,
+          "text": "不輕菩薩，往到其所，而語之言：『我不輕汝，汝等行道，皆當作佛。』諸人聞已，輕毀罵詈；",
+          "source_hash": "sha256:147d3145db52"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s005",
+          "index": 5,
+          "text": "不輕菩薩，能忍受之。",
+          "source_hash": "sha256:c5cabfdaf630"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s006",
+          "index": 6,
+          "text": "其罪畢已，臨命終時，得聞此經，六根清淨。",
+          "source_hash": "sha256:16da61d78ade"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s007",
+          "index": 7,
+          "text": "神通力故，增益壽命，復為諸人，廣說是經。",
+          "source_hash": "sha256:6ed0ba57f206"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s008",
+          "index": 8,
+          "text": "諸著法眾，皆蒙菩薩，教化成就，令住佛道。",
+          "source_hash": "sha256:1a5f42436aff"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s009",
+          "index": 9,
+          "text": "不輕命終，值無數佛，說是經故，得無量福，漸具功德，疾成佛道。",
+          "source_hash": "sha256:4907466add63"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s010",
+          "index": 10,
+          "text": "彼時不輕，則我身是。",
+          "source_hash": "sha256:c80e97b23d43"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s011",
+          "index": 11,
+          "text": "時四部眾，著法之者，聞不輕言：『汝當作佛。』以是因緣，值無數佛。",
+          "source_hash": "sha256:2afa5eed585e"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s012",
+          "index": 12,
+          "text": "此會菩薩，五百之眾，并及四部，清信士女，今於我前，聽法者是。",
+          "source_hash": "sha256:5cb66e2a0060"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s013",
+          "index": 13,
+          "text": "我於前世，勸是諸人，聽受斯經，第一之法。",
+          "source_hash": "sha256:92990cde8d05"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s014",
+          "index": 14,
+          "text": "開示教人，令住涅槃，世世受持，如是經典。",
+          "source_hash": "sha256:3bd6881c76bb"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s015",
+          "index": 15,
+          "text": "億億萬劫，至不可議，時乃得聞，是法華經。",
+          "source_hash": "sha256:dc5f8cf16b52"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s016",
+          "index": 16,
+          "text": "億億萬劫，至不可議，諸佛世尊、時說是經。",
+          "source_hash": "sha256:406aeb808813"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s017",
+          "index": 17,
+          "text": "是故行者，於佛滅後，聞如是經，勿生疑惑。",
+          "source_hash": "sha256:d79a414f5e22"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0047_s018",
+          "index": 18,
+          "text": "應當一心、廣說此經，世世值佛，疾成佛道。」",
+          "source_hash": "sha256:0e4dc22f2c31"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0048",
+      "index": 48,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0048_s001",
+          "index": 1,
+          "text": "妙法蓮華經如來神力品第二十一",
+          "source_hash": "sha256:dc87c20f8798"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0049",
+      "index": 49,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0049_s001",
+          "index": 1,
+          "text": "爾時，千世界微塵等菩薩摩訶薩，從地踊出者，皆於佛前一心合掌，瞻仰尊顏，而白佛言：「世尊！",
+          "source_hash": "sha256:f318147cf6fd"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0049_s002",
+          "index": 2,
+          "text": "我等於佛滅後，世尊分身所在國土滅度之處，當廣說此經。",
+          "source_hash": "sha256:d15aaf060c58"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0049_s003",
+          "index": 3,
+          "text": "所以者何？",
+          "source_hash": "sha256:44e1f92edcc6"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0049_s004",
+          "index": 4,
+          "text": "我等亦自欲得是真淨大法，受持、讀誦、解說、書寫，而供養之。」",
+          "source_hash": "sha256:5198761f2def"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0050",
+      "index": 50,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0050_s001",
+          "index": 1,
+          "text": "爾時世尊，於文殊師利等無量百千萬億舊住娑婆世界菩薩摩訶薩，及諸比丘、比丘尼、優婆塞、優婆夷，天、龍、夜叉、乾闥婆、阿修羅、迦樓羅、緊那羅、摩睺羅伽、人非人等，一切眾前，現大神力，出廣長舌上至梵世，一切毛孔放於無量無數色光，皆悉遍照十方世界。",
+          "source_hash": "sha256:e83da2e22d88"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0050_s002",
+          "index": 2,
+          "text": "眾寶樹下、師子座上諸佛，亦復如是，出廣長舌，放無量光。",
+          "source_hash": "sha256:ec3dadf1e0c7"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0050_s003",
+          "index": 3,
+          "text": "釋迦牟尼佛及寶樹下諸佛現神力時，滿百千歲，然後還攝舌相。",
+          "source_hash": "sha256:32463fe8d273"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0050_s004",
+          "index": 4,
+          "text": "一時謦欬、俱共彈指，是二音聲，遍至十方諸佛世界，地皆六種震動。",
+          "source_hash": "sha256:9824b21f8c1d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0050_s005",
+          "index": 5,
+          "text": "其中眾生，天、龍、夜叉、乾闥婆、阿修羅、迦樓羅、緊那羅、摩睺羅伽、人非人等，以佛神力故，皆見此娑婆世界，無量無邊百千萬億眾寶樹下、師子座上諸佛；",
+          "source_hash": "sha256:e9214f6a47d3"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0050_s006",
+          "index": 6,
+          "text": "及見釋迦牟尼佛共多寶如來，在寶塔中、坐師子座；",
+          "source_hash": "sha256:4e0c774a0a93"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0050_s007",
+          "index": 7,
+          "text": "又見無量無邊百千萬億菩薩摩訶薩及諸四眾，恭敬圍繞釋迦牟尼佛。",
+          "source_hash": "sha256:16b8cd97684d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0050_s008",
+          "index": 8,
+          "text": "既見是已，皆大歡喜，得未曾有。",
+          "source_hash": "sha256:9c8c56dfb48f"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0050_s009",
+          "index": 9,
+          "text": "即時諸天、於虛空中、高聲唱言：「過此無量無邊百千萬億阿僧祇世界，有國名娑婆，是中有佛名釋迦牟尼，今為諸菩薩摩訶薩說大乘經，名妙法蓮華，教菩薩法，佛所護念。",
+          "source_hash": "sha256:d788312aea2c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0050_s010",
+          "index": 10,
+          "text": "汝等當深心隨喜，亦當禮拜供養釋迦牟尼佛。」彼諸眾生，聞虛空中聲已，合掌向娑婆世界作如是言：「南無釋迦牟尼佛！",
+          "source_hash": "sha256:f5df49c3fbfe"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0050_s011",
+          "index": 11,
+          "text": "南無釋迦牟尼佛！」以種種華、香、瓔珞、幡蓋，及諸嚴身之具、珍寶妙物，皆共遙散娑婆世界。",
+          "source_hash": "sha256:3ae8a3c632c5"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0050_s012",
+          "index": 12,
+          "text": "所散諸物，從十方來，譬如雲集，變成寶帳，遍覆此間諸佛之上。",
+          "source_hash": "sha256:ede32043e223"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0050_s013",
+          "index": 13,
+          "text": "于時十方世界，通達無礙，如一佛土。",
+          "source_hash": "sha256:86eefc2c8dd8"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0051",
+      "index": 51,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0051_s001",
+          "index": 1,
+          "text": "爾時，佛告上行等菩薩大眾：「諸佛神力如是，無量無邊、不可思議，若我以是神力，於無量無邊百千萬億阿僧祇劫，為囑累故，說此經功德，猶不能盡。",
+          "source_hash": "sha256:b06ed8027297"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0051_s002",
+          "index": 2,
+          "text": "以要言之，如來一切所有之法、如來一切自在神力、如來一切祕要之藏、如來一切甚深之事，皆於此經宣示顯說。",
+          "source_hash": "sha256:6506e537f981"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0051_s003",
+          "index": 3,
+          "text": "是故汝等於如來滅後，應一心受持、讀誦、解說、書寫、如說修行。",
+          "source_hash": "sha256:29dcaca645fe"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0051_s004",
+          "index": 4,
+          "text": "所在國土，若有受持、讀誦、解說、書寫、如說修行，若經卷所住之處，若於園中、若於林中、若於樹下、若於僧坊、若白衣舍、若在殿堂、若山谷曠野，是中皆應起塔供養。",
+          "source_hash": "sha256:fa61a24f71e3"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0051_s005",
+          "index": 5,
+          "text": "所以者何？",
+          "source_hash": "sha256:44e1f92edcc6"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0051_s006",
+          "index": 6,
+          "text": "當知是處、即是道場，諸佛於此得阿耨多羅三藐三菩提，諸佛於此轉于法輪，諸佛於此而般涅槃。」",
+          "source_hash": "sha256:d91c24da8b2c"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0052",
+      "index": 52,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0052_s001",
+          "index": 1,
+          "text": "爾時世尊欲重宣此義，而說偈言：",
+          "source_hash": "sha256:884f79468225"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0053",
+      "index": 53,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0053_s001",
+          "index": 1,
+          "text": "「諸佛救世者，住於大神通，為悅眾生故，現無量神力，舌相至梵天，身放無數光，為求佛道者，現此希有事。",
+          "source_hash": "sha256:96eab9813bc8"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0053_s002",
+          "index": 2,
+          "text": "諸佛謦欬聲，及彈指之聲，周聞十方國，地皆六種動。",
+          "source_hash": "sha256:b59062b5c274"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0053_s003",
+          "index": 3,
+          "text": "以佛滅度後，能持是經故，諸佛皆歡喜，現無量神力。",
+          "source_hash": "sha256:bf9267bb806e"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0053_s004",
+          "index": 4,
+          "text": "囑累是經故，讚美受持者，於無量劫中，猶故不能盡。",
+          "source_hash": "sha256:07bcca19f957"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0053_s005",
+          "index": 5,
+          "text": "是人之功德，無邊無有窮，如十方虛空，不可得邊際。",
+          "source_hash": "sha256:4975c287b5ea"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0053_s006",
+          "index": 6,
+          "text": "能持是經者，則為已見我，亦見多寶佛，及諸分身者，又見我今日，教化諸菩薩。",
+          "source_hash": "sha256:69af0c1753ca"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0053_s007",
+          "index": 7,
+          "text": "能持是經者，令我及分身，滅度多寶佛，一切皆歡喜。",
+          "source_hash": "sha256:65132e1445e2"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0053_s008",
+          "index": 8,
+          "text": "十方現在佛，并過去未來，亦見亦供養，亦令得歡喜。",
+          "source_hash": "sha256:aa2d3d7af5a4"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0053_s009",
+          "index": 9,
+          "text": "諸佛坐道場，所得祕要法，能持是經者，不久亦當得。",
+          "source_hash": "sha256:7c2c1c1c7296"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0053_s010",
+          "index": 10,
+          "text": "能持是經者，於諸法之義，名字及言辭，樂說無窮盡，如風於空中，一切無障礙。",
+          "source_hash": "sha256:4ae2359f46d2"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0053_s011",
+          "index": 11,
+          "text": "於如來滅後，知佛所說經，因緣及次第，隨義如實說，如日月光明，能除諸幽冥。",
+          "source_hash": "sha256:31a4045f04b3"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0053_s012",
+          "index": 12,
+          "text": "斯人行世間，能滅眾生闇，教無量菩薩，畢竟住一乘。",
+          "source_hash": "sha256:01f37313cb8d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0053_s013",
+          "index": 13,
+          "text": "是故有智者，聞此功德利，於我滅度後，應受持斯經，是人於佛道，決定無有疑。」",
+          "source_hash": "sha256:b2ebae487683"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0054",
+      "index": 54,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0054_s001",
+          "index": 1,
+          "text": "妙法蓮華經囑累品第二十二",
+          "source_hash": "sha256:81db33e71a3e"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0055",
+      "index": 55,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0055_s001",
+          "index": 1,
+          "text": "爾時，釋迦牟尼佛從法座起，現大神力，以右手摩無量菩薩摩訶薩頂，而作是言：「我於無量百千萬億阿僧祇劫，修習是難得阿耨多羅三藐三菩提法，今以付囑汝等。",
+          "source_hash": "sha256:56ecbe823910"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0055_s002",
+          "index": 2,
+          "text": "汝等應當一心流布此法，廣令增益。」如是三摩諸菩薩摩訶薩頂，而作是言：「我於無量百千萬億阿僧祇劫，修習是難得阿耨多羅三藐三菩提法，今以付囑汝等。",
+          "source_hash": "sha256:3583beeed4d0"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0055_s003",
+          "index": 3,
+          "text": "汝等當受持、讀誦、廣宣此法，令一切眾生普得聞知。",
+          "source_hash": "sha256:70fd7f2a8569"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0055_s004",
+          "index": 4,
+          "text": "所以者何？",
+          "source_hash": "sha256:44e1f92edcc6"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0055_s005",
+          "index": 5,
+          "text": "如來有大慈悲，無諸慳悋，亦無所畏，能與眾生，佛之智慧、如來智慧、自然智慧，如來是一切眾生之大施主。",
+          "source_hash": "sha256:ecf61777f9ba"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0055_s006",
+          "index": 6,
+          "text": "汝等亦應隨學如來之法，勿生慳悋。",
+          "source_hash": "sha256:a06a9a9f9de5"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0055_s007",
+          "index": 7,
+          "text": "於未來世，若有善男子、善女人，信如來智慧者，當為演說此法華經，使得聞知，為令其人得佛慧故。",
+          "source_hash": "sha256:0e9503ae2ed6"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0055_s008",
+          "index": 8,
+          "text": "若有眾生不信受者，當於如來餘深法中，示教利喜。",
+          "source_hash": "sha256:f394a6e9d47d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0055_s009",
+          "index": 9,
+          "text": "汝等若能如是，則為已報諸佛之恩。」",
+          "source_hash": "sha256:3052badb3821"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0056",
+      "index": 56,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0056_s001",
+          "index": 1,
+          "text": "時諸菩薩摩訶薩，聞佛作是說已，皆大歡喜遍滿其身，益加恭敬，曲躬、低頭，合掌向佛，俱發聲言：「如世尊勅，當具奉行。",
+          "source_hash": "sha256:96a9c2d8a484"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0056_s002",
+          "index": 2,
+          "text": "唯然，世尊！",
+          "source_hash": "sha256:05f91df02710"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0056_s003",
+          "index": 3,
+          "text": "願不有慮。」諸菩薩摩訶薩眾，如是三反，俱發聲言：「如世尊勅，當具奉行。",
+          "source_hash": "sha256:77644836901d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0056_s004",
+          "index": 4,
+          "text": "唯然，世尊！",
+          "source_hash": "sha256:05f91df02710"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0056_s005",
+          "index": 5,
+          "text": "願不有慮。」",
+          "source_hash": "sha256:bea167209f24"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0057",
+      "index": 57,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0057_s001",
+          "index": 1,
+          "text": "爾時釋迦牟尼佛令十方來諸分身佛各還本土，而作是言：「諸佛各隨所安，多寶佛塔還可如故。」說是語時，十方無量分身諸佛——坐寶樹下師子座上者，及多寶佛，并上行等無邊阿僧祇菩薩大眾，舍利弗等聲聞四眾，及一切世間天、人、阿修羅等，聞佛所說，皆大歡喜。",
+          "source_hash": "sha256:d9a3b498999a"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0058",
+      "index": 58,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0058_s001",
+          "index": 1,
+          "text": "妙法蓮華經藥王菩薩本事品第二十三",
+          "source_hash": "sha256:13bf7593a09f"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0059",
+      "index": 59,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0059_s001",
+          "index": 1,
+          "text": "爾時宿王華菩薩白佛言：「世尊！",
+          "source_hash": "sha256:6c28c12b9307"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0059_s002",
+          "index": 2,
+          "text": "藥王菩薩云何遊於娑婆世界？",
+          "source_hash": "sha256:ff2f302b3dd5"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0059_s003",
+          "index": 3,
+          "text": "世尊！",
+          "source_hash": "sha256:fd4b778ef6bf"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0059_s004",
+          "index": 4,
+          "text": "是藥王菩薩有若干百千萬億那由他難行苦行？",
+          "source_hash": "sha256:1a2b3f2597da"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0059_s005",
+          "index": 5,
+          "text": "善哉，世尊！",
+          "source_hash": "sha256:1a4f26ea3c0c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0059_s006",
+          "index": 6,
+          "text": "願少解說。」諸天、龍、神、夜叉、乾闥婆、阿修羅、迦樓羅、緊那羅、摩睺羅伽、人非人等，又他國土諸來菩薩，及此聲聞眾，聞皆歡喜。",
+          "source_hash": "sha256:f969e2650f6d"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0060",
+      "index": 60,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0060_s001",
+          "index": 1,
+          "text": "爾時佛告宿王華菩薩：「乃往過去無量恒河沙劫，有佛號日月淨明德如來、應供、正遍知、明行足、善逝、世間解、無上士、調御丈夫、天人師、佛、世尊。",
+          "source_hash": "sha256:68e0f2ab97dc"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0060_s002",
+          "index": 2,
+          "text": "其佛有八十億大菩薩摩訶薩，七十二恒河沙大聲聞眾，佛壽四萬二千劫，菩薩壽命亦等。",
+          "source_hash": "sha256:151669961f28"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0060_s003",
+          "index": 3,
+          "text": "彼國無有女人、地獄、餓鬼、畜生、阿修羅等，及以諸難；",
+          "source_hash": "sha256:a5894b78ddf1"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0060_s004",
+          "index": 4,
+          "text": "地平如掌，琉璃所成，寶樹莊嚴，寶帳覆上，垂寶華幡，寶瓶香爐周遍國界，七寶為臺，一樹一臺，其樹去臺盡一箭道。",
+          "source_hash": "sha256:1223cdd51e83"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0060_s005",
+          "index": 5,
+          "text": "此諸寶樹，皆有菩薩、聲聞而坐其下。",
+          "source_hash": "sha256:a21caaed09b4"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0060_s006",
+          "index": 6,
+          "text": "諸寶臺上，各有百億諸天作天伎樂，歌歎於佛，以為供養。",
+          "source_hash": "sha256:d9e9b1105088"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0060_s007",
+          "index": 7,
+          "text": "爾時彼佛為一切眾生憙見菩薩，及眾菩薩、諸聲聞眾，說法華經。",
+          "source_hash": "sha256:4e5c4f3656d9"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0061",
+      "index": 61,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0061_s001",
+          "index": 1,
+          "text": "「是一切眾生憙見菩薩，樂習苦行，於日月淨明德佛法中，精進經行，一心求佛，滿萬二千歲已，得現一切色身三昧。",
+          "source_hash": "sha256:46dc3a552bcb"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0061_s002",
+          "index": 2,
+          "text": "得此三昧已，心大歡喜，即作念言：『我得現一切色身三昧，皆是得聞法華經力，我今當供養日月淨明德佛及法華經。』即時入是三昧，於虛空中，雨曼陀羅華、摩訶曼陀羅華、細末堅黑栴檀，滿虛空中，如雲而下，又雨海此岸栴檀之香——此香六銖，價直娑婆世界——以供養佛。",
+          "source_hash": "sha256:19ababe833e5"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0061_s003",
+          "index": 3,
+          "text": "作是供養已，從三昧起，而自念言：『我雖以神力供養於佛，不如以身供養。』即服諸香——栴檀、薰陸、兜樓婆、畢力迦、沈水、膠香，又飲瞻蔔諸華香油，滿千二百歲已，香油塗身，於日月淨明德佛前，以天寶衣而自纏身，灌諸香油，以神通力願而自然身，光明遍照八十億恒河沙世界。",
+          "source_hash": "sha256:a3f9cda310ce"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0061_s004",
+          "index": 4,
+          "text": "其中諸佛同時讚言：『善哉，善哉！",
+          "source_hash": "sha256:caa3796221ba"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0061_s005",
+          "index": 5,
+          "text": "善男子！",
+          "source_hash": "sha256:a75defd3adf2"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0061_s006",
+          "index": 6,
+          "text": "是真精進，是名真法供養如來。",
+          "source_hash": "sha256:edc423a59007"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0061_s007",
+          "index": 7,
+          "text": "若以華、香、瓔珞、燒香、末香、塗香、天繒、幡蓋及海此岸栴檀之香，如是等種種諸物供養，所不能及；",
+          "source_hash": "sha256:04556a191b83"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0061_s008",
+          "index": 8,
+          "text": "假使國城、妻子布施，亦所不及。",
+          "source_hash": "sha256:a12d20196cdb"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0061_s009",
+          "index": 9,
+          "text": "善男子！",
+          "source_hash": "sha256:a75defd3adf2"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0061_s010",
+          "index": 10,
+          "text": "是名第一之施，於諸施中最尊最上，以法供養諸如來故。』作是語已而各默然。",
+          "source_hash": "sha256:9cee03e3e932"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0061_s011",
+          "index": 11,
+          "text": "其身火燃千二百歲，過是已後，其身乃盡。",
+          "source_hash": "sha256:13886e06abb6"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0062",
+      "index": 62,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0062_s001",
+          "index": 1,
+          "text": "「一切眾生憙見菩薩作如是法供養已，命終之後，復生日月淨明德佛國中，於淨德王家結加趺坐，忽然化生。",
+          "source_hash": "sha256:9c302df34a7a"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0062_s002",
+          "index": 2,
+          "text": "即為其父而說偈言：",
+          "source_hash": "sha256:25ffc9423915"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0063",
+      "index": 63,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0063_s001",
+          "index": 1,
+          "text": "「『大王今當知，我經行彼處，即時得一切，現諸身三昧。",
+          "source_hash": "sha256:b96e6536c160"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0063_s002",
+          "index": 2,
+          "text": "懃行大精進，捨所愛之身，供養於世尊，為求無上慧。』",
+          "source_hash": "sha256:7f0ae419c00d"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0064",
+      "index": 64,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0064_s001",
+          "index": 1,
+          "text": "「說是偈已，而白父言：『日月淨明德佛，今故現在。",
+          "source_hash": "sha256:34e7e6b79eab"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0064_s002",
+          "index": 2,
+          "text": "我先供養佛已，得解一切眾生語言陀羅尼，復聞是法華經八百千萬億那由他甄迦羅、頻婆羅、阿閦婆等偈。",
+          "source_hash": "sha256:ad11e1cceb87"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0064_s003",
+          "index": 3,
+          "text": "大王！",
+          "source_hash": "sha256:fffdc93ba636"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0064_s004",
+          "index": 4,
+          "text": "我今當還供養此佛。』白已，即坐七寶之臺，上昇虛空，高七多羅樹，往到佛所，頭面禮足，合十指爪，以偈讚佛：",
+          "source_hash": "sha256:0da206ff0374"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0065",
+      "index": 65,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0065_s001",
+          "index": 1,
+          "text": "「『容顏甚奇妙，光明照十方，我適曾供養，今復還親覲。』",
+          "source_hash": "sha256:1ad9aa9bf631"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0066",
+      "index": 66,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0066_s001",
+          "index": 1,
+          "text": "「爾時，一切眾生憙見菩薩說是偈已，而白佛言：『世尊！",
+          "source_hash": "sha256:28cf86a505d6"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0066_s002",
+          "index": 2,
+          "text": "世尊猶故在世。』爾時日月淨明德佛，告一切眾生憙見菩薩：『善男子！",
+          "source_hash": "sha256:513db9c7c64d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0066_s003",
+          "index": 3,
+          "text": "我涅槃時到、滅盡時至，汝可安施床座，我於今夜當般涅槃。』又勅一切眾生憙見菩薩：『善男子！",
+          "source_hash": "sha256:4f23c2efedae"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0066_s004",
+          "index": 4,
+          "text": "我以佛法囑累於汝及諸菩薩大弟子，并阿耨多羅三藐三菩提法，亦以三千大千七寶世界諸寶樹、寶臺及給侍諸天，悉付於汝。",
+          "source_hash": "sha256:447e21ae4875"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0066_s005",
+          "index": 5,
+          "text": "我滅度後，所有舍利亦付囑汝，當令流布，廣設供養，應起若干千塔。』如是日月淨明德佛勅一切眾生憙見菩薩已，於夜後分入於涅槃。",
+          "source_hash": "sha256:4ff7636ab8c8"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0067",
+      "index": 67,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0067_s001",
+          "index": 1,
+          "text": "「爾時，一切眾生憙見菩薩見佛滅度，悲感、懊惱，戀慕於佛，即以海此岸栴檀為𧂐，供養佛身，而以燒之。",
+          "source_hash": "sha256:9785004934ab"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0067_s002",
+          "index": 2,
+          "text": "火滅已後，收取舍利，作八萬四千寶瓶，以起八萬四千塔，高三世界，表剎莊嚴，垂諸幡蓋，懸眾寶鈴。",
+          "source_hash": "sha256:312c4e583b85"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0068",
+      "index": 68,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0068_s001",
+          "index": 1,
+          "text": "「爾時一切眾生憙見菩薩復自念言：『我雖作是供養，心猶未足，我今當更供養舍利。』便語諸菩薩大弟子及天、龍、夜叉等一切大眾：『汝等當一心念，我今供養日月淨明德佛舍利。』作是語已，即於八萬四千塔前，燃百福莊嚴臂七萬二千歲而以供養，令無數求聲聞眾、無量阿僧祇人，發阿耨多羅三藐三菩提心，皆使得住現一切色身三昧。",
+          "source_hash": "sha256:4e2515671396"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0069",
+      "index": 69,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0069_s001",
+          "index": 1,
+          "text": "「爾時，諸菩薩、天、人、阿修羅等，見其無臂，憂惱悲哀而作是言：『此一切眾生憙見菩薩，是我等師，教化我者，而今燒臂，身不具足。』于時一切眾生憙見菩薩，於大眾中立此誓言：『我捨兩臂，必當得佛金色之身，若實不虛，令我兩臂還復如故。』作是誓已，自然還復，由斯菩薩福德智慧淳厚所致。",
+          "source_hash": "sha256:5b3a18c8363e"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0069_s002",
+          "index": 2,
+          "text": "當爾之時，三千大千世界六種震動，天雨寶華，一切人、天得未曾有。」",
+          "source_hash": "sha256:8229eebc26af"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0070",
+      "index": 70,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0070_s001",
+          "index": 1,
+          "text": "佛告宿王華菩薩：「於汝意云何？",
+          "source_hash": "sha256:65772451257a"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0070_s002",
+          "index": 2,
+          "text": "一切眾生憙見菩薩，豈異人乎？",
+          "source_hash": "sha256:8e5f2fd6412b"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0070_s003",
+          "index": 3,
+          "text": "今藥王菩薩是也。",
+          "source_hash": "sha256:ee55372cfb6a"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0070_s004",
+          "index": 4,
+          "text": "其所捨身布施，如是無量百千萬億那由他數。",
+          "source_hash": "sha256:82c43902549d"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0071",
+      "index": 71,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0071_s001",
+          "index": 1,
+          "text": "「宿王華！",
+          "source_hash": "sha256:a440f865cd0d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0071_s002",
+          "index": 2,
+          "text": "若有發心欲得阿耨多羅三藐三菩提者，能燃手指，乃至足一指，供養佛塔，勝以國城、妻子，及三千大千國土山林河池、諸珍寶物而供養者，若復有人，以七寶滿三千大千世界，供養於佛，及大菩薩、辟支佛、阿羅漢，是人所得功德，不如受持此法華經，乃至一四句偈，其福最多。",
+          "source_hash": "sha256:a9dff5e7e3bc"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0072",
+      "index": 72,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0072_s001",
+          "index": 1,
+          "text": "「宿王華！",
+          "source_hash": "sha256:a440f865cd0d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s002",
+          "index": 2,
+          "text": "譬如一切川流江河，諸水之中海為第一；",
+          "source_hash": "sha256:e5b241dbcdad"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s003",
+          "index": 3,
+          "text": "此法華經亦復如是，於諸如來所說經中，最為深大。",
+          "source_hash": "sha256:d30f0b357434"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s004",
+          "index": 4,
+          "text": "又如土山、黑山、小鐵圍山、大鐵圍山及十寶山，眾山之中，須彌山為第一；",
+          "source_hash": "sha256:41f0a420b637"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s005",
+          "index": 5,
+          "text": "此法華經亦復如是，於諸經中最為其上。",
+          "source_hash": "sha256:ab88100e5219"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s006",
+          "index": 6,
+          "text": "又如眾星之中，月天子最為第一；",
+          "source_hash": "sha256:7d918d27fc7a"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s007",
+          "index": 7,
+          "text": "此法華經亦復如是，於千萬億種諸經法中最為照明。",
+          "source_hash": "sha256:e8f93b9f7a34"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s008",
+          "index": 8,
+          "text": "又如日天子能除諸闇；",
+          "source_hash": "sha256:75765b994df1"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s009",
+          "index": 9,
+          "text": "此經亦復如是，能破一切不善之闇。",
+          "source_hash": "sha256:642083732cfe"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s010",
+          "index": 10,
+          "text": "又如諸小王中，轉輪聖王最為第一；",
+          "source_hash": "sha256:b41e03c06a06"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s011",
+          "index": 11,
+          "text": "此經亦復如是，於眾經中最為其尊。",
+          "source_hash": "sha256:531cdeab5a89"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s012",
+          "index": 12,
+          "text": "又如帝釋於三十三天中王，此經亦復如是，諸經中王。",
+          "source_hash": "sha256:a54687f0c3dc"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s013",
+          "index": 13,
+          "text": "又如大梵天王，一切眾生之父；",
+          "source_hash": "sha256:4b85b7331e2c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s014",
+          "index": 14,
+          "text": "此經亦復如是，一切賢聖，學、無學，及發菩薩心者之父。",
+          "source_hash": "sha256:ad7bc39d067f"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s015",
+          "index": 15,
+          "text": "又如一切凡夫人中，須陀洹、斯陀含、阿那含、阿羅漢、辟支佛為第一；",
+          "source_hash": "sha256:6bbd43c517b6"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s016",
+          "index": 16,
+          "text": "此經亦復如是，一切如來所說、若菩薩所說、若聲聞所說，諸經法中，最為第一。",
+          "source_hash": "sha256:f57ce2d62a27"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s017",
+          "index": 17,
+          "text": "有能受持是經典者，亦復如是，於一切眾生中亦為第一。",
+          "source_hash": "sha256:02fdfdfd9d41"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s018",
+          "index": 18,
+          "text": "一切聲聞、辟支佛中，菩薩為第一；",
+          "source_hash": "sha256:a4713f758fa3"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s019",
+          "index": 19,
+          "text": "此經亦復如是，於一切諸經法中最為第一。",
+          "source_hash": "sha256:0476d245513e"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s020",
+          "index": 20,
+          "text": "如佛為諸法王；",
+          "source_hash": "sha256:8bad768e10e9"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0072_s021",
+          "index": 21,
+          "text": "此經亦復如是，諸經中王。",
+          "source_hash": "sha256:7dbd9ea0c3c3"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0073",
+      "index": 73,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0073_s001",
+          "index": 1,
+          "text": "「宿王華！",
+          "source_hash": "sha256:a440f865cd0d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0073_s002",
+          "index": 2,
+          "text": "此經能救一切眾生者，此經能令一切眾生離諸苦惱，此經能大饒益一切眾生，充滿其願。",
+          "source_hash": "sha256:f7caa38d118f"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0073_s003",
+          "index": 3,
+          "text": "如清涼池！",
+          "source_hash": "sha256:e9070166f374"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0073_s004",
+          "index": 4,
+          "text": "能滿一切諸渴乏者，如寒者得火，如裸者得衣，如商人得主，如子得母，如渡得船，如病得醫，如暗得燈，如貧得寶，如民得王，如賈客得海，如炬除暗；",
+          "source_hash": "sha256:cfa44bd0c645"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0073_s005",
+          "index": 5,
+          "text": "此法華經亦復如是，能令眾生離一切苦、一切病痛，能解一切生死之縛。",
+          "source_hash": "sha256:48d1751392a8"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0073_s006",
+          "index": 6,
+          "text": "若人得聞此法華經，若自書、若使人書，所得功德，以佛智慧籌量多少，不得其邊。",
+          "source_hash": "sha256:990d4b864981"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0073_s007",
+          "index": 7,
+          "text": "若書是經卷，華、香、瓔珞、燒香、末香、塗香，幡蓋、衣服，種種之燈——酥燈、油燈、諸香油燈、瞻蔔油燈、須曼那油燈、波羅羅油燈、婆利師迦油燈、那婆摩利油燈——供養，所得功德，亦復無量。",
+          "source_hash": "sha256:3adf7d4e8078"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0074",
+      "index": 74,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0074_s001",
+          "index": 1,
+          "text": "「宿王華！",
+          "source_hash": "sha256:a440f865cd0d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s002",
+          "index": 2,
+          "text": "若有人聞是藥王菩薩本事品者，亦得無量無邊功德。",
+          "source_hash": "sha256:909dd157771c"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s003",
+          "index": 3,
+          "text": "若有女人聞是藥王菩薩本事品，能受持者，盡是女身，後不復受。",
+          "source_hash": "sha256:0397f7ce3d22"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s004",
+          "index": 4,
+          "text": "若如來滅後後五百歲中，若有女人聞是經典，如說修行。",
+          "source_hash": "sha256:f69a76328247"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s005",
+          "index": 5,
+          "text": "於此命終，即往安樂世界，阿彌陀佛、大菩薩眾，圍繞住處，生蓮華中，寶座之上，不復為貪欲所惱，亦復不為瞋恚愚癡所惱，亦復不為憍慢嫉妬諸垢所惱，得菩薩神通、無生法忍。",
+          "source_hash": "sha256:af3b90e2d011"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s006",
+          "index": 6,
+          "text": "得是忍已，眼根清淨，以是清淨眼根，見七百萬二千億那由他恒河沙等諸佛如來。",
+          "source_hash": "sha256:d99be2860a85"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s007",
+          "index": 7,
+          "text": "是時諸佛遙共讚言：『善哉，善哉！",
+          "source_hash": "sha256:0c7bbf08530b"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s008",
+          "index": 8,
+          "text": "善男子！",
+          "source_hash": "sha256:a75defd3adf2"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s009",
+          "index": 9,
+          "text": "汝能於釋迦牟尼佛法中，受持讀誦思惟是經，為他人說，所得福德無量無邊，火不能燒，水不能漂，汝之功德，千佛共說不能令盡。",
+          "source_hash": "sha256:f18f29ece7b1"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s010",
+          "index": 10,
+          "text": "汝今已能破諸魔賊，壞生死軍，諸餘怨敵皆悉摧滅。",
+          "source_hash": "sha256:4817c6aa0746"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s011",
+          "index": 11,
+          "text": "善男子！",
+          "source_hash": "sha256:a75defd3adf2"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s012",
+          "index": 12,
+          "text": "百千諸佛，以神通力共守護汝，於一切世間天、人之中無如汝者，唯除如來，其諸聲聞、辟支佛、乃至菩薩，智慧禪定無有與汝等者。』宿王華！",
+          "source_hash": "sha256:26f230b9beb1"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s013",
+          "index": 13,
+          "text": "此菩薩成就如是功德智慧之力。",
+          "source_hash": "sha256:05658b37c9ee"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s014",
+          "index": 14,
+          "text": "若有人聞是藥王菩薩本事品，能隨喜讚善者，是人現世口中常出青蓮華香，身毛孔中常出牛頭栴檀之香，所得功德，如上所說。",
+          "source_hash": "sha256:68ef10a94218"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s015",
+          "index": 15,
+          "text": "是故，宿王華！",
+          "source_hash": "sha256:cb599e0d43b4"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s016",
+          "index": 16,
+          "text": "以此藥王菩薩本事品囑累於汝。",
+          "source_hash": "sha256:3b6ab6d787d9"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0074_s017",
+          "index": 17,
+          "text": "我滅度後後五百歲中，廣宣流布於閻浮提，無令斷絕，惡魔、魔民、諸天、龍、夜叉、鳩槃茶等，得其便也。",
+          "source_hash": "sha256:65eb12127d97"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0075",
+      "index": 75,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0075_s001",
+          "index": 1,
+          "text": "「宿王華！",
+          "source_hash": "sha256:a440f865cd0d"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0075_s002",
+          "index": 2,
+          "text": "汝當以神通之力守護是經。",
+          "source_hash": "sha256:e569f6b03c03"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0075_s003",
+          "index": 3,
+          "text": "所以者何？",
+          "source_hash": "sha256:44e1f92edcc6"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0075_s004",
+          "index": 4,
+          "text": "此經則為閻浮提人，病之良藥。",
+          "source_hash": "sha256:2c3d198f4239"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0075_s005",
+          "index": 5,
+          "text": "若人有病，得聞是經，病即消滅，不老不死。",
+          "source_hash": "sha256:405b5b4bd4f4"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0075_s006",
+          "index": 6,
+          "text": "宿王華！",
+          "source_hash": "sha256:11bfd7d88af4"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0075_s007",
+          "index": 7,
+          "text": "汝若見有受持是經者，應以青蓮花盛滿末香，供散其上。",
+          "source_hash": "sha256:eda49647593e"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0075_s008",
+          "index": 8,
+          "text": "散已，作是念言：『此人不久必當取草坐於道場，破諸魔軍，當吹法螺、擊大法鼓，度脫一切眾生老病死海。』是故求佛道者、見有受持是經典人，應當如是生恭敬心。」",
+          "source_hash": "sha256:1fa3540026b2"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0076",
+      "index": 76,
+      "type": "prose",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0076_s001",
+          "index": 1,
+          "text": "說是藥王菩薩本事品時，八萬四千菩薩得解一切眾生語言陀羅尼。",
+          "source_hash": "sha256:42717d22bee2"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0076_s002",
+          "index": 2,
+          "text": "多寶如來於寶塔中讚宿王華菩薩言：「善哉，善哉！",
+          "source_hash": "sha256:cd6877c33800"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0076_s003",
+          "index": 3,
+          "text": "宿王華！",
+          "source_hash": "sha256:11bfd7d88af4"
+        },
+        {
+          "sentence_id": "T09n0262_006_p0076_s004",
+          "index": 4,
+          "text": "汝成就不可思議功德，乃能問釋迦牟尼佛如此之事，利益無量一切眾生。」",
+          "source_hash": "sha256:ec0c099b75f0"
+        }
+      ]
+    },
+    {
+      "paragraph_id": "T09n0262_006_p0077",
+      "index": 77,
+      "type": "heading",
+      "sentences": [
+        {
+          "sentence_id": "T09n0262_006_p0077_s001",
+          "index": 1,
+          "text": "妙法蓮華經卷第六",
+          "source_hash": "sha256:d08779bf925f"
+        }
+      ]
+    }
+  ]
+}

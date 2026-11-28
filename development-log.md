@@ -1134,3 +1134,28 @@
 - 更新 `frontend/styles.css`：將 `.comm-full-header` 與 `.comm-full-title-row` 改為 `flex-wrap: nowrap`，`#commMasterTitle` 與 `.align-badge` 依剩餘寬度自動單行省略（同時不設父層 `overflow: hidden` 以確保大德 Pop-up 選單正常展開），右側 `.comm-juan-controls` 固定不換行。
 - 更新 `frontend/app.js` 將註疏卷次選單由 `註疏卷 3/60` 精簡為 `卷 3/60`；更新 `?v=20261128r` 並透過 `python test_safe_command.py` 驗證 PASS。
 - 透過 `python test_safe_command.py` 推送至 GitHub（`origin/main`）並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。
+
+---
+
+## [2026-11-28 16:41] Session 57：加深 AI 翻譯與古大德註疏兩處標題列底色
+
+### 1. 接收到的 User Prompt
+- 使用者附截圖指示：「這兩個框的底色，再深一點」。
+
+### 2. 修改內容
+- 將 `frontend/styles.css` 中 `.ai-panel-header` 與 `.comm-full-header` 底色由 `#f4ebd6`／`#f7f1e3` 統一加深為溫潤宣紙深米色 `#e6d5b3`（底線 `#d5be92`），更新 `?v=20261128s`。
+
+
+---
+
+## [2026-11-28 16:47] Session 58：修復左側目錄點選法華經等 CBETA 經典後仍顯示「建置中」標籤
+
+### 1. 接收到的 User Prompt
+- 使用者附截圖回饋：「我明明點選了法華經，但卻顯示建置中」。
+
+### 2. 根因與修復
+- **根因**：`renderCatalogTree()` 僅依靜態 `catalog.json` 中的 `status === "available"` 顯示「可閱讀」，其餘一律顯示「建置中」，且載入 CBETA 經卷後 `syncCatalogLocalFascicles()` 未更新該經的 `status` 與 `available_fascicles`。
+- **修復**：
+  - 凡具合法 CBETA 編號之經典改標示藍色 **`CBETA`**（代表可直接點入即時下載閱讀），不再誤稱「建置中」。
+  - 一旦點入並成功載入任一卷，立即將狀態升級為綠色 **`可閱讀`** 並於下方展開已入庫卷次清單（`?v=20261128t`）。
+- 透過 `python test_safe_command.py` 一併推送 Session 57–58 至 GitHub（`origin/main`）並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。

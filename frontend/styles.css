@@ -412,6 +412,15 @@ body {
   flex-shrink: 0;
 }
 
+.badge-cbeta {
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--blue-ai-bg);
+  color: var(--blue-ai);
+  flex-shrink: 0;
+}
+
 .badge-planned {
   font-size: 10px;
   padding: 1px 6px;
@@ -688,8 +697,8 @@ body {
   justify-content: space-between;
   gap: 8px;
   padding: 6px 10px;
-  background: #f4ebd6;
-  border-bottom: 1px solid var(--bg-card-border);
+  background: #e6d5b3;
+  border-bottom: 1px solid #d5be92;
   flex-wrap: nowrap;
 }
 
@@ -855,8 +864,8 @@ body {
   gap: 6px;
   flex-wrap: nowrap;
   padding: 6px 10px;
-  background: #f7f1e3;
-  border-bottom: 1px solid var(--border);
+  background: #e6d5b3;
+  border-bottom: 1px solid #d5be92;
 }
 
 .comm-full-title-row {
