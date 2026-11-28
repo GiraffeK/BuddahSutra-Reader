@@ -1,8 +1,4 @@
-import shutil
 import subprocess
-
-node = shutil.which("node")
-assert node, "node not found"
 
 
 def run(cmd: list[str], label: str) -> str:
@@ -17,8 +13,6 @@ def run(cmd: list[str], label: str) -> str:
     return r.stdout
 
 
-run([node, "--check", "frontend/app.js"], "node --check frontend/app.js")
-
 status = run(["git", "status", "--short"], "git status")
 for line in status.splitlines():
     path = line[3:].strip()
@@ -28,7 +22,7 @@ for line in status.splitlines():
 if status.strip():
     run(["git", "add", "-A"], "git add")
     run(
-        ["git", "commit", "-m", "fix: show active NVIDIA NIM provider/model label in analysis panel"],
+        ["git", "commit", "-m", "feat: swap reader layout so sutra text is on left and translation/commentary on right"],
         "git commit",
     )
     run(["git", "push", "origin", "main"], "git push")

@@ -3114,7 +3114,7 @@ function renderAnalysisPanel(errorMsg = null) {
   if (!sid || !state.bundle) {
     els.analysisPanel.innerHTML = `
       <div class="empty-state" style="padding:18px;">
-        <p class="empty-title" style="font-size:14px;">請將游標移至右側漢文經句</p>
+        <p class="empty-title" style="font-size:14px;">請將游標移至左側漢文經句</p>
         <p class="empty-desc" style="font-size:12.5px;margin:0;">帶金色底線為本地知識庫已存譯文；點擊可鎖定並呼叫 AI 翻譯。</p>
       </div>`;
     return;
@@ -3180,7 +3180,7 @@ function renderAnalysisPanel(errorMsg = null) {
           : `Gemini (${state.userModel})`;
     const actionHint = els.autoHoverTranslate.checked
       ? `游標停留 0.5 秒將自動由 <strong>${escapeHtml(engName)}</strong> 翻譯並存入本機知識庫。`
-      : `請直接<strong>點擊右側經句</strong>，即由 <strong>${escapeHtml(engName)}</strong> 翻譯並存入本機知識庫（或勾選頂部「游標停留自動 AI 翻譯」）。`;
+      : `請直接<strong>點擊左側經句</strong>，即由 <strong>${escapeHtml(engName)}</strong> 翻譯並存入本機知識庫（或勾選頂部「游標停留自動 AI 翻譯」）。`;
     aiBodyHtml = `
       <p style="font-size:12.5px;color:#766a59;margin:0;">
         此句尚未在 <code>${escapeHtml(transPath)}</code> 建立譯文；${actionHint}

@@ -642,7 +642,7 @@ body {
   flex: 1;
   min-height: 0;
   display: grid;
-  grid-template-columns: minmax(360px, 1.02fr) minmax(380px, 1fr);
+  grid-template-columns: minmax(380px, 1fr) minmax(360px, 1.02fr);
   gap: 18px;
   overflow: hidden;
 }

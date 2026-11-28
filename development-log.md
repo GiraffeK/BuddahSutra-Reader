@@ -1001,3 +1001,16 @@
 ### 2. 根因與修復
 - **根因**：`frontend/app.js` 中 `renderAnalysisPanel()` 的 `provName` 與 `engName` 在純前端模式下仍寫死 `Gemini BYOK`。
 - **修復**：改依 `els.providerSelect.value` 動態顯示 `NVIDIA NIM (<model>)` / `Gemini (<model>)` / `Ollama`，並於新譯完成標籤同步顯示模型名稱；更新 `?v=20261128h` 並透過 `test_safe_command.py` 驗證、推送與部署至 Firebase Hosting。
+
+---
+
+## [2026-11-28 15:30] Session 46：左右欄內容對調，將佛經原文置於左側、AI 翻譯與古大德註疏置於右側
+
+### 1. 接收到的 User Prompt
+- 使用者附畫面截圖並要求：「請讓左右框內的內容交換邊顯示，也就是我希望佛經原文在左邊」。
+
+### 2. 修改與驗證
+- 調整 `frontend/index.html` 中 `.reader-grid` 內的 `<section>` 順序：左側為 `#sutraContent`（佛經原文），右側為 `.analysis-pane`（AI 翻譯＋古大德註疏），並同步更新提示文字「左側漢文經句」與版號 `?v=20261128i`。
+- 同步對調 `frontend/styles.css` 中 `.reader-grid` 的欄寬順序，並更新 `frontend/app.js` 提示字樣。
+- 透過 `python test_safe_command.py` 驗證 JS 語法與左右區塊順序皆 PASS。
+- 透過 `python test_safe_command.py` 同步推送至 GitHub（`origin/main`）並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。

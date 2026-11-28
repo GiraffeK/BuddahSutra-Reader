@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>大正新脩大藏經｜AI 白話翻譯與古大德註疏系統</title>
-  <link rel="stylesheet" href="./styles.css?v=20261128g" />
+  <link rel="stylesheet" href="./styles.css?v=20261128i" />
 </head>
 <body>
   <!-- 頂部導覽列 -->
@@ -92,9 +92,12 @@
         <div id="cbetaToast" class="cbeta-toast" style="display:none;"></div>
       </div>
 
-      <!-- 雙欄對照區：中欄（AI翻譯 + 古大德全文獨立捲動）｜右欄（漢文原文獨立捲動） -->
+      <!-- 雙欄對照區：左欄（漢文原文獨立捲動）｜右欄（AI翻譯 + 古大德全文獨立捲動） -->
       <div class="reader-grid">
-        <!-- 中欄：上方 AI 翻譯（可獨立捲動/收合）＋ 下方古大德註疏全文（獨立捲動＋自動捲至高亮處） -->
+        <!-- 左欄：漢文原文段落區（獨立捲軸） -->
+        <section class="sutra-pane" id="sutraContent"></section>
+
+        <!-- 右欄：上方 AI 翻譯（可獨立捲動/收合）＋ 下方古大德註疏全文（獨立捲動＋自動捲至高亮處） -->
         <section class="analysis-pane">
           <div class="ai-panel-wrap" id="aiPanelWrap">
             <div class="ai-panel-header">
@@ -103,7 +106,7 @@
             </div>
             <div class="ai-panel-body" id="analysisPanel">
               <div class="empty-state" style="padding:18px;">
-                <p class="empty-title" style="font-size:14px;">請將游標移至右側漢文經句</p>
+                <p class="empty-title" style="font-size:14px;">請將游標移至左側漢文經句</p>
                 <p class="empty-desc" style="font-size:12.5px;margin:0;">帶金色底線為本地知識庫已存譯文（0ms 命中）；點擊可鎖定並即時 AI 翻譯。</p>
               </div>
             </div>
@@ -136,9 +139,6 @@
             </div>
           </div>
         </section>
-
-        <!-- 右欄：漢文原文段落區（獨立捲軸） -->
-        <section class="sutra-pane" id="sutraContent"></section>
       </div>
     </main>
 
@@ -302,6 +302,6 @@
     </div>
   </div>
 
-  <script src="./app.js?v=20261128h"></script>
+  <script src="./app.js?v=20261128i"></script>
 </body>
 </html>
