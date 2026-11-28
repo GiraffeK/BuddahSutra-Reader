@@ -1243,3 +1243,7 @@
   - 擴充 `BUDDHIST_PRONUNCIATION_MAP` 至 72 條高頻佛經詞組（含 `祇樹給孤獨`→`奇樹己孤獨`、`還至本處`→`環至本處`、`著衣`→`卓衣`、`長老`→`掌老`、`迦葉`→`家設`、`行深`→`形深`、`大乘`→`大稱`、`法華`→`法花` 等），僅調整朗讀發音、絕不更動畫面原字。
 - **第二層：使用者自訂正音表介面**（[frontend/index.html](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/index.html)、[frontend/styles.css](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/styles.css)、[frontend/app.js](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/app.js)）：
   - 於朗讀工具列新增「**正音**」快捷鈕，並於設定視窗新增「**🔊 朗讀正音**」分頁，支援新增／刪除「原詞 → 改唸為」、即時「🔊 試聽讀音」，自訂規則優先套用並保存於 `localStorage`。
+
+
+## Session 66 — 2026-11-28 補內建正音「著地」（ㄓㄠˊ ㄉㄧˋ）
+- 使用者回報《金剛經》「右膝著地」朗讀錯誤；於 [frontend/app.js](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/app.js) `BUDDHIST_PRONUNCIATION_MAP` 新增 `著地`→`着地`（ㄓㄠˊ），並更新 `app.js?v=20261128m4`。
