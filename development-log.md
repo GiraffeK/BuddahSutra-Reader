@@ -1014,3 +1014,27 @@
 - 同步對調 `frontend/styles.css` 中 `.reader-grid` 的欄寬順序，並更新 `frontend/app.js` 提示字樣。
 - 透過 `python test_safe_command.py` 驗證 JS 語法與左右區塊順序皆 PASS。
 - 透過 `python test_safe_command.py` 同步推送至 GitHub（`origin/main`）並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。
+
+---
+
+## [2026-11-28 15:39] Session 47：確認本機後端直連 NVIDIA NIM 並收緊 Worker `ALLOWED_ORIGINS`
+
+### 1. 接收到的 User Prompt
+- 使用者說明本機 PC 呼叫 NVIDIA API 直接呼叫即可，無須經過 Cloudflare Worker，並移除 `cloudflare-worker/nvidia-proxy.js` 中的 `localhost:8000` / `127.0.0.1:8000` 來源。
+
+### 2. 查核結果
+- 確認 `frontend/app.js` 在本機後端模式（`state.isBackendAvailable === true`）下，模型探測（`/api/llm/probe-model`）、經句翻譯（`/api/translate/sentence`）與註疏導讀（`/api/translate/commentary`）皆直接由本機 FastAPI 呼叫 `https://integrate.api.nvidia.com/v1/chat/completions`，完全不會經過 Cloudflare Worker。
+- 收緊 Worker `ALLOWED_ORIGINS` 僅允許 `buddahsutra-reader.web.app` 與 `buddahsutra-reader.firebaseapp.com` 更安全，且不影響本機運作。
+
+---
+
+## [2026-11-28 15:46] Session 48：移除重複的經文副標題列並將「朗讀控制列」移至左側原文上方
+
+### 1. 接收到的 User Prompt
+- 使用者附截圖指示：「框1的功能移到框2, 而框2的內容似乎可以刪了，因為佛經原文內容就有了」。
+
+### 2. 修改與驗證
+- 移除 `frontend/index.html` 中與經文首三段重複的 `#sutraSubtitle` 元素，並將 `.tts-bar` 移至左側經文標題正下方（`justify-content: flex-start`），更新版號至 `?v=20261128j`。
+- 一併清理 `frontend/app.js` 中不再使用的 `els.sutraSubtitle` 參照。
+- 透過 `python test_safe_command.py` 驗證 JS 語法與 HTML 結構全數 PASS。
+- 透過 `python test_safe_command.py` 一併推送本次介面微調與 `nvidia-proxy.js` 來源收緊至 GitHub（`origin/main`），並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。

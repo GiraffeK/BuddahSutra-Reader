@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "sutra_id": "T10n0279",
   "fascicle": 1,
-  "updated_at": "2026-11-28T15:32:59+08:00",
+  "updated_at": "2026-11-28T15:36:20+08:00",
   "entries": {
     "T10n0279_001_p0004_s001": {
       "sentence_id": "T10n0279_001_p0004_s001",
@@ -722,6 +722,86 @@
               {
                 "term": "眾色雜華而作瓔珞",
                 "explanation": "瓔珞為頸飾，眾色雜華表萬行莊嚴、差別性相，絲貫寶珠喻理事無礙、事事無礙之華嚴境界。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T10n0279_001_p0008_s002": {
+      "sentence_id": "T10n0279_001_p0008_s002",
+      "source_text": "智入三世，悉皆平等；其身充滿一切世間，其音普順十方國土。",
+      "source_hash": "sha256:4250610b37c1",
+      "active_version_id": "v_20261128_153415_nvidia",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_153415_nvidia",
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "chengguan_shuchao"
+          ],
+          "created_at": "2026-11-28T15:34:15+08:00",
+          "content": {
+            "literal_translation": "智慧 進入 三世，悉 皆 平等；其身 充滿 一切 世間，其音 普遍 順應 十方 國土。",
+            "colloquial_translation": "佛的智慧通達過去、現在、未來三世，三世平等無二；佛的法身遍滿一切世間，佛的音聲普遍順應十方所有國土眾生的根機而響應。",
+            "dharma_analysis": "此句顯示毘盧遮那佛意業無礙智，智契法性故三世平等；身業周遍法界故身充滿世間，語業隨機應化故音順十方。澄觀大師釋云：如虛空含像而無分別，喻法身非緣起而普周一切，猶如日輪出現，破除眾生無明長夜。",
+            "terms": [
+              {
+                "term": "智入三世",
+                "explanation": "佛的根本智（如實智）通達過去、現在、未來三世，非歷緣分別，而是證得三世同一法性（真如），故說平等。"
+              },
+              {
+                "term": "身充滿一切世間",
+                "explanation": "指毘盧遮那佛的報身、化身（或法身所起之用）遍滿十方剎海微塵數世界，無處不在，顯示身業無礙。"
+              },
+              {
+                "term": "音普順十方國土",
+                "explanation": "佛的語業隨順十方國土眾生語言、根機、樂欲而演說妙法，音聲無盡、無礙，普遍饒益。"
+              },
+              {
+                "term": "三世平等",
+                "explanation": "過去、現在、未來三世時間在佛智慧中無前後差別，同一法性，非世間時間觀念可測。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T10n0279_001_p0008_s004": {
+      "sentence_id": "T10n0279_001_p0008_s004",
+      "source_text": "又如虛空，普遍一切，於諸國土，平等隨入。",
+      "source_hash": "sha256:be6e07c01f91",
+      "active_version_id": "v_20261128_153620_nvidia",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_153620_nvidia",
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "litongxuan_lun"
+          ],
+          "created_at": "2026-11-28T15:36:20+08:00",
+          "content": {
+            "literal_translation": "又好像虛空，普遍一切，在諸國土中，平等隨順而入。",
+            "colloquial_translation": "又好比虛空無所不在，能平等地隨緣入於一切國土之中。",
+            "dharma_analysis": "李通玄大師釋此句顯示普賢行願如虛空般無往不在，非屬往來動靜之質，乃以智慧通達萬法，如影隨形、響應聲般，於有眾生處普現色身，平等隨機饒益，究竟無依無作。",
+            "terms": [
+              {
+                "term": "虛空",
+                "explanation": "喻真如本體或菩薩法身，遍一切處、無形礙、無分別、不生不滅。"
+              },
+              {
+                "term": "普遍一切",
+                "explanation": "菩薩智悲行願周遍法界、十方三世，無處不在、無時不現。"
+              },
+              {
+                "term": "平等隨入",
+                "explanation": "不揀擇淨穢貴賤，隨須機緣平等入於諸國土中現身利生，無取捨分別心。"
               }
             ]
           }

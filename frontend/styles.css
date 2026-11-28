@@ -1551,10 +1551,10 @@ mark.comm-hit {
 .sutra-subtitle-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 12px;
   flex-wrap: wrap;
-  margin-top: 2px;
+  margin-top: 6px;
 }
 
 .tts-bar {

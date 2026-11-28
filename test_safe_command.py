@@ -22,7 +22,7 @@ for line in status.splitlines():
 if status.strip():
     run(["git", "add", "-A"], "git add")
     run(
-        ["git", "commit", "-m", "feat: swap reader layout so sutra text is on left and translation/commentary on right"],
+        ["git", "commit", "-m", "ui: move TTS bar to left above sutra, remove redundant subtitle, tighten Worker origins"],
         "git commit",
     )
     run(["git", "push", "origin", "main"], "git push")

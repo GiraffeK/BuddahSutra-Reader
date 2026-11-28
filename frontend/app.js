@@ -44,7 +44,6 @@ const els = {
   kbStatsBadge: document.getElementById("kbStatsBadge"),
   sutraTitle: document.getElementById("sutraTitle"),
   sutraCode: document.getElementById("sutraCode"),
-  sutraSubtitle: document.getElementById("sutraSubtitle"),
   prevFascicleBtn: document.getElementById("prevFascicleBtn"),
   fascicleSelect: document.getElementById("fascicleSelect"),
   nextFascicleBtn: document.getElementById("nextFascicleBtn"),
@@ -2224,7 +2223,6 @@ async function loadFascicle(sutraId, fascicle, targetSentenceId = null) {
 
   els.sutraTitle.textContent = bundle.sutra.sutra_title;
   els.sutraCode.textContent = `${bundle.sutra.sutra_id}_${String(fascicle).padStart(3, "0")}`;
-  els.sutraSubtitle.textContent = `${bundle.sutra.edition}｜${bundle.sutra.translator}｜${bundle.sutra.fascicle_title}`;
 
   renderFascicleSwitcher();
   updateKbStats();
