@@ -1216,3 +1216,15 @@
     - 精簡頂部導覽列與卷次／朗讀工具列，提升直屏經文可視高度。
 - **PWA 加入主畫面支援**：
   - 新增 [frontend/manifest.json](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/manifest.json) 與 `theme-color` / `apple-mobile-web-app-*` meta，可從手機瀏覽器「加入主畫面」以獨立視窗開啟。
+
+
+## Session 63 — 2026-11-28 修復手機瀏覽器朗讀（Web Speech API）無聲問題（`feat/mobile-ui`）
+- **根因排查**（[frontend/app.js](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/app.js)）：
+  1. 原本每次朗讀前都直接呼叫 `speechSynthesis.cancel()` 緊接 `speak()`，在 Android Chrome / iOS Safari 會觸發非同步取消競態導致完全無聲。
+  2. 非 Edge 裝置篩選語音時若暫無中文語音，會退回 `allVoices` 選到英文語音導致讀中文完全無聲；且未依 `voice.lang` 同步 `utter.lang`。
+  3. 手機瀏覽器 GC 易回收未保存參照的 `SpeechSynthesisUtterance`，且原生 `pause()/resume()` 常失效。
+- **修正**：
+  - 首次啟動與自然換句不呼叫 `cancel()`；僅於中途切換語速／性別且正在播報時才 `cancel()` 並延遲 60ms 播報。
+  - 嚴格只匹配中文語音並優先本機離線語音（`localService`）；若暫無回報則留空 `utter.voice` 交由系統以 `zh-TW` 自動播報。
+  - 保存 `ttsState.currentUtter` 防 GC；觸控裝置暫停改以中止並保留句次進度實作；若連續失敗則於頂部提示實際錯誤碼與系統檢查方向。
+  - 更新 [frontend/index.html](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/index.html) `app.js?v=20261128m2`，推送 `feat/mobile-ui` 並重新部署 Preview Channel。

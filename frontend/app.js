@@ -1148,10 +1148,13 @@ function curateVoicesByGender(allVoices, gender) {
   }
   if (curated.length) return curated;
 
-  // 非 Edge 瀏覽器備援：最多只保留 2 個同性別中文語音
-  const zh = allVoices.filter((v) => (v.lang || "").toLowerCase().startsWith("zh"));
-  const sameGender = zh.filter((v) => inferVoiceGender(v.name) === gender);
-  const fallbackPool = sameGender.length ? sameGender : zh.length ? zh : allVoices;
+  // 非 Edge 瀏覽器備援：只保留中文語音（切勿退回英文語音，否則朗讀中文會完全無聲）
+  const zh = allVoices.filter((v) => /^zh(?:[-_]|$)/i.test(v.lang || "") || /chinese|mandarin|中文|國語|普通話|台灣|臺灣/i.test(v.name || ""));
+  if (!zh.length) return [];
+  // 優先本機離線可用語音（localService），避免手機選到連不上的遠端語音而無聲
+  const sortedZh = [...zh].sort((a, b) => Number(Boolean(b.localService)) - Number(Boolean(a.localService)));
+  const sameGender = sortedZh.filter((v) => inferVoiceGender(v.name) === gender);
+  const fallbackPool = sameGender.length ? sameGender : sortedZh;
   return fallbackPool.slice(0, 2).map((v) => ({
     voice: v,
     label: `${gender === "male" ? "男聲" : "女聲"}｜${(v.name || "").replace(/^Microsoft\s+/i, "").replace(/\s*-\s*Chinese.*$/i, "")}`,
@@ -1256,17 +1259,32 @@ function syncSpeakingHighlight(sentenceId) {
 }
 
 function toggleSutraTts() {
-  if (!("speechSynthesis" in window)) return;
+  if (!("speechSynthesis" in window)) {
+    showCbetaToast("⚠️ 此手機瀏覽器不支援網頁語音朗讀，建議改用 Chrome 或 Safari 開啟。", false);
+    return;
+  }
+  const isTouch = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
   if (ttsState.playing && !ttsState.paused) {
-    window.speechSynthesis.pause();
     ttsState.paused = true;
+    if (isTouch) {
+      // 手機瀏覽器 pause()/resume() 常失效，改為中止當前句並保留進度
+      ttsState.runId += 1;
+      window.speechSynthesis.cancel();
+    } else {
+      window.speechSynthesis.pause();
+    }
     updateTtsButtons();
     return;
   }
   if (ttsState.playing && ttsState.paused) {
-    window.speechSynthesis.resume();
     ttsState.paused = false;
     updateTtsButtons();
+    if (isTouch) {
+      ttsState.runId += 1;
+      speakQueueIndex(ttsState.idx, ttsState.runId, false);
+    } else {
+      window.speechSynthesis.resume();
+    }
     return;
   }
   startSutraTts();
@@ -1285,6 +1303,9 @@ function startSutraTts() {
   }
   if (!queue.length) return;
 
+  // 若手機啟動時尚未載入 voices，點擊當下再抓一次
+  if (!ttsState.voices.length) populateTtsVoices();
+
   const anchorId = state.lockedSentenceId || state.activeSentenceId;
   const startIdx = anchorId ? Math.max(0, queue.findIndex((q) => q.sentence_id === anchorId)) : 0;
 
@@ -1293,11 +1314,13 @@ function startSutraTts() {
   ttsState.playing = true;
   ttsState.paused = false;
   ttsState.runId += 1;
+  ttsState.consecutiveErrors = 0;
   updateTtsButtons();
-  speakQueueIndex(startIdx, ttsState.runId);
+  // 首次啟動切勿先呼叫 cancel()，避免 Android Chrome / iOS Safari 吞掉隨後的 speak()
+  speakQueueIndex(startIdx, ttsState.runId, false);
 }
 
-function speakQueueIndex(index, runId) {
+function speakQueueIndex(index, runId, shouldCancelFirst = true) {
   if (runId !== ttsState.runId || !ttsState.playing) return;
   if (index >= ttsState.queue.length) {
     stopSutraTts();
@@ -1314,28 +1337,65 @@ function speakQueueIndex(index, runId) {
   renderAnalysisPanel();
   alignCommentaryToSentence(item.sentence_id);
 
-  window.speechSynthesis.cancel();
-  const utter = new SpeechSynthesisUtterance(normalizeSutraPronunciation(item.text));
-  utter.lang = "zh-TW";
-  utter.rate = parseFloat(els.ttsRateSelect?.value || "1.0") || 1.0;
+  const synth = window.speechSynthesis;
+  const doSpeak = () => {
+    if (runId !== ttsState.runId || !ttsState.playing) return;
+    const utter = new SpeechSynthesisUtterance(normalizeSutraPronunciation(item.text));
+    utter.rate = parseFloat(els.ttsRateSelect?.value || "1.0") || 1.0;
+    utter.volume = 1.0;
+    utter.pitch = 1.0;
 
-  const selectedName = els.ttsVoiceSelect?.value;
-  const voice = ttsState.voices.find((v) => v.name === selectedName) || ttsState.voices[0];
-  if (voice) utter.voice = voice;
-
-  utter.onend = () => {
-    if (runId === ttsState.runId && ttsState.playing) {
-      speakQueueIndex(index + 1, runId);
+    const selectedName = els.ttsVoiceSelect?.value;
+    const voice = ttsState.voices.find((v) => v.name === selectedName) || ttsState.voices[0] || null;
+    if (voice) {
+      utter.voice = voice;
+      utter.lang = voice.lang || "zh-TW";
+    } else {
+      // 若瀏覽器尚未回報中文 voice，保持 voice=null 讓系統依 lang 自動挑選內建中文語音
+      utter.lang = "zh-TW";
     }
-  };
-  utter.onerror = (ev) => {
-    if (ev?.error === "interrupted" || ev?.error === "canceled") return;
-    if (runId === ttsState.runId && ttsState.playing) {
-      speakQueueIndex(index + 1, runId);
-    }
+
+    // 保留參照避免手機瀏覽器 GC 回收 utter 導致無聲或中斷
+    ttsState.currentUtter = utter;
+
+    utter.onstart = () => {
+      ttsState.consecutiveErrors = 0;
+    };
+    utter.onend = () => {
+      if (runId === ttsState.runId && ttsState.playing) {
+        // 上一句已自然結束，不需要再呼叫 cancel()
+        speakQueueIndex(index + 1, runId, false);
+      }
+    };
+    utter.onerror = (ev) => {
+      if (ev?.error === "interrupted" || ev?.error === "canceled") return;
+      ttsState.consecutiveErrors = (ttsState.consecutiveErrors || 0) + 1;
+      if (ttsState.consecutiveErrors >= 2) {
+        stopSutraTts();
+        const reason = ev?.error || "unknown";
+        showCbetaToast(
+          `⚠️ 手機語音朗讀失敗（${reason}）。請確認手機未開靜音，且系統已安裝中文語音引擎（Android：設定→文字轉語音；iOS：輔助使用→語音內容）。`,
+          false
+        );
+        return;
+      }
+      if (runId === ttsState.runId && ttsState.playing) {
+        speakQueueIndex(index + 1, runId, false);
+      }
+    };
+
+    try {
+      if (synth.paused) synth.resume();
+    } catch {}
+    synth.speak(utter);
   };
 
-  window.speechSynthesis.speak(utter);
+  if (shouldCancelFirst && (synth.speaking || synth.pending)) {
+    synth.cancel();
+    setTimeout(doSpeak, 60);
+  } else {
+    doSpeak();
+  }
 }
 
 function stopSutraTts() {
