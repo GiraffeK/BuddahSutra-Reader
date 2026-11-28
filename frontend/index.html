@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>大正新脩大藏經｜AI 白話翻譯與古大德註疏系統</title>
-  <link rel="stylesheet" href="./styles.css?v=20261128d" />
+  <link rel="stylesheet" href="./styles.css?v=20261128e" />
 </head>
 <body>
   <!-- 頂部導覽列 -->
@@ -82,7 +82,11 @@
               <option value="1.05">1.05x</option>
               <option value="1.2">1.2x</option>
             </select>
-            <select id="ttsVoiceSelect" class="mini-select tts-voice-select" title="選擇瀏覽器語音（Edge 建議選 HsiaoChen 或 YunJhe 自然語音）"></select>
+            <div class="tts-gender-toggle" id="ttsGenderToggle" role="group" aria-label="男音女音選擇">
+              <button type="button" class="tts-gender-btn active" data-gender="female">女聲</button>
+              <button type="button" class="tts-gender-btn" data-gender="male">男聲</button>
+            </div>
+            <select id="ttsVoiceSelect" class="mini-select tts-voice-select" title="選擇精選語音"></select>
           </div>
         </div>
         <div id="cbetaToast" class="cbeta-toast" style="display:none;"></div>
@@ -286,6 +290,6 @@
     </div>
   </div>
 
-  <script src="./app.js?v=20261128d"></script>
+  <script src="./app.js?v=20261128e"></script>
 </body>
 </html>

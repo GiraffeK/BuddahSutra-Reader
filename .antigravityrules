@@ -7,5 +7,5 @@
 4. **檔案管理授權與邊界限制**：在工作目錄下允許檔案管理操作，不用再問。但嚴禁修改或刪除 `.git/`、模型權重目錄（如 `C:\models\` 或本機 weight 路徑）及敏感憑證金鑰，用來debug的image/video/message/dialog/anything皆不可上傳、不可公開，並讓AI Agent不允許拿這些資料供為己用。
 5. **終端機指令防彈原則 (避免干擾工作流)**：
    a. **禁止使用終端機進行檔案與字串搜尋**：遇到類似 `Select-String`、`Get-ChildItem`、`git grep`、`dir /s` 等搜尋需求，優先使用內建原生工具；若需程式化列舉，透過 `test_safe_command.py`。
-   b. **所有單行測試與查詢統一寫入 `test_safe_command.py`**：禁止在終端機直接跑單行指令（如 `python -c "..."` 或 ad-hoc shell 查詢）。請一律覆寫至專案根目錄的 `test_safe_command.py`，並只執行固定的 `python test_safe_command.py`。
+   b. **所有單行測試、查詢與 Git／部署指令統一寫入 `test_safe_command.py`**：禁止在終端機直接跑單行指令（如 `python -c "..."`、ad-hoc shell 查詢，以及 `git status` / `git pull` / `git push` / `firebase deploy` 等）。請一律以 `subprocess` 覆寫至專案根目錄的 `test_safe_command.py`，並只執行固定的 `python test_safe_command.py`。
 6. **持續對話迭代**：與使用者保持互動，持續優化並維護本規範與相關文件架構。

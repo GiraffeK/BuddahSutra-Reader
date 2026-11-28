@@ -7,5 +7,6 @@
 4. 在這個workspace/work-folder之下允許AI Agent的檔案管理操作，不用再問。但嚴禁修改或刪除 .git/、模型權重目錄（如 C:\models\）及敏感憑證金鑰。
 5. 為了避免終端機指令不斷跳出確認視窗打斷工作流，請嚴格遵守以下兩點：(這兩點請也放進專案根目錄的 .antigravityrules / System Rules 裡，永遠記住）
    a. 禁止使用終端機進行檔案與字串搜尋：遇到類似 Select-String、Get-ChildItem、git grep 等唯讀搜尋需求，請優先使用你內建的原生工具（如 grep/search/read file 工具），不要透過終端機執行 PowerShell 或 Git 搜尋指令。
-   b. 所有單行測試與查詢統一寫入 test_safe_command.py：遇到任何需要透過終端機執行的唯讀查詢、環境檢查或 python -c "..." 測試邏輯，絕對禁止直接在終端機跑單行指令。請一律將邏輯（若為 Shell 指令可用 subprocess 包裝）覆寫進專案目錄下的 test_safe_command.py，然後只執行固定的 python test_safe_command.py 指令。
+   b. 所有單行測試、查詢與 Git／部署指令統一寫入 test_safe_command.py：遇到任何需要透過終端機執行的唯讀查詢、環境檢查、python -c "..." 測試邏輯，以及 git status / git pull / git push / firebase deploy 等指令，絕對禁止直接在終端機跑單行指令。請一律將邏輯（若為 Shell／Git 指令可用 subprocess 包裝）覆寫進專案目錄下的 test_safe_command.py，然後只執行固定的 python test_safe_command.py 指令。
+   c. git push/pull 之事也可放入 test_safe_command.py
 6. 請AI可以跟我對話修改此文件，使之更好更完整。

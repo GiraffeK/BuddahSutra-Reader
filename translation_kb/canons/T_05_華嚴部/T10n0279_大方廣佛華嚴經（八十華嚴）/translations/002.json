@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "sutra_id": "T10n0279",
   "fascicle": 2,
-  "updated_at": "2026-11-23T12:16:34+08:00",
+  "updated_at": "2026-11-28T14:15:27+08:00",
   "entries": {
     "T10n0279_002_p0004_s001": {
       "sentence_id": "T10n0279_002_p0004_s001",
@@ -274,6 +274,88 @@
               {
                 "term": "無性",
                 "explanation": "即「無自性」，指一切事物皆依因緣聚合而生，缺乏獨立自存、恆常不變的實體。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T10n0279_002_p0003_s001": {
+      "sentence_id": "T10n0279_002_p0003_s001",
+      "source_text": "世主妙嚴品第一之二",
+      "source_hash": "sha256:2485b2468175",
+      "active_version_id": "v_20261128_141509_nvidia",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_141509_nvidia",
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "prompt_version": "v1.0",
+          "referenced_masters": [
+            "chengguan_shuchao"
+          ],
+          "created_at": "2026-11-28T14:15:09+08:00",
+          "content": {
+            "literal_translation": "世主 妙嚴 品 第一 之 二",
+            "colloquial_translation": "這是《世主妙嚴品》第一品的第二卷（上卷接續部分）。",
+            "dharma_analysis": "清涼國師澄觀大師釋云：「佛及諸王並稱世主，法門依正俱曰妙嚴」，此品為全經三十九品之首，標舉果德圓滿之「世主」與因行莊嚴之「妙嚴」，攝盡依正雙嚴之義。經文接續「爾時如來道場眾海」云云，正顯世主妙嚴之境界，由佛果海會之緣起而顯現。",
+            "terms": [
+              {
+                "term": "世主",
+                "explanation": "梵語 Lokanātha，意為「世間主宰」或「世間導師」。於此經中雙關指毘盧遮那佛（法界主）與轉輪聖王（世間主），表顯法界緣起、依正圓融之義。"
+              },
+              {
+                "term": "妙嚴",
+                "explanation": "「妙」即微妙、不可思議；「嚴」即莊嚴、成就。指佛果萬德莊嚴（自嚴）及國土依報莊嚴（他嚴），乃稱性起修、理事無礙之極果嚴淨。"
+              },
+              {
+                "term": "品",
+                "explanation": "梵語 Parivarta，意為「分品」、「轉品」。經文義類聚集之單位，此為全經第一品，統攝後會一切法門之綱領。"
+              },
+              {
+                "term": "第一之二",
+                "explanation": "唐實叉難陀譯本八十華嚴卷帙安排：第一品「世主妙嚴」內容宏博，分多卷流通，此標示為該品第一卷之第二分（即第二卷上半或續分），承接上卷序分，入正宗分。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "T10n0279_002_p0002_s001": {
+      "sentence_id": "T10n0279_002_p0002_s001",
+      "source_text": "[＊]于闐國三[＊]藏實叉難陀[＊]奉制譯",
+      "source_hash": "sha256:e834d61b715c",
+      "active_version_id": "v_20261128_141527_nvidia",
+      "locked_by_human": false,
+      "versions": [
+        {
+          "version_id": "v_20261128_141527_nvidia",
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "prompt_version": "v1.0",
+          "referenced_masters": [],
+          "created_at": "2026-11-28T14:15:27+08:00",
+          "content": {
+            "literal_translation": "于闐國 三藏 實叉難陀 奉 制 譯",
+            "colloquial_translation": "此經由于闐國出身的三藏法師實叉難陀，奉唐朝皇帝敕命翻譯。",
+            "dharma_analysis": "此為經卷首之譯緣標示，確立經典權威來源。實叉難陀為唐代大譯經家，奉武則天敕命重譯八十華嚴，其譯文以文雅精確著稱，流通至今。三藏稱號彰顯其通達經律論三藏教義之資格，奉制譯則代表國家級翻譯工程之嚴謹與正統性。",
+            "terms": [
+              {
+                "term": "于闐國",
+                "explanation": "古國名，位於今新疆和田地區，佛教早期傳播重鎮，多高僧大德由此東漢傳法。"
+              },
+              {
+                "term": "三藏",
+                "explanation": "梵語 Tripiṭaka 音譯，指經、律、論三藏。稱「三藏法師」者，乃通達三藏教義、具足傳譯資格之尊稱。"
+              },
+              {
+                "term": "實叉難陀",
+                "explanation": "梵語 Śikṣānanda 音譯，唐代著名譯經大德（652–710），于闐國人，曾主持譯出《八十華嚴》、《大般若經》等鉅部。"
+              },
+              {
+                "term": "奉制譯",
+                "explanation": "奉皇帝制敕（命令）而翻譯。標示經典為官方欽定項目，保證譯本經過朝廷組織之譯場審定，權威可靠。"
               }
             ]
           }

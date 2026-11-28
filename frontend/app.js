@@ -72,6 +72,7 @@ const els = {
   ttsPlayBtn: document.getElementById("ttsPlayBtn"),
   ttsStopBtn: document.getElementById("ttsStopBtn"),
   ttsRateSelect: document.getElementById("ttsRateSelect"),
+  ttsGenderToggle: document.getElementById("ttsGenderToggle"),
   ttsVoiceSelect: document.getElementById("ttsVoiceSelect"),
   // BYOK
   byokBtn: document.getElementById("byokBtn"),
@@ -1043,8 +1044,44 @@ const ttsState = {
   idx: 0,
   runId: 0,
   speakingSentenceId: null,
+  gender: localStorage.getItem("buddhasutra_tts_gender") || "female",
   voices: [],
 };
+
+// 精選差異度最高的 4 個自然中文語音（女 2 / 男 2，刪去過於接近與舊版機械音）
+const CURATED_TTS_VOICES = [
+  { key: "hsiaochen", match: /曉臻|hsiaochen/i, gender: "female", label: "女聲｜曉臻（台灣溫潤）" },
+  { key: "xiaoxiao", match: /晓晓|曉曉|xiaoxiao/i, gender: "female", label: "女聲｜曉曉（清亮流暢）" },
+  { key: "yunjhe", match: /雲哲|云哲|yunjhe/i, gender: "male", label: "男聲｜雲哲（台灣沉穩）" },
+  { key: "yunjian", match: /云健|雲健|yunjian/i, gender: "male", label: "男聲｜雲健（渾厚穩重）" },
+];
+
+function inferVoiceGender(name) {
+  const n = String(name || "");
+  if (/雲|云|男|yunjhe|yunjian|yunxi|yunyang|yunxia|wanlung|kangkang|danny|zhiwei/i.test(n)) {
+    return "male";
+  }
+  return "female";
+}
+
+function curateVoicesByGender(allVoices, gender) {
+  const curated = [];
+  for (const spec of CURATED_TTS_VOICES) {
+    if (spec.gender !== gender) continue;
+    const hit = allVoices.find((v) => spec.match.test(v.name || ""));
+    if (hit) curated.push({ voice: hit, label: spec.label });
+  }
+  if (curated.length) return curated;
+
+  // 非 Edge 瀏覽器備援：最多只保留 2 個同性別中文語音
+  const zh = allVoices.filter((v) => (v.lang || "").toLowerCase().startsWith("zh"));
+  const sameGender = zh.filter((v) => inferVoiceGender(v.name) === gender);
+  const fallbackPool = sameGender.length ? sameGender : zh.length ? zh : allVoices;
+  return fallbackPool.slice(0, 2).map((v) => ({
+    voice: v,
+    label: `${gender === "male" ? "男聲" : "女聲"}｜${(v.name || "").replace(/^Microsoft\s+/i, "").replace(/\s*-\s*Chinese.*$/i, "")}`,
+  }));
+}
 
 function initSutraTts() {
   if (!("speechSynthesis" in window) || !els.ttsBar) {
@@ -1054,6 +1091,21 @@ function initSutraTts() {
 
   const savedRate = localStorage.getItem("buddhasutra_tts_rate");
   if (savedRate && els.ttsRateSelect) els.ttsRateSelect.value = savedRate;
+
+  syncGenderToggleUi();
+  els.ttsGenderToggle?.querySelectorAll(".tts-gender-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const g = btn.dataset.gender === "male" ? "male" : "female";
+      if (ttsState.gender === g) return;
+      ttsState.gender = g;
+      localStorage.setItem("buddhasutra_tts_gender", g);
+      syncGenderToggleUi();
+      populateTtsVoices();
+      if (ttsState.playing && !ttsState.paused) {
+        speakQueueIndex(ttsState.idx, ttsState.runId);
+      }
+    });
+  });
 
   populateTtsVoices();
   window.speechSynthesis.addEventListener("voiceschanged", populateTtsVoices);
@@ -1067,7 +1119,7 @@ function initSutraTts() {
     }
   });
   els.ttsVoiceSelect?.addEventListener("change", () => {
-    localStorage.setItem("buddhasutra_tts_voice", els.ttsVoiceSelect.value);
+    localStorage.setItem(`buddhasutra_tts_voice_${ttsState.gender}`, els.ttsVoiceSelect.value);
     if (ttsState.playing && !ttsState.paused) {
       speakQueueIndex(ttsState.idx, ttsState.runId);
     }
@@ -1075,35 +1127,27 @@ function initSutraTts() {
   window.addEventListener("beforeunload", stopSutraTts);
 }
 
+function syncGenderToggleUi() {
+  els.ttsGenderToggle?.querySelectorAll(".tts-gender-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.gender === ttsState.gender);
+  });
+}
+
 function populateTtsVoices() {
   if (!els.ttsVoiceSelect || !("speechSynthesis" in window)) return;
   const all = window.speechSynthesis.getVoices() || [];
   if (!all.length) return;
 
-  const scoreVoice = (v) => {
-    const lang = (v.lang || "").toLowerCase();
-    const name = (v.name || "").toLowerCase();
-    let s = 0;
-    if (lang.startsWith("zh-tw") || lang.includes("hant")) s += 100;
-    else if (lang.startsWith("zh")) s += 60;
-    if (name.includes("natural") || name.includes("online")) s += 40;
-    if (name.includes("hsiaochen") || name.includes("yunjhe")) s += 20;
-    return s;
-  };
+  const curated = curateVoicesByGender(all, ttsState.gender);
+  ttsState.voices = curated.map((c) => c.voice);
 
-  const zhVoices = all
-    .filter((v) => (v.lang || "").toLowerCase().startsWith("zh"))
-    .sort((a, b) => scoreVoice(b) - scoreVoice(a));
-  const list = zhVoices.length ? zhVoices : all;
-  ttsState.voices = list;
-
-  const savedVoice = localStorage.getItem("buddhasutra_tts_voice");
+  const savedVoice = localStorage.getItem(`buddhasutra_tts_voice_${ttsState.gender}`);
   els.ttsVoiceSelect.innerHTML = "";
-  list.forEach((v) => {
+  curated.forEach(({ voice, label }) => {
     const opt = document.createElement("option");
-    opt.value = v.name;
-    opt.textContent = v.name.replace(/^Microsoft\s+/i, "").replace(/\s*-\s*Chinese.*$/i, "");
-    if (savedVoice && v.name === savedVoice) opt.selected = true;
+    opt.value = voice.name;
+    opt.textContent = label;
+    if (savedVoice && voice.name === savedVoice) opt.selected = true;
     els.ttsVoiceSelect.appendChild(opt);
   });
 }

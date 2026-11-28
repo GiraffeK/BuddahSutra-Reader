@@ -1569,7 +1569,30 @@ mark.comm-hit {
 }
 
 .tts-voice-select {
-  max-width: 210px;
+  max-width: 190px;
+}
+
+.tts-gender-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--bg-page);
+}
+
+.tts-gender-btn {
+  padding: 2px 8px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tts-gender-btn.active {
+  background: var(--accent);
+  color: #fffdf8;
 }
 
 .sentence.speaking {

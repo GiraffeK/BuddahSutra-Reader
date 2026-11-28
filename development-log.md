@@ -938,3 +938,26 @@
 - **驗證**：透過 `test_safe_command.py` 驗證 `node --check frontend/app.js`、佛經正音替換單元測試與靜態頁面檢查皆 PASS。
 - **Global Rules 建置**：依使用者明確指示，確認 `C:\Users\AdminSean\.gemini\config\GEMINI.md` 尚不存在後，將全域編碼準則寫入該檔。
 - **部署與推送**：同步推送 NVIDIA NIM 整合、頂部列精簡與方案 A 佛經原文朗讀至 GitHub（`origin/main`），並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。
+
+---
+
+## [2026-11-28 14:09] Session 41：更新專案規範第 5b 條，將 `git pull / push` 與部署指令納入 `test_safe_command.py`
+
+### 1. 接收到的 User Prompt
+- 使用者指示：「git push/pull 之事也可放入 test_safe_command.py」。
+
+### 2. 修改內容
+- 同步更新 `AI-Agent-must-read-at-beginning.txt` 與 `.antigravityrules` 第 5b 條，明訂日後所有 `git status` / `git pull` / `git push` 與 `firebase deploy` 等指令亦統一透過 `subprocess` 寫入 `test_safe_command.py` 執行，進一步減少終端機確認視窗中斷。
+
+---
+
+## [2026-11-28 14:15] Session 42：精簡朗讀語音清單（僅留 1/5 精選）並加入「女聲／男聲」即時切換
+
+### 1. 接收到的 User Prompt
+- 使用者截圖回饋 Edge 語音選單列出近 20 個近似聲音，要求刪去 4/5 只留 1/5，並加入男音／女音選擇。
+
+### 2. 修改與驗證
+- 於 `frontend/index.html`、`frontend/styles.css` 加入精簡「女聲／男聲」切換鈕（`#ttsGenderToggle`），更新靜態版號至 `?v=20261128e`。
+- 於 `frontend/app.js` 新增 `CURATED_TTS_VOICES` 與 `curateVoicesByGender()`，從原本近 20 個語音精簡為差異度最高的 4 個自然中文語音（女聲：曉臻、曉曉；男聲：雲哲、雲健），支援朗讀中途即時切換男／女聲並各自記憶偏好。
+- 透過 `test_safe_command.py` 驗證 JS 語法與男女聲篩選邏輯全數 PASS。
+- 依更新後第 5b 條規範，統一透過 `test_safe_command.py` 執行安全檢查、`git push` 至 `origin/main` 與部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。
