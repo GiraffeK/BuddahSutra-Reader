@@ -272,6 +272,43 @@ const dbHelper = {
       tx.onerror = () => resolve({ translations: 0, commentary_guides: 0 });
     });
   },
+
+  async saveCustomFascicle(sutraId, fascicle, sutraObj) {
+    const db = await this.open();
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction("custom_fascicles", "readwrite");
+      const store = tx.objectStore("custom_fascicles");
+      const id = `${sutraId}:${fascicle}`;
+      store.put({ id, sutra_id: sutraId, fascicle, sutra: sutraObj, updated_at: new Date().toISOString() });
+      tx.oncomplete = () => resolve();
+      tx.onerror = (e) => reject(e.target.error);
+    });
+  },
+
+  async getCustomFascicle(sutraId, fascicle) {
+    const db = await this.open();
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction("custom_fascicles", "readonly");
+      const req = tx.objectStore("custom_fascicles").get(`${sutraId}:${fascicle}`);
+      req.onsuccess = () => resolve(req.result?.sutra || null);
+      req.onerror = (e) => reject(e.target.error);
+    });
+  },
+
+  async listCustomFascicles(sutraId) {
+    const db = await this.open();
+    return new Promise((resolve) => {
+      const tx = db.transaction("custom_fascicles", "readonly");
+      const req = tx.objectStore("custom_fascicles").getAll();
+      req.onsuccess = () => {
+        const nums = (req.result || [])
+          .filter((item) => item.sutra_id === sutraId && Number.isInteger(item.fascicle))
+          .map((item) => item.fascicle);
+        resolve(Array.from(new Set(nums)).sort((a, b) => a - b));
+      };
+      req.onerror = () => resolve([]);
+    });
+  },
 };
 
 // ==================== 純前端 BYOK Gemini 呼叫器 ====================
@@ -1953,8 +1990,8 @@ function renderCatalogTree(query) {
       sBtn.title = `${sutra.sutra_id}｜${sutra.translator}（共 ${sutra.fascicle_count} 卷）`;
 
       sBtn.addEventListener("click", () => {
-        if (!isAvail) {
-          alert(`《${sutra.title}》（${sutra.sutra_id}）目錄已建好！\n目前起始開放精讀：《大方廣佛華嚴經（八十華嚴）》與《首楞嚴經》。`);
+        if (!isAvail && !/^[A-Z]+\d+n\d+[A-Za-z]?$/.test(sutra.sutra_id || "")) {
+          alert(`《${sutra.title}》（${sutra.sutra_id}）尚無對應 CBETA 編號。`);
           return;
         }
         loadFascicle(sutra.sutra_id, 1);
@@ -2158,6 +2195,123 @@ function getCurrentTranslationPath() {
   return state.bundle?.storage_paths?.translation_file || "translation_kb/canons/...";
 }
 
+let _mastersRegistryCache = null;
+
+async function getMastersRegistryClient() {
+  if (_mastersRegistryCache) return _mastersRegistryCache;
+  try {
+    const res = await fetch("./data/masters_registry.json");
+    if (res.ok) {
+      _mastersRegistryCache = await res.json();
+      return _mastersRegistryCache;
+    }
+  } catch {}
+  return { masters: [] };
+}
+
+function findCatalogSutraMeta(sutraId) {
+  for (const div of state.catalog?.divisions || []) {
+    const found = (div.sutras || []).find((s) => s.sutra_id === sutraId);
+    if (found) return found;
+  }
+  return null;
+}
+
+function splitSentencesZhClient(text) {
+  const cleaned = String(text || "")
+    .replace(/\[\*\]|\[＊\]/g, "")
+    .replace(/\s+/g, "")
+    .trim();
+  if (!cleaned) return [];
+  const parts = cleaned.split(/(?<=[。；？！][」』）]?)(?![」』）])/);
+  const result = [];
+  for (const raw of parts) {
+    const p = raw.trim();
+    if (!p) continue;
+    if (result.length && /^[」』）”。；？！，、：]+$/.test(p)) {
+      result[result.length - 1] += p;
+    } else {
+      result.push(p);
+    }
+  }
+  return result;
+}
+
+async function fetchSutraFascicleFromGitHubClient(sutraId, fascicle) {
+  const m = String(sutraId || "").trim().match(/^([A-Z]+)(\d+)n\d+[A-Za-z]?$/);
+  if (!m) {
+    throw new Error(`無法推導 CBETA GitHub 路徑：${sutraId}`);
+  }
+  const canon = m[1];
+  const vol = `${m[1]}${m[2]}`;
+  const url = `https://raw.githubusercontent.com/cbeta-git/xml-p5a/master/${canon}/${vol}/${sutraId}.xml`;
+
+  let xmlText = _githubXmlCache.get(sutraId);
+  if (!xmlText) {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`從 CBETA GitHub 下載經文失敗（HTTP ${res.status}）`);
+    xmlText = await res.text();
+    _githubXmlCache.set(sutraId, xmlText);
+  }
+
+  const rawParas = extractJuanFromXmlP5aClient(xmlText, fascicle, sutraId);
+  if (!rawParas.length) {
+    throw new Error(`CBETA (${sutraId}) 查無第 ${fascicle} 卷內容`);
+  }
+
+  const paragraphs = [];
+  for (const rp of rawParas) {
+    const paraId = `${sutraId}_${String(fascicle).padStart(3, "0")}_p${String(paragraphs.length + 1).padStart(4, "0")}`;
+    const sents = rp.type === "heading" ? [rp.text] : splitSentencesZhClient(rp.text);
+    if (!sents.length) continue;
+    paragraphs.push({
+      paragraph_id: paraId,
+      index: paragraphs.length + 1,
+      type: rp.type,
+      sentences: sents.map((sText, idx) => ({
+        sentence_id: `${paraId}_s${String(idx + 1).padStart(3, "0")}`,
+        index: idx + 1,
+        text: sText,
+      })),
+    });
+  }
+
+  const meta = findCatalogSutraMeta(sutraId);
+  return {
+    schema_version: "1.0",
+    source: `CBETA GitHub xml-p5a (${sutraId}.xml)`,
+    sutra_id: sutraId,
+    sutra_title: meta?.title || sutraId,
+    edition: `${meta?.fascicle_count || fascicle}卷本`,
+    translator: meta?.translator || "",
+    fascicle,
+    fascicle_count: Number(meta?.fascicle_count) || fascicle,
+    fascicle_title: `卷第${fascicle}`,
+    paragraphs,
+  };
+}
+
+async function buildClientBundleFromSutra(sutraId, fascicle, sutraObj, fetchedFromCbeta) {
+  const meta = findCatalogSutraMeta(sutraId);
+  const registry = await getMastersRegistryClient();
+  const masters = (registry.masters || []).filter(
+    (m) => m.sutra_id === sutraId || (Array.isArray(m.applicable_sutras) && m.applicable_sutras.includes(sutraId))
+  );
+  const customNums = await dbHelper.listCustomFascicles(sutraId).catch(() => []);
+  const existingLocal = meta?.local_fascicles || [];
+  const mergedLocal = Array.from(new Set([...existingLocal, ...customNums, fascicle])).sort((a, b) => a - b);
+
+  return {
+    sutra: sutraObj,
+    masters,
+    commentaries: {},
+    translations: {},
+    fascicle_count: Number(sutraObj.fascicle_count || meta?.fascicle_count || fascicle),
+    local_fascicles: mergedLocal,
+    fetched_from_cbeta: fetchedFromCbeta,
+  };
+}
+
 // ---------- 載入經卷 ----------
 async function loadFascicle(sutraId, fascicle, targetSentenceId = null) {
   stopSutraTts();
@@ -2174,7 +2328,7 @@ async function loadFascicle(sutraId, fascicle, targetSentenceId = null) {
   els.sutraContent.innerHTML = `
     <div class="empty-state">
       <p class="empty-title">載入 ${escapeHtml(sutraId)} 第 ${fascicle} 卷中...</p>
-      <p class="empty-desc">首次開啟將載入經文斷句與古大德註疏對照。</p>
+      <p class="empty-desc">首次開啟未預載卷次將自動從 CBETA 官方鏡像下載並存於瀏覽器本機。</p>
     </div>`;
 
   let bundle;
@@ -2187,14 +2341,45 @@ async function loadFascicle(sutraId, fascicle, targetSentenceId = null) {
   }
 
   if (!bundle) {
-    // 純前端模式：先抓取靜態 Bundle
+    // Tier 1：優先讀取已預載的靜態 Bundle
     try {
       const res = await fetch(`./data/bundles/${sutraId}_${fascicle}.json`);
-      if (!res.ok) throw new Error(`查無預載分卷檔案（HTTP ${res.status}）`);
-      bundle = await res.json();
-    } catch (err) {
-      els.sutraContent.innerHTML = `<div class="error-box">⚠️ 載入第 ${fascicle} 卷失敗：${escapeHtml(err.message)}</div>`;
-      return;
+      if (res.ok) {
+        bundle = await res.json();
+        const customNums = await dbHelper.listCustomFascicles(sutraId).catch(() => []);
+        if (customNums.length) {
+          bundle.local_fascicles = Array.from(
+            new Set([...(bundle.local_fascicles || []), ...customNums])
+          ).sort((a, b) => a - b);
+        }
+      }
+    } catch {}
+
+    // Tier 2：讀取瀏覽器 IndexedDB 已快取的自載經卷
+    if (!bundle) {
+      try {
+        const cachedSutra = await dbHelper.getCustomFascicle(sutraId, fascicle);
+        if (cachedSutra) {
+          bundle = await buildClientBundleFromSutra(sutraId, fascicle, cachedSutra, false);
+        }
+      } catch {}
+    }
+
+    // Tier 3：自動從 CBETA 官方 GitHub (xml-p5a) 即時下載解析並存入 IndexedDB
+    if (!bundle) {
+      try {
+        els.sutraContent.innerHTML = `
+          <div class="empty-state">
+            <p class="empty-title">正在從 CBETA 官方鏡像下載 ${escapeHtml(sutraId)} 第 ${fascicle} 卷...</p>
+            <p class="empty-desc">下載完成後將自動斷句並永久快取於本機瀏覽器 IndexedDB，下次開啟 0ms 秒開。</p>
+          </div>`;
+        const fetchedSutra = await fetchSutraFascicleFromGitHubClient(sutraId, fascicle);
+        await dbHelper.saveCustomFascicle(sutraId, fascicle, fetchedSutra).catch(() => {});
+        bundle = await buildClientBundleFromSutra(sutraId, fascicle, fetchedSutra, true);
+      } catch (err) {
+        els.sutraContent.innerHTML = `<div class="error-box">⚠️ 載入第 ${fascicle} 卷失敗：${escapeHtml(err.message)}</div>`;
+        return;
+      }
     }
 
     // 疊加本機 IndexedDB 中使用者個人的翻譯

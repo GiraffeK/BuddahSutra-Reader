@@ -1062,3 +1062,29 @@
 - 於 `frontend/app.js` 的 `renderCatalogTree()` 中，將 CBETA 檔名（目前閱讀經典顯示如 `T10n0279_001`，其餘經典顯示經號）直接附於左側目錄樹的經名之後，並清理不再使用的 `els.sutraTitle` / `els.sutraCode` 參照。
 - 透過 `python test_safe_command.py` 驗證 JS 語法與 HTML/CSS 結構全數 PASS。
 - 透過 `python test_safe_command.py` 推送至 GitHub（`origin/main`）並部署至 Firebase Hosting（`https://buddahsutra-reader.web.app`）。
+
+---
+
+## [2026-11-28 16:05] Session 51：分析 Firebase 純前端模式未預載經卷 404 原因與即時載入方案
+
+### 1. 接收到的 User Prompt
+- 使用者附截圖（八十華嚴點下一卷至第 6 卷出現 `查無預載分卷檔案 ( HTTP 404 )`）詢問：「該怎麼做讓未載入的經文可以載入？」
+
+### 2. 根因與建議方案
+- **根因**：Firebase 純前端模式目前只讀取 `frontend/data/bundles/` 內預先打包的 17 個靜態分卷，尚未像古大德註疏那樣接上瀏覽器端 CBETA GitHub (`xml-p5a`) 即時抓取與 IndexedDB（`custom_fascicles`）快取。
+- 提出兩套解法供使用者確認：
+  1. **方案 1（推薦）**：前端遇到預載 404 時，先查 IndexedDB（`custom_fascicles`），未命中則直接從支援 CORS 的 CBETA 官方 GitHub `xml-p5a` 即時抓取解析、斷句並永久快取於瀏覽器，不只八十華嚴 1–80 卷，整部大藏經都能隨點隨讀。
+  2. **方案 2**：在本機預先批量下載八十華嚴全 80 卷打包進 `frontend/data/bundles/` 再部署至 Firebase。
+
+---
+
+## [2026-11-28 16:08] Session 52：實作純前端 CBETA GitHub 即時載入未預載經卷與 IndexedDB 永久快取
+
+### 1. 接收到的 User Prompt
+- 使用者確認採用方案 1。
+
+### 2. 實作內容
+- **IndexedDB 自載經卷快取（`frontend/app.js` `dbHelper`）**：補齊 `saveCustomFascicle`、`getCustomFascicle`、`listCustomFascicles`，將動態抓取的經卷永久存於 `custom_fascicles` 資料表。
+- **瀏覽器端 CBETA GitHub 即時抓取與斷句**：新增 `splitSentencesZhClient()`、`fetchSutraFascicleFromGitHubClient()` 與 `buildClientBundleFromSutra()`，重用既有的 `extractJuanFromXmlP5aClient()` 與 `_githubXmlCache`（同部經只下載一次 XML，切卷秒開），並自動關聯 `masters_registry.json` 古大德註疏。
+- **三層讀取管線（`loadFascicle`）**：`預載靜態 Bundle → IndexedDB custom_fascicles → CBETA GitHub xml-p5a 即時抓取入庫`，同時開放左側目錄所有具備 CBETA 編號之經典直接點擊載入。
+- **驗證與部署**：透過 `python test_safe_command.py` 驗證 JS 語法與斷句測試、推送 GitHub 並部署至 Firebase Hosting。
