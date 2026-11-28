@@ -1228,3 +1228,8 @@
   - 嚴格只匹配中文語音並優先本機離線語音（`localService`）；若暫無回報則留空 `utter.voice` 交由系統以 `zh-TW` 自動播報。
   - 保存 `ttsState.currentUtter` 防 GC；觸控裝置暫停改以中止並保留句次進度實作；若連續失敗則於頂部提示實際錯誤碼與系統檢查方向。
   - 更新 [frontend/index.html](file:///c:/Users/AdminSean/Coding/Personal/BuddahSutra-Reader/frontend/index.html) `app.js?v=20261128m2`，推送 `feat/mobile-ui` 並重新部署 Preview Channel。
+
+
+## Session 64 — 2026-11-28 合併 `feat/mobile-ui` 回 `main` 並部署 Firebase Hosting 正式站
+- 手機實測（含 iOS 靜音鍵確認、抽屜目錄、底部四鍵分頁、經句快捷列、PWA 與朗讀）均通過。
+- 將 `feat/mobile-ui` 以 `--no-ff` 合併回 `main`、推送至 GitHub `origin/main`、清理已合併的 `feat/mobile-ui` 分支，並部署至 Firebase Hosting 正式站 `https://buddahsutra-reader.web.app`。

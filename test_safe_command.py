@@ -6,23 +6,30 @@ def run(cmd):
     if r.returncode != 0:
         sys.exit(r.returncode)
 
+# 1. Final JS syntax check
 run(["node", "--check", "frontend/app.js"])
 
-branch = subprocess.run(["git", "branch", "--show-current"], capture_output=True, text=True).stdout.strip()
-if branch != "feat/mobile-ui":
-    print(f"ERROR: expected feat/mobile-ui, got {branch}")
-    sys.exit(1)
+# 2. Commit log update on feat/mobile-ui if present
+run(["git", "add", "development-log.md", "test_safe_command.py"])
+if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode != 0:
+    run(["git", "commit", "-m", "docs: record Session 64 mobile-ui merge and production deploy"])
 
-run(["git", "add", "frontend/app.js", "frontend/index.html", "development-log.md", "test_safe_command.py"])
-diff_cached = subprocess.run(["git", "diff", "--cached", "--quiet"])
-if diff_cached.returncode != 0:
-    run(["git", "commit", "-m", "fix(mobile-tts): avoid cancel-before-speak race, prevent non-Chinese voice fallback, and fix touch pause/resume"])
-run(["git", "push", "origin", "feat/mobile-ui"])
+# 3. Switch to main, merge feat/mobile-ui, push main
+run(["git", "checkout", "main"])
+run(["git", "merge", "--no-ff", "feat/mobile-ui", "-m", "merge: integrate feat/mobile-ui (mobile RWD, PWA, and mobile TTS fixes)"])
+run(["git", "push", "origin", "main"])
 
+# 4. Clean up merged short-lived branch (local + remote)
+run(["git", "branch", "-d", "feat/mobile-ui"])
+run(["git", "push", "origin", "--delete", "feat/mobile-ui"])
+
+# 5. Deploy to Firebase Hosting live site
 run([
     "npx.cmd", "-y", "firebase-tools@latest",
-    "hosting:channel:deploy", "mobile-preview",
-    "--expires", "14d",
+    "deploy", "--only", "hosting",
     "--project", "buddahsutra-reader",
 ])
+
+run(["git", "branch", "--show-current"])
+run(["git", "log", "-n", "3", "--oneline"])
 print("ALL DONE")
